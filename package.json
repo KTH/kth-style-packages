@@ -5,7 +5,7 @@
   "main": "/sass/kth-style.scss",
   "private": true,
   "author": "KTH",
-  "license": "None",
+  "license": "MIT",
   "scripts": {
     "test": "echo \"No test specified\"",
     "//": "Bower and Gulp installs css and javascript",
