@@ -1,0 +1,31 @@
+@import "../variables/colors";
+@import "../variables/fonts";
+
+.modal {
+  z-index: 10001;
+  .modal-body {
+    .col-md-12 {
+      padding-bottom: 0;
+    }
+  }
+}
+
+#saveSuccessfulModal {
+  .modal-content {
+    background-color: $successModalGreen;
+  }
+}
+
+#saveFailedModal {
+  .modal-content {
+    background-color: $failModalRed;
+  }
+}
+
+/* * * * Personal toolbar override for modal behaviour * * * */
+
+@media only screen and (min-width: 1024px) {
+  #kth-pmenu #menu-bar-wrapper {
+    z-index: 40!important;
+  }
+}

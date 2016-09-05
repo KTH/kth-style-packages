@@ -1,0 +1,211 @@
+@import "../../overrides.scss";
+@import "../variables/colors";
+@import "../variables/fonts";
+
+/* * * * * * * * * Headline style * * * * * * * * * */
+
+body, button, input, select, textarea {
+  font-family: $sansSerif;
+  line-height: 1.5;
+}
+
+h1 {
+  padding: 0 0 1rem 0;
+  margin: 0 0 2rem 0;
+  font-size: 34px;
+  font-size: 3.4rem;
+  color: $darkBlack;
+  font-weight: normal;
+  font-family: $serif;
+  border-bottom: 1px dotted $gray;
+  line-height: 1.2;
+}
+
+h2 {
+  line-height: 1.2;
+  font-size: 18px;
+  font-size: 1.8rem;
+  color: $greenHeading;
+  font-weight: bold;
+  margin: 3rem 0 .5rem 0;
+}
+
+h3 {
+  font-size: 16px;
+  font-size: 1.6rem;
+  color: $black;
+  font-weight: bold;
+  margin: 2rem 0 .5rem 0;
+}
+
+h4 {
+  font-size: inherit;
+  color: $black;
+  font-weight: bold;
+  margin: 2rem 0 .5rem 0;
+}
+
+/* * * * * * * * * Text style * * * * * * * * * */
+
+b, strong {
+  font-weight: bold;
+}
+
+blockquote {
+  font-size: 14px;
+  font-size: 1.4rem;
+  line-height: 20px;
+  font-weight: bold;
+  border-top: 2px solid $darkBlack;
+  background: url("#{$proxy_prefix_path}/static/img/kth-style/quotation-mark.png") 0 12px no-repeat transparent;
+  color: $darkBlack;
+  float: left;
+  padding: 8px 0 0 50px;
+  margin: 10px 20px 10px 0;
+  min-height: 60px;
+}
+
+/* * * * * * * * * Bootstrap override * * * * * * * */
+
+.label {
+  display: block;
+  padding: 0;
+  font-size: inherit;
+  font-weight: bold;
+  line-height: 1.6;
+  color: #000;
+  text-align: left;
+  white-space: normal;
+  vertical-align: top;
+  border-radius: 0;
+}
+
+.glyphicon {
+  color: $blue;
+  cursor: pointer;
+}
+
+.system-message {
+  color: $black;
+  background-color: #FFF07E;
+  border: 1px solid #e3e5e3;
+  float: left;
+  width: 100%;
+
+  &.alert {
+    &.alert-warning {
+      &.alert-dismissible {
+        .glyphicon.glyphicon-exclamation-sign {
+          margin-top: 2px;
+          margin-right: 10px;
+          float: left;
+          color: $black;
+        }
+      }
+    }
+  }
+}
+
+
+/* * * * * * * * * Link style * * * * * * * * * */
+
+a {
+  color: $standardLinkColor;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &:visited {
+    color: $standardLinkColor;
+  }
+
+  &:focus {
+    outline: thin dotted;
+  }
+
+  &.btn {
+    border: 0;
+    border-radius: 0.3em;
+    color: $white;
+    cursor: pointer;
+    font-weight: bold;
+    line-height: 1.8;
+    padding: 0 1.2em;
+    text-align: center;
+
+    &.btn-primary {
+      background-color: $lightBlue;
+
+      &.disabled {
+        background-color: $gray;
+        opacity: 1;
+
+        &:hover {
+          background-color: $gray;
+        }
+
+        &:focus {
+          box-shadow: 0;
+          outline: 0;
+        }
+      }
+
+      &:focus {
+        box-shadow: 0 0 0.1em 0.2em $lightBlue;
+        outline: 0;
+      }
+
+      &:hover {
+        background-color: $hoverBlue;
+      }
+    }
+
+    &.btn-success {
+      background-color: $green;
+
+      &.disabled {
+        background-color: $gray;
+        pointer-events: none;
+
+        &:hover {
+          background-color: $gray;
+          pointer-events: none;
+          cursor: default;
+        }
+      }
+
+      &:focus {
+        box-shadow: 0 0 0.1em 0.2em $lightBlue;
+        outline: 0;
+      }
+
+      &:hover {
+        background-color: $hoverGreen;
+      }
+    }
+
+    &.btn-danger {
+      background-color: $red;
+
+      &.disabled {
+        background-color: $gray;
+
+        &:hover {
+          background-color: $gray;
+        }
+      }
+
+      &:focus {
+        box-shadow: 0 0 0.1em 0.2em $lightBlue;
+        outline: 0;
+      }
+
+      &:hover {
+        background-color: $hoverRed;
+      }
+    }
+  }
+}
+

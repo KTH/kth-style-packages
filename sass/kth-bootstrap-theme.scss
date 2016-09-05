@@ -1,0 +1,120 @@
+@import "./variables/sizes";
+@import "kth-style.scss";
+
+.container {
+    background-color: #ffffff;
+}
+
+@media only screen {
+    body {
+        background-color: #e3e5e3;
+        margin-top: 31px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: auto;
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width: 976px) {
+    body {
+        background-color: #ffffff;
+        background-image: none;
+    }
+}
+
+@media only screen and (min-width: 976px) {
+    .container {
+        width: 976px;
+        padding: 0 $pageInset;
+    }
+}
+
+.tab-content .tab-pane {
+    border: 1px dotted #b9bbbd;
+    padding-top: 10px;
+}
+
+.nav-tabs-justified>.active>a,
+.nav-tabs-justified>.active>a:focus,
+.nav-tabs-justified>.active>a:hover,
+.nav-tabs.nav.nav-justified>.active>a,
+.nav-tabs.nav.nav-justified>.active>a:focus,
+.nav-tabs.nav.nav-justified>.active>a:hover,
+.nav-tabs.nav.nav>.active>a,
+.nav-tabs.nav.nav>.active>a:focus,
+.nav-tabs.nav.nav>.active>a:hover {
+    border-width: 1px 1px 0 1px;
+    border-color:  #b9bbbd;
+    border-style: dotted;
+    border-bottom: solid $white 2px;
+    margin-bottom: -1px;
+    background-color: $white;
+    padding-bottom: 10px;
+}
+
+.nav-tabs.nav>li {
+    margin-bottom: -1px;
+}
+
+.nav-tabs.nav>li>a,
+.nav-tabs.nav.nav-justified>li>a {
+    border-radius: 0;
+    background-color: #dddddd;
+    font-size: 1.3rem;
+    border-width: 1px 1px 0 1px;
+    border-color:  $gray;
+    border-style: dotted;
+    padding: 6px 10px;
+}
+
+.nav-tabs>li>a, .nav-tabs>li>a:visited,
+.nav-tabs.nav-justified>li>a, .nav-tabs>li>a:visited {
+    margin-right: 5px;
+    color: $black;
+}
+
+.nav-tabs.nav>li:last-child>a {
+    margin-right: 0;
+}
+
+.nav-tabs>li>a:hover {
+    color: $blue;
+}
+
+.nav-tabs {
+    border-width: 0;
+}
+
+.expandToContainerWidth {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.header {
+    margin: 0;
+}
+
+#backToTop {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  display: none;
+  z-index: 11;
+  background: url("#{$proxy_prefix_path}/static/img/kth-style/back-to-top.svg") 100% 100% no-repeat transparent;
+  background-size: 50px 50px;
+  text-indent: -10000px;
+  opacity: 0.8;
+  cursor: pointer;
+  outline: none;
+}
+
+h2.navigationParent {
+    margin: 0 38px 14px 0;
+    background: transparent url("#{$proxy_prefix_path}/static/img/kth-style/icons/gray-arrow-left.svg") 27px 7px no-repeat;
+}

@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+        <link rel="shortcut icon" id="favicon" href="//www.kth.se/img/icon/favicon.ico" />
+        <link rel="stylesheet" type="text/css" media="screen" href="//code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css">
+        <link rel="stylesheet" type="text/css" media="screen" href="/static/css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" media="screen" href="/static/css/kth-bootstrap-theme.css" />
+        <script type="application/javascript" src="/static/js/jquery.min.js"></script>
+        <script type="application/javascript" src="/static/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            {{> kthHeader }}
+            <div class="row">
+              <div class="col-md-12">
+                  {{{body}}}
+              </div>
+            </div>
+            {{> kthFooter }}
+        </div>
+    </body>
+</html>

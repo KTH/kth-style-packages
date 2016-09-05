@@ -1,0 +1,36 @@
+{
+  "name": "kth-style",
+  "version": "1.0.0",
+  "description": "The KTH style project",
+  "main": "/sass/kth-style.scss",
+  "private": true,
+  "author": "KTH",
+  "license": "None",
+  "scripts": {
+    "test": "echo \"No test specified\"",
+    "//": "Bower and Gulp installs css and javascript",
+    "transcompile": "gulp default"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/KTH/kth-style"
+  },
+  "keywords": [
+    "KTH",
+    "Style",
+    "Guide"
+  ],
+  "devDependencies": {
+    "del": "^2.2.0",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^2.0.4",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.0.4"
+  },
+  "dependencies": {
+    "bootstrap": "~3.3.5",
+    "express": "^4.13.4",
+    "express-handlebars": "2.0.1",
+    "jquery": "^2.2.3"
+  }
+}
