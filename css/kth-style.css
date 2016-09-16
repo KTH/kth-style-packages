@@ -26,7 +26,7 @@ h2 {
   font-size: 1.8rem;
   color: #262626;
   font-weight: bold;
-  margin: 3rem 0 0.5rem 0;
+  margin: 3rem 0 .5rem 0;
 }
 
 h3 {
@@ -34,14 +34,14 @@ h3 {
   font-size: 1.6rem;
   color: #111111;
   font-weight: bold;
-  margin: 2rem 0 0.5rem 0;
+  margin: 2rem 0 .5rem 0;
 }
 
 h4 {
   font-size: inherit;
   color: #111111;
   font-weight: bold;
-  margin: 2rem 0 0.5rem 0;
+  margin: 2rem 0 .5rem 0;
 }
 
 /* * * * * * * * * Text style * * * * * * * * * */
@@ -77,6 +77,17 @@ ul li {
 }
 
 /* * * * * * * * * Table style * * * * * * * */
+table {
+  margin: 10px 0;
+  width: 100%;
+  padding: 0;
+  background-color: #ffffff;
+}
+
+table.cke_dialog tbody tr:last-child {
+  border-bottom: none;
+}
+
 table thead tr th {
   border-bottom: 1px dotted #111111;
   border-top: 1px dotted #111111;
@@ -89,6 +100,10 @@ table thead tr th {
 
 table tbody tr:last-child {
   border-bottom: 1px dotted #111111;
+}
+
+table tbody tr:last-child.cke_dialog_ui_hbox {
+  border-bottom: none;
 }
 
 table tbody tr td {
@@ -116,19 +131,52 @@ table tbody tr td {
   cursor: pointer;
 }
 
-.system-message {
+.message-base, .system-message, .error-message, .ok-message {
   color: #111111;
-  background-color: #FFF07E;
   border: 1px solid #e3e5e3;
   float: left;
   width: 100%;
 }
 
-.system-message.alert.alert-warning.alert-dismissible .glyphicon.glyphicon-exclamation-sign {
+.system-message {
+  background-color: #FFF07E;
+}
+
+.system-message.alert.alert-warning.alert-dismissible .glyphicon.glyphicon-info-sign {
   margin-top: 2px;
   margin-right: 10px;
   float: left;
   color: #111111;
+}
+
+.error-message.alert.alert-danger.alert-dismissible .glyphicon.glyphicon-exclamation-sign {
+  margin-top: 2px;
+  margin-right: 10px;
+  float: left;
+  color: #111111;
+}
+
+.ok-message.alert.alert-success.alert-dismissible .glyphicon.glyphicon-ok {
+  margin-top: 2px;
+  margin-right: 10px;
+  float: left;
+  color: #111111;
+}
+
+.table > thead:first-child > tr:first-child > th {
+  border-top: 1px dotted #111111;
+}
+
+.table > thead > tr > th {
+  vertical-align: text-top;
+  border-bottom: 1px dotted #111111;
+}
+
+.table > thead > tr > td, .table > thead > tr > th {
+  padding: 5px;
+  line-height: 1.5;
+  vertical-align: text-top;
+  border-top: 1px dotted #111111;
 }
 
 .table > tbody > tr > td {
