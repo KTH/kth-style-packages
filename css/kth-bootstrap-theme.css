@@ -16,7 +16,7 @@ h1 {
   color: #000000;
   font-weight: normal;
   font-family: "Georgia Regular", "Georgia", "garamond pro", garamond, "times new roman", times, serif;
-  border-bottom: 1px dotted #b9bbbd;
+  border-bottom: 1px dotted #bdbcbc;
   line-height: 1.2;
 }
 
@@ -24,7 +24,7 @@ h2 {
   line-height: 1.2;
   font-size: 18px;
   font-size: 1.8rem;
-  color: #8b9f22;
+  color: #262626;
   font-weight: bold;
   margin: 3rem 0 0.5rem 0;
 }
@@ -45,6 +45,10 @@ h4 {
 }
 
 /* * * * * * * * * Text style * * * * * * * * * */
+p {
+  margin: 0 0 1.1em 0;
+}
+
 b, strong {
   font-weight: bold;
 }
@@ -63,6 +67,36 @@ blockquote {
   min-height: 60px;
 }
 
+/* * * * * * * * * List style * * * * * * * */
+ol li {
+  margin-bottom: 4px;
+}
+
+ul li {
+  margin-bottom: 4px;
+}
+
+/* * * * * * * * * Table style * * * * * * * */
+table thead tr th {
+  border-bottom: 1px dotted #111111;
+  border-top: 1px dotted #111111;
+  color: #111111;
+  font-size: 1.5rem;
+  padding: 5px;
+  text-align: left;
+  vertical-align: text-top;
+}
+
+table tbody tr:last-child {
+  border-bottom: 1px dotted #111111;
+}
+
+table tbody tr td {
+  border-top: 1px dotted #bdbcbc;
+  margin: 0;
+  padding: 5px;
+}
+
 /* * * * * * * * * Bootstrap override * * * * * * * */
 .label {
   display: block;
@@ -78,7 +112,7 @@ blockquote {
 }
 
 .glyphicon {
-  color: #24a0d8;
+  color: #1954a6;
   cursor: pointer;
 }
 
@@ -97,9 +131,17 @@ blockquote {
   color: #111111;
 }
 
+.table > tbody > tr > td {
+  border-top: 1px dotted #bdbcbc;
+}
+
+.table-responsive {
+  border: none;
+}
+
 /* * * * * * * * * Link style * * * * * * * * * */
 a {
-  color: #24a0d8;
+  color: #005ea5;
   text-decoration: none;
 }
 
@@ -108,15 +150,23 @@ a:hover {
 }
 
 a:visited {
-  color: #24a0d8;
+  color: #4c2c92;
 }
 
 a:focus {
   outline: thin dotted;
 }
 
+a.secondary {
+  color: #6f6f76;
+}
+
+a.secondary:hover {
+  color: #005ea5;
+}
+
 a.btn {
-  border: 0;
+  border: 1px solid transparent;
   border-radius: 0.3em;
   color: #ffffff;
   cursor: pointer;
@@ -124,19 +174,20 @@ a.btn {
   line-height: 1.8;
   padding: 0 1.2em;
   text-align: center;
+  margin-right: 10px;
 }
 
 a.btn.btn-primary {
-  background-color: #24a0d8;
+  background-color: #1954a6;
 }
 
 a.btn.btn-primary.disabled {
-  background-color: #b9bbbd;
+  background-color: #6f6f76;
   opacity: 1;
 }
 
 a.btn.btn-primary.disabled:hover {
-  background-color: #b9bbbd;
+  background-color: #6f6f76;
 }
 
 a.btn.btn-primary.disabled:focus {
@@ -145,48 +196,58 @@ a.btn.btn-primary.disabled:focus {
 }
 
 a.btn.btn-primary:focus {
-  box-shadow: 0 0 0.1em 0.2em #24a0d8;
+  box-shadow: 0 0 0.1em 0.2em #1954a6;
   outline: 0;
 }
 
 a.btn.btn-primary:hover {
-  background-color: #1d80ac;
+  background-color: #11386f;
+}
+
+a.btn.btn-default {
+  color: #111111;
+  background-color: #ffffff;
+  border: 1px solid #bdbcbc;
+}
+
+a.btn.btn-default:hover {
+  background-color: #e3e5e3;
 }
 
 a.btn.btn-success {
-  background-color: #b0c92b;
+  background-color: #4e7425;
 }
 
 a.btn.btn-success.disabled {
-  background-color: #b9bbbd;
+  background-color: #bdbcbc;
   pointer-events: none;
 }
 
 a.btn.btn-success.disabled:hover {
-  background-color: #b9bbbd;
+  background-color: #bdbcbc;
   pointer-events: none;
   cursor: default;
 }
 
 a.btn.btn-success:focus {
-  box-shadow: 0 0 0.1em 0.2em #24a0d8;
+  box-shadow: 0 0 0.1em 0.2em #1954a6;
   outline: 0;
 }
 
 a.btn.btn-success:hover {
-  background-color: #9eb426;
+  background-color: #344e18;
 }
 
 a.btn.btn-danger {
-  background-color: #e4363e;
+  background-color: #e01f28;
 }
 
 a.btn.btn-danger.disabled {
-  background-color: #b9bbbd;
+  background-color: #bdbcbc;
 }
 
 a.btn.btn-danger.disabled:hover {
-  background-color: #b9bbbd;
+  background-color: #bdbcbc;
 }
 
 a.btn.btn-danger:focus {
@@ -195,7 +256,15 @@ a.btn.btn-danger:focus {
 }
 
 a.btn.btn-danger:hover {
-  background-color: #9d102d;
+  background-color: #b41820;
+}
+
+/* categroy / label / tag for (often) a single line of text.  The
+categorylabel itsel is an inline element, typically a single word.
+*/
+.categorylabel {
+  font-variant: small-caps;
+  text-transform: lowercase;
 }
 
 .data-cloak {
@@ -210,7 +279,7 @@ a.btn.btn-danger:hover {
  * Leave this variable empty. It's a placeholder for project specific paths.
  */
 form legend {
-  border: 0.1em solid #b9bbbd;
+  border: 0.1em solid #bdbcbc;
   border-radius: 0.3em;
   font-size: 13.5px;
   font-size: 1.35rem;
@@ -231,9 +300,9 @@ form fieldset {
 
 form input[type="text"] {
   background-color: #ffffff;
-  border: 1px solid #b9bbbd;
+  border: 1px solid #bdbcbc;
   border-radius: 0.3em;
-  box-shadow: inset 0 1px 1px #b9bbbd;
+  box-shadow: inset 0 1px 1px #bdbcbc;
   font-size: 13.5px;
   font-size: 1.35rem;
   height: 2.6em;
@@ -244,9 +313,9 @@ form input[type="text"] {
 
 form input[type="url"] {
   background-color: #ffffff;
-  border: 1px solid #b9bbbd;
+  border: 1px solid #bdbcbc;
   border-radius: 0.3em;
-  box-shadow: inset 0 1px 1px #b9bbbd;
+  box-shadow: inset 0 1px 1px #bdbcbc;
   font-size: 13.5px;
   font-size: 1.35rem;
   height: 2.6em;
@@ -257,9 +326,9 @@ form input[type="url"] {
 
 form input[type="number"] {
   background-color: #ffffff;
-  border: 1px solid #b9bbbd;
+  border: 1px solid #bdbcbc;
   border-radius: 0.3em;
-  box-shadow: inset 0 1px 1px #b9bbbd;
+  box-shadow: inset 0 1px 1px #bdbcbc;
   font-size: 13.5px;
   font-size: 1.35rem;
   height: 2.6em;
@@ -270,9 +339,9 @@ form input[type="number"] {
 
 form input[type="search"] {
   background-color: #ffffff;
-  border: 1px solid #b9bbbd;
+  border: 1px solid #bdbcbc;
   border-radius: 0.3em;
-  box-shadow: inset 0 1px 1px #b9bbbd;
+  box-shadow: inset 0 1px 1px #bdbcbc;
   font-size: 13.5px;
   font-size: 1.35rem;
   height: 2.6em;
@@ -283,9 +352,9 @@ form input[type="search"] {
 
 form input[type="datetime"] {
   background-color: #ffffff;
-  border: 1px solid #b9bbbd;
+  border: 1px solid #bdbcbc;
   border-radius: 0.3em;
-  box-shadow: inset 0 1px 1px #b9bbbd;
+  box-shadow: inset 0 1px 1px #bdbcbc;
   font-size: 13.5px;
   font-size: 1.35rem;
   height: 2.6em;
@@ -296,9 +365,9 @@ form input[type="datetime"] {
 
 form input[type="date"] {
   background-color: #ffffff;
-  border: 1px solid #b9bbbd;
+  border: 1px solid #bdbcbc;
   border-radius: 0.3em;
-  box-shadow: inset 0 1px 1px #b9bbbd;
+  box-shadow: inset 0 1px 1px #bdbcbc;
   font-size: 13.5px;
   font-size: 1.35rem;
   height: 2.6em;
@@ -309,9 +378,9 @@ form input[type="date"] {
 
 form input[type="month"] {
   background-color: #ffffff;
-  border: 1px solid #b9bbbd;
+  border: 1px solid #bdbcbc;
   border-radius: 0.3em;
-  box-shadow: inset 0 1px 1px #b9bbbd;
+  box-shadow: inset 0 1px 1px #bdbcbc;
   font-size: 13.5px;
   font-size: 1.35rem;
   height: 2.6em;
@@ -322,9 +391,9 @@ form input[type="month"] {
 
 form input[type="week"] {
   background-color: #ffffff;
-  border: 1px solid #b9bbbd;
+  border: 1px solid #bdbcbc;
   border-radius: 0.3em;
-  box-shadow: inset 0 1px 1px #b9bbbd;
+  box-shadow: inset 0 1px 1px #bdbcbc;
   font-size: 13.5px;
   font-size: 1.35rem;
   height: 2.6em;
@@ -335,9 +404,9 @@ form input[type="week"] {
 
 form input[type="time"] {
   background-color: #ffffff;
-  border: 1px solid #b9bbbd;
+  border: 1px solid #bdbcbc;
   border-radius: 0.3em;
-  box-shadow: inset 0 1px 1px #b9bbbd;
+  box-shadow: inset 0 1px 1px #bdbcbc;
   font-size: 13.5px;
   font-size: 1.35rem;
   height: 2.6em;
@@ -356,9 +425,9 @@ form input[type="color"] {
 
 form input[type="tel"] {
   background-color: #ffffff;
-  border: 1px solid #b9bbbd;
+  border: 1px solid #bdbcbc;
   border-radius: 0.3em;
-  box-shadow: inset 0 1px 1px #b9bbbd;
+  box-shadow: inset 0 1px 1px #bdbcbc;
   font-size: 13.5px;
   font-size: 1.35rem;
   height: 2.6em;
@@ -369,9 +438,9 @@ form input[type="tel"] {
 
 form input[type="email"] {
   background-color: #ffffff;
-  border: 1px solid #b9bbbd;
+  border: 1px solid #bdbcbc;
   border-radius: 0.3em;
-  box-shadow: inset 0 1px 1px #b9bbbd;
+  box-shadow: inset 0 1px 1px #bdbcbc;
   font-size: 13.5px;
   font-size: 1.35rem;
   height: 2.6em;
@@ -381,8 +450,8 @@ form input[type="email"] {
 }
 
 form input[type="submit"] {
-  background-color: #b0c92b;
-  border: 0;
+  background-color: #4e7425;
+  border: 1px solid transparent;
   border-radius: 0.3em;
   color: #ffffff;
   cursor: pointer;
@@ -390,29 +459,30 @@ form input[type="submit"] {
   line-height: 1.8;
   padding: 0 1.2em;
   text-align: center;
+  margin-right: 10px;
 }
 
 form input[type="submit"]:disabled {
-  background-color: #b9bbbd;
+  background-color: #6f6f76;
 }
 
 form input[type="submit"]:disabled:hover {
-  background-color: #b9bbbd;
+  background-color: #6f6f76;
 }
 
 form input[type="submit"]:focus {
-  background-color: #9eb426;
+  background-color: #344e18;
   box-shadow: 0 0 0.1em 0.2em #24a0d8;
   outline: 0;
 }
 
 form input[type="submit"]:hover {
-  background-color: #9eb426;
+  background-color: #344e18;
 }
 
 form input[type="button"] {
-  background-color: #24a0d8;
-  border: 0;
+  background-color: #1954a6;
+  border: 1px solid transparent;
   border-radius: 0.3em;
   cursor: pointer;
   color: #ffffff;
@@ -420,29 +490,40 @@ form input[type="button"] {
   line-height: 1.8;
   padding: 0 1.2em;
   text-align: center;
+  margin-right: 10px;
+}
+
+form input[type="button"].default {
+  background-color: #ffffff;
+  border-color: #bdbcbc;
+  color: #111111;
+}
+
+form input[type="button"].default:hover {
+  background-color: #e3e5e3;
 }
 
 form input[type="button"]:disabled {
-  background-color: #b9bbbd;
+  background-color: #6f6f76;
 }
 
 form input[type="button"]:disabled:hover {
-  background-color: #b9bbbd;
+  background-color: #6f6f76;
 }
 
 form input[type="button"]:focus {
-  background-color: #24a0d8;
-  box-shadow: 0 0 0.1em 0.2em #24a0d8;
+  background-color: #1954a6;
+  box-shadow: 0 0 0.1em 0.2em #1954a6;
   outline: 0;
 }
 
 form input[type="button"]:hover {
-  background-color: #1d80ac;
+  background-color: #11386f;
 }
 
 form input[type="reset"] {
-  background-color: #e4363e;
-  border: 0;
+  background-color: #e01f28;
+  border: 1px solid transparent;
   border-radius: 0.3em;
   color: #ffffff;
   cursor: pointer;
@@ -450,27 +531,28 @@ form input[type="reset"] {
   line-height: 1.8;
   padding: 0 1.2em;
   text-align: center;
+  margin-right: 10px;
 }
 
 form input[type="reset"]:disabled {
-  background-color: #b9bbbd;
+  background-color: #6f6f76;
 }
 
 form input[type="reset"]:disabled:hover {
-  background-color: #b9bbbd;
+  background-color: #6f6f76;
 }
 
 form input[type="reset"]:focus {
-  box-shadow: 0 0 0.1em 0.2em #24a0d8;
+  box-shadow: 0 0 0.1em 0.2em #1954a6;
   outline: 0;
 }
 
 form input[type="reset"]:hover {
-  background-color: #9d102d;
+  background-color: #b41820;
 }
 
 form button {
-  border: 0;
+  border: 1px solid transparent;
   border-radius: 0.3em;
   cursor: pointer;
   font-weight: bold;
@@ -479,66 +561,77 @@ form button {
   text-align: center;
   color: #ffffff;
   -webkit-appearance: button;
+  margin-right: 10px;
 }
 
 form button:focus {
-  box-shadow: 0 0 0.1em 0.2em #24a0d8;
+  box-shadow: 0 0 0.1em 0.2em #1954a6;
   outline: 0;
 }
 
 form button[type="submit"] {
-  background-color: #b0c92b;
+  background-color: #4e7425;
 }
 
 form button[type="submit"]:hover {
-  background-color: #9eb426;
+  background-color: #344e18;
 }
 
 form button[type="submit"]:disabled {
-  background-color: #b9bbbd;
+  background-color: #6f6f76;
 }
 
 form button[type="submit"]:disabled:hover {
-  background-color: #b9bbbd;
+  background-color: #6f6f76;
 }
 
 form button[type="reset"] {
-  background-color: #e4363e;
+  background-color: #e01f28;
 }
 
 form button[type="reset"]:hover {
-  background-color: #9d102d;
+  background-color: #b41820;
 }
 
 form button[type="reset"]:disabled {
-  background-color: #b9bbbd;
+  background-color: #6f6f76;
 }
 
 form button[type="reset"]:disabled:hover {
-  background-color: #b9bbbd;
+  background-color: #6f6f76;
 }
 
 form button[type="button"] {
-  background-color: #24a0d8;
+  background-color: #1954a6;
+}
+
+form button[type="button"].default {
+  background-color: #ffffff;
+  border-color: #bdbcbc;
+  color: #111111;
+}
+
+form button[type="button"].default:hover {
+  background-color: #e3e5e3;
 }
 
 form button[type="button"]:hover {
-  background-color: #1d80ac;
+  background-color: #11386f;
 }
 
 form button[type="button"]:disabled {
-  background-color: #b9bbbd;
+  background-color: #6f6f76;
 }
 
 form button[type="button"]:disabled:hover {
-  background-color: #b9bbbd;
+  background-color: #6f6f76;
 }
 
 form textarea {
   background-color: #ffffff;
-  border: 1px solid #b9bbbd;
+  border: 1px solid #bdbcbc;
   border-radius: 0.3em;
-  box-shadow: inset 0 1px 1px #b9bbbd;
+  box-shadow: inset 0 1px 1px #bdbcbc;
   font-size: 13.5px;
   font-size: 1.35rem;
   margin: 0.4em 0;
@@ -559,9 +652,9 @@ form textarea:hover {
 
 form select {
   background: url("/static/img/kth-style/select-arrow.png") no-repeat 94% 50% #ffffff;
-  border: 0.1em solid #b9bbbd;
+  border: 0.1em solid #bdbcbc;
   border-radius: 0.3em;
-  box-shadow: inset 0 1px 1px #b9bbbd;
+  box-shadow: inset 0 1px 1px #bdbcbc;
   font-size: 13.5px;
   font-size: 1.35rem;
   height: 2.6em;
@@ -1229,13 +1322,13 @@ form select:hover {
 }
 
 .block.search form fieldset {
-  box-shadow: inset 1px 1px 2px #b9bbbd;
+  box-shadow: inset 1px 1px 2px #bdbcbc;
   border-radius: 10px 0 0 10px;
   width: 70%;
   width: calc(100% - 100px);
   font-size: 13.5px;
   font-size: 1.35rem;
-  border: 1px #b9bbbd solid;
+  border: 1px #bdbcbc solid;
   border-right: 0;
   background-color: #fafafa;
   display: inline-block;
@@ -1288,7 +1381,7 @@ form select:hover {
   border-radius: 5px;
   font-size: 11px;
   font-size: 1.1rem;
-  background: url("/static/img/kth-style/input-clear.svg") 95% 50% no-repeat #b0c92b;
+  background: url("/static/img/kth-style/input-clear.svg") 95% 50% no-repeat #4e7425;
   color: #ffffff;
   border: 0;
   margin: 4px 0 5px 5px;
@@ -1309,9 +1402,9 @@ form select:hover {
 }
 
 .block.search form fieldset input[type="text"] {
-  border: 1px solid #b9bbbd;
+  border: 1px solid #bdbcbc;
   border-radius: 10px;
-  box-shadow: inset 1px 1px 2px #b9bbbd;
+  box-shadow: inset 1px 1px 2px #bdbcbc;
   background-color: #ffffff;
   padding-left: 10px;
   margin: 5px 0 5px 0;
@@ -1393,7 +1486,7 @@ form select:hover {
   padding: 10px 38px 38px 38px;
   overflow: hidden;
   clear: both;
-  background: #65656c;
+  background: #6f6f76;
   margin-top: 20px;
   margin-right: -38px;
   margin-left: -38px;
@@ -1581,7 +1674,7 @@ form select:hover {
 }
 
 .header .secondaryHeader .block.link a {
-  color: #24a0d8;
+  color: #005ea5;
 }
 
 .header .primaryHeader .block.search {
@@ -1728,7 +1821,7 @@ form select:hover {
   background-color: #dddddd;
   font-size: 1.3rem;
   border-width: 1px 1px 0 1px;
-  border-color: #b9bbbd;
+  border-color: #bdbcbc;
   border-style: dotted;
   padding: 6px 10px;
 }
@@ -1744,7 +1837,7 @@ form select:hover {
 }
 
 .nav-tabs > li > a:hover {
-  color: #24a0d8;
+  color: #1954a6;
 }
 
 .nav-tabs {

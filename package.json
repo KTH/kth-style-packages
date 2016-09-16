@@ -8,7 +8,7 @@
   "license": "MIT",
   "scripts": {
     "test": "echo \"No test specified\"",
-    "//": "Bower and Gulp installs css and javascript",
+    "//": "Gulp installs css and javascript",
     "transcompile": "gulp default"
   },
   "repository": {

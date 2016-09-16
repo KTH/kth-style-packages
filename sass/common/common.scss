@@ -25,7 +25,7 @@ h2 {
   line-height: 1.2;
   font-size: 18px;
   font-size: 1.8rem;
-  color: $greenHeading;
+  color: #262626;
   font-weight: bold;
   margin: 3rem 0 .5rem 0;
 }
@@ -47,6 +47,10 @@ h4 {
 
 /* * * * * * * * * Text style * * * * * * * * * */
 
+p {
+  margin: 0 0 1.1em 0;
+}
+
 b, strong {
   font-weight: bold;
 }
@@ -63,6 +67,73 @@ blockquote {
   padding: 8px 0 0 50px;
   margin: 10px 20px 10px 0;
   min-height: 60px;
+}
+
+/* * * * * * * * * List style * * * * * * * */
+
+ol {
+  li {
+    margin-bottom: 4px;
+  }
+}
+
+ul {
+  li {
+    margin-bottom: 4px;
+  }
+}
+
+/* * * * * * * * * Table style * * * * * * * */
+
+table {
+  margin: $spacing 0;
+  width: 100%;
+  padding: 0;
+  background-color: $white;
+
+  &.cke_dialog {
+    tbody {
+      tr {
+
+        &:last-child {
+          border-bottom: none;
+        }
+      }
+    }
+  }
+
+  thead {
+    tr {
+      th {
+        border-bottom: 1px dotted $black;
+        border-top: 1px dotted $black;
+        color: $black;
+        font-size: 1.5rem;
+        padding: 5px;
+        text-align: left;
+        vertical-align: text-top;
+      }
+    }
+  }
+
+  tbody {
+    tr {
+
+      &:last-child {
+        border-bottom: 1px dotted $black;
+
+        &.cke_dialog_ui_hbox {
+          border-bottom: none;
+        }
+      }
+
+      td {
+        border-top: 1px dotted $gray;
+        margin: 0;
+        padding: 5px;
+      }
+    }
+  }
 }
 
 /* * * * * * * * * Bootstrap override * * * * * * * */
@@ -106,6 +177,29 @@ blockquote {
   }
 }
 
+.table>thead:first-child>tr:first-child>th {
+  border-top: 1px dotted $black;
+}
+
+.table>thead>tr>th {
+  vertical-align: text-top;
+  border-bottom: 1px dotted $black;
+}
+
+.table>thead>tr>td, .table>thead>tr>th {
+  padding: 5px;
+  line-height: 1.5;
+  vertical-align: text-top;
+  border-top: 1px dotted $black;
+}
+
+.table>tbody>tr>td {
+  border-top: 1px dotted $gray;
+}
+
+.table-responsive {
+  border: none
+}
 
 /* * * * * * * * * Link style * * * * * * * * * */
 
@@ -118,15 +212,22 @@ a {
   }
 
   &:visited {
-    color: $standardLinkColor;
+    color: $visitedLinkColor;
   }
 
   &:focus {
     outline: thin dotted;
   }
 
+  &.secondary {
+    color: $darkGray;
+    &:hover {
+      color: $standardLinkColor;
+    }
+  }
+
   &.btn {
-    border: 0;
+    border: 1px solid transparent;
     border-radius: 0.3em;
     color: $white;
     cursor: pointer;
@@ -134,16 +235,17 @@ a {
     line-height: 1.8;
     padding: 0 1.2em;
     text-align: center;
+    margin-right: $spacing;
 
     &.btn-primary {
-      background-color: $lightBlue;
+      background-color: $blue;
 
       &.disabled {
-        background-color: $gray;
+        background-color: $darkGray;
         opacity: 1;
 
         &:hover {
-          background-color: $gray;
+          background-color: $darkGray;
         }
 
         &:focus {
@@ -153,12 +255,22 @@ a {
       }
 
       &:focus {
-        box-shadow: 0 0 0.1em 0.2em $lightBlue;
+        box-shadow: 0 0 0.1em 0.2em $blue;
         outline: 0;
       }
 
       &:hover {
         background-color: $hoverBlue;
+      }
+    }
+
+    &.btn-default {
+      color: $black;
+      background-color: $white;
+      border: 1px solid $gray;
+
+      &:hover {
+        background-color: $hoverGray;
       }
     }
 
@@ -177,7 +289,7 @@ a {
       }
 
       &:focus {
-        box-shadow: 0 0 0.1em 0.2em $lightBlue;
+        box-shadow: 0 0 0.1em 0.2em $blue;
         outline: 0;
       }
 
@@ -209,3 +321,10 @@ a {
   }
 }
 
+/* categroy / label / tag for (often) a single line of text.  The
+categorylabel itsel is an inline element, typically a single word.
+*/
+.categorylabel {
+  font-variant: small-caps;
+  text-transform: lowercase;
+}

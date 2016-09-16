@@ -177,7 +177,7 @@ form {
 
   input[type="submit"] {
     background-color: $green;
-    border: 0;
+    border: 1px solid transparent;
     border-radius: 0.3em;
     color: $white;
     cursor: pointer;
@@ -185,12 +185,13 @@ form {
     line-height: 1.8;
     padding: 0 1.2em;
     text-align: center;
+    margin-right: $spacing;
 
     &:disabled {
-      background-color: $gray;
+      background-color: $darkGray;
 
       &:hover {
-        background-color: $gray;
+        background-color: $darkGray;
       }
     }
 
@@ -206,8 +207,8 @@ form {
   }
 
   input[type="button"] {
-    background-color: $lightBlue;
-    border: 0;
+    background-color: $blue;
+    border: 1px solid transparent;
     border-radius: 0.3em;
     cursor: pointer;
     color: $white;
@@ -215,18 +216,29 @@ form {
     line-height: 1.8;
     padding: 0 1.2em;
     text-align: center;
+    margin-right: $spacing;
 
-    &:disabled {
-      background-color: $gray;
+    &.default {
+      background-color: $white;
+      border-color: $gray;
+      color: $black;
 
       &:hover {
-        background-color: $gray;
+        background-color: $hoverGray;
+      }
+    }
+
+    &:disabled {
+      background-color: $darkGray;
+
+      &:hover {
+        background-color: $darkGray;
       }
     }
 
     &:focus {
-      background-color: $lightBlue;
-      box-shadow: 0 0 0.1em 0.2em $lightBlue;
+      background-color: $blue;
+      box-shadow: 0 0 0.1em 0.2em $blue;
       outline: 0;
     }
 
@@ -237,7 +249,7 @@ form {
 
   input[type="reset"] {
     background-color: $red;
-    border: 0;
+    border: 1px solid transparent;
     border-radius: 0.3em;
     color: $white;
     cursor: pointer;
@@ -245,17 +257,18 @@ form {
     line-height: 1.8;
     padding: 0 1.2em;
     text-align: center;
+    margin-right: $spacing;
 
     &:disabled {
-      background-color: $gray;
+      background-color: $darkGray;
 
       &:hover {
-        background-color: $gray;
+        background-color: $darkGray;
       }
     }
 
     &:focus {
-      box-shadow: 0 0 0.1em 0.2em $lightBlue;
+      box-shadow: 0 0 0.1em 0.2em $blue;
       outline: 0;
     }
 
@@ -265,7 +278,7 @@ form {
   }
 
   button {
-    border: 0;
+    border: 1px solid transparent;
     border-radius: 0.3em;
     cursor: pointer;
     font-weight: bold;
@@ -274,9 +287,10 @@ form {
     text-align: center;
     color: $white;
     -webkit-appearance: button;
+    margin-right: $spacing;
 
     &:focus {
-      box-shadow: 0 0 0.1em 0.2em $lightBlue;
+      box-shadow: 0 0 0.1em 0.2em $blue;
       outline: 0;
     }
 
@@ -288,42 +302,52 @@ form {
       }
 
       &:disabled {
-        background-color: $gray;
+        background-color: $darkGray;
 
         &:hover {
-          background-color: $gray;
+          background-color: $darkGray;
         }
       }
     }
 
     &[type="reset"] {
-      background-color: $lightRed;
+      background-color: $red;
 
       &:hover {
         background-color: $hoverRed;
       }
 
       &:disabled {
-        background-color: $gray;
+        background-color: $darkGray;
 
         &:hover {
-          background-color: $gray;
+          background-color: $darkGray;
         }
       }
     }
 
     &[type="button"] {
-      background-color: $lightBlue;
+      background-color: $blue;
+
+      &.default {
+        background-color: $white;
+        border-color: $gray;
+        color: $black;
+
+        &:hover {
+          background-color: $hoverGray;
+        }
+      }
 
       &:hover {
         background-color: $hoverBlue;
       }
 
       &:disabled {
-        background-color: $gray;
+        background-color: $darkGray;
 
         &:hover {
-          background-color: $gray;
+          background-color: $darkGray;
         }
       }
     }
