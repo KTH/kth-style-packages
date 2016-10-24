@@ -95,3 +95,7 @@ and then restart the application.
 
 #### The reference environment
 When pushing to the repository [kth-style](https://github.com/KTH/kth-style) Jenkins listen, build the project and pushing it to [http://kth-style-1-r.referens.sys.kth.se:3000/kth-style](http://kth-style-1-r.referens.sys.kth.se:3000/kth-style)
+
+#### TODO
+- Documentation: kth-style is imported in bootstrap-theme
+- Code: Get header/footer through api. Can take a name and other config to form the perfect header for the application
