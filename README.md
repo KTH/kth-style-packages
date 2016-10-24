@@ -99,3 +99,4 @@ When pushing to the repository [kth-style](https://github.com/KTH/kth-style) Jen
 #### TODO
 - Documentation: kth-style is imported in bootstrap-theme
 - Code: Get header/footer through api. Can take a name and other config to form the perfect header for the application
+- Code: Implement container-fluid
