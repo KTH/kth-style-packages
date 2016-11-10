@@ -1400,7 +1400,7 @@ form select:hover {
   border: 0;
   outline: none;
   background-color: transparent;
-  height: 25px;
+  height: 30px;
 }
 
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
@@ -1804,7 +1804,7 @@ form select:hover {
   color: #b9bbbd;
 }
 
-.container {
+.container, container-fluid {
   background-color: #ffffff;
 }
 
