@@ -1,9 +1,46 @@
-# IDEA specific files
-*.iml
-.idea
+.DS_Store
 
-# Packages
+.git/
+
+# Sass compilation related files
+public/css/*.css
+
+
+# IDEA specific
+.idea
+*.iml
+
+# VS Code specific
+.vscode
+jsconfig.json
+typings/*
+typings.json
+
+# Eclipse specific
+.jshintrc
+.project
+.settings/
+
+# Settings
+config/localSettings.js
+
+# Logs
+logs/*
+*.log
+
+# Dependency directory for NPM
 node_modules
 
-# Log files
-*.log
+public/css/bootstrap
+public/css/font-awesome
+public/css/fonts
+public/css/kth-style
+public/img/kth-style
+
+# Built at startup
+bundles
+public/js/app/config*.js
+
+# Docker
+docker-compose*.yml
+*.env
