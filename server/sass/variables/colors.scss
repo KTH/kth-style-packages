@@ -1,0 +1,79 @@
+// *** kth colors ***********************************
+
+// Blue
+$blue: #1954a6;
+$lightBlue: #24a0d8;
+$hoverBlue: #11386f;
+
+// Green
+$green: #4e7425;
+$lightGreen: #b0c92b;
+$hoverGreen: #344e18;
+$successModalGreen: #dff0d8;
+
+// Black
+$black: #111111;
+$darkBlack: #000000;
+$lightBlack: #333333;
+
+// Gray
+$gray: #bdbcbc;
+$darkGray: #6f6f76;
+$lightGray: #e3e5e3;
+$hoverGray: $lightGray;
+
+// Red
+$red: #e01f28;
+$darkRed: #9d102d;
+$lightRed: #e4363e;
+$hoverRed: #b41820;
+$failModalRed: #f2dede;
+
+// White
+$white: #ffffff;
+$inputWhite: #fafafa;
+
+//pink
+$pink: #d02f81;
+
+//yellow
+$yellow: #fab919;
+$systemMessageYellow: #fff07e;
+
+// *** Component colors *************************************
+
+// Text
+$textColorBold: $darkBlack;
+$textColorLead: #333;
+$textColorNormal: #333;
+$textColorLink: $lightBlue;
+
+// Page
+$thickBorderColor: $blue;
+$pageBorderColor: #333;
+$pageColor: $white;
+
+// Links
+$standardLinkColor: #005ea5;
+$visitedLinkColor: #4c2c92;
+$linkArrowColor: $red;
+
+// Tables
+$tableHeaderBackgroundColor: $gray;
+$tableBodyTextColor: $textColorNormal;
+$tableOddRowBackgroundColor: $lightGray;
+$tableEvenRowBackgroundColor: $white;
+
+// News and Calendar
+$newsBorderColor: $gray;
+$newsHeaderColor: $green;
+$calendarBorderColor: $gray;
+$calendarHeaderColor: $green;
+
+// List themes
+$defaultThemeUnselectedListItemColor: $gray;
+$defaultThemeSelectedListItemColor: $blue;
+$grayThemeUnselectedListItemColor: $gray;
+$grayThemeSelectedListItemColor: $darkGray;
+$darkGrayThemeUnselectedListItemColor: $darkGray;
+$darkGrayThemeSelectedListItemColor: $lightBlack;

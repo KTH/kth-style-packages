@@ -1,0 +1,21 @@
+/*
+ KTH Bootstrap
+
+ This is where you override bootstrap values, such as colors, margins ...
+*/
+
+@import "variables/colors";
+@import "variables/sizes";
+@import "../../node_modules/bootstrap/scss/_variables";
+@import "../../node_modules/bootstrap/scss/mixins/_breakpoints";
+
+// Values to override
+$body-bg: $lightGray;
+$font-size-root: 14px;
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 961px
+);

@@ -19,7 +19,6 @@ const controllers = require('../controllers')
  */
 
 require('./logging')
-require('./authentication')
 require('./templating')
 require('./languages')
 require('./middleware')

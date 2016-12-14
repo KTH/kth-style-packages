@@ -9,34 +9,43 @@ const routing = require('./routing')
  */
 
 module.exports = {
-  cas: {
-    login: {
-      uri: routing.prefix('/login'),
-      method: 'GET'
-    },
-
-    gateway: {
-      uri: routing.prefix('/loginGateway'),
-      method: 'GET'
-    },
-
-    pgtCallback: {
-      uri: routing.prefix('/pgtCallback'),
-      method: 'GET'
-    },
-
-    logout: {
-      uri: routing.prefix('/logout'),
-      method: 'GET'
-    }
+  index: {
+    uri: routing.prefix('/'),
+    method: 'GET'
   },
-
+  headlines: {
+    uri: routing.prefix('/headlines'),
+    method: 'GET'
+  },
+  tables: {
+    uri: routing.prefix('/tables'),
+    method: 'GET'
+  },
+  text: {
+    uri: routing.prefix('/text'),
+    method: 'GET'
+  },
+  forms: {
+    uri: routing.prefix('/forms'),
+    method: 'GET'
+  },
+  lists: {
+    uri: routing.prefix('/lists'),
+    method: 'GET'
+  },
+  buttons: {
+    uri: routing.prefix('/buttons'),
+    method: 'GET'
+  },
+  modals: {
+    uri: routing.prefix('/modals'),
+    method: 'GET'
+  },
+  messages: {
+    uri: routing.prefix('/messages'),
+    method: 'GET'
+  },
   system: {
-    index: {
-      uri: routing.prefix('/'),
-      method: 'GET'
-    },
-
     monitor: {
       uri: routing.prefix('/_monitor'),
       method: 'GET',

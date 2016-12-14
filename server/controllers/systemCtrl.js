@@ -11,7 +11,6 @@ const paths = require('../init/routing/paths')
 const language = require('../util/language')
 const i18n = require('kth-node-i18n')
 const api = require('../init/api')
-const ldap = require('../util/adldap')
 const co = require('co')
 
 /*
@@ -107,8 +106,6 @@ function _about (req, res) {
  * Monitor page
  */
 function * _monitor (req, res) {
-  const adStatus = `\nLdap connection: ${ldap.isOk() ? 'OK' : 'ERROR'}`
-
   try {
     const results = yield _callAllAPIs()
     const apiStatus = results.join('\n')
@@ -119,11 +116,11 @@ function * _monitor (req, res) {
 
     let status = (/error/ig).test(apiStatus) ? 'ERROR' : 'OK'
     status += apiStatus ? '\n' : '\nAPI_STATUS: no api configured'
-    const message = `APPLICATION_STATUS: ${status}${apiStatus}${adStatus}`
+    const message = `APPLICATION_STATUS: ${status}${apiStatus}`
     res.type('text').send(message)
   } catch (err) {
     log.error({ err: err }, 'Application status error')
-    const message = `APPLICATION_STATUS: ERROR ${err.message}${adStatus}`
+    const message = `APPLICATION_STATUS: ERROR ${err.message}`
     res.type('text').status(500).send(message)
   }
 }
@@ -161,4 +158,3 @@ function _robotsTxt (req, res) {
 function _paths (req, res) {
   res.json(paths)
 }
-

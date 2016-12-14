@@ -1,0 +1,73 @@
+<div id="breadcrumbs" class="breadcrumbs">
+    <a href="https://www.kth.se">KTH</a>
+    <span class="separator">/</span>
+    <a href="/">KTH STYLE</a>
+    <span class="separator">/</span>
+    <span class="current">Modalboxar</span>
+</div>
+
+<h1>Modalboxar</h1>
+
+<p><span class="glyphicon glyphicon-info-sign" data-toggle="modal" data-target="#publishedModal"></span> Öppna informativ modalrutan.</p>
+<p><span id="buttonSuccess" class="glyphicon glyphicon-saved" data-toggle="modal" data-target="#saveSuccessfulModal"></span> Öppnar modal för lyckad sparning. (Stängs automatiskt efter 3 sekunder)</p>
+<p><span id="buttonFail" class="glyphicon glyphicon-remove-sign" data-toggle="modal" data-target="#saveFailedModal"></span> Öppnar modal för misslyckad sparning  (Stängs automatiskt efter 3 sekunder)</p>
+
+<!-- Published modal -->
+<div class="modal fade" id="publishedModal" tabindex="-1" role="dialog" aria-labelledby="saveModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <a type="button" class="close closeModalRedirect" aria-label="Close" data-toggle="modal" data-target="#publishedModal">
+                    <span aria-hidden="true">&times;</span>
+                </a>
+                <h4 class="modal-title" id="publishModalLabel">Modalrubrik</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p>Detta är en informationstext...</p>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a type="button" class="btn btn-primary closeModalRedirect" data-bind="text: ui.i18n.message('close_button_title')"></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Save success modal -->
+<div class="modal fade" id="saveSuccessfulModal" tabindex="-1" role="dialog" aria-labelledby="saveModalLabel">
+    <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <p class="text-center">Innehållet sparades</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Save failure modal -->
+<div class="modal fade" id="saveFailedModal" tabindex="-1" role="dialog" aria-labelledby="saveModalLabel">
+    <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <p class="text-center">Innehållet kunde inte sparas</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Javascript for closing modals automatically after 3 seconds -->
+<script type="application/javascript">
+    $('#buttonSuccess').on('mousedown', function() {
+        setTimeout(function() {
+            $('#saveSuccessfulModal').modal('hide')
+        },3000);
+    });
+    $('#buttonFail').on('mousedown', function() {
+        setTimeout(function() {
+            $('#saveFailedModal').modal('hide')
+        },3000);
+    });
+</script>

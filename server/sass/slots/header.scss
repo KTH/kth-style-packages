@@ -1,0 +1,110 @@
+@import "../variables/colors";
+@import "../variables/sizes";
+@import "../mixins/spacings";
+
+.header {
+  padding: 20px 0;
+  margin: 0;
+  position: relative;
+  clear: both;
+}
+
+.header .primaryHeader {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  vertical-align: middle;
+}
+
+.header .secondaryHeader {
+  position: absolute;
+  top: 16px;
+  right: 0;
+  float: right;
+  text-align: right;
+}
+
+.header .secondaryHeader .blockItemSeparator {
+  display: inline;
+  padding: 0 5px;
+  float: left;
+}
+
+.block.figure.mainLogo .imageWrapper img {
+  width: auto;
+  height: auto;
+  max-height: 70px;
+}
+
+@media only screen and (max-width: 480px) {
+  .block.figure.mainLogo .imageWrapper img {
+    max-height: 40px;
+    margin-left: 5px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .header .secondaryHeader .block.siteName {
+    border-right: 0 solid #b9bbbd;
+    padding-right: 0;
+    margin-right: 0;
+  }
+}
+
+.header .secondaryHeader .block {
+  display: inline-block;
+}
+
+.header .secondaryHeader .block.link a {
+  color: $standardLinkColor;
+}
+
+.header .primaryHeader .block.search {
+  top: 41px;
+  position: absolute;
+  text-align: right;
+  right: 0;
+  float: right;
+  width: 100%;
+  max-width: 45%;
+}
+
+@media only screen and (max-width: 976px) {
+  body .header .primaryHeader .block.search {
+     max-width: 80%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  body .header .primaryHeader .block.search {
+    padding-top: 10px;
+    max-width: 100%;
+    width: 100%;
+    position: relative;
+    top: auto;
+    right: auto;
+    float: none;
+    clear: both;
+  }
+}
+
+.header .primaryHeader .block {
+  float: left;
+}
+
+.block {
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+#headerHr {
+  position: relative;
+  margin-top: 70px;
+}
+
+@media only screen and (max-width: 480px) {
+  #headerHr {
+    margin-top: 20px;
+  }
+}

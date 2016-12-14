@@ -1,0 +1,32 @@
+@import "colors";
+@import "sizes";
+
+$serif: 'Georgia Regular', 'Georgia', 'garamond pro', garamond, 'times new roman', times, serif;
+$sansSerif: Arial, 'Helvetica Neue', helvetica, sans-serif;
+
+$normalFontSize: 13.5;
+$fontMagnificationFactor: 1;
+
+@mixin font-size($font-size: $normalFontSize){
+  $magnifiedFontSize: ($font-size * $fontMagnificationFactor);
+  $rem: ($magnifiedFontSize / 10);
+  font-size: $magnifiedFontSize * 1px;
+  font-size: $rem rem;
+}
+
+@mixin fontProperties($fontSize:$normalFontSize, $fontWeight:normal, $color:$darkBlack, $lineHeight:$bodyLineHeight) {
+  @include font-size($fontSize);
+  color: $color;
+  font-weight: $fontWeight;
+  line-height: $lineHeight;
+}
+
+/** font sizes **/
+@mixin articleTitleFont($color: $darkBlack) {
+  @include fontProperties(34, normal, $color, '110%');
+  font-family: $serif;
+}
+
+@mixin articleSecondTitleFont($color: $darkGray) {
+  @include fontProperties(18, normal, $color, '110%');
+}
