@@ -1,0 +1,19 @@
+/*
+  Style which is used by both Bootstrap and simple KTH style css
+*/
+
+@import "blocks/columnSplitter";
+@import "blocks/search";
+@import "blocks/siteName";
+@import "blocks/lang";
+
+@import "slots/breadcrumbs";
+@import "slots/footer";
+@import "slots/header";
+
+@import "common/reset";
+@import "common/ko";
+@import "common/forms";
+@import "common/modals";
+
+@import "variables/fonts"

@@ -6,6 +6,7 @@
 
 @import "variables/colors";
 @import "variables/sizes";
+@import "variables/fonts";
 @import "../../node_modules/bootstrap/scss/_variables";
 @import "../../node_modules/bootstrap/scss/mixins/_breakpoints";
 
@@ -17,6 +18,22 @@
       padding: 0 $pageInset;
     }
   }
+}
+
+h1 {
+  @include h1;
+}
+
+h2 {
+  @include h2;
+}
+
+h3 {
+  @include h3;
+}
+
+h4 {
+  @include h4;
 }
 
 // .container, container-fluid {

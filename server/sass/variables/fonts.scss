@@ -1,32 +1,78 @@
 @import "colors";
 @import "sizes";
 
+// Headers
+$headers-line-height: 1.2;
+
+// H1
+$h1-fontSize: 2.5rem;
+$h1-border-bottom: 1px dotted $gray;
+
+@mixin h1 {
+  border-bottom: $h1-border-bottom;
+  padding: 0 0 0.8rem 0;
+  margin: 0 0 1.5rem 0;
+  font-family: $serif
+  
+}
+
+// H2
+$h2-fontSize: 2rem;
+
+@mixin h2 {
+  margin: 3rem 0 .5rem 0;
+  color: #262626;
+}
+
+// H3
+$h3-fontSize: 1.2rem;
+
+@mixin h3 {
+  margin: 2rem 0 .5rem 0;
+  color: $black;
+}
+
+// H4
+$h4-fontSize: inherit;
+
+@mixin h4 {
+  margin: 2rem 0 .5rem 0;
+  color: $black;
+}
+
+// H5 (are not supported by kth-style)
+$h5-fontSize: 1.1rem;
+
+// H6 (are not supported by kth-style)
+$h6-fontSize: 1rem;
+
 $serif: 'Georgia Regular', 'Georgia', 'garamond pro', garamond, 'times new roman', times, serif;
 $sansSerif: Arial, 'Helvetica Neue', helvetica, sans-serif;
 
-$normalFontSize: 13.5;
+$normalFontSize: 14px;
 $fontMagnificationFactor: 1;
 
-@mixin font-size($font-size: $normalFontSize){
-  $magnifiedFontSize: ($font-size * $fontMagnificationFactor);
-  $rem: ($magnifiedFontSize / 10);
-  font-size: $magnifiedFontSize * 1px;
-  font-size: $rem rem;
-}
-
-@mixin fontProperties($fontSize:$normalFontSize, $fontWeight:normal, $color:$darkBlack, $lineHeight:$bodyLineHeight) {
-  @include font-size($fontSize);
-  color: $color;
-  font-weight: $fontWeight;
-  line-height: $lineHeight;
-}
-
-/** font sizes **/
-@mixin articleTitleFont($color: $darkBlack) {
-  @include fontProperties(34, normal, $color, '110%');
-  font-family: $serif;
-}
-
-@mixin articleSecondTitleFont($color: $darkGray) {
-  @include fontProperties(18, normal, $color, '110%');
-}
+// Code below didn't seem to be used, probably a test of some sort
+// @mixin font-size($font-size: $normalFontSize){
+//   $magnifiedFontSize: ($font-size * $fontMagnificationFactor);
+//   $rem: ($magnifiedFontSize / 10);
+//   font-size: $magnifiedFontSize * 1px;
+//   font-size: $rem rem;
+// }
+//
+// @mixin fontProperties($fontSize:$normalFontSize, $fontWeight:normal, $color:$darkBlack, $lineHeight:$bodyLineHeight) {
+//   @include font-size($fontSize);
+//   color: $color;
+//   font-weight: $fontWeight;
+//   line-height: $lineHeight;
+// }
+//
+// /** font sizes **/
+// @mixin articleTitleFont($color: $darkBlack) {
+//   @include fontProperties(34, normal, $color, '110%');
+//   font-family: $serif;
+// }
+//
+// @mixin articleSecondTitleFont($color: $darkGray) {
+//   @include fontProperties(18, normal, $color, '110%');
+// }

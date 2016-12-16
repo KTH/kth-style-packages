@@ -9,10 +9,6 @@ commonsGulp.setStartpath('/style')
 
 gulp.tasks = commonsGulp.gulp.tasks
 
-/*
- * Place project specific tasks below
- */
-
 gulp.task('default', ['cleanDist'], () => {
   gulp.start('dist')
 })
@@ -33,11 +29,22 @@ gulp.task('dist', function () {
     .pipe($.sourcemaps.write('.'))
     .pipe(gulp.dest('dist/css'))
 
+  gulp.src('server/sass/kth-style.scss')
+    .pipe($.plumber())
+    .pipe($.sourcemaps.init())
+    .pipe($.sass({includePaths: ['server/sass']}).on('error', $.sass.logError))
+    .pipe($.autoprefixer({browsers: ['last 4 versions']}))
+    .pipe(gulp.dest('dist/css'))
+    .pipe($.rename({ suffix: '.min' }))
+    .pipe($.minifyCss())
+    .pipe($.sourcemaps.write('.'))
+    .pipe(gulp.dest('dist/css'))
+
   gulp.src('node_modules/bootstrap/dist/js/bootstrap.min.js')
     .pipe(gulp.dest('dist/js'))
 })
 
 // Listen for changes and rebuild css
 gulp.task('watch', function () {
-  gulp.watch('server/dist/**/*.scss', ['default'])
+  gulp.watch('server/sass/**/*.scss', ['default'])
 })

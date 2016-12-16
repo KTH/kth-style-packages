@@ -15,19 +15,4 @@
 @import "bootstrapOverridePost";
 
 // Our own styling
-@import "blocks/columnSplitter";
-@import "blocks/search";
-@import "blocks/siteName";
-@import "blocks/lang";
-
-@import "slots/breadcrumbs";
-@import "slots/footer";
-@import "slots/header";
-
-@import "common/reset";
-@import "common/common";
-@import "common/ko";
-@import "common/forms";
-@import "common/modals";
-
-@import "variables/fonts"
+@import "commonStyle"

@@ -6,13 +6,39 @@
 
 @import "variables/colors";
 @import "variables/sizes";
-@import "../../node_modules/bootstrap/scss/_variables";
+@import "variables/fonts";
+// @import "../../node_modules/bootstrap/scss/_variables";
 @import "../../node_modules/bootstrap/scss/mixins/_breakpoints";
 
-// Values to override
-$body-bg: $lightGray;
-$font-size-root: 14px;
+// Values in node_modules/bootstrap/scss/_varables to override
 
+// Colors
+$body-bg: $bodyBg;
+
+// Typography
+
+$font-family-sans-serif: $sansSerif;
+$font-family-serif: $serif;
+
+$font-size-root: $normalFontSize;
+
+$font-size-h1: $h1-fontSize;
+$font-size-h2: $h2-fontSize;
+$font-size-h3: $h3-fontSize;
+$font-size-h4: $h4-fontSize;
+$font-size-h5: $h5-fontSize;
+$font-size-h6: $h6-fontSize;
+
+$headings-line-height: $headers-line-height;
+
+$headings-font-family: $serif;
+
+$body-color: $black;
+
+// Spacing
+$spacer:   1.3rem;
+
+// Containers
 $container-max-widths: (
   sm: 540px,
   md: 720px,
