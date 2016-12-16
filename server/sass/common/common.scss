@@ -157,65 +157,6 @@ table {
   cursor: pointer;
 }
 
-.message-base {
-  color: $black;
-  border: 1px solid #e3e5e3;
-  float: left;
-  width: 100%;
-}
-
-.system-message {
-  @extend .message-base;
-  background-color: #FFF07E;
-
-  &.alert {
-    &.alert-warning {
-      &.alert-dismissible {
-        .glyphicon.glyphicon-info-sign {
-          margin-top: 2px;
-          margin-right: 10px;
-          float: left;
-          color: $black;
-        }
-      }
-    }
-  }
-}
-
-.error-message {
-  @extend .message-base;
-
-  &.alert {
-    &.alert-danger {
-      &.alert-dismissible {
-        .glyphicon.glyphicon-exclamation-sign {
-          margin-top: 2px;
-          margin-right: 10px;
-          float: left;
-          color: $black;
-        }
-      }
-    }
-  }
-}
-
-.ok-message {
-  @extend .message-base;
-
-  &.alert {
-    &.alert-success {
-      &.alert-dismissible {
-        .glyphicon.glyphicon-ok {
-          margin-top: 2px;
-          margin-right: 10px;
-          float: left;
-          color: $black;
-        }
-      }
-    }
-  }
-}
-
 .table>thead:first-child>tr:first-child>th {
   border-top: 1px dotted $black;
 }

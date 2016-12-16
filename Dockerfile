@@ -1,9 +1,9 @@
-FROM kthse/kth-nodejs-web:1.4
+FROM kthse/kth-style-web:1.4
 
 # Maintainer
 MAINTAINER Webmaster "webmaster@kth.se"
 
-LABEL name="KTH Node Base Image"
+LABEL name="KTH Style Image"
 LABEL vendor="KTH Royal Institute of Technology"
 LABEL license="The MIT License (MIT)"
 

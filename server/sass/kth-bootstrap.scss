@@ -6,13 +6,13 @@
 */
 
 // bootstrapOverride overrides style values in bootstraps sass files
-@import "bootstrapOverridePre";
+@import "bootstrap/bootstrapOverridePre";
 
 // Bootstrap source
 @import "bootstrap";
 
 // bootstrapOverride overrides styles with css
-@import "bootstrapOverridePost";
+@import "bootstrap/bootstrapOverridePost";
 
 // Our own styling
 @import "commonStyle"

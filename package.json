@@ -1,6 +1,6 @@
 {
   "//": "JSHint configuration - http://jshint.com/docs/options/",
-  "name": "node-web",
+  "name": "KTH-Style",
   "version": "1.0.0",
   "description": "Template project for a node express web server",
   "main": "app.js",
@@ -8,7 +8,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "uri": "https://github.com/KTH/node-web"
+    "uri": "https://github.com/KTH/kth-style"
   },
   "scripts": {
     "//": "Gulp installs css and javascript",
@@ -18,14 +18,14 @@
     "webpackProd": "gulp webpack:prod && gulp webpack:ref",
     "vendorProd": "gulp vendor:prod && gulp vendor:ref",
     "buildConfig": "cross-env NODE_PATH=. NODE_ENV=development node ./buildConfig.js",
-    "postinstall": "gulp && gulp moveAssets && gulp transpileSass && npm run buildConfig",
+    "postinstall": "gulp",
     "preversion": "npm run codecheck && npm run test",
     "postversion": "git push && git push --tags",
     "nodeInspector": "node-inspector --web-port 8890",
     "openDebugBrowser": "sleep 2s && chromium http://127.0.0.1:8890/\\?port\\=5858",
     "installAndStart": "npm install && npm start",
     "startDebug": "NODE_ENV=development node --debug-brk app.js",
-    "start": "gulp vendor:dev && gulp webpack:dev && cross-env NODE_ENV=development concurrently --kill-others \"nodemon app.js\" \"gulp watch\"",
+    "start": "cross-env NODE_ENV=development concurrently --kill-others \"nodemon app.js\" \"gulp watch\"",
     "myDebug": "gulp vendor:dev && gulp webpack:dev && cross-env NODE_ENV=development concurrently --kill-others \"npm run nodeInspector\" \"npm run startDebug\"",
     "debug": "gulp vendor:dev && gulp webpack:dev && cross-env NODE_ENV=development concurrently --kill-others \"npm run startDebug\" \"gulp watch\" \"npm run nodeInspector\" \"npm run openDebugBrowser\""
   },

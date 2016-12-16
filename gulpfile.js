@@ -14,10 +14,10 @@ gulp.task('default', ['cleanDist'], () => {
 })
 
 gulp.task('cleanDist', function () {
-  del(['./dist/**/*.*'])
+  return del(['./dist/**/*.*'])
 })
 
-gulp.task('dist', function () {
+gulp.task('dist', ['distFonts', 'distImagesAndIcons'], function () {
   gulp.src('server/sass/kth-bootstrap.scss')
     .pipe($.plumber())
     .pipe($.sourcemaps.init())
@@ -28,6 +28,8 @@ gulp.task('dist', function () {
     .pipe($.minifyCss())
     .pipe($.sourcemaps.write('.'))
     .pipe(gulp.dest('dist/css'))
+
+// TODO VARFÖR SKAPAS KTH STYLE IMAGES I ROTEN PÅ DIST!?!?!?!
 
   gulp.src('server/sass/kth-style.scss')
     .pipe($.plumber())
@@ -42,6 +44,18 @@ gulp.task('dist', function () {
 
   gulp.src('node_modules/bootstrap/dist/js/bootstrap.min.js')
     .pipe(gulp.dest('dist/js'))
+
+  // TODO Handle more icons? Fontello?
+})
+
+gulp.task('distFonts', function () {
+  return gulp.src('./fonts/**/*.*')
+    .pipe(gulp.dest('./dist/fonts'))
+})
+
+gulp.task('distImagesAndIcons', function () {
+  return gulp.src('./img/**/*.*')
+    .pipe(gulp.dest('./dist/img'))
 })
 
 // Listen for changes and rebuild css
