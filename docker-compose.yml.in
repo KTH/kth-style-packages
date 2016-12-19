@@ -1,13 +1,56 @@
 version: '2'
 
+###############################################
+# SERVICES
+###############################################
 services:
+  #
+  # Web application
+  #
   web:
-    # Existing image in repository
-    # image: kthse/docker pull kthse/kth-style-web:13.37
+    # env_file:
+    #- directory-web-secrets.env
+    # build: .
+    image: kth-docker-registry.sys.kth.se/kth-style-web:0.1
+    environment:
+      # Cellus Deployment
+      SERVICE_TAGS : "app,kth,web,nodejs"
+      SERVICE_PUBLISH : "/style"
 
-    # Build from Dockerfile in current directory
-    build: .
+      SESSION_SECRET: <INSERT SECRET VALUE HERE>
 
-    # Port published from inside the Docker image
+      # Application specific
+      PROXY_PREFIX_PATH : "/style"
+      NODE_ENV : "dev"
+#      NODE_PATH : "/application"
+      SERVER_USE_SSL : "false"
+      SERVER_HOST_URL : "https://www.kth.se"
+      SERVER_PORT : 3000
+
+      BLOCK_API_URL : "https://www.kth.se/cm/"
+      LOGGING_LEVEL : "debug"
+      LOGGING_ACCESS_LOG : "true"
+      LOGGING_CLIENT_LEVEL : "debug"
+
+      REDIS_HOST : "redis"
+      REDIS_PORT : 6379
+
+      CSS_TRANSPILER_FORCE : "false"
+      CSS_TRANSPILER_DEBUG : "false"
+      SESSION_KEY : "directory-web.sid"
+      SESSION_USE_REDIS : "true"
+      SESSION_SECURE_COOKIE : "true"
+
     ports:
-      - 3000
+      - 3010:3000
+
+  #
+  # Redis application cache
+  #
+  redis:
+    image: redis:latest
+    environment:
+      SERVICE_TAGS : "app,storage,redis,stateless,no-scale"
+      SERVICE_PERSISTENT : "yes"
+    ports:
+      - 6379
