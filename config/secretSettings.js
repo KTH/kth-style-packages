@@ -11,29 +11,9 @@ module.exports = {
   hostUrl: getEnv('SERVER_HOST_URL'),
   port: getEnv('SERVER_PORT'),
   secure: {
-    sessionSecret: getEnv('SESSION_SECRET'),
-    apiKey: {
-      sampleApi: getEnv('NODE_API_KEY')
-    },
-    ldap: {
-      // in dev, set this to true to bypass any authorization of the user
-      uri: getEnv('LDAP_URI'),
-      base: getEnv('LDAP_BASE'),
-      filter: getEnv('LDAP_FILTER'),
-      username: getEnv('LDAP_USERNAME'),
-      password: getEnv('LDAP_PASSWORD')
-    }
-  },
-  cas: {
-    ssoBaseURL: getEnv('CAS_SSO_URI')
+    sessionSecret: getEnv('SESSION_SECRET')
   },
   nodeApi: {
-    sampleApi: {
-      https: getEnv('NODE_API_SAMPLE_HTTPS', false),
-      port: getEnv('NODE_API_SAMPLE_PORT'),
-      host: getEnv('NODE_API_SAMPLE_HOST'),
-      proxyBasePath: getEnv('NODE_API_SAMPLE_PATH')
-    }
   },
   blockApi: {
     blockUrl: getEnv('BLOCK_API_URL')
@@ -52,8 +32,8 @@ module.exports = {
   cache: {
     cortinaBlock: {
       redis: {
-        host: getEnv('CACHE_CORTINA_BLOCK_HOST', 'localhost'),
-        port: getEnv('CACHE_CORTINA_BLOCK_PORT', 6379)
+        host: getEnv('REDIS_HOST', 'localhost'),
+        port: getEnv('REDIS_PORT', 6379)
       }
     }
   },
@@ -69,8 +49,8 @@ module.exports = {
       cookie: { secure: getEnv('SESSION_SECURE_COOKIE', false) }
     },
     redisOptions: {
-      host: getEnv('CACHE_CORTINA_BLOCK_HOST', 'localhost'),
-      port: getEnv('CACHE_CORTINA_BLOCK_PORT', 6379)
+      host: getEnv('REDIS_HOST', 'localhost'),
+      port: getEnv('REDIS_PORT', 6379)
     }
   }
 }
