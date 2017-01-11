@@ -106,7 +106,7 @@
   right: 10px;
   display: none;
   z-index: 11;
-  background: url("#{$proxy_prefix_path}/static/img/kth-style/back-to-top.svg") 100% 100% no-repeat transparent;
+  background: url("../../img/kth-style/back-to-top.svg") 100% 100% no-repeat transparent;
   background-size: 50px 50px;
   text-indent: -10000px;
   opacity: 0.8;
@@ -116,5 +116,5 @@
 
 h2.navigationParent {
     margin: 0 38px 14px 0;
-    background: transparent url("#{$proxy_prefix_path}/static/img/kth-style/icons/gray-arrow-left.svg") 27px 7px no-repeat;
+    background: transparent url("../../img/kth-style/icons/gray-arrow-left.svg") 27px 7px no-repeat;
 }

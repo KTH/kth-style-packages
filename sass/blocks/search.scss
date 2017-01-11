@@ -63,14 +63,14 @@
             border: 0;
             float: right;
             display: none;
-            background: url("#{$proxy_prefix_path}/static/img/kth-style/input-clear-gray.svg") 50% 50% no-repeat transparent;
+            background: url("../../img/kth-style/input-clear-gray.svg") 50% 50% no-repeat transparent;
           }
 
           &.filter {
             border-radius: 5px;
             font-size: 11px;
             font-size: 1.1rem;
-            background: url("#{$proxy_prefix_path}/static/img/kth-style/input-clear.svg") 95% 50% no-repeat $green;
+            background: url("../../img/kth-style/input-clear.svg") 95% 50% no-repeat $green;
             color: $white;
             border: 0;
             margin: 4px 0 5px 5px;
@@ -118,7 +118,7 @@
           width: 100px;
           margin: 0;
           float: right;
-          background: url("#{$proxy_prefix_path}/static/img/kth-style/search-icon.svg") 85% 50% no-repeat $lightBlue;
+          background: url("../../img/kth-style/search-icon.svg") 85% 50% no-repeat $lightBlue;
         }
       }
     }

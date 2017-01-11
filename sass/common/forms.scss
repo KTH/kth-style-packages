@@ -353,7 +353,7 @@ form {
   }
 
   select {
-    background: url("#{$proxy_prefix_path}/static/img/kth-style/select-arrow.png") no-repeat 94% 50% $white;
+    background: url("../../img/kth-style/select-arrow.png") no-repeat 94% 50% $white;
     border: 0.1em solid $gray;
     border-radius: 0.3em;
     box-shadow: inset 0 1px 1px $gray;

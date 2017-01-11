@@ -1,11 +1,11 @@
 @import "../../overrides.scss";
 
 .header .secondaryHeader .block.link a.localeLink.en-UK {
-  background-image: url("#{$proxy_prefix_path}/static/img/kth-style/icons/en_UK.svg");
+  background-image: url("../../img/kth-style/icons/en_UK.svg");
   background-position: top right;
 }
 .header .secondaryHeader .block.link a.localeLink {
-  background: url("#{$proxy_prefix_path}/static/img/kth-style/icons/sv_SE.svg") no-repeat scroll 100% 0 transparent;
+  background: url("../../img/kth-style/icons/sv_SE.svg") no-repeat scroll 100% 0 transparent;
   padding-right: 24px;
 }
 
