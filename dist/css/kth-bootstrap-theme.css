@@ -1400,7 +1400,7 @@ form select:hover {
   border: 0;
   outline: none;
   background-color: transparent;
-  height: 25px;
+  height: 30px;
 }
 
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
@@ -1523,6 +1523,115 @@ form select:hover {
     background-position: 0 50%;
     padding-left: 999px;
     white-space: nowrap;
+  }
+}
+
+ul.ui-autocomplete {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  padding-left: 0;
+  margin-left: 0;
+  box-shadow: 1px 1px 5px #b9bbbd;
+  clear: both;
+  width: 300px;
+  max-width: 100%;
+  border: 0;
+  border-bottom: 5px solid #24a0d8;
+  overflow: hidden;
+  z-index: 99;
+  background-color: #fff;
+}
+
+ul.ui-autocomplete.no-images img {
+  display: none;
+}
+
+ul.ui-autocomplete .ui-menu-item {
+  font-size: 1.35rem;
+  cursor: default;
+  display: block;
+  overflow: hidden;
+}
+
+ul.ui-autocomplete .ui-menu-item:nth-child(odd) {
+  background-color: #fafafa;
+}
+
+ul.ui-autocomplete .ui-menu-item.bulk a .label {
+  padding: 5px;
+  margin: 0;
+  display: inline-block;
+}
+
+ul.ui-autocomplete .ui-menu-item a {
+  display: inline-block;
+  font-size: 1.35rem;
+  line-height: inherit;
+  color: #333;
+  padding: 0;
+  overflow: hidden;
+}
+
+ul.ui-autocomplete .ui-menu-item a:hover {
+  text-decoration: none;
+}
+
+ul.ui-autocomplete .ui-menu-item a img {
+  max-width: 40px;
+  max-height: 40px;
+  float: left;
+  padding: 3px;
+  padding-right: 8px;
+}
+
+ul.ui-autocomplete .ui-menu-item a.ui-state-hover {
+  background-color: #e9f5fb;
+  color: #333;
+  cursor: pointer;
+}
+
+ul.ui-autocomplete .ui-menu-item a.ui-state-focus {
+  background-color: #e9f5fb;
+  color: #333;
+}
+
+ul.ui-autocomplete .ui-menu-item a .label {
+  padding: 0;
+  margin: 0;
+  display: inline;
+  font-weight: normal;
+}
+
+ul.ui-autocomplete .ui-menu-item a .label .name {
+  font-weight: 700;
+  color: #000;
+}
+
+ul.ui-autocomplete .ui-menu-item a .label .snippet {
+  font-weight: 400;
+  display: block;
+  font-style: italic;
+  color: #65656c;
+}
+
+ul.ui-autocomplete .ui-menu-item .ui-corner-all {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: auto;
+  display: block;
+  color: #333;
+}
+
+ul.ui-autocomplete .ui-menu-item .ui-corner-all.ui-state-focus, ul.ui-autocomplete .ui-menu-item ul.ui-autocomplete .ui-menu-item .ui-corner-all.ui-state-hover {
+  background-color: #e9f5fb;
+  color: #000;
+}
+
+@media only screen and (max-width: 350px) {
+  ul.ui-autocomplete {
+    width: 100%;
   }
 }
 
@@ -1804,7 +1913,7 @@ form select:hover {
   color: #b9bbbd;
 }
 
-.container {
+.container, container-fluid {
   background-color: #ffffff;
 }
 
