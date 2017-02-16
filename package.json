@@ -3,7 +3,6 @@
   "version": "1.0.2",
   "description": "The KTH style project",
   "main": "/sass/kth-style.scss",
-  "private": true,
   "author": "KTH",
   "license": "MIT",
   "scripts": {
