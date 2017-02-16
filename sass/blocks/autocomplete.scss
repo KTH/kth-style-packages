@@ -1,0 +1,108 @@
+ul.ui-autocomplete {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  padding-left: 0;
+  margin-left: 0;
+  box-shadow: 1px 1px 5px #b9bbbd;
+  clear: both;
+  width: 300px;
+  max-width: 100%;
+  border: 0;
+  border-bottom: 5px solid #24a0d8;
+  overflow: hidden;
+  z-index: 99;
+  background-color: #fff;
+  
+  &.no-images img {
+    display: none;
+  }
+
+  .ui-menu-item {
+    font-size: 1.35rem;
+    cursor: default;
+    display: block;
+    overflow: hidden;
+
+    &:nth-child(odd) {
+      background-color: #fafafa
+    }
+
+    &.bulk a .label {
+      padding: 5px;
+      margin: 0;
+      display: inline-block;
+    }
+
+    a {
+      display: inline-block;
+      font-size: 1.35rem;
+      line-height: inherit;
+      color: #333;
+      padding: 0;
+      overflow: hidden;
+    }
+
+    a:hover {
+      text-decoration: none;
+    }
+
+    a img {
+      max-width: 40px;
+      max-height: 40px;
+      float: left;
+      padding: 3px;
+      padding-right: 8px;
+    }
+
+    a.ui-state-hover {
+      background-color: #e9f5fb;
+      color: #333;
+      cursor: pointer
+    }
+
+    a.ui-state-focus {
+      background-color: #e9f5fb;
+      color: #333
+    }
+
+    a .label {
+      padding: 0;
+      margin: 0;
+      display: inline
+    }
+
+    a .label .name {
+      font-weight: 700;
+      color: #000
+    }
+
+    a .label .snippet {
+      font-weight: 400;
+      display: block;
+      font-style: italic;
+      color: #65656c
+    }
+
+    .ui-corner-all {
+      padding: 0;
+      margin: 0;
+      width: 100%;
+      height: auto;
+      display: block;
+      color: #333
+    }
+
+    .ui-corner-all.ui-state-focus,ul.ui-autocomplete .ui-menu-item .ui-corner-all.ui-state-hover {
+      background-color: #e9f5fb;
+      color: #000
+    }
+
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  ul.ui-autocomplete {
+    width:100%
+  }
+}
