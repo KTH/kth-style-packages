@@ -15,36 +15,26 @@ The purpose of this project is to provide the essential design and style for app
 
 ## How to use kth-style in your project
 
-### Based on the [node-web](https://gita.sys.kth.se/Infosys/node-web) template (with Bower and Gulp)
-
-This is the preferred way since you will always get the latest changes automatically downloaded. 
-
-If you have started a new project based on the [node-web](https://github.com/KTH/node-web) template you have the setup done and the style will be imported via [bower.json](https://gita.sys.kth.se/Infosys/node-web/blob/master/bower.json) to the bower_components directory and moved to /public/css directory the [gulp.js](https://github.com/KTH/node-web/blob/master/gulpfile.js) script.
-
-Changes on the imported style is made in [kth-style](https://github.com/KTH/kth-style) and any project specific style is done in the project itself.
-
-To lock down your project to a specific version of kth-style you go to your bower.json file and change the kth-style dependency:
+### Based on the [node-web](https://github.com/KTH/node-web) template
 
 ```
 ...
     "dependencies" : {
-       "kth-style" : "https://github.com/KTH/kth-style.git#latest"
+       "kth-style" : "https://github.com/KTH/kth-style.git#[v.x.x.x]"
 ...
 ```
-to your commit hash of choice
-  
-```
-...
-   "dependencies" : {
-      "kth-style" : "https://github.com/KTH/kth-style.git#E8vrnk489"
-...
-```
-
-**Proxy application overrides**  
-If your application is going to be proxied in to www.kth.se e.g. www.kth.se/places, you need to add the "proxy prefix path" into file [/public/css/overrides.scss](https://github.com/KTH/places-web/blob/develop/public/css/overrides.scss) so the path for the static resources map the proxy path.
 
 ### Based on any custom project (witout integrated Bower and Gulp)
-If the project do not make use of Bower and Gulp you need to download [Bootstrap](http://getbootstrap.com/getting-started/#download) and import the pre compiled css files from the [dist/css](https://github.com/KTH/kth-style/tree/master/dist/css) directory.
+If the project do not make use of NPM and Gulp you need to download [Bootstrap](http://getbootstrap.com/getting-started/#download) and import the pre compiled css files from the [dist/css](https://github.com/KTH/kth-style/tree/master/dist/css) directory.
+
+### Using KTH Style variables in your project
+If you use kth-node-build-commons to transpile your SASS-files you can import any KTH Style SASS file by referencing it's path relative to node_modules, ie:
+
+```
+@import "kth-style/sass/variables/colors";
+```
+
+If you want to roll your own build step, look at https://github.com/KTH/kth-node-build-commons/blob/master/tasks/sass.js
 
 ### Using it in your site
 Kth-style can be used to easily get the right headers, fonts, colors etc. But where it really shines is when you also use Bootstrap.
