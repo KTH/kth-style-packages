@@ -1,6 +1,6 @@
 {
   "name": "kth-style",
-  "version": "1.2.6",
+  "version": "1.2.7",
   "description": "The KTH style project",
   "main": "/sass/kth-style.scss",
   "author": "KTH",
