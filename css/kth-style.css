@@ -1,6 +1,3 @@
-/*
- * Leave this variable empty. It's a placeholder for project specific paths.
- */
 /** font sizes **/
 /* * * * * * * * * Headline style * * * * * * * * * */
 body, button, input, select, textarea {
@@ -59,7 +56,7 @@ blockquote {
   line-height: 20px;
   font-weight: bold;
   border-top: 2px solid #000000;
-  background: url("/static/img/kth-style/quotation-mark.png") 0 12px no-repeat transparent;
+  background: url("../../img/kth-style/quotation-mark.png") 0 12px no-repeat transparent;
   color: #000000;
   float: left;
   padding: 8px 0 0 50px;
@@ -226,7 +223,7 @@ a.btn {
 }
 
 a.btn.btn-primary {
-  background-color: #1954a6;
+  background-color: #24a0d8;
 }
 
 a.btn.btn-primary.disabled {
@@ -323,9 +320,6 @@ categorylabel itsel is an inline element, typically a single word.
   visibility: visible;
 }
 
-/*
- * Leave this variable empty. It's a placeholder for project specific paths.
- */
 form legend {
   border: 0.1em solid #bdbcbc;
   border-radius: 0.3em;
@@ -699,7 +693,7 @@ form textarea:hover {
 }
 
 form select {
-  background: url("/static/img/kth-style/select-arrow.png") no-repeat 94% 50% #ffffff;
+  background: url("../../img/kth-style/select-arrow.png") no-repeat 94% 50% #ffffff;
   border: 0.1em solid #bdbcbc;
   border-radius: 0.3em;
   box-shadow: inset 0 1px 1px #bdbcbc;
@@ -1361,9 +1355,6 @@ form select:hover {
   padding-left: 15px;
 }
 
-/*
- * Leave this variable empty. It's a placeholder for project specific paths.
- */
 .block.search {
   padding: 0;
   margin: 0;
@@ -1422,14 +1413,14 @@ form select:hover {
   border: 0;
   float: right;
   display: none;
-  background: url("/static/img/kth-style/input-clear-gray.svg") 50% 50% no-repeat transparent;
+  background: url("../../img/kth-style/input-clear-gray.svg") 50% 50% no-repeat transparent;
 }
 
 .block.search form fieldset .button.filter {
   border-radius: 5px;
   font-size: 11px;
   font-size: 1.1rem;
-  background: url("/static/img/kth-style/input-clear.svg") 95% 50% no-repeat #4e7425;
+  background: url("../../img/kth-style/input-clear.svg") 95% 50% no-repeat #4e7425;
   color: #ffffff;
   border: 0;
   margin: 4px 0 5px 5px;
@@ -1470,7 +1461,7 @@ form select:hover {
   width: 100px;
   margin: 0;
   float: right;
-  background: url("/static/img/kth-style/search-icon.svg") 85% 50% no-repeat #24a0d8;
+  background: url("../../img/kth-style/search-icon.svg") 85% 50% no-repeat #24a0d8;
 }
 
 .header .secondaryHeader .block.siteName {
@@ -1505,16 +1496,13 @@ form select:hover {
   }
 }
 
-/*
- * Leave this variable empty. It's a placeholder for project specific paths.
- */
 .header .secondaryHeader .block.link a.localeLink.en-UK {
-  background-image: url("/static/img/kth-style/icons/en_UK.svg");
+  background-image: url("../../img/kth-style/icons/en_UK.svg");
   background-position: top right;
 }
 
 .header .secondaryHeader .block.link a.localeLink {
-  background: url("/static/img/kth-style/icons/sv_SE.svg") no-repeat scroll 100% 0 transparent;
+  background: url("../../img/kth-style/icons/sv_SE.svg") no-repeat scroll 100% 0 transparent;
   padding-right: 24px;
 }
 
@@ -1635,9 +1623,6 @@ ul.ui-autocomplete .ui-menu-item .ui-corner-all.ui-state-focus, ul.ui-autocomple
   }
 }
 
-/*
- * Leave this variable empty. It's a placeholder for project specific paths.
- */
 #footer {
   border-top: 0;
   padding: 10px 38px 38px 38px;
@@ -1669,7 +1654,7 @@ ul.ui-autocomplete .ui-menu-item .ui-corner-all.ui-state-focus, ul.ui-autocomple
 #footer .block.list ul li a {
   display: block;
   padding: 3px 0 3px 15px;
-  background: transparent url("/static/img/kth-style/icons/white-arrow.svg") 5px 10.5px no-repeat;
+  background: transparent url("../../img/kth-style/icons/white-arrow.svg") 5px 10.5px no-repeat;
   color: #ffffff;
 }
 
