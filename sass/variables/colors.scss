@@ -1,40 +1,46 @@
 // *** kth colors ***********************************
 
 // Blue
-$blue: #1954a6;
+$blue: #24a0d8;
 $lightBlue: #24a0d8;
-$hoverBlue: #11386f;
+$lightBlueGray: #e9f5fb;
+$hoverBlue: #1d80ac;
 
 // Green
-$green: #4e7425;
-$lightGreen: #b0c92b;
-$hoverGreen: #344e18;
+$darkGreen: #98ad29;
+$green: #b0c92b;
+$greenHeading: #8b9f22;
+$hoverGreen: #9eb426;
+$lightGreen: #cddc77;
 $successModalGreen: #dff0d8;
 
 // Black
-$black: #111111;
 $darkBlack: #000000;
+$black: #111111;
 $lightBlack: #333333;
 
 // Gray
-$gray: #bdbcbc;
-$darkGray: #6f6f76;
+$darkGray: #65656c;
+$gray: #b9bbbd;
 $lightGray: #e3e5e3;
 $hoverGray: $lightGray;
 
+
 // Red
-$red: #e01f28;
-$darkRed: #9d102d;
+$red: #e4363e;
 $lightRed: #e4363e;
-$hoverRed: #b41820;
+$hoverRed: #9d102d;
 $failModalRed: #f2dede;
+
+// Beige
+$beige: #e3dcc0;
 
 // White
 $white: #ffffff;
 $inputWhite: #fafafa;
 
 //pink
-$pink: #d02f81;
+$pink: #d85497;
 
 //yellow
 $yellow: #fab919;
@@ -54,9 +60,9 @@ $pageBorderColor: #333;
 $pageColor: $white;
 
 // Links
-$standardLinkColor: #005ea5;
-$visitedLinkColor: #4c2c92;
+$standardLinkColor: $blue;
 $linkArrowColor: $red;
+$visitedLinkColor: #4c2c92;
 
 // Tables
 $tableHeaderBackgroundColor: $gray;
