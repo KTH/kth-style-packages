@@ -1,6 +1,3 @@
-/*
- * Leave this variable empty. It's a placeholder for project specific paths.
- */
 /** font sizes **/
 /* * * * * * * * * Headline style * * * * * * * * * */
 body, button, input, select, textarea {
@@ -16,7 +13,7 @@ h1 {
   color: #000000;
   font-weight: normal;
   font-family: "Georgia Regular", "Georgia", "garamond pro", garamond, "times new roman", times, serif;
-  border-bottom: 1px dotted #bdbcbc;
+  border-bottom: 1px dotted #b9bbbd;
   line-height: 1.2;
 }
 
@@ -24,7 +21,7 @@ h2 {
   line-height: 1.2;
   font-size: 18px;
   font-size: 1.8rem;
-  color: #262626;
+  color: #8b9f22;
   font-weight: bold;
   margin: 3rem 0 .5rem 0;
 }
@@ -59,7 +56,7 @@ blockquote {
   line-height: 20px;
   font-weight: bold;
   border-top: 2px solid #000000;
-  background: url("/static/img/kth-style/quotation-mark.png") 0 12px no-repeat transparent;
+  background: url("../../img/kth-style/quotation-mark.png") 0 12px no-repeat transparent;
   color: #000000;
   float: left;
   padding: 8px 0 0 50px;
@@ -107,7 +104,7 @@ table tbody tr:last-child.cke_dialog_ui_hbox {
 }
 
 table tbody tr td {
-  border-top: 1px dotted #bdbcbc;
+  border-top: 1px dotted #b9bbbd;
   margin: 0;
   padding: 5px;
 }
@@ -127,7 +124,7 @@ table tbody tr td {
 }
 
 .glyphicon {
-  color: #1954a6;
+  color: #24a0d8;
   cursor: pointer;
 }
 
@@ -180,7 +177,7 @@ table tbody tr td {
 }
 
 .table > tbody > tr > td {
-  border-top: 1px dotted #bdbcbc;
+  border-top: 1px dotted #b9bbbd;
 }
 
 .table-responsive {
@@ -189,7 +186,7 @@ table tbody tr td {
 
 /* * * * * * * * * Link style * * * * * * * * * */
 a {
-  color: #005ea5;
+  color: #24a0d8;
   text-decoration: none;
 }
 
@@ -198,7 +195,7 @@ a:hover {
 }
 
 a:visited {
-  color: #4c2c92;
+  color: #24a0d8;
 }
 
 a:focus {
@@ -206,11 +203,11 @@ a:focus {
 }
 
 a.secondary {
-  color: #6f6f76;
+  color: #65656c;
 }
 
 a.secondary:hover {
-  color: #005ea5;
+  color: #24a0d8;
 }
 
 a.btn {
@@ -226,16 +223,16 @@ a.btn {
 }
 
 a.btn.btn-primary {
-  background-color: #1954a6;
+  background-color: #24a0d8;
 }
 
 a.btn.btn-primary.disabled {
-  background-color: #6f6f76;
+  background-color: #65656c;
   opacity: 1;
 }
 
 a.btn.btn-primary.disabled:hover {
-  background-color: #6f6f76;
+  background-color: #65656c;
 }
 
 a.btn.btn-primary.disabled:focus {
@@ -244,18 +241,18 @@ a.btn.btn-primary.disabled:focus {
 }
 
 a.btn.btn-primary:focus {
-  box-shadow: 0 0 0.1em 0.2em #1954a6;
+  box-shadow: 0 0 0.1em 0.2em #24a0d8;
   outline: 0;
 }
 
 a.btn.btn-primary:hover {
-  background-color: #11386f;
+  background-color: #1d80ac;
 }
 
 a.btn.btn-default {
   color: #111111;
   background-color: #ffffff;
-  border: 1px solid #bdbcbc;
+  border: 1px solid #b9bbbd;
 }
 
 a.btn.btn-default:hover {
@@ -263,39 +260,39 @@ a.btn.btn-default:hover {
 }
 
 a.btn.btn-success {
-  background-color: #4e7425;
+  background-color: #b0c92b;
 }
 
 a.btn.btn-success.disabled {
-  background-color: #bdbcbc;
+  background-color: #b9bbbd;
   pointer-events: none;
 }
 
 a.btn.btn-success.disabled:hover {
-  background-color: #bdbcbc;
+  background-color: #b9bbbd;
   pointer-events: none;
   cursor: default;
 }
 
 a.btn.btn-success:focus {
-  box-shadow: 0 0 0.1em 0.2em #1954a6;
+  box-shadow: 0 0 0.1em 0.2em #24a0d8;
   outline: 0;
 }
 
 a.btn.btn-success:hover {
-  background-color: #344e18;
+  background-color: #9eb426;
 }
 
 a.btn.btn-danger {
-  background-color: #e01f28;
+  background-color: #e4363e;
 }
 
 a.btn.btn-danger.disabled {
-  background-color: #bdbcbc;
+  background-color: #b9bbbd;
 }
 
 a.btn.btn-danger.disabled:hover {
-  background-color: #bdbcbc;
+  background-color: #b9bbbd;
 }
 
 a.btn.btn-danger:focus {
@@ -304,7 +301,7 @@ a.btn.btn-danger:focus {
 }
 
 a.btn.btn-danger:hover {
-  background-color: #b41820;
+  background-color: #9d102d;
 }
 
 /* categroy / label / tag for (often) a single line of text.  The
@@ -323,11 +320,8 @@ categorylabel itsel is an inline element, typically a single word.
   visibility: visible;
 }
 
-/*
- * Leave this variable empty. It's a placeholder for project specific paths.
- */
 form legend {
-  border: 0.1em solid #bdbcbc;
+  border: 0.1em solid #b9bbbd;
   border-radius: 0.3em;
   font-size: 13.5px;
   font-size: 1.35rem;
@@ -348,9 +342,9 @@ form fieldset {
 
 form input[type="text"] {
   background-color: #ffffff;
-  border: 1px solid #bdbcbc;
+  border: 1px solid #b9bbbd;
   border-radius: 0.3em;
-  box-shadow: inset 0 1px 1px #bdbcbc;
+  box-shadow: inset 0 1px 1px #b9bbbd;
   font-size: 13.5px;
   font-size: 1.35rem;
   height: 2.6em;
@@ -361,9 +355,9 @@ form input[type="text"] {
 
 form input[type="url"] {
   background-color: #ffffff;
-  border: 1px solid #bdbcbc;
+  border: 1px solid #b9bbbd;
   border-radius: 0.3em;
-  box-shadow: inset 0 1px 1px #bdbcbc;
+  box-shadow: inset 0 1px 1px #b9bbbd;
   font-size: 13.5px;
   font-size: 1.35rem;
   height: 2.6em;
@@ -374,9 +368,9 @@ form input[type="url"] {
 
 form input[type="number"] {
   background-color: #ffffff;
-  border: 1px solid #bdbcbc;
+  border: 1px solid #b9bbbd;
   border-radius: 0.3em;
-  box-shadow: inset 0 1px 1px #bdbcbc;
+  box-shadow: inset 0 1px 1px #b9bbbd;
   font-size: 13.5px;
   font-size: 1.35rem;
   height: 2.6em;
@@ -387,9 +381,9 @@ form input[type="number"] {
 
 form input[type="search"] {
   background-color: #ffffff;
-  border: 1px solid #bdbcbc;
+  border: 1px solid #b9bbbd;
   border-radius: 0.3em;
-  box-shadow: inset 0 1px 1px #bdbcbc;
+  box-shadow: inset 0 1px 1px #b9bbbd;
   font-size: 13.5px;
   font-size: 1.35rem;
   height: 2.6em;
@@ -400,9 +394,9 @@ form input[type="search"] {
 
 form input[type="datetime"] {
   background-color: #ffffff;
-  border: 1px solid #bdbcbc;
+  border: 1px solid #b9bbbd;
   border-radius: 0.3em;
-  box-shadow: inset 0 1px 1px #bdbcbc;
+  box-shadow: inset 0 1px 1px #b9bbbd;
   font-size: 13.5px;
   font-size: 1.35rem;
   height: 2.6em;
@@ -413,9 +407,9 @@ form input[type="datetime"] {
 
 form input[type="date"] {
   background-color: #ffffff;
-  border: 1px solid #bdbcbc;
+  border: 1px solid #b9bbbd;
   border-radius: 0.3em;
-  box-shadow: inset 0 1px 1px #bdbcbc;
+  box-shadow: inset 0 1px 1px #b9bbbd;
   font-size: 13.5px;
   font-size: 1.35rem;
   height: 2.6em;
@@ -426,9 +420,9 @@ form input[type="date"] {
 
 form input[type="month"] {
   background-color: #ffffff;
-  border: 1px solid #bdbcbc;
+  border: 1px solid #b9bbbd;
   border-radius: 0.3em;
-  box-shadow: inset 0 1px 1px #bdbcbc;
+  box-shadow: inset 0 1px 1px #b9bbbd;
   font-size: 13.5px;
   font-size: 1.35rem;
   height: 2.6em;
@@ -439,9 +433,9 @@ form input[type="month"] {
 
 form input[type="week"] {
   background-color: #ffffff;
-  border: 1px solid #bdbcbc;
+  border: 1px solid #b9bbbd;
   border-radius: 0.3em;
-  box-shadow: inset 0 1px 1px #bdbcbc;
+  box-shadow: inset 0 1px 1px #b9bbbd;
   font-size: 13.5px;
   font-size: 1.35rem;
   height: 2.6em;
@@ -452,9 +446,9 @@ form input[type="week"] {
 
 form input[type="time"] {
   background-color: #ffffff;
-  border: 1px solid #bdbcbc;
+  border: 1px solid #b9bbbd;
   border-radius: 0.3em;
-  box-shadow: inset 0 1px 1px #bdbcbc;
+  box-shadow: inset 0 1px 1px #b9bbbd;
   font-size: 13.5px;
   font-size: 1.35rem;
   height: 2.6em;
@@ -473,9 +467,9 @@ form input[type="color"] {
 
 form input[type="tel"] {
   background-color: #ffffff;
-  border: 1px solid #bdbcbc;
+  border: 1px solid #b9bbbd;
   border-radius: 0.3em;
-  box-shadow: inset 0 1px 1px #bdbcbc;
+  box-shadow: inset 0 1px 1px #b9bbbd;
   font-size: 13.5px;
   font-size: 1.35rem;
   height: 2.6em;
@@ -486,9 +480,9 @@ form input[type="tel"] {
 
 form input[type="email"] {
   background-color: #ffffff;
-  border: 1px solid #bdbcbc;
+  border: 1px solid #b9bbbd;
   border-radius: 0.3em;
-  box-shadow: inset 0 1px 1px #bdbcbc;
+  box-shadow: inset 0 1px 1px #b9bbbd;
   font-size: 13.5px;
   font-size: 1.35rem;
   height: 2.6em;
@@ -498,7 +492,7 @@ form input[type="email"] {
 }
 
 form input[type="submit"] {
-  background-color: #4e7425;
+  background-color: #b0c92b;
   border: 1px solid transparent;
   border-radius: 0.3em;
   color: #ffffff;
@@ -511,25 +505,25 @@ form input[type="submit"] {
 }
 
 form input[type="submit"]:disabled {
-  background-color: #6f6f76;
+  background-color: #65656c;
 }
 
 form input[type="submit"]:disabled:hover {
-  background-color: #6f6f76;
+  background-color: #65656c;
 }
 
 form input[type="submit"]:focus {
-  background-color: #344e18;
+  background-color: #9eb426;
   box-shadow: 0 0 0.1em 0.2em #24a0d8;
   outline: 0;
 }
 
 form input[type="submit"]:hover {
-  background-color: #344e18;
+  background-color: #9eb426;
 }
 
 form input[type="button"] {
-  background-color: #1954a6;
+  background-color: #24a0d8;
   border: 1px solid transparent;
   border-radius: 0.3em;
   cursor: pointer;
@@ -543,7 +537,7 @@ form input[type="button"] {
 
 form input[type="button"].default {
   background-color: #ffffff;
-  border-color: #bdbcbc;
+  border-color: #b9bbbd;
   color: #111111;
 }
 
@@ -552,25 +546,25 @@ form input[type="button"].default:hover {
 }
 
 form input[type="button"]:disabled {
-  background-color: #6f6f76;
+  background-color: #65656c;
 }
 
 form input[type="button"]:disabled:hover {
-  background-color: #6f6f76;
+  background-color: #65656c;
 }
 
 form input[type="button"]:focus {
-  background-color: #1954a6;
-  box-shadow: 0 0 0.1em 0.2em #1954a6;
+  background-color: #24a0d8;
+  box-shadow: 0 0 0.1em 0.2em #24a0d8;
   outline: 0;
 }
 
 form input[type="button"]:hover {
-  background-color: #11386f;
+  background-color: #1d80ac;
 }
 
 form input[type="reset"] {
-  background-color: #e01f28;
+  background-color: #e4363e;
   border: 1px solid transparent;
   border-radius: 0.3em;
   color: #ffffff;
@@ -583,20 +577,20 @@ form input[type="reset"] {
 }
 
 form input[type="reset"]:disabled {
-  background-color: #6f6f76;
+  background-color: #65656c;
 }
 
 form input[type="reset"]:disabled:hover {
-  background-color: #6f6f76;
+  background-color: #65656c;
 }
 
 form input[type="reset"]:focus {
-  box-shadow: 0 0 0.1em 0.2em #1954a6;
+  box-shadow: 0 0 0.1em 0.2em #24a0d8;
   outline: 0;
 }
 
 form input[type="reset"]:hover {
-  background-color: #b41820;
+  background-color: #9d102d;
 }
 
 form button {
@@ -613,49 +607,49 @@ form button {
 }
 
 form button:focus {
-  box-shadow: 0 0 0.1em 0.2em #1954a6;
+  box-shadow: 0 0 0.1em 0.2em #24a0d8;
   outline: 0;
 }
 
 form button[type="submit"] {
-  background-color: #4e7425;
+  background-color: #b0c92b;
 }
 
 form button[type="submit"]:hover {
-  background-color: #344e18;
+  background-color: #9eb426;
 }
 
 form button[type="submit"]:disabled {
-  background-color: #6f6f76;
+  background-color: #65656c;
 }
 
 form button[type="submit"]:disabled:hover {
-  background-color: #6f6f76;
+  background-color: #65656c;
 }
 
 form button[type="reset"] {
-  background-color: #e01f28;
+  background-color: #e4363e;
 }
 
 form button[type="reset"]:hover {
-  background-color: #b41820;
+  background-color: #9d102d;
 }
 
 form button[type="reset"]:disabled {
-  background-color: #6f6f76;
+  background-color: #65656c;
 }
 
 form button[type="reset"]:disabled:hover {
-  background-color: #6f6f76;
+  background-color: #65656c;
 }
 
 form button[type="button"] {
-  background-color: #1954a6;
+  background-color: #24a0d8;
 }
 
 form button[type="button"].default {
   background-color: #ffffff;
-  border-color: #bdbcbc;
+  border-color: #b9bbbd;
   color: #111111;
 }
 
@@ -664,22 +658,22 @@ form button[type="button"].default:hover {
 }
 
 form button[type="button"]:hover {
-  background-color: #11386f;
+  background-color: #1d80ac;
 }
 
 form button[type="button"]:disabled {
-  background-color: #6f6f76;
+  background-color: #65656c;
 }
 
 form button[type="button"]:disabled:hover {
-  background-color: #6f6f76;
+  background-color: #65656c;
 }
 
 form textarea {
   background-color: #ffffff;
-  border: 1px solid #bdbcbc;
+  border: 1px solid #b9bbbd;
   border-radius: 0.3em;
-  box-shadow: inset 0 1px 1px #bdbcbc;
+  box-shadow: inset 0 1px 1px #b9bbbd;
   font-size: 13.5px;
   font-size: 1.35rem;
   margin: 0.4em 0;
@@ -699,10 +693,10 @@ form textarea:hover {
 }
 
 form select {
-  background: url("/static/img/kth-style/select-arrow.png") no-repeat 94% 50% #ffffff;
-  border: 0.1em solid #bdbcbc;
+  background: url("../../img/kth-style/select-arrow.png") no-repeat 94% 50% #ffffff;
+  border: 0.1em solid #b9bbbd;
   border-radius: 0.3em;
-  box-shadow: inset 0 1px 1px #bdbcbc;
+  box-shadow: inset 0 1px 1px #b9bbbd;
   font-size: 13.5px;
   font-size: 1.35rem;
   height: 2.6em;
@@ -1361,22 +1355,19 @@ form select:hover {
   padding-left: 15px;
 }
 
-/*
- * Leave this variable empty. It's a placeholder for project specific paths.
- */
 .block.search {
   padding: 0;
   margin: 0;
 }
 
 .block.search form fieldset {
-  box-shadow: inset 1px 1px 2px #bdbcbc;
+  box-shadow: inset 1px 1px 2px #b9bbbd;
   border-radius: 10px 0 0 10px;
   width: 70%;
   width: calc(100% - 100px);
   font-size: 13.5px;
   font-size: 1.35rem;
-  border: 1px #bdbcbc solid;
+  border: 1px #b9bbbd solid;
   border-right: 0;
   background-color: #fafafa;
   display: inline-block;
@@ -1422,14 +1413,14 @@ form select:hover {
   border: 0;
   float: right;
   display: none;
-  background: url("/static/img/kth-style/input-clear-gray.svg") 50% 50% no-repeat transparent;
+  background: url("../../img/kth-style/input-clear-gray.svg") 50% 50% no-repeat transparent;
 }
 
 .block.search form fieldset .button.filter {
   border-radius: 5px;
   font-size: 11px;
   font-size: 1.1rem;
-  background: url("/static/img/kth-style/input-clear.svg") 95% 50% no-repeat #4e7425;
+  background: url("../../img/kth-style/input-clear.svg") 95% 50% no-repeat #b0c92b;
   color: #ffffff;
   border: 0;
   margin: 4px 0 5px 5px;
@@ -1450,9 +1441,9 @@ form select:hover {
 }
 
 .block.search form fieldset input[type="text"] {
-  border: 1px solid #bdbcbc;
+  border: 1px solid #b9bbbd;
   border-radius: 10px;
-  box-shadow: inset 1px 1px 2px #bdbcbc;
+  box-shadow: inset 1px 1px 2px #b9bbbd;
   background-color: #ffffff;
   padding-left: 10px;
   margin: 5px 0 5px 0;
@@ -1470,7 +1461,7 @@ form select:hover {
   width: 100px;
   margin: 0;
   float: right;
-  background: url("/static/img/kth-style/search-icon.svg") 85% 50% no-repeat #24a0d8;
+  background: url("../../img/kth-style/search-icon.svg") 85% 50% no-repeat #24a0d8;
 }
 
 .header .secondaryHeader .block.siteName {
@@ -1505,16 +1496,13 @@ form select:hover {
   }
 }
 
-/*
- * Leave this variable empty. It's a placeholder for project specific paths.
- */
 .header .secondaryHeader .block.link a.localeLink.en-UK {
-  background-image: url("/static/img/kth-style/icons/en_UK.svg");
+  background-image: url("../../img/kth-style/icons/en_UK.svg");
   background-position: top right;
 }
 
 .header .secondaryHeader .block.link a.localeLink {
-  background: url("/static/img/kth-style/icons/sv_SE.svg") no-repeat scroll 100% 0 transparent;
+  background: url("../../img/kth-style/icons/sv_SE.svg") no-repeat scroll 100% 0 transparent;
   padding-right: 24px;
 }
 
@@ -1635,15 +1623,12 @@ ul.ui-autocomplete .ui-menu-item .ui-corner-all.ui-state-focus, ul.ui-autocomple
   }
 }
 
-/*
- * Leave this variable empty. It's a placeholder for project specific paths.
- */
 #footer {
   border-top: 0;
   padding: 10px 38px 38px 38px;
   overflow: hidden;
   clear: both;
-  background: #6f6f76;
+  background: #65656c;
   margin-top: 20px;
   margin-right: -38px;
   margin-left: -38px;
@@ -1669,7 +1654,7 @@ ul.ui-autocomplete .ui-menu-item .ui-corner-all.ui-state-focus, ul.ui-autocomple
 #footer .block.list ul li a {
   display: block;
   padding: 3px 0 3px 15px;
-  background: transparent url("/static/img/kth-style/icons/white-arrow.svg") 5px 10.5px no-repeat;
+  background: transparent url("../../img/kth-style/icons/white-arrow.svg") 5px 10.5px no-repeat;
   color: #ffffff;
 }
 
@@ -1831,7 +1816,7 @@ ul.ui-autocomplete .ui-menu-item .ui-corner-all.ui-state-focus, ul.ui-autocomple
 }
 
 .header .secondaryHeader .block.link a {
-  color: #005ea5;
+  color: #24a0d8;
 }
 
 .header .primaryHeader .block.search {
@@ -1978,7 +1963,7 @@ ul.ui-autocomplete .ui-menu-item .ui-corner-all.ui-state-focus, ul.ui-autocomple
   background-color: #dddddd;
   font-size: 1.3rem;
   border-width: 1px 1px 0 1px;
-  border-color: #bdbcbc;
+  border-color: #b9bbbd;
   border-style: dotted;
   padding: 6px 10px;
 }
@@ -1994,7 +1979,7 @@ ul.ui-autocomplete .ui-menu-item .ui-corner-all.ui-state-focus, ul.ui-autocomple
 }
 
 .nav-tabs > li > a:hover {
-  color: #1954a6;
+  color: #24a0d8;
 }
 
 .nav-tabs {
@@ -2018,7 +2003,7 @@ ul.ui-autocomplete .ui-menu-item .ui-corner-all.ui-state-focus, ul.ui-autocomple
   right: 10px;
   display: none;
   z-index: 11;
-  background: url("/static/img/kth-style/back-to-top.svg") 100% 100% no-repeat transparent;
+  background: url("../../img/kth-style/back-to-top.svg") 100% 100% no-repeat transparent;
   background-size: 50px 50px;
   text-indent: -10000px;
   opacity: 0.8;
@@ -2028,5 +2013,5 @@ ul.ui-autocomplete .ui-menu-item .ui-corner-all.ui-state-focus, ul.ui-autocomple
 
 h2.navigationParent {
   margin: 0 38px 14px 0;
-  background: transparent url("/static/img/kth-style/icons/gray-arrow-left.svg") 27px 7px no-repeat;
+  background: transparent url("../../img/kth-style/icons/gray-arrow-left.svg") 27px 7px no-repeat;
 }
