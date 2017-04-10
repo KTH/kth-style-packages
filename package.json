@@ -17,7 +17,9 @@
     "build": "gulp build --preserve-comments",
     "start": "gulp build:dev --preserve-comments && cross-env NODE_ENV=development concurrently --kill-others \"nodemon --ignore dist/**/* app.js\" \"gulp watch\"",
     "test-accessibility": "./accessibility/runPa11y.sh https://app-r.referens.sys.kth.se/style WCAG2AA",
-    "test-accessibility-local": "./accessibility/runPa11y.sh http://localhost:3000/style WCAG2AA"
+    "test-accessibility-local": "./accessibility/runPa11y.sh http://localhost:3000/style WCAG2AA",
+    "preversion": "npm run build && git add ./build && git commit -am \"Automatic deployment build\"",
+    "postversion": "git push && git push --tags"
   },
   "dependencies": {
     "bluebird": "^3.4.6",
