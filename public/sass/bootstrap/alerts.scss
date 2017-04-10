@@ -1,0 +1,67 @@
+/*
+  Bootstrap overrides for alert
+
+  TODO: Go through this and see what can be overriden with variables
+
+  Uses kth-style-icons font. See icons.scss
+*/
+@import "common/icons.scss";
+
+.message-base {
+  color: $black;
+  width: 100%;
+  min-height: 5rem;
+  border: none;
+  border-radius: .15rem;
+  font-weight: 700;
+  position: relative;
+  padding-left: 5rem;
+}
+
+@mixin message-icons-base($color) {
+  font-family: 'kth-style-icons';
+  font-size: 2rem;
+  background-color:darken($color, 10% );
+  color: darken($color, 40% );
+  display: block;
+  padding: 1rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  border-style: solid;
+  border: 1px 0 0px 1px;
+  border-radius: .15rem 0 0 .15rem;
+}
+
+.system-message {
+  @extend .message-base;
+  background-color: $infoYellow;
+  &::before {
+    @include message-icons-base($infoYellow);
+    @extend .icon-info-circled-1:before;
+  }
+}
+
+.error-message {
+  @extend .message-base;
+  background-color: $infoRed;
+  &::before {
+    @include message-icons-base($infoRed);
+    -webkit-font-smoothing: antialiased;
+    font-family: $serif;
+    font-size: 3.5rem;
+    font-weight: 700;
+    padding-top: 0;
+    content: '!';
+  }
+}
+
+.ok-message {
+  @extend .message-base;
+  background-color: $infoGreen;
+  &::before {
+    @extend .icon-check:before;
+    @include message-icons-base($infoGreen);
+  }
+}

@@ -1,0 +1,43 @@
+/*
+    This file has all sorts of things until we find a good place for them
+*/
+
+@import "./variables/sizes";
+
+.tab-content .tab-pane {
+    border: 1px dotted #b9bbbd;
+    padding-top: 10px;
+}
+
+
+
+.header {
+    margin: 0;
+}
+
+#back-to-top {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 11;
+  background: url("../img/kth-style/back-to-top.svg") 100% 100% no-repeat transparent;
+  background-size: 50px 50px;
+  text-indent: -10000px;
+  opacity: 0.8;
+  cursor: pointer;
+  outline: none;
+  opacity: 0;
+  transition: opacity 1.5s;
+
+  &.show {
+    opacity: 1;
+    transition: opacity 1.5s;
+  }
+}
+
+h2.navigationParent {
+    margin: 0 38px 14px 0;
+    background: transparent url("../img/kth-style/icons/gray-arrow-left.svg") 27px 7px no-repeat;
+}

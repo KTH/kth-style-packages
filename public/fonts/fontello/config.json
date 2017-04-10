@@ -1,0 +1,46 @@
+{
+  "name": "kth-style-icons",
+  "css_prefix_text": "icon-",
+  "css_use_suffix": false,
+  "hinting": true,
+  "units_per_em": 1000,
+  "ascent": 850,
+  "glyphs": [
+    {
+      "uid": "14017aae737730faeda4a6fd8fb3a5f0",
+      "css": "check",
+      "code": 59394,
+      "src": "entypo"
+    },
+    {
+      "uid": "8704cd847a47b64265b8bb110c8b4d62",
+      "css": "down-open",
+      "code": 59395,
+      "src": "entypo"
+    },
+    {
+      "uid": "9c7ff134960bb5a82404e4aeaab366d9",
+      "css": "up-open",
+      "code": 59396,
+      "src": "entypo"
+    },
+    {
+      "uid": "d4aeb916de8d3aea716442778346d244",
+      "css": "plus-circled",
+      "code": 59397,
+      "src": "elusive"
+    },
+    {
+      "uid": "e82cedfa1d5f15b00c5a81c9bd731ea2",
+      "css": "info-circled-1",
+      "code": 59398,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "3d4ea8a78dc34efe891f3a0f3d961274",
+      "css": "info-1",
+      "code": 61737,
+      "src": "fontawesome"
+    }
+  ]
+}

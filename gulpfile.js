@@ -1,68 +1,149 @@
-var gulp = require('gulp');
-var sass = require('gulp-sass');
-var cleanCSS = require('gulp-clean-css');
-var rename = require('gulp-rename');
-var del = require('del');
-var runSequence = require('run-sequence');
+'use strict'
+const gulp = require('gulp')
+const mergeStream = require('merge-stream')
 
-gulp.task('default', function(callback) {
-  runSequence(
-    'clean',
-    'sassify',
-    'moveImages',
-    'moveCss',
-    'moveBootstrapFonts',
-    'moveBootstrapCss',
-    'moveBootstrapJs',
-    'moveJquery',
-    callback);
-});
+const del = require('del')
+const gulpLoadPlugins = require('gulp-load-plugins')
+const $ = gulpLoadPlugins()
 
-gulp.task('clean', function () {
-  return del(['./dist', './css/*', './js/*', './fonts/*']);
-});
+const globals = {
+  dirname: __dirname
+}
 
-gulp.task('sassify',  function () {
-  return gulp.src(['./sass/kth-style.scss', './sass/kth-bootstrap-theme.scss'])
-    .pipe(sass({outputStyle: 'expanded'}))
-    .pipe(gulp.dest('./dist/css'))
-    .pipe(cleanCSS({
-      // https://github.com/jakubpawlowicz/clean-css#how-to-use-clean-css-api
-      // fixme how old IE do we support?
-      compatibility: 'ie7'
-    }))
-    .pipe(rename({
-      suffix: '.min'
-    }))
-    .pipe(gulp.dest('./dist/css'));
-});
+const { webpack, moveResources, sass, vendor, clean } = require('kth-node-build-commons').tasks(globals)
 
-gulp.task('moveImages', function() {
-  return gulp.src(['./img/**'])
-    .pipe(gulp.dest('./dist/img'));
-});
+/**
+ * Usage:
+ *
+ *  One-time build of browser dependencies for development
+ *
+ *    $ gulp build:dev [--production | --development]
+ *
+ *  Deployment build
+ *
+ *    $ gulp build
+ *
+ *  Continuous re-build during development
+ *
+ *    $ gulp watch
+ *
+ *  Remove the generated files
+ *
+ *    $ gulp clean
+ *
+ */
 
-gulp.task('moveBootstrapCss', function() {
-  return gulp.src('./node_modules/bootstrap/dist/css/bootstrap.min.css')
-    .pipe(gulp.dest('./css'));
-});
+// *** Deployment helper tasks ***
+gulp.task('webpackDeploy', function () {
+  // Returning merged streams at the end so Gulp knows when async operations have finished
+  return mergeStream(
+    webpack('reference'),
+    webpack('production')
+  )
+})
 
-gulp.task('moveBootstrapJs', function() {
-  return gulp.src('./node_modules/bootstrap/dist/js/bootstrap.min.js')
-    .pipe(gulp.dest('./js'));
-});
+gulp.task('vendorDeploy', function () {
+  // Returning merged streams at the end so Gulp knows when async operations have finished
+  return mergeStream(
+    vendor('reference'),
+    vendor('production')
+  )
+})
 
-gulp.task('moveBootstrapFonts', function() {
-  return gulp.src('./node_modules/bootstrap/dist/fonts/*')
-    .pipe(gulp.dest('./fonts'));
-});
+// *** Development helper tasks ***
+gulp.task('webpack', webpack)
+gulp.task('vendor', vendor)
 
-gulp.task('moveJquery', function() {
-  return gulp.src('./node_modules/jquery/dist/jquery.min.js')
-    .pipe(gulp.dest('./js'));
-});
+gulp.task('moveResources', function () {
+  // Returning merged streams at the end so Gulp knows when async operations have finished
+  moveResources.cleanKthStyle()
 
-gulp.task('moveCss', function() {
-  return gulp.src(['./dist/css/*.css'])
-    .pipe(gulp.dest('./css'));
-});
+  return mergeStream(
+    moveResources.moveKthStyle(),
+    moveResources.moveBootstrap(),
+    moveResources.moveFontAwesome(),
+    // Move project image files
+    gulp.src('./public/img/**/*')
+      .pipe(gulp.dest('dist/img'))
+  )
+})
+
+gulp.task('transpileSass', () => sass())
+
+/* Put any addintional helper tasks here */
+
+/**
+ *
+ *  Public tasks used by developer:
+ *
+ */
+
+gulp.task('clean', clean)
+
+gulp.task('build:dev', ['moveResources', 'vendor', 'webpack', 'dist'], () => sass())
+
+gulp.task('build', ['moveResources', 'vendorDeploy', 'webpackDeploy', 'dist'], () => sass())
+
+gulp.task('watch', ['build:dev'], function () {
+  gulp.watch(['./public/js/app/**/*.js', './public/js/components/**/*'], ['webpack'])
+  gulp.watch(['./public/js/vendor.js'], ['vendor'])
+  gulp.watch(['./public/css/**/*.scss'], ['transpileSass'])
+  gulp.start('watchSass')
+})
+
+/* KTH Style specific tasks */
+
+const distRootFolderName = 'build'
+
+gulp.task('dist', ['cleanDist'], () => {
+  return gulp.start('createDist')
+})
+
+gulp.task('cleanDist', function () {
+  return del([`./${distRootFolderName}/**/*.*`])
+})
+
+const cssImporter = require('node-sass-css-importer')({
+    import_paths: ['public/fonts/fontello/css'] 
+ });
+
+gulp.task('createDist', ['distFonts', 'distImagesAndIcons'], function () {
+  return mergeStream(
+    gulp.src('public/sass/kth-bootstrap.scss')
+      .pipe($.plumber())
+      .pipe($.sourcemaps.init())
+      .pipe($.sass({includePaths: ['node_modules/bootstrap/scss', 'public/sass'], importer: [cssImporter]}).on('error', $.sass.logError))
+      .pipe($.autoprefixer({browsers: ['last 4 versions']}))
+      .pipe(gulp.dest(`${distRootFolderName}/css`))
+      .pipe($.rename({ suffix: '.min' }))
+      .pipe($.minifyCss())
+      .pipe($.sourcemaps.write('.'))
+      .pipe(gulp.dest(`${distRootFolderName}/css`))
+    ,
+    gulp.src('node_modules/bootstrap/dist/js/bootstrap.min.js')
+      .pipe(gulp.dest(`${distRootFolderName}/js`))
+    )
+})
+
+gulp.task('distFonts', function () {
+  return mergeStream(
+    gulp.src('public/fonts/fontello/font/*.*')
+      .pipe(gulp.dest(`./${distRootFolderName}/font`))
+  )
+})
+
+gulp.task('distImagesAndIcons', function () {
+  return gulp.src('public/img/**/*.*')
+    .pipe(gulp.dest(`./${distRootFolderName}/img`))
+})
+
+// Listen for changes and re-dist
+gulp.task('watchSass', function (done) {
+  const NODE_DEV = 'development'
+  const env = process.env.NODE_ENV || NODE_DEV
+  if (env === NODE_DEV || env === 'dev') {
+    return gulp.watch(['public/sass/**/*.scss', 'public/css/**/*.scss', 'public/fonts/**/*.*'], ['dist'], done())
+  } else {
+    done()
+  }
+})

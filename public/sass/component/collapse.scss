@@ -1,0 +1,91 @@
+/*
+  Boostrap Collapse / Panel headings / Rubriklister 
+*/
+
+@import "common/icons.scss";
+@import "variables/colors.scss";
+
+div.card.collapsible {
+
+  .card-header {
+    h4 {
+      margin-top: 0;
+      font-weight: 700;
+      letter-spacing: $moreSpaceLetterSpacing;
+    }    
+  }
+
+  &.white {
+    .card-header {
+      background-color: $white;
+    }
+
+    a[data-toggle~=collapse] {
+      color: $lightBlack;
+      &:before {
+        color: $lightBlack;
+      }
+    }
+  }
+
+  &.blue {
+    .card-header {
+      background-color: $lightBlue;
+    }
+
+    a[data-toggle~=collapse] {
+      color: $white;
+      &:before {
+        color: $white;
+      }
+    }
+  }  
+
+  @mixin iconCommon() {
+    margin-right: 0.5rem;
+    text-decoration: none;
+    font-size: 1.5rem;
+    vertical-align: middle;
+    line-height: 1.2rem;
+  }
+
+  .card-header a[data-toggle~=collapse] { 
+    &[aria-expanded~=false]:before {
+      @include kthStyleIconsFontSetup();
+      @extend .icon-up-open;
+      @include iconCommon();
+      animation: rotateUp .3s ease-in-out forwards;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+
+    &[aria-expanded~=true]:before {
+      @include kthStyleIconsFontSetup();
+      @extend .icon-down-open;
+      @include iconCommon();
+      animation: rotateDown .3s ease-in-out forwards;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+
+  // TODO Can we do a reverse instead?
+
+  @keyframes rotateDown {
+    100% {
+      transform: rotate(-180deg);
+      transform-origin: 50% 50%;
+    }
+  }
+
+  @keyframes rotateUp {
+    100% {
+      transform: rotate(180deg);
+      transform-origin: 50% 50%;
+    }
+  }
+}

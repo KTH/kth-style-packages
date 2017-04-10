@@ -1,0 +1,38 @@
+@import "colors";
+
+// Text
+$textColor: $brighterBlack;
+$textColorBold: $darkBlack;
+$textColorLead: #333;
+$textColorNormal: #333;
+$textColorLink: $blueLink;
+
+// Page
+$thickBorderColor: $blue;
+$pageBorderColor: #333;
+$pageColor: $white;
+$bodyBg: $lightGrey;
+
+// Links
+$standardLinkColor: $blueLink;
+$linkArrowColor: $red;
+
+// Tables
+$tableHeaderBackgroundColor: $grey;
+$tableBodyTextColor: $textColorNormal;
+$tableOddRowBackgroundColor: $lightGrey;
+$tableEvenRowBackgroundColor: $white;
+
+// News and Calendar
+$newsBorderColor: $grey;
+$newsHeaderColor: $green;
+$calendarBorderColor: $grey;
+$calendarHeaderColor: $green;
+
+// List themes
+$defaultThemeUnselectedListItemColor: $grey;
+$defaultThemeSelectedListItemColor: $blue;
+$grayThemeUnselectedListItemColor: $grey;
+$grayThemeSelectedListItemColor: $darkGrey;
+$darkGrayThemeUnselectedListItemColor: $darkGrey;
+$darkGrayThemeSelectedListItemColor: $lightBlack;

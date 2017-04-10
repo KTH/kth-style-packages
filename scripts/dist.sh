@@ -1,17 +1,15 @@
 #!/usr/bin/env bash
 
-#echo 'Running checkout master'
-#git checkout master
+# Add this to a Execute Shell in Jenkins
+# ./scripts/dist.sh
 
-echo 'Running NPM install and invoking gulp script for SASS processing'
-
+echo 'Running NPM install and invoking gulp script for SASS processing and dist'
 npm install
-npm run-script transcompile
 
 echo 'Running git commit'
-git add ./dist
+
+git add ./build
 git commit -am 'Committing dist package by Jenkins [ci skip]'
 
-echo 'Running push origin master'
-#git push origin master
-git push
+echo 'Push to git'
+git push origin HEAD:master

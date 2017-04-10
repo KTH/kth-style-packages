@@ -1,0 +1,214 @@
+{{breadcrumbs breadcrumbsPath lang}}
+
+<h1>Information</h1>
+<article>
+  <section>
+    <p>
+        Systemet ska konsekvent ge användaren den information/ återkoppling hen behöver för att kunna utföra sina aktiviteter och nå sina mål på ett tillfredställande sätt. Användaren ska även när så behövs kunna efterfråga information.
+    </p>
+    <p>
+        Det finns tre olika typer av information. Välj återkoppling utifrån användning (se nedan).
+    </p>
+    <p>
+        Om du är intresserad, läs mer om <a href="https://www.kth.se/social/group/kth-style-guide/page/bakgrund-9/">bakgrund</a> till varför informationsrutorna ser ut och beter sig som det gör.
+    </p>
+    <h2>Välj typ av information</h2>
+    <table class="table">
+      <thead class="thead-default">
+        <tr>
+          <th>Namn</th>
+          <th>Användning</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Bekräfta lyckad aktivitet</td>
+          <td>För att bekräfta att man lyckats utföra en tidigare handling</td>
+        </tr>
+        <tr>
+          <td>Informera</td>
+          <td>För att informera att något har förändrats på en sida eller annat som användaren behöver bli informerad om</td>
+        </tr>
+        <tr>
+          <td>Ge felmeddelande</td>
+          <td>För att informera om att något har gått fel</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <section>
+    <h2>Olika typer av information</h2>
+    <h3>Bekräfta vid lyckad aktivitet</h3>
+    <h4>Fast informationsruta</h4>
+
+    <div class="ok-message alert alert-success alert-dismissible" role="alert">
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+      Dina ändringar sparades.
+    </div>
+
+    <h4>Modal</h4>
+    <p>Stängs automatiskt efter 3 sekunder</p>
+    <button class="btn btn-primary" id="buttonSuccess" data-toggle="modal" data-target="#saveSuccessfulModal">
+      Visa exempel på modal för lyckad sparning.
+    </button>
+
+    <div class="modal fade" id="saveSuccessfulModal" data-backdrop="false" tabindex="-1" role="dialog" aria-labelledby="saveModalLabel">
+      <div class="modal-dialog modal-lg ok-message" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <p class="text-center">Innehållet sparades</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      $('#buttonSuccess').on('mousedown', function() {
+        setTimeout(function() {
+            $('#saveSuccessfulModal').modal('hide')
+        }, 3000);
+      });
+    </script>
+
+  <h4>Användning</h4>
+  <ul>
+    <li>
+      För att bekräfta att man lyckats utföra en tidigare handling.
+    </li>
+    <li>
+      Placera överst på sidan (vilket kan innebära att man behöver "refrecha" sidan)..
+    </li>
+  </ul>
+  <h4>Tänk på att</h4>
+  <ul>
+    <li>
+      Se <a href="#generellariktlinjerinformation">Generella riktlinjer information</a> nedan.
+    </li>
+  </ul>
+</section>
+  
+<section>
+  <h3>Informera</h3>
+  <p>
+    Det finns två olika typer av informationsbehov: systemmeddelande och efterfrågad information.
+  </p>
+  <h4>Systemmeddelande</h4>
+  <div class="system-message alert alert-warning alert-dismissible" role="alert">
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+    Vi kommer att uppdatera applikationen kl. 16:00. Vänligen spara dina ändringar och logga ut innan.
+  </div>
+  <h4>Användning</h4>
+  <ul>
+    <li>
+      För att informera användaren på en sida när användaren inte efterfrågat informationen.
+    </li>
+    <li>
+      Placera
+      <ul>
+        <li>
+          Överst på sidan (vilket kan innebära att man behöver "refrecha" sidan)
+        </li>
+        <li>
+         Eller när det behövs, kila in den på rätt plats på sidan (t ex för information i schemat som gäller visst datum).
+        </li>
+      </ul>
+    </li>
+  </ul>
+    <h4>Tänk på att</h4>
+    <ul>
+      <li>
+        Se <a href="#generellariktlinjerinformation">Generella riktlinjer information</a> nedan.
+      </li>
+    </ul>
+    <h4>Efterfrågad information</h4>
+    Öppna informativ modalruta<i class="icon-info-circled-1" data-toggle="modal" data-target="#infoModal"></i>
+
+    <div class="modal fade" id="infoModal" tabindex="-1" role="dialog" aria-labelledby="infoModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="infoModalLabel">Rubrik</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                  <p>En informationstext...</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Stäng</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h4>Användning</h4>
+    <ul>
+      <li>
+        För att informera användaren när denne efterfrågat informationen (t ex hjälp-information)
+      </li>
+    </ul>
+    <h4>Tänk på att</h4>
+    <ul>
+      <li>
+        Se <a href="#generellariktlinjerinformation">Generella riktlinjer information</a> nedan.
+      </li>
+    </ul>
+    <h3 id="ge_felmeddelande">Ge felmeddelande</h3>
+    <p>
+      Först fundera på om det går att hjälpa användaren att undvika fel (länk till Tillgänglig kod).
+    </p>  
+    <div class="error-message alert alert-danger alert-dismissible" role="alert">
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+       <span aria-hidden="true">&times;</span>
+      </button>
+      Det går inte att hämta informationen just nu.
+    </div>
+    <h4>Användning</h4>
+    <ul>
+      <li> 
+        För att informera om att något har gått fel.
+      </li>
+      <li>
+        Placera
+      <ul>
+        <li>
+            Överst på sidan (vilket kan innebära att man behöver "refrecha" sidan). 
+        </li>
+        <li>
+            För flera fel på en sida (t ex formulär), komplettera med att också markera de fält som är felaktiga med anslutande röd text.
+        </li>
+      </ul>
+      </li>
+    </ul>
+    <h4>Tänk på att</h4>
+    <ul>
+      <li>
+        Ge tydliga instruktioner som:
+      <ul>
+        <li>
+          Hjälper användaren att hitta var problemet är.
+        </li>
+        <li>
+          Förklarar vad som hänt, varför det blivit fel.
+        </li>
+        <li>
+          Föreslår hur användaren ska göra för att åtgärda felet.
+        </li>
+      </ul>
+      </li>
+      <li>
+        Se <a href="#generellariktlinjerinformation">Generella riktlinjer för information</a> nedan.
+      </li>
+    </ul>
+    <h2 id="generellariktlinjerinformation">Generella riktlinjer information</h2>
+    <p>Säkerställ att instruktioner är tydliga och lätta att förstå genom att:</p>
+    <ul>
+      <li>Undvik tekniskt språk.</li>
+      <li>Beskriv det indata format som krävs.</li>
+    </ul>
+  </section>
+</article>
