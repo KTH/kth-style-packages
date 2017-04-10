@@ -31,7 +31,6 @@ node_modules
 bundles
 public/js/app/config*.js
 dist
-build
 
 # Docker
 docker-compose*.yml
