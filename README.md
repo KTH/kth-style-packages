@@ -4,7 +4,6 @@
 
 The purpose of this project is to provide the essential design and style for applications within KTH and make the development process of these applications faster. The project contain style sheets and SASS files which makes a good start for new projects. You can choose to import and use pre made .css files or .scss files to build upon in your project.
 
-
 ## How to make a new version of [kth-style](https://gita.sys.kth.se/Infosys/kth-style)
 1. Clone the kth-style repository
 2. Make the changes you want in the SASS (scss) files
