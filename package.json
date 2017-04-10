@@ -9,7 +9,7 @@
     "test": "echo \"No test specified\"",
     "//": "Gulp installs css and javascript",
     "transcompile": "gulp default",
-    "preversion": "npm run transcompile && git add . && git commit -am \"Automatic deployment build\"",
+    "preversion": "npm run transcompile && git add ./dist && git commit -am \"Automatic deployment build\"",
     "postversion": "git push && git push --tags"
   },
   "repository": {
