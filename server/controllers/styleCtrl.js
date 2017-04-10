@@ -15,6 +15,9 @@ module.exports = {
   getHeadlines: (req, res) => { res.render('headlines', { breadcrumbsPath: [{ label: 'Rubriker' }] }) },
   getTables: (req, res) => { res.render('tables', { breadcrumbsPath: [{ label: 'Tabeller' }] }) },
   getText: (req, res) => { res.render('text', { breadcrumbsPath: [{ label: 'Textstruktur' }] }) },
+  getTextExample: (req, res) => { res.render('textexample', { breadcrumbsPath: [{ label: 'Textexempel' }] }) },
+
+
   getForms: (req, res) => { res.render('forms', { breadcrumbsPath: [{ label: 'Formulär' }] }) },
   getLists: (req, res) => { res.render('lists', { breadcrumbsPath: [{ label: 'Listor' }] }) },
   getButtons: (req, res) => { res.render('buttons', { breadcrumbsPath: [{ label: 'Knappar' }] }) },

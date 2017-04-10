@@ -25,6 +25,10 @@ module.exports = {
     uri: routing.prefix('/text'),
     method: 'GET'
   },
+  textexample: {
+    uri: routing.prefix('/textexample'),
+    method: 'GET'
+  },
   forms: {
     uri: routing.prefix('/forms'),
     method: 'GET'
