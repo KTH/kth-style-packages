@@ -1,12 +1,42 @@
-# IDEA specific files
-*.iml
+.DS_Store
+
+.git/
+
+# IDEA specific
 .idea
+*.iml
 
-# Packages
-node_modules
+# VS Code specific
+.vscode
+jsconfig.json
+typings/*
+typings.json
 
-# Log files
+# Eclipse specific
+.jshintrc
+.project
+.settings/
+
+# Settings
+config/localSettings.js
+
+# Logs
+logs/*
 *.log
 
-# Config
-config/localSettings.js
+# Dependency directory for NPM
+node_modules
+
+# Built at startup
+bundles
+public/js/app/config*.js
+dist
+build
+
+# Docker
+docker-compose*.yml
+*.env
+#yarn.lock
+
+accessibility/reports
+

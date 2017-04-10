@@ -1,93 +1,66 @@
-# KTH Style [![Build Status](https://travis-ci.org/KTH/kth-style.svg?branch=master)](https://travis-ci.org/KTH/kth-style)
+KTH Style [![Build Status](https://travis-ci.org/KTH/kth-style-web.svg?branch=master)](https://travis-ci.org/KTH/kth-style-web)
+========
 
 ## Description
 
 The purpose of this project is to provide the essential design and style for applications within KTH and make the development process of these applications faster. The project contain style sheets and SASS files which makes a good start for new projects. You can choose to import and use pre made .css files or .scss files to build upon in your project.
 
+KTH Style builds an own dist of Bootstrap v4 (https://v4-alpha.getbootstrap.com/) which is themed with KTH Style colors, margins etc.
 
-## How to make a new version of [kth-style](https://gita.sys.kth.se/Infosys/kth-style)
-1. Clone the kth-style repository
-2. Make the changes you want in the SASS (scss) files
-3. Commit and sync the changes to the kth-style repository
-4. Jenkins will now run npm install and the gulp script which compiles the SASS files and create/minifies them into css files and creates a dist which is pushed back to the kth-style repository
-5. You are now ready to import the new files to your project.
+## Develop in KTH Style
 
-
-## How to use kth-style in your project
-
-### Based on the [node-web](https://github.com/KTH/node-web) template
-
+### How to start the application on local machine
 ```
-...
-    "dependencies" : {
-       "kth-style" : "https://github.com/KTH/kth-style.git#[v.x.x.x]"
-...
+$ git clone git@github.com:KTH/kth-style-web.git
+$ npm install
+$ npm start
 ```
+Open the following url in the browser: http://localhost:3000/style
 
-### Based on any custom project (witout integrated Bower and Gulp)
-If the project do not make use of NPM and Gulp you need to download [Bootstrap](http://getbootstrap.com/getting-started/#download) and import the pre compiled css files from the [dist/css](https://github.com/KTH/kth-style/tree/master/dist/css) directory.
+### Project 
 
-### Using KTH Style variables in your project
-If you use kth-node-build-commons to transpile your SASS-files you can import any KTH Style SASS file by referencing it's path relative to node_modules, ie:
+KTH Style is based on Bootstrap which uses Sass (http://sass-lang.com/).
 
-```
-@import "kth-style/sass/variables/colors";
-```
+In the catalog **public/sass** you will find our kth specific Sass files (.scss) which transpiles together with Bootstraps Sass files.
 
-If you want to roll your own build step, look at https://github.com/KTH/kth-node-build-commons/blob/master/tasks/sass.js
+The Sass entry point for this project is **public/sass/kth-bootstrap.scss**. This file imports both Bootstrap and KTH-Style files in a certain order to create our dist.
 
-### Using it in your site
-Kth-style can be used to easily get the right headers, fonts, colors etc. But where it really shines is when you also use Bootstrap.
+Some things can be overriden in Boostrap before the Sass is transpiled into CSS. Examples are colors, widths, margins and so on. By looking into **node_modules/bootstrap/scss/_variables.scss** you can see which things that can be overriden. Do not change values in **node_modules/bootstrap/scss/_variables.scss**. Find something you would like to change and copy that line.
 
-A page in your application should have these links (of course you can place these files anywhere you want to). Observe that if you have a application specific CSS file it should be placed after the kth-style css files.
+Example: **$font-size-h1: 2.5rem !default;**
 
-It would look something like this.
+Notice the **!default**. This means that the variable $font-size-h1 will be set to 2.5 rem ONLY if it has not been set before. This is how we can override values, be setting the variable before **node_modules/bootstrap/scss/_variables.scss** is called. 
 
-```
-  <link rel="stylesheet" type="text/css" media="screen" href="/static/css/bootstrap/bootstrap.min.css" />
-  <link rel="stylesheet" type="text/css" media="screen" href="/static/css/kth-style/kth-style.css" />
-  <link rel="stylesheet" type="text/css" media="screen" href="/static/css/kth-style/kth-bootstrap-theme.css" />
-  
-  <link rel="stylesheet" type="text/css" media="screen" href="/static/css/you-super-awesome-override.css" />
-```
+Open **public/sass/bootstrap/overridePre.scss** and paste **$font-size-h1: 2.5rem !default;**. Remove the **!default** part and set your new value, so the line looks something like this: **$font-size-h1: 3rem;**.
 
-and have this as its body
+As you probably already noticed in **public/sass/kth-bootstrap.scss** the **public/sass/bootstrap/overridePre.scss** is imported first of all files. Voila. We now changed the value of $font-size-h1 to 3rem in the build.
 
-```
-    <body>
-      <div>
-          <div class="container">
-              <div class="row">
-                  <div class="col-md-12">
-                    <!-- your page here -->
-                 </div>
-              </div>
-          </div>
-      </div>
-    </body>
-```
+Unfortunately Boostrap does not give you the option to override everything so sometimes you will need to a standard CSS override i.e. the last CSS rule wins. Place these things in **public/sass/bootstrap/overridePost.scss**
 
-This will result in the correct KTH padding on the sides of the page.
+#### Icons
+We use icons from fontello.com. The icons are downloaded and placed in **public/fonts/fontello**. 
+If you would like to add an icon follow these steps:
+1. Upload the icon-config file (**public/fonts/fontello/config.json**) to http://fontello.com by clicking the button with the spanner in the head.
+2. Select the icons you want to include. 
+3. Download the new setup by clicking the button "Download webfont"
+4. Unzip the file and replace the entire fontello catalog. (**public/fonts/fontello**)
 
-Some quick notes on using bootstrap:
+The CSS for the icons are transpiled/merged with our Sass. This happends in **public/sass/common/icons.scss** and is handled by a plugin called node-sass-css-importer (https://www.npmjs.com/package/node-sass-css-importer). Overrides and things related should be placed here.
 
-+ Never use more than one container on a page. In other words, when using the code above, that´s it.
-+ When using a row it´s good practice to also use columns.
-+ Read more on the Bootstrap page: [Bootstrap](http://getbootstrap.com/getting-started/)
+The icons are moved to build catalog through a gulptask during build.   
 
-## Development of KTH-Style
-When doing improvements on the project and want to test locally, run gulp with this command:
+## Migrate from KTH Style 1.x (WORK IN PROGRESS)
+ - Glyphicons are now removed as standard icons in Bootstrap. We now use Fontello (fontello.com). See the icons section in the "Develop in KTH Style" section
 
-```
-$ gulp
-```
-and then restart the application.
+## TODO
+- Add new icons and handle licenses for fontello. (icon to add "plus-circle" from Entypo)
+- Create Example box around kth-style examples in this doc.
+- Support fullscreen (like ambassadörswebben)
+- Investigare on small buttons... how do they work with <buttons>
+- A test page with many examples of buttons ...
+- Set title on every page 
+- Alla buttons ska inte få style av typen/klassen .btn. Se exempel "kopiera kod"
+- buttons.hb - secondary-knappen anbänder fel klass? Default?
+- Mobile
+  - Storlek på knappar bör tänkas igenom. Fullbredd?
 
-#### The reference environment
-When pushing to the repository [kth-style](https://github.com/KTH/kth-style) Jenkins listen, build the project and pushing it to [http://kth-style-1-r.referens.sys.kth.se:3000/kth-style](http://kth-style-1-r.referens.sys.kth.se:3000/kth-style)
-
-#### TODO
-- Documentation: kth-style is imported in bootstrap-theme
-- Code: Get header/footer through api. Can take a name and other config to form the perfect header for the application
-- Code: Implement container-fluid
-- DevOps: Builds are not pushed 
