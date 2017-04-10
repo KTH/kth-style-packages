@@ -1,0 +1,19 @@
+/*
+ KTH Bootstrap
+
+ This is the root scss file for the bootstrap distribution. The entry point for
+ the gulp sass build.
+*/
+
+// overrides style values in bootstraps sass files
+@import "bootstrap/overridePre";
+
+// Bootstrap source
+@import "bootstrap";
+
+// overrides styles with css - all that can't be overriden in the pre-override step
+@import "bootstrap/overridePost";
+
+// our own styling
+@import "commonStyle";
+

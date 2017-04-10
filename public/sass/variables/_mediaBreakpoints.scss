@@ -1,0 +1,31 @@
+/* 
+  This i legacy from KTH Style 1.0. We should either change these to use variables from Bootstrap or
+  use Boostraps own helpers
+*/
+
+$tablet-width: 48em;
+$desktop-width: 62em;
+
+@mixin onlyPhone {
+  @media (max-width: #{$tablet-width - 0.1em}) {
+    @content;
+  }
+}
+
+@mixin onlyTablet {
+  @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 0.1em}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: #{$tablet-width}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}

@@ -1,0 +1,50 @@
+.nav-tabs-justified>.active>a,
+.nav-tabs-justified>.active>a:focus,
+.nav-tabs-justified>.active>a:hover,
+.nav-tabs.nav.nav-justified>.active>a,
+.nav-tabs.nav.nav-justified>.active>a:focus,
+.nav-tabs.nav.nav-justified>.active>a:hover,
+.nav-tabs.nav.nav>.active>a,
+.nav-tabs.nav.nav>.active>a:focus,
+.nav-tabs.nav.nav>.active>a:hover {
+    border-width: 1px 1px 0 1px;
+    border-color:  #b9bbbd;
+    border-style: dotted;
+    border-bottom: solid $white 2px;
+    margin-bottom: -1px;
+    background-color: $white;
+    padding-bottom: 10px;
+}
+
+.nav-tabs.nav>li {
+    margin-bottom: -1px;
+}
+
+.nav-tabs.nav>li>a,
+.nav-tabs.nav.nav-justified>li>a {
+    border-radius: 0;
+    background-color: #dddddd;
+    font-size: 1.3rem;
+    border-width: 1px 1px 0 1px;
+    border-color:  $gray;
+    border-style: dotted;
+    padding: 6px 10px;
+}
+
+.nav-tabs>li>a, .nav-tabs>li>a:visited,
+.nav-tabs.nav-justified>li>a, .nav-tabs>li>a:visited {
+    margin-right: 5px;
+    color: $black;
+}
+
+.nav-tabs.nav>li:last-child>a {
+    margin-right: 0;
+}
+
+.nav-tabs>li>a:hover {
+    color: $blue;
+}
+
+.nav-tabs {
+    border-width: 0;
+}
