@@ -29,12 +29,8 @@ function getEnv () {
     return 'dev'
   }
 
-  if (/^prod/i.test(env)) {
+  if (/^prod/i.test(env) || /^ref/i.test(env)) {
     return 'prod'
-  }
-
-  if (/^ref/i.test(env)) {
-    return 'ref'
   }
 
   return 'dev'
@@ -51,7 +47,6 @@ server.use(config.proxyPrefixPath.uri + '/static/browserConfig', browserConfigHa
 server.use(config.proxyPrefixPath.uri + '/static', express.static('./dist'))
 // Map kth-style
 server.use(config.proxyPrefixPath.uri + '/static/style', express.static('./build'))
-server.use(config.proxyPrefixPath.uri + '/static/style', express.static('./dist/css'))
 // Return 404 if static file isn't found so we don't go through the rest of the pipeline
 server.use(config.proxyPrefixPath.uri + '/static', function (req, res, next) {
   var error = new Error('File not found: ' + req.originalUrl)
