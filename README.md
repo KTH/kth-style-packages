@@ -66,8 +66,6 @@ KTH Style is currently in alpha. Changes are commited and pushed in the usual wa
 
 *REMEMBER: Don't change version in the package.json!*
 
-*One time setup: set login credentials to KTH's npm account locally.*
-
 then commit everyting you have in your local repo and 
 
 ```
