@@ -3,6 +3,8 @@ KTH Style [![Build Status](https://travis-ci.org/KTH/kth-style-web.svg?branch=ma
 
 ## Description
 
+*If you are looking for version 1 of KTH-Style see: https://github.com/KTH/kth-style/tree/v1*
+
 The purpose of this project is to provide the essential design and style for applications within KTH and make the development process of these applications faster. The project contain style sheets and SASS files which makes a good start for new projects. You can choose to import and use pre made .css files or .scss files to build upon in your project.
 
 KTH Style builds an own dist of Bootstrap v4 (https://v4-alpha.getbootstrap.com/) which is themed with KTH Style colors, margins etc.
@@ -37,6 +39,16 @@ As you probably already noticed in **public/sass/kth-bootstrap.scss** the **publ
 
 Unfortunately Boostrap does not give you the option to override everything so sometimes you will need to a standard CSS override i.e. the last CSS rule wins. Place these things in **public/sass/bootstrap/overridePost.scss**
 
+In **commonStyle.scss** we add everything that goes beyond Boostrap. 
+
+This is a brief description of the catalogs:
+
+- blocks - standard building blocks of/for the kth.se site.
+- common - when it's hard to define
+- component - style for what can be described as components
+- slots - similar to blocks, but usually fills the entire width of the page
+- variables - variables used through out the project
+
 #### Icons
 We use icons from fontello.com. The icons are downloaded and placed in **public/fonts/fontello**. 
 If you would like to add an icon follow these steps:
@@ -48,6 +60,25 @@ If you would like to add an icon follow these steps:
 The CSS for the icons are transpiled/merged with our Sass. This happends in **public/sass/common/icons.scss** and is handled by a plugin called node-sass-css-importer (https://www.npmjs.com/package/node-sass-css-importer). Overrides and things related should be placed here.
 
 The icons are moved to build catalog through a gulptask during build.   
+
+### Release
+KTH Style is currently in alpha. Changes are commited and pushed in the usual way to GitHub but when it's time to release a new version this is procedure:  
+
+*REMEMBER: Don't change version in the package.json!*
+
+*One time setup: set login credentials to KTH's npm account locally.*
+
+then commit everyting you have in your local repo and 
+
+```
+$ npm version prerelease
+```
+
+The new version is released to npm and can be found here https://www.npmjs.com/package/kth-style. Since KTH Style currently has two different versions the latest release will be seen here. To view all releases you can type the following in you terminal: 
+
+```
+$ npm show kth-style versions
+```
 
 ## Migrate from KTH Style 1.x (WORK IN PROGRESS)
  - Glyphicons are now removed as standard icons in Bootstrap. We now use Fontello (fontello.com). See the icons section in the "Develop in KTH Style" section

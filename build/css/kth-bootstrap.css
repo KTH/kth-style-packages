@@ -8107,27 +8107,6 @@ form select {
     box-shadow: 0 0 0.1em 0.2em #e3e5e3;
     outline: 0; }
 
-.well {
-  min-height: 20px;
-  padding: 19px;
-  margin-bottom: 20px;
-  background-color: #f5f5f5;
-  border: 1px solid #e3e3e3;
-  border-radius: 4px;
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05); }
-
-.well blockquote {
-  border-color: #ddd;
-  border-color: rgba(0, 0, 0, 0.15); }
-
-.well-lg {
-  padding: 24px;
-  border-radius: 6px; }
-
-.well-sm {
-  padding: 9px;
-  border-radius: 3px; }
-
 /*
   Icons are imported from fontello.com. The CSS import is handled by the module/package 
   node-sass-css-importer (https://www.npmjs.com/package/node-sass-css-importer) which
@@ -8196,6 +8175,27 @@ form select {
 
 .icon-info-circled:before {
   color: #1954a6; }
+
+.well {
+  min-height: 20px;
+  padding: 19px;
+  margin-bottom: 20px;
+  background-color: #f5f5f5;
+  border: 1px solid #e3e3e3;
+  border-radius: 4px;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05); }
+
+.well blockquote {
+  border-color: #ddd;
+  border-color: rgba(0, 0, 0, 0.15); }
+
+.well-lg {
+  padding: 24px;
+  border-radius: 6px; }
+
+.well-sm {
+  padding: 9px;
+  border-radius: 3px; }
 
 /*
   Variables and mixins for fonts.
@@ -8386,10 +8386,3 @@ div.card.collapsible .card-header a[data-toggle~=collapse][aria-expanded~=true]:
   100% {
     transform: rotate(180deg);
     transform-origin: 50% 50%; } }
-
-/*
-  Variables and mixins for fonts.
-
-  Variables should be created and used for everything that can be overridden in
-  Bootstraps preStep.
-*/
