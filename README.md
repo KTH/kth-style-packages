@@ -1,17 +1,25 @@
-# KTH Style [![Build Status](https://travis-ci.org/KTH/kth-style.svg?branch=master)](https://travis-ci.org/KTH/kth-style)
+# KTH Style [![Build Status](https://travis-ci.org/KTH/kth-style.svg?branch=v1)](https://travis-ci.org/KTH/kth-style)
 
 ## Description
 
 The purpose of this project is to provide the essential design and style for applications within KTH and make the development process of these applications faster. The project contain style sheets and SASS files which makes a good start for new projects. You can choose to import and use pre made .css files or .scss files to build upon in your project.
 
-## How to make a new version of [kth-style](https://gita.sys.kth.se/Infosys/kth-style)
+## How to make a new version of [kth-style](https://gita.sys.kth.se/Infosys/kth-style/tree/v1)
 1. Clone the kth-style repository
 2. Make the changes you want in the SASS (scss) files
-3. Commit and sync the changes to the kth-style repository
-4. Jenkins will now run npm install and the gulp script which compiles the SASS files and create/minifies them into css files and creates a dist which is pushed back to the kth-style repository
-5. You are now ready to import the new files to your project.
+3. Commit 
+4. $ npm version patch (or the version update you prefer)
 
+## How to use kth-style in your project
 
+```
+...
+    "dependencies" : {
+       "kth-style" : "^v1.2.10]"
+...
+```
+
+## The information below is mostly outdated. You have been warned!
 ## How to use kth-style in your project
 
 ### Based on the [node-web](https://github.com/KTH/node-web) template
