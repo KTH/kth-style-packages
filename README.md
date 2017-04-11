@@ -74,7 +74,7 @@ then commit everyting you have in your local repo and
 $ npm version prerelease
 ```
 
-The new version is released to npm and can be found here https://www.npmjs.com/package/kth-style. Since KTH Style currently has two different versions the latest release will be seen here. To view all releases you can type the following in you terminal: 
+The new version is released to npm and can be found here https://www.npmjs.com/package/kth-style. Since KTH Style currently has two different versions (v1 and v2) the latest released will be seen here. To view all releases you can type the following in you terminal: 
 
 ```
 $ npm show kth-style versions
