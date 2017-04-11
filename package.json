@@ -2,7 +2,7 @@
   "//": "JSHint configuration - http://jshint.com/docs/options/",
   "name": "kth-style",
   "version": "2.0.0-alpha.6",
-  "description": "KTH Style - a custom build of Bootstrap 4. The purpose of this project is to provide the essential design and style for applications within KTH and make the development process of these applications faster.",
+  "description": "KTH CSS. A custom build of Bootstrap 4. The purpose of this project is to provide the essential design and style for applications within KTH and make the development process of these applications faster.",
   "main": "app.js",
   "private": false,
   "license": "MIT",
@@ -28,9 +28,11 @@
     "co": "^4.6.0",
     "component-registry": "^0.2.0",
     "cookie-parser": "^1.4.2",
+    "css": "2.2.1",
     "dotenv": "^4.0.0",
     "express": "^4.13.4",
     "express-handlebars": "^3.0.0",
+    "gulp-header": "^1.8.8",
     "jquery": "^3.1.0",
     "knockout": "^3.4.0",
     "knockout.viewmodel": "https://github.com/KTH/knockout.viewmodel.git#v2.0.3",
@@ -53,8 +55,7 @@
     "merge-stream": "^1.0.1",
     "passport": "^0.3.2",
     "safe-utils": "^0.1.1",
-    "sass-extract": "^0.3.4",
-    "css": "2.2.1"
+    "sass-extract": "^0.3.4"
   },
   "devDependencies": {
     "autoprefixer": "6.5.3",

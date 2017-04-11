@@ -1,7 +1,7 @@
 'use strict'
 const gulp = require('gulp')
 const mergeStream = require('merge-stream')
-
+var header = require('gulp-header');
 const del = require('del')
 const gulpLoadPlugins = require('gulp-load-plugins')
 const $ = gulpLoadPlugins()
@@ -103,9 +103,23 @@ gulp.task('cleanDist', function () {
   return del([`./${distRootFolderName}/**/*.*`])
 })
 
+
+// Module for importing CSS files into a Sass file 
 const cssImporter = require('node-sass-css-importer')({
     import_paths: ['public/fonts/fontello/css'] 
  });
+
+// Information about KTH Style in the head of CSS file
+const pkg = require('./package.json');
+const banner = `/*!
+  * ${pkg.name}  - ${pkg.description}
+  * @version v${pkg.version}
+  * @link ${pkg.repository.uri}
+  */`
+  
+gulp.src('./foo/*.js')
+  .pipe(header(banner, { pkg : pkg } ))
+  .pipe(gulp.dest('./dist/'))
 
 gulp.task('createDist', ['distFonts', 'distImagesAndIcons'], function () {
   return mergeStream(
@@ -114,6 +128,7 @@ gulp.task('createDist', ['distFonts', 'distImagesAndIcons'], function () {
       .pipe($.sourcemaps.init())
       .pipe($.sass({includePaths: ['node_modules/bootstrap/scss', 'public/sass'], importer: [cssImporter]}).on('error', $.sass.logError))
       .pipe($.autoprefixer({browsers: ['last 4 versions']}))
+      .pipe(header(banner, { pkg : pkg } ))
       .pipe(gulp.dest(`${distRootFolderName}/css`))
       .pipe($.rename({ suffix: '.min' }))
       .pipe($.minifyCss())
