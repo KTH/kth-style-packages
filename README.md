@@ -15,7 +15,7 @@ KTH Style builds an own dist of Bootstrap v4 (https://v4-alpha.getbootstrap.com/
 ```
 $ git clone git@github.com:KTH/kth-style-web.git
 $ npm install
-$ npm start
+$ npm run start-dev
 ```
 Open the following url in the browser: http://localhost:3000/style
 
