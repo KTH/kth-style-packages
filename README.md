@@ -62,7 +62,7 @@ The CSS for the icons are transpiled/merged with our Sass. This happends in **pu
 The icons are moved to build catalog through a gulptask during build.   
 
 ### Release
-KTH Style is currently in alpha. Changes are commited and pushed in the usual way to GitHub but when it's time to release a new version this is procedure:  
+KTH Style is currently in alpha. Changes are commited and pushed in the usual way to GitHub but when it's time to release a new version to npmjs.com this is procedure:  
 
 *REMEMBER: Don't change version in the package.json!*
 
