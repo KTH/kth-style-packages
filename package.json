@@ -20,7 +20,8 @@
     "test-accessibility": "./accessibility/runPa11y.sh https://app-r.referens.sys.kth.se/style WCAG2AA",
     "test-accessibility-local": "./accessibility/runPa11y.sh http://localhost:3000/style WCAG2AA",
     "preversion": "npm run build && git add ./build && git diff-index --quiet HEAD || git commit -am \"Automatic deployment build\"",
-    "postversion": "git push && git push --tags"
+    "postversion": "git push && git push --tags",
+    "sass-lint": "./node_modules/.bin/sass-lint --config ./.sass-lint.yml './public/sass/**/*.scss' --verbose --no-exit"
   },
   "dependencies": {
     "bluebird": "^3.4.6",

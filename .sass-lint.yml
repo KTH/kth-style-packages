@@ -1,0 +1,12 @@
+files:
+  include: 'public/sass/**/*.s+(a|c)ss'
+rules:
+  no-color-keywords: 0
+  no-color-literals: 0
+  no-ids: 0
+  nesting-depth: 0
+  class-name-format: 0
+  mixin-name-format: 0
+  variable-name-format: 0
+  no-transition-all: 0
+  no-important: 0

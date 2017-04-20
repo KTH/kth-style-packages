@@ -1,6 +1,6 @@
 /*!
   * kth-style  - KTH CSS. A custom build of Bootstrap 4. The purpose of this project is to provide the essential design and style for applications within KTH and make the development process of these applications faster.
-  * @version v2.0.0-alpha.7
+  * @version v2.0.0-alpha.8
   * @link https://github.com/KTH/kth-style
   */@charset "UTF-8";
 /*
@@ -15,12 +15,6 @@
  This is where you override bootstrap values, such as colors, margins ...
 
  Values in node_modules/bootstrap/scss/_varables to override
-*/
-/*
-  Variables and mixins for fonts.
-
-  Variables should be created and used for everything that can be overridden in
-  Bootstraps preStep.
 */
 /*!
  * Bootstrap v4.0.0-alpha.6 (https://getbootstrap.com)
@@ -600,7 +594,7 @@ code {
 kbd {
   padding: 0.2rem 0.4rem;
   font-size: 90%;
-  color: #ffffff;
+  color: #fff;
   background-color: #292b2c;
   border-radius: 0.2rem; }
   kbd kbd {
@@ -1566,7 +1560,7 @@ pre {
 
 .thead-default th {
   color: #262626;
-  background-color: #ffffff; }
+  background-color: #fff; }
 
 .table-inverse {
   color: #e3e5e3;
@@ -1593,7 +1587,7 @@ pre {
   font-size: 1rem;
   line-height: 1.25;
   color: #464a4c;
-  background-color: #ffffff;
+  background-color: #fff;
   background-image: none;
   background-clip: padding-box;
   border: 1px solid rgba(17, 17, 17, 0.15);
@@ -1604,7 +1598,7 @@ pre {
     border: 0; }
   .form-control:focus {
     color: #464a4c;
-    background-color: #ffffff;
+    background-color: #fff;
     border-color: #5994e6;
     outline: none; }
   .form-control::-webkit-input-placeholder {
@@ -1630,7 +1624,7 @@ select.form-control:not([size]):not([multiple]) {
 
 select.form-control:focus::-ms-value {
   color: #464a4c;
-  background-color: #ffffff; }
+  background-color: #fff; }
 
 .form-control-file,
 .form-control-range {
@@ -1672,7 +1666,7 @@ select.form-control:focus::-ms-value {
   .input-group-sm > .input-group-btn > input.form-control-static[type="reset"], form
   .input-group-sm > .input-group-btn > button.form-control-static[type="submit"], form
   .input-group-sm > .input-group-btn > button.form-control-static[type="reset"], form
-  .input-group-sm > .input-group-btn > button.form-control-static[type="button"], .form-control-static.form-control-lg, .input-group-lg > .form-control-static.form-control,
+  .input-group-sm > .input-group-btn > button.form-control-static[type="button"]:not(.close), .form-control-static.form-control-lg, .input-group-lg > .form-control-static.form-control,
   .input-group-lg > .form-control-static.input-group-addon,
   .input-group-lg > .input-group-btn > .form-control-static.btn, form
   .input-group-lg > .input-group-btn > input.form-control-static[type="submit"], form
@@ -1680,7 +1674,7 @@ select.form-control:focus::-ms-value {
   .input-group-lg > .input-group-btn > input.form-control-static[type="reset"], form
   .input-group-lg > .input-group-btn > button.form-control-static[type="submit"], form
   .input-group-lg > .input-group-btn > button.form-control-static[type="reset"], form
-  .input-group-lg > .input-group-btn > button.form-control-static[type="button"] {
+  .input-group-lg > .input-group-btn > button.form-control-static[type="button"]:not(.close) {
     padding-right: 0;
     padding-left: 0; }
 
@@ -1692,7 +1686,7 @@ select.form-control:focus::-ms-value {
 .input-group-sm > .input-group-btn > input[type="reset"], form
 .input-group-sm > .input-group-btn > button[type="submit"], form
 .input-group-sm > .input-group-btn > button[type="reset"], form
-.input-group-sm > .input-group-btn > button[type="button"] {
+.input-group-sm > .input-group-btn > button[type="button"]:not(.close) {
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
   border-radius: 0.2rem; }
@@ -1710,7 +1704,7 @@ select.form-control-sm:not([size]):not([multiple]), .input-group-sm > select.for
 .input-group-lg > .input-group-btn > input[type="reset"], form
 .input-group-lg > .input-group-btn > button[type="submit"], form
 .input-group-lg > .input-group-btn > button[type="reset"], form
-.input-group-lg > .input-group-btn > button[type="button"] {
+.input-group-lg > .input-group-btn > button[type="button"]:not(.close) {
   padding: 0.75rem 1.5rem;
   font-size: 1.25rem;
   border-radius: 0.3rem; }
@@ -1891,7 +1885,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
     .form-inline .has-feedback .form-control-feedback {
       top: 0; } }
 
-.btn, form input[type="submit"], form input[type="button"], form input[type="button"].default, form input[type="button"].secondary, form input[type="reset"], form button[type="submit"], form button[type="reset"], form button[type="button"], form button[type="button"].secondary, form button[type="button"].default {
+.btn, form input[type="submit"], form input[type="button"], form input[type="button"].default, form input[type="button"].secondary, form input[type="reset"], form button[type="submit"], form button[type="reset"], form button[type="button"]:not(.close), form button[type="button"].secondary:not(.close), form button[type="button"].default:not(.close) {
   display: inline-block;
   font-weight: bold;
   line-height: 1.25;
@@ -1907,73 +1901,73 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
   font-size: 1rem;
   border-radius: 0.25rem;
   transition: all 0.2s ease-in-out; }
-  .btn:focus, form input[type="submit"]:focus, form input[type="button"]:focus, form input[type="reset"]:focus, form button[type="submit"]:focus, form button[type="reset"]:focus, form button[type="button"]:focus, .btn:hover, form input[type="submit"]:hover, form input[type="button"]:hover, form input[type="reset"]:hover, form button[type="submit"]:hover, form button[type="reset"]:hover, form button[type="button"]:hover {
+  .btn:focus, form input[type="submit"]:focus, form input[type="button"]:focus, form input[type="reset"]:focus, form button[type="submit"]:focus, form button[type="reset"]:focus, form button[type="button"]:focus:not(.close), .btn:hover, form input[type="submit"]:hover, form input[type="button"]:hover, form input[type="reset"]:hover, form button[type="submit"]:hover, form button[type="reset"]:hover, form button[type="button"]:hover:not(.close) {
     text-decoration: none; }
-  .btn:focus, form input[type="submit"]:focus, form input[type="button"]:focus, form input[type="reset"]:focus, form button[type="submit"]:focus, form button[type="reset"]:focus, form button[type="button"]:focus, .btn.focus, form input.focus[type="submit"], form input.focus[type="button"], form input.focus[type="reset"], form button.focus[type="submit"], form button.focus[type="reset"], form button.focus[type="button"] {
+  .btn:focus, form input[type="submit"]:focus, form input[type="button"]:focus, form input[type="reset"]:focus, form button[type="submit"]:focus, form button[type="reset"]:focus, form button[type="button"]:focus:not(.close), .btn.focus, form input.focus[type="submit"], form input.focus[type="button"], form input.focus[type="reset"], form button.focus[type="submit"], form button.focus[type="reset"], form button.focus[type="button"]:not(.close) {
     outline: 0;
     box-shadow: 0 0 0 2px rgba(25, 84, 166, 0.25); }
-  .btn.disabled, form input.disabled[type="submit"], form input.disabled[type="button"], form input.disabled[type="reset"], form button.disabled[type="submit"], form button.disabled[type="reset"], form button.disabled[type="button"], .btn:disabled, form input[type="submit"]:disabled, form input[type="button"]:disabled, form input[type="reset"]:disabled, form button[type="submit"]:disabled, form button[type="reset"]:disabled, form button[type="button"]:disabled {
+  .btn.disabled, form input.disabled[type="submit"], form input.disabled[type="button"], form input.disabled[type="reset"], form button.disabled[type="submit"], form button.disabled[type="reset"], form button.disabled[type="button"]:not(.close), .btn:disabled, form input[type="submit"]:disabled, form input[type="button"]:disabled, form input[type="reset"]:disabled, form button[type="submit"]:disabled, form button[type="reset"]:disabled, form button[type="button"]:disabled:not(.close) {
     cursor: not-allowed;
     opacity: .65; }
-  .btn:active, form input[type="submit"]:active, form input[type="button"]:active, form input[type="reset"]:active, form button[type="submit"]:active, form button[type="reset"]:active, form button[type="button"]:active, .btn.active, form input.active[type="submit"], form input.active[type="button"], form input.active[type="reset"], form button.active[type="submit"], form button.active[type="reset"], form button.active[type="button"] {
+  .btn:active, form input[type="submit"]:active, form input[type="button"]:active, form input[type="reset"]:active, form button[type="submit"]:active, form button[type="reset"]:active, form button[type="button"]:active:not(.close), .btn.active, form input.active[type="submit"], form input.active[type="button"], form input.active[type="reset"], form button.active[type="submit"], form button.active[type="reset"], form button.active[type="button"]:not(.close) {
     background-image: none; }
 
 a.btn.disabled,
 fieldset[disabled] a.btn {
   pointer-events: none; }
 
-.btn-primary, form input[type="button"], form button[type="button"] {
-  color: #ffffff;
+.btn-primary, form input[type="button"], form button[type="button"]:not(.close) {
+  color: #fff;
   background-color: #2191c4;
   border-color: #2191c4; }
-  .btn-primary:hover, form input[type="button"]:hover, form button[type="button"]:hover {
-    color: #ffffff;
+  .btn-primary:hover, form input[type="button"]:hover, form button[type="button"]:hover:not(.close) {
+    color: #fff;
     background-color: #1a7198;
     border-color: #186a90; }
-  .btn-primary:focus, form input[type="button"]:focus, form button[type="button"]:focus, .btn-primary.focus, form input.focus[type="button"], form button.focus[type="button"] {
+  .btn-primary:focus, form input[type="button"]:focus, form button[type="button"]:focus:not(.close), .btn-primary.focus, form input.focus[type="button"], form button.focus[type="button"]:not(.close) {
     box-shadow: 0 0 0 2px rgba(33, 145, 196, 0.5); }
-  .btn-primary.disabled, form input.disabled[type="button"], form button.disabled[type="button"], .btn-primary:disabled, form input[type="button"]:disabled, form button[type="button"]:disabled {
+  .btn-primary.disabled, form input.disabled[type="button"], form button.disabled[type="button"]:not(.close), .btn-primary:disabled, form input[type="button"]:disabled, form button[type="button"]:disabled:not(.close) {
     background-color: #2191c4;
     border-color: #2191c4; }
-  .btn-primary:active, form input[type="button"]:active, form button[type="button"]:active, .btn-primary.active, form input.active[type="button"], form button.active[type="button"],
+  .btn-primary:active, form input[type="button"]:active, form button[type="button"]:active:not(.close), .btn-primary.active, form input.active[type="button"], form button.active[type="button"]:not(.close),
   .show > .btn-primary.dropdown-toggle, form
   .show > input.dropdown-toggle[type="button"], form
-  .show > button.dropdown-toggle[type="button"] {
-    color: #ffffff;
+  .show > button.dropdown-toggle[type="button"]:not(.close) {
+    color: #fff;
     background-color: #1a7198;
     background-image: none;
     border-color: #186a90; }
 
-.btn-secondary, form input[type="button"].default, form input[type="button"].secondary, form button[type="button"].secondary, form button[type="button"].default {
+.btn-secondary, form input[type="button"].default, form input[type="button"].secondary, form button[type="button"].secondary:not(.close), form button[type="button"].default:not(.close) {
   color: #262626;
-  background-color: #ffffff;
+  background-color: #fff;
   border-color: #65656c; }
-  .btn-secondary:hover, form input[type="button"].default:hover, form input[type="button"].secondary:hover, form button[type="button"].secondary:hover, form button[type="button"].default:hover {
+  .btn-secondary:hover, form input[type="button"].default:hover, form input[type="button"].secondary:hover, form button[type="button"].secondary:hover:not(.close), form button[type="button"].default:hover:not(.close) {
     color: #262626;
     background-color: #e6e6e6;
     border-color: #47474c; }
-  .btn-secondary:focus, form input[type="button"].default:focus, form input[type="button"].secondary:focus, form button[type="button"].secondary:focus, form button[type="button"].default:focus, .btn-secondary.focus, form input.focus[type="button"].default, form input.focus[type="button"].secondary, form button.focus[type="button"].secondary, form button.focus[type="button"].default {
+  .btn-secondary:focus, form input[type="button"].default:focus, form input[type="button"].secondary:focus, form button[type="button"].secondary:focus:not(.close), form button[type="button"].default:focus:not(.close), .btn-secondary.focus, form input.focus[type="button"].default, form input.focus[type="button"].secondary, form button.focus[type="button"].secondary:not(.close), form button.focus[type="button"].default:not(.close) {
     box-shadow: 0 0 0 2px rgba(101, 101, 108, 0.5); }
-  .btn-secondary.disabled, form input.disabled[type="button"].default, form input.disabled[type="button"].secondary, form button.disabled[type="button"].secondary, form button.disabled[type="button"].default, .btn-secondary:disabled, form input[type="button"].default:disabled, form input[type="button"].secondary:disabled, form button[type="button"].secondary:disabled, form button[type="button"].default:disabled {
-    background-color: #ffffff;
+  .btn-secondary.disabled, form input.disabled[type="button"].default, form input.disabled[type="button"].secondary, form button.disabled[type="button"].secondary:not(.close), form button.disabled[type="button"].default:not(.close), .btn-secondary:disabled, form input[type="button"].default:disabled, form input[type="button"].secondary:disabled, form button[type="button"].secondary:disabled:not(.close), form button[type="button"].default:disabled:not(.close) {
+    background-color: #fff;
     border-color: #65656c; }
-  .btn-secondary:active, form input[type="button"].default:active, form input[type="button"].secondary:active, form button[type="button"].secondary:active, form button[type="button"].default:active, .btn-secondary.active, form input.active[type="button"].default, form input.active[type="button"].secondary, form button.active[type="button"].secondary, form button.active[type="button"].default,
+  .btn-secondary:active, form input[type="button"].default:active, form input[type="button"].secondary:active, form button[type="button"].secondary:active:not(.close), form button[type="button"].default:active:not(.close), .btn-secondary.active, form input.active[type="button"].default, form input.active[type="button"].secondary, form button.active[type="button"].secondary:not(.close), form button.active[type="button"].default:not(.close),
   .show > .btn-secondary.dropdown-toggle, form
   .show > input.dropdown-toggle[type="button"].default, form
   .show > input.dropdown-toggle[type="button"].secondary, form
-  .show > button.dropdown-toggle[type="button"].secondary, form
-  .show > button.dropdown-toggle[type="button"].default {
+  .show > button.dropdown-toggle[type="button"].secondary:not(.close), form
+  .show > button.dropdown-toggle[type="button"].default:not(.close) {
     color: #262626;
     background-color: #e6e6e6;
     background-image: none;
     border-color: #47474c; }
 
 .btn-info {
-  color: #ffffff;
+  color: #fff;
   background-color: #5bc0de;
   border-color: #5bc0de; }
   .btn-info:hover {
-    color: #ffffff;
+    color: #fff;
     background-color: #31b0d5;
     border-color: #2aabd2; }
   .btn-info:focus, .btn-info.focus {
@@ -1983,17 +1977,17 @@ fieldset[disabled] a.btn {
     border-color: #5bc0de; }
   .btn-info:active, .btn-info.active,
   .show > .btn-info.dropdown-toggle {
-    color: #ffffff;
+    color: #fff;
     background-color: #31b0d5;
     background-image: none;
     border-color: #2aabd2; }
 
 .btn-success, form input[type="submit"], form button[type="submit"] {
-  color: #ffffff;
+  color: #fff;
   background-color: #62922e;
   border-color: #62922e; }
   .btn-success:hover, form input[type="submit"]:hover, form button[type="submit"]:hover {
-    color: #ffffff;
+    color: #fff;
     background-color: #486b22;
     border-color: #43631f; }
   .btn-success:focus, form input[type="submit"]:focus, form button[type="submit"]:focus, .btn-success.focus, form input.focus[type="submit"], form button.focus[type="submit"] {
@@ -2005,17 +1999,17 @@ fieldset[disabled] a.btn {
   .show > .btn-success.dropdown-toggle, form
   .show > input.dropdown-toggle[type="submit"], form
   .show > button.dropdown-toggle[type="submit"] {
-    color: #ffffff;
+    color: #fff;
     background-color: #486b22;
     background-image: none;
     border-color: #43631f; }
 
 .btn-warning {
-  color: #ffffff;
+  color: #fff;
   background-color: #f0ad4e;
   border-color: #f0ad4e; }
   .btn-warning:hover {
-    color: #ffffff;
+    color: #fff;
     background-color: #ec971f;
     border-color: #eb9316; }
   .btn-warning:focus, .btn-warning.focus {
@@ -2025,17 +2019,17 @@ fieldset[disabled] a.btn {
     border-color: #f0ad4e; }
   .btn-warning:active, .btn-warning.active,
   .show > .btn-warning.dropdown-toggle {
-    color: #ffffff;
+    color: #fff;
     background-color: #ec971f;
     background-image: none;
     border-color: #eb9316; }
 
 .btn-danger, form input[type="reset"], form button[type="reset"] {
-  color: #ffffff;
+  color: #fff;
   background-color: #e01f28;
   border-color: #e01f28; }
   .btn-danger:hover, form input[type="reset"]:hover, form button[type="reset"]:hover {
-    color: #ffffff;
+    color: #fff;
     background-color: #b31920;
     border-color: #aa181e; }
   .btn-danger:focus, form input[type="reset"]:focus, form button[type="reset"]:focus, .btn-danger.focus, form input.focus[type="reset"], form button.focus[type="reset"] {
@@ -2047,7 +2041,7 @@ fieldset[disabled] a.btn {
   .show > .btn-danger.dropdown-toggle, form
   .show > input.dropdown-toggle[type="reset"], form
   .show > button.dropdown-toggle[type="reset"] {
-    color: #ffffff;
+    color: #fff;
     background-color: #b31920;
     background-image: none;
     border-color: #aa181e; }
@@ -2191,12 +2185,12 @@ fieldset[disabled] a.btn {
     .btn-link:disabled:focus, .btn-link:disabled:hover {
       text-decoration: none; }
 
-.btn-lg, .btn-group-lg > .btn, form .btn-group-lg > input[type="submit"], form .btn-group-lg > input[type="button"], form .btn-group-lg > input[type="reset"], form .btn-group-lg > button[type="submit"], form .btn-group-lg > button[type="reset"], form .btn-group-lg > button[type="button"] {
+.btn-lg, .btn-group-lg > .btn, form .btn-group-lg > input[type="submit"], form .btn-group-lg > input[type="button"], form .btn-group-lg > input[type="reset"], form .btn-group-lg > button[type="submit"], form .btn-group-lg > button[type="reset"], form .btn-group-lg > button[type="button"]:not(.close) {
   padding: 0.75rem 1.5rem;
   font-size: 1.25rem;
   border-radius: 0.3rem; }
 
-.btn-sm, .btn-group-sm > .btn, form .btn-group-sm > input[type="submit"], form .btn-group-sm > input[type="button"], form .btn-group-sm > input[type="reset"], form .btn-group-sm > button[type="submit"], form .btn-group-sm > button[type="reset"], form .btn-group-sm > button[type="button"] {
+.btn-sm, .btn-group-sm > .btn, form .btn-group-sm > input[type="submit"], form .btn-group-sm > input[type="button"], form .btn-group-sm > input[type="reset"], form .btn-group-sm > button[type="submit"], form .btn-group-sm > button[type="reset"], form .btn-group-sm > button[type="button"]:not(.close) {
   padding: 0.25rem 0.5rem;
   font-size: 0.875rem;
   border-radius: 0.2rem; }
@@ -2272,7 +2266,7 @@ tbody.collapse.show {
   color: #262626;
   text-align: left;
   list-style: none;
-  background-color: #ffffff;
+  background-color: #fff;
   background-clip: padding-box;
   border: 1px solid rgba(17, 17, 17, 0.15);
   border-radius: 0.25rem; }
@@ -2299,7 +2293,7 @@ tbody.collapse.show {
     text-decoration: none;
     background-color: #f7f7f9; }
   .dropdown-item.active, .dropdown-item:active {
-    color: #ffffff;
+    color: #fff;
     text-decoration: none;
     background-color: #1954a6; }
   .dropdown-item.disabled, .dropdown-item:disabled {
@@ -2348,50 +2342,50 @@ tbody.collapse.show {
   display: -ms-inline-flexbox;
   display: inline-flex;
   vertical-align: middle; }
-  .btn-group > .btn, form .btn-group > input[type="submit"], form .btn-group > input[type="button"], form .btn-group > input[type="reset"], form .btn-group > button[type="submit"], form .btn-group > button[type="reset"], form .btn-group > button[type="button"],
+  .btn-group > .btn, form .btn-group > input[type="submit"], form .btn-group > input[type="button"], form .btn-group > input[type="reset"], form .btn-group > button[type="submit"], form .btn-group > button[type="reset"], form .btn-group > button[type="button"]:not(.close),
   .btn-group-vertical > .btn, form
   .btn-group-vertical > input[type="submit"], form
   .btn-group-vertical > input[type="button"], form
   .btn-group-vertical > input[type="reset"], form
   .btn-group-vertical > button[type="submit"], form
   .btn-group-vertical > button[type="reset"], form
-  .btn-group-vertical > button[type="button"] {
+  .btn-group-vertical > button[type="button"]:not(.close) {
     position: relative;
     -ms-flex: 0 1 auto;
         flex: 0 1 auto; }
-    .btn-group > .btn:hover, form .btn-group > input[type="submit"]:hover, form .btn-group > input[type="button"]:hover, form .btn-group > input[type="reset"]:hover, form .btn-group > button[type="submit"]:hover, form .btn-group > button[type="reset"]:hover, form .btn-group > button[type="button"]:hover,
+    .btn-group > .btn:hover, form .btn-group > input[type="submit"]:hover, form .btn-group > input[type="button"]:hover, form .btn-group > input[type="reset"]:hover, form .btn-group > button[type="submit"]:hover, form .btn-group > button[type="reset"]:hover, form .btn-group > button[type="button"]:hover:not(.close),
     .btn-group-vertical > .btn:hover, form
     .btn-group-vertical > input[type="submit"]:hover, form
     .btn-group-vertical > input[type="button"]:hover, form
     .btn-group-vertical > input[type="reset"]:hover, form
     .btn-group-vertical > button[type="submit"]:hover, form
     .btn-group-vertical > button[type="reset"]:hover, form
-    .btn-group-vertical > button[type="button"]:hover {
+    .btn-group-vertical > button[type="button"]:hover:not(.close) {
       z-index: 2; }
-    .btn-group > .btn:focus, form .btn-group > input[type="submit"]:focus, form .btn-group > input[type="button"]:focus, form .btn-group > input[type="reset"]:focus, form .btn-group > button[type="submit"]:focus, form .btn-group > button[type="reset"]:focus, form .btn-group > button[type="button"]:focus, .btn-group > .btn:active, form .btn-group > input[type="submit"]:active, form .btn-group > input[type="button"]:active, form .btn-group > input[type="reset"]:active, form .btn-group > button[type="submit"]:active, form .btn-group > button[type="reset"]:active, form .btn-group > button[type="button"]:active, .btn-group > .btn.active, form .btn-group > input.active[type="submit"], form .btn-group > input.active[type="button"], form .btn-group > input.active[type="reset"], form .btn-group > button.active[type="submit"], form .btn-group > button.active[type="reset"], form .btn-group > button.active[type="button"],
+    .btn-group > .btn:focus, form .btn-group > input[type="submit"]:focus, form .btn-group > input[type="button"]:focus, form .btn-group > input[type="reset"]:focus, form .btn-group > button[type="submit"]:focus, form .btn-group > button[type="reset"]:focus, form .btn-group > button[type="button"]:focus:not(.close), .btn-group > .btn:active, form .btn-group > input[type="submit"]:active, form .btn-group > input[type="button"]:active, form .btn-group > input[type="reset"]:active, form .btn-group > button[type="submit"]:active, form .btn-group > button[type="reset"]:active, form .btn-group > button[type="button"]:active:not(.close), .btn-group > .btn.active, form .btn-group > input.active[type="submit"], form .btn-group > input.active[type="button"], form .btn-group > input.active[type="reset"], form .btn-group > button.active[type="submit"], form .btn-group > button.active[type="reset"], form .btn-group > button.active[type="button"]:not(.close),
     .btn-group-vertical > .btn:focus, form
     .btn-group-vertical > input[type="submit"]:focus, form
     .btn-group-vertical > input[type="button"]:focus, form
     .btn-group-vertical > input[type="reset"]:focus, form
     .btn-group-vertical > button[type="submit"]:focus, form
     .btn-group-vertical > button[type="reset"]:focus, form
-    .btn-group-vertical > button[type="button"]:focus,
+    .btn-group-vertical > button[type="button"]:focus:not(.close),
     .btn-group-vertical > .btn:active, form
     .btn-group-vertical > input[type="submit"]:active, form
     .btn-group-vertical > input[type="button"]:active, form
     .btn-group-vertical > input[type="reset"]:active, form
     .btn-group-vertical > button[type="submit"]:active, form
     .btn-group-vertical > button[type="reset"]:active, form
-    .btn-group-vertical > button[type="button"]:active,
+    .btn-group-vertical > button[type="button"]:active:not(.close),
     .btn-group-vertical > .btn.active, form
     .btn-group-vertical > input.active[type="submit"], form
     .btn-group-vertical > input.active[type="button"], form
     .btn-group-vertical > input.active[type="reset"], form
     .btn-group-vertical > button.active[type="submit"], form
     .btn-group-vertical > button.active[type="reset"], form
-    .btn-group-vertical > button.active[type="button"] {
+    .btn-group-vertical > button.active[type="button"]:not(.close) {
       z-index: 2; }
-  .btn-group .btn + .btn, .btn-group form input[type="submit"] + .btn, form .btn-group input[type="submit"] + .btn, .btn-group form input[type="button"] + .btn, form .btn-group input[type="button"] + .btn, .btn-group form input[type="button"].default + .btn, form .btn-group input[type="button"].default + .btn, .btn-group form input[type="button"].secondary + .btn, form .btn-group input[type="button"].secondary + .btn, .btn-group form input[type="reset"] + .btn, form .btn-group input[type="reset"] + .btn, .btn-group form button[type="submit"] + .btn, form .btn-group button[type="submit"] + .btn, .btn-group form button[type="reset"] + .btn, form .btn-group button[type="reset"] + .btn, .btn-group form button[type="button"] + .btn, form .btn-group button[type="button"] + .btn, .btn-group form button[type="button"].secondary + .btn, form .btn-group button[type="button"].secondary + .btn, .btn-group form button[type="button"].default + .btn, form .btn-group button[type="button"].default + .btn, .btn-group form .btn + input[type="submit"], form .btn-group .btn + input[type="submit"], .btn-group form input[type="submit"] + input[type="submit"], form .btn-group input[type="submit"] + input[type="submit"], .btn-group form input[type="button"] + input[type="submit"], form .btn-group input[type="button"] + input[type="submit"], .btn-group form input[type="button"].default + input[type="submit"], form .btn-group input[type="button"].default + input[type="submit"], .btn-group form input[type="button"].secondary + input[type="submit"], form .btn-group input[type="button"].secondary + input[type="submit"], .btn-group form input[type="reset"] + input[type="submit"], form .btn-group input[type="reset"] + input[type="submit"], .btn-group form button[type="submit"] + input[type="submit"], form .btn-group button[type="submit"] + input[type="submit"], .btn-group form button[type="reset"] + input[type="submit"], form .btn-group button[type="reset"] + input[type="submit"], .btn-group form button[type="button"] + input[type="submit"], form .btn-group button[type="button"] + input[type="submit"], .btn-group form button[type="button"].secondary + input[type="submit"], form .btn-group button[type="button"].secondary + input[type="submit"], .btn-group form button[type="button"].default + input[type="submit"], form .btn-group button[type="button"].default + input[type="submit"], .btn-group form .btn + input[type="button"], form .btn-group .btn + input[type="button"], .btn-group form input[type="submit"] + input[type="button"], form .btn-group input[type="submit"] + input[type="button"], .btn-group form input[type="button"] + input[type="button"], form .btn-group input[type="button"] + input[type="button"], .btn-group form input[type="button"].default + input[type="button"], form .btn-group input[type="button"].default + input[type="button"], .btn-group form input[type="button"].secondary + input[type="button"], form .btn-group input[type="button"].secondary + input[type="button"], .btn-group form input[type="reset"] + input[type="button"], form .btn-group input[type="reset"] + input[type="button"], .btn-group form button[type="submit"] + input[type="button"], form .btn-group button[type="submit"] + input[type="button"], .btn-group form button[type="reset"] + input[type="button"], form .btn-group button[type="reset"] + input[type="button"], .btn-group form button[type="button"] + input[type="button"], form .btn-group button[type="button"] + input[type="button"], .btn-group form button[type="button"].secondary + input[type="button"], form .btn-group button[type="button"].secondary + input[type="button"], .btn-group form button[type="button"].default + input[type="button"], form .btn-group button[type="button"].default + input[type="button"], .btn-group form .btn + input[type="button"].default, form .btn-group .btn + input[type="button"].default, .btn-group form input[type="submit"] + input[type="button"].default, form .btn-group input[type="submit"] + input[type="button"].default, .btn-group form input[type="button"] + input[type="button"].default, form .btn-group input[type="button"] + input[type="button"].default, .btn-group form input[type="button"].default + input[type="button"].default, form .btn-group input[type="button"].default + input[type="button"].default, .btn-group form input[type="button"].secondary + input[type="button"].default, form .btn-group input[type="button"].secondary + input[type="button"].default, .btn-group form input[type="reset"] + input[type="button"].default, form .btn-group input[type="reset"] + input[type="button"].default, .btn-group form button[type="submit"] + input[type="button"].default, form .btn-group button[type="submit"] + input[type="button"].default, .btn-group form button[type="reset"] + input[type="button"].default, form .btn-group button[type="reset"] + input[type="button"].default, .btn-group form button[type="button"] + input[type="button"].default, form .btn-group button[type="button"] + input[type="button"].default, .btn-group form button[type="button"].secondary + input[type="button"].default, form .btn-group button[type="button"].secondary + input[type="button"].default, .btn-group form button[type="button"].default + input[type="button"].default, form .btn-group button[type="button"].default + input[type="button"].default, .btn-group form .btn + input[type="button"].secondary, form .btn-group .btn + input[type="button"].secondary, .btn-group form input[type="submit"] + input[type="button"].secondary, form .btn-group input[type="submit"] + input[type="button"].secondary, .btn-group form input[type="button"] + input[type="button"].secondary, form .btn-group input[type="button"] + input[type="button"].secondary, .btn-group form input[type="button"].default + input[type="button"].secondary, form .btn-group input[type="button"].default + input[type="button"].secondary, .btn-group form input[type="button"].secondary + input[type="button"].secondary, form .btn-group input[type="button"].secondary + input[type="button"].secondary, .btn-group form input[type="reset"] + input[type="button"].secondary, form .btn-group input[type="reset"] + input[type="button"].secondary, .btn-group form button[type="submit"] + input[type="button"].secondary, form .btn-group button[type="submit"] + input[type="button"].secondary, .btn-group form button[type="reset"] + input[type="button"].secondary, form .btn-group button[type="reset"] + input[type="button"].secondary, .btn-group form button[type="button"] + input[type="button"].secondary, form .btn-group button[type="button"] + input[type="button"].secondary, .btn-group form button[type="button"].secondary + input[type="button"].secondary, form .btn-group button[type="button"].secondary + input[type="button"].secondary, .btn-group form button[type="button"].default + input[type="button"].secondary, form .btn-group button[type="button"].default + input[type="button"].secondary, .btn-group form .btn + input[type="reset"], form .btn-group .btn + input[type="reset"], .btn-group form input[type="submit"] + input[type="reset"], form .btn-group input[type="submit"] + input[type="reset"], .btn-group form input[type="button"] + input[type="reset"], form .btn-group input[type="button"] + input[type="reset"], .btn-group form input[type="button"].default + input[type="reset"], form .btn-group input[type="button"].default + input[type="reset"], .btn-group form input[type="button"].secondary + input[type="reset"], form .btn-group input[type="button"].secondary + input[type="reset"], .btn-group form input[type="reset"] + input[type="reset"], form .btn-group input[type="reset"] + input[type="reset"], .btn-group form button[type="submit"] + input[type="reset"], form .btn-group button[type="submit"] + input[type="reset"], .btn-group form button[type="reset"] + input[type="reset"], form .btn-group button[type="reset"] + input[type="reset"], .btn-group form button[type="button"] + input[type="reset"], form .btn-group button[type="button"] + input[type="reset"], .btn-group form button[type="button"].secondary + input[type="reset"], form .btn-group button[type="button"].secondary + input[type="reset"], .btn-group form button[type="button"].default + input[type="reset"], form .btn-group button[type="button"].default + input[type="reset"], .btn-group form .btn + button[type="submit"], form .btn-group .btn + button[type="submit"], .btn-group form input[type="submit"] + button[type="submit"], form .btn-group input[type="submit"] + button[type="submit"], .btn-group form input[type="button"] + button[type="submit"], form .btn-group input[type="button"] + button[type="submit"], .btn-group form input[type="button"].default + button[type="submit"], form .btn-group input[type="button"].default + button[type="submit"], .btn-group form input[type="button"].secondary + button[type="submit"], form .btn-group input[type="button"].secondary + button[type="submit"], .btn-group form input[type="reset"] + button[type="submit"], form .btn-group input[type="reset"] + button[type="submit"], .btn-group form button[type="submit"] + button[type="submit"], form .btn-group button[type="submit"] + button[type="submit"], .btn-group form button[type="reset"] + button[type="submit"], form .btn-group button[type="reset"] + button[type="submit"], .btn-group form button[type="button"] + button[type="submit"], form .btn-group button[type="button"] + button[type="submit"], .btn-group form button[type="button"].secondary + button[type="submit"], form .btn-group button[type="button"].secondary + button[type="submit"], .btn-group form button[type="button"].default + button[type="submit"], form .btn-group button[type="button"].default + button[type="submit"], .btn-group form .btn + button[type="reset"], form .btn-group .btn + button[type="reset"], .btn-group form input[type="submit"] + button[type="reset"], form .btn-group input[type="submit"] + button[type="reset"], .btn-group form input[type="button"] + button[type="reset"], form .btn-group input[type="button"] + button[type="reset"], .btn-group form input[type="button"].default + button[type="reset"], form .btn-group input[type="button"].default + button[type="reset"], .btn-group form input[type="button"].secondary + button[type="reset"], form .btn-group input[type="button"].secondary + button[type="reset"], .btn-group form input[type="reset"] + button[type="reset"], form .btn-group input[type="reset"] + button[type="reset"], .btn-group form button[type="submit"] + button[type="reset"], form .btn-group button[type="submit"] + button[type="reset"], .btn-group form button[type="reset"] + button[type="reset"], form .btn-group button[type="reset"] + button[type="reset"], .btn-group form button[type="button"] + button[type="reset"], form .btn-group button[type="button"] + button[type="reset"], .btn-group form button[type="button"].secondary + button[type="reset"], form .btn-group button[type="button"].secondary + button[type="reset"], .btn-group form button[type="button"].default + button[type="reset"], form .btn-group button[type="button"].default + button[type="reset"], .btn-group form .btn + button[type="button"], form .btn-group .btn + button[type="button"], .btn-group form input[type="submit"] + button[type="button"], form .btn-group input[type="submit"] + button[type="button"], .btn-group form input[type="button"] + button[type="button"], form .btn-group input[type="button"] + button[type="button"], .btn-group form input[type="button"].default + button[type="button"], form .btn-group input[type="button"].default + button[type="button"], .btn-group form input[type="button"].secondary + button[type="button"], form .btn-group input[type="button"].secondary + button[type="button"], .btn-group form input[type="reset"] + button[type="button"], form .btn-group input[type="reset"] + button[type="button"], .btn-group form button[type="submit"] + button[type="button"], form .btn-group button[type="submit"] + button[type="button"], .btn-group form button[type="reset"] + button[type="button"], form .btn-group button[type="reset"] + button[type="button"], .btn-group form button[type="button"] + button[type="button"], form .btn-group button[type="button"] + button[type="button"], .btn-group form button[type="button"].secondary + button[type="button"], form .btn-group button[type="button"].secondary + button[type="button"], .btn-group form button[type="button"].default + button[type="button"], form .btn-group button[type="button"].default + button[type="button"], .btn-group form .btn + button[type="button"].secondary, form .btn-group .btn + button[type="button"].secondary, .btn-group form input[type="submit"] + button[type="button"].secondary, form .btn-group input[type="submit"] + button[type="button"].secondary, .btn-group form input[type="button"] + button[type="button"].secondary, form .btn-group input[type="button"] + button[type="button"].secondary, .btn-group form input[type="button"].default + button[type="button"].secondary, form .btn-group input[type="button"].default + button[type="button"].secondary, .btn-group form input[type="button"].secondary + button[type="button"].secondary, form .btn-group input[type="button"].secondary + button[type="button"].secondary, .btn-group form input[type="reset"] + button[type="button"].secondary, form .btn-group input[type="reset"] + button[type="button"].secondary, .btn-group form button[type="submit"] + button[type="button"].secondary, form .btn-group button[type="submit"] + button[type="button"].secondary, .btn-group form button[type="reset"] + button[type="button"].secondary, form .btn-group button[type="reset"] + button[type="button"].secondary, .btn-group form button[type="button"] + button[type="button"].secondary, form .btn-group button[type="button"] + button[type="button"].secondary, .btn-group form button[type="button"].secondary + button[type="button"].secondary, form .btn-group button[type="button"].secondary + button[type="button"].secondary, .btn-group form button[type="button"].default + button[type="button"].secondary, form .btn-group button[type="button"].default + button[type="button"].secondary, .btn-group form .btn + button[type="button"].default, form .btn-group .btn + button[type="button"].default, .btn-group form input[type="submit"] + button[type="button"].default, form .btn-group input[type="submit"] + button[type="button"].default, .btn-group form input[type="button"] + button[type="button"].default, form .btn-group input[type="button"] + button[type="button"].default, .btn-group form input[type="button"].default + button[type="button"].default, form .btn-group input[type="button"].default + button[type="button"].default, .btn-group form input[type="button"].secondary + button[type="button"].default, form .btn-group input[type="button"].secondary + button[type="button"].default, .btn-group form input[type="reset"] + button[type="button"].default, form .btn-group input[type="reset"] + button[type="button"].default, .btn-group form button[type="submit"] + button[type="button"].default, form .btn-group button[type="submit"] + button[type="button"].default, .btn-group form button[type="reset"] + button[type="button"].default, form .btn-group button[type="reset"] + button[type="button"].default, .btn-group form button[type="button"] + button[type="button"].default, form .btn-group button[type="button"] + button[type="button"].default, .btn-group form button[type="button"].secondary + button[type="button"].default, form .btn-group button[type="button"].secondary + button[type="button"].default, .btn-group form button[type="button"].default + button[type="button"].default, form .btn-group button[type="button"].default + button[type="button"].default,
+  .btn-group .btn + .btn, .btn-group form input[type="submit"] + .btn, form .btn-group input[type="submit"] + .btn, .btn-group form input[type="button"] + .btn, form .btn-group input[type="button"] + .btn, .btn-group form input[type="button"].default + .btn, form .btn-group input[type="button"].default + .btn, .btn-group form input[type="button"].secondary + .btn, form .btn-group input[type="button"].secondary + .btn, .btn-group form input[type="reset"] + .btn, form .btn-group input[type="reset"] + .btn, .btn-group form button[type="submit"] + .btn, form .btn-group button[type="submit"] + .btn, .btn-group form button[type="reset"] + .btn, form .btn-group button[type="reset"] + .btn, .btn-group form button[type="button"]:not(.close) + .btn, form .btn-group button[type="button"]:not(.close) + .btn, .btn-group form button[type="button"].secondary:not(.close) + .btn, form .btn-group button[type="button"].secondary:not(.close) + .btn, .btn-group form button[type="button"].default:not(.close) + .btn, form .btn-group button[type="button"].default:not(.close) + .btn, .btn-group form .btn + input[type="submit"], form .btn-group .btn + input[type="submit"], .btn-group form input[type="submit"] + input[type="submit"], form .btn-group input[type="submit"] + input[type="submit"], .btn-group form input[type="button"] + input[type="submit"], form .btn-group input[type="button"] + input[type="submit"], .btn-group form input[type="button"].default + input[type="submit"], form .btn-group input[type="button"].default + input[type="submit"], .btn-group form input[type="button"].secondary + input[type="submit"], form .btn-group input[type="button"].secondary + input[type="submit"], .btn-group form input[type="reset"] + input[type="submit"], form .btn-group input[type="reset"] + input[type="submit"], .btn-group form button[type="submit"] + input[type="submit"], form .btn-group button[type="submit"] + input[type="submit"], .btn-group form button[type="reset"] + input[type="submit"], form .btn-group button[type="reset"] + input[type="submit"], .btn-group form button[type="button"]:not(.close) + input[type="submit"], form .btn-group button[type="button"]:not(.close) + input[type="submit"], .btn-group form button[type="button"].secondary:not(.close) + input[type="submit"], form .btn-group button[type="button"].secondary:not(.close) + input[type="submit"], .btn-group form button[type="button"].default:not(.close) + input[type="submit"], form .btn-group button[type="button"].default:not(.close) + input[type="submit"], .btn-group form .btn + input[type="button"], form .btn-group .btn + input[type="button"], .btn-group form input[type="submit"] + input[type="button"], form .btn-group input[type="submit"] + input[type="button"], .btn-group form input[type="button"] + input[type="button"], form .btn-group input[type="button"] + input[type="button"], .btn-group form input[type="button"].default + input[type="button"], form .btn-group input[type="button"].default + input[type="button"], .btn-group form input[type="button"].secondary + input[type="button"], form .btn-group input[type="button"].secondary + input[type="button"], .btn-group form input[type="reset"] + input[type="button"], form .btn-group input[type="reset"] + input[type="button"], .btn-group form button[type="submit"] + input[type="button"], form .btn-group button[type="submit"] + input[type="button"], .btn-group form button[type="reset"] + input[type="button"], form .btn-group button[type="reset"] + input[type="button"], .btn-group form button[type="button"]:not(.close) + input[type="button"], form .btn-group button[type="button"]:not(.close) + input[type="button"], .btn-group form button[type="button"].secondary:not(.close) + input[type="button"], form .btn-group button[type="button"].secondary:not(.close) + input[type="button"], .btn-group form button[type="button"].default:not(.close) + input[type="button"], form .btn-group button[type="button"].default:not(.close) + input[type="button"], .btn-group form .btn + input[type="button"].default, form .btn-group .btn + input[type="button"].default, .btn-group form input[type="submit"] + input[type="button"].default, form .btn-group input[type="submit"] + input[type="button"].default, .btn-group form input[type="button"] + input[type="button"].default, form .btn-group input[type="button"] + input[type="button"].default, .btn-group form input[type="button"].default + input[type="button"].default, form .btn-group input[type="button"].default + input[type="button"].default, .btn-group form input[type="button"].secondary + input[type="button"].default, form .btn-group input[type="button"].secondary + input[type="button"].default, .btn-group form input[type="reset"] + input[type="button"].default, form .btn-group input[type="reset"] + input[type="button"].default, .btn-group form button[type="submit"] + input[type="button"].default, form .btn-group button[type="submit"] + input[type="button"].default, .btn-group form button[type="reset"] + input[type="button"].default, form .btn-group button[type="reset"] + input[type="button"].default, .btn-group form button[type="button"]:not(.close) + input[type="button"].default, form .btn-group button[type="button"]:not(.close) + input[type="button"].default, .btn-group form button[type="button"].secondary:not(.close) + input[type="button"].default, form .btn-group button[type="button"].secondary:not(.close) + input[type="button"].default, .btn-group form button[type="button"].default:not(.close) + input[type="button"].default, form .btn-group button[type="button"].default:not(.close) + input[type="button"].default, .btn-group form .btn + input[type="button"].secondary, form .btn-group .btn + input[type="button"].secondary, .btn-group form input[type="submit"] + input[type="button"].secondary, form .btn-group input[type="submit"] + input[type="button"].secondary, .btn-group form input[type="button"] + input[type="button"].secondary, form .btn-group input[type="button"] + input[type="button"].secondary, .btn-group form input[type="button"].default + input[type="button"].secondary, form .btn-group input[type="button"].default + input[type="button"].secondary, .btn-group form input[type="button"].secondary + input[type="button"].secondary, form .btn-group input[type="button"].secondary + input[type="button"].secondary, .btn-group form input[type="reset"] + input[type="button"].secondary, form .btn-group input[type="reset"] + input[type="button"].secondary, .btn-group form button[type="submit"] + input[type="button"].secondary, form .btn-group button[type="submit"] + input[type="button"].secondary, .btn-group form button[type="reset"] + input[type="button"].secondary, form .btn-group button[type="reset"] + input[type="button"].secondary, .btn-group form button[type="button"]:not(.close) + input[type="button"].secondary, form .btn-group button[type="button"]:not(.close) + input[type="button"].secondary, .btn-group form button[type="button"].secondary:not(.close) + input[type="button"].secondary, form .btn-group button[type="button"].secondary:not(.close) + input[type="button"].secondary, .btn-group form button[type="button"].default:not(.close) + input[type="button"].secondary, form .btn-group button[type="button"].default:not(.close) + input[type="button"].secondary, .btn-group form .btn + input[type="reset"], form .btn-group .btn + input[type="reset"], .btn-group form input[type="submit"] + input[type="reset"], form .btn-group input[type="submit"] + input[type="reset"], .btn-group form input[type="button"] + input[type="reset"], form .btn-group input[type="button"] + input[type="reset"], .btn-group form input[type="button"].default + input[type="reset"], form .btn-group input[type="button"].default + input[type="reset"], .btn-group form input[type="button"].secondary + input[type="reset"], form .btn-group input[type="button"].secondary + input[type="reset"], .btn-group form input[type="reset"] + input[type="reset"], form .btn-group input[type="reset"] + input[type="reset"], .btn-group form button[type="submit"] + input[type="reset"], form .btn-group button[type="submit"] + input[type="reset"], .btn-group form button[type="reset"] + input[type="reset"], form .btn-group button[type="reset"] + input[type="reset"], .btn-group form button[type="button"]:not(.close) + input[type="reset"], form .btn-group button[type="button"]:not(.close) + input[type="reset"], .btn-group form button[type="button"].secondary:not(.close) + input[type="reset"], form .btn-group button[type="button"].secondary:not(.close) + input[type="reset"], .btn-group form button[type="button"].default:not(.close) + input[type="reset"], form .btn-group button[type="button"].default:not(.close) + input[type="reset"], .btn-group form .btn + button[type="submit"], form .btn-group .btn + button[type="submit"], .btn-group form input[type="submit"] + button[type="submit"], form .btn-group input[type="submit"] + button[type="submit"], .btn-group form input[type="button"] + button[type="submit"], form .btn-group input[type="button"] + button[type="submit"], .btn-group form input[type="button"].default + button[type="submit"], form .btn-group input[type="button"].default + button[type="submit"], .btn-group form input[type="button"].secondary + button[type="submit"], form .btn-group input[type="button"].secondary + button[type="submit"], .btn-group form input[type="reset"] + button[type="submit"], form .btn-group input[type="reset"] + button[type="submit"], .btn-group form button[type="submit"] + button[type="submit"], form .btn-group button[type="submit"] + button[type="submit"], .btn-group form button[type="reset"] + button[type="submit"], form .btn-group button[type="reset"] + button[type="submit"], .btn-group form button[type="button"]:not(.close) + button[type="submit"], form .btn-group button[type="button"]:not(.close) + button[type="submit"], .btn-group form button[type="button"].secondary:not(.close) + button[type="submit"], form .btn-group button[type="button"].secondary:not(.close) + button[type="submit"], .btn-group form button[type="button"].default:not(.close) + button[type="submit"], form .btn-group button[type="button"].default:not(.close) + button[type="submit"], .btn-group form .btn + button[type="reset"], form .btn-group .btn + button[type="reset"], .btn-group form input[type="submit"] + button[type="reset"], form .btn-group input[type="submit"] + button[type="reset"], .btn-group form input[type="button"] + button[type="reset"], form .btn-group input[type="button"] + button[type="reset"], .btn-group form input[type="button"].default + button[type="reset"], form .btn-group input[type="button"].default + button[type="reset"], .btn-group form input[type="button"].secondary + button[type="reset"], form .btn-group input[type="button"].secondary + button[type="reset"], .btn-group form input[type="reset"] + button[type="reset"], form .btn-group input[type="reset"] + button[type="reset"], .btn-group form button[type="submit"] + button[type="reset"], form .btn-group button[type="submit"] + button[type="reset"], .btn-group form button[type="reset"] + button[type="reset"], form .btn-group button[type="reset"] + button[type="reset"], .btn-group form button[type="button"]:not(.close) + button[type="reset"], form .btn-group button[type="button"]:not(.close) + button[type="reset"], .btn-group form button[type="button"].secondary:not(.close) + button[type="reset"], form .btn-group button[type="button"].secondary:not(.close) + button[type="reset"], .btn-group form button[type="button"].default:not(.close) + button[type="reset"], form .btn-group button[type="button"].default:not(.close) + button[type="reset"], .btn-group form .btn + button[type="button"]:not(.close), form .btn-group .btn + button[type="button"]:not(.close), .btn-group form input[type="submit"] + button[type="button"]:not(.close), form .btn-group input[type="submit"] + button[type="button"]:not(.close), .btn-group form input[type="button"] + button[type="button"]:not(.close), form .btn-group input[type="button"] + button[type="button"]:not(.close), .btn-group form input[type="button"].default + button[type="button"]:not(.close), form .btn-group input[type="button"].default + button[type="button"]:not(.close), .btn-group form input[type="button"].secondary + button[type="button"]:not(.close), form .btn-group input[type="button"].secondary + button[type="button"]:not(.close), .btn-group form input[type="reset"] + button[type="button"]:not(.close), form .btn-group input[type="reset"] + button[type="button"]:not(.close), .btn-group form button[type="submit"] + button[type="button"]:not(.close), form .btn-group button[type="submit"] + button[type="button"]:not(.close), .btn-group form button[type="reset"] + button[type="button"]:not(.close), form .btn-group button[type="reset"] + button[type="button"]:not(.close), .btn-group form button[type="button"]:not(.close) + button[type="button"]:not(.close), form .btn-group button[type="button"]:not(.close) + button[type="button"]:not(.close), .btn-group form button[type="button"].secondary:not(.close) + button[type="button"]:not(.close), form .btn-group button[type="button"].secondary:not(.close) + button[type="button"]:not(.close), .btn-group form button[type="button"].default:not(.close) + button[type="button"]:not(.close), form .btn-group button[type="button"].default:not(.close) + button[type="button"]:not(.close), .btn-group form .btn + button[type="button"].secondary:not(.close), form .btn-group .btn + button[type="button"].secondary:not(.close), .btn-group form input[type="submit"] + button[type="button"].secondary:not(.close), form .btn-group input[type="submit"] + button[type="button"].secondary:not(.close), .btn-group form input[type="button"] + button[type="button"].secondary:not(.close), form .btn-group input[type="button"] + button[type="button"].secondary:not(.close), .btn-group form input[type="button"].default + button[type="button"].secondary:not(.close), form .btn-group input[type="button"].default + button[type="button"].secondary:not(.close), .btn-group form input[type="button"].secondary + button[type="button"].secondary:not(.close), form .btn-group input[type="button"].secondary + button[type="button"].secondary:not(.close), .btn-group form input[type="reset"] + button[type="button"].secondary:not(.close), form .btn-group input[type="reset"] + button[type="button"].secondary:not(.close), .btn-group form button[type="submit"] + button[type="button"].secondary:not(.close), form .btn-group button[type="submit"] + button[type="button"].secondary:not(.close), .btn-group form button[type="reset"] + button[type="button"].secondary:not(.close), form .btn-group button[type="reset"] + button[type="button"].secondary:not(.close), .btn-group form button[type="button"]:not(.close) + button[type="button"].secondary:not(.close), form .btn-group button[type="button"]:not(.close) + button[type="button"].secondary:not(.close), .btn-group form button[type="button"].secondary:not(.close) + button[type="button"].secondary:not(.close), form .btn-group button[type="button"].secondary:not(.close) + button[type="button"].secondary:not(.close), .btn-group form button[type="button"].default:not(.close) + button[type="button"].secondary:not(.close), form .btn-group button[type="button"].default:not(.close) + button[type="button"].secondary:not(.close), .btn-group form .btn + button[type="button"].default:not(.close), form .btn-group .btn + button[type="button"].default:not(.close), .btn-group form input[type="submit"] + button[type="button"].default:not(.close), form .btn-group input[type="submit"] + button[type="button"].default:not(.close), .btn-group form input[type="button"] + button[type="button"].default:not(.close), form .btn-group input[type="button"] + button[type="button"].default:not(.close), .btn-group form input[type="button"].default + button[type="button"].default:not(.close), form .btn-group input[type="button"].default + button[type="button"].default:not(.close), .btn-group form input[type="button"].secondary + button[type="button"].default:not(.close), form .btn-group input[type="button"].secondary + button[type="button"].default:not(.close), .btn-group form input[type="reset"] + button[type="button"].default:not(.close), form .btn-group input[type="reset"] + button[type="button"].default:not(.close), .btn-group form button[type="submit"] + button[type="button"].default:not(.close), form .btn-group button[type="submit"] + button[type="button"].default:not(.close), .btn-group form button[type="reset"] + button[type="button"].default:not(.close), form .btn-group button[type="reset"] + button[type="button"].default:not(.close), .btn-group form button[type="button"]:not(.close) + button[type="button"].default:not(.close), form .btn-group button[type="button"]:not(.close) + button[type="button"].default:not(.close), .btn-group form button[type="button"].secondary:not(.close) + button[type="button"].default:not(.close), form .btn-group button[type="button"].secondary:not(.close) + button[type="button"].default:not(.close), .btn-group form button[type="button"].default:not(.close) + button[type="button"].default:not(.close), form .btn-group button[type="button"].default:not(.close) + button[type="button"].default:not(.close),
   .btn-group .btn + .btn-group,
   .btn-group form input[type="submit"] + .btn-group, form
   .btn-group input[type="submit"] + .btn-group,
@@ -2403,8 +2397,8 @@ tbody.collapse.show {
   .btn-group button[type="submit"] + .btn-group,
   .btn-group form button[type="reset"] + .btn-group, form
   .btn-group button[type="reset"] + .btn-group,
-  .btn-group form button[type="button"] + .btn-group, form
-  .btn-group button[type="button"] + .btn-group,
+  .btn-group form button[type="button"]:not(.close) + .btn-group, form
+  .btn-group button[type="button"]:not(.close) + .btn-group,
   .btn-group .btn-group + .btn,
   .btn-group form .btn-group + input[type="submit"], form
   .btn-group .btn-group + input[type="submit"],
@@ -2416,8 +2410,8 @@ tbody.collapse.show {
   .btn-group .btn-group + button[type="submit"],
   .btn-group form .btn-group + button[type="reset"], form
   .btn-group .btn-group + button[type="reset"],
-  .btn-group form .btn-group + button[type="button"], form
-  .btn-group .btn-group + button[type="button"],
+  .btn-group form .btn-group + button[type="button"]:not(.close), form
+  .btn-group .btn-group + button[type="button"]:not(.close),
   .btn-group .btn-group + .btn-group,
   .btn-group-vertical .btn + .btn,
   .btn-group-vertical form input[type="submit"] + .btn, form
@@ -2434,12 +2428,12 @@ tbody.collapse.show {
   .btn-group-vertical button[type="submit"] + .btn,
   .btn-group-vertical form button[type="reset"] + .btn, form
   .btn-group-vertical button[type="reset"] + .btn,
-  .btn-group-vertical form button[type="button"] + .btn, form
-  .btn-group-vertical button[type="button"] + .btn,
-  .btn-group-vertical form button[type="button"].secondary + .btn, form
-  .btn-group-vertical button[type="button"].secondary + .btn,
-  .btn-group-vertical form button[type="button"].default + .btn, form
-  .btn-group-vertical button[type="button"].default + .btn,
+  .btn-group-vertical form button[type="button"]:not(.close) + .btn, form
+  .btn-group-vertical button[type="button"]:not(.close) + .btn,
+  .btn-group-vertical form button[type="button"].secondary:not(.close) + .btn, form
+  .btn-group-vertical button[type="button"].secondary:not(.close) + .btn,
+  .btn-group-vertical form button[type="button"].default:not(.close) + .btn, form
+  .btn-group-vertical button[type="button"].default:not(.close) + .btn,
   .btn-group-vertical form .btn + input[type="submit"], form
   .btn-group-vertical .btn + input[type="submit"],
   .btn-group-vertical form input[type="submit"] + input[type="submit"], form
@@ -2456,12 +2450,12 @@ tbody.collapse.show {
   .btn-group-vertical button[type="submit"] + input[type="submit"],
   .btn-group-vertical form button[type="reset"] + input[type="submit"], form
   .btn-group-vertical button[type="reset"] + input[type="submit"],
-  .btn-group-vertical form button[type="button"] + input[type="submit"], form
-  .btn-group-vertical button[type="button"] + input[type="submit"],
-  .btn-group-vertical form button[type="button"].secondary + input[type="submit"], form
-  .btn-group-vertical button[type="button"].secondary + input[type="submit"],
-  .btn-group-vertical form button[type="button"].default + input[type="submit"], form
-  .btn-group-vertical button[type="button"].default + input[type="submit"],
+  .btn-group-vertical form button[type="button"]:not(.close) + input[type="submit"], form
+  .btn-group-vertical button[type="button"]:not(.close) + input[type="submit"],
+  .btn-group-vertical form button[type="button"].secondary:not(.close) + input[type="submit"], form
+  .btn-group-vertical button[type="button"].secondary:not(.close) + input[type="submit"],
+  .btn-group-vertical form button[type="button"].default:not(.close) + input[type="submit"], form
+  .btn-group-vertical button[type="button"].default:not(.close) + input[type="submit"],
   .btn-group-vertical form .btn + input[type="button"], form
   .btn-group-vertical .btn + input[type="button"],
   .btn-group-vertical form input[type="submit"] + input[type="button"], form
@@ -2478,12 +2472,12 @@ tbody.collapse.show {
   .btn-group-vertical button[type="submit"] + input[type="button"],
   .btn-group-vertical form button[type="reset"] + input[type="button"], form
   .btn-group-vertical button[type="reset"] + input[type="button"],
-  .btn-group-vertical form button[type="button"] + input[type="button"], form
-  .btn-group-vertical button[type="button"] + input[type="button"],
-  .btn-group-vertical form button[type="button"].secondary + input[type="button"], form
-  .btn-group-vertical button[type="button"].secondary + input[type="button"],
-  .btn-group-vertical form button[type="button"].default + input[type="button"], form
-  .btn-group-vertical button[type="button"].default + input[type="button"],
+  .btn-group-vertical form button[type="button"]:not(.close) + input[type="button"], form
+  .btn-group-vertical button[type="button"]:not(.close) + input[type="button"],
+  .btn-group-vertical form button[type="button"].secondary:not(.close) + input[type="button"], form
+  .btn-group-vertical button[type="button"].secondary:not(.close) + input[type="button"],
+  .btn-group-vertical form button[type="button"].default:not(.close) + input[type="button"], form
+  .btn-group-vertical button[type="button"].default:not(.close) + input[type="button"],
   .btn-group-vertical form .btn + input[type="button"].default, form
   .btn-group-vertical .btn + input[type="button"].default,
   .btn-group-vertical form input[type="submit"] + input[type="button"].default, form
@@ -2500,12 +2494,12 @@ tbody.collapse.show {
   .btn-group-vertical button[type="submit"] + input[type="button"].default,
   .btn-group-vertical form button[type="reset"] + input[type="button"].default, form
   .btn-group-vertical button[type="reset"] + input[type="button"].default,
-  .btn-group-vertical form button[type="button"] + input[type="button"].default, form
-  .btn-group-vertical button[type="button"] + input[type="button"].default,
-  .btn-group-vertical form button[type="button"].secondary + input[type="button"].default, form
-  .btn-group-vertical button[type="button"].secondary + input[type="button"].default,
-  .btn-group-vertical form button[type="button"].default + input[type="button"].default, form
-  .btn-group-vertical button[type="button"].default + input[type="button"].default,
+  .btn-group-vertical form button[type="button"]:not(.close) + input[type="button"].default, form
+  .btn-group-vertical button[type="button"]:not(.close) + input[type="button"].default,
+  .btn-group-vertical form button[type="button"].secondary:not(.close) + input[type="button"].default, form
+  .btn-group-vertical button[type="button"].secondary:not(.close) + input[type="button"].default,
+  .btn-group-vertical form button[type="button"].default:not(.close) + input[type="button"].default, form
+  .btn-group-vertical button[type="button"].default:not(.close) + input[type="button"].default,
   .btn-group-vertical form .btn + input[type="button"].secondary, form
   .btn-group-vertical .btn + input[type="button"].secondary,
   .btn-group-vertical form input[type="submit"] + input[type="button"].secondary, form
@@ -2522,12 +2516,12 @@ tbody.collapse.show {
   .btn-group-vertical button[type="submit"] + input[type="button"].secondary,
   .btn-group-vertical form button[type="reset"] + input[type="button"].secondary, form
   .btn-group-vertical button[type="reset"] + input[type="button"].secondary,
-  .btn-group-vertical form button[type="button"] + input[type="button"].secondary, form
-  .btn-group-vertical button[type="button"] + input[type="button"].secondary,
-  .btn-group-vertical form button[type="button"].secondary + input[type="button"].secondary, form
-  .btn-group-vertical button[type="button"].secondary + input[type="button"].secondary,
-  .btn-group-vertical form button[type="button"].default + input[type="button"].secondary, form
-  .btn-group-vertical button[type="button"].default + input[type="button"].secondary,
+  .btn-group-vertical form button[type="button"]:not(.close) + input[type="button"].secondary, form
+  .btn-group-vertical button[type="button"]:not(.close) + input[type="button"].secondary,
+  .btn-group-vertical form button[type="button"].secondary:not(.close) + input[type="button"].secondary, form
+  .btn-group-vertical button[type="button"].secondary:not(.close) + input[type="button"].secondary,
+  .btn-group-vertical form button[type="button"].default:not(.close) + input[type="button"].secondary, form
+  .btn-group-vertical button[type="button"].default:not(.close) + input[type="button"].secondary,
   .btn-group-vertical form .btn + input[type="reset"], form
   .btn-group-vertical .btn + input[type="reset"],
   .btn-group-vertical form input[type="submit"] + input[type="reset"], form
@@ -2544,12 +2538,12 @@ tbody.collapse.show {
   .btn-group-vertical button[type="submit"] + input[type="reset"],
   .btn-group-vertical form button[type="reset"] + input[type="reset"], form
   .btn-group-vertical button[type="reset"] + input[type="reset"],
-  .btn-group-vertical form button[type="button"] + input[type="reset"], form
-  .btn-group-vertical button[type="button"] + input[type="reset"],
-  .btn-group-vertical form button[type="button"].secondary + input[type="reset"], form
-  .btn-group-vertical button[type="button"].secondary + input[type="reset"],
-  .btn-group-vertical form button[type="button"].default + input[type="reset"], form
-  .btn-group-vertical button[type="button"].default + input[type="reset"],
+  .btn-group-vertical form button[type="button"]:not(.close) + input[type="reset"], form
+  .btn-group-vertical button[type="button"]:not(.close) + input[type="reset"],
+  .btn-group-vertical form button[type="button"].secondary:not(.close) + input[type="reset"], form
+  .btn-group-vertical button[type="button"].secondary:not(.close) + input[type="reset"],
+  .btn-group-vertical form button[type="button"].default:not(.close) + input[type="reset"], form
+  .btn-group-vertical button[type="button"].default:not(.close) + input[type="reset"],
   .btn-group-vertical form .btn + button[type="submit"], form
   .btn-group-vertical .btn + button[type="submit"],
   .btn-group-vertical form input[type="submit"] + button[type="submit"], form
@@ -2566,12 +2560,12 @@ tbody.collapse.show {
   .btn-group-vertical button[type="submit"] + button[type="submit"],
   .btn-group-vertical form button[type="reset"] + button[type="submit"], form
   .btn-group-vertical button[type="reset"] + button[type="submit"],
-  .btn-group-vertical form button[type="button"] + button[type="submit"], form
-  .btn-group-vertical button[type="button"] + button[type="submit"],
-  .btn-group-vertical form button[type="button"].secondary + button[type="submit"], form
-  .btn-group-vertical button[type="button"].secondary + button[type="submit"],
-  .btn-group-vertical form button[type="button"].default + button[type="submit"], form
-  .btn-group-vertical button[type="button"].default + button[type="submit"],
+  .btn-group-vertical form button[type="button"]:not(.close) + button[type="submit"], form
+  .btn-group-vertical button[type="button"]:not(.close) + button[type="submit"],
+  .btn-group-vertical form button[type="button"].secondary:not(.close) + button[type="submit"], form
+  .btn-group-vertical button[type="button"].secondary:not(.close) + button[type="submit"],
+  .btn-group-vertical form button[type="button"].default:not(.close) + button[type="submit"], form
+  .btn-group-vertical button[type="button"].default:not(.close) + button[type="submit"],
   .btn-group-vertical form .btn + button[type="reset"], form
   .btn-group-vertical .btn + button[type="reset"],
   .btn-group-vertical form input[type="submit"] + button[type="reset"], form
@@ -2588,78 +2582,78 @@ tbody.collapse.show {
   .btn-group-vertical button[type="submit"] + button[type="reset"],
   .btn-group-vertical form button[type="reset"] + button[type="reset"], form
   .btn-group-vertical button[type="reset"] + button[type="reset"],
-  .btn-group-vertical form button[type="button"] + button[type="reset"], form
-  .btn-group-vertical button[type="button"] + button[type="reset"],
-  .btn-group-vertical form button[type="button"].secondary + button[type="reset"], form
-  .btn-group-vertical button[type="button"].secondary + button[type="reset"],
-  .btn-group-vertical form button[type="button"].default + button[type="reset"], form
-  .btn-group-vertical button[type="button"].default + button[type="reset"],
-  .btn-group-vertical form .btn + button[type="button"], form
-  .btn-group-vertical .btn + button[type="button"],
-  .btn-group-vertical form input[type="submit"] + button[type="button"], form
-  .btn-group-vertical input[type="submit"] + button[type="button"],
-  .btn-group-vertical form input[type="button"] + button[type="button"], form
-  .btn-group-vertical input[type="button"] + button[type="button"],
-  .btn-group-vertical form input[type="button"].default + button[type="button"], form
-  .btn-group-vertical input[type="button"].default + button[type="button"],
-  .btn-group-vertical form input[type="button"].secondary + button[type="button"], form
-  .btn-group-vertical input[type="button"].secondary + button[type="button"],
-  .btn-group-vertical form input[type="reset"] + button[type="button"], form
-  .btn-group-vertical input[type="reset"] + button[type="button"],
-  .btn-group-vertical form button[type="submit"] + button[type="button"], form
-  .btn-group-vertical button[type="submit"] + button[type="button"],
-  .btn-group-vertical form button[type="reset"] + button[type="button"], form
-  .btn-group-vertical button[type="reset"] + button[type="button"],
-  .btn-group-vertical form button[type="button"] + button[type="button"], form
-  .btn-group-vertical button[type="button"] + button[type="button"],
-  .btn-group-vertical form button[type="button"].secondary + button[type="button"], form
-  .btn-group-vertical button[type="button"].secondary + button[type="button"],
-  .btn-group-vertical form button[type="button"].default + button[type="button"], form
-  .btn-group-vertical button[type="button"].default + button[type="button"],
-  .btn-group-vertical form .btn + button[type="button"].secondary, form
-  .btn-group-vertical .btn + button[type="button"].secondary,
-  .btn-group-vertical form input[type="submit"] + button[type="button"].secondary, form
-  .btn-group-vertical input[type="submit"] + button[type="button"].secondary,
-  .btn-group-vertical form input[type="button"] + button[type="button"].secondary, form
-  .btn-group-vertical input[type="button"] + button[type="button"].secondary,
-  .btn-group-vertical form input[type="button"].default + button[type="button"].secondary, form
-  .btn-group-vertical input[type="button"].default + button[type="button"].secondary,
-  .btn-group-vertical form input[type="button"].secondary + button[type="button"].secondary, form
-  .btn-group-vertical input[type="button"].secondary + button[type="button"].secondary,
-  .btn-group-vertical form input[type="reset"] + button[type="button"].secondary, form
-  .btn-group-vertical input[type="reset"] + button[type="button"].secondary,
-  .btn-group-vertical form button[type="submit"] + button[type="button"].secondary, form
-  .btn-group-vertical button[type="submit"] + button[type="button"].secondary,
-  .btn-group-vertical form button[type="reset"] + button[type="button"].secondary, form
-  .btn-group-vertical button[type="reset"] + button[type="button"].secondary,
-  .btn-group-vertical form button[type="button"] + button[type="button"].secondary, form
-  .btn-group-vertical button[type="button"] + button[type="button"].secondary,
-  .btn-group-vertical form button[type="button"].secondary + button[type="button"].secondary, form
-  .btn-group-vertical button[type="button"].secondary + button[type="button"].secondary,
-  .btn-group-vertical form button[type="button"].default + button[type="button"].secondary, form
-  .btn-group-vertical button[type="button"].default + button[type="button"].secondary,
-  .btn-group-vertical form .btn + button[type="button"].default, form
-  .btn-group-vertical .btn + button[type="button"].default,
-  .btn-group-vertical form input[type="submit"] + button[type="button"].default, form
-  .btn-group-vertical input[type="submit"] + button[type="button"].default,
-  .btn-group-vertical form input[type="button"] + button[type="button"].default, form
-  .btn-group-vertical input[type="button"] + button[type="button"].default,
-  .btn-group-vertical form input[type="button"].default + button[type="button"].default, form
-  .btn-group-vertical input[type="button"].default + button[type="button"].default,
-  .btn-group-vertical form input[type="button"].secondary + button[type="button"].default, form
-  .btn-group-vertical input[type="button"].secondary + button[type="button"].default,
-  .btn-group-vertical form input[type="reset"] + button[type="button"].default, form
-  .btn-group-vertical input[type="reset"] + button[type="button"].default,
-  .btn-group-vertical form button[type="submit"] + button[type="button"].default, form
-  .btn-group-vertical button[type="submit"] + button[type="button"].default,
-  .btn-group-vertical form button[type="reset"] + button[type="button"].default, form
-  .btn-group-vertical button[type="reset"] + button[type="button"].default,
-  .btn-group-vertical form button[type="button"] + button[type="button"].default, form
-  .btn-group-vertical button[type="button"] + button[type="button"].default,
-  .btn-group-vertical form button[type="button"].secondary + button[type="button"].default, form
-  .btn-group-vertical button[type="button"].secondary + button[type="button"].default,
-  .btn-group-vertical form button[type="button"].default + button[type="button"].default, form
-  .btn-group-vertical button[type="button"].default + button[type="button"].default,
+  .btn-group-vertical form button[type="button"]:not(.close) + button[type="reset"], form
+  .btn-group-vertical button[type="button"]:not(.close) + button[type="reset"],
+  .btn-group-vertical form button[type="button"].secondary:not(.close) + button[type="reset"], form
+  .btn-group-vertical button[type="button"].secondary:not(.close) + button[type="reset"],
+  .btn-group-vertical form button[type="button"].default:not(.close) + button[type="reset"], form
+  .btn-group-vertical button[type="button"].default:not(.close) + button[type="reset"],
+  .btn-group-vertical form .btn + button[type="button"]:not(.close), form
+  .btn-group-vertical .btn + button[type="button"]:not(.close),
+  .btn-group-vertical form input[type="submit"] + button[type="button"]:not(.close), form
+  .btn-group-vertical input[type="submit"] + button[type="button"]:not(.close),
+  .btn-group-vertical form input[type="button"] + button[type="button"]:not(.close), form
+  .btn-group-vertical input[type="button"] + button[type="button"]:not(.close),
+  .btn-group-vertical form input[type="button"].default + button[type="button"]:not(.close), form
+  .btn-group-vertical input[type="button"].default + button[type="button"]:not(.close),
+  .btn-group-vertical form input[type="button"].secondary + button[type="button"]:not(.close), form
+  .btn-group-vertical input[type="button"].secondary + button[type="button"]:not(.close),
+  .btn-group-vertical form input[type="reset"] + button[type="button"]:not(.close), form
+  .btn-group-vertical input[type="reset"] + button[type="button"]:not(.close),
+  .btn-group-vertical form button[type="submit"] + button[type="button"]:not(.close), form
+  .btn-group-vertical button[type="submit"] + button[type="button"]:not(.close),
+  .btn-group-vertical form button[type="reset"] + button[type="button"]:not(.close), form
+  .btn-group-vertical button[type="reset"] + button[type="button"]:not(.close),
+  .btn-group-vertical form button[type="button"]:not(.close) + button[type="button"]:not(.close), form
+  .btn-group-vertical button[type="button"]:not(.close) + button[type="button"]:not(.close),
+  .btn-group-vertical form button[type="button"].secondary:not(.close) + button[type="button"]:not(.close), form
+  .btn-group-vertical button[type="button"].secondary:not(.close) + button[type="button"]:not(.close),
+  .btn-group-vertical form button[type="button"].default:not(.close) + button[type="button"]:not(.close), form
+  .btn-group-vertical button[type="button"].default:not(.close) + button[type="button"]:not(.close),
+  .btn-group-vertical form .btn + button[type="button"].secondary:not(.close), form
+  .btn-group-vertical .btn + button[type="button"].secondary:not(.close),
+  .btn-group-vertical form input[type="submit"] + button[type="button"].secondary:not(.close), form
+  .btn-group-vertical input[type="submit"] + button[type="button"].secondary:not(.close),
+  .btn-group-vertical form input[type="button"] + button[type="button"].secondary:not(.close), form
+  .btn-group-vertical input[type="button"] + button[type="button"].secondary:not(.close),
+  .btn-group-vertical form input[type="button"].default + button[type="button"].secondary:not(.close), form
+  .btn-group-vertical input[type="button"].default + button[type="button"].secondary:not(.close),
+  .btn-group-vertical form input[type="button"].secondary + button[type="button"].secondary:not(.close), form
+  .btn-group-vertical input[type="button"].secondary + button[type="button"].secondary:not(.close),
+  .btn-group-vertical form input[type="reset"] + button[type="button"].secondary:not(.close), form
+  .btn-group-vertical input[type="reset"] + button[type="button"].secondary:not(.close),
+  .btn-group-vertical form button[type="submit"] + button[type="button"].secondary:not(.close), form
+  .btn-group-vertical button[type="submit"] + button[type="button"].secondary:not(.close),
+  .btn-group-vertical form button[type="reset"] + button[type="button"].secondary:not(.close), form
+  .btn-group-vertical button[type="reset"] + button[type="button"].secondary:not(.close),
+  .btn-group-vertical form button[type="button"]:not(.close) + button[type="button"].secondary:not(.close), form
+  .btn-group-vertical button[type="button"]:not(.close) + button[type="button"].secondary:not(.close),
+  .btn-group-vertical form button[type="button"].secondary:not(.close) + button[type="button"].secondary:not(.close), form
+  .btn-group-vertical button[type="button"].secondary:not(.close) + button[type="button"].secondary:not(.close),
+  .btn-group-vertical form button[type="button"].default:not(.close) + button[type="button"].secondary:not(.close), form
+  .btn-group-vertical button[type="button"].default:not(.close) + button[type="button"].secondary:not(.close),
+  .btn-group-vertical form .btn + button[type="button"].default:not(.close), form
+  .btn-group-vertical .btn + button[type="button"].default:not(.close),
+  .btn-group-vertical form input[type="submit"] + button[type="button"].default:not(.close), form
+  .btn-group-vertical input[type="submit"] + button[type="button"].default:not(.close),
+  .btn-group-vertical form input[type="button"] + button[type="button"].default:not(.close), form
+  .btn-group-vertical input[type="button"] + button[type="button"].default:not(.close),
+  .btn-group-vertical form input[type="button"].default + button[type="button"].default:not(.close), form
+  .btn-group-vertical input[type="button"].default + button[type="button"].default:not(.close),
+  .btn-group-vertical form input[type="button"].secondary + button[type="button"].default:not(.close), form
+  .btn-group-vertical input[type="button"].secondary + button[type="button"].default:not(.close),
+  .btn-group-vertical form input[type="reset"] + button[type="button"].default:not(.close), form
+  .btn-group-vertical input[type="reset"] + button[type="button"].default:not(.close),
+  .btn-group-vertical form button[type="submit"] + button[type="button"].default:not(.close), form
+  .btn-group-vertical button[type="submit"] + button[type="button"].default:not(.close),
+  .btn-group-vertical form button[type="reset"] + button[type="button"].default:not(.close), form
+  .btn-group-vertical button[type="reset"] + button[type="button"].default:not(.close),
+  .btn-group-vertical form button[type="button"]:not(.close) + button[type="button"].default:not(.close), form
+  .btn-group-vertical button[type="button"]:not(.close) + button[type="button"].default:not(.close),
+  .btn-group-vertical form button[type="button"].secondary:not(.close) + button[type="button"].default:not(.close), form
+  .btn-group-vertical button[type="button"].secondary:not(.close) + button[type="button"].default:not(.close),
+  .btn-group-vertical form button[type="button"].default:not(.close) + button[type="button"].default:not(.close), form
+  .btn-group-vertical button[type="button"].default:not(.close) + button[type="button"].default:not(.close),
   .btn-group-vertical .btn + .btn-group,
   .btn-group-vertical form input[type="submit"] + .btn-group, form
   .btn-group-vertical input[type="submit"] + .btn-group,
@@ -2671,8 +2665,8 @@ tbody.collapse.show {
   .btn-group-vertical button[type="submit"] + .btn-group,
   .btn-group-vertical form button[type="reset"] + .btn-group, form
   .btn-group-vertical button[type="reset"] + .btn-group,
-  .btn-group-vertical form button[type="button"] + .btn-group, form
-  .btn-group-vertical button[type="button"] + .btn-group,
+  .btn-group-vertical form button[type="button"]:not(.close) + .btn-group, form
+  .btn-group-vertical button[type="button"]:not(.close) + .btn-group,
   .btn-group-vertical .btn-group + .btn,
   .btn-group-vertical form .btn-group + input[type="submit"], form
   .btn-group-vertical .btn-group + input[type="submit"],
@@ -2684,8 +2678,8 @@ tbody.collapse.show {
   .btn-group-vertical .btn-group + button[type="submit"],
   .btn-group-vertical form .btn-group + button[type="reset"], form
   .btn-group-vertical .btn-group + button[type="reset"],
-  .btn-group-vertical form .btn-group + button[type="button"], form
-  .btn-group-vertical .btn-group + button[type="button"],
+  .btn-group-vertical form .btn-group + button[type="button"]:not(.close), form
+  .btn-group-vertical .btn-group + button[type="button"]:not(.close),
   .btn-group-vertical .btn-group + .btn-group {
     margin-left: -1px; }
 
@@ -2697,16 +2691,16 @@ tbody.collapse.show {
   .btn-toolbar .input-group {
     width: auto; }
 
-.btn-group > .btn:not(:first-child):not(:last-child):not(.dropdown-toggle), form .btn-group > input[type="submit"]:not(:first-child):not(:last-child):not(.dropdown-toggle), form .btn-group > input[type="button"]:not(:first-child):not(:last-child):not(.dropdown-toggle), form .btn-group > input[type="reset"]:not(:first-child):not(:last-child):not(.dropdown-toggle), form .btn-group > button[type="submit"]:not(:first-child):not(:last-child):not(.dropdown-toggle), form .btn-group > button[type="reset"]:not(:first-child):not(:last-child):not(.dropdown-toggle), form .btn-group > button[type="button"]:not(:first-child):not(:last-child):not(.dropdown-toggle) {
+.btn-group > .btn:not(:first-child):not(:last-child):not(.dropdown-toggle), form .btn-group > input[type="submit"]:not(:first-child):not(:last-child):not(.dropdown-toggle), form .btn-group > input[type="button"]:not(:first-child):not(:last-child):not(.dropdown-toggle), form .btn-group > input[type="reset"]:not(:first-child):not(:last-child):not(.dropdown-toggle), form .btn-group > button[type="submit"]:not(:first-child):not(:last-child):not(.dropdown-toggle), form .btn-group > button[type="reset"]:not(:first-child):not(:last-child):not(.dropdown-toggle), form .btn-group > button[type="button"]:not(:first-child):not(:last-child):not(.dropdown-toggle):not(.close) {
   border-radius: 0; }
 
-.btn-group > .btn:first-child, form .btn-group > input[type="submit"]:first-child, form .btn-group > input[type="button"]:first-child, form .btn-group > input[type="reset"]:first-child, form .btn-group > button[type="submit"]:first-child, form .btn-group > button[type="reset"]:first-child, form .btn-group > button[type="button"]:first-child {
+.btn-group > .btn:first-child, form .btn-group > input[type="submit"]:first-child, form .btn-group > input[type="button"]:first-child, form .btn-group > input[type="reset"]:first-child, form .btn-group > button[type="submit"]:first-child, form .btn-group > button[type="reset"]:first-child, form .btn-group > button[type="button"]:first-child:not(.close) {
   margin-left: 0; }
-  .btn-group > .btn:first-child:not(:last-child):not(.dropdown-toggle), form .btn-group > input[type="submit"]:first-child:not(:last-child):not(.dropdown-toggle), form .btn-group > input[type="button"]:first-child:not(:last-child):not(.dropdown-toggle), form .btn-group > input[type="reset"]:first-child:not(:last-child):not(.dropdown-toggle), form .btn-group > button[type="submit"]:first-child:not(:last-child):not(.dropdown-toggle), form .btn-group > button[type="reset"]:first-child:not(:last-child):not(.dropdown-toggle), form .btn-group > button[type="button"]:first-child:not(:last-child):not(.dropdown-toggle) {
+  .btn-group > .btn:first-child:not(:last-child):not(.dropdown-toggle), form .btn-group > input[type="submit"]:first-child:not(:last-child):not(.dropdown-toggle), form .btn-group > input[type="button"]:first-child:not(:last-child):not(.dropdown-toggle), form .btn-group > input[type="reset"]:first-child:not(:last-child):not(.dropdown-toggle), form .btn-group > button[type="submit"]:first-child:not(:last-child):not(.dropdown-toggle), form .btn-group > button[type="reset"]:first-child:not(:last-child):not(.dropdown-toggle), form .btn-group > button[type="button"]:first-child:not(:last-child):not(.dropdown-toggle):not(.close) {
     border-bottom-right-radius: 0;
     border-top-right-radius: 0; }
 
-.btn-group > .btn:last-child:not(:first-child), form .btn-group > input[type="submit"]:last-child:not(:first-child), form .btn-group > input[type="button"]:last-child:not(:first-child), form .btn-group > input[type="reset"]:last-child:not(:first-child), form .btn-group > button[type="submit"]:last-child:not(:first-child), form .btn-group > button[type="reset"]:last-child:not(:first-child), form .btn-group > button[type="button"]:last-child:not(:first-child),
+.btn-group > .btn:last-child:not(:first-child), form .btn-group > input[type="submit"]:last-child:not(:first-child), form .btn-group > input[type="button"]:last-child:not(:first-child), form .btn-group > input[type="reset"]:last-child:not(:first-child), form .btn-group > button[type="submit"]:last-child:not(:first-child), form .btn-group > button[type="reset"]:last-child:not(:first-child), form .btn-group > button[type="button"]:last-child:not(:first-child):not(.close),
 .btn-group > .dropdown-toggle:not(:first-child) {
   border-bottom-left-radius: 0;
   border-top-left-radius: 0; }
@@ -2714,15 +2708,15 @@ tbody.collapse.show {
 .btn-group > .btn-group {
   float: left; }
 
-.btn-group > .btn-group:not(:first-child):not(:last-child) > .btn, form .btn-group > .btn-group:not(:first-child):not(:last-child) > input[type="submit"], form .btn-group > .btn-group:not(:first-child):not(:last-child) > input[type="button"], form .btn-group > .btn-group:not(:first-child):not(:last-child) > input[type="reset"], form .btn-group > .btn-group:not(:first-child):not(:last-child) > button[type="submit"], form .btn-group > .btn-group:not(:first-child):not(:last-child) > button[type="reset"], form .btn-group > .btn-group:not(:first-child):not(:last-child) > button[type="button"] {
+.btn-group > .btn-group:not(:first-child):not(:last-child) > .btn, form .btn-group > .btn-group:not(:first-child):not(:last-child) > input[type="submit"], form .btn-group > .btn-group:not(:first-child):not(:last-child) > input[type="button"], form .btn-group > .btn-group:not(:first-child):not(:last-child) > input[type="reset"], form .btn-group > .btn-group:not(:first-child):not(:last-child) > button[type="submit"], form .btn-group > .btn-group:not(:first-child):not(:last-child) > button[type="reset"], form .btn-group > .btn-group:not(:first-child):not(:last-child) > button[type="button"]:not(.close) {
   border-radius: 0; }
 
-.btn-group > .btn-group:first-child:not(:last-child) > .btn:last-child, form .btn-group > .btn-group:first-child:not(:last-child) > input[type="submit"]:last-child, form .btn-group > .btn-group:first-child:not(:last-child) > input[type="button"]:last-child, form .btn-group > .btn-group:first-child:not(:last-child) > input[type="reset"]:last-child, form .btn-group > .btn-group:first-child:not(:last-child) > button[type="submit"]:last-child, form .btn-group > .btn-group:first-child:not(:last-child) > button[type="reset"]:last-child, form .btn-group > .btn-group:first-child:not(:last-child) > button[type="button"]:last-child,
+.btn-group > .btn-group:first-child:not(:last-child) > .btn:last-child, form .btn-group > .btn-group:first-child:not(:last-child) > input[type="submit"]:last-child, form .btn-group > .btn-group:first-child:not(:last-child) > input[type="button"]:last-child, form .btn-group > .btn-group:first-child:not(:last-child) > input[type="reset"]:last-child, form .btn-group > .btn-group:first-child:not(:last-child) > button[type="submit"]:last-child, form .btn-group > .btn-group:first-child:not(:last-child) > button[type="reset"]:last-child, form .btn-group > .btn-group:first-child:not(:last-child) > button[type="button"]:last-child:not(.close),
 .btn-group > .btn-group:first-child:not(:last-child) > .dropdown-toggle {
   border-bottom-right-radius: 0;
   border-top-right-radius: 0; }
 
-.btn-group > .btn-group:last-child:not(:first-child) > .btn:first-child, form .btn-group > .btn-group:last-child:not(:first-child) > input[type="submit"]:first-child, form .btn-group > .btn-group:last-child:not(:first-child) > input[type="button"]:first-child, form .btn-group > .btn-group:last-child:not(:first-child) > input[type="reset"]:first-child, form .btn-group > .btn-group:last-child:not(:first-child) > button[type="submit"]:first-child, form .btn-group > .btn-group:last-child:not(:first-child) > button[type="reset"]:first-child, form .btn-group > .btn-group:last-child:not(:first-child) > button[type="button"]:first-child {
+.btn-group > .btn-group:last-child:not(:first-child) > .btn:first-child, form .btn-group > .btn-group:last-child:not(:first-child) > input[type="submit"]:first-child, form .btn-group > .btn-group:last-child:not(:first-child) > input[type="button"]:first-child, form .btn-group > .btn-group:last-child:not(:first-child) > input[type="reset"]:first-child, form .btn-group > .btn-group:last-child:not(:first-child) > button[type="submit"]:first-child, form .btn-group > .btn-group:last-child:not(:first-child) > button[type="reset"]:first-child, form .btn-group > .btn-group:last-child:not(:first-child) > button[type="button"]:first-child:not(.close) {
   border-bottom-left-radius: 0;
   border-top-left-radius: 0; }
 
@@ -2730,17 +2724,17 @@ tbody.collapse.show {
 .btn-group.open .dropdown-toggle {
   outline: 0; }
 
-.btn + .dropdown-toggle-split, form input[type="submit"] + .dropdown-toggle-split, form input[type="button"] + .dropdown-toggle-split, form input[type="reset"] + .dropdown-toggle-split, form button[type="submit"] + .dropdown-toggle-split, form button[type="reset"] + .dropdown-toggle-split, form button[type="button"] + .dropdown-toggle-split {
+.btn + .dropdown-toggle-split, form input[type="submit"] + .dropdown-toggle-split, form input[type="button"] + .dropdown-toggle-split, form input[type="reset"] + .dropdown-toggle-split, form button[type="submit"] + .dropdown-toggle-split, form button[type="reset"] + .dropdown-toggle-split, form button[type="button"]:not(.close) + .dropdown-toggle-split {
   padding-right: 1.125rem;
   padding-left: 1.125rem; }
-  .btn + .dropdown-toggle-split::after, form input[type="submit"] + .dropdown-toggle-split::after, form input[type="button"] + .dropdown-toggle-split::after, form input[type="reset"] + .dropdown-toggle-split::after, form button[type="submit"] + .dropdown-toggle-split::after, form button[type="reset"] + .dropdown-toggle-split::after, form button[type="button"] + .dropdown-toggle-split::after {
+  .btn + .dropdown-toggle-split::after, form input[type="submit"] + .dropdown-toggle-split::after, form input[type="button"] + .dropdown-toggle-split::after, form input[type="reset"] + .dropdown-toggle-split::after, form button[type="submit"] + .dropdown-toggle-split::after, form button[type="reset"] + .dropdown-toggle-split::after, form button[type="button"]:not(.close) + .dropdown-toggle-split::after {
     margin-left: 0; }
 
-.btn-sm + .dropdown-toggle-split, .btn-group-sm > .btn + .dropdown-toggle-split, form .btn-group-sm > input[type="submit"] + .dropdown-toggle-split, form .btn-group-sm > input[type="button"] + .dropdown-toggle-split, form .btn-group-sm > input[type="reset"] + .dropdown-toggle-split, form .btn-group-sm > button[type="submit"] + .dropdown-toggle-split, form .btn-group-sm > button[type="reset"] + .dropdown-toggle-split, form .btn-group-sm > button[type="button"] + .dropdown-toggle-split {
+.btn-sm + .dropdown-toggle-split, .btn-group-sm > .btn + .dropdown-toggle-split, form .btn-group-sm > input[type="submit"] + .dropdown-toggle-split, form .btn-group-sm > input[type="button"] + .dropdown-toggle-split, form .btn-group-sm > input[type="reset"] + .dropdown-toggle-split, form .btn-group-sm > button[type="submit"] + .dropdown-toggle-split, form .btn-group-sm > button[type="reset"] + .dropdown-toggle-split, form .btn-group-sm > button[type="button"]:not(.close) + .dropdown-toggle-split {
   padding-right: 0.375rem;
   padding-left: 0.375rem; }
 
-.btn-lg + .dropdown-toggle-split, .btn-group-lg > .btn + .dropdown-toggle-split, form .btn-group-lg > input[type="submit"] + .dropdown-toggle-split, form .btn-group-lg > input[type="button"] + .dropdown-toggle-split, form .btn-group-lg > input[type="reset"] + .dropdown-toggle-split, form .btn-group-lg > button[type="submit"] + .dropdown-toggle-split, form .btn-group-lg > button[type="reset"] + .dropdown-toggle-split, form .btn-group-lg > button[type="button"] + .dropdown-toggle-split {
+.btn-lg + .dropdown-toggle-split, .btn-group-lg > .btn + .dropdown-toggle-split, form .btn-group-lg > input[type="submit"] + .dropdown-toggle-split, form .btn-group-lg > input[type="button"] + .dropdown-toggle-split, form .btn-group-lg > input[type="reset"] + .dropdown-toggle-split, form .btn-group-lg > button[type="submit"] + .dropdown-toggle-split, form .btn-group-lg > button[type="reset"] + .dropdown-toggle-split, form .btn-group-lg > button[type="button"]:not(.close) + .dropdown-toggle-split {
   padding-right: 1.125rem;
   padding-left: 1.125rem; }
 
@@ -2753,73 +2747,73 @@ tbody.collapse.show {
       align-items: flex-start;
   -ms-flex-pack: center;
       justify-content: center; }
-  .btn-group-vertical .btn, .btn-group-vertical form input[type="submit"], form .btn-group-vertical input[type="submit"], .btn-group-vertical form input[type="button"], form .btn-group-vertical input[type="button"], .btn-group-vertical form input[type="reset"], form .btn-group-vertical input[type="reset"], .btn-group-vertical form button[type="submit"], form .btn-group-vertical button[type="submit"], .btn-group-vertical form button[type="reset"], form .btn-group-vertical button[type="reset"], .btn-group-vertical form button[type="button"], form .btn-group-vertical button[type="button"],
+  .btn-group-vertical .btn, .btn-group-vertical form input[type="submit"], form .btn-group-vertical input[type="submit"], .btn-group-vertical form input[type="button"], form .btn-group-vertical input[type="button"], .btn-group-vertical form input[type="reset"], form .btn-group-vertical input[type="reset"], .btn-group-vertical form button[type="submit"], form .btn-group-vertical button[type="submit"], .btn-group-vertical form button[type="reset"], form .btn-group-vertical button[type="reset"], .btn-group-vertical form button[type="button"]:not(.close), form .btn-group-vertical button[type="button"]:not(.close),
   .btn-group-vertical .btn-group {
     width: 100%; }
-  .btn-group-vertical > .btn + .btn, form .btn-group-vertical > input[type="submit"] + .btn, form .btn-group-vertical > input[type="button"] + .btn, form .btn-group-vertical > input[type="button"].default + .btn, form .btn-group-vertical > input[type="button"].secondary + .btn, form .btn-group-vertical > input[type="reset"] + .btn, form .btn-group-vertical > button[type="submit"] + .btn, form .btn-group-vertical > button[type="reset"] + .btn, form .btn-group-vertical > button[type="button"] + .btn, form .btn-group-vertical > button[type="button"].secondary + .btn, form .btn-group-vertical > button[type="button"].default + .btn, form .btn-group-vertical > .btn + input[type="submit"], form .btn-group-vertical > input[type="submit"] + input[type="submit"], form .btn-group-vertical > input[type="button"] + input[type="submit"], form .btn-group-vertical > input[type="button"].default + input[type="submit"], form .btn-group-vertical > input[type="button"].secondary + input[type="submit"], form .btn-group-vertical > input[type="reset"] + input[type="submit"], form .btn-group-vertical > button[type="submit"] + input[type="submit"], form .btn-group-vertical > button[type="reset"] + input[type="submit"], form .btn-group-vertical > button[type="button"] + input[type="submit"], form .btn-group-vertical > button[type="button"].secondary + input[type="submit"], form .btn-group-vertical > button[type="button"].default + input[type="submit"], form .btn-group-vertical > .btn + input[type="button"], form .btn-group-vertical > input[type="submit"] + input[type="button"], form .btn-group-vertical > input[type="button"] + input[type="button"], form .btn-group-vertical > input[type="button"].default + input[type="button"], form .btn-group-vertical > input[type="button"].secondary + input[type="button"], form .btn-group-vertical > input[type="reset"] + input[type="button"], form .btn-group-vertical > button[type="submit"] + input[type="button"], form .btn-group-vertical > button[type="reset"] + input[type="button"], form .btn-group-vertical > button[type="button"] + input[type="button"], form .btn-group-vertical > button[type="button"].secondary + input[type="button"], form .btn-group-vertical > button[type="button"].default + input[type="button"], form .btn-group-vertical > .btn + input[type="button"].default, form .btn-group-vertical > input[type="submit"] + input[type="button"].default, form .btn-group-vertical > input[type="button"] + input[type="button"].default, form .btn-group-vertical > input[type="button"].default + input[type="button"].default, form .btn-group-vertical > input[type="button"].secondary + input[type="button"].default, form .btn-group-vertical > input[type="reset"] + input[type="button"].default, form .btn-group-vertical > button[type="submit"] + input[type="button"].default, form .btn-group-vertical > button[type="reset"] + input[type="button"].default, form .btn-group-vertical > button[type="button"] + input[type="button"].default, form .btn-group-vertical > button[type="button"].secondary + input[type="button"].default, form .btn-group-vertical > button[type="button"].default + input[type="button"].default, form .btn-group-vertical > .btn + input[type="button"].secondary, form .btn-group-vertical > input[type="submit"] + input[type="button"].secondary, form .btn-group-vertical > input[type="button"] + input[type="button"].secondary, form .btn-group-vertical > input[type="button"].default + input[type="button"].secondary, form .btn-group-vertical > input[type="button"].secondary + input[type="button"].secondary, form .btn-group-vertical > input[type="reset"] + input[type="button"].secondary, form .btn-group-vertical > button[type="submit"] + input[type="button"].secondary, form .btn-group-vertical > button[type="reset"] + input[type="button"].secondary, form .btn-group-vertical > button[type="button"] + input[type="button"].secondary, form .btn-group-vertical > button[type="button"].secondary + input[type="button"].secondary, form .btn-group-vertical > button[type="button"].default + input[type="button"].secondary, form .btn-group-vertical > .btn + input[type="reset"], form .btn-group-vertical > input[type="submit"] + input[type="reset"], form .btn-group-vertical > input[type="button"] + input[type="reset"], form .btn-group-vertical > input[type="button"].default + input[type="reset"], form .btn-group-vertical > input[type="button"].secondary + input[type="reset"], form .btn-group-vertical > input[type="reset"] + input[type="reset"], form .btn-group-vertical > button[type="submit"] + input[type="reset"], form .btn-group-vertical > button[type="reset"] + input[type="reset"], form .btn-group-vertical > button[type="button"] + input[type="reset"], form .btn-group-vertical > button[type="button"].secondary + input[type="reset"], form .btn-group-vertical > button[type="button"].default + input[type="reset"], form .btn-group-vertical > .btn + button[type="submit"], form .btn-group-vertical > input[type="submit"] + button[type="submit"], form .btn-group-vertical > input[type="button"] + button[type="submit"], form .btn-group-vertical > input[type="button"].default + button[type="submit"], form .btn-group-vertical > input[type="button"].secondary + button[type="submit"], form .btn-group-vertical > input[type="reset"] + button[type="submit"], form .btn-group-vertical > button[type="submit"] + button[type="submit"], form .btn-group-vertical > button[type="reset"] + button[type="submit"], form .btn-group-vertical > button[type="button"] + button[type="submit"], form .btn-group-vertical > button[type="button"].secondary + button[type="submit"], form .btn-group-vertical > button[type="button"].default + button[type="submit"], form .btn-group-vertical > .btn + button[type="reset"], form .btn-group-vertical > input[type="submit"] + button[type="reset"], form .btn-group-vertical > input[type="button"] + button[type="reset"], form .btn-group-vertical > input[type="button"].default + button[type="reset"], form .btn-group-vertical > input[type="button"].secondary + button[type="reset"], form .btn-group-vertical > input[type="reset"] + button[type="reset"], form .btn-group-vertical > button[type="submit"] + button[type="reset"], form .btn-group-vertical > button[type="reset"] + button[type="reset"], form .btn-group-vertical > button[type="button"] + button[type="reset"], form .btn-group-vertical > button[type="button"].secondary + button[type="reset"], form .btn-group-vertical > button[type="button"].default + button[type="reset"], form .btn-group-vertical > .btn + button[type="button"], form .btn-group-vertical > input[type="submit"] + button[type="button"], form .btn-group-vertical > input[type="button"] + button[type="button"], form .btn-group-vertical > input[type="button"].default + button[type="button"], form .btn-group-vertical > input[type="button"].secondary + button[type="button"], form .btn-group-vertical > input[type="reset"] + button[type="button"], form .btn-group-vertical > button[type="submit"] + button[type="button"], form .btn-group-vertical > button[type="reset"] + button[type="button"], form .btn-group-vertical > button[type="button"] + button[type="button"], form .btn-group-vertical > button[type="button"].secondary + button[type="button"], form .btn-group-vertical > button[type="button"].default + button[type="button"], form .btn-group-vertical > .btn + button[type="button"].secondary, form .btn-group-vertical > input[type="submit"] + button[type="button"].secondary, form .btn-group-vertical > input[type="button"] + button[type="button"].secondary, form .btn-group-vertical > input[type="button"].default + button[type="button"].secondary, form .btn-group-vertical > input[type="button"].secondary + button[type="button"].secondary, form .btn-group-vertical > input[type="reset"] + button[type="button"].secondary, form .btn-group-vertical > button[type="submit"] + button[type="button"].secondary, form .btn-group-vertical > button[type="reset"] + button[type="button"].secondary, form .btn-group-vertical > button[type="button"] + button[type="button"].secondary, form .btn-group-vertical > button[type="button"].secondary + button[type="button"].secondary, form .btn-group-vertical > button[type="button"].default + button[type="button"].secondary, form .btn-group-vertical > .btn + button[type="button"].default, form .btn-group-vertical > input[type="submit"] + button[type="button"].default, form .btn-group-vertical > input[type="button"] + button[type="button"].default, form .btn-group-vertical > input[type="button"].default + button[type="button"].default, form .btn-group-vertical > input[type="button"].secondary + button[type="button"].default, form .btn-group-vertical > input[type="reset"] + button[type="button"].default, form .btn-group-vertical > button[type="submit"] + button[type="button"].default, form .btn-group-vertical > button[type="reset"] + button[type="button"].default, form .btn-group-vertical > button[type="button"] + button[type="button"].default, form .btn-group-vertical > button[type="button"].secondary + button[type="button"].default, form .btn-group-vertical > button[type="button"].default + button[type="button"].default,
+  .btn-group-vertical > .btn + .btn, form .btn-group-vertical > input[type="submit"] + .btn, form .btn-group-vertical > input[type="button"] + .btn, form .btn-group-vertical > input[type="button"].default + .btn, form .btn-group-vertical > input[type="button"].secondary + .btn, form .btn-group-vertical > input[type="reset"] + .btn, form .btn-group-vertical > button[type="submit"] + .btn, form .btn-group-vertical > button[type="reset"] + .btn, form .btn-group-vertical > button[type="button"]:not(.close) + .btn, form .btn-group-vertical > button[type="button"].secondary:not(.close) + .btn, form .btn-group-vertical > button[type="button"].default:not(.close) + .btn, form .btn-group-vertical > .btn + input[type="submit"], form .btn-group-vertical > input[type="submit"] + input[type="submit"], form .btn-group-vertical > input[type="button"] + input[type="submit"], form .btn-group-vertical > input[type="button"].default + input[type="submit"], form .btn-group-vertical > input[type="button"].secondary + input[type="submit"], form .btn-group-vertical > input[type="reset"] + input[type="submit"], form .btn-group-vertical > button[type="submit"] + input[type="submit"], form .btn-group-vertical > button[type="reset"] + input[type="submit"], form .btn-group-vertical > button[type="button"]:not(.close) + input[type="submit"], form .btn-group-vertical > button[type="button"].secondary:not(.close) + input[type="submit"], form .btn-group-vertical > button[type="button"].default:not(.close) + input[type="submit"], form .btn-group-vertical > .btn + input[type="button"], form .btn-group-vertical > input[type="submit"] + input[type="button"], form .btn-group-vertical > input[type="button"] + input[type="button"], form .btn-group-vertical > input[type="button"].default + input[type="button"], form .btn-group-vertical > input[type="button"].secondary + input[type="button"], form .btn-group-vertical > input[type="reset"] + input[type="button"], form .btn-group-vertical > button[type="submit"] + input[type="button"], form .btn-group-vertical > button[type="reset"] + input[type="button"], form .btn-group-vertical > button[type="button"]:not(.close) + input[type="button"], form .btn-group-vertical > button[type="button"].secondary:not(.close) + input[type="button"], form .btn-group-vertical > button[type="button"].default:not(.close) + input[type="button"], form .btn-group-vertical > .btn + input[type="button"].default, form .btn-group-vertical > input[type="submit"] + input[type="button"].default, form .btn-group-vertical > input[type="button"] + input[type="button"].default, form .btn-group-vertical > input[type="button"].default + input[type="button"].default, form .btn-group-vertical > input[type="button"].secondary + input[type="button"].default, form .btn-group-vertical > input[type="reset"] + input[type="button"].default, form .btn-group-vertical > button[type="submit"] + input[type="button"].default, form .btn-group-vertical > button[type="reset"] + input[type="button"].default, form .btn-group-vertical > button[type="button"]:not(.close) + input[type="button"].default, form .btn-group-vertical > button[type="button"].secondary:not(.close) + input[type="button"].default, form .btn-group-vertical > button[type="button"].default:not(.close) + input[type="button"].default, form .btn-group-vertical > .btn + input[type="button"].secondary, form .btn-group-vertical > input[type="submit"] + input[type="button"].secondary, form .btn-group-vertical > input[type="button"] + input[type="button"].secondary, form .btn-group-vertical > input[type="button"].default + input[type="button"].secondary, form .btn-group-vertical > input[type="button"].secondary + input[type="button"].secondary, form .btn-group-vertical > input[type="reset"] + input[type="button"].secondary, form .btn-group-vertical > button[type="submit"] + input[type="button"].secondary, form .btn-group-vertical > button[type="reset"] + input[type="button"].secondary, form .btn-group-vertical > button[type="button"]:not(.close) + input[type="button"].secondary, form .btn-group-vertical > button[type="button"].secondary:not(.close) + input[type="button"].secondary, form .btn-group-vertical > button[type="button"].default:not(.close) + input[type="button"].secondary, form .btn-group-vertical > .btn + input[type="reset"], form .btn-group-vertical > input[type="submit"] + input[type="reset"], form .btn-group-vertical > input[type="button"] + input[type="reset"], form .btn-group-vertical > input[type="button"].default + input[type="reset"], form .btn-group-vertical > input[type="button"].secondary + input[type="reset"], form .btn-group-vertical > input[type="reset"] + input[type="reset"], form .btn-group-vertical > button[type="submit"] + input[type="reset"], form .btn-group-vertical > button[type="reset"] + input[type="reset"], form .btn-group-vertical > button[type="button"]:not(.close) + input[type="reset"], form .btn-group-vertical > button[type="button"].secondary:not(.close) + input[type="reset"], form .btn-group-vertical > button[type="button"].default:not(.close) + input[type="reset"], form .btn-group-vertical > .btn + button[type="submit"], form .btn-group-vertical > input[type="submit"] + button[type="submit"], form .btn-group-vertical > input[type="button"] + button[type="submit"], form .btn-group-vertical > input[type="button"].default + button[type="submit"], form .btn-group-vertical > input[type="button"].secondary + button[type="submit"], form .btn-group-vertical > input[type="reset"] + button[type="submit"], form .btn-group-vertical > button[type="submit"] + button[type="submit"], form .btn-group-vertical > button[type="reset"] + button[type="submit"], form .btn-group-vertical > button[type="button"]:not(.close) + button[type="submit"], form .btn-group-vertical > button[type="button"].secondary:not(.close) + button[type="submit"], form .btn-group-vertical > button[type="button"].default:not(.close) + button[type="submit"], form .btn-group-vertical > .btn + button[type="reset"], form .btn-group-vertical > input[type="submit"] + button[type="reset"], form .btn-group-vertical > input[type="button"] + button[type="reset"], form .btn-group-vertical > input[type="button"].default + button[type="reset"], form .btn-group-vertical > input[type="button"].secondary + button[type="reset"], form .btn-group-vertical > input[type="reset"] + button[type="reset"], form .btn-group-vertical > button[type="submit"] + button[type="reset"], form .btn-group-vertical > button[type="reset"] + button[type="reset"], form .btn-group-vertical > button[type="button"]:not(.close) + button[type="reset"], form .btn-group-vertical > button[type="button"].secondary:not(.close) + button[type="reset"], form .btn-group-vertical > button[type="button"].default:not(.close) + button[type="reset"], form .btn-group-vertical > .btn + button[type="button"]:not(.close), form .btn-group-vertical > input[type="submit"] + button[type="button"]:not(.close), form .btn-group-vertical > input[type="button"] + button[type="button"]:not(.close), form .btn-group-vertical > input[type="button"].default + button[type="button"]:not(.close), form .btn-group-vertical > input[type="button"].secondary + button[type="button"]:not(.close), form .btn-group-vertical > input[type="reset"] + button[type="button"]:not(.close), form .btn-group-vertical > button[type="submit"] + button[type="button"]:not(.close), form .btn-group-vertical > button[type="reset"] + button[type="button"]:not(.close), form .btn-group-vertical > button[type="button"]:not(.close) + button[type="button"]:not(.close), form .btn-group-vertical > button[type="button"].secondary:not(.close) + button[type="button"]:not(.close), form .btn-group-vertical > button[type="button"].default:not(.close) + button[type="button"]:not(.close), form .btn-group-vertical > .btn + button[type="button"].secondary:not(.close), form .btn-group-vertical > input[type="submit"] + button[type="button"].secondary:not(.close), form .btn-group-vertical > input[type="button"] + button[type="button"].secondary:not(.close), form .btn-group-vertical > input[type="button"].default + button[type="button"].secondary:not(.close), form .btn-group-vertical > input[type="button"].secondary + button[type="button"].secondary:not(.close), form .btn-group-vertical > input[type="reset"] + button[type="button"].secondary:not(.close), form .btn-group-vertical > button[type="submit"] + button[type="button"].secondary:not(.close), form .btn-group-vertical > button[type="reset"] + button[type="button"].secondary:not(.close), form .btn-group-vertical > button[type="button"]:not(.close) + button[type="button"].secondary:not(.close), form .btn-group-vertical > button[type="button"].secondary:not(.close) + button[type="button"].secondary:not(.close), form .btn-group-vertical > button[type="button"].default:not(.close) + button[type="button"].secondary:not(.close), form .btn-group-vertical > .btn + button[type="button"].default:not(.close), form .btn-group-vertical > input[type="submit"] + button[type="button"].default:not(.close), form .btn-group-vertical > input[type="button"] + button[type="button"].default:not(.close), form .btn-group-vertical > input[type="button"].default + button[type="button"].default:not(.close), form .btn-group-vertical > input[type="button"].secondary + button[type="button"].default:not(.close), form .btn-group-vertical > input[type="reset"] + button[type="button"].default:not(.close), form .btn-group-vertical > button[type="submit"] + button[type="button"].default:not(.close), form .btn-group-vertical > button[type="reset"] + button[type="button"].default:not(.close), form .btn-group-vertical > button[type="button"]:not(.close) + button[type="button"].default:not(.close), form .btn-group-vertical > button[type="button"].secondary:not(.close) + button[type="button"].default:not(.close), form .btn-group-vertical > button[type="button"].default:not(.close) + button[type="button"].default:not(.close),
   .btn-group-vertical > .btn + .btn-group, form
   .btn-group-vertical > input[type="submit"] + .btn-group, form
   .btn-group-vertical > input[type="button"] + .btn-group, form
   .btn-group-vertical > input[type="reset"] + .btn-group, form
   .btn-group-vertical > button[type="submit"] + .btn-group, form
   .btn-group-vertical > button[type="reset"] + .btn-group, form
-  .btn-group-vertical > button[type="button"] + .btn-group,
+  .btn-group-vertical > button[type="button"]:not(.close) + .btn-group,
   .btn-group-vertical > .btn-group + .btn, form
   .btn-group-vertical > .btn-group + input[type="submit"], form
   .btn-group-vertical > .btn-group + input[type="button"], form
   .btn-group-vertical > .btn-group + input[type="reset"], form
   .btn-group-vertical > .btn-group + button[type="submit"], form
   .btn-group-vertical > .btn-group + button[type="reset"], form
-  .btn-group-vertical > .btn-group + button[type="button"],
+  .btn-group-vertical > .btn-group + button[type="button"]:not(.close),
   .btn-group-vertical > .btn-group + .btn-group {
     margin-top: -1px;
     margin-left: 0; }
 
-.btn-group-vertical > .btn:not(:first-child):not(:last-child), form .btn-group-vertical > input[type="submit"]:not(:first-child):not(:last-child), form .btn-group-vertical > input[type="button"]:not(:first-child):not(:last-child), form .btn-group-vertical > input[type="reset"]:not(:first-child):not(:last-child), form .btn-group-vertical > button[type="submit"]:not(:first-child):not(:last-child), form .btn-group-vertical > button[type="reset"]:not(:first-child):not(:last-child), form .btn-group-vertical > button[type="button"]:not(:first-child):not(:last-child) {
+.btn-group-vertical > .btn:not(:first-child):not(:last-child), form .btn-group-vertical > input[type="submit"]:not(:first-child):not(:last-child), form .btn-group-vertical > input[type="button"]:not(:first-child):not(:last-child), form .btn-group-vertical > input[type="reset"]:not(:first-child):not(:last-child), form .btn-group-vertical > button[type="submit"]:not(:first-child):not(:last-child), form .btn-group-vertical > button[type="reset"]:not(:first-child):not(:last-child), form .btn-group-vertical > button[type="button"]:not(:first-child):not(:last-child):not(.close) {
   border-radius: 0; }
 
-.btn-group-vertical > .btn:first-child:not(:last-child), form .btn-group-vertical > input[type="submit"]:first-child:not(:last-child), form .btn-group-vertical > input[type="button"]:first-child:not(:last-child), form .btn-group-vertical > input[type="reset"]:first-child:not(:last-child), form .btn-group-vertical > button[type="submit"]:first-child:not(:last-child), form .btn-group-vertical > button[type="reset"]:first-child:not(:last-child), form .btn-group-vertical > button[type="button"]:first-child:not(:last-child) {
+.btn-group-vertical > .btn:first-child:not(:last-child), form .btn-group-vertical > input[type="submit"]:first-child:not(:last-child), form .btn-group-vertical > input[type="button"]:first-child:not(:last-child), form .btn-group-vertical > input[type="reset"]:first-child:not(:last-child), form .btn-group-vertical > button[type="submit"]:first-child:not(:last-child), form .btn-group-vertical > button[type="reset"]:first-child:not(:last-child), form .btn-group-vertical > button[type="button"]:first-child:not(:last-child):not(.close) {
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0; }
 
-.btn-group-vertical > .btn:last-child:not(:first-child), form .btn-group-vertical > input[type="submit"]:last-child:not(:first-child), form .btn-group-vertical > input[type="button"]:last-child:not(:first-child), form .btn-group-vertical > input[type="reset"]:last-child:not(:first-child), form .btn-group-vertical > button[type="submit"]:last-child:not(:first-child), form .btn-group-vertical > button[type="reset"]:last-child:not(:first-child), form .btn-group-vertical > button[type="button"]:last-child:not(:first-child) {
+.btn-group-vertical > .btn:last-child:not(:first-child), form .btn-group-vertical > input[type="submit"]:last-child:not(:first-child), form .btn-group-vertical > input[type="button"]:last-child:not(:first-child), form .btn-group-vertical > input[type="reset"]:last-child:not(:first-child), form .btn-group-vertical > button[type="submit"]:last-child:not(:first-child), form .btn-group-vertical > button[type="reset"]:last-child:not(:first-child), form .btn-group-vertical > button[type="button"]:last-child:not(:first-child):not(.close) {
   border-top-right-radius: 0;
   border-top-left-radius: 0; }
 
-.btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > .btn, form .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > input[type="submit"], form .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > input[type="button"], form .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > input[type="reset"], form .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > button[type="submit"], form .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > button[type="reset"], form .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > button[type="button"] {
+.btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > .btn, form .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > input[type="submit"], form .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > input[type="button"], form .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > input[type="reset"], form .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > button[type="submit"], form .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > button[type="reset"], form .btn-group-vertical > .btn-group:not(:first-child):not(:last-child) > button[type="button"]:not(.close) {
   border-radius: 0; }
 
-.btn-group-vertical > .btn-group:first-child:not(:last-child) > .btn:last-child, form .btn-group-vertical > .btn-group:first-child:not(:last-child) > input[type="submit"]:last-child, form .btn-group-vertical > .btn-group:first-child:not(:last-child) > input[type="button"]:last-child, form .btn-group-vertical > .btn-group:first-child:not(:last-child) > input[type="reset"]:last-child, form .btn-group-vertical > .btn-group:first-child:not(:last-child) > button[type="submit"]:last-child, form .btn-group-vertical > .btn-group:first-child:not(:last-child) > button[type="reset"]:last-child, form .btn-group-vertical > .btn-group:first-child:not(:last-child) > button[type="button"]:last-child,
+.btn-group-vertical > .btn-group:first-child:not(:last-child) > .btn:last-child, form .btn-group-vertical > .btn-group:first-child:not(:last-child) > input[type="submit"]:last-child, form .btn-group-vertical > .btn-group:first-child:not(:last-child) > input[type="button"]:last-child, form .btn-group-vertical > .btn-group:first-child:not(:last-child) > input[type="reset"]:last-child, form .btn-group-vertical > .btn-group:first-child:not(:last-child) > button[type="submit"]:last-child, form .btn-group-vertical > .btn-group:first-child:not(:last-child) > button[type="reset"]:last-child, form .btn-group-vertical > .btn-group:first-child:not(:last-child) > button[type="button"]:last-child:not(.close),
 .btn-group-vertical > .btn-group:first-child:not(:last-child) > .dropdown-toggle {
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0; }
 
-.btn-group-vertical > .btn-group:last-child:not(:first-child) > .btn:first-child, form .btn-group-vertical > .btn-group:last-child:not(:first-child) > input[type="submit"]:first-child, form .btn-group-vertical > .btn-group:last-child:not(:first-child) > input[type="button"]:first-child, form .btn-group-vertical > .btn-group:last-child:not(:first-child) > input[type="reset"]:first-child, form .btn-group-vertical > .btn-group:last-child:not(:first-child) > button[type="submit"]:first-child, form .btn-group-vertical > .btn-group:last-child:not(:first-child) > button[type="reset"]:first-child, form .btn-group-vertical > .btn-group:last-child:not(:first-child) > button[type="button"]:first-child {
+.btn-group-vertical > .btn-group:last-child:not(:first-child) > .btn:first-child, form .btn-group-vertical > .btn-group:last-child:not(:first-child) > input[type="submit"]:first-child, form .btn-group-vertical > .btn-group:last-child:not(:first-child) > input[type="button"]:first-child, form .btn-group-vertical > .btn-group:last-child:not(:first-child) > input[type="reset"]:first-child, form .btn-group-vertical > .btn-group:last-child:not(:first-child) > button[type="submit"]:first-child, form .btn-group-vertical > .btn-group:last-child:not(:first-child) > button[type="reset"]:first-child, form .btn-group-vertical > .btn-group:last-child:not(:first-child) > button[type="button"]:first-child:not(.close) {
   border-top-right-radius: 0;
   border-top-left-radius: 0; }
 
-[data-toggle="buttons"] > .btn input[type="radio"], form [data-toggle="buttons"] > input[type="submit"] input[type="radio"], form [data-toggle="buttons"] > input[type="button"] input[type="radio"], form [data-toggle="buttons"] > input[type="reset"] input[type="radio"], form [data-toggle="buttons"] > button[type="submit"] input[type="radio"], form [data-toggle="buttons"] > button[type="reset"] input[type="radio"], form [data-toggle="buttons"] > button[type="button"] input[type="radio"],
+[data-toggle="buttons"] > .btn input[type="radio"], form [data-toggle="buttons"] > input[type="submit"] input[type="radio"], form [data-toggle="buttons"] > input[type="button"] input[type="radio"], form [data-toggle="buttons"] > input[type="reset"] input[type="radio"], form [data-toggle="buttons"] > button[type="submit"] input[type="radio"], form [data-toggle="buttons"] > button[type="reset"] input[type="radio"], form [data-toggle="buttons"] > button[type="button"]:not(.close) input[type="radio"],
 [data-toggle="buttons"] > .btn input[type="checkbox"], form
 [data-toggle="buttons"] > input[type="submit"] input[type="checkbox"], form
 [data-toggle="buttons"] > input[type="button"] input[type="checkbox"], form
 [data-toggle="buttons"] > input[type="reset"] input[type="checkbox"], form
 [data-toggle="buttons"] > button[type="submit"] input[type="checkbox"], form
 [data-toggle="buttons"] > button[type="reset"] input[type="checkbox"], form
-[data-toggle="buttons"] > button[type="button"] input[type="checkbox"],
+[data-toggle="buttons"] > button[type="button"]:not(.close) input[type="checkbox"],
 [data-toggle="buttons"] > .btn-group > .btn input[type="radio"], form
 [data-toggle="buttons"] > .btn-group > input[type="submit"] input[type="radio"], form
 [data-toggle="buttons"] > .btn-group > input[type="button"] input[type="radio"], form
 [data-toggle="buttons"] > .btn-group > input[type="reset"] input[type="radio"], form
 [data-toggle="buttons"] > .btn-group > button[type="submit"] input[type="radio"], form
 [data-toggle="buttons"] > .btn-group > button[type="reset"] input[type="radio"], form
-[data-toggle="buttons"] > .btn-group > button[type="button"] input[type="radio"],
+[data-toggle="buttons"] > .btn-group > button[type="button"]:not(.close) input[type="radio"],
 [data-toggle="buttons"] > .btn-group > .btn input[type="checkbox"], form
 [data-toggle="buttons"] > .btn-group > input[type="submit"] input[type="checkbox"], form
 [data-toggle="buttons"] > .btn-group > input[type="button"] input[type="checkbox"], form
 [data-toggle="buttons"] > .btn-group > input[type="reset"] input[type="checkbox"], form
 [data-toggle="buttons"] > .btn-group > button[type="submit"] input[type="checkbox"], form
 [data-toggle="buttons"] > .btn-group > button[type="reset"] input[type="checkbox"], form
-[data-toggle="buttons"] > .btn-group > button[type="button"] input[type="checkbox"] {
+[data-toggle="buttons"] > .btn-group > button[type="button"]:not(.close) input[type="checkbox"] {
   position: absolute;
   clip: rect(0, 0, 0, 0);
   pointer-events: none; }
@@ -2877,7 +2871,7 @@ tbody.collapse.show {
   .input-group-sm > .input-group-btn > input.input-group-addon[type="reset"], form
   .input-group-sm > .input-group-btn > button.input-group-addon[type="submit"], form
   .input-group-sm > .input-group-btn > button.input-group-addon[type="reset"], form
-  .input-group-sm > .input-group-btn > button.input-group-addon[type="button"] {
+  .input-group-sm > .input-group-btn > button.input-group-addon[type="button"]:not(.close) {
     padding: 0.25rem 0.5rem;
     font-size: 0.875rem;
     border-radius: 0.2rem; }
@@ -2889,7 +2883,7 @@ tbody.collapse.show {
   .input-group-lg > .input-group-btn > input.input-group-addon[type="reset"], form
   .input-group-lg > .input-group-btn > button.input-group-addon[type="submit"], form
   .input-group-lg > .input-group-btn > button.input-group-addon[type="reset"], form
-  .input-group-lg > .input-group-btn > button.input-group-addon[type="button"] {
+  .input-group-lg > .input-group-btn > button.input-group-addon[type="button"]:not(.close) {
     padding: 0.75rem 1.5rem;
     font-size: 1.25rem;
     border-radius: 0.3rem; }
@@ -2905,14 +2899,14 @@ tbody.collapse.show {
 .input-group-btn:not(:last-child) > input[type="reset"], form
 .input-group-btn:not(:last-child) > button[type="submit"], form
 .input-group-btn:not(:last-child) > button[type="reset"], form
-.input-group-btn:not(:last-child) > button[type="button"],
+.input-group-btn:not(:last-child) > button[type="button"]:not(.close),
 .input-group-btn:not(:last-child) > .btn-group > .btn, form
 .input-group-btn:not(:last-child) > .btn-group > input[type="submit"], form
 .input-group-btn:not(:last-child) > .btn-group > input[type="button"], form
 .input-group-btn:not(:last-child) > .btn-group > input[type="reset"], form
 .input-group-btn:not(:last-child) > .btn-group > button[type="submit"], form
 .input-group-btn:not(:last-child) > .btn-group > button[type="reset"], form
-.input-group-btn:not(:last-child) > .btn-group > button[type="button"],
+.input-group-btn:not(:last-child) > .btn-group > button[type="button"]:not(.close),
 .input-group-btn:not(:last-child) > .dropdown-toggle,
 .input-group-btn:not(:first-child) > .btn:not(:last-child):not(.dropdown-toggle), form
 .input-group-btn:not(:first-child) > input[type="submit"]:not(:last-child):not(.dropdown-toggle), form
@@ -2920,14 +2914,14 @@ tbody.collapse.show {
 .input-group-btn:not(:first-child) > input[type="reset"]:not(:last-child):not(.dropdown-toggle), form
 .input-group-btn:not(:first-child) > button[type="submit"]:not(:last-child):not(.dropdown-toggle), form
 .input-group-btn:not(:first-child) > button[type="reset"]:not(:last-child):not(.dropdown-toggle), form
-.input-group-btn:not(:first-child) > button[type="button"]:not(:last-child):not(.dropdown-toggle),
+.input-group-btn:not(:first-child) > button[type="button"]:not(:last-child):not(.dropdown-toggle):not(.close),
 .input-group-btn:not(:first-child) > .btn-group:not(:last-child) > .btn, form
 .input-group-btn:not(:first-child) > .btn-group:not(:last-child) > input[type="submit"], form
 .input-group-btn:not(:first-child) > .btn-group:not(:last-child) > input[type="button"], form
 .input-group-btn:not(:first-child) > .btn-group:not(:last-child) > input[type="reset"], form
 .input-group-btn:not(:first-child) > .btn-group:not(:last-child) > button[type="submit"], form
 .input-group-btn:not(:first-child) > .btn-group:not(:last-child) > button[type="reset"], form
-.input-group-btn:not(:first-child) > .btn-group:not(:last-child) > button[type="button"] {
+.input-group-btn:not(:first-child) > .btn-group:not(:last-child) > button[type="button"]:not(.close) {
   border-bottom-right-radius: 0;
   border-top-right-radius: 0; }
 
@@ -2942,14 +2936,14 @@ tbody.collapse.show {
 .input-group-btn:not(:first-child) > input[type="reset"], form
 .input-group-btn:not(:first-child) > button[type="submit"], form
 .input-group-btn:not(:first-child) > button[type="reset"], form
-.input-group-btn:not(:first-child) > button[type="button"],
+.input-group-btn:not(:first-child) > button[type="button"]:not(.close),
 .input-group-btn:not(:first-child) > .btn-group > .btn, form
 .input-group-btn:not(:first-child) > .btn-group > input[type="submit"], form
 .input-group-btn:not(:first-child) > .btn-group > input[type="button"], form
 .input-group-btn:not(:first-child) > .btn-group > input[type="reset"], form
 .input-group-btn:not(:first-child) > .btn-group > button[type="submit"], form
 .input-group-btn:not(:first-child) > .btn-group > button[type="reset"], form
-.input-group-btn:not(:first-child) > .btn-group > button[type="button"],
+.input-group-btn:not(:first-child) > .btn-group > button[type="button"]:not(.close),
 .input-group-btn:not(:first-child) > .dropdown-toggle,
 .input-group-btn:not(:last-child) > .btn:not(:first-child), form
 .input-group-btn:not(:last-child) > input[type="submit"]:not(:first-child), form
@@ -2957,14 +2951,14 @@ tbody.collapse.show {
 .input-group-btn:not(:last-child) > input[type="reset"]:not(:first-child), form
 .input-group-btn:not(:last-child) > button[type="submit"]:not(:first-child), form
 .input-group-btn:not(:last-child) > button[type="reset"]:not(:first-child), form
-.input-group-btn:not(:last-child) > button[type="button"]:not(:first-child),
+.input-group-btn:not(:last-child) > button[type="button"]:not(:first-child):not(.close),
 .input-group-btn:not(:last-child) > .btn-group:not(:first-child) > .btn, form
 .input-group-btn:not(:last-child) > .btn-group:not(:first-child) > input[type="submit"], form
 .input-group-btn:not(:last-child) > .btn-group:not(:first-child) > input[type="button"], form
 .input-group-btn:not(:last-child) > .btn-group:not(:first-child) > input[type="reset"], form
 .input-group-btn:not(:last-child) > .btn-group:not(:first-child) > button[type="submit"], form
 .input-group-btn:not(:last-child) > .btn-group:not(:first-child) > button[type="reset"], form
-.input-group-btn:not(:last-child) > .btn-group:not(:first-child) > button[type="button"] {
+.input-group-btn:not(:last-child) > .btn-group:not(:first-child) > button[type="button"]:not(.close) {
   border-bottom-left-radius: 0;
   border-top-left-radius: 0; }
 
@@ -2975,22 +2969,22 @@ tbody.collapse.show {
   position: relative;
   font-size: 0;
   white-space: nowrap; }
-  .input-group-btn > .btn, form .input-group-btn > input[type="submit"], form .input-group-btn > input[type="button"], form .input-group-btn > input[type="reset"], form .input-group-btn > button[type="submit"], form .input-group-btn > button[type="reset"], form .input-group-btn > button[type="button"] {
+  .input-group-btn > .btn, form .input-group-btn > input[type="submit"], form .input-group-btn > input[type="button"], form .input-group-btn > input[type="reset"], form .input-group-btn > button[type="submit"], form .input-group-btn > button[type="reset"], form .input-group-btn > button[type="button"]:not(.close) {
     position: relative;
     -ms-flex: 1;
         flex: 1; }
-    .input-group-btn > .btn + .btn, form .input-group-btn > input[type="submit"] + .btn, form .input-group-btn > input[type="button"] + .btn, form .input-group-btn > input[type="button"].default + .btn, form .input-group-btn > input[type="button"].secondary + .btn, form .input-group-btn > input[type="reset"] + .btn, form .input-group-btn > button[type="submit"] + .btn, form .input-group-btn > button[type="reset"] + .btn, form .input-group-btn > button[type="button"] + .btn, form .input-group-btn > button[type="button"].secondary + .btn, form .input-group-btn > button[type="button"].default + .btn, form .input-group-btn > .btn + input[type="submit"], form .input-group-btn > input[type="submit"] + input[type="submit"], form .input-group-btn > input[type="button"] + input[type="submit"], form .input-group-btn > input[type="button"].default + input[type="submit"], form .input-group-btn > input[type="button"].secondary + input[type="submit"], form .input-group-btn > input[type="reset"] + input[type="submit"], form .input-group-btn > button[type="submit"] + input[type="submit"], form .input-group-btn > button[type="reset"] + input[type="submit"], form .input-group-btn > button[type="button"] + input[type="submit"], form .input-group-btn > button[type="button"].secondary + input[type="submit"], form .input-group-btn > button[type="button"].default + input[type="submit"], form .input-group-btn > .btn + input[type="button"], form .input-group-btn > input[type="submit"] + input[type="button"], form .input-group-btn > input[type="button"] + input[type="button"], form .input-group-btn > input[type="button"].default + input[type="button"], form .input-group-btn > input[type="button"].secondary + input[type="button"], form .input-group-btn > input[type="reset"] + input[type="button"], form .input-group-btn > button[type="submit"] + input[type="button"], form .input-group-btn > button[type="reset"] + input[type="button"], form .input-group-btn > button[type="button"] + input[type="button"], form .input-group-btn > button[type="button"].secondary + input[type="button"], form .input-group-btn > button[type="button"].default + input[type="button"], form .input-group-btn > .btn + input[type="button"].default, form .input-group-btn > input[type="submit"] + input[type="button"].default, form .input-group-btn > input[type="button"] + input[type="button"].default, form .input-group-btn > input[type="button"].default + input[type="button"].default, form .input-group-btn > input[type="button"].secondary + input[type="button"].default, form .input-group-btn > input[type="reset"] + input[type="button"].default, form .input-group-btn > button[type="submit"] + input[type="button"].default, form .input-group-btn > button[type="reset"] + input[type="button"].default, form .input-group-btn > button[type="button"] + input[type="button"].default, form .input-group-btn > button[type="button"].secondary + input[type="button"].default, form .input-group-btn > button[type="button"].default + input[type="button"].default, form .input-group-btn > .btn + input[type="button"].secondary, form .input-group-btn > input[type="submit"] + input[type="button"].secondary, form .input-group-btn > input[type="button"] + input[type="button"].secondary, form .input-group-btn > input[type="button"].default + input[type="button"].secondary, form .input-group-btn > input[type="button"].secondary + input[type="button"].secondary, form .input-group-btn > input[type="reset"] + input[type="button"].secondary, form .input-group-btn > button[type="submit"] + input[type="button"].secondary, form .input-group-btn > button[type="reset"] + input[type="button"].secondary, form .input-group-btn > button[type="button"] + input[type="button"].secondary, form .input-group-btn > button[type="button"].secondary + input[type="button"].secondary, form .input-group-btn > button[type="button"].default + input[type="button"].secondary, form .input-group-btn > .btn + input[type="reset"], form .input-group-btn > input[type="submit"] + input[type="reset"], form .input-group-btn > input[type="button"] + input[type="reset"], form .input-group-btn > input[type="button"].default + input[type="reset"], form .input-group-btn > input[type="button"].secondary + input[type="reset"], form .input-group-btn > input[type="reset"] + input[type="reset"], form .input-group-btn > button[type="submit"] + input[type="reset"], form .input-group-btn > button[type="reset"] + input[type="reset"], form .input-group-btn > button[type="button"] + input[type="reset"], form .input-group-btn > button[type="button"].secondary + input[type="reset"], form .input-group-btn > button[type="button"].default + input[type="reset"], form .input-group-btn > .btn + button[type="submit"], form .input-group-btn > input[type="submit"] + button[type="submit"], form .input-group-btn > input[type="button"] + button[type="submit"], form .input-group-btn > input[type="button"].default + button[type="submit"], form .input-group-btn > input[type="button"].secondary + button[type="submit"], form .input-group-btn > input[type="reset"] + button[type="submit"], form .input-group-btn > button[type="submit"] + button[type="submit"], form .input-group-btn > button[type="reset"] + button[type="submit"], form .input-group-btn > button[type="button"] + button[type="submit"], form .input-group-btn > button[type="button"].secondary + button[type="submit"], form .input-group-btn > button[type="button"].default + button[type="submit"], form .input-group-btn > .btn + button[type="reset"], form .input-group-btn > input[type="submit"] + button[type="reset"], form .input-group-btn > input[type="button"] + button[type="reset"], form .input-group-btn > input[type="button"].default + button[type="reset"], form .input-group-btn > input[type="button"].secondary + button[type="reset"], form .input-group-btn > input[type="reset"] + button[type="reset"], form .input-group-btn > button[type="submit"] + button[type="reset"], form .input-group-btn > button[type="reset"] + button[type="reset"], form .input-group-btn > button[type="button"] + button[type="reset"], form .input-group-btn > button[type="button"].secondary + button[type="reset"], form .input-group-btn > button[type="button"].default + button[type="reset"], form .input-group-btn > .btn + button[type="button"], form .input-group-btn > input[type="submit"] + button[type="button"], form .input-group-btn > input[type="button"] + button[type="button"], form .input-group-btn > input[type="button"].default + button[type="button"], form .input-group-btn > input[type="button"].secondary + button[type="button"], form .input-group-btn > input[type="reset"] + button[type="button"], form .input-group-btn > button[type="submit"] + button[type="button"], form .input-group-btn > button[type="reset"] + button[type="button"], form .input-group-btn > button[type="button"] + button[type="button"], form .input-group-btn > button[type="button"].secondary + button[type="button"], form .input-group-btn > button[type="button"].default + button[type="button"], form .input-group-btn > .btn + button[type="button"].secondary, form .input-group-btn > input[type="submit"] + button[type="button"].secondary, form .input-group-btn > input[type="button"] + button[type="button"].secondary, form .input-group-btn > input[type="button"].default + button[type="button"].secondary, form .input-group-btn > input[type="button"].secondary + button[type="button"].secondary, form .input-group-btn > input[type="reset"] + button[type="button"].secondary, form .input-group-btn > button[type="submit"] + button[type="button"].secondary, form .input-group-btn > button[type="reset"] + button[type="button"].secondary, form .input-group-btn > button[type="button"] + button[type="button"].secondary, form .input-group-btn > button[type="button"].secondary + button[type="button"].secondary, form .input-group-btn > button[type="button"].default + button[type="button"].secondary, form .input-group-btn > .btn + button[type="button"].default, form .input-group-btn > input[type="submit"] + button[type="button"].default, form .input-group-btn > input[type="button"] + button[type="button"].default, form .input-group-btn > input[type="button"].default + button[type="button"].default, form .input-group-btn > input[type="button"].secondary + button[type="button"].default, form .input-group-btn > input[type="reset"] + button[type="button"].default, form .input-group-btn > button[type="submit"] + button[type="button"].default, form .input-group-btn > button[type="reset"] + button[type="button"].default, form .input-group-btn > button[type="button"] + button[type="button"].default, form .input-group-btn > button[type="button"].secondary + button[type="button"].default, form .input-group-btn > button[type="button"].default + button[type="button"].default {
+    .input-group-btn > .btn + .btn, form .input-group-btn > input[type="submit"] + .btn, form .input-group-btn > input[type="button"] + .btn, form .input-group-btn > input[type="button"].default + .btn, form .input-group-btn > input[type="button"].secondary + .btn, form .input-group-btn > input[type="reset"] + .btn, form .input-group-btn > button[type="submit"] + .btn, form .input-group-btn > button[type="reset"] + .btn, form .input-group-btn > button[type="button"]:not(.close) + .btn, form .input-group-btn > button[type="button"].secondary:not(.close) + .btn, form .input-group-btn > button[type="button"].default:not(.close) + .btn, form .input-group-btn > .btn + input[type="submit"], form .input-group-btn > input[type="submit"] + input[type="submit"], form .input-group-btn > input[type="button"] + input[type="submit"], form .input-group-btn > input[type="button"].default + input[type="submit"], form .input-group-btn > input[type="button"].secondary + input[type="submit"], form .input-group-btn > input[type="reset"] + input[type="submit"], form .input-group-btn > button[type="submit"] + input[type="submit"], form .input-group-btn > button[type="reset"] + input[type="submit"], form .input-group-btn > button[type="button"]:not(.close) + input[type="submit"], form .input-group-btn > button[type="button"].secondary:not(.close) + input[type="submit"], form .input-group-btn > button[type="button"].default:not(.close) + input[type="submit"], form .input-group-btn > .btn + input[type="button"], form .input-group-btn > input[type="submit"] + input[type="button"], form .input-group-btn > input[type="button"] + input[type="button"], form .input-group-btn > input[type="button"].default + input[type="button"], form .input-group-btn > input[type="button"].secondary + input[type="button"], form .input-group-btn > input[type="reset"] + input[type="button"], form .input-group-btn > button[type="submit"] + input[type="button"], form .input-group-btn > button[type="reset"] + input[type="button"], form .input-group-btn > button[type="button"]:not(.close) + input[type="button"], form .input-group-btn > button[type="button"].secondary:not(.close) + input[type="button"], form .input-group-btn > button[type="button"].default:not(.close) + input[type="button"], form .input-group-btn > .btn + input[type="button"].default, form .input-group-btn > input[type="submit"] + input[type="button"].default, form .input-group-btn > input[type="button"] + input[type="button"].default, form .input-group-btn > input[type="button"].default + input[type="button"].default, form .input-group-btn > input[type="button"].secondary + input[type="button"].default, form .input-group-btn > input[type="reset"] + input[type="button"].default, form .input-group-btn > button[type="submit"] + input[type="button"].default, form .input-group-btn > button[type="reset"] + input[type="button"].default, form .input-group-btn > button[type="button"]:not(.close) + input[type="button"].default, form .input-group-btn > button[type="button"].secondary:not(.close) + input[type="button"].default, form .input-group-btn > button[type="button"].default:not(.close) + input[type="button"].default, form .input-group-btn > .btn + input[type="button"].secondary, form .input-group-btn > input[type="submit"] + input[type="button"].secondary, form .input-group-btn > input[type="button"] + input[type="button"].secondary, form .input-group-btn > input[type="button"].default + input[type="button"].secondary, form .input-group-btn > input[type="button"].secondary + input[type="button"].secondary, form .input-group-btn > input[type="reset"] + input[type="button"].secondary, form .input-group-btn > button[type="submit"] + input[type="button"].secondary, form .input-group-btn > button[type="reset"] + input[type="button"].secondary, form .input-group-btn > button[type="button"]:not(.close) + input[type="button"].secondary, form .input-group-btn > button[type="button"].secondary:not(.close) + input[type="button"].secondary, form .input-group-btn > button[type="button"].default:not(.close) + input[type="button"].secondary, form .input-group-btn > .btn + input[type="reset"], form .input-group-btn > input[type="submit"] + input[type="reset"], form .input-group-btn > input[type="button"] + input[type="reset"], form .input-group-btn > input[type="button"].default + input[type="reset"], form .input-group-btn > input[type="button"].secondary + input[type="reset"], form .input-group-btn > input[type="reset"] + input[type="reset"], form .input-group-btn > button[type="submit"] + input[type="reset"], form .input-group-btn > button[type="reset"] + input[type="reset"], form .input-group-btn > button[type="button"]:not(.close) + input[type="reset"], form .input-group-btn > button[type="button"].secondary:not(.close) + input[type="reset"], form .input-group-btn > button[type="button"].default:not(.close) + input[type="reset"], form .input-group-btn > .btn + button[type="submit"], form .input-group-btn > input[type="submit"] + button[type="submit"], form .input-group-btn > input[type="button"] + button[type="submit"], form .input-group-btn > input[type="button"].default + button[type="submit"], form .input-group-btn > input[type="button"].secondary + button[type="submit"], form .input-group-btn > input[type="reset"] + button[type="submit"], form .input-group-btn > button[type="submit"] + button[type="submit"], form .input-group-btn > button[type="reset"] + button[type="submit"], form .input-group-btn > button[type="button"]:not(.close) + button[type="submit"], form .input-group-btn > button[type="button"].secondary:not(.close) + button[type="submit"], form .input-group-btn > button[type="button"].default:not(.close) + button[type="submit"], form .input-group-btn > .btn + button[type="reset"], form .input-group-btn > input[type="submit"] + button[type="reset"], form .input-group-btn > input[type="button"] + button[type="reset"], form .input-group-btn > input[type="button"].default + button[type="reset"], form .input-group-btn > input[type="button"].secondary + button[type="reset"], form .input-group-btn > input[type="reset"] + button[type="reset"], form .input-group-btn > button[type="submit"] + button[type="reset"], form .input-group-btn > button[type="reset"] + button[type="reset"], form .input-group-btn > button[type="button"]:not(.close) + button[type="reset"], form .input-group-btn > button[type="button"].secondary:not(.close) + button[type="reset"], form .input-group-btn > button[type="button"].default:not(.close) + button[type="reset"], form .input-group-btn > .btn + button[type="button"]:not(.close), form .input-group-btn > input[type="submit"] + button[type="button"]:not(.close), form .input-group-btn > input[type="button"] + button[type="button"]:not(.close), form .input-group-btn > input[type="button"].default + button[type="button"]:not(.close), form .input-group-btn > input[type="button"].secondary + button[type="button"]:not(.close), form .input-group-btn > input[type="reset"] + button[type="button"]:not(.close), form .input-group-btn > button[type="submit"] + button[type="button"]:not(.close), form .input-group-btn > button[type="reset"] + button[type="button"]:not(.close), form .input-group-btn > button[type="button"]:not(.close) + button[type="button"]:not(.close), form .input-group-btn > button[type="button"].secondary:not(.close) + button[type="button"]:not(.close), form .input-group-btn > button[type="button"].default:not(.close) + button[type="button"]:not(.close), form .input-group-btn > .btn + button[type="button"].secondary:not(.close), form .input-group-btn > input[type="submit"] + button[type="button"].secondary:not(.close), form .input-group-btn > input[type="button"] + button[type="button"].secondary:not(.close), form .input-group-btn > input[type="button"].default + button[type="button"].secondary:not(.close), form .input-group-btn > input[type="button"].secondary + button[type="button"].secondary:not(.close), form .input-group-btn > input[type="reset"] + button[type="button"].secondary:not(.close), form .input-group-btn > button[type="submit"] + button[type="button"].secondary:not(.close), form .input-group-btn > button[type="reset"] + button[type="button"].secondary:not(.close), form .input-group-btn > button[type="button"]:not(.close) + button[type="button"].secondary:not(.close), form .input-group-btn > button[type="button"].secondary:not(.close) + button[type="button"].secondary:not(.close), form .input-group-btn > button[type="button"].default:not(.close) + button[type="button"].secondary:not(.close), form .input-group-btn > .btn + button[type="button"].default:not(.close), form .input-group-btn > input[type="submit"] + button[type="button"].default:not(.close), form .input-group-btn > input[type="button"] + button[type="button"].default:not(.close), form .input-group-btn > input[type="button"].default + button[type="button"].default:not(.close), form .input-group-btn > input[type="button"].secondary + button[type="button"].default:not(.close), form .input-group-btn > input[type="reset"] + button[type="button"].default:not(.close), form .input-group-btn > button[type="submit"] + button[type="button"].default:not(.close), form .input-group-btn > button[type="reset"] + button[type="button"].default:not(.close), form .input-group-btn > button[type="button"]:not(.close) + button[type="button"].default:not(.close), form .input-group-btn > button[type="button"].secondary:not(.close) + button[type="button"].default:not(.close), form .input-group-btn > button[type="button"].default:not(.close) + button[type="button"].default:not(.close) {
       margin-left: -1px; }
-    .input-group-btn > .btn:focus, form .input-group-btn > input[type="submit"]:focus, form .input-group-btn > input[type="button"]:focus, form .input-group-btn > input[type="reset"]:focus, form .input-group-btn > button[type="submit"]:focus, form .input-group-btn > button[type="reset"]:focus, form .input-group-btn > button[type="button"]:focus, .input-group-btn > .btn:active, form .input-group-btn > input[type="submit"]:active, form .input-group-btn > input[type="button"]:active, form .input-group-btn > input[type="reset"]:active, form .input-group-btn > button[type="submit"]:active, form .input-group-btn > button[type="reset"]:active, form .input-group-btn > button[type="button"]:active, .input-group-btn > .btn:hover, form .input-group-btn > input[type="submit"]:hover, form .input-group-btn > input[type="button"]:hover, form .input-group-btn > input[type="reset"]:hover, form .input-group-btn > button[type="submit"]:hover, form .input-group-btn > button[type="reset"]:hover, form .input-group-btn > button[type="button"]:hover {
+    .input-group-btn > .btn:focus, form .input-group-btn > input[type="submit"]:focus, form .input-group-btn > input[type="button"]:focus, form .input-group-btn > input[type="reset"]:focus, form .input-group-btn > button[type="submit"]:focus, form .input-group-btn > button[type="reset"]:focus, form .input-group-btn > button[type="button"]:focus:not(.close), .input-group-btn > .btn:active, form .input-group-btn > input[type="submit"]:active, form .input-group-btn > input[type="button"]:active, form .input-group-btn > input[type="reset"]:active, form .input-group-btn > button[type="submit"]:active, form .input-group-btn > button[type="reset"]:active, form .input-group-btn > button[type="button"]:active:not(.close), .input-group-btn > .btn:hover, form .input-group-btn > input[type="submit"]:hover, form .input-group-btn > input[type="button"]:hover, form .input-group-btn > input[type="reset"]:hover, form .input-group-btn > button[type="submit"]:hover, form .input-group-btn > button[type="reset"]:hover, form .input-group-btn > button[type="button"]:hover:not(.close) {
       z-index: 3; }
-  .input-group-btn:not(:last-child) > .btn, form .input-group-btn:not(:last-child) > input[type="submit"], form .input-group-btn:not(:last-child) > input[type="button"], form .input-group-btn:not(:last-child) > input[type="reset"], form .input-group-btn:not(:last-child) > button[type="submit"], form .input-group-btn:not(:last-child) > button[type="reset"], form .input-group-btn:not(:last-child) > button[type="button"],
+  .input-group-btn:not(:last-child) > .btn, form .input-group-btn:not(:last-child) > input[type="submit"], form .input-group-btn:not(:last-child) > input[type="button"], form .input-group-btn:not(:last-child) > input[type="reset"], form .input-group-btn:not(:last-child) > button[type="submit"], form .input-group-btn:not(:last-child) > button[type="reset"], form .input-group-btn:not(:last-child) > button[type="button"]:not(.close),
   .input-group-btn:not(:last-child) > .btn-group {
     margin-right: -1px; }
-  .input-group-btn:not(:first-child) > .btn, form .input-group-btn:not(:first-child) > input[type="submit"], form .input-group-btn:not(:first-child) > input[type="button"], form .input-group-btn:not(:first-child) > input[type="reset"], form .input-group-btn:not(:first-child) > button[type="submit"], form .input-group-btn:not(:first-child) > button[type="reset"], form .input-group-btn:not(:first-child) > button[type="button"],
+  .input-group-btn:not(:first-child) > .btn, form .input-group-btn:not(:first-child) > input[type="submit"], form .input-group-btn:not(:first-child) > input[type="button"], form .input-group-btn:not(:first-child) > input[type="reset"], form .input-group-btn:not(:first-child) > button[type="submit"], form .input-group-btn:not(:first-child) > button[type="reset"], form .input-group-btn:not(:first-child) > button[type="button"]:not(.close),
   .input-group-btn:not(:first-child) > .btn-group {
     z-index: 2;
     margin-left: -1px; }
-    .input-group-btn:not(:first-child) > .btn:focus, form .input-group-btn:not(:first-child) > input[type="submit"]:focus, form .input-group-btn:not(:first-child) > input[type="button"]:focus, form .input-group-btn:not(:first-child) > input[type="reset"]:focus, form .input-group-btn:not(:first-child) > button[type="submit"]:focus, form .input-group-btn:not(:first-child) > button[type="reset"]:focus, form .input-group-btn:not(:first-child) > button[type="button"]:focus, .input-group-btn:not(:first-child) > .btn:active, form .input-group-btn:not(:first-child) > input[type="submit"]:active, form .input-group-btn:not(:first-child) > input[type="button"]:active, form .input-group-btn:not(:first-child) > input[type="reset"]:active, form .input-group-btn:not(:first-child) > button[type="submit"]:active, form .input-group-btn:not(:first-child) > button[type="reset"]:active, form .input-group-btn:not(:first-child) > button[type="button"]:active, .input-group-btn:not(:first-child) > .btn:hover, form .input-group-btn:not(:first-child) > input[type="submit"]:hover, form .input-group-btn:not(:first-child) > input[type="button"]:hover, form .input-group-btn:not(:first-child) > input[type="reset"]:hover, form .input-group-btn:not(:first-child) > button[type="submit"]:hover, form .input-group-btn:not(:first-child) > button[type="reset"]:hover, form .input-group-btn:not(:first-child) > button[type="button"]:hover,
+    .input-group-btn:not(:first-child) > .btn:focus, form .input-group-btn:not(:first-child) > input[type="submit"]:focus, form .input-group-btn:not(:first-child) > input[type="button"]:focus, form .input-group-btn:not(:first-child) > input[type="reset"]:focus, form .input-group-btn:not(:first-child) > button[type="submit"]:focus, form .input-group-btn:not(:first-child) > button[type="reset"]:focus, form .input-group-btn:not(:first-child) > button[type="button"]:focus:not(.close), .input-group-btn:not(:first-child) > .btn:active, form .input-group-btn:not(:first-child) > input[type="submit"]:active, form .input-group-btn:not(:first-child) > input[type="button"]:active, form .input-group-btn:not(:first-child) > input[type="reset"]:active, form .input-group-btn:not(:first-child) > button[type="submit"]:active, form .input-group-btn:not(:first-child) > button[type="reset"]:active, form .input-group-btn:not(:first-child) > button[type="button"]:active:not(.close), .input-group-btn:not(:first-child) > .btn:hover, form .input-group-btn:not(:first-child) > input[type="submit"]:hover, form .input-group-btn:not(:first-child) > input[type="button"]:hover, form .input-group-btn:not(:first-child) > input[type="reset"]:hover, form .input-group-btn:not(:first-child) > button[type="submit"]:hover, form .input-group-btn:not(:first-child) > button[type="reset"]:hover, form .input-group-btn:not(:first-child) > button[type="button"]:hover:not(.close),
     .input-group-btn:not(:first-child) > .btn-group:focus,
     .input-group-btn:not(:first-child) > .btn-group:active,
     .input-group-btn:not(:first-child) > .btn-group:hover {
@@ -3010,12 +3004,12 @@ tbody.collapse.show {
   z-index: -1;
   opacity: 0; }
   .custom-control-input:checked ~ .custom-control-indicator {
-    color: #ffffff;
+    color: #fff;
     background-color: #1954a6; }
   .custom-control-input:focus ~ .custom-control-indicator {
     box-shadow: 0 0 0 1px #e3e5e3, 0 0 0 3px #1954a6; }
   .custom-control-input:active ~ .custom-control-indicator {
-    color: #ffffff;
+    color: #fff;
     background-color: #85b0ed; }
   .custom-control-input:disabled ~ .custom-control-indicator {
     cursor: not-allowed;
@@ -3045,17 +3039,17 @@ tbody.collapse.show {
   border-radius: 0.25rem; }
 
 .custom-checkbox .custom-control-input:checked ~ .custom-control-indicator {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cpath fill='%23ffffff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3E%3C/svg%3E"); }
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3E%3C/svg%3E"); }
 
 .custom-checkbox .custom-control-input:indeterminate ~ .custom-control-indicator {
   background-color: #1954a6;
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 4'%3E%3Cpath stroke='%23ffffff' d='M0 2h4'/%3E%3C/svg%3E"); }
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 4'%3E%3Cpath stroke='%23fff' d='M0 2h4'/%3E%3C/svg%3E"); }
 
 .custom-radio .custom-control-indicator {
   border-radius: 50%; }
 
 .custom-radio .custom-control-input:checked ~ .custom-control-indicator {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3E%3Ccircle r='3' fill='%23ffffff'/%3E%3C/svg%3E"); }
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3E%3Ccircle r='3' fill='%23fff'/%3E%3C/svg%3E"); }
 
 .custom-controls-stacked {
   display: -ms-flexbox;
@@ -3075,7 +3069,7 @@ tbody.collapse.show {
   line-height: 1.25;
   color: #464a4c;
   vertical-align: middle;
-  background: #ffffff url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%23333' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E") no-repeat right 0.75rem center;
+  background: #fff url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%23333' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E") no-repeat right 0.75rem center;
   background-size: 8px 10px;
   border: 1px solid rgba(17, 17, 17, 0.15);
   border-radius: 0.25rem;
@@ -3086,7 +3080,7 @@ tbody.collapse.show {
     outline: none; }
     .custom-select:focus::-ms-value {
       color: #464a4c;
-      background-color: #ffffff; }
+      background-color: #fff; }
   .custom-select:disabled {
     color: #636c72;
     cursor: not-allowed;
@@ -3130,7 +3124,7 @@ tbody.collapse.show {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  background-color: #ffffff;
+  background-color: #fff;
   border: 1px solid rgba(17, 17, 17, 0.15);
   border-radius: 0.25rem; }
   .custom-file-control:lang(en)::after {
@@ -3197,7 +3191,7 @@ tbody.collapse.show {
 
 .nav-pills .nav-link.active,
 .nav-pills .nav-item.show .nav-link {
-  color: #ffffff;
+  color: #fff;
   cursor: default;
   background-color: #1954a6; }
 
@@ -3525,7 +3519,7 @@ tbody.collapse.show {
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column;
-  background-color: #ffffff;
+  background-color: #fff;
   border: 1px solid rgba(17, 17, 17, 0.125);
   border-radius: 0.25rem; }
 
@@ -3659,7 +3653,7 @@ tbody.collapse.show {
   .card-inverse .card-blockquote .blockquote-footer {
     color: rgba(255, 255, 255, 0.65); }
   .card-inverse .card-link:focus, .card-inverse .card-link:hover {
-    color: #ffffff; }
+    color: #fff; }
 
 .card-blockquote {
   padding: 0;
@@ -3790,7 +3784,7 @@ tbody.collapse.show {
 
 .page-item.active .page-link {
   z-index: 2;
-  color: #ffffff;
+  color: #fff;
   background-color: #1954a6;
   border-color: #1954a6; }
 
@@ -3798,7 +3792,7 @@ tbody.collapse.show {
   color: #636c72;
   pointer-events: none;
   cursor: not-allowed;
-  background-color: #ffffff;
+  background-color: #fff;
   border-color: #ddd; }
 
 .page-link {
@@ -3808,7 +3802,7 @@ tbody.collapse.show {
   margin-left: -1px;
   line-height: 1.25;
   color: #006cb7;
-  background-color: #ffffff;
+  background-color: #fff;
   border: 1px solid #ddd; }
   .page-link:focus, .page-link:hover {
     color: #006cb7;
@@ -3846,7 +3840,7 @@ tbody.collapse.show {
   font-size: 75%;
   font-weight: bold;
   line-height: 1;
-  color: #ffffff;
+  color: #fff;
   text-align: center;
   white-space: nowrap;
   vertical-align: baseline;
@@ -3854,12 +3848,12 @@ tbody.collapse.show {
   .badge:empty {
     display: none; }
 
-.btn .badge, form input[type="submit"] .badge, form input[type="button"] .badge, form input[type="reset"] .badge, form button[type="submit"] .badge, form button[type="reset"] .badge, form button[type="button"] .badge {
+.btn .badge, form input[type="submit"] .badge, form input[type="button"] .badge, form input[type="reset"] .badge, form button[type="submit"] .badge, form button[type="reset"] .badge, form button[type="button"]:not(.close) .badge {
   position: relative;
   top: -1px; }
 
 a.badge:focus, a.badge:hover {
-  color: #ffffff;
+  color: #fff;
   text-decoration: none;
   cursor: pointer; }
 
@@ -3988,7 +3982,7 @@ a.badge:focus, a.badge:hover {
 
 .progress-bar {
   height: 1rem;
-  color: #ffffff;
+  color: #fff;
   background-color: #1954a6; }
 
 .progress-bar-striped {
@@ -4040,7 +4034,7 @@ a.badge:focus, a.badge:hover {
       align-items: center;
   padding: 0.75rem 1.25rem;
   margin-bottom: -1px;
-  background-color: #ffffff;
+  background-color: #fff;
   border: 1px solid rgba(17, 17, 17, 0.125); }
   .list-group-item:first-child {
     border-top-right-radius: 0.25rem;
@@ -4054,14 +4048,14 @@ a.badge:focus, a.badge:hover {
   .list-group-item.disabled, .list-group-item:disabled {
     color: #636c72;
     cursor: not-allowed;
-    background-color: #ffffff; }
+    background-color: #fff; }
     .list-group-item.disabled .list-group-item-heading, .list-group-item:disabled .list-group-item-heading {
       color: inherit; }
     .list-group-item.disabled .list-group-item-text, .list-group-item:disabled .list-group-item-text {
       color: #636c72; }
   .list-group-item.active {
     z-index: 2;
-    color: #ffffff;
+    color: #fff;
     background-color: #1954a6;
     border-color: #1954a6; }
     .list-group-item.active .list-group-item-heading,
@@ -4205,11 +4199,11 @@ button.list-group-item-danger {
   font-size: 1.5rem;
   font-weight: bold;
   line-height: 1;
-  color: #111111;
-  text-shadow: 0 1px 0 #ffffff;
+  color: #111;
+  text-shadow: 0 1px 0 #fff;
   opacity: .5; }
   .close:focus, .close:hover {
-    color: #111111;
+    color: #111;
     text-decoration: none;
     cursor: pointer;
     opacity: .75; }
@@ -4257,7 +4251,7 @@ button.close {
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column;
-  background-color: #ffffff;
+  background-color: #fff;
   background-clip: padding-box;
   border: 1px solid rgba(17, 17, 17, 0.2);
   border-radius: 0.3rem;
@@ -4270,7 +4264,7 @@ button.close {
   bottom: 0;
   left: 0;
   z-index: 1040;
-  background-color: #111111; }
+  background-color: #111; }
   .modal-backdrop.fade {
     opacity: 0; }
   .modal-backdrop.show {
@@ -4360,7 +4354,7 @@ button.close {
       margin-left: -5px;
       content: "";
       border-width: 5px 5px 0;
-      border-top-color: #111111; }
+      border-top-color: #111; }
   .tooltip.tooltip-right, .tooltip.bs-tether-element-attached-left {
     padding: 0 5px;
     margin-left: 3px; }
@@ -4370,7 +4364,7 @@ button.close {
       margin-top: -5px;
       content: "";
       border-width: 5px 5px 5px 0;
-      border-right-color: #111111; }
+      border-right-color: #111; }
   .tooltip.tooltip-bottom, .tooltip.bs-tether-element-attached-top {
     padding: 5px 0;
     margin-top: 3px; }
@@ -4380,7 +4374,7 @@ button.close {
       margin-left: -5px;
       content: "";
       border-width: 0 5px 5px;
-      border-bottom-color: #111111; }
+      border-bottom-color: #111; }
   .tooltip.tooltip-left, .tooltip.bs-tether-element-attached-right {
     padding: 0 5px;
     margin-left: -3px; }
@@ -4390,14 +4384,14 @@ button.close {
       margin-top: -5px;
       content: "";
       border-width: 5px 0 5px 5px;
-      border-left-color: #111111; }
+      border-left-color: #111; }
 
 .tooltip-inner {
   max-width: 200px;
   padding: 3px 8px;
-  color: #ffffff;
+  color: #fff;
   text-align: center;
-  background-color: #111111;
+  background-color: #111;
   border-radius: 0.25rem; }
   .tooltip-inner::before {
     position: absolute;
@@ -4430,7 +4424,7 @@ button.close {
   word-spacing: normal;
   font-size: 0.875rem;
   word-wrap: break-word;
-  background-color: #ffffff;
+  background-color: #fff;
   background-clip: padding-box;
   border: 1px solid rgba(17, 17, 17, 0.2);
   border-radius: 0.3rem; }
@@ -4446,7 +4440,7 @@ button.close {
     .popover.popover-top::after, .popover.bs-tether-element-attached-bottom::after {
       bottom: -10px;
       margin-left: -10px;
-      border-top-color: #ffffff; }
+      border-top-color: #fff; }
   .popover.popover-right, .popover.bs-tether-element-attached-left {
     margin-left: 10px; }
     .popover.popover-right::before, .popover.popover-right::after, .popover.bs-tether-element-attached-left::before, .popover.bs-tether-element-attached-left::after {
@@ -4459,7 +4453,7 @@ button.close {
     .popover.popover-right::after, .popover.bs-tether-element-attached-left::after {
       left: -10px;
       margin-top: -10px;
-      border-right-color: #ffffff; }
+      border-right-color: #fff; }
   .popover.popover-bottom, .popover.bs-tether-element-attached-top {
     margin-top: 10px; }
     .popover.popover-bottom::before, .popover.popover-bottom::after, .popover.bs-tether-element-attached-top::before, .popover.bs-tether-element-attached-top::after {
@@ -4494,7 +4488,7 @@ button.close {
     .popover.popover-left::after, .popover.bs-tether-element-attached-right::after {
       right: -10px;
       margin-top: -10px;
-      border-left-color: #ffffff; }
+      border-left-color: #fff; }
 
 .popover-title {
   padding: 8px 14px;
@@ -4595,13 +4589,13 @@ button.close {
   -ms-flex-pack: center;
       justify-content: center;
   width: 15%;
-  color: #ffffff;
+  color: #fff;
   text-align: center;
   opacity: 0.5; }
   .carousel-control-prev:focus, .carousel-control-prev:hover,
   .carousel-control-next:focus,
   .carousel-control-next:hover {
-    color: #ffffff;
+    color: #fff;
     text-decoration: none;
     outline: 0;
     opacity: .9; }
@@ -4621,10 +4615,10 @@ button.close {
   background-size: 100% 100%; }
 
 .carousel-control-prev-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ffffff' viewBox='0 0 8 8'%3E%3Cpath d='M4 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E"); }
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M4 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E"); }
 
 .carousel-control-next-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ffffff' viewBox='0 0 8 8'%3E%3Cpath d='M1.5 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E"); }
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M1.5 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E"); }
 
 .carousel-indicators {
   position: absolute;
@@ -4668,7 +4662,7 @@ button.close {
       height: 10px;
       content: ""; }
   .carousel-indicators .active {
-    background-color: #ffffff; }
+    background-color: #fff; }
 
 .carousel-caption {
   position: absolute;
@@ -4678,7 +4672,7 @@ button.close {
   z-index: 10;
   padding-top: 20px;
   padding-bottom: 20px;
-  color: #ffffff;
+  color: #fff;
   text-align: center; }
 
 .align-baseline {
@@ -6847,12 +6841,6 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
 
  This is where you override bootstrap values, such as colors, margins ...
 */
-/*
-  Variables and mixins for fonts.
-
-  Variables should be created and used for everything that can be overridden in
-  Bootstraps preStep.
-*/
 .container, .container-fluid {
   background-color: #ffffff; }
 
@@ -6953,7 +6941,7 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
   color: #1954a6; }
 
 .message-base, .system-message, .error-message, .ok-message {
-  color: #111111;
+  color: #111;
   width: 100%;
   min-height: 5rem;
   border: none;
@@ -7031,9 +7019,9 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
   border-width: 1px 1px 0 1px;
   border-color: #b9bbbd;
   border-style: dotted;
-  border-bottom: solid #ffffff 2px;
+  border-bottom: solid #fff 2px;
   margin-bottom: -1px;
-  background-color: #ffffff;
+  background-color: #fff;
   padding-bottom: 10px; }
 
 .nav-tabs.nav > li {
@@ -7052,7 +7040,7 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
 .nav-tabs > li > a, .nav-tabs > li > a:visited,
 .nav-tabs.nav-justified > li > a, .nav-tabs > li > a:visited {
   margin-right: 5px;
-  color: #111111; }
+  color: #111; }
 
 .nav-tabs.nav > li:last-child > a {
   margin-right: 0; }
@@ -7065,30 +7053,30 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
 
 h1 {
   border-bottom: 1px dotted #bdbcbc;
-  padding: 0 0 0.8rem 0;
-  margin: 0 0 1.5rem 0;
   font-family: "Georgia Regular", "Georgia", "garamond pro", garamond, "times new roman", times, serif;
-  font-weight: normal; }
+  font-weight: normal;
+  margin: 0 0 1.5rem;
+  padding: 0 0 .8rem; }
   h1 + h2 {
     margin-top: 0; }
 
 h2 {
-  margin: 2rem 0 .35rem 0; }
+  margin: 2rem 0 .35rem; }
   h2 + h3 {
-    margin-top: 0.5rem; }
+    margin-top: .5rem; }
 
 h3 {
-  margin: 2rem 0 .35rem 0; }
+  margin: 2rem 0 .35rem; }
   h3 + h4 {
-    margin-top: 0.5rem; }
+    margin-top: .5rem; }
 
 h4 {
-  margin: 2rem 0 .35rem 0;
-  font-weight: bold; }
+  font-weight: bold;
+  margin: 2rem 0 .35rem; }
 
-.btn, form input[type="submit"], form input[type="button"], form input[type="button"].default, form input[type="button"].secondary, form input[type="reset"], form button[type="submit"], form button[type="reset"], form button[type="button"], form button[type="button"].secondary, form button[type="button"].default {
+.btn, form input[type="submit"], form input[type="button"], form input[type="button"].default, form input[type="button"].secondary, form input[type="reset"], form button[type="submit"], form button[type="reset"], form button[type="button"]:not(.close), form button[type="button"].secondary:not(.close), form button[type="button"].default:not(.close) {
   letter-spacing: 0.06rem; }
-  .btn:first-child, form input[type="submit"]:first-child, form input[type="button"]:first-child, form input[type="reset"]:first-child, form button[type="submit"]:first-child, form button[type="reset"]:first-child, form button[type="button"]:first-child {
+  .btn:first-child, form input[type="submit"]:first-child, form input[type="button"]:first-child, form input[type="reset"]:first-child, form button[type="submit"]:first-child, form button[type="reset"]:first-child, form button[type="button"]:first-child:not(.close) {
     margin-left: 0; }
 
 .table th {
@@ -7131,13 +7119,13 @@ h2.navigationParent {
   KTH specific styling
 */
 .block.columnSplitter {
-  padding: 0px;
-  margin: 0px;
+  margin: 0;
+  padding: 0;
   overflow: hidden;
   max-width: 100%; }
   .block.columnSplitter .columns {
-    padding: 0px;
-    margin: 0px;
+    margin: 0;
+    padding: 0;
     overflow: hidden; }
     .block.columnSplitter .columns .column .columnInner .columnItemSeparator {
       padding: 9px 0px 10px 0px;
@@ -7147,23 +7135,23 @@ h2.navigationParent {
         height: 1px;
         display: block; }
   .block.columnSplitter .columnSplitter .columns {
-    padding: 0px;
-    margin: 0px;
+    margin: 0;
+    padding: 0;
     overflow: hidden; }
     .block.columnSplitter .columnSplitter .columns .column.column1 .columnInner {
       padding-left: 0px; }
   .block.columnSplitter .column1Inner {
-    padding: 0px;
-    margin: 0px; }
+    margin: 0;
+    padding: 0; }
   .block.columnSplitter .column2Inner {
-    padding: 0px;
-    margin: 0px; }
+    margin: 0;
+    padding: 0; }
   .block.columnSplitter .column2Inner {
-    padding: 0px;
-    margin: 0px; }
+    margin: 0;
+    padding: 0; }
   .block.columnSplitter .column3Inner {
-    padding: 0px;
-    margin: 0px; }
+    margin: 0;
+    padding: 0; }
   .block.columnSplitter.using1columns .column1 {
     width: 100%; }
   .block.columnSplitter.using2columns .columns .column.column1 {
@@ -7560,7 +7548,7 @@ h2.navigationParent {
       font-size: 11px;
       font-size: 1.1rem;
       background: url("../img/kth-style/input-clear.svg") 95% 50% no-repeat #62922e;
-      color: #ffffff;
+      color: #fff;
       border: 0;
       margin: 4px 0 5px 5px;
       padding: 3px 25px 3px 5px;
@@ -7577,7 +7565,7 @@ h2.navigationParent {
       border: 1px solid #464a4c;
       border-radius: 10px;
       box-shadow: inset 1px 1px 2px #464a4c;
-      background-color: #ffffff;
+      background-color: #fff;
       padding-left: 10px;
       margin: 5px 0 5px 0;
       width: 100%;
@@ -7610,7 +7598,7 @@ h2.navigationParent {
   font-weight: bold; }
 
 .siteName a {
-  color: #111111; }
+  color: #111; }
 
 @media only screen and (max-width: 480px) {
   .header .secondaryHeader .block.siteName {
@@ -7665,8 +7653,8 @@ h2.navigationParent {
       margin-right: -15px;
       margin-left: -15px; } }
   #footer .blockItemSeparator {
-    padding: 10px 0 10px 0;
-    margin: 0; }
+    margin: 0;
+    padding: 10px 0; }
     #footer .blockItemSeparator .blockItemSeparatorInner {
       height: 1px;
       display: block; }
@@ -7764,87 +7752,75 @@ h2.navigationParent {
           padding: 0 10px 0 5px; } }
 
 .header {
+  clear: both;
+  margin: 0;
   padding: 20px 0;
-  margin: 0;
-  position: relative;
-  clear: both; }
+  position: relative; }
+  .header .primaryHeader {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    vertical-align: middle; }
+    .header .primaryHeader .block {
+      float: left; }
+      .header .primaryHeader .block .search {
+        float: right;
+        max-width: 45%;
+        position: absolute;
+        right: 0;
+        text-align: right;
+        top: 41px;
+        width: 100%; }
+  .header .secondaryHeader {
+    float: right;
+    position: absolute;
+    right: 0;
+    text-align: right;
+    top: 16px; }
+    .header .secondaryHeader .blockItemSeparator {
+      display: inline;
+      float: left;
+      padding: 0 5px; }
+    .header .secondaryHeader .block {
+      display: inline-block; }
+      .header .secondaryHeader .block.link a {
+        color: #006cb7; }
 
-.header .primaryHeader {
+.block {
+  margin: 0;
   padding: 0;
-  margin: 0;
-  position: relative;
-  vertical-align: middle; }
-
-.header .secondaryHeader {
-  position: absolute;
-  top: 16px;
-  right: 0;
-  float: right;
-  text-align: right; }
-
-.header .secondaryHeader .blockItemSeparator {
-  display: inline;
-  padding: 0 5px;
-  float: left; }
-
-.block.figure.mainLogo .imageWrapper img {
-  width: auto;
-  height: auto;
-  max-height: 70px; }
-
-@media only screen and (max-width: 480px) {
+  position: relative; }
   .block.figure.mainLogo .imageWrapper img {
-    max-height: 40px;
-    margin-left: 5px; } }
-
-@media only screen and (max-width: 480px) {
-  .header .secondaryHeader .block.siteName {
-    border-right: 0 solid #b9bbbd;
-    padding-right: 0;
-    margin-right: 0; } }
-
-.header .secondaryHeader .block {
-  display: inline-block; }
-
-.header .secondaryHeader .block.link a {
-  color: #006cb7; }
-
-.header .primaryHeader .block.search {
-  top: 41px;
-  position: absolute;
-  text-align: right;
-  right: 0;
-  float: right;
-  width: 100%;
-  max-width: 45%; }
+    height: auto;
+    max-height: 70px;
+    width: auto; }
 
 @media only screen and (max-width: 976px) {
-  body .header .primaryHeader .block.search {
+  .header .primaryHeader .block.search {
     max-width: 80%; } }
 
 @media only screen and (max-width: 480px) {
-  body .header .primaryHeader .block.search {
-    padding-top: 10px;
-    max-width: 100%;
-    width: 100%;
-    position: relative;
-    top: auto;
-    right: auto;
+  .block.figure.mainLogo .imageWrapper img {
+    margin-left: 5px;
+    max-height: 40px; }
+  .header .secondaryHeader .block.siteName {
+    border-right: 0 solid #b9bbbd;
+    margin-right: 0;
+    padding-right: 0; }
+  .header .primaryHeader .block.search {
+    clear: both;
     float: none;
-    clear: both; } }
-
-.header .primaryHeader .block {
-  float: left; }
-
-.block {
-  padding: 0;
-  margin: 0;
-  position: relative; }
+    max-width: 100%;
+    padding-top: 10px;
+    position: relative;
+    right: auto;
+    top: auto;
+    width: 100%; } }
 
 #headerHr {
-  position: relative;
+  margin-bottom: 20px;
   margin-top: 70px;
-  margin-bottom: 20px; }
+  position: relative; }
 
 @media only screen and (max-width: 480px) {
   #headerHr {
@@ -7886,7 +7862,7 @@ form fieldset {
   padding: 1em 0; }
 
 form input[type="text"] {
-  background-color: #ffffff;
+  background-color: #fff;
   border: 1px solid #bdbcbc;
   border-radius: 0.3em;
   box-shadow: inset 0 1px 1px #bdbcbc;
@@ -7898,7 +7874,7 @@ form input[type="text"] {
   width: 100%; }
 
 form input[type="url"] {
-  background-color: #ffffff;
+  background-color: #fff;
   border: 1px solid #bdbcbc;
   border-radius: 0.3em;
   box-shadow: inset 0 1px 1px #bdbcbc;
@@ -7910,7 +7886,7 @@ form input[type="url"] {
   width: 100%; }
 
 form input[type="number"] {
-  background-color: #ffffff;
+  background-color: #fff;
   border: 1px solid #bdbcbc;
   border-radius: 0.3em;
   box-shadow: inset 0 1px 1px #bdbcbc;
@@ -7922,7 +7898,7 @@ form input[type="number"] {
   width: 20em; }
 
 form input[type="search"] {
-  background-color: #ffffff;
+  background-color: #fff;
   border: 1px solid #bdbcbc;
   border-radius: 0.3em;
   box-shadow: inset 0 1px 1px #bdbcbc;
@@ -7934,7 +7910,7 @@ form input[type="search"] {
   width: 100%; }
 
 form input[type="datetime"] {
-  background-color: #ffffff;
+  background-color: #fff;
   border: 1px solid #bdbcbc;
   border-radius: 0.3em;
   box-shadow: inset 0 1px 1px #bdbcbc;
@@ -7946,7 +7922,7 @@ form input[type="datetime"] {
   width: 20em; }
 
 form input[type="date"] {
-  background-color: #ffffff;
+  background-color: #fff;
   border: 1px solid #bdbcbc;
   border-radius: 0.3em;
   box-shadow: inset 0 1px 1px #bdbcbc;
@@ -7958,7 +7934,7 @@ form input[type="date"] {
   width: 20em; }
 
 form input[type="month"] {
-  background-color: #ffffff;
+  background-color: #fff;
   border: 1px solid #bdbcbc;
   border-radius: 0.3em;
   box-shadow: inset 0 1px 1px #bdbcbc;
@@ -7970,7 +7946,7 @@ form input[type="month"] {
   width: 20em; }
 
 form input[type="week"] {
-  background-color: #ffffff;
+  background-color: #fff;
   border: 1px solid #bdbcbc;
   border-radius: 0.3em;
   box-shadow: inset 0 1px 1px #bdbcbc;
@@ -7982,7 +7958,7 @@ form input[type="week"] {
   width: 20em; }
 
 form input[type="time"] {
-  background-color: #ffffff;
+  background-color: #fff;
   border: 1px solid #bdbcbc;
   border-radius: 0.3em;
   box-shadow: inset 0 1px 1px #bdbcbc;
@@ -8000,7 +7976,7 @@ form input[type="color"] {
   width: 20em; }
 
 form input[type="tel"] {
-  background-color: #ffffff;
+  background-color: #fff;
   border: 1px solid #bdbcbc;
   border-radius: 0.3em;
   box-shadow: inset 0 1px 1px #bdbcbc;
@@ -8012,7 +7988,7 @@ form input[type="tel"] {
   width: 20em; }
 
 form input[type="email"] {
-  background-color: #ffffff;
+  background-color: #fff;
   border: 1px solid #bdbcbc;
   border-radius: 0.3em;
   box-shadow: inset 0 1px 1px #bdbcbc;
@@ -8059,20 +8035,20 @@ form button[type="reset"]:disabled, form button[type="reset"].disabled {
   form button[type="reset"]:disabled:hover, form button[type="reset"].disabled:hover {
     background-color: #65656c; }
 
-form button[type="button"]:disabled, form button[type="button"].disabled {
+form button[type="button"]:not(.close):disabled, form button[type="button"]:not(.close).disabled {
   border-color: #65656c;
   background-color: #65656c; }
-  form button[type="button"]:disabled:hover, form button[type="button"].disabled:hover {
+  form button[type="button"]:not(.close):disabled:hover, form button[type="button"]:not(.close).disabled:hover {
     background-color: #65656c; }
 
-form button[type="button"].secondary:disabled, form button[type="button"].secondary.disabled, form button[type="button"].default:disabled, form button[type="button"].default.disabled {
+form button[type="button"]:not(.close).secondary:disabled, form button[type="button"]:not(.close).secondary.disabled, form button[type="button"]:not(.close).default:disabled, form button[type="button"]:not(.close).default.disabled {
   border-color: #65656c;
   background-color: #65656c; }
-  form button[type="button"].secondary:disabled:hover, form button[type="button"].secondary.disabled:hover, form button[type="button"].default:disabled:hover, form button[type="button"].default.disabled:hover {
+  form button[type="button"]:not(.close).secondary:disabled:hover, form button[type="button"]:not(.close).secondary.disabled:hover, form button[type="button"]:not(.close).default:disabled:hover, form button[type="button"]:not(.close).default.disabled:hover {
     background-color: #65656c; }
 
 form textarea {
-  background-color: #ffffff;
+  background-color: #fff;
   border: 1px solid #bdbcbc;
   border-radius: 0.3em;
   box-shadow: inset 0 1px 1px #bdbcbc;
@@ -8090,7 +8066,7 @@ form textarea {
     outline: 0; }
 
 form select {
-  background: url("../static/img/kth-style/select-arrow.png") no-repeat 94% 50% #ffffff;
+  background: url("../static/img/kth-style/select-arrow.png") no-repeat 94% 50% #fff;
   border: 0.1em solid #bdbcbc;
   border-radius: 0.3em;
   box-shadow: inset 0 1px 1px #bdbcbc;
@@ -8105,7 +8081,7 @@ form select {
     outline: none; }
   form select:hover {
     box-shadow: 0 0 0.1em 0.2em #e3e5e3;
-    outline: 0; }
+    outline: 0px; }
 
 /*
   Icons are imported from fontello.com. The CSS import is handled by the module/package 
@@ -8197,12 +8173,6 @@ form select {
   padding: 9px;
   border-radius: 3px; }
 
-/*
-  Variables and mixins for fonts.
-
-  Variables should be created and used for everything that can be overridden in
-  Bootstraps preStep.
-*/
 .modal {
   margin-top: 1rem;
   z-index: 10001; }
@@ -8298,20 +8268,20 @@ div.card.collapsible .card-header h4 {
   letter-spacing: 0.06rem; }
 
 div.card.collapsible.white .card-header {
-  background-color: #ffffff; }
+  background-color: #fff; }
 
 div.card.collapsible.white a[data-toggle~=collapse] {
-  color: #333333; }
+  color: #333; }
   div.card.collapsible.white a[data-toggle~=collapse]:before {
-    color: #333333; }
+    color: #333; }
 
 div.card.collapsible.blue .card-header {
   background-color: #2191c4; }
 
 div.card.collapsible.blue a[data-toggle~=collapse] {
-  color: #ffffff; }
+  color: #fff; }
   div.card.collapsible.blue a[data-toggle~=collapse]:before {
-    color: #ffffff; }
+    color: #fff; }
 
 div.card.collapsible .card-header a[data-toggle~=collapse][aria-expanded~=false]:before {
   font-family: "kth-style-icons";

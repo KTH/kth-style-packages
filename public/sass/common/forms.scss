@@ -40,8 +40,6 @@ a.btn, a.btn-* {
   @include disabledButton;
 }
 
-// TODO nedanstående (fram till TODO slut)  undrar jag om vi verkligen behöver. Vi borde testa att köra boostrap standard.
-
 form {
   legend {
     border: 0.1em solid $grey;
@@ -214,8 +212,6 @@ form {
     width: 20em;
   }
 
-  // TODO slut
-
   input[type="submit"] {
     @include submitButton;
   }
@@ -242,7 +238,7 @@ form {
       @include resetButton;
     }
 
-    &[type="button"] {
+    &[type="button"]:not(.close) {
       @include primaryButton;
 
       // default for backwards compatibility kth-style 1.0
@@ -275,7 +271,7 @@ form {
   }
 
   select {
-    background: url("../static/img/kth-style/select-arrow.png") no-repeat 94% 50% $white;
+      background: url("../static/img/kth-style/select-arrow.png") no-repeat 94% 50% $white;
     border: 0.1em solid $grey;
     border-radius: 0.3em;
     box-shadow: inset 0 1px 1px $grey;
@@ -292,7 +288,7 @@ form {
 
     &:hover {
       box-shadow: 0 0 0.1em 0.2em $lightGrey;
-      outline: 0;
+      outline: 0px;
     }
   }
 }

@@ -15,7 +15,6 @@ const backToTopLink = createBackToTopLink()
 
 window.addEventListener('scroll', function (e) {
   const y = window.scrollY
-  console.log(y, typeof y)
   if (y > 150) {
     backToTopLink.classList.add('show')
   } else {

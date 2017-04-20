@@ -1,59 +1,60 @@
-/*
-  Variables and mixins for fonts.
+// Variables and mixins for fonts.
+//
+// Variables should be created and used for everything that can be overridden in
+// Bootstraps preStep.
 
-  Variables should be created and used for everything that can be overridden in
-  Bootstraps preStep.
-*/
-
-@import "colors";
-@import "sizes";
+@import 'colors';
+@import 'sizes';
 
 // Headers
 $headers-line-height: 1.2;
 
-$moreSpaceLetterSpacing: 0.06rem;
+$moreSpaceLetterSpacing: .06rem;
 
 // H1
 $h1-fontSize: 2.5rem;
 $h1-border-bottom: 1px dotted $grey;
 
 @mixin h1 {
+  border-bottom: $h1-border-bottom;
+  font-family: $serif;
+  font-weight: normal;
+  margin: 0 0 1.5rem;
+  padding: 0 0 .8rem;
+
   &+ h2 {
     margin-top: 0;
   }
-  border-bottom: $h1-border-bottom;
-  padding: 0 0 0.8rem 0;
-  margin: 0 0 1.5rem 0;
-  font-family: $serif;
-  font-weight: normal;
 }
 
 // H2
 $h2-fontSize: 1.55rem;
 
 @mixin h2 {
+  margin: 2rem 0 .35rem;
+
   &+ h3 {
-    margin-top: 0.5rem;
+    margin-top: .5rem;
   }
-  margin: 2rem 0 .35rem 0;
 }
 
 // H3
 $h3-fontSize: 1.3rem;
 
 @mixin h3 {
+  margin: 2rem 0 .35rem;
+
   &+ h4 {
-    margin-top: 0.5rem;
+    margin-top: .5rem;
   }
-  margin: 2rem 0 .35rem 0;
 }
 
 // H4
 $h4-fontSize: inherit;
 
 @mixin h4 {
-  margin: 2rem 0 .35rem 0;
   font-weight: bold;
+  margin: 2rem 0 .35rem;
 }
 
 // H5 (are not supported by kth-style)

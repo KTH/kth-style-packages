@@ -1,4 +1,4 @@
-require('clipboard')
+const Clipboard = require('clipboard')
 
 class CopyExample {
   static washExampleHtml (html) {
@@ -38,43 +38,57 @@ class CopyExample {
     return e.join('\n')
   }
 
-  static init () {
-    const showExampleContainer = document.querySelector('.show-example-container')
-    const resultView = document.querySelector('#example-code-view')
-    const closeButton = document.querySelector('#close-example-code-view')
-
-    if (resultView) {
-      // new Clipboard('#copy-example-code')
-      closeButton.addEventListener('click', function (event) {
-        CopyExample.removeShow(showExampleContainer)
-      })
-    }
-
-    const allExampleContainers = document.querySelectorAll('.examples-container')
-    allExampleContainers.forEach(function (exampleContainer) {
-      exampleContainer.firstElementChild.classList.add('examples-view')
-
+  static createCodeContainer (index) {
+      const exampleCodeId = "exampleCode" + index
       // Create example code container
       const codeContainer = document.createElement('div')
       codeContainer.classList.add('example-code')
 
       const exampleCodeContainer = document.createElement('pre')
       exampleCodeContainer.classList.add('example-code-view')
+      exampleCodeContainer.id = exampleCodeId
 
       const closeButton = document.createElement('button')
       closeButton.type = 'button'
       closeButton.classList.add('close')
       const closeButtonContent = document.createElement('span')
-      closeButton.innerHTML = '&times'
+      closeButtonContent.innerHTML = '&times'
       closeButton.appendChild(closeButtonContent)
 
-      codeContainer.appendChild(exampleCodeContainer)
-      codeContainer.appendChild(closeButton)
-      exampleContainer.appendChild(codeContainer)
+      const copyButton = document.createElement('button')
+      copyButton.type = 'button'
+      copyButton.textContent = 'Kopiera'
+      copyButton.classList.add('default')
+      copyButton.classList.add('copy-btn')
 
+      codeContainer.appendChild(copyButton)
+      codeContainer.appendChild(closeButton)
+      codeContainer.appendChild(exampleCodeContainer)
+      
       closeButton.addEventListener('click', function (event) {
         codeContainer.classList.remove('show')
       })
+
+      new Clipboard(copyButton, {
+          target: function(trigger) {
+            return exampleCodeContainer
+          }
+      });
+
+      return {
+        codeContainer: codeContainer,
+        exampleCodeContainer: exampleCodeContainer,
+        copyButton: copyButton
+      }
+  }
+
+  static init () {
+    const allExampleContainers = document.querySelectorAll('.examples-container')
+    allExampleContainers.forEach(function (exampleContainer, index) {
+      exampleContainer.firstElementChild.classList.add('examples-view')
+
+      const cc = CopyExample.createCodeContainer(index)
+      exampleContainer.appendChild(cc.codeContainer)
 
       // Loop through examples and add "Show code on click logic"
       const examples = exampleContainer.querySelectorAll('[data-example]')
@@ -85,10 +99,10 @@ class CopyExample {
           event.preventDefault()
           const exampleHtml = CopyExample.copyExampleHtml(example)
 
-          codeContainer.setAttribute('data-example-code', exampleName)
-          exampleCodeContainer.innerText = exampleHtml
+          cc.codeContainer.setAttribute('data-example-code', exampleName)
+          cc.exampleCodeContainer.innerText = exampleHtml
 
-          codeContainer.classList.add('show')
+          cc.codeContainer.classList.add('show')
         })
       })
     })
