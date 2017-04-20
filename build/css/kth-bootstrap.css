@@ -1,6 +1,6 @@
 /*!
   * kth-style  - KTH CSS. A custom build of Bootstrap 4. The purpose of this project is to provide the essential design and style for applications within KTH and make the development process of these applications faster.
-  * @version v2.0.0-alpha.8
+  * @version v2.0.0-alpha.9
   * @link https://github.com/KTH/kth-style
   */@charset "UTF-8";
 /*
@@ -7644,105 +7644,64 @@ h2.navigationParent {
       color: #b9bbbd; }
 
 #footer {
-  border-top: 0;
-  padding: 10px 38px 38px 38px;
-  overflow: hidden;
-  clear: both;
   background: #65656c;
-  margin-top: 20px;
+  border-top: 0;
+  clear: both;
+  margin-left: -38px;
   margin-right: -38px;
-  margin-left: -38px; }
+  margin-top: 20px;
+  overflow: hidden;
+  padding: 10px 38px 38px; }
   @media only screen and (max-width: 480px) {
     #footer {
-      margin-right: -15px;
-      margin-left: -15px; } }
+      margin-left: -15px;
+      margin-right: -15px; } }
   #footer .blockItemSeparator {
     margin: 0;
     padding: 10px 0; }
     #footer .blockItemSeparator .blockItemSeparatorInner {
-      height: 1px;
-      display: block; }
+      display: block;
+      height: 1px; }
+  #footer .block.teaser .teaserTextInner .paragraphs {
+    color: #fff;
+    font-size: .95rem;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+    width: 100%; }
+  #footer .block.teaser .teaserTextInner h2 {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0;
+    padding: 0 0 10px; }
+  #footer .block.list ul {
+    margin: 0;
+    padding: 0; }
+    #footer .block.list ul li {
+      border-bottom: 1px dotted #b9bbbd;
+      display: inline-block;
+      line-height: 21px;
+      margin: 0;
+      padding: 0;
+      width: 100%; }
+      #footer .block.list ul li:first-child {
+        border-top: 1px dotted #b9bbbd; }
+      #footer .block.list ul li a {
+        background: transparent url("../img/kth-style/icons/white-arrow.svg") 5px 10.5px no-repeat;
+        color: #fff;
+        display: block;
+        padding: 3px 0 3px 15px; }
+  #footer .block.list h3 {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0;
+    padding: 0 5px 10px; }
 
-#footer .block.list ul li a {
-  display: block;
-  padding: 3px 0 3px 15px;
-  background: transparent url("../img/kth-style/icons/white-arrow.svg") 5px 10.5px no-repeat;
-  color: #ffffff; }
-
-.block.list ul {
-  padding: 0;
-  margin: 0; }
-
-#footer .block.list ul li:first-child {
-  border-top: 1px dotted #b9bbbd; }
-
-#footer .block.list ul li {
-  padding: 0;
-  margin: 0;
-  display: inline-block;
-  border-bottom: 1px dotted #b9bbbd;
-  line-height: 21px;
-  width: 100%; }
-
-.block.list ul li {
-  list-style: none;
-  padding-bottom: 5px; }
-
-#footer .block.list h3 {
-  color: #ffffff;
-  padding-left: 5px;
-  padding-right: 5px; }
-
-.block.list.links h3 {
-  padding: 0 0 10px 0;
-  margin: 0;
-  font-size: 16px;
-  font-size: 1.2rem;
-  color: #111111;
-  font-weight: bold; }
-
-#footer .block.teaser .teaserTextInner h2 {
-  font-size: 16px;
-  font-size: 1.2rem;
-  color: #ffffff;
-  font-weight: bold; }
-
-.block.teaser .teaserText .teaserTextInner h2 {
-  font-size: 16px;
-  font-size: 1.2rem;
-  color: #111111;
-  font-weight: bold; }
-
-.block.teaser h2 {
-  padding: 0 0 10px 0;
-  font-size: 16px;
-  font-size: 1.2rem;
-  color: #111111;
-  font-weight: bold;
-  margin: 0; }
-
-#footer .block.teaser .teaserTextInner .paragraphs {
-  padding: 0;
-  margin: 0;
-  font-size: 13.5px;
-  font-size: 0.95rem;
-  font-weight: normal;
-  color: #ffffff;
-  width: 100%; }
-
-.block.teaser .teaserText .teaserTextInner .paragraphs {
-  padding: 0;
-  margin: 0;
-  font-size: 13.5px;
-  font-size: 1.35rem;
-  font-weight: normal;
-  color: #111111;
-  width: 100%; }
-
-/* * * * Override for Footer behaviour * * * */
 @media only screen and (max-width: 850px) {
   #footer {
-    padding: 20px 38px 38px 38px; }
+    padding: 20px 38px 38px; }
     #footer .column {
       width: 50%; }
       #footer .column.column3 {
@@ -7789,22 +7748,21 @@ h2.navigationParent {
       display: inline-block; }
       .header .secondaryHeader .block.link a {
         color: #006cb7; }
-
-.block {
-  margin: 0;
-  padding: 0;
-  position: relative; }
-  .block.figure.mainLogo .imageWrapper img {
-    height: auto;
-    max-height: 70px;
-    width: auto; }
+  .header .block {
+    margin: 0;
+    padding: 0;
+    position: relative; }
+    .header .block.figure.mainLogo .imageWrapper img {
+      height: auto;
+      max-height: 70px;
+      width: auto; }
 
 @media only screen and (max-width: 976px) {
   .header .primaryHeader .block.search {
     max-width: 80%; } }
 
 @media only screen and (max-width: 480px) {
-  .block.figure.mainLogo .imageWrapper img {
+  .header .block.figure.mainLogo .imageWrapper img {
     margin-left: 5px;
     max-height: 40px; }
   .header .secondaryHeader .block.siteName {
@@ -7821,13 +7779,13 @@ h2.navigationParent {
     top: auto;
     width: 100%; } }
 
-#headerHr {
+.header-hr {
   margin-bottom: 20px;
   margin-top: 70px;
   position: relative; }
 
 @media only screen and (max-width: 480px) {
-  #headerHr {
+  .header-hr {
     margin-top: 20px; } }
 
 html {
