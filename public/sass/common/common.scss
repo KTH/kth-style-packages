@@ -1,13 +1,16 @@
-@import "../variables/colors";
-@import "../variables/fonts";
+@import '../variables/colors';
+@import '../variables/fonts';
 
-/* * * * * * * * * Headline style * * * * * * * * * */
-
+//  * * * * * * * * Headline style * * * * * * * * * 
 body {
   font-size: $normalFontSize;
 }
 
-body, button, input, select, textarea {
+body,
+button,
+input,
+select,
+textarea {
   font-family: $sansSerif;
   line-height: 1.5;
 }
@@ -42,16 +45,16 @@ h4 {
   font-size: $h4-fontSize;
   color: $black;
   font-weight: bold;
-  margin: 2rem 0 .5rem 0;
+  margin: 2rem 0 .5rem;
 }
 
-/* * * * * * * * * Text style * * * * * * * * * */
-
+//  * * * * * * * * Text style * * * * * * * * * 
 p {
-  margin: 0 0 1.1em 0;
+  margin: 0 0 1.1em;
 }
 
-b, strong {
+b,
+strong {
   font-weight: bold;
 }
 
@@ -61,7 +64,7 @@ blockquote {
   line-height: 20px;
   font-weight: bold;
   border-top: 2px solid $darkBlack;
-  background: url("../static/img/kth-style/quotation-mark.png") 0 12px no-repeat transparent;
+  background: url('../static/img/kth-style/quotation-mark.png') 0 12px no-repeat transparent;
   color: $darkBlack;
   float: left;
   padding: 8px 0 0 50px;
@@ -69,7 +72,7 @@ blockquote {
   min-height: 60px;
 }
 
-/* * * * * * * * * List style * * * * * * * */
+//  * * * * * * * * List style * * * * * * * 
 
 ol {
   li {
@@ -83,8 +86,7 @@ ul {
   }
 }
 
-/* * * * * * * * * Table style * * * * * * * */
-
+//  * * * * * * * * Table style * * * * * * * 
 table {
   margin: $spacing 0;
   width: 100%;
@@ -96,7 +98,7 @@ table {
       tr {
 
         &:last-child {
-          border-bottom: none;
+          border-bottom: 0;
         }
       }
     }
@@ -123,7 +125,7 @@ table {
         border-bottom: 1px dotted $black;
 
         &.cke_dialog_ui_hbox {
-          border-bottom: none;
+          border-bottom: 0;
         }
       }
 
@@ -136,8 +138,7 @@ table {
   }
 }
 
-/* * * * * * * * * Bootstrap override * * * * * * * */
-
+//  * * * * * * * * Bootstrap override * * * * * * * 
 .label {
   display: block;
   padding: 0;
@@ -156,8 +157,12 @@ table {
   cursor: pointer;
 }
 
-.table>thead:first-child>tr:first-child>th {
-  border-top: 1px dotted $black;
+.table>thead {
+  &:first-child>tr {
+    &:first-child>th {
+      border-top: 1px dotted $black;
+    }
+  }
 }
 
 .table>thead>tr>th {
@@ -165,7 +170,8 @@ table {
   border-bottom: 1px dotted $black;
 }
 
-.table>thead>tr>td, .table>thead>tr>th {
+.table>thead>tr>td,
+.table>thead>tr>th {
   padding: 5px;
   line-height: 1.5;
   vertical-align: text-top;
@@ -177,11 +183,10 @@ table {
 }
 
 .table-responsive {
-  border: none
+  border: 0;
 }
 
-/* * * * * * * * * Link style * * * * * * * * * */
-
+//  * * * * * * * * Link style * * * * * * * * * 
 a {
   color: $standardLinkColor;
   text-decoration: none;
@@ -200,6 +205,7 @@ a {
 
   &.secondary {
     color: $darkGray;
+
     &:hover {
       color: $standardLinkColor;
     }
@@ -300,15 +306,14 @@ a {
   }
 }
 
-/* categroy / label / tag for (often) a single line of text.  The
-categorylabel itsel is an inline element, typically a single word.
-*/
+//  categroy / label / tag for (often) a single line of text.  The
+// categorylabel itsel is an inline element, typically a single word.
 .categorylabel {
   font-variant: small-caps;
   text-transform: lowercase;
 }
 
 .expandToContainerWidth {
-    margin-right: -15px;
-    margin-left: -15px;
+  margin-right: -15px;
+  margin-left: -15px;
 }

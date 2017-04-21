@@ -17,3 +17,4 @@ rules:
   no-qualifying-elements: 0
   leading-zero: 0
   property-sort-order: 0
+  mixins-before-declarations: 0
