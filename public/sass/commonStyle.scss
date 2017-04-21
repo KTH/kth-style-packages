@@ -1,21 +1,19 @@
-/*
-  KTH specific styling
-*/
+// KTH specific styling
 
-@import "blocks/columnSplitter";
-@import "blocks/search";
-@import "blocks/siteName";
-@import "blocks/lang";
+@import 'blocks/columnSplitter';
+@import 'blocks/search';
+@import 'blocks/siteName';
+@import 'blocks/lang';
 
-@import "slots/breadcrumbs";
-@import "slots/footer";
-@import "slots/header";
+@import 'slots/breadcrumbs';
+@import 'slots/footer';
+@import 'slots/header';
 
-@import "common/reset";
-@import "common/ko";
-@import "common/forms";
-@import "common/icons";
+@import 'common/reset';
+@import 'common/ko';
+@import 'common/forms';
+@import 'common/icons';
 
-@import "component/well";
-@import "component/modals";
-@import "component/collapse";
+@import 'component/well';
+@import 'component/modals';
+@import 'component/collapse';

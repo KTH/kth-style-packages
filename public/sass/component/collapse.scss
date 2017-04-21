@@ -1,91 +1,102 @@
-/*
-  Boostrap Collapse / Panel headings / Rubriklister 
-*/
 
-@import "common/icons.scss";
-@import "variables/colors.scss";
+// Boostrap Collapse / Panel headings / Rubriklister 
 
-div.card.collapsible {
+@import 'common/icons';
+@import 'variables/colors';
 
-  .card-header {
-    h4 {
-      margin-top: 0;
-      font-weight: 700;
-      letter-spacing: $moreSpaceLetterSpacing;
-    }    
-  }
+@mixin iconCommon {
+  font-size: 1.5rem;
+  line-height: 1.2rem;
+  margin-right: .5rem;
+  text-decoration: none;
+  vertical-align: middle;
+}
 
-  &.white {
+.card {
+  &.collapsible {
+
     .card-header {
-      background-color: $white;
-    }
-
-    a[data-toggle~=collapse] {
-      color: $lightBlack;
-      &:before {
-        color: $lightBlack;
+      h4 {
+        font-weight: 700;
+        letter-spacing: $moreSpaceLetterSpacing;
+        margin-top: 0;
       }
-    }
-  }
 
-  &.blue {
-    .card-header {
-      background-color: $lightBlue;
-    }
+      a {
+        &[data-toggle~='collapse'] {
+          &[aria-expanded~='false'] {
+            &:before {
+              @extend .icon-up-open;
+              @include kthStyleIconsFontSetup;
+              @include iconCommon;
+              animation: rotateUp .3s ease-in-out forwards;
 
-    a[data-toggle~=collapse] {
-      color: $white;
-      &:before {
-        color: $white;
-      }
-    }
-  }  
+              &:hover {
+                text-decoration: none;
+              }
+            }
+          }
 
-  @mixin iconCommon() {
-    margin-right: 0.5rem;
-    text-decoration: none;
-    font-size: 1.5rem;
-    vertical-align: middle;
-    line-height: 1.2rem;
-  }
+          &[aria-expanded~='true'] {
+            &:before {
+              @extend .icon-down-open;
+              @include kthStyleIconsFontSetup;
+              @include iconCommon;
+              animation: rotateDown .3s ease-in-out forwards;
 
-  .card-header a[data-toggle~=collapse] { 
-    &[aria-expanded~=false]:before {
-      @include kthStyleIconsFontSetup();
-      @extend .icon-up-open;
-      @include iconCommon();
-      animation: rotateUp .3s ease-in-out forwards;
-
-      &:hover {
-        text-decoration: none;
+              &:hover {
+                text-decoration: none;
+              }
+            }
+          }
+        }
       }
     }
 
-    &[aria-expanded~=true]:before {
-      @include kthStyleIconsFontSetup();
-      @extend .icon-down-open;
-      @include iconCommon();
-      animation: rotateDown .3s ease-in-out forwards;
+    &.white {
+      .card-header {
+        background-color: $white;
+      }
 
-      &:hover {
-        text-decoration: none;
+      a {
+        &[data-toggle~='collapse'] {
+          color: $lightBlack;
+
+          &::before {
+            color: $lightBlack;
+          }
+        }
       }
     }
-  }
 
-  // TODO Can we do a reverse instead?
+    &.blue {
+      .card-header {
+        background-color: $lightBlue;
+      }
 
-  @keyframes rotateDown {
-    100% {
-      transform: rotate(-180deg);
-      transform-origin: 50% 50%;
+      a {
+        &[data-toggle~='collapse'] {
+          color: $white;
+
+          &::before {
+            color: $white;
+          }
+        }
+      }
     }
-  }
 
-  @keyframes rotateUp {
-    100% {
-      transform: rotate(180deg);
-      transform-origin: 50% 50%;
+    @keyframes rotateDown {
+      100% {
+        transform: rotate(180deg);
+        transform-origin: 50% 50%;
+      }
+    }
+
+    @keyframes rotateUp {
+      100% {
+        transform: rotate(-180deg);
+        transform-origin: 50% 50%;
+      }
     }
   }
 }

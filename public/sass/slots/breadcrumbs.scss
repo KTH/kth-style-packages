@@ -1,17 +1,19 @@
 .breadcrumbs {
-  padding: 0 0 10px 0;
-  width: 85%;
-  text-transform: uppercase;
   color: #b9bbbd;
   line-height: 21px;
+  padding: 0 0 10px;
+  text-transform: uppercase;
+  width: 85%;
 
-  a:hover {
-    text-decoration: none;
-    color: #24a0d8;;
-  }
+  a {
+    &:hover {
+      color: #24a0d8;
+      text-decoration: none;
+    }
 
-  a:active {
-    color: #b9bbbd;
+    &:active {
+      color: #b9bbbd;
+    }
   }
 
   .separator {

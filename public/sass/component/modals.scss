@@ -1,11 +1,12 @@
-@import "../variables/colors";
-@import "../variables/fonts";
+@import '../variables/colors';
+@import '../variables/fonts';
 
 .modal {
   margin-top: 1rem;
   z-index: 10001;
+
   .modal-content {
-    border: none;
+    border: 0;
   }
 }
 
@@ -21,10 +22,12 @@
   }
 }
 
-/* * * * Personal toolbar override for modal behaviour * * * */
+///* * * * Personal toolbar override for modal behaviour * * * */
 
 @media only screen and (min-width: 1024px) {
-  #kth-pmenu #menu-bar-wrapper {
-    z-index: 40!important;
+  #kth-pmenu {
+    #menu-bar-wrapper {
+      z-index: 40 !important;
+    }
   }
 }

@@ -1,5 +1,5 @@
-@import "../variables/colors";
-@import "../variables/sizes";
+@import '../variables/colors';
+@import '../variables/sizes';
 
 @mixin button {
   @extend .btn;
@@ -7,43 +7,47 @@
 }
 
 @mixin submitButton {
-  @include button;
   @extend .btn-success;
+  @include button;
 }
 
 @mixin resetButton {
-  @include button;
   @extend .btn-danger;
+  @include button;
 }
 
 @mixin primaryButton {
-  @include button;
   @extend .btn-primary;
+  @include button;
 }
 
 @mixin secondaryButton {
-  @include button;
   @extend .btn-secondary;
+  @include button;
 }
 
 @mixin disabledButton {
-  &:disabled, &.disabled {
-    border-color: $darkGrey;
+  &:disabled,
+  &.disabled {
     background-color: $darkGrey;
+    border-color: $darkGrey;
+
     &:hover {
       background-color: $darkGrey;
     }
   }
 }
 
-a.btn, a.btn-* {
-  @include disabledButton;
+a {
+  &.btn {
+    @include disabledButton;
+  }
 }
 
 form {
   legend {
-    border: 0.1em solid $grey;
-    border-radius: 0.3em;
+    border: .1em solid $grey;
+    border-radius: .3em;
     font-size: 14px;
     font-size: 1rem;
     padding: 1em;
@@ -61,234 +65,241 @@ form {
     padding: 1em 0;
   }
 
-  input[type="text"] {
-    background-color: $white;
-    border: 1px solid $grey;
-    border-radius: 0.3em;
-    box-shadow: inset 0 1px 1px $grey;
-    font-size: 14px;
-    font-size: 1rem;
-    height: 2.6em;
-    margin: 1em 0;
-    padding: 0.6em 1.1em;
-    width: 100%;
-  }
-
-  input[type="url"] {
-    background-color: $white;
-    border: 1px solid $grey;
-    border-radius: 0.3em;
-    box-shadow: inset 0 1px 1px $grey;
-    font-size: 14px;
-    font-size: 1rem;
-    height: 2.6em;
-    margin: 1em 0;
-    padding: 0.7em 1.1em 0.5em 1.1em;
-    width: 100%;
-  }
-
-  input[type="number"] {
-    background-color: $white;
-    border: 1px solid $grey;
-    border-radius: 0.3em;
-    box-shadow: inset 0 1px 1px $grey;
-    font-size: 14px;
-    font-size: 1rem;
-    height: 2.6em;
-    margin: 1em 0;
-    padding: 0.7em 1.1em 0.5em 1.1em;
-    width: 20em;
-  }
-
-  input[type="search"] {
-    background-color: $white;
-    border: 1px solid $grey;
-    border-radius: 0.3em;
-    box-shadow: inset 0 1px 1px $grey;
-    font-size: 14px;
-    font-size: 1rem;
-    height: 2.6em;
-    margin: 1em 0;
-    padding: 0.7em 1.1em 0.5em 1.1em;
-    width: 100%;
-  }
-
-  input[type="datetime"] {
-    background-color: $white;
-    border: 1px solid $grey;
-    border-radius: 0.3em;
-    box-shadow: inset 0 1px 1px $grey;
-    font-size: 14px;
-    font-size: 1rem;
-    height: 2.6em;
-    margin: 1em 0;
-    padding: 0.7em 1.1em 0.5em 1.1em;
-    width: 20em;
-  }
-
-  input[type="date"] {
-    background-color: $white;
-    border: 1px solid $grey;
-    border-radius: 0.3em;
-    box-shadow: inset 0 1px 1px $grey;
-    font-size: 14px;
-    font-size: 1rem;
-    height: 2.6em;
-    margin: 1em 0;
-    padding: 0.7em 1.1em 0.5em 1.1em;
-    width: 20em;
-  }
-
-  input[type="month"] {
-    background-color: $white;
-    border: 1px solid $grey;
-    border-radius: 0.3em;
-    box-shadow: inset 0 1px 1px $grey;
-    font-size: 14px;
-    font-size: 1rem;
-    height: 2.6em;
-    margin: 1em 0;
-    padding: 0.7em 1.1em 0.5em 1.1em;
-    width: 20em;
-  }
-
-  input[type="week"] {
-    background-color: $white;
-    border: 1px solid $grey;
-    border-radius: 0.3em;
-    box-shadow: inset 0 1px 1px $grey;
-    font-size: 14px;
-    font-size: 1rem;
-    height: 2.6em;
-    margin: 1em 0;
-    padding: 0.7em 1.1em 0.5em 1.1em;
-    width: 20em;
-  }
-
-  input[type="time"] {
-    background-color: $white;
-    border: 1px solid $grey;
-    border-radius: 0.3em;
-    box-shadow: inset 0 1px 1px $grey;
-    font-size: 14px;
-    font-size: 1rem;
-    height: 2.6em;
-    margin: 1em 0;
-    padding: 0.7em 1.1em 0.5em 1.1em;
-    width: 8em;
-  }
-
-  input[type="range"] {
-    width: 20em;
-  }
-
-  input[type="color"] {
-    width: 20em;
-  }
-
-  input[type="tel"] {
-    background-color: $white;
-    border: 1px solid $grey;
-    border-radius: 0.3em;
-    box-shadow: inset 0 1px 1px $grey;
-    font-size: 14px;
-    font-size: 1rem;
-    height: 2.6em;
-    margin: 1em 0;
-    padding: 0.7em 1.1em 0.5em 1.1em;
-    width: 20em;
-  }
-
-  input[type="email"] {
-    background-color: $white;
-    border: 1px solid $grey;
-    border-radius: 0.3em;
-    box-shadow: inset 0 1px 1px $grey;
-    font-size: 14px;
-    font-size: 1rem;
-    height: 2.6em;
-    margin: 1em 0;
-    padding: 0.7em 1.1em 0.5em 1.1em;
-    width: 20em;
-  }
-
-  input[type="submit"] {
-    @include submitButton;
-  }
-
-  input[type="button"] {
-
-    @include primaryButton;
-
-    &.default, &.secondary  {
-      @include secondaryButton;
+  input {
+    &[type='text'] {
+      background-color: $white;
+      border: 1px solid $grey;
+      border-radius: .3em;
+      box-shadow: inset 0 1px 1px $grey;
+      font-size: 14px;
+      font-size: 1rem;
+      height: 2.6em;
+      margin: 1em 0;
+      padding: .6em 1.1em;
+      width: 100%;
     }
-  }
 
-  input[type="reset"] {
-    @include resetButton;
-  }
+    &[type='url'] {
+      background-color: $white;
+      border: 1px solid $grey;
+      border-radius: .3em;
+      box-shadow: inset 0 1px 1px $grey;
+      font-size: 14px;
+      font-size: 1rem;
+      height: 2.6em;
+      margin: 1em 0;
+      padding: .7em 1.1em .5em;
+      width: 100%;
+    }
 
-  button {
-    &[type="submit"] {
+    &[type='number'] {
+      background-color: $white;
+      border: 1px solid $grey;
+      border-radius: .3em;
+      box-shadow: inset 0 1px 1px $grey;
+      font-size: 14px;
+      font-size: 1rem;
+      height: 2.6em;
+      margin: 1em 0;
+      padding: .7em 1.1em .5em;
+      width: 20em;
+    }
+
+    &[type='search'] {
+      background-color: $white;
+      border: 1px solid $grey;
+      border-radius: .3em;
+      box-shadow: inset 0 1px 1px $grey;
+      font-size: 14px;
+      font-size: 1rem;
+      height: 2.6em;
+      margin: 1em 0;
+      padding: .7em 1.1em .5em;
+      width: 100%;
+    }
+
+    &[type='datetime'] {
+      background-color: $white;
+      border: 1px solid $grey;
+      border-radius: .3em;
+      box-shadow: inset 0 1px 1px $grey;
+      font-size: 14px;
+      font-size: 1rem;
+      height: 2.6em;
+      margin: 1em 0;
+      padding: .7em 1.1em .5em;
+      width: 20em;
+    }
+
+    &[type='date'] {
+      background-color: $white;
+      border: 1px solid $grey;
+      border-radius: .3em;
+      box-shadow: inset 0 1px 1px $grey;
+      font-size: 14px;
+      font-size: 1rem;
+      height: 2.6em;
+      margin: 1em 0;
+      padding: .7em 1.1em .5em;
+      width: 20em;
+    }
+
+    &[type='month'] {
+      background-color: $white;
+      border: 1px solid $grey;
+      border-radius: .3em;
+      box-shadow: inset 0 1px 1px $grey;
+      font-size: 14px;
+      font-size: 1rem;
+      height: 2.6em;
+      margin: 1em 0;
+      padding: .7em 1.1em .5em;
+      width: 20em;
+    }
+
+    &[type='week'] {
+      background-color: $white;
+      border: 1px solid $grey;
+      border-radius: .3em;
+      box-shadow: inset 0 1px 1px $grey;
+      font-size: 14px;
+      font-size: 1rem;
+      height: 2.6em;
+      margin: 1em 0;
+      padding: .7em 1.1em .5em;
+      width: 20em;
+    }
+
+    &[type='time'] {
+      background-color: $white;
+      border: 1px solid $grey;
+      border-radius: .3em;
+      box-shadow: inset 0 1px 1px $grey;
+      font-size: 14px;
+      font-size: 1rem;
+      height: 2.6em;
+      margin: 1em 0;
+      padding: .7em 1.1em .5em;
+      width: 8em;
+    }
+
+    &[type='range'] {
+      width: 20em;
+    }
+
+    &[type='color'] {
+      width: 20em;
+    }
+
+    &[type='tel'] {
+      background-color: $white;
+      border: 1px solid $grey;
+      border-radius: .3em;
+      box-shadow: inset 0 1px 1px $grey;
+      font-size: 14px;
+      font-size: 1rem;
+      height: 2.6em;
+      margin: 1em 0;
+      padding: .7em 1.1em .5em;
+      width: 20em;
+    }
+
+    &[type='email'] {
+      background-color: $white;
+      border: 1px solid $grey;
+      border-radius: .3em;
+      box-shadow: inset 0 1px 1px $grey;
+      font-size: 14px;
+      font-size: 1rem;
+      height: 2.6em;
+      margin: 1em 0;
+      padding: .7em 1.1em .5em;
+      width: 20em;
+    }
+
+    &[type='submit'] {
       @include submitButton;
     }
 
-    &[type="reset"] {
-      @include resetButton;
-    }
-
-    &[type="button"]:not(.close) {
+    &[type='button'] {
       @include primaryButton;
 
-      // default for backwards compatibility kth-style 1.0
-      &.secondary, &.default {
+      &.default,
+      &.secondary {
         @include secondaryButton;
       }
     }
   }
+
+  [type='reset'] {
+    @include resetButton;
+  }
+
+  button {
+    &[type='submit'] {
+      @include submitButton;
+    }
+
+    &[type='reset'] {
+      @include resetButton;
+    }
+
+    &[type='button'] {
+      &:not(.close) {
+        @include primaryButton;
+
+        // default for backwards compatibility kth-style 1.0
+        &.secondary,
+        &.default {
+          @include secondaryButton;
+        }
+      }
+    }
+  }
+
   textarea {
     background-color: $white;
     border: 1px solid $grey;
-    border-radius: 0.3em;
+    border-radius: .3em;
     box-shadow: inset 0 1px 1px $grey;
     font-size: 14px;
     font-size: 1rem;
-    margin: 0.4em 0;
-    padding: 0.6em 1.1em;
+    margin: .4em 0;
+    padding: .6em 1.1em;
     vertical-align: top;
     width: 100%;
 
     &:focus {
-      box-shadow: 0 0 0.1em 0.2em $lightBlue;
+      box-shadow: 0 0 .1em .2em $lightBlue;
       outline: 0;
     }
 
     &:hover {
-      box-shadow: 0 0 0.1em 0.2em $lightGrey;
+      box-shadow: 0 0 .1em .2em $lightGrey;
       outline: 0;
     }
   }
 
   select {
-      background: url("../static/img/kth-style/select-arrow.png") no-repeat 94% 50% $white;
-    border: 0.1em solid $grey;
-    border-radius: 0.3em;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background: url('../static/img/kth-style/select-arrow.png') no-repeat 94% 50% $white;
+    border: .1em solid $grey;
+    border-radius: .3em;
     box-shadow: inset 0 1px 1px $grey;
     font-size: 14px;
     font-size: 1rem;
     height: 2.6em;
-    margin: 0 0 1em 0;
-    padding: 0.4em 2em 0.4em 0.8em;
-    -webkit-appearance: none;
-    -moz-appearance: none;
+    margin: 0 0 1em;
+    padding: .4em 2em .4em .8em;
+
     &:focus {
       outline: none;
     }
 
     &:hover {
-      box-shadow: 0 0 0.1em 0.2em $lightGrey;
-      outline: 0px;
+      box-shadow: 0 0 .1em .2em $lightGrey;
+      outline: 0;
     }
   }
 }
