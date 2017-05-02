@@ -39,7 +39,7 @@
   background-color: $infoYellow;
   &::before {
     @include message-icons-base($infoYellow);
-    @extend .icon-info-circled-1:before;
+    @extend .icon-info:before;
   }
 }
 
