@@ -6876,6 +6876,10 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
   node-sass-css-importer (https://www.npmjs.com/package/node-sass-css-importer) which
   can import CSS into the SCSS file.
 */
+.icon-info:before, .system-message::before {
+  content: '\e800'; }
+
+/* '' */
 .icon-check:before, .ok-message::before {
   content: '\e802'; }
 
@@ -6892,7 +6896,7 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
   content: '\e805'; }
 
 /* '' */
-.icon-info-circled-1:before, .system-message::before {
+.icon-info-circled-1:before {
   content: '\e806'; }
 
 /* '' */
@@ -8088,6 +8092,10 @@ form select {
   node-sass-css-importer (https://www.npmjs.com/package/node-sass-css-importer) which
   can import CSS into the SCSS file.
 */
+.icon-info:before, .system-message::before {
+  content: '\e800'; }
+
+/* '' */
 .icon-check:before, .ok-message::before {
   content: '\e802'; }
 
@@ -8104,7 +8112,7 @@ form select {
   content: '\e805'; }
 
 /* '' */
-.icon-info-circled-1:before, .system-message::before {
+.icon-info-circled-1:before {
   content: '\e806'; }
 
 /* '' */
@@ -8198,6 +8206,10 @@ form select {
   node-sass-css-importer (https://www.npmjs.com/package/node-sass-css-importer) which
   can import CSS into the SCSS file.
 */
+.icon-info:before, .system-message::before {
+  content: '\e800'; }
+
+/* '' */
 .icon-check:before, .ok-message::before {
   content: '\e802'; }
 
@@ -8214,7 +8226,7 @@ form select {
   content: '\e805'; }
 
 /* '' */
-.icon-info-circled-1:before, .system-message::before {
+.icon-info-circled-1:before {
   content: '\e806'; }
 
 /* '' */
