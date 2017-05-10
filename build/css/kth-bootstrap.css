@@ -6836,18 +6836,10 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
 
   Uses kth-style-icons font. See icons.scss
 */
-<<<<<<< HEAD
-/*
-  Icons are imported from fontello.com. The CSS import is handled by the module/package 
-  node-sass-css-importer (https://www.npmjs.com/package/node-sass-css-importer) which
-  can import CSS into the SCSS file.
-*/
 .icon-info:before, .system-message::before {
   content: '\e800'; }
 
 /* '' */
-=======
->>>>>>> Sass clean-up.
 .icon-check:before, .ok-message::before {
   content: '\e802'; }
 
@@ -7992,18 +7984,10 @@ form select {
     box-shadow: 0 0 0.1em 0.2em #e3e5e3;
     outline: 0; }
 
-<<<<<<< HEAD
-/*
-  Icons are imported from fontello.com. The CSS import is handled by the module/package 
-  node-sass-css-importer (https://www.npmjs.com/package/node-sass-css-importer) which
-  can import CSS into the SCSS file.
-*/
 .icon-info:before, .system-message::before {
   content: '\e800'; }
 
 /* '' */
-=======
->>>>>>> Sass clean-up.
 .icon-check:before, .ok-message::before {
   content: '\e802'; }
 
@@ -8090,21 +8074,10 @@ form select {
   #kth-pmenu #menu-bar-wrapper {
     z-index: 40 !important; } }
 
-<<<<<<< HEAD
-/*
-  Boostrap Collapse / Panel headings / Rubriklister 
-*/
-/*
-  Icons are imported from fontello.com. The CSS import is handled by the module/package 
-  node-sass-css-importer (https://www.npmjs.com/package/node-sass-css-importer) which
-  can import CSS into the SCSS file.
-*/
 .icon-info:before, .system-message::before {
   content: '\e800'; }
 
 /* '' */
-=======
->>>>>>> Sass clean-up.
 .icon-check:before, .ok-message::before {
   content: '\e802'; }
 
