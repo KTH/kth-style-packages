@@ -82,6 +82,7 @@ $ npm show kth-style versions
  - Glyphicons are now removed as standard icons in Bootstrap. We now use Fontello (fontello.com). See the icons section in the "Develop in KTH Style" section
 
 ## TODO
+- Gör bredcrumbs som med en lista (som exempelvis Bootstrap gör).
 - Add new icons and handle licenses for fontello. (icon to add "plus-circle" from Entypo)
 - Create Example box around kth-style examples in this doc.
 - Support fullscreen (like ambassadörswebben)
