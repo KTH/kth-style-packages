@@ -16,9 +16,8 @@
     "docker": "npm install --development && npm run build && npm prune --production",
     "build": "gulp build --preserve-comments",
     "start": "NODE_ENV=production node app.js",
-    "start-dev": "npm run build && cross-env NODE_ENV=development concurrently --kill-others \"nodemon --ignore dist/**/* app.js\" \"gulp watch\"",
-    "test-accessibility": "./accessibility/runPa11y.sh https://app-r.referens.sys.kth.se/style WCAG2AA",
-    "test-accessibility-local": "./accessibility/runPa11y.sh http://localhost:3000/style WCAG2AA",
+    "start-dev": "npm run build && cross-env NODE_ENV=development concurrently --kill-others \"nodemon --ignore dist/**/* --ignore accessibility/reports/* app.js\" \"gulp watch\"",
+    "test-accessibility": "./accessibility/runPa11y.sh http://localhost:3000/style WCAG2AA",
     "preversion": "npm run build && git add ./build && git diff-index --quiet HEAD || git commit -am \"Automatic deployment build\"",
     "postversion": "git push && git push --tags",
     "sass-lint": "./node_modules/.bin/sass-lint --config ./.sass-lint.yml './public/sass/**/*.scss' --verbose --no-exit"
