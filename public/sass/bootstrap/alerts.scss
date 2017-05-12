@@ -13,7 +13,6 @@
   min-height: 5rem;
   border: none;
   border-radius: .15rem;
-  font-weight: 700;
   position: relative;
   padding-left: 5rem;
 }
@@ -22,7 +21,7 @@
   font-family: 'kth-style-icons';
   font-size: 2rem;
   background-color:darken($color, 10% );
-  color: darken($color, 40% );
+  color: $black;
   display: block;
   padding: 1rem;
   position: absolute;
@@ -32,6 +31,7 @@
   border-style: solid;
   border: 1px 0 0px 1px;
   border-radius: .15rem 0 0 .15rem;
+  width: 3rem;
 }
 
 .system-message {
@@ -49,7 +49,7 @@
   &::before {
     @include message-icons-base($infoRed);
     -webkit-font-smoothing: antialiased;
-    font-family: $serif;
+    font-family: Arial;
     font-size: 3.5rem;
     font-weight: 700;
     padding-top: 0;
