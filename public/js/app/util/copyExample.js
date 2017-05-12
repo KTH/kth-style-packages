@@ -61,8 +61,13 @@ class CopyExample {
       copyButton.classList.add('default')
       copyButton.classList.add('copy-btn')
 
-      codeContainer.appendChild(copyButton)
-      codeContainer.appendChild(closeButton)
+      const buttonBar = document.createElement('div')
+      buttonBar.classList.add('btn-bar')
+
+      buttonBar.appendChild(copyButton)
+      buttonBar.appendChild(closeButton)
+
+      codeContainer.appendChild(buttonBar)
       codeContainer.appendChild(exampleCodeContainer)
       
       closeButton.addEventListener('click', function (event) {

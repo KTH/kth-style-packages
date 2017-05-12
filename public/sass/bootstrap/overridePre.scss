@@ -1,18 +1,17 @@
-/*
- KTH Bootstrap
+// KTH Bootstrap
 
- This is where you override bootstrap values, such as colors, margins ...
+// This is where you override bootstrap values, such as colors, margins ...
 
- Values in node_modules/bootstrap/scss/_varables to override
-*/
+// Values in node_modules/bootstrap/scss/_varables to override
 
-@import "variables/colors";
-@import "variables/componentColors";
-@import "variables/sizes";
-@import "variables/sizes";
-@import "variables/fonts";
-// @import "../../node_modules/bootstrap/scss/_variables";
-@import "../../node_modules/bootstrap/scss/mixins/_breakpoints";
+
+@import 'variables/colors';
+@import 'variables/componentColors';
+@import 'variables/sizes';
+@import 'variables/sizes';
+@import 'variables/fonts';
+// @import '../../node_modules/bootstrap/scss/_variables';
+@import '../../node_modules/bootstrap/scss/mixins/breakpoints';
 
 // Colors
 $body-bg: $bodyBg;
@@ -78,4 +77,4 @@ $link-hover-color:      $standardLinkColor;
 
 // Tables
 $table-head-bg:          $white;
-$table-head-color:       $textColor;            
+$table-head-color:       $textColor;

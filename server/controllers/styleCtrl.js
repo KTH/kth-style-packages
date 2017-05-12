@@ -11,38 +11,38 @@ const path = require('path')
 // TODO Continue separating the paths below
 
 module.exports = {
-  getIndex: (req, res) => { res.render('index', { breadcrumbsPath: [] }) },
-  getHeadlines: (req, res) => { res.render('headlines', { breadcrumbsPath: [{ label: 'Rubriker' }] }) },
-  getTables: (req, res) => { res.render('tables', { breadcrumbsPath: [{ label: 'Tabeller' }] }) },
-  getText: (req, res) => { res.render('text', { breadcrumbsPath: [{ label: 'Textstruktur' }] }) },
-  getTextExample: (req, res) => { res.render('textexample', { breadcrumbsPath: [{ label: 'Textexempel' }] }) },
+  getIndex: (req, res) => { res.render('index', { breadcrumbsPath: [], title: 'Style' }) },
+  getHeadlines: (req, res) => { res.render('headlines', { breadcrumbsPath: [{ label: 'Rubriker' }], title: 'Rubriker' }) },
+  getTables: (req, res) => { res.render('tables', { breadcrumbsPath: [{ label: 'Tabeller' }], title: 'Tabeller' }) },
+  getText: (req, res) => { res.render('text', { breadcrumbsPath: [{ label: 'Textstruktur' }], title: 'Textstruktur' }) },
+  getTextExample: (req, res) => { res.render('textexample', { breadcrumbsPath: [{ label: 'Textexempel' }], title: 'Textexempel' }) },
 
 
-  getForms: (req, res) => { res.render('forms', { breadcrumbsPath: [{ label: 'Formulär' }] }) },
-  getLists: (req, res) => { res.render('lists', { breadcrumbsPath: [{ label: 'Listor' }] }) },
-  getButtons: (req, res) => { res.render('buttons', { breadcrumbsPath: [{ label: 'Knappar' }] }) },
-  getModals: (req, res) => { res.render('modals', { breadcrumbsPath: [{ label: 'Modalboxar' }] }) },
-  getMessages: (req, res) => { res.render('messages', { breadcrumbsPath: [{ label: 'Återkoppling' }] }) },
+  getForms: (req, res) => { res.render('forms', { breadcrumbsPath: [{ label: 'Formulär' }], title: 'Formulär' }) },
+  getLists: (req, res) => { res.render('lists', { breadcrumbsPath: [{ label: 'Listor' }], title: 'Listor' }) },
+  getButtons: (req, res) => { res.render('buttons', { breadcrumbsPath: [{ label: 'Knappar' }], title: 'Knappar' }) },
+  getModals: (req, res) => { res.render('modals', { breadcrumbsPath: [{ label: 'Modalboxar' }], title: 'Modalboxar' }) },
+  getMessages: (req, res) => { res.render('messages', { breadcrumbsPath: [{ label: 'Återkoppling' }], title: 'Återkoppling' }) },
   structure: {
-    getWells: (req, res) => { res.render('wells', { breadcrumbsPath: [{ label: 'Bakgrunder' }] }) },
-    getStructure: (req, res) => { res.render('structurepage', { breadcrumbsPath: [{ label: 'Hur gör jag en sida med bra layout?' }] }) },
-    getPanelHeading: (req, res) => { res.render('panelheading', { breadcrumbsPath: [{ label: 'Utfällbara rubriklister' }] }) }
+    getWells: (req, res) => { res.render('wells', { breadcrumbsPath: [{ label: 'Bakgrunder' }], title: 'Bakgrunder' }) },
+    getStructure: (req, res) => { res.render('structurepage', { breadcrumbsPath: [{ label: 'Hur gör jag en sida med bra layout?' }], title: 'Bra layout' }) },
+    getPanelHeading: (req, res) => { res.render('panelheading', { breadcrumbsPath: [{ label: 'Utfällbara rubriklister' }], title: 'Rubriklister' }) }
   },
-  getLinks: (req, res) => { res.render('links', { breadcrumbsPath: [{ label: 'Länkar' }] }) },
-  getLinksOrButtons: (req, res) => { res.render('linksorbuttons', { breadcrumbsPath: [{ label: 'Välja knapp eller länk' }] }) },
+  getLinks: (req, res) => { res.render('links', { breadcrumbsPath: [{ label: 'Länkar' }], title: 'Länkar' }) },
+  getLinksOrButtons: (req, res) => { res.render('linksorbuttons', { breadcrumbsPath: [{ label: 'Välja knapp eller länk' }], title: 'Knapp/Länk' }) },
   background: {
-    getAbout: (req, res) => { res.render('about', { breadcrumbsPath: [{ label: 'Om KTH Style' }] }) },
-    getOverallPrincipals: (req, res) => { res.render('overallprincipals', { breadcrumbsPath: [{ label: 'Övergripande principer' }] }) },
-    getGraphicalProfile: (req, res) => { res.render('graphicalprofile', { breadcrumbsPath: [{ label: 'KTHs grafiska profil' }] }) },
-    getReadMore: (req, res) => { res.render('readmore', { breadcrumbsPath: [{ label: 'Länksamling' }] }) }
+    getAbout: (req, res) => { res.render('about', { breadcrumbsPath: [{ label: 'Om KTH Style' }], title: 'Om Style' }) },
+    getOverallPrincipals: (req, res) => { res.render('overallprincipals', { breadcrumbsPath: [{ label: 'Övergripande principer' }], title: 'Principer' }) },
+    getGraphicalProfile: (req, res) => { res.render('graphicalprofile', { breadcrumbsPath: [{ label: 'KTHs grafiska profil' }], title: 'Grafisk profil' }) },
+    getReadMore: (req, res) => { res.render('readmore', { breadcrumbsPath: [{ label: 'Länksamling' }], title: 'Länksamling' }) }
   },
   colors: {
     getColors: co.wrap(getColors),
-    getAccessiblecolors: (req, res) => { res.render('accessiblecolors', { breadcrumbsPath: [{ label: 'Färger och tillgänglighet' }] }) }
+    getAccessiblecolors: (req, res) => { res.render('accessiblecolors', { breadcrumbsPath: [{ label: 'Färger och tillgänglighet' }], title: 'Färger och tillgänglighet' }) }
   },
   code: {
-    getAccessiblecode: (req, res) => { res.render('accessiblecode', { breadcrumbsPath: [{ label: 'Tillgänglig kod' }]})},
-    getTesthelper: (req, res) => { res.render('testhelper', { breadcrumbsPath: [{ label: 'Testhjälpen' }]})}
+    getAccessiblecode: (req, res) => { res.render('accessiblecode', { breadcrumbsPath: [{ label: 'Tillgänglig kod' }], title: 'Tillgänglig kod' })},
+    getTesthelper: (req, res) => { res.render('testhelper', { breadcrumbsPath: [{ label: 'Testhjälpen' }], title: 'Testhjälpen' })}
   },
   icons: {
     getIcons: getIcons
@@ -74,6 +74,7 @@ function getIcons(req, res, next) {
         })  
       res.render('icons', { 
           breadcrumbsPath: [{ label: 'Ikoner' }],
+          title: 'Ikoner',
           icons: iconsCss
         }
       )
@@ -149,6 +150,7 @@ function * getColors (req, res, next) {
 
   res.render('colors', {
     breadcrumbsPath: [{ label: 'Färger' }],
+    title: 'Färger',
     colors: colors
   })
 }

@@ -3,13 +3,6 @@
   * @version v2.0.0-alpha.9
   * @link https://github.com/KTH/kth-style
   */@charset "UTF-8";
-/*
- KTH Bootstrap
-
- This is where you override bootstrap values, such as colors, margins ...
-
- Values in node_modules/bootstrap/scss/_varables to override
-*/
 /*!
  * Bootstrap v4.0.0-alpha.6 (https://getbootstrap.com)
  * Copyright 2011-2017 The Bootstrap Authors
@@ -7029,7 +7022,7 @@ h4 {
     margin-left: 0; }
 
 .table th {
-  border-top: none; }
+  border-top: 0; }
 
 /*
     This file has all sorts of things until we find a good place for them

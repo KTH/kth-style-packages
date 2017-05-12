@@ -61,19 +61,19 @@
   position: relative;
   transition: all .5s;
 
-  .close {
-    padding: .75rem 1.25rem;
+  .btn-bar {
+    display: flex;
     position: absolute;
     right: 0;
     top: 0;
-  }
 
-  .copy-btn {
-    left: 205px;
-    line-height: 21px !important;
-    padding: 0 .6rem !important;
-    position: absolute;
-    top: 0;
+    .close {
+      padding: .75rem 1.25rem;
+    }
+
+    .default.copy-btn {
+      border: 0;
+    }
   }
 
   &.show {
@@ -98,10 +98,6 @@
   .example-code-view {
     background-color: rgba(255, 255, 0, .2);
     padding: 10px;
+    margin-top: 10px;
   }
-}
-
-.btn-bar {
-  display: flex;
-  flex-direction: row;
 }

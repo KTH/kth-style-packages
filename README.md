@@ -88,7 +88,6 @@ $ npm show kth-style versions
 - Support fullscreen (like ambassadörswebben)
 - Investigare on small buttons... how do they work with <buttons>
 - A test page with many examples of buttons ...
-- Set title on every page 
 - Alla buttons ska inte få style av typen/klassen .btn. Se exempel "kopiera kod"
 - buttons.hb - secondary-knappen anbänder fel klass? Default?
 - Mobile
