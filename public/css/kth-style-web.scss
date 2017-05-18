@@ -12,8 +12,8 @@
     a {
       display: block;
 
-      &[href=''] {
-        color: red;
+      &.empty {
+        color: $lightRed;
       }
     }
   }

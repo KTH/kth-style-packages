@@ -6794,11 +6794,6 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
   .hidden-print {
     display: none !important; } }
 
-/*
- KTH Bootstrap
-
- This is where you override bootstrap values, such as colors, margins ...
-*/
 .container, .container-fluid {
   background-color: #ffffff; }
 
@@ -6888,9 +6883,11 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
   min-height: 5rem;
   border: none;
   border-radius: .15rem;
-  font-weight: 700;
   position: relative;
   padding-left: 5rem; }
+
+.close {
+  opacity: 1; }
 
 .system-message {
   background-color: #fff07e; }
@@ -6898,24 +6895,7 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
     font-family: 'kth-style-icons';
     font-size: 2rem;
     background-color: #ffea4b;
-    color: #b19c00;
-    display: block;
-    padding: 1rem;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    border-style: solid;
-    border: 1px 0 0px 1px;
-    border-radius: .15rem 0 0 .15rem; }
-
-.error-message {
-  background-color: #f6bcbf; }
-  .error-message::before {
-    font-family: 'kth-style-icons';
-    font-size: 2rem;
-    background-color: #f08f94;
-    color: #cb1b24;
+    color: #111;
     display: block;
     padding: 1rem;
     position: absolute;
@@ -6925,8 +6905,27 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
     border-style: solid;
     border: 1px 0 0px 1px;
     border-radius: .15rem 0 0 .15rem;
+    width: 3rem; }
+
+.error-message {
+  background-color: #f6bcbf; }
+  .error-message::before {
+    font-family: 'kth-style-icons';
+    font-size: 2rem;
+    background-color: #f08f94;
+    color: #111;
+    display: block;
+    padding: 1rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    border-style: solid;
+    border: 1px 0 0px 1px;
+    border-radius: .15rem 0 0 .15rem;
+    width: 3rem;
     -webkit-font-smoothing: antialiased;
-    font-family: "Georgia Regular", "Georgia", "garamond pro", garamond, "times new roman", times, serif;
+    font-family: Arial;
     font-size: 3.5rem;
     font-weight: 700;
     padding-top: 0;
@@ -6938,7 +6937,7 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
     font-family: 'kth-style-icons';
     font-size: 2rem;
     background-color: #a7d477;
-    color: #5a872b;
+    color: #111;
     display: block;
     padding: 1rem;
     position: absolute;
@@ -6947,7 +6946,8 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
     height: 100%;
     border-style: solid;
     border: 1px 0 0px 1px;
-    border-radius: .15rem 0 0 .15rem; }
+    border-radius: .15rem 0 0 .15rem;
+    width: 3rem; }
 
 .nav-tabs-justified > .active > a,
 .nav-tabs-justified > .active > a:focus,
@@ -8029,6 +8029,11 @@ form select {
 
 .icon-info-circled:before {
   color: #1954a6; }
+
+.link-list {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0; }
 
 .well {
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);

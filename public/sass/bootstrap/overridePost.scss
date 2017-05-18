@@ -1,34 +1,33 @@
-/*
- KTH Bootstrap
 
- This is where you override bootstrap values, such as colors, margins ...
-*/
+//  KTH Bootstrap
+//  This is where you override bootstrap values, such as colors, margins ...
+
 
 // TODO  Move the following imports to where they are needed
-@import "variables/colors";
-@import "variables/sizes";
-@import "variables/fonts";
-@import "../../node_modules/bootstrap/scss/_variables";
-@import "../../node_modules/bootstrap/scss/mixins/_breakpoints";
+@import 'variables/colors';
+@import 'variables/sizes';
+@import 'variables/fonts';
+@import '../../node_modules/bootstrap/scss/variables';
+@import '../../node_modules/bootstrap/scss/mixins/breakpoints';
 
 // Containers
-@import "containers.scss";
+@import 'containers';
 
 // Alerts
-@import "alerts";
+@import 'alerts';
 
 // Navs
-@import "nav.scss";
+@import 'nav';
 
 // Typography
-@import "fonts.scss";
+@import 'fonts';
 
 // Buttons
-@import "buttons.scss";
+@import 'buttons';
 
 // Tables
-@import "tables.scss";
+@import 'tables';
 
 // Random things, should not be needed in the future when they have found their place
-@import "custom.scss";
+@import 'custom';
 

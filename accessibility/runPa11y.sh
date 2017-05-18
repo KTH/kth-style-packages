@@ -27,7 +27,6 @@ wget -P $TMP_DIR -e robots=off \
   --no-directories \
   --mirror \
   --adjust-extension \
-  --convert-links \
   --quiet \
   $TARGET
 
