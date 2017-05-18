@@ -10,7 +10,8 @@ class CopyExample {
   }
 
   static copyExampleHtml (example) {
-    var exampleRows = CopyExample.washExampleHtml(example.outerHTML)
+    var exampleCode = example.classList.contains("disabled-example-container") ? example.innerHTML : example.outerHTML;
+    var exampleRows = CopyExample.washExampleHtml(exampleCode)
         .split(/\n/)
         .filter(function (row) {
           return row.trim().length > 0
@@ -96,9 +97,9 @@ class CopyExample {
       exampleContainer.appendChild(cc.codeContainer)
 
       // Loop through examples and add "Show code on click logic"
-      const examples = exampleContainer.querySelectorAll('[data-example]')
+      const examples = exampleContainer.querySelectorAll('[data-example], .disabled-example-container')
       examples.forEach(function (example) {
-        const exampleName = example.getAttribute('data-example')
+        const exampleName = example.getAttribute('data-example') || exampleContainer.querySelector('[data-examples-view]').getAttribute('data-examples-view')
 
         example.addEventListener('click', function (event) {
           event.preventDefault()

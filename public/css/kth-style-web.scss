@@ -32,72 +32,91 @@
   }
 }
 
-.examples-view {
-  border: 1px solid $pageBorderColor;
-  padding: 3rem 15px 15px;
-  position: relative;
+.examples-container {
+  .examples-view {
+    border: 1px solid $pageBorderColor;
+    padding: 3rem 15px 15px;
+    position: relative;
 
-  &::before {
-    background: $lightGrey;
-    content: 'Exempel: ' attr(data-examples-view);
-    left: 0;
-    line-height: 1.7rem;
-    max-width: 200px;
-    padding: 0 .6rem;
-    position: absolute;
-    text-transform: uppercase;
-    top: 0;
-  }
-}
-
-.example-code {
-  border: 1px solid $pageBorderColor;
-  height: 0;
-  margin: 0;
-  margin-top: 10px;
-  opacity: 0;
-  overflow: hidden;
-  padding: 0;
-  position: relative;
-  transition: all .5s;
-
-  .btn-bar {
-    display: flex;
-    position: absolute;
-    right: 0;
-    top: 0;
-
-    .close {
-      padding: .75rem 1.25rem;
-    }
-
-    .default.copy-btn {
-      border: 0;
+    &::before {
+      background: $lightGrey;
+      content: 'Exempel: ' attr(data-examples-view);
+      left: 0;
+      line-height: 1.7rem;
+      padding: 0 .6rem;
+      position: absolute;
+      text-transform: uppercase;
+      top: 0;
     }
   }
 
-  &.show {
-    height: 150px;
-    opacity: 1;
-    padding: 3rem 15px 5px;
-    transition: all .5s;
-  }
-
-  &::before {
-    background: $lightGrey;
-    content: 'Kod: ' attr(data-example-code);
-    left: 0;
-    line-height: 1.7rem;
-    max-width: 200px;
-    padding: 0 .6rem;
-    position: absolute;
-    text-transform: uppercase;
-    top: 0;
-  }
-
-  .example-code-view {
-    background-color: rgba(255, 255, 0, .2);
-    padding: 10px;
+  .example-code {
+    border: 1px solid $pageBorderColor;
+    height: 0;
+    margin: 0;
     margin-top: 10px;
+    opacity: 0;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    transition: all .5s;
+
+    .btn-bar {
+      display: flex;
+      position: absolute;
+      right: 0;
+      top: 0;
+
+      .close {
+        padding: .75rem 1.25rem;
+      }
+
+      .default.copy-btn {
+        border: 0;
+      }
+    }
+
+    &.show {
+      height: 220px;
+      opacity: 1;
+      padding: 3rem 15px 5px;
+      transition: all .5s;
+      overflow: hidden;
+    }
+
+    &::before {
+      background: $lightGrey;
+      content: 'Kod: ' attr(data-example-code);
+      left: 0;
+      line-height: 1.7rem;
+      padding: 0 .6rem;
+      position: absolute;
+      text-transform: uppercase;
+      top: 0;
+    }
+
+    .example-code-view {
+      background-color: rgba(255, 255, 0, .2);
+      padding: 10px;
+      margin-top: 10px;
+      overflow: scroll;
+      max-height: 150px;
+    }
+  }
+
+  .disabled-example-container {
+    display: inline-block;
+    cursor: not-allowed;
+    z-index: 99;
+
+    [disabled] {
+
+      pointer-events: none;
+    }
+
+    &.anti-pattern {
+      outline: 4px dashed $infoRed;
+      margin-left: 10px;
+    }
   }
 }

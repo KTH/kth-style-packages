@@ -85,8 +85,8 @@
         <div class="examples-container">
             <div data-examples-view="submit">
                 <input type="submit" data-example="submit-input" value="Input" title="T.ex. 'Submit',  'Ok'">
-                <button type="submit" data-example="submit-submit" title="T.ex. 'Submit',  'Ok'">Button</button>
-                <a class="btn btn-success" data-example="primary-link" role="button" href=".">Link</a>
+                <button type="submit" data-example="submit-button" title="T.ex. 'Submit',  'Ok'">Button</button>
+                <a class="btn btn-success" data-example="submit-link" role="button" href=".">Link</a>
             </div>
         </div>
     </form>
@@ -120,8 +120,8 @@
         <div class="examples-container">
             <div data-examples-view="secondary">
                 <input type="button" data-example="secondary-input" class="default" value="Input" title="Default">
-                <button type="button" data-example="secondary-input" class="default" title="T.ex. 'Default'">Button</button>
-                <a class="btn btn-secondary" data-example="secondary-input" role="button" href=".">Link</a>
+                <button type="button" data-example="secondary-button" class="default" title="T.ex. 'Default'">Button</button>
+                <a class="btn btn-secondary" data-example="secondary-link" role="button" href=".">Link</a>
             </div>
         </div>
     </form>
@@ -154,9 +154,13 @@
 
     <h3>Delete</h3>
         <form>
-            <input type="reset" value="Reset Input" title="T.ex. 'Reset'">
-            <button type="reset">Reset Button</button>
-            <a class="btn btn-danger" role="button" href=".">Reset A</a>
+            <div class="examples-container">
+                <div data-examples-view="reset">
+                    <input data-example="reset-input" type="reset" value="Reset Input" title="T.ex. 'Reset'">
+                    <button data-example="reset-button" type="reset">Reset Button</button>
+                    <a data-example="reset-link" class="btn btn-danger" role="button" href=".">Reset A</a>
+                </div>
+            </div>
          </form>
     <h4>Användning</h4>
     <ul>
@@ -179,9 +183,19 @@
 
     <h3>Disabled</h3>
     <form>
-        <input type="submit" disabled value="Disabled Input" title="T.ex. 'Lägga till'">
-        <button type="button" disabled title="T.ex. 'Lägga till'">Disabled Button</button>
-        <a class="btn btn-primary disabled" role="button" href="#" aria-disabled="true">Antipattern Disabled A</a>
+        <div class="examples-container">
+            <div data-examples-view="disabled">
+                <div class="disabled-example-container" data-example="disabled-input">
+                    <input data-example="disabled-input" type="submit" disabled value="Disabled Input" title="T.ex. 'Lägga till'">
+                </div>
+                <div class="disabled-example-container" data-example="disabled-button">
+                    <button type="button" disabled title="T.ex. 'Lägga till'">Disabled Button</button>
+                </div>
+                <div class="disabled-example-container anti-pattern" data-example="disabled-link">
+                    <a  class="btn btn-primary disabled" role="button" href="#" aria-disabled="true">Antipattern Disabled link</a>
+                </div>
+            </div>
+        </div>
     </form>
     <h4>Användning</h4>
     <ul>
@@ -222,7 +236,6 @@
 <section>
   <h2>TODO</h2>
   <ul>
-    <li>Markera kodexempel med t.ex. en ruta runt</li>
     <li>Visa dont's i t.ex. en lätt rosa ruta</li>  
     <li>Meny-version av secondary knappen</li>
     <li>Ändra länkar till Dialoger och Generella riktlinjer länk, knapp</li>
