@@ -61,6 +61,42 @@ The CSS for the icons are transpiled/merged with our Sass. This happends in **pu
 
 The icons are moved to build catalog through a gulptask during build.   
 
+### Examples
+Examples in KTH Style is outlined in an programatically enhanced example container. In order to use it, wrap your examples in this HTML (Emmet abbreviation or plain HTML):
+
+```
+div.examples-container>div[data-examples-view='primary']
+```
+or
+```
+<div class="examples-container">
+  <div data-examples-view="example-container-name">
+    <!-- examples -->
+  </div>
+</div>
+```
+
+then, for each example in the container, add the attribute:
+
+```
+data-example="example-name"
+```
+
+or when there is only 1 example use the attribute without value to let example value be equal to example container name.
+
+#### Disabled examples and additional style
+When the example code can't catch click events, e.g. when a button is disabled, you can wrap your examples in a "example-container" (without s, container for 1 example in a "examples-container", a container for multiple examples). In this case there is also a option to style examples, e.g. with the "anti-pattern"-class. That would look like:
+
+```
+<div class="examples-container">
+  <div data-examples-view="example-container-name">
+    <div class="example-container anti-pattern" data-example="example-name">
+        <!-- example -->
+    </div>
+  </div>
+</div>
+```
+
 ### Release
 KTH Style is currently in alpha. Changes are commited and pushed in the usual way to GitHub but when it's time to release a new version to npmjs.com this is procedure:  
 

@@ -39,37 +39,46 @@
   <section>
     <h2>Olika typer av information</h2>
     <h3>Bekräfta vid lyckad aktivitet</h3>
-    <h4>Fast informationsruta</h4>
 
-    <div class="ok-message alert alert-success alert-dismissible" role="alert">
-      Dina ändringar sparades.
-      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-        <span aria-hidden="true">&times;</span>
-      </button>
-    </div>
-
-    <h4>Modal</h4>
-    <p>Stängs automatiskt efter 3 sekunder</p>
-    <button class="btn btn-primary" id="buttonSuccess" data-toggle="modal" data-target="#saveSuccessfulModal">
-      Visa exempel på modal för lyckad sparning.
-    </button>
-
-    <div class="modal fade" id="saveSuccessfulModal" data-backdrop="false" tabindex="-1" role="dialog" aria-labelledby="saveModalLabel">
-      <div class="modal-dialog modal-lg ok-message" role="document">
-        <div class="modal-content">
-          <div class="modal-body">
-            <p class="text-center">Innehållet sparades</p>
-          </div>
+    <div class="examples-container">
+      <div data-examples-view="Fast informationsruta">
+        <div class="ok-message alert alert-success alert-dismissible" role="alert" data-example>
+          Dina ändringar sparades.
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
         </div>
       </div>
     </div>
-    <script>
-      $('#buttonSuccess').on('mousedown', function() {
-        setTimeout(function() {
-            $('#saveSuccessfulModal').modal('hide')
-        }, 3000);
-      });
-    </script>
+
+    <h4>Flytande som döljs automatiskt</h4>
+    <div class="examples-container">
+      <div data-examples-view="informationsruta 3 sekunder">
+        <div class="example-container" data-example>
+          <button class="btn btn-primary" id="buttonSuccess" data-toggle="modal" data-target="#saveSuccessfulModal">
+            Visa exempel på modal för lyckad sparning.
+          </button>
+          
+          <div class="modal fade" id="saveSuccessfulModal" data-backdrop="false" tabindex="-1" role="dialog" aria-labelledby="saveModalLabel">
+            <div class="modal-dialog modal-lg ok-message" role="document">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <p class="text-center">Innehållet sparades</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <script>
+            $('#buttonSuccess').on('mousedown', function() {
+              setTimeout(function() {
+                  $('#saveSuccessfulModal').modal('hide')
+              }, 3000);
+            });
+          </script>
+        </div>
+      </div>
+    </div>
 
   <h4>Användning</h4>
   <ul>
@@ -94,11 +103,15 @@
     Det finns två olika typer av informationsbehov: systemmeddelande och efterfrågad information.
   </p>
   <h4>Systemmeddelande</h4>
-  <div class="system-message alert alert-warning alert-dismissible" role="alert">
-    Vi kommer att uppdatera applikationen kl. 16:00. Vänligen spara dina ändringar och logga ut innan.
-    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-      <span aria-hidden="true">&times;</span>
-    </button>
+  <div class="examples-container">
+    <div data-examples-view="systemmeddelande">
+      <div class="system-message alert alert-warning alert-dismissible" role="alert" data-example>
+        Vi kommer att uppdatera applikationen kl. 16:00. Vänligen spara dina ändringar och logga ut innan.
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+    </div>
   </div>
   <h4>Användning</h4>
   <ul>
@@ -124,25 +137,31 @@
       </li>
     </ul>
     <h4>Efterfrågad information</h4>
-    Öppna informativ modalruta<i class="icon-info-circled-1" data-toggle="modal" data-target="#infoModal"></i>
-
-    <div class="modal fade" id="infoModal" tabindex="-1" role="dialog" aria-labelledby="infoModalLabel">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="infoModalLabel">Rubrik</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                  <p>En informationstext...</p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-primary" data-dismiss="modal">Stäng</button>
-                </div>
-            </div>
+    <div class="examples-container">
+      <div data-examples-view="modal">
+        <div class="example-container" data-example>
+          Öppna informativ modalruta <i class="icon-info-circled-1" data-toggle="modal" data-target="#infoModal"></i>
+          
+          <div class="modal fade" id="infoModal" tabindex="-1" role="dialog" aria-labelledby="infoModalLabel">
+              <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                      <div class="modal-header">
+                          <h5 class="modal-title" id="infoModalLabel">Rubrik</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                          </button>
+                      </div>
+                      <div class="modal-body">
+                        <p>En informationstext...</p>
+                      </div>
+                      <div class="modal-footer">
+                          <button type="button" class="btn btn-primary" data-dismiss="modal">Stäng</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
         </div>
+      </div>
     </div>
 
     <h4>Användning</h4>
@@ -161,11 +180,15 @@
     <p>
       Först fundera på om det går att hjälpa användaren att undvika fel (länk till Tillgänglig kod).
     </p>
-    <div class="error-message alert alert-danger alert-dismissible" role="alert">
-      Det går inte att hämta informationen just nu.
-      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-       <span aria-hidden="true">&times;</span>
-      </button>
+    <div class="examples-container">
+      <div data-examples-view="fast felmeddelanderuta">
+        <div class="error-message alert alert-danger alert-dismissible" role="alert" data-example>
+          Det går inte att hämta informationen just nu.
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+           <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+      </div>
     </div>
     <h4>Användning</h4>
     <ul>
@@ -208,7 +231,7 @@
     <p>Säkerställ att instruktioner är tydliga och lätta att förstå genom att:</p>
     <ul>
       <li>Undvik tekniskt språk.</li>
-      <li>Beskriv det indata format som krävs.</li>
+      <li>Beskriv det indataformat som krävs.</li>
     </ul>
   </section>
 </article>

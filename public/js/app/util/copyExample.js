@@ -10,7 +10,7 @@ class CopyExample {
   }
 
   static copyExampleHtml (example) {
-    var exampleCode = example.classList.contains("disabled-example-container") ? example.innerHTML : example.outerHTML;
+    var exampleCode = example.classList.contains("example-container") ? example.innerHTML : example.outerHTML;
     var exampleRows = CopyExample.washExampleHtml(exampleCode)
         .split(/\n/)
         .filter(function (row) {
