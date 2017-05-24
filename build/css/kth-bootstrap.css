@@ -6794,24 +6794,25 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
   .hidden-print {
     display: none !important; } }
 
-.container, .container-fluid {
-  background-color: #ffffff; }
-
-@media (min-width: 576px) {
-  .container, .container-fluid {
-    padding: 0 38px; } }
-
-@media (min-width: 768px) {
-  .container, .container-fluid {
-    padding: 0 38px; } }
-
-@media (min-width: 992px) {
-  .container, .container-fluid {
-    padding: 0 38px; } }
-
-@media (min-width: 1200px) {
-  .container, .container-fluid {
-    padding: 0 38px; } }
+.container,
+.container-fluid {
+  background-color: #fff; }
+  @media (min-width: 576px) {
+    .container,
+    .container-fluid {
+      padding: 0 38px; } }
+  @media (min-width: 768px) {
+    .container,
+    .container-fluid {
+      padding: 0 38px; } }
+  @media (min-width: 992px) {
+    .container,
+    .container-fluid {
+      padding: 0 38px; } }
+  @media (min-width: 1200px) {
+    .container,
+    .container-fluid {
+      padding: 0 38px; } }
 
 @media only screen {
   body {
@@ -7024,9 +7025,6 @@ h4 {
 .table th {
   border-top: 0; }
 
-/*
-    This file has all sorts of things until we find a good place for them
-*/
 .tab-content .tab-pane {
   border: 1px dotted #b9bbbd;
   padding-top: 10px; }
@@ -7053,7 +7051,7 @@ h4 {
     opacity: 1;
     transition: opacity 1.5s; }
 
-h2.navigationParent {
+.navigationParent {
   margin: 0 38px 14px 0;
   background: transparent url("../img/kth-style/icons/gray-arrow-left.svg") 27px 7px no-repeat; }
 

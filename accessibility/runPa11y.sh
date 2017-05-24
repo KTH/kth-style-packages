@@ -27,6 +27,7 @@ wget -P $TMP_DIR -e robots=off \
   --no-directories \
   --mirror \
   --adjust-extension \
+  --convert-link \
   --quiet \
   $TARGET
 
@@ -60,7 +61,7 @@ do
 done
 
 echo "Removing temporary dir for pa11y-tested page"
-#rm -rf $TMP_DIR
+rm -rf $TMP_DIR
 
 if [ $EXIT_CODE -gt 0 ]
 then
