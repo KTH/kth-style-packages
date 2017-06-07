@@ -5,14 +5,13 @@
 
 
 // overrides style values in bootstraps sass files
-@import 'bootstrap/overridePre';
+@import './bootstrap/overridePre';
 
 // Bootstrap source
-@import 'bootstrap';
+@import 'node_modules/bootstrap/scss/bootstrap';
 
 // overrides styles with css - all that can't be overriden in the pre-override step
-@import 'bootstrap/overridePost';
+@import './bootstrap/overridePost';
 
 // our own styling
-@import 'commonStyle';
-
+@import './commonStyle';

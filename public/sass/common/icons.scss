@@ -2,8 +2,8 @@
 // node-sass-css-importer (https://www.npmjs.com/package/node-sass-css-importer) which
 // can import CSS into the SCSS file.
 
-@import 'CSS:../../fonts/fontello/css/kth-style-icons-codes';
-@import 'variables/colors';
+@import '../../fonts/fontello/css/kth-style-icons-codes';
+@import '../variables/colors';
 
 // Code between lines are taken from public/fonts/fontello/css/kth-style-icons.css 
 // This gives us the ability to tweak things.

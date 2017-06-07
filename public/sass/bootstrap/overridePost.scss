@@ -4,11 +4,11 @@
 
 
 // TODO  Move the following imports to where they are needed
-@import 'variables/colors';
-@import 'variables/sizes';
-@import 'variables/fonts';
-@import '../../node_modules/bootstrap/scss/variables';
-@import '../../node_modules/bootstrap/scss/mixins/breakpoints';
+@import '../variables/colors';
+@import '../variables/sizes';
+@import '../variables/fonts';
+@import 'node_modules/bootstrap/scss/variables';
+@import 'node_modules/bootstrap/scss/mixins/breakpoints';
 
 // Containers
 @import 'containers';

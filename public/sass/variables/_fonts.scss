@@ -3,8 +3,8 @@
 // Variables should be created and used for everything that can be overridden in
 // Bootstraps preStep.
 
-@import 'colors';
-@import 'sizes';
+@import './colors';
+@import './sizes';
 
 // Headers
 $headers-line-height: 1.2;
