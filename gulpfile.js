@@ -52,39 +52,7 @@ gulp.task('moveResources', function () {
   )
 })
 
-gulp.task('transpileSass', () => sass())
-
-/* Put any addintional helper tasks here */
-
-/**
- *
- *  Public tasks used by developer:
- *
- */
-
-gulp.task('clean', clean)
-
-gulp.task('build', ['moveResources', 'vendor', 'webpack', 'dist'], () => sass())
-
-gulp.task('watch', ['build'], function () {
-  gulp.watch(['./public/js/app/**/*.js', './public/js/components/**/*'], ['webpack'])
-  gulp.watch(['./public/js/vendor.js'], ['vendor'])
-  gulp.watch(['./public/css/**/*.scss'], ['transpileSass'])
-  gulp.start('watchSass')
-})
-
-/* KTH Style specific tasks */
-
-const distRootFolderName = 'build'
-
-gulp.task('dist', ['cleanDist'], () => {
-  return gulp.start('createDist')
-})
-
-gulp.task('cleanDist', function () {
-  return del([`./${distRootFolderName}/**/*.*`])
-})
-
+const distRootFolderName = 'dist'
 
 // Module for importing CSS files into a Sass file 
 const cssImporter = require('node-sass-css-importer')({
@@ -103,44 +71,46 @@ gulp.src('./foo/*.js')
   .pipe(header(banner, { pkg : pkg } ))
   .pipe(gulp.dest('./dist/'))
 
-gulp.task('createDist', ['distFonts', 'distImagesAndIcons'], function () {
+gulp.task('createDist', function () {
   return mergeStream(
-    gulp.src('public/sass/kth-bootstrap.scss')
+    gulp.src('./public/sass/kth-bootstrap.scss')
       .pipe($.plumber())
       .pipe($.sourcemaps.init())
-      .pipe($.sass({includePaths: ['node_modules/bootstrap/scss', 'public/sass'], importer: [cssImporter]}).on('error', $.sass.logError))
+      .pipe($.sass({includePaths: ['node_modules/bootstrap/scss'], importer: [cssImporter]}).on('error', $.sass.logError))
       .pipe($.autoprefixer({browsers: ['last 4 versions']}))
       .pipe(header(banner, { pkg : pkg } ))
-      .pipe(gulp.dest(`${distRootFolderName}/css`))
+      .pipe(gulp.dest(`./${distRootFolderName}/css`))
       .pipe($.rename({ suffix: '.min' }))
       .pipe($.minifyCss())
       .pipe($.sourcemaps.write('.'))
-      .pipe(gulp.dest(`${distRootFolderName}/css`))
+      .pipe(gulp.dest(`./${distRootFolderName}/css`))
     ,
-    gulp.src('node_modules/bootstrap/dist/js/bootstrap.min.js')
-      .pipe(gulp.dest(`${distRootFolderName}/js`))
+    gulp.src('./node_modules/bootstrap/dist/js/bootstrap.min.js')
+      .pipe(gulp.dest(`./${distRootFolderName}/js`))
     )
 })
 
 gulp.task('distFonts', function () {
   return mergeStream(
-    gulp.src('public/fonts/fontello/font/*.*')
+    gulp.src('./public/fonts/fontello/font/*.*')
       .pipe(gulp.dest(`./${distRootFolderName}/font`))
   )
 })
 
 gulp.task('distImagesAndIcons', function () {
-  return gulp.src('public/img/**/*.*')
+  return gulp.src('./public/img/**/*.*')
     .pipe(gulp.dest(`./${distRootFolderName}/img`))
 })
 
+/* Main entry points */
+
+gulp.task('clean', clean)
+
+gulp.task('build', ['clean', 'createDist', 'distFonts', 'distImagesAndIcons'], () => {
+  console.log('*** Done creating distribution ***')
+})
+
 // Listen for changes and re-dist
-gulp.task('watchSass', function (done) {
-  const NODE_DEV = 'development'
-  const env = process.env.NODE_ENV || NODE_DEV
-  if (env === NODE_DEV || env === 'dev') {
-    return gulp.watch(['public/sass/**/*.scss', 'public/css/**/*.scss', 'public/fonts/**/*.*'], ['dist'], done())
-  } else {
-    done()
-  }
+gulp.task('watch', function (done) {
+  return gulp.watch(['public/sass/**/*.scss', 'public/css/**/*.scss', 'public/fonts/**/*.*'], ['dist'], done())
 })
