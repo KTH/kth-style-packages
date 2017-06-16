@@ -54,9 +54,9 @@ gulp.task('moveResources', function () {
 
 const distRootFolderName = 'dist'
 
-// Module for importing CSS files into a Sass file 
+// Module for importing CSS files into a Sass file
 const cssImporter = require('node-sass-css-importer')({
-    import_paths: ['public/fonts/fontello/css'] 
+    import_paths: ['public/fonts/fontello/css']
  });
 
 // Information about KTH Style in the head of CSS file
@@ -66,7 +66,7 @@ const banner = `/*!
   * @version v${pkg.version}
   * @link ${pkg.repository.uri}
   */`
-  
+
 gulp.src('./foo/*.js')
   .pipe(header(banner, { pkg : pkg } ))
   .pipe(gulp.dest('./dist/'))
@@ -112,5 +112,5 @@ gulp.task('build', ['clean', 'createDist', 'distFonts', 'distImagesAndIcons'], (
 
 // Listen for changes and re-dist
 gulp.task('watch', function (done) {
-  return gulp.watch(['public/sass/**/*.scss', 'public/css/**/*.scss', 'public/fonts/**/*.*'], ['dist'], done())
+  return gulp.watch(['public/sass/**/*.scss', 'public/css/**/*.scss', 'public/fonts/**/*.*'], ['build'], done())
 })
