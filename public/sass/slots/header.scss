@@ -2,11 +2,22 @@
 @import '../variables/sizes';
 @import '../variables/spacings';
 
+#headerHr {
+  margin-top: 0;
+}
+
 .header {
   clear: both;
   margin: 0;
   padding: 20px 0;
   position: relative;
+
+  &:after {
+    /* Clear fix for header block */
+    clear: both;
+    content: "";
+    display: block;
+  }
 
   .primaryHeader {
     margin: 0;
@@ -17,7 +28,7 @@
     .block {
       float: left;
 
-      .search {
+      &.search {
         float: right;
         max-width: 45%;
         position: absolute;
