@@ -3,6 +3,7 @@ const gulp = require('gulp')
 const mergeStream = require('merge-stream')
 var header = require('gulp-header');
 const del = require('del')
+const cleanCSS = require('gulp-clean-css')
 const gulpLoadPlugins = require('gulp-load-plugins')
 const $ = gulpLoadPlugins()
 
@@ -81,7 +82,7 @@ gulp.task('createDist', function () {
       .pipe(header(banner, { pkg : pkg } ))
       .pipe(gulp.dest(`./${distRootFolderName}/css`))
       .pipe($.rename({ suffix: '.min' }))
-      .pipe($.minifyCss())
+      .pipe(cleanCSS({ level: 2 }))
       .pipe($.sourcemaps.write('.'))
       .pipe(gulp.dest(`./${distRootFolderName}/css`))
     ,
