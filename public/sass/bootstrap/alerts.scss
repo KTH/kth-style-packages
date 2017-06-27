@@ -22,6 +22,7 @@
 
 .close {
   opacity: 1;
+  flex-direction: column;
 }
 
 @mixin message-icons-base($color) {
