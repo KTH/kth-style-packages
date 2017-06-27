@@ -9,6 +9,9 @@
 
 .message-base {
   color: $black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   width: 100%;
   min-height: 5rem;
   border: none;
