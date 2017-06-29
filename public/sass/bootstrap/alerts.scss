@@ -27,7 +27,7 @@
 
 @mixin message-icons-base($color) {
   font-family: 'kth-style-icons';
-  font-size: 2rem;
+  font-size: 1.8rem;
   background-color:darken($color, 10% );
   color: $black;
   display: block;
