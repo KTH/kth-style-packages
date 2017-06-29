@@ -58,9 +58,9 @@
     @include message-icons-base($infoRed);
     -webkit-font-smoothing: antialiased;
     font-family: Arial;
-    font-size: 3.5rem;
+    font-size: 2.9rem;
     font-weight: 700;
-    padding-top: 0;
+    padding-top: .4rem;
     content: '!';
   }
 }
