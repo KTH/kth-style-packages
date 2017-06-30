@@ -23,13 +23,14 @@
 .close {
   opacity: 1;
   flex-direction: column;
+  font-weight: normal;
 }
 
 @mixin message-icons-base($color) {
   font-family: 'kth-style-icons';
   font-size: 1.8rem;
   background-color:darken($color, 10% );
-  color: $black;
+  color: #fff;
   display: block;
   padding: 1rem;
   position: absolute;
