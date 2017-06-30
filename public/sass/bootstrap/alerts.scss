@@ -31,9 +31,10 @@
 @mixin message-icons-base($color) {
   font-family: 'kth-style-icons';
   font-size: 1.8rem;
-  background-color:darken($color, 30% );
+  background-color: darken($color, 30%);
   color: #fff;
-  display: block;
+  display: flex;
+  align-items: center;
   padding: 1rem;
   position: absolute;
   top: 0;
