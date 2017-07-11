@@ -20,6 +20,7 @@
   border-radius: .15rem;
   position: relative;
   padding-left: 5rem;
+  padding-bottom: 1rem;
 }
 
 .close {
@@ -40,8 +41,6 @@
   top: 0;
   left: 0;
   height: 100%;
-  border-style: solid;
-  border: 1px 0 0px 1px;
   border-radius: .15rem 0 0 .15rem;
   width: 3rem;
 }
