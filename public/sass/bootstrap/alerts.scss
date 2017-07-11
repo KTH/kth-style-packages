@@ -14,20 +14,27 @@
   flex-direction: row;
   font-size: 1.2rem;
   justify-content: space-between;
-  width: 100%;
   min-height: 5rem;
   border: none;
   border-radius: .15rem;
   position: relative;
   padding-left: 5rem;
   padding-bottom: 1rem;
+
+  .message {
+    padding-right: 1.5rem;
+  }
+  .close {
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: .2rem .2rem 0;
+    font-weight: normal;
+  }
 }
 
-.close {
-  opacity: 1;
-  flex-direction: column;
-  font-weight: normal;
-}
+
 
 @mixin message-icons-base($color) {
   font-family: 'kth-style-icons';
@@ -36,13 +43,12 @@
   color: #fff;
   display: flex;
   align-items: center;
-  padding: 1rem;
+  padding: 0 1.4rem 0 1.4rem;
   position: absolute;
   top: 0;
   left: 0;
   height: 100%;
   border-radius: .15rem 0 0 .15rem;
-  width: 3rem;
 }
 
 .system-message {
@@ -63,7 +69,6 @@
     font-family: Arial;
     font-size: 2.9rem;
     font-weight: 700;
-    padding-top: 1rem;
     content: '!';
   }
 }
