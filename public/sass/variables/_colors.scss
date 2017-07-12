@@ -9,7 +9,9 @@ $lightBlueHover: #1e81ae;
 // Green
 $green: #62922e;
 $greenHover: #4e7425;
-$infoGreen: #c0e09e;
+$infoGreen: #dff0d8;
+$infoGreenIcon: $green;
+$infoGreenBorder: #d6e9c6;
 
 // Black
 $black: #111;
@@ -29,7 +31,9 @@ $darkGreyHover: #57575c;
 // Red
 $red: #e01f28;
 $lightRed: $red;
-$infoRed: #f6bcbf ;
+$infoRed: #f2dede ;
+$infoRedIcon: $lightRed;
+$infoRedBorder: #ebccd1;
 $failModalRed: $infoRed; // Deprecated, use infoRed
 $lightRedHover: #ca1c24;
 // $darkRed: #9d102d;
@@ -42,5 +46,7 @@ $inputWhite: #fafafa;
 $pink: #d02f80;
 
 //yellow
-$infoYellow: #fff07e;
-
+$yellow: #fab919;
+$infoYellow: #FCF8E3;
+$infoYellowIcon: $yellow;
+$infoYellowBorder: #faebcc;
