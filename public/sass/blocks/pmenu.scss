@@ -1,0 +1,100 @@
+@import "../variables/colors";
+
+#kth-menu {
+    background-color: $darkGrey;
+
+    #kth-menu-container {
+        position: relative;
+        width: 100%;
+        margin: 0 auto;
+
+        .main-m {
+            max-width: 900px;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .main-m a {
+            color: #fff;
+
+            &:focus {
+                background: $lightBlue;
+            }
+            &:hover {
+                background: #505056;
+            }
+        }
+
+        #study-admin  .nav-item {
+                border-bottom: solid 1px #bdbcbc;
+                font-weight: 700;
+
+                .sub-nav {
+                    font-weight: normal;
+                }
+        }
+
+        .white-m {
+            .header3 {
+                border-bottom: solid 1px #bdbcbc;
+            }
+            h3, h4 {
+                color: $brighterBlack;
+            }
+            .nav-item a {
+                &:focus {
+                    background: #e6e6e6;
+                }
+                &:hover {
+                    background: #e6e6e6;
+                }
+            }
+        }
+
+        #courses-program{
+                border-bottom: solid 1px #bdbcbc;
+        }
+        .alert-section {
+            .message {
+                margin-top: 1.5em;
+            }
+        }
+        .progress-section {
+            .result {
+                margin-top: 1em;
+            }
+        }
+
+        .courses::before {
+                    content: url('../icons/clock_grey_25.svg');
+                        }
+        // .programs {
+        //         border-bottom: solid 1px #bdbcbc;
+        //         width: 30%;
+        //                     display: inline-block;
+
+        // }
+        // .courses {
+        //     width: 65%;
+        //     display: inline-block;
+        // }
+
+    }
+
+    #kth-menu-page-container {
+        position: absolute;
+        width: 100%;
+        margin: 0 auto;
+        z-index: 99999;
+        background-color: white;
+        border-bottom: 2px solid #bdbcbc;
+    }
+    .kth-menu-page {
+        margin: 0 auto;
+        padding: 1rem;
+        width: 100%;
+        max-width: 1224px;
+        background-color: white;
+        color: #5E5E5E;
+    }
+}
