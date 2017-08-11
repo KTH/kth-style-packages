@@ -2,7 +2,6 @@
 
 #kth-menu {
     background-color: $darkGrey;
-
     #kth-menu-container {
         position: relative;
         width: 100%;
@@ -66,8 +65,8 @@
         }
 
         .courses::before {
-                    content: url('../icons/clock_grey_25.svg');
-                        }
+            content: url('../img/kth-style/clock_25.svg');
+        }
         // .programs {
         //         border-bottom: solid 1px #bdbcbc;
         //         width: 30%;

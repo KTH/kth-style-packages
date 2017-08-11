@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="38px" height="38px" viewBox="0 0 38 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.4.2 (15855) - http://www.bohemiancoding.com/sketch -->
+    <title>clock_three_quarter</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Desktop-HD" sketch:type="MSArtboardGroup" transform="translate(-63.000000, -186.000000)" fill="#D8D8D8">
+            <g id="Bitmap-+-Rectangle-1-+-Rectangle-1-+-Group" sketch:type="MSLayerGroup" transform="translate(32.000000, 109.000000)">
+                <g id="Group" transform="translate(31.000000, 0.000000)" sketch:type="MSShapeGroup">
+                    <path d="M19,77 C29.4934102,77 38,85.5065898 38,96 C38,106.49341 29.4934102,115 19,115 C8.50658975,115 0,106.49341 0,96 L19,96 L19,77 Z" id="clock_three_quarter"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

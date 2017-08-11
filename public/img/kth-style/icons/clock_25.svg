@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.4.2 (15855) - http://www.bohemiancoding.com/sketch -->
+    <title>clock_25</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Desktop-HD" sketch:type="MSArtboardGroup" transform="translate(-1561.000000, -148.000000)" fill="#555555">
+            <g id="clock_25" sketch:type="MSLayerGroup" transform="translate(1561.000000, 148.000000)">
+                <path d="M19.9452591,11.0526316 C19.9814479,10.7066977 20,10.3555154 20,10 C20,4.4771525 15.5228475,5.26887606e-14 10,4.65045388e-28 L10,11.0526316 L19.9452591,11.0526316 Z" id="Oval-1" sketch:type="MSShapeGroup"></path>
+                <circle id="Oval-1" opacity="0.12" sketch:type="MSShapeGroup" cx="10" cy="10" r="10"></circle>
+            </g>
+        </g>
+    </g>
+</svg>
