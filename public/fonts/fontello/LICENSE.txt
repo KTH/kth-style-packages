@@ -10,13 +10,13 @@ Font license info
    Homepage:  http://www.entypo.com
 
 
-## Elusive
+## MFG Labs
 
-   Copyright (C) 2013 by Aristeides Stathopoulos
+   Copyright (C) 2012 by Daniel Bruce
 
-   Author:    Aristeides Stathopoulos
+   Author:    MFG Labs
    License:   SIL (http://scripts.sil.org/OFL)
-   Homepage:  http://aristeides.com/
+   Homepage:  http://www.mfglabs.com/
 
 
 ## Font Awesome

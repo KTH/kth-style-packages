@@ -1,14 +1,19 @@
 @import "../variables/colors";
+@import "../common/icons.scss";
+
 //progress icons
 
 .course-card {
-
+    &>ul {
+        margin-left: 1em;
+    }
 }
 
 @mixin course-pie-base() {
     width: 1em;
     margin-right: 0.5em;
     margin-left: 0.2em;
+    vertical-align: middle;
 }
 
 .course-pie-25::before {

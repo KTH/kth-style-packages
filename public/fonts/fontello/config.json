@@ -53,6 +53,18 @@
       "css": "attention-alt",
       "code": 61738,
       "src": "fontawesome"
+    },
+    {
+      "uid": "413717f5ea649e8d8b93938be277264a",
+      "css": "calendar",
+      "code": 59393,
+      "src": "entypo"
+    },
+    {
+      "uid": "1189604bf305b6b03a74685ce60e6632",
+      "css": "doc-text",
+      "code": 59399,
+      "src": "entypo"
     }
   ]
 }

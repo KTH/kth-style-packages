@@ -11,14 +11,14 @@
 
 @font-face {
   font-family: 'kth-style-icons';
-  font-style: normal;
+  src: url('../font/kth-style-icons.eot?89277740');
+  src: url('../font/kth-style-icons.eot?89277740#iefix') format('embedded-opentype'),
+       url('../font/kth-style-icons.woff2?89277740') format('woff2'),
+       url('../font/kth-style-icons.woff?89277740') format('woff'),
+       url('../font/kth-style-icons.ttf?89277740') format('truetype'),
+       url('../font/kth-style-icons.svg?89277740#kth-style-icons') format('svg');
   font-weight: normal;
-  src: url('../font/kth-style-icons.eot?32662271');
-  src: url('../font/kth-style-icons.eot?32662271#iefix') format('embedded-opentype'),
-  url('../font/kth-style-icons.woff2?32662271') format('woff2'),
-  url('../font/kth-style-icons.woff?32662271') format('woff'),
-  url('../font/kth-style-icons.ttf?32662271') format('truetype'),
-  url('../font/kth-style-icons.svg?32662271#kth-style-icons') format('svg');
+  font-style: normal;
 }
 
 
