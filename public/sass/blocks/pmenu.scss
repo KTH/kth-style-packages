@@ -64,8 +64,30 @@
             }
         }
 
-        .courses::before {
-            content: url('../img/kth-style/clock_25.svg');
+        .course-pie-25::before {
+            content: url('../img/kth-style/icons/clock_25.svg');
+        }
+        .course-pie-50::before {
+            content: url('../img/kth-style/icons/clock_50.svg');
+        }
+        .course-pie-75::before {
+            content: url('../img/kth-style/icons/clock_75.svg');
+        }
+        .course-pie-100::before {
+            content: url('../img/kth-style/icons/clock_100.svg');
+        }
+
+        .course-pie-grey-25::before {
+            content: url('../img/kth-style/icons/clock_grey_25.svg');
+        }
+        .course-pie-grey-50::before {
+            content: url('../img/kth-style/icons/clock_grey_50.svg');
+        }
+        .course-pie-grey-75::before {
+            content: url('../img/kth-style/icons/clock_three_quarter.svg');
+        }
+        .course-pie-grey-100::before {
+            content: url('../img/kth-style/icons/clock_grey_100.svg');
         }
         // .programs {
         //         border-bottom: solid 1px #bdbcbc;
