@@ -1,4 +1,33 @@
 @import "../variables/colors";
+//progress icons
+.course-pie-25::before {
+    width: 1em;
+    margin-right: 0.2em;
+    content: url('../img/kth-style/icons/clock_25.svg');
+}
+.course-pie-50::before {
+    content: url('../img/kth-style/icons/clock_50.svg');
+}
+.course-pie-75::before {
+    content: url('../img/kth-style/icons/clock_75.svg');
+}
+.course-pie-100::before {
+    content: url('../img/kth-style/icons/clock_100.svg');
+}
+
+.course-pie-grey-25::before {
+    content: url('../img/kth-style/icons/clock_grey_25.svg');
+}
+.course-pie-grey-50::before {
+    content: url('../img/kth-style/icons/clock_grey_50.svg');
+}
+.course-pie-grey-75::before {
+    content: url('../img/kth-style/icons/clock_three_quarter.svg');
+}
+.course-pie-grey-100::before {
+    content: url('../img/kth-style/icons/clock_grey_100.svg');
+}
+
 
 #kth-menu {
     background-color: $darkGrey;
@@ -64,31 +93,7 @@
             }
         }
 
-        .course-pie-25::before {
-            content: url('../img/kth-style/icons/clock_25.svg');
-        }
-        .course-pie-50::before {
-            content: url('../img/kth-style/icons/clock_50.svg');
-        }
-        .course-pie-75::before {
-            content: url('../img/kth-style/icons/clock_75.svg');
-        }
-        .course-pie-100::before {
-            content: url('../img/kth-style/icons/clock_100.svg');
-        }
-
-        .course-pie-grey-25::before {
-            content: url('../img/kth-style/icons/clock_grey_25.svg');
-        }
-        .course-pie-grey-50::before {
-            content: url('../img/kth-style/icons/clock_grey_50.svg');
-        }
-        .course-pie-grey-75::before {
-            content: url('../img/kth-style/icons/clock_three_quarter.svg');
-        }
-        .course-pie-grey-100::before {
-            content: url('../img/kth-style/icons/clock_grey_100.svg');
-        }
+        
         // .programs {
         //         border-bottom: solid 1px #bdbcbc;
         //         width: 30%;
