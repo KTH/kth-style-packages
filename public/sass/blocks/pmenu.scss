@@ -1,30 +1,48 @@
 @import "../variables/colors";
 //progress icons
-.course-pie-25::before {
+
+.course-card {
+
+}
+
+@mixin course-pie-base() {
     width: 1em;
-    margin-right: 0.2em;
+    margin-right: 0.5em;
+    margin-left: 0.2em;
+}
+
+.course-pie-25::before {
+    @include course-pie-base();
     content: url('../img/kth-style/icons/clock_25.svg');
 }
 .course-pie-50::before {
+    @include course-pie-base();    
     content: url('../img/kth-style/icons/clock_50.svg');
 }
 .course-pie-75::before {
+    @include course-pie-base();
+    
     content: url('../img/kth-style/icons/clock_75.svg');
 }
 .course-pie-100::before {
+    @include course-pie-base();    
     content: url('../img/kth-style/icons/clock_100.svg');
 }
 
 .course-pie-grey-25::before {
+    @include course-pie-base();    
     content: url('../img/kth-style/icons/clock_grey_25.svg');
 }
 .course-pie-grey-50::before {
+    @include course-pie-base();    
     content: url('../img/kth-style/icons/clock_grey_50.svg');
 }
 .course-pie-grey-75::before {
+    @include course-pie-base();    
     content: url('../img/kth-style/icons/clock_three_quarter.svg');
 }
 .course-pie-grey-100::before {
+    @include course-pie-base();    
     content: url('../img/kth-style/icons/clock_grey_100.svg');
 }
 
