@@ -4,6 +4,7 @@
 //progress icons
 
 .course-card {
+    padding: .6em 0;
     &>ul {
         margin-left: 1em;
     }
@@ -19,6 +20,7 @@
         // align-items: center;
         &>i {
             padding-top: 1.01em;
+            width: 4em;
         }
         .nav-link {
             padding: .5em 0;
@@ -52,11 +54,13 @@
 }
 
 .course-pie-grey-25::before {
-    @include course-pie-base();    
+    @include course-pie-base();  
+    margin-left: 1.5em;  
     content: url('../img/kth-style/icons/clock_grey_25.svg');
 }
 .course-pie-grey-50::before {
-    @include course-pie-base();    
+    @include course-pie-base();   
+    margin-left: 1.5em;  
     content: url('../img/kth-style/icons/clock_grey_50.svg');
 }
 .course-pie-grey-75::before {
