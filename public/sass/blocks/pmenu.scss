@@ -12,6 +12,18 @@
         font-weight: normal;
         margin: .5em 0 .6em;
     }
+
+    &.big-icon {
+        display: flex;
+        flex-direction: row;
+        // align-items: center;
+        &>i {
+            padding-top: 1.01em;
+        }
+        .nav-link {
+            padding: .5em 0;
+        }
+    }
 }
 
 @mixin course-pie-base() {
