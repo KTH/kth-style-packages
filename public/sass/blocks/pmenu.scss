@@ -30,13 +30,19 @@
 .courses .card, .programs .card { //just experiment with card containers for courses
     margin: 1em 0;
     border-radius: .5em;
+    border-left: 0;
     h4 {
         font-size: 1.07em;
         font-weight: normal;
         margin: .5em 0 .6em;
     }
 }
-
+.courses .card {
+    border-bottom:0;
+}
+.programs .card {
+    border-top: 0;
+}
 @mixin course-pie-base() {
     width: 1em;
     margin-right: 0.5em;
