@@ -8,10 +8,9 @@
     &>ul {
         margin-left: 1em;
     }
-    h4 {
-        font-size: 1.07em;
-        font-weight: normal;
-        margin: .5em 0 .6em;
+
+    &>span {
+        margin-left: .2em;
     }
 
     &.big-icon {
@@ -25,6 +24,16 @@
         .nav-link {
             padding: .5em 0;
         }
+    }
+}
+
+.courses .card, .programs .card { //just experiment with card containers for courses
+    margin: 1em 0;
+    border-radius: .5em;
+    h4 {
+        font-size: 1.07em;
+        font-weight: normal;
+        margin: .5em 0 .6em;
     }
 }
 
