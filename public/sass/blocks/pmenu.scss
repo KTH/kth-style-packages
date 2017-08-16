@@ -37,6 +37,11 @@
     }
 }
 
+.event-card {
+    margin: 1em 0;
+    border-radius: .5em;
+}
+
 @mixin course-pie-base() {
     width: 1em;
     margin-right: 0.5em;
