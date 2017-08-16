@@ -40,6 +40,10 @@
 .event-card {
     margin: 1em 0;
     border-radius: .5em;
+
+    .list-group-item {
+        justify-content: space-between;
+    }
 }
 
 @mixin course-pie-base() {
