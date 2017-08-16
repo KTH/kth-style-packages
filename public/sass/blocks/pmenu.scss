@@ -36,15 +36,7 @@
         margin: .5em 0 .6em;
     }
 }
-.courses .card {
-    border-bottom: 0;
-    border-left: 0;
-    border-right: 0;   
-}
-.programs .card {
-    border-top: 0;
-    border-right: 0;   
-}
+
 @mixin course-pie-base() {
     width: 1em;
     margin-right: 0.5em;
