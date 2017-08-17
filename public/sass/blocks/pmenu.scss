@@ -1,16 +1,26 @@
+@import "../variables/fonts";
 @import "../variables/colors";
+
 @import "../common/icons.scss";
 
 //progress icons
 
+
+
 .course-card {
     padding: .6em 0;
+    max-width: 35em;
+    h4 {
+        font-size: 1.07em;
+        font-weight: normal;
+        margin: .5em 0 .6em;
+    }
     &>ul {
         margin-left: 1em;
     }
 
     &>span {
-        margin-left: .2em;
+        margin-left: 1em;
     }
 
     &.big-icon {
@@ -40,11 +50,15 @@
 .event-card {
     margin: 1em 0;
     border-radius: .25em;
+    max-width: 15em;
 
     .list-group-item {
         justify-content: space-between;
         &:first-child{
             font-weight: 600;
+        }
+        &:last-child>a{
+            color: #5E5E5E;
         }
     }
 }
@@ -66,7 +80,6 @@
 }
 .course-pie-75::before {
     @include course-pie-base();
-    
     content: url('../img/kth-style/icons/clock_75.svg');
 }
 .course-pie-100::before {
