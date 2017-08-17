@@ -16,7 +16,7 @@
     &.big-icon {
         display: flex;
         flex-direction: row;
-        // align-items: center;
+        justify-content: space-between;
         &>i {
             padding-top: 1.01em;
             width: 4em;
@@ -29,7 +29,7 @@
 
 .courses .card, .programs .card { //just experiment with card containers for courses
     margin: 1em 0;
-    border-radius: .5em;
+    border-radius: .25em;
     h4 {
         font-size: 1.07em;
         font-weight: normal;
@@ -39,10 +39,13 @@
 
 .event-card {
     margin: 1em 0;
-    border-radius: .5em;
+    border-radius: .25em;
 
     .list-group-item {
         justify-content: space-between;
+        &:first-child{
+            font-weight: 600;
+        }
     }
 }
 
