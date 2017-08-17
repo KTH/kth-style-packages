@@ -7,7 +7,7 @@
 
 
 
-.course-card {
+.course-card, .program-card {
     padding: .6em 0;
     max-width: 35em;
     h4 {
@@ -15,14 +15,13 @@
         font-weight: normal;
         margin: .5em 0 .6em;
     }
+
     &>ul {
         margin-left: 1em;
-    }
-
-    &>span {
+    }    
+    &>span, &>div {
         margin-left: 1em;
     }
-
     &.big-icon {
         display: flex;
         flex-direction: row;
@@ -31,20 +30,21 @@
             padding-top: 1.01em;
             width: 4em;
         }
-        .nav-link {
-            padding: .5em 0;
-        }
+    }
+    //next can be changed for programs if favorit icon added
+    &.big-icon .nav-link, &.program-card .nav-link { 
+        padding: .5em 0;            
     }
 }
+
+.program-card {
+    padding-left: 1em; 
+}
+
 
 .courses .card, .programs .card { //just experiment with card containers for courses
     margin: 1em 0;
     border-radius: .25em;
-    h4 {
-        font-size: 1.07em;
-        font-weight: normal;
-        margin: .5em 0 .6em;
-    }
 }
 
 .event-card {
