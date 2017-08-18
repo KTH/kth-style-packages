@@ -46,12 +46,29 @@ export default function () {
 
         <h3>Alert box with close button</h3>
         <Scene>
-          <Alert onClose={() => {}} className="error-message">
-            <p>Some cool text in a <b>danger</b> alert box!</p>
+          <Alert onClose={() => {}}>
+            <p>Some cool text in a <b>success</b> alert box!</p>
           </Alert>
           <Code>
 {`<Alert onClose={() => {}}>
   <p>Some cool text in a <b>danger</b> alert box!</p>
+</Alert>`}
+          </Code>  
+        </Scene>
+        <h3>Alert box with header</h3>
+        <Scene>
+          <Alert onClose={() => {}}>
+            <span>
+              <h4>Attention!</h4>
+              <p>Some cool text in a <b>success</b> alert box!</p>
+            </span>
+          </Alert>
+          <Code>
+{`<Alert onClose={() => {}}>
+  <span>
+    <h4>Attention!</h4>
+    <p>Some cool text in a <b>danger</b> alert box!</p>
+  </span>
 </Alert>`}
           </Code>  
         </Scene>

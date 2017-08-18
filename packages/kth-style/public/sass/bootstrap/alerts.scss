@@ -13,12 +13,20 @@
   display: flex;
   flex-direction: row;
   font-size: 1.2rem;
-  justify-content: space-between;
+  justify-content: space-between; //Replace it
   margin-top: 1rem;
   min-height: 5rem;
   border-radius: .15rem;
   position: relative;
   padding: 1.2rem 2.2rem 1rem 5rem;
+
+  p:last-of-type, span:last-child, div:last-child {
+    margin-bottom: 0;
+  }
+
+  h4,h1,h2,h3, {
+    margin-top:0;
+  }
 
   .close {
     opacity: 1;
