@@ -20,7 +20,7 @@ function _getModulePath (moduleName) {
 const kthStyleDir = _getModulePath('kth-style')
 const prismjsDir = _getModulePath('prismjs')
 
-app.use('/kth-style', express.static(kthStyleDir + '/build'))
+app.use('/kth-style', express.static(kthStyleDir + '/dist'))
 app.use('/prism', express.static(prismjsDir + '/themes'))
 app.use('/static', express.static(__dirname))
 app.use((req, res) => {
