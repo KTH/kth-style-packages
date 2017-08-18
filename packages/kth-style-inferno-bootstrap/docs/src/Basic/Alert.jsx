@@ -8,7 +8,7 @@ export default function () {
       <Narrative>
         <p>Provide contextual feedback messages for typical user actions with the handful of available and flexible alert messages.</p>
         <UXComment>
-          <h2>Konsten att välja en alert-box. Du ska tänka på en massa olika saker.</h2>
+          <h2>Konsten att välja en alert-box är en konst. Du ska tänka på en massa olika saker.</h2>
           <p>Konsten att välja en alert-box. Du ska tänka på en massa olika saker.</p>
         </UXComment>
         <UXComment>Konsten att välja en alert-box. Du ska tänka på en massa olika saker.</UXComment>
@@ -18,7 +18,7 @@ export default function () {
         <h3>Standard alert box</h3>
         <Scene>
           <Alert color="success">
-            Some cool text in a <b>success</b> alert box!
+            <p>Some cool text in a <b>success</b> alert box!</p>
           </Alert>
           <UXComment>Du ska tänka på en massa olika saker <a href="www.kth.se">läs mer...</a></UXComment>
           <UXComment>
@@ -26,32 +26,32 @@ export default function () {
             <p>Konsten att välja en alert-box. Du ska tänka på en massa olika saker.</p>
           </UXComment>
           <Alert color="warning">
-            Some cool text in a <b>warning</b> alert box!
+            <p>Some cool text in a <b>warning</b> alert box!</p>
           </Alert>
           <Alert color="danger">
-            Some cool text in a <b>danger</b> alert box!
+            <p>Some cool text in a <b>danger</b> alert box!</p>
           </Alert>
           <Code>
 {`<Alert color="success">
-  Some cool text in a <b>success</b> alert box!
+ <p>Some cool text in a <b>success</b> alert box!</p>
 </Alert>
 <Alert color="warning">
-  Some cool text in a <b>warning</b> alert box!
+  <p>Some cool text in a <b>warning</b> alert box!</p>
 </Alert>
 <Alert color="danger">
-  Some cool text in a <b>danger</b> alert box!
+  <p>Some cool text in a <b>danger</b> alert box!</p>
 </Alert>`}
           </Code>
         </Scene>
 
         <h3>Alert box with close button</h3>
         <Scene>
-          <Alert onClose={() => {}}>
-            Some cool text in a <b>danger</b> alert box!
+          <Alert onClose={() => {}} className="error-message">
+            <p>Some cool text in a <b>danger</b> alert box!</p>
           </Alert>
           <Code>
 {`<Alert onClose={() => {}}>
-  Some cool text in a <b>danger</b> alert box!
+  <p>Some cool text in a <b>danger</b> alert box!</p>
 </Alert>`}
           </Code>  
         </Scene>
