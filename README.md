@@ -26,7 +26,7 @@ Visual components to add consistency and simplify development of Inferno-apps.
 To develop `kth-style-inferno-component` docs:
 
 ```
-$ cd packages/kth-style-inferno-component
+$ cd packages/kth-style-inferno-bootstrap
 $ npm run build-docs-dev
 ```
 
