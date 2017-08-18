@@ -1,0 +1,77 @@
+{{breadcrumbs breadcrumbsPath lang}}
+
+<article>
+  <h1>Färger</h1>
+  <section>
+    <p>
+        Färgerna utgår ifrån <a href="https://intra.kth.se/polopoly_fs/1.458089!/image/fargreferens_png.png">KTH:s profil färger</a> men har justerats för att uppnå tillgänglighet. Vill du förstå bakgrund till val av färger läs mer om <a href="/style/graphicalprofile">KTH:s grafiska profil</a> och <a href="/style/accessiblecolors">Färger och tillgänglighet</a>.
+    </p>
+    <h2>Olika färger</h2>
+
+    <section>
+      <h3>Bakgrundsfärger med vit text</h3>
+      <p>Uppfyller kontrast minst nivå AA liten text förutom för: färgerna "Grön" och "Ljusblå" som uppfyller kontrast minst nivå AA stor text (18px eller 14px fet).</p>
+      <table class="table">
+        <thead class="thead-default">
+          <tr>
+            <th>Färgnamn</th>
+            <th>Hex</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          {{#each colors.backgroundsForWhite}}
+            <tr>
+              <td style="text-transform:capitalize">{{this.name}}</td>
+              <td><div>{{this.hex}}</div></td>
+              <td style="width: 50%"><div class="showColor" style="background-color: {{this.hex}}"></div></td>
+            </tr>
+          {{/each}}        
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h3>Bakgrundsfärg med “Ljusare svart” text</h3>
+      <p>Uppfyller kontrast minst nivå AA liten text (ok med 14px normal)</p>
+      <table class="table">
+        <thead class="thead-default">
+          <tr>
+            <th>Färgnamn</th>
+            <th>Hex</th>
+          </tr>
+        </thead>
+        <tbody>
+          {{#each colors.backgroundsForBlack}}
+            <tr>
+              <td style="text-transform:capitalize">{{this.name}}</td>
+              <td><div>{{this.hex}}</div></td>
+              <td style="width: 50%"><div class="showColor" style="background-color: {{this.hex}}"></div></td>
+            </tr>
+          {{/each}}        
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h3>Färgad text</h3>
+      <p>Uppfyller minst nivå AA för liten text på vit bakgrund.</p>
+      <table class="table">
+        <thead class="thead-default">
+          <tr>
+            <th>Färgnamn</th>
+            <th>Hex</th>
+          </tr>
+        </thead>
+        <tbody>
+          {{#each colors.coloredText}}
+            <tr>
+              <td style="text-transform:capitalize">{{this.name}}</td>
+              <td><div>{{this.hex}}</div></td>
+              <td style="width: 50%"><div class="showColor" style="background-color: {{this.hex}}"></div></td>
+            </tr>
+          {{/each}}        
+        </tbody>
+      </table>
+    </section>        
+  </section>

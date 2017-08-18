@@ -1,6 +1,8 @@
 .DS_Store
 
-.git/
+# Sass compilation related files
+public/css/*.css
+
 
 # IDEA specific
 .idea
@@ -17,6 +19,9 @@ typings.json
 .project
 .settings/
 
+# Settings
+config/localSettings.js
+
 # Logs
 logs/*
 *.log
@@ -24,12 +29,31 @@ logs/*
 # Dependency directory for NPM
 node_modules
 
+# Frontend files build on startup
+public/js/ckeditor
+public/js/dragula
+
+# Startup scripts (sets logging)
+dev.sh
+dev.bat
+debug.sh
+
+# Key value store database
+server/init/store.db
+
+# KTH Style imported files
+public/css/bootstrap
+public/css/font-awesome
+public/css/fonts
+public/css/kth-style
+public/img/kth-style
+
 # Built at startup
 bundles
 public/js/app/config*.js
-dist
 
 # Docker
-docker-compose*.yml
-*.env
 
+/public/**/*.css.map
+dist
+.env

@@ -1,0 +1,122 @@
+@import 'node_modules/kth-style/public/sass/variables/componentColors';
+
+#main {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin-top: -2rem;
+
+  section {
+    flex-basis: 30%;
+
+    a {
+      display: block;
+
+      &.empty {
+        color: $lightRed;
+      }
+    }
+  }
+}
+
+.showColor {
+  border: 1px solid $midGrey;
+  border-radius: .15rem;
+  height: 1.5rem;
+  width: 100%;
+}
+
+#iconsMain {
+  .big-icon {
+    font-size: 2rem;
+  }
+}
+
+.examples-container {
+  .examples-view {
+    border: 1px solid $pageBorderColor;
+    padding: 3rem 15px 15px;
+    position: relative;
+
+    &::before {
+      background: $lightGrey;
+      content: 'Mall: ' attr(data-examples-view);
+      left: 0;
+      line-height: 1.7rem;
+      padding: 0 .6rem;
+      position: absolute;
+      text-transform: uppercase;
+      top: 0;
+    }
+  }
+
+  .example-code {
+    border: 1px solid $pageBorderColor;
+    height: 0;
+    margin: 0;
+    margin-top: 10px;
+    opacity: 0;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    transition: all .5s;
+
+    .btn-bar {
+      display: flex;
+      position: absolute;
+      right: 0;
+      top: 0;
+
+      .close {
+        padding: .75rem 1.25rem;
+      }
+
+      .default.copy-btn {
+        border: 0;
+      }
+    }
+
+    &.show {
+      height: 220px;
+      opacity: 1;
+      padding: 3rem 15px 5px;
+      transition: all .5s;
+      overflow: hidden;
+    }
+
+    &::before {
+      background: $lightGrey;
+      content: 'Kod: ' attr(data-example-code);
+      left: 0;
+      line-height: 1.7rem;
+      padding: 0 .6rem;
+      position: absolute;
+      text-transform: uppercase;
+      top: 0;
+    }
+
+    .example-code-view {
+      background-color: rgba(255, 255, 0, .2);
+      padding: 10px;
+      margin-top: 10px;
+      overflow: scroll;
+      max-height: 150px;
+    }
+  }
+
+  .example-container {
+    display: inline-block;
+    cursor: not-allowed;
+    z-index: 99;
+
+    [disabled] {
+
+      pointer-events: none;
+    }
+
+    &.anti-pattern {
+      outline: 4px dashed $infoRed;
+      margin-left: 10px;
+    }
+  }
+}
