@@ -4,7 +4,7 @@ To work with this repos you need Node.js 6+ and lerna https://lernajs.io/
 
 1. Install lerna: `npm i -g lerna`
 
-2. Clone this repos
+2. Clone this repo
 
 3. Go to the root of the project and run:
 
