@@ -7,7 +7,9 @@ env:
     - PACKAGE=kth-node-inferno-bootstrap
 before_install:
     - npm config set //registry.npmjs.org/:_authToken $NPM_TOKEN
-script: lerna run test
+script:
+  - lerna bootstrap
+  - lerna run test
 deploy:
   provider: script
   on:
