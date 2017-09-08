@@ -16,7 +16,7 @@
     "build": "gulp build",
     "prepublish": "npm run build",
     "preversion": "npm run test",
-    "postversion": "git push && git push --tags",
+    "postversion": "./scripts/version.sh",
     "sass-lint": "./node_modules/.bin/sass-lint --config ./.sass-lint.yml './public/sass/**/*.scss' --verbose --no-exit"
   },
   "dependencies": {
