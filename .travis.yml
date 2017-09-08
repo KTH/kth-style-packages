@@ -15,7 +15,7 @@ deploy:
   on:
     tags: true
     repo: KTH/kth-style
-  script: lerna exec 'npm publish' --scope $PACKAGE
+  script: lerna exec 'npm publish --verbose' --scope $PACKAGE
 notifications:
   slack:
     secure: unIHyMu12VGZJyYRAN44140IZaSCipmr0ne+hGGEoQhnWXh0XhqtcJNgLBZUlM+4qiiezMe1flxGmmIWX/Wamo1LudJoATYdeL/a6Zmf6IexGaIeoLguVbvIKgl+TC5MuO+eAPeyiWD1LBe3QjqplAy8PfRc3MJeU0XdPABnrp27XYHUqG5zfCr01O7kTdNn9xw+zP23RQkgKnUNLyWC/QQMvgIftOydn5ELGChf8Hzdn8ppMrYyAnl2EN46/9IThr1GTMpOeoSTooZjTW6h/ntRkWiBfiM0VmCvaVXDJqpqTAqibMhZiBIXTyCriM+q/hioAPvCPhzvN7m8sBpzXMWVPXJM1G3wF8bYYSyZ/QQNl9yY0y0uloFkYky/nuEE/rw4a8YEf9IZCGe6Qq2JM4Q04kGCW6mQdIuIdrh8puVXHjJmNSqnmQTlOvewp4vgg2fYItMmwueibUW9X1JrnMA9ntYa5Szvnnd+9GKvUVj3WLtv6R+4cUQ6MKnZ1+kvgKBLYWRcNX1HjCVYH3tIrgbYKB1FCk05uMa+GyWbYx71KIbvvG0l6xjX3YfNTRilrWS3QJCKtwwQtKcJv04eE40iCJf0HoJRS+uYmJaV8q2872I6TOdmDtrwJhTfjLFdyHCaxbv/ib77H4dvb4LfJiJHpoUXgbdpLLbX6njPOeM=
