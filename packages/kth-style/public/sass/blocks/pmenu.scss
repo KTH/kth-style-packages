@@ -50,9 +50,11 @@
 .event-card {
     margin: 1em 0;
     border-radius: .25em;
-    max-width: 15em;
+    max-width: 20em;
 
     .list-group-item {
+        padding-top: .4em;
+        padding-bottom: .4em; 
         justify-content: space-between;
         &:first-child{
             font-weight: 600;
@@ -159,11 +161,6 @@
 
         #courses-program{
                 border-bottom: solid 1px #bdbcbc;
-        }
-        .alert-section {
-            .message {
-                margin-top: 1.5em;
-            }
         }
         .progress-section {
             .result {
