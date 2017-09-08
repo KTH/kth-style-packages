@@ -4,7 +4,6 @@ node_js:
 env:
   global:
     - PACKAGE=kth-style
-    - PACKAGE=kth-style-inferno-bootstrap
 before_install:
     - npm config set //registry.npmjs.org/:_authToken $NPM_TOKEN
 script:
