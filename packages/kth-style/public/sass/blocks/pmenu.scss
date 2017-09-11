@@ -14,6 +14,9 @@
             color: #333333;
             background-color: white;
         }
+        &:first-child {
+            padding-left:0;
+        }
     }
     &:not(:first-child) {
         a::before {
