@@ -5,7 +5,23 @@
 
 //progress icons
 
-
+.nav-filter .nav-item {
+    a {
+        color: #5E5E5E;
+        font-size: 1.07em;
+        &.nav-link.active {
+            font-weight: bold;
+            color: #333333;
+            background-color: white;
+        }
+    }
+    &:not(:first-child) {
+        a::before {
+            margin-right: 1.5em;
+            content: '|';
+        }
+    }
+}
 
 .course-card, .program-card {
     padding: .6em 0;
