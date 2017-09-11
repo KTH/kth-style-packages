@@ -49,10 +49,9 @@
   align-items: center;
   padding: 0 1.4rem 0 1.4rem;
   position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  border-radius: .15rem 0 0 .15rem;
+  left: .2em;
+  height: 2em;
+  border-radius: 1em;
 }
 
 .alert > :last-child {
@@ -77,7 +76,7 @@
     @include message-icons-base($infoRedIcon);
     -webkit-font-smoothing: antialiased;
     font-family: Arial;
-    font-size: 2.9rem;
+    font-size: 1.7rem;
     font-weight: 700;
     content: '!';
   }
