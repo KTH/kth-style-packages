@@ -60,10 +60,17 @@
 .program-card {
     padding-left: 1em; 
 }
+.courses .card {
+    &:first-child{
+        margin-top: 1em;
+    }
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+}
 
-
-.courses .card, .programs .card, .notices { //just experiment with card containers for courses
-    margin: 1em 0;
+.programs .card, .notices { //just experiment with card containers for courses
+    margin: 1em 0;    
     border-radius: .25em;
 }
 
@@ -183,23 +190,8 @@
                 border-bottom: solid 1px #bdbcbc;
         }
         .progress-section {
-            .result {
-                margin-top: 1em;
-            }
+            margin-top: .5em;
         }
-
-        
-        // .programs {
-        //         border-bottom: solid 1px #bdbcbc;
-        //         width: 30%;
-        //                     display: inline-block;
-
-        // }
-        // .courses {
-        //     width: 65%;
-        //     display: inline-block;
-        // }
-
     }
 
     #kth-menu-page-container {
