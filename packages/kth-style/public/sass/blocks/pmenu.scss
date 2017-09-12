@@ -59,16 +59,19 @@
 .program-card {
     padding-left: 1em; 
 }
-.courses .card {
+.courses .card, .programs .card {
     &:first-child{
         margin-top: 1em;
     }
     border-left: none;
-    border-right: none;
+    border-right: none;       
+}
+
+.courses .card {
     border-bottom: none;
 }
 
-.programs .card, .notices { //just experiment with card containers for courses
+.notices { //just experiment with card containers for courses
     margin: 1em 0;    
     border-radius: .25em;
 }
