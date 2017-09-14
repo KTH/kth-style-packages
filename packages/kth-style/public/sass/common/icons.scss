@@ -81,6 +81,10 @@
     color: $blue;
   }
 }
+.icon-canvas::before {
+  //content: url('../img/kth-style/icons/binder-icon.svg');
+  content: url('../img/kth-style/icons/binder-icon-dark.svg');
+}
 
 .icon-info-circled-1 {
   font-size: 1.5rem;

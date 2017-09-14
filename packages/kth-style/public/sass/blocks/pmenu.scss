@@ -59,21 +59,27 @@
 .program-card {
     padding-left: 1em; 
 }
+
+.courses h3, .programs h3 {
+    padding-left: 0.7rem;
+    border-left: 5px solid #aaa;
+}
 .courses .card, .programs .card {
     &:first-child{
         margin-top: 1em;
     }
     border-left: none;
-    border-right: none;       
+    border-right: none;     
 }
 
 .courses .card {
     border-bottom: none;
 }
 
-.notices { //just experiment with card containers for courses
-    margin: 1em 0;    
-    border-radius: .25em;
+.notices {
+    &:first-child{
+        margin-top: 1em;
+    }
 }
 
 .event-card {
@@ -84,7 +90,6 @@
     .list-group-item {
         padding-top: .4em;
         padding-bottom: .4em; 
-        justify-content: space-between;
         &:first-child{
             font-weight: 600;
         }
