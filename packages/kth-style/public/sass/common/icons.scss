@@ -83,7 +83,11 @@
 }
 .icon-canvas::before {
   //content: url('../img/kth-style/icons/binder-icon.svg');
-  content: url('../img/kth-style/icons/binder-icon-dark.svg');
+  //content: url('../img/kth-style/icons/binder-icon-dark.svg');
+  width: 1.3em;
+  margin-right: .5em;
+  vertical-align: bottom;
+  content: url('../img/kth-style/icons/icon-from-canvas-blue.svg');
 }
 
 .icon-info-circled-1 {
