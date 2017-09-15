@@ -1,2 +1,2 @@
-import BreadcrumbItem from 'inferno-bootstrap/lib/Breadcrumb.jsx'
+import BreadcrumbItem from 'inferno-bootstrap/lib/Breadcrumb'
 export default BreadcrumbItem

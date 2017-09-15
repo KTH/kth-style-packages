@@ -1,2 +1,2 @@
-import InputGroup from 'inferno-bootstrap/lib/Form/InputGroup.jsx'
+import InputGroup from 'inferno-bootstrap/lib/Form/InputGroup'
 export default InputGroup

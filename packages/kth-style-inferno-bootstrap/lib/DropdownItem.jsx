@@ -1,2 +1,2 @@
-import DropdownItem from 'inferno-bootstrap/lib/DropdownItem.jsx'
+import DropdownItem from 'inferno-bootstrap/lib/DropdownItem'
 export default DropdownItem

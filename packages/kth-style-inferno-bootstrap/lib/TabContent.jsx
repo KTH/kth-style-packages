@@ -1,2 +1,2 @@
-import TabContent from 'inferno-bootstrap/lib/TabContent.jsx'
+import TabContent from 'inferno-bootstrap/lib/TabContent'
 export default TabContent

@@ -1,2 +1,2 @@
-import Alert from 'inferno-bootstrap/lib/Alert.jsx'
+import Alert from 'inferno-bootstrap/lib/Alert'
 export default Alert

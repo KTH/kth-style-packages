@@ -1,2 +1,2 @@
-import InputGroupButton from 'inferno-bootstrap/lib/Form/InputGroupButton.jsx'
+import InputGroupButton from 'inferno-bootstrap/lib/Form/InputGroupButton'
 export default InputGroupButton

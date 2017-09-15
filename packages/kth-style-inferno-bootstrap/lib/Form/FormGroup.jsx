@@ -1,2 +1,2 @@
-import FormGroup from 'inferno-bootstrap/lib/Form/FormGroup.jsx'
+import FormGroup from 'inferno-bootstrap/lib/Form/FormGroup'
 export default FormGroup

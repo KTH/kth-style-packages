@@ -9,13 +9,13 @@ import FormPage from './FormPage.jsx'
 import ModalPage from './ModalPage.jsx'
 import NavigationPage from './NavigationPage.jsx'
 
-import Nav from 'inferno-bootstrap/lib/Navigation/Nav.jsx'
-import NavItem from 'inferno-bootstrap/lib/Navigation/NavItem.jsx'
-import NavLink from 'inferno-bootstrap/lib/Navigation/NavLink.jsx'
-import Form from 'inferno-bootstrap/lib/Form/Form.jsx'
-import FormGroup from 'inferno-bootstrap/lib/Form/FormGroup.jsx'
-import Label from 'inferno-bootstrap/lib/Form/Label.jsx'
-import Input from 'inferno-bootstrap/lib/Form/Input.jsx'
+import Nav from 'inferno-bootstrap/lib/Navigation/Nav'
+import NavItem from 'inferno-bootstrap/lib/Navigation/NavItem'
+import NavLink from 'inferno-bootstrap/lib/Navigation/NavLink'
+import Form from 'inferno-bootstrap/lib/Form/Form'
+import FormGroup from 'inferno-bootstrap/lib/Form/FormGroup'
+import Label from 'inferno-bootstrap/lib/Form/Label'
+import Input from 'inferno-bootstrap/lib/Form/Input'
 
 class AppLayout extends Component {
   constructor(props) {

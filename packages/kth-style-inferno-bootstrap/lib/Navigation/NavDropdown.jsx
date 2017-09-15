@@ -1,2 +1,2 @@
-import NavDropdown from 'inferno-bootstrap/lib/Navigation/NavDropdown.jsx'
+import NavDropdown from 'inferno-bootstrap/lib/Navigation/NavDropdown'
 export default NavDropdown

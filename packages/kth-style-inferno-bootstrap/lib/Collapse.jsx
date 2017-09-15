@@ -1,2 +1,2 @@
-import Collapse from 'inferno-bootstrap/lib/Collapse.jsx'
+import Collapse from 'inferno-bootstrap/lib/Collapse'
 export default Collapse

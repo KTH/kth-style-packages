@@ -1,2 +1,2 @@
-import Form from 'inferno-bootstrap/lib/Form/Form.jsx'
+import Form from 'inferno-bootstrap/lib/Form/Form'
 export default Form

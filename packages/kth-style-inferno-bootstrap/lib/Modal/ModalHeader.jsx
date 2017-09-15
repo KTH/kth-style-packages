@@ -1,3 +1,3 @@
 
-import ModalHeader from 'inferno-bootstrap/lib/Modal/ModalHeader.jsx'
+import ModalHeader from 'inferno-bootstrap/lib/Modal/ModalHeader'
 export default ModalHeader

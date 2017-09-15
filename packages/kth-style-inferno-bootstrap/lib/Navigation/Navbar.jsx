@@ -1,2 +1,2 @@
-import Navbar from 'inferno-bootstrap/lib/Navigation/Navbar.jsx'
+import Navbar from 'inferno-bootstrap/lib/Navigation/Navbar'
 export default Navbar

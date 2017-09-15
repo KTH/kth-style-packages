@@ -1,2 +1,2 @@
-import Row from 'inferno-bootstrap/lib/Row.jsx'
+import Row from 'inferno-bootstrap/lib/Row'
 export default Row

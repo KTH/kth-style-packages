@@ -1,2 +1,2 @@
-import Progress from 'inferno-bootstrap/lib/Progress.jsx'
+import Progress from 'inferno-bootstrap/lib/Progress'
 export default Progress

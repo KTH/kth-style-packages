@@ -1,2 +1,2 @@
-import Button from 'inferno-bootstrap/lib/Button.jsx'
+import Button from 'inferno-bootstrap/lib/Button'
 export default Button

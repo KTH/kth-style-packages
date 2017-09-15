@@ -1,2 +1,2 @@
-import Nav from 'inferno-bootstrap/lib/Navigation/Nav.jsx'
+import Nav from 'inferno-bootstrap/lib/Navigation/Nav'
 export default Nav
