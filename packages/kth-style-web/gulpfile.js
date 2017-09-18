@@ -35,8 +35,6 @@ const { webpack, moveResources, sass, vendor, clean } = require('kth-node-build-
 
 
 // *** JavaScript helper tasks ***
-gulp.task('webpack', webpack)
-gulp.task('vendor', vendor)
 gulp.task('transpileSass', () => sass())
 
 /* Put any addintional helper tasks here */
@@ -49,10 +47,8 @@ gulp.task('transpileSass', () => sass())
 
 gulp.task('clean', clean)
 
-gulp.task('build', ['vendor', 'webpack'], () => sass())
+gulp.task('build', ['transpileSass'], () => sass())
 
 gulp.task('watch', ['build'], function () {
-  gulp.watch(['./public/js/app/**/*.js', './public/js/components/**/*'], ['webpack'])
-  gulp.watch(['./public/js/vendor.js'], ['vendor'])
   gulp.watch(['./public/css/**/*.scss'], ['transpileSass'])
 })

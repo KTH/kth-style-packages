@@ -1,122 +1,353 @@
-@import 'node_modules/kth-style/public/sass/variables/componentColors';
+/* Box sizing reset */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+/* END Box sizing reset */
 
-#main {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  margin-top: -2rem;
-
-  section {
-    flex-basis: 30%;
-
-    a {
-      display: block;
-
-      &.empty {
-        color: $lightRed;
-      }
-    }
-  }
+body {
+  background-color: #fff;
+  margin: 0;
 }
 
-.showColor {
-  border: 1px solid $midGrey;
-  border-radius: .15rem;
-  height: 1.5rem;
+.MainMenu {
+  max-width: 75rem;
   width: 100%;
+  margin: 0 auto 1rem auto;
+  padding: 1rem;
+  align-items: center;
+  font-size: 1.5em;
 }
 
-#iconsMain {
-  .big-icon {
-    font-size: 2rem;
-  }
+.MainMenu label {
+  margin-top: 0;
 }
 
-.examples-container {
-  .examples-view {
-    border: 1px solid $pageBorderColor;
-    padding: 3rem 15px 15px;
-    position: relative;
+.MainMenu .nav-item {
+  text-align: left;
+}
 
-    &::before {
-      background: $lightGrey;
-      content: 'Mall: ' attr(data-examples-view);
-      left: 0;
-      line-height: 1.7rem;
-      padding: 0 .6rem;
-      position: absolute;
-      text-transform: uppercase;
-      top: 0;
-    }
-  }
+.MainMenu-Logo {
+  display: inline-block;
+}
 
-  .example-code {
-    border: 1px solid $pageBorderColor;
-    height: 0;
-    margin: 0;
-    margin-top: 10px;
-    opacity: 0;
-    overflow: hidden;
-    padding: 0;
-    position: relative;
-    transition: all .5s;
+.MainMenu-BrandName {
+  display: inline-block;
+  margin-left: 1rem;
+  vertical-align: middle;
+}
 
-    .btn-bar {
-      display: flex;
-      position: absolute;
-      right: 0;
-      top: 0;
+.MainMenu-Form {
+  justify-content: flex-end;
+}
 
-      .close {
-        padding: .75rem 1.25rem;
-      }
+.Menu {
+  max-width: 65rem;
+  width: 100%;
+  margin: 2rem auto;
+}
 
-      .default.copy-btn {
-        border: 0;
-      }
-    }
+.Menu a {
+  margin-right: 2em;
+}
 
-    &.show {
-      height: 220px;
-      opacity: 1;
-      padding: 3rem 15px 5px;
-      transition: all .5s;
-      overflow: hidden;
-    }
+.PageMenuContainer {
+  max-width: 65rem;
+  width: 100%;
+  margin: 2rem auto;
+  position: relative;
+}
 
-    &::before {
-      background: $lightGrey;
-      content: 'Kod: ' attr(data-example-code);
-      left: 0;
-      line-height: 1.7rem;
-      padding: 0 .6rem;
-      position: absolute;
-      text-transform: uppercase;
-      top: 0;
-    }
+.PageMenu {
+  position: absolute;
+  right: -2rem;
+  transform: translateX(100%);
+}
 
-    .example-code-view {
-      background-color: rgba(255, 255, 0, .2);
-      padding: 10px;
-      margin-top: 10px;
-      overflow: scroll;
-      max-height: 150px;
-    }
-  }
+.PageMenu-Header {
+  padding: 0 0.6em 0.5em;
+  border-bottom: 2px #ddd dashed;
+}
 
-  .example-container {
-    display: inline-block;
-    cursor: not-allowed;
-    z-index: 99;
+.PageLink {
+  font-weight: 500;
+}
 
-    [disabled] {
+.SectionLink {
+  color: #777;
+}
 
-      pointer-events: none;
-    }
+.PageContent {
+  max-width: 65rem;
+  width: 100%;
+  margin: 0 auto;
+  padding: 1rem;
+}
 
-    &.anti-pattern {
-      outline: 4px dashed $infoRed;
-      margin-left: 10px;
-    }
-  }
+/* Make sure we do not get jumps att beginning and end of animation */
+
+.ExampleSection {
+  padding: 0 0 5rem;
+}
+
+.ExampleStage {
+  border: 1px solid lightgray;
+  background-color: #fdfdfd;
+  padding: 1rem;
+  border-radius: 0.3rem;
+}
+
+.ExampleStage > :first-child {
+    margin-top: 0em;
+}
+
+.ExampleStage > :last-child {
+    margin-bottom: 0em;
+}
+
+.ExampleStage :last-child .ExampleScene-Code:last-child {
+    margin-bottom: -1rem;
+}
+
+.ExampleScene {
+  margin: 1rem 0;
+}
+
+.ExampleScene .card {
+  max-width: 320px;
+}
+
+.ExampleScene .nav-tabs {
+  margin-bottom: 1rem;
+}
+
+.ExampleScene-Code {
+  font-family: Courier New, Courier, monospace;
+  margin: 1rem -1rem;
+} .ExampleScene-Code pre {
+  padding: 0.5rem 0.85rem;
+  margin: 0;
+}
+
+pre[class*="language-"]:after {
+  transform: rotate(1.7deg);
+  box-shadow: 0px 13px 8px #eee;
+}
+pre[class*="language-"]:before {
+  transform: rotate(-1.7deg);
+  box-shadow: 0px 13px 8px #eee;
+}
+
+.ExampleNarrative {
+  font-size: 1.1em;
+}
+
+.ExampleStage > h3 {
+  font-size: 1.1em;
+  margin-top: 2em;
+  border-bottom: 1px dashed #ddd;
+  padding-bottom: 0.5em;
+}
+
+.ExampleStage > h3:first-child {
+  margin-top: 0.5em;
+}
+
+.modal {
+  display: block;
+}
+
+.ModalFade-leave {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.ModalFade-leave-active {
+  overflow: hidden;
+  transition: transform 0.5s ease-in, opacity 0.4s ease-in;
+}
+
+.ModalFade-leave-end {
+  transform: translateY(-150%);
+  opacity: 0;
+}
+
+.ModalFade-enter {
+  transform: translateY(-150%);
+  opacity: 0;
+}
+
+.ModalFade-enter-active {
+  transition: transform 0.5s ease-out, opacity 0.4s ease-in;
+}
+
+.ModalFade-enter-end {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+
+.ModalBackdropFade-leave {
+  opacity: 0.5;
+}
+
+.ModalBackdropFade-leave-active {
+  overflow: hidden;
+  transition: opacity 0.3s ease-in;
+}
+
+.ModalBackdropFade-leave-end {
+  opacity: 0!important;
+}
+
+.ModalBackdropFade-enter {
+  opacity: 0!important;
+}
+
+.ModalBackdropFade-enter-active {
+  transition: opacity 0.3s ease-in;
+}
+
+.ModalBackdropFade-enter-end {
+  opacity: 0.5;
+}
+
+/* Collapse */
+
+.ExampleCollapseContainer {
+  background-color: aliceblue;
+  padding: 1rem;
+}
+
+.CollapseAnimation-leave {
+}
+
+.CollapseAnimation-leave-active {
+  overflow: hidden;
+  transition: all 0.3s ease-in;
+}
+
+.CollapseAnimation-leave-end {
+  height: 0!important;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.CollapseAnimation-enter {
+  height: 0!important;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.CollapseAnimation-enter-active {
+  transition: all 0.3s ease-in;
+  overflow: hidden;
+}
+
+.CollapseAnimation-enter-end {
+}
+
+.ExampleLayout .row {
+  margin-bottom: 0.5rem;
+}
+.ExampleLayout .row div {
+  background-color: aliceblue;
+  border: 1px solid #ddd;
+  padding: 0.5rem;
+}
+
+/* Tab fadein */
+.FadeIn-enter {
+  opacity: 0;
+}
+.FadeIn-enter-active {
+  overflow: hidden!important;
+  transition: opacity 0.1s ease-in, height .2s ease-in-out, width .2s ease-in-out;
+}
+
+.FadeIn-enter-end {
+  opacity: 1;
+}
+
+.UXComment {
+  display: flex;
+  align-items: center;
+  position: relative;
+  min-height: 1.75em;
+  padding: 0.2em 0 0.2em 2.325em;
+  margin-bottom: 1.3rem;
+  font-size: 1.5rem;
+}
+
+.ExampleStage .UXComment {
+  font-size: 1.1rem;
+  margin-top: 1.3em;
+}
+
+.UXComment-Content {
+  flex: none;
+  font-size: 0.85em;
+  color: #666;
+}
+
+.UXComment-Content :last-child {
+  margin-bottom: 0em;
+}
+
+
+.UXComment-Content h2 {
+  font-size: 1.1em;
+  margin: 0 0 0.1em;
+  color: #555;
+}
+
+.UXComment-Content p {
+  font-size: 0.9em;
+}
+
+.UXComment::before {
+  content: 'UX';
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 50%;
+  background-color: #ccc;
+  color: #fafafa;
+  padding: 0.3em 0.3em 0.2em;
+  font-size: 0.85em;
+  font-weight: bold;
+  border: 0.1em solid #fff;
+}
+
+/* View State collapsables */
+.ContentAnimation-leave {
+}
+
+.ContentAnimation-leave-active {
+  overflow: hidden;
+  transition: all 0.3s ease-in;
+}
+
+.ContentAnimation-leave-end {
+  height: 0!important;
+  padding-top: 0;
+  padding-bottom: 0;
+  opacity: 0;
+}
+
+.ContentAnimation-enter {
+  height: 0!important;
+  padding-top: 0;
+  padding-bottom: 0;
+  opacity: 0;
+}
+
+.ContentAnimation-enter-active {
+  transition: all 0.3s ease-in;
+  overflow: hidden;
+}
+
+.ContentAnimation-enter-end {
 }
