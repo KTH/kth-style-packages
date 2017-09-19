@@ -21,6 +21,8 @@
     "inferno-bootstrap": "^0.2.4",
     "inferno-component": "^3.7.1",
     "inferno-router": "^3.7.1",
+    "inferno-bootstrap": "^0.2.4",
+    "inferno-popper": "^0.1.9",
     "kth-style": "^2.0.0-alpha.24"
   },
   "devDependencies": {

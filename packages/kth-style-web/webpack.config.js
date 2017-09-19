@@ -4,12 +4,7 @@ const path = require('path')
 const babelPlugins = [
   'babel-plugin-transform-object-rest-spread',
   'babel-plugin-syntax-jsx',
-  [
-    'babel-plugin-inferno',
-    {
-      'imports': true
-    }
-  ]
+  ['babel-plugin-inferno', {'imports': true}]
 ]
 
 module.exports = {

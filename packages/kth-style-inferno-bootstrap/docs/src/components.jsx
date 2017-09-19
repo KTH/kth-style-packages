@@ -105,41 +105,59 @@ function newSmoothScrollVertTo(y, k) {
   })
 }
 
-function PageMenu(props) {
-
+function MainMenu(props) {
   return (
-    <div className="PageMenuContainer">
-      <ul className="PageMenu nav flex-column">
-        <li class="nav-item">
-          <h4 className="PageMenu-Header">Components</h4>  
-        </li>
-        {
-          props.pageLinks.map((page) => {
+    <ul className="PageMenu nav flex-column">
+      {
+        props.pageLinks.map((page) => {
+          if (page.subHeader) {
+            return (
+              <li class="nav-item">
+                <Link className="PageMenu-Header nav-link PageLink" to={page.link}>{page.title}</Link>
+              </li> 
+            )
+          } else {
             return (
               <li class="nav-item">
                 <Link className="nav-link PageLink" to={page.link}>{page.title}</Link>
               </li> 
             )
-          }).concat(
-            props.pageSections.sort((a, b) => a.title == b.title ? 0 : (a.title < b.title ? -1 : 1)).map((item) => {
-              return (
-                <li class="nav-item">
-                  <a className="nav-link SectionLink" href={'#' + item.anchor} onClick={(e) => { 
-                    e.preventDefault()
-                    const el = document.getElementById(e.target.hash.split('#')[1])
-                    const y = el.offsetTop
-                    // smoothScrollVertTo(y, 500)
-                    smoothScrollVertTo(y, 500)
-                  }}>{item.title}</a>
-                </li>
-              )  
-            })
-          )
-        }
-      </ul>  
-    </div>  
+          }
+        })
+      }
+    </ul>  
   )
 }
+
+function PageMenu(props) {
+
+  return (
+    <ul className="PageMenu nav flex-column">
+      <li class="nav-item">
+        <h4 className="SectionMenu-Header">Page Sections</h4>  
+      </li>
+      {
+        props.pageSections.sort((a, b) => a.title == b.title ? 0 : (a.title < b.title ? -1 : 1)).map((item) => {
+          return (
+            <li class="nav-item">
+              <a className="nav-link SectionLink" href={'#' + item.anchor} onClick={(e) => { 
+                e.preventDefault()
+                const el = document.getElementById(e.target.hash.split('#')[1])
+                const y = el.offsetTop
+                // smoothScrollVertTo(y, 500)
+                smoothScrollVertTo(y, 500)
+              }}>{item.title}</a>
+            </li>
+          )  
+        })
+      }
+    </ul>  
+  )
+}
+
+import Container from '../../lib/Container.jsx'
+import Row from '../../lib/Row.jsx'
+import Col from '../../lib/Col.jsx'
 
 export class Page extends Component {
   constructor (props) {
@@ -183,10 +201,19 @@ export class Page extends Component {
     */
 
     return (
-      <div className={classnames(cls)}>
-        <PageMenu pageSections={this.state.pageSections} pageLinks={this.context.pageLinks} />
-        {this.props.children}
-      </div>
+      <Container className={classnames(cls)}>
+        <Row>
+          <Col className="PageMenuContainer">
+            <MainMenu pageLinks={this.context.pageLinks} />
+          </Col>
+          <Col className="PageBody">
+            {this.props.children}
+          </Col>
+          <Col className="SectionMenuContainer">
+            <PageMenu pageSections={this.state.pageSections} />
+          </Col>
+        </Row>
+      </Container>
     )
   }
 }

@@ -1,6 +1,6 @@
 import Inferno from 'inferno'
 import Component from 'inferno-component'
-require('inferno-devtools')
+// require('inferno-devtools')
 import { Router, Route, Redirect, IndexRoute, Link } from 'inferno-router'
 import createBrowserHistory from 'history/createBrowserHistory'
 
@@ -9,13 +9,15 @@ import FormPage from 'kth-style-inferno-bootstrap/docs/src/FormPage.jsx'
 import ModalPage from 'kth-style-inferno-bootstrap/docs/src/ModalPage.jsx'
 import NavigationPage from 'kth-style-inferno-bootstrap/docs/src/NavigationPage.jsx'
 
-import Nav from 'kth-style-inferno-bootstrap/lib/Navigation/Nav.jsx'
-import NavItem from 'kth-style-inferno-bootstrap/lib/Navigation/NavItem.jsx'
-import NavLink from 'kth-style-inferno-bootstrap/lib/Navigation/NavLink.jsx'
-import Form from 'kth-style-inferno-bootstrap/lib/Form/Form.jsx'
-import FormGroup from 'kth-style-inferno-bootstrap/lib/Form/FormGroup.jsx'
-import Label from 'kth-style-inferno-bootstrap/lib/Form/Label.jsx'
-import Input from 'kth-style-inferno-bootstrap/lib/Form/Input.jsx'
+import { Page } from 'kth-style-inferno-bootstrap/docs/src/components.jsx'
+
+import Nav from 'inferno-bootstrap/lib/Navigation/Nav'
+import NavItem from 'inferno-bootstrap/lib/Navigation/NavItem'
+import NavLink from 'inferno-bootstrap/lib/Navigation/NavLink'
+import Form from 'inferno-bootstrap/lib/Form/Form'
+import FormGroup from 'inferno-bootstrap/lib/Form/FormGroup'
+import Label from 'inferno-bootstrap/lib/Form/Label'
+import Input from 'inferno-bootstrap/lib/Form/Input'
 
 class AppLayout extends Component {
   constructor(props) {
@@ -91,15 +93,26 @@ class AppLayout extends Component {
   }
 }
 
+function StartPage (props) {
+  return (<Page>Blank!</Page>)
+}
+
+function ComponentsPage (props) {
+  return (<Page>Blank!</Page>)
+}
+
 if (typeof window !== 'undefined') {
-  const browserHistory = createBrowserHistory()
+  const browserHistory = createBrowserHistory.default ? createBrowserHistory.default() : createBrowserHistory()
 
   const appRoutes = (
     <Router history={ browserHistory }>
       <Route path="/style" component={ AppLayout }>
-        <IndexRoute component={ BasicPage } />
+        <IndexRoute component={ StartPage } />
         <Route path="/components">
-          <IndexRoute component={ BasicPage } />
+          <IndexRoute component={ ComponentsPage } />
+        </Route>
+        <Route path="/components">
+          <IndexRoute component={ ComponentsPage } />
           <Route path="/basic" component={BasicPage} />
           <Route path="/form" component={FormPage} />
           <Route path="/modal" component={ModalPage} />

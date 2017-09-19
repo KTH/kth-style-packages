@@ -14,8 +14,8 @@
     "//": "Gulp installs css and javascript",
     "test": "echo \"ok\"",
     "docker": "npm install --development && npm run build && npm prune --production",
-    "build": "rm -rf ./docs/dist && node_modules/.bin/webpack --config ./webpack.config.js",
-    "build-dev": "rm -rf ./docs/dist && node_modules/.bin/webpack --watch --config ./webpack.config.js",
+    "build": "node_modules/.bin/webpack --config ./webpack.config.js",
+    "build-dev": "node_modules/.bin/webpack --watch --config ./webpack.config.js",
     "start": "NODE_ENV=production node server/server.js"
   },
   "dependencies": {
@@ -26,6 +26,7 @@
     "express": "^4.15.4",
     "express-handlebars": "^3.0.0",
     "gulp-header": "^1.8.9",
+    "inferno-bootstrap": "^0.2.4",
     "kth-node-access-log": "git+https://github.com/KTH/kth-node-access-log.git#v1.0.0",
     "kth-node-configuration": "^1.4.5",
     "kth-node-express-routing": "^0.3.2",
