@@ -3,8 +3,8 @@ import Component from 'inferno-component'
 
 import Button from '../../../lib/Button.jsx'
 import Popover from '../../../lib/Popover.jsx'
-import PopoverTitle from '../../../lib/PopoverHeader.jsx'
-import PopoverContent from '../../../lib/PopoverBody.jsx'
+import PopoverHeader from '../../../lib/PopoverHeader.jsx'
+import PopoverBody from '../../../lib/PopoverBody.jsx'
 
 export default function BasicPage (props) {
   return (

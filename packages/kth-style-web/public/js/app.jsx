@@ -1,6 +1,6 @@
 import Inferno from 'inferno'
 import Component from 'inferno-component'
-require('inferno-devtools')
+// require('inferno-devtools')
 import { Router, Route, Redirect, IndexRoute, Link } from 'inferno-router'
 import createBrowserHistory from 'history/createBrowserHistory'
 
@@ -58,34 +58,34 @@ class AppLayout extends Component {
   getChildContext() {
     return {
       pageLinks: [
-        { link: "/style/layout", title: "Components", subHeader: true},
-        { link: "/style/layout/overview", title: "Overview"},
-        { link: "/style/layout/grid", title: "Grid"},
-        { link: "/style/layout/media_object", title: "Media Object"},
-        { link: "/style/layout/utilities", title: "Utilities"},
+        { link: "/style/api/layout", title: "Components", subHeader: true},
+        { link: "/style/api/layout/overview", title: "Overview"},
+        { link: "/style/api/layout/grid", title: "Grid"},
+        { link: "/style/api/layout/media_object", title: "Media Object"},
+        { link: "/style/api/layout/utilities", title: "Utilities"},
         
-        { link: "/style/content", title: "Content", subHeader: true},
-        { link: "/style/content/typography", title: "Typography"},
+        { link: "/style/api/content", title: "Content", subHeader: true},
+        { link: "/style/api/content/typography", title: "Typography"},
         
-        { link: "/style/components", title: "Components", subHeader: true},
-        { link: "/style/components/alerts", title: "Alerts"},
-        { link: "/style/components/badge", title: "Badge"},
-        { link: "/style/components/breadcrumb", title: "Breadcrumb"},
-        { link: "/style/components/button_group", title: "Button Group"},
-        { link: "/style/components/buttons", title: "Buttons"},
-        { link: "/style/components/collapse", title: "Collapse"},
-        { link: "/style/components/dropdowns", title: "Dropdowns"},
-        { link: "/style/components/forms", title: "Forms"},
-        { link: "/style/components/input_group", title: "Input Group"},
-        { link: "/style/components/jumbotron", title: "Jumbotron"},
-        { link: "/style/components/list_group", title: "List Group"},
-        { link: "/style/components/modal", title: "Modal"},
-        { link: "/style/components/navbar", title: "Navbar"},
-        { link: "/style/components/navs", title: "Navs"},
-        { link: "/style/components/pagination", title: "Pagination"},
-        { link: "/style/components/popovers", title: "Popovers"},
-        { link: "/style/components/progress", title: "Progress"},
-        { link: "/style/components/tooltips", title: "Tooltips"}        
+        { link: "/style/api/components", title: "Components", subHeader: true},
+        { link: "/style/api/components/alerts", title: "Alerts"},
+        { link: "/style/api/components/badge", title: "Badge"},
+        { link: "/style/api/components/breadcrumb", title: "Breadcrumb"},
+        { link: "/style/api/components/button_group", title: "Button Group"},
+        { link: "/style/api/components/buttons", title: "Buttons"},
+        { link: "/style/api/components/collapse", title: "Collapse"},
+        { link: "/style/api/components/dropdowns", title: "Dropdowns"},
+        { link: "/style/api/components/forms", title: "Forms"},
+        { link: "/style/api/components/input_group", title: "Input Group"},
+        { link: "/style/api/components/jumbotron", title: "Jumbotron"},
+        { link: "/style/api/components/list_group", title: "List Group"},
+        { link: "/style/api/components/modal", title: "Modal"},
+        { link: "/style/api/components/navbar", title: "Navbar"},
+        { link: "/style/api/components/navs", title: "Navs"},
+        { link: "/style/api/components/pagination", title: "Pagination"},
+        { link: "/style/api/components/popovers", title: "Popovers"},
+        { link: "/style/api/components/progress", title: "Progress"},
+        { link: "/style/api/components/tooltips", title: "Tooltips"}        
       ],
       viewState: this.state
     }
@@ -115,7 +115,7 @@ class AppLayout extends Component {
               <NavLink href="#">Sidlayout</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/style/components">Komponenter</NavLink>
+              <NavLink href="/style/api/components">Komponenter</NavLink>
             </NavItem>
             <NavItem>
               <Form className="form-inline MainMenu-Form">
@@ -154,38 +154,40 @@ if (typeof window !== 'undefined') {
     <Router history={ browserHistory }>
       <Route path="/style" component={ AppLayout }>
         <IndexRoute component={ StartPage } />
-        <Route path="/components">
-          <IndexRoute component={ AlertsPage } />
-          <Route path="/alerts" component={ AlertsPage } />
-          <Route path="/badge" component={ BadgePage } />
-          <Route path="/breadcrumb" component={ BreadcrumbPage } />
-          <Route path="/button_group" component={ ButtonGroupPage } />
-          <Route path="/buttons" component={ ButtonsPage } />
-          <Route path="/collapse" component={ CollapsePage } />
-          <Route path="/dropdowns" component={ DropdownsPage } />
-          <Route path="/forms" component={ FormsPage } />
-          <Route path="/input_group" component={ InputGroupPage } /> 
-          <Route path="/jumbotron" component={ JumbotronPage } />
-          <Route path="/list_group" component={ ListGroupPage } />
-          <Route path="/modal" component={ ModalPage } />
-          <Route path="/navbar" component={ NavbarPage } />
-          <Route path="/navs" component={ NavsPage } />
-          <Route path="/pagination" component={ PaginationPage } /> 
-          <Route path="/popovers" component={ PopoversPage } />
-          <Route path="/progress" component={ ProgressPage } />
-          <Route path="/tooltips" component={ TooltipsPage } />
+        <Route path="/api">
+          <Route path="/components">
+            <IndexRoute component={ AlertsPage } />
+            <Route path="/alerts" component={ AlertsPage } />
+            <Route path="/badge" component={ BadgePage } />
+            <Route path="/breadcrumb" component={ BreadcrumbPage } />
+            <Route path="/button_group" component={ ButtonGroupPage } />
+            <Route path="/buttons" component={ ButtonsPage } />
+            <Route path="/collapse" component={ CollapsePage } />
+            <Route path="/dropdowns" component={ DropdownsPage } />
+            <Route path="/forms" component={ FormsPage } />
+            <Route path="/input_group" component={ InputGroupPage } /> 
+            <Route path="/jumbotron" component={ JumbotronPage } />
+            <Route path="/list_group" component={ ListGroupPage } />
+            <Route path="/modal" component={ ModalPage } />
+            <Route path="/navbar" component={ NavbarPage } />
+            <Route path="/navs" component={ NavsPage } />
+            <Route path="/pagination" component={ PaginationPage } /> 
+            <Route path="/popovers" component={ PopoversPage } />
+            <Route path="/progress" component={ ProgressPage } />
+            <Route path="/tooltips" component={ TooltipsPage } />
+          </Route>
+          <Route path="/layout">
+            <IndexRoute component={ OverviewPage } />
+            <Route path="/overview" component={ OverviewPage } />
+            <Route path="/grid" component={ GridPage } />
+            <Route path="/media_object" component={ MediaObjectPage } />
+            <Route path="/utilities" component={ UtilitiesPage } />        
+          </Route>
+          <Route path="/content">
+            <IndexRoute component={ TypographyPage } />
+            <Route path="/typography" component={ TypographyPage } />
+          </Route>
         </Route>
-      </Route>
-      <Route path="/layout">
-        <IndexRoute component={ OverviewPage } />
-        <Route path="/overview" component={ OverviewPage } />
-        <Route path="/grid" component={ GridPage } />
-        <Route path="/media_object" component={ MediaObjectPage } />
-        <Route path="/utilities" component={ UtilitiesPage } />        
-      </Route>
-      <Route path="/content">
-        <IndexRoute component={ TypographyPage } />
-        <Route path="/typography" component={ TypographyPage } />
       </Route>
       <Redirect from="/*" to="/style" />
     </Router>

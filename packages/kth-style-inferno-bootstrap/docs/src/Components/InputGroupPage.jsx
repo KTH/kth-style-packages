@@ -1,10 +1,14 @@
 import { Page, Code, Section, Stage, Scene, Narrative } from '../components.jsx'
 
-export default function BasicPage (props) {
+export default function InputGroupPage (props) {
   return (
     <Page>
 
-      TODO, Compare with <a href="https://getbootstrap.com/docs/4.0/components/input-group/">Bootstrap</a>.
+      <Section title="TODO">
+        <Narrative>
+          TODO, Compare with <a href="https://getbootstrap.com/docs/4.0/components/input-group/">Bootstrap</a>.
+        </Narrative>
+      </Section>
 
     </Page>
   )
