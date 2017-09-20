@@ -22,9 +22,9 @@ const prismjsDir = _getModulePath('prismjs')
 const staticDir = path.resolve(__dirname, '../dist')
 console.log(staticDir)
 
-app.use('/kth-style', express.static(kthStyleDir + '/dist'))
-app.use('/prism', express.static(prismjsDir + '/themes'))
-app.use('/static', express.static(staticDir))
+app.use('/style/kth-style', express.static(kthStyleDir + '/dist'))
+app.use('/style/prism', express.static(prismjsDir + '/themes'))
+app.use('/style/static', express.static(staticDir))
 app.use((req, res) => {
   res.sendFile(path.resolve(__dirname, '../public/index.html'))
 })
