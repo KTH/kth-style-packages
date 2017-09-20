@@ -38,6 +38,9 @@ const { webpack, moveResources, sass, vendor, clean } = require('kth-node-build-
 gulp.task('transpileSass', () => sass())
 
 /* Put any addintional helper tasks here */
+gulp.task('moveStatic', () => {
+  return gulp.src('./public/img/**').pipe(gulp.dest('dist/img'))
+})
 
 /**
  *
@@ -47,7 +50,7 @@ gulp.task('transpileSass', () => sass())
 
 gulp.task('clean', clean)
 
-gulp.task('build', ['transpileSass'], () => sass())
+gulp.task('build', ['transpileSass', 'moveStatic'], () => sass())
 
 gulp.task('watch', ['build'], function () {
   gulp.watch(['./public/css/**/*.scss'], ['transpileSass'])

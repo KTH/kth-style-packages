@@ -14,9 +14,9 @@
     "//": "Gulp installs css and javascript",
     "test": "echo \"ok\"",
     "docker": "npm install --development && npm run build && npm prune --production",
-    "build": "node_modules/.bin/webpack --config ./webpack.config.js",
-    "build-dev": "node_modules/.bin/webpack --watch --config ./webpack.config.js",
-    "start": "NODE_ENV=production node server/server.js"
+    "build": "gulp build && node_modules/.bin/webpack --config ./webpack.config.js",
+    "build-dev": "gulp build && node_modules/.bin/webpack --watch --config ./webpack.config.js",
+    "start": "NODE_ENV=production node app.js"
   },
   "dependencies": {
     "bootstrap": "^4.0.0-alpha.6",
@@ -66,6 +66,7 @@
     "css-loader": "^0.28.4",
     "extract-text-webpack-plugin": "^2.1.2",
     "gulp": "^3.9.1",
+    "gulp-load-plugins": "^1.5.0",
     "history": "^4.6.3",
     "inferno": "^3.7.0",
     "inferno-component": "^3.7.0",

@@ -13,6 +13,9 @@ import FormGroup from 'inferno-bootstrap/lib/Form/FormGroup'
 import Label from 'inferno-bootstrap/lib/Form/Label'
 import Input from 'inferno-bootstrap/lib/Form/Input'
 
+/* KTH Style Web Pages and layouts */
+import StartPage from './StartPage.jsx'
+
 /* Components */
 import AlertsPage from 'kth-style-inferno-bootstrap/docs/src/Components/AlertsPage.jsx'
 import BadgePage from 'kth-style-inferno-bootstrap/docs/src/Components/BadgePage.jsx'
@@ -42,6 +45,12 @@ import UtilitiesPage from 'kth-style-inferno-bootstrap/docs/src/Layout/Utilities
 /* Typography */
 import TypographyPage from 'kth-style-inferno-bootstrap/docs/src/Typography/TypographyPage.jsx'
 
+
+/* Guidlines */
+import GuidelinesStartPage from './Guidelines/StartPage.jsx'
+
+/* PageLayout */
+import PageLayoutStartPage from './PageLayout/StartPage.jsx'
 
 class AppLayout extends Component {
   constructor(props) {
@@ -85,7 +94,9 @@ class AppLayout extends Component {
         { link: "/style/api/components/pagination", title: "Pagination"},
         { link: "/style/api/components/popovers", title: "Popovers"},
         { link: "/style/api/components/progress", title: "Progress"},
-        { link: "/style/api/components/tooltips", title: "Tooltips"}        
+        { link: "/style/api/components/tooltips", title: "Tooltips"},
+
+        
       ],
       viewState: this.state
     }
@@ -103,19 +114,21 @@ class AppLayout extends Component {
         <div className="Content">
           <Nav justified className="MainMenu">
             <NavItem>
-              <img className="MainMenu-Logo" src="/static/img/KTH_logo.png" />
-              <div className="MainMenu-BrandName">
+              <Link className="nav-link" to="/style">
+                <img className="MainMenu-Logo" src="/static/img/KTH_logo.png" />
+                <div className="MainMenu-BrandName">
                 KTH Style
-              </div>
+                </div>
+              </Link>
             </NavItem>
             <NavItem>
-              <NavLink href="#">Riktlinjer</NavLink>
+              <Link className="nav-link" to="/style/guidelines">Riktlinjer</Link>
             </NavItem>
             <NavItem>
-              <NavLink href="#">Sidlayout</NavLink>
+              <Link className="nav-link" to="/style/page-layout">Sidlayout</Link>
             </NavItem>
             <NavItem>
-              <NavLink href="/style/api/components">Komponenter</NavLink>
+              <Link className="nav-link" to="/style/api/components">Komponenter</Link>
             </NavItem>
             <NavItem>
               <Form className="form-inline MainMenu-Form">
@@ -141,11 +154,6 @@ class AppLayout extends Component {
   }
 }
 
-function StartPage (props) {
-  return (
-    <Page> TODO... </Page>
-  )
-}
 
 if (typeof window !== 'undefined') {
   const browserHistory = createBrowserHistory()
@@ -154,6 +162,15 @@ if (typeof window !== 'undefined') {
     <Router history={ browserHistory }>
       <Route path="/style" component={ AppLayout }>
         <IndexRoute component={ StartPage } />
+        
+        <Route path="/guidelines">
+          <IndexRoute component={ GuidelinesStartPage } />
+        </Route>
+        
+        <Route path="/page-layout">
+          <IndexRoute component={ PageLayoutStartPage } />
+        </Route>
+
         <Route path="/api">
           <Route path="/components">
             <IndexRoute component={ AlertsPage } />
