@@ -108,6 +108,9 @@ function newSmoothScrollVertTo(y, k) {
 function MainMenu(props) {
   return (
     <ul className="PageMenu nav flex-column">
+      <li class="nav-item">
+        <h4 className="SectionMenu-Header">API Reference</h4>
+      </li>
       {
         props.pageLinks.map((page) => {
           if (page.subHeader) {
@@ -134,7 +137,7 @@ function PageMenu(props) {
   return (
     <ul className="PageMenu nav flex-column">
       <li class="nav-item">
-        <h4 className="SectionMenu-Header">Page Sections</h4>  
+        <h4 className="SectionMenu-Header">Page Sections</h4>
       </li>
       {
         props.pageSections.sort((a, b) => a.title == b.title ? 0 : (a.title < b.title ? -1 : 1)).map((item) => {
