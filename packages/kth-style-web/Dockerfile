@@ -3,11 +3,12 @@ FROM kthse/kth-nodejs-web:2.3
 MAINTAINER KTH Webb "webmaster@kth.se"
 
 # Copy files used by Gulp.
-COPY ["config", "config"]
+#COPY ["config", "config"]
 COPY ["public", "public"]
-COPY ["i18n", "i18n"]
+#COPY ["i18n", "i18n"]
 COPY ["gulpfile.js", "gulpfile.js"]
 COPY ["package.json", "package.json"]
+COPY ["webpack.config.js", "webpack.config.js"]
 COPY ["app.js", "app.js"]
 COPY ["server", "server"]
 
