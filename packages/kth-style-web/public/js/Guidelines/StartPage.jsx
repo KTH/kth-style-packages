@@ -5,7 +5,7 @@ export default function DropdownsPage (props) {
     <Page>
 
       <h1>Riktlinjer</h1>
-      <img className="HeroImage" src="/static/img/Guidelines.png" />
+      <img className="HeroImage" src="/style/static/img/Guidelines.png" />
       
 
       <Section title="Introduktion">

@@ -115,7 +115,7 @@ class AppLayout extends Component {
           <Nav justified className="MainMenu">
             <NavItem>
               <Link className="nav-link" to="/style">
-                <img className="MainMenu-Logo" src="/static/img/KTH_logo.png" />
+                <img className="MainMenu-Logo" src="/style/static/img/KTH_logo.png" />
                 <div className="MainMenu-BrandName">
                 KTH Style
                 </div>
