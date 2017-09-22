@@ -84,6 +84,18 @@ body {
   margin-top: 1rem;
   color: black;
   font-weight: 700!important;
+
+  &-H2 {
+    color: black;
+    font-size: 1.2em;
+    font-weight: 700!important;
+  }
+
+  &-H3 {
+    margin-top: 1rem;
+    color: black;
+    font-weight: 700!important;
+  }
 }
 
 .PageLink {

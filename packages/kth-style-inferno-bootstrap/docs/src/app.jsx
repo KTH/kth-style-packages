@@ -56,16 +56,16 @@ class AppLayout extends Component {
   getChildContext() {
     return {
       pageLinks: [
-        { link: "/style/layout", title: "Components", subHeader: true},
+        { link: "/style/layout", title: "Components", header: "h3"},
         { link: "/style/layout/overview", title: "Overview"},
         { link: "/style/layout/grid", title: "Grid"},
         { link: "/style/layout/media_object", title: "Media Object"},
         { link: "/style/layout/utilities", title: "Utilities"},
         
-        { link: "/style/content", title: "Content", subHeader: true},
+        { link: "/style/content", title: "Content", header: "h3"},
         { link: "/style/content/typography", title: "Typography"},
         
-        { link: "/style/components", title: "Components", subHeader: true},
+        { link: "/style/components", title: "Components", header: "h3"},
         { link: "/style/components/alerts", title: "Alerts"},
         { link: "/style/components/badge", title: "Badge"},
         { link: "/style/components/breadcrumb", title: "Breadcrumb"},

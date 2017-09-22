@@ -16,41 +16,10 @@ import Input from 'inferno-bootstrap/lib/Form/Input'
 /* KTH Style Web Pages and layouts */
 import StartPage from './StartPage.jsx'
 
-/* Components */
-import AlertsPage from 'kth-style-inferno-bootstrap/docs/src/Components/AlertsPage.jsx'
-import BadgePage from 'kth-style-inferno-bootstrap/docs/src/Components/BadgePage.jsx'
-import BreadcrumbPage from 'kth-style-inferno-bootstrap/docs/src/Components/BreadcrumbPage.jsx'
-import ButtonGroupPage from 'kth-style-inferno-bootstrap/docs/src/Components/ButtonGroupPage.jsx'
-import ButtonsPage from 'kth-style-inferno-bootstrap/docs/src/Components/ButtonsPage.jsx'
-import CollapsePage from 'kth-style-inferno-bootstrap/docs/src/Components/CollapsePage.jsx'
-import DropdownsPage from 'kth-style-inferno-bootstrap/docs/src/Components/DropdownsPage.jsx'
-import FormsPage from 'kth-style-inferno-bootstrap/docs/src/Components/FormsPage.jsx'
-import InputGroupPage from 'kth-style-inferno-bootstrap/docs/src/Components/InputGroupPage.jsx'
-import JumbotronPage from 'kth-style-inferno-bootstrap/docs/src/Components/JumbotronPage.jsx'
-import ListGroupPage from 'kth-style-inferno-bootstrap/docs/src/Components/ListGroupPage.jsx'
-import ModalPage from 'kth-style-inferno-bootstrap/docs/src/Components/ModalPage.jsx'
-import NavbarPage from 'kth-style-inferno-bootstrap/docs/src/Components/NavbarPage.jsx'
-import NavsPage from 'kth-style-inferno-bootstrap/docs/src/Components/NavsPage.jsx'
-import PaginationPage from 'kth-style-inferno-bootstrap/docs/src/Components/PaginationPage.jsx'
-import PopoversPage from 'kth-style-inferno-bootstrap/docs/src/Components/PopoversPage.jsx'
-import ProgressPage from 'kth-style-inferno-bootstrap/docs/src/Components/ProgressPage.jsx'
-import TooltipsPage from 'kth-style-inferno-bootstrap/docs/src/Components/TooltipsPage.jsx'
+import componentPages from './Components'
+import guidelinesPages from './Guidelines'
+import pageLayoutPages from './PageLayout'
 
-/* Layout */
-import GridPage from 'kth-style-inferno-bootstrap/docs/src/Layout/GridPage.jsx'
-import MediaObjectPage from 'kth-style-inferno-bootstrap/docs/src/Layout/MediaObjectPage.jsx'
-import OverviewPage from 'kth-style-inferno-bootstrap/docs/src/Layout/OverviewPage.jsx'
-import UtilitiesPage from 'kth-style-inferno-bootstrap/docs/src/Layout/UtilitiesPage.jsx'
-
-/* Typography */
-import TypographyPage from 'kth-style-inferno-bootstrap/docs/src/Typography/TypographyPage.jsx'
-
-
-/* Guidlines */
-import GuidelinesStartPage from './Guidelines/StartPage.jsx'
-
-/* PageLayout */
-import PageLayoutStartPage from './PageLayout/StartPage.jsx'
 
 class AppLayout extends Component {
   constructor(props) {
@@ -65,41 +34,37 @@ class AppLayout extends Component {
   }
   
   getChildContext() {
-    return {
-      pageLinks: [
-        { link: "/style/api/layout", title: "Components", subHeader: true},
-        { link: "/style/api/layout/overview", title: "Overview"},
-        { link: "/style/api/layout/grid", title: "Grid"},
-        { link: "/style/api/layout/media_object", title: "Media Object"},
-        { link: "/style/api/layout/utilities", title: "Utilities"},
-        
-        { link: "/style/api/content", title: "Content", subHeader: true},
-        { link: "/style/api/content/typography", title: "Typography"},
-        
-        { link: "/style/api/components", title: "Components", subHeader: true},
-        { link: "/style/api/components/alerts", title: "Alerts"},
-        { link: "/style/api/components/badge", title: "Badge"},
-        { link: "/style/api/components/breadcrumb", title: "Breadcrumb"},
-        { link: "/style/api/components/button_group", title: "Button Group"},
-        { link: "/style/api/components/buttons", title: "Buttons"},
-        { link: "/style/api/components/collapse", title: "Collapse"},
-        { link: "/style/api/components/dropdowns", title: "Dropdowns"},
-        { link: "/style/api/components/forms", title: "Forms"},
-        { link: "/style/api/components/input_group", title: "Input Group"},
-        { link: "/style/api/components/jumbotron", title: "Jumbotron"},
-        { link: "/style/api/components/list_group", title: "List Group"},
-        { link: "/style/api/components/modal", title: "Modal"},
-        { link: "/style/api/components/navbar", title: "Navbar"},
-        { link: "/style/api/components/navs", title: "Navs"},
-        { link: "/style/api/components/pagination", title: "Pagination"},
-        { link: "/style/api/components/popovers", title: "Popovers"},
-        { link: "/style/api/components/progress", title: "Progress"},
-        { link: "/style/api/components/tooltips", title: "Tooltips"},
-
-        
-      ],
+    let outp = {
       viewState: this.state
     }
+
+    if (this.context.router.url.startsWith('/style/guidelines')) {
+      outp['pageLinks'] = guidelinesPages.map((item) => {
+        return {
+          link: `/style/guidelines${item.path}`,
+          title: item.title,
+          header: item.header
+        }
+      })
+    } else if (this.context.router.url.startsWith('/style/page-layout')) {
+      outp['pageLinks'] = pageLayoutPages.map((item) => {
+        return {
+          link: `/style/page-layout${item.path}`,
+          title: item.title,
+          header: item.header
+        }
+      })
+    } else {
+      outp['pageLinks'] = componentPages.map((item) => {
+        return {
+          link: `/style/api${item.path}`,
+          title: item.title,
+          header: item.header
+        }
+      })
+    }
+
+    return outp
   }
 
   didUpdate (e) {
@@ -128,7 +93,7 @@ class AppLayout extends Component {
               <Link className="nav-link" to="/style/page-layout">Sidlayout</Link>
             </NavItem>
             <NavItem>
-              <Link className="nav-link" to="/style/api/components">Komponenter</Link>
+              <Link className="nav-link" to="/style/api">Komponenter</Link>
             </NavItem>
             <NavItem>
               <Form className="form-inline MainMenu-Form">
@@ -154,7 +119,6 @@ class AppLayout extends Component {
   }
 }
 
-
 if (typeof window !== 'undefined') {
   const browserHistory = createBrowserHistory()
 
@@ -164,46 +128,33 @@ if (typeof window !== 'undefined') {
         <IndexRoute component={ StartPage } />
         
         <Route path="/guidelines">
-          <IndexRoute component={ GuidelinesStartPage } />
+          { guidelinesPages.map((item) => {
+            if (item.path === '/') {
+              return <IndexRoute component={item.component} />
+            } else {
+              return <Route path={item.path} component={item.component} />
+            }
+          })}
         </Route>
         
         <Route path="/page-layout">
-          <IndexRoute component={ PageLayoutStartPage } />
+          { pageLayoutPages.map((item) => {
+            if (item.path === '/') {
+              return <IndexRoute component={item.component} />
+            } else {
+              return <Route path={item.path} component={item.component} />
+            }
+          })}
         </Route>
 
         <Route path="/api">
-          <Route path="/components">
-            <IndexRoute component={ AlertsPage } />
-            <Route path="/alerts" component={ AlertsPage } />
-            <Route path="/badge" component={ BadgePage } />
-            <Route path="/breadcrumb" component={ BreadcrumbPage } />
-            <Route path="/button_group" component={ ButtonGroupPage } />
-            <Route path="/buttons" component={ ButtonsPage } />
-            <Route path="/collapse" component={ CollapsePage } />
-            <Route path="/dropdowns" component={ DropdownsPage } />
-            <Route path="/forms" component={ FormsPage } />
-            <Route path="/input_group" component={ InputGroupPage } /> 
-            <Route path="/jumbotron" component={ JumbotronPage } />
-            <Route path="/list_group" component={ ListGroupPage } />
-            <Route path="/modal" component={ ModalPage } />
-            <Route path="/navbar" component={ NavbarPage } />
-            <Route path="/navs" component={ NavsPage } />
-            <Route path="/pagination" component={ PaginationPage } /> 
-            <Route path="/popovers" component={ PopoversPage } />
-            <Route path="/progress" component={ ProgressPage } />
-            <Route path="/tooltips" component={ TooltipsPage } />
-          </Route>
-          <Route path="/layout">
-            <IndexRoute component={ OverviewPage } />
-            <Route path="/overview" component={ OverviewPage } />
-            <Route path="/grid" component={ GridPage } />
-            <Route path="/media_object" component={ MediaObjectPage } />
-            <Route path="/utilities" component={ UtilitiesPage } />        
-          </Route>
-          <Route path="/content">
-            <IndexRoute component={ TypographyPage } />
-            <Route path="/typography" component={ TypographyPage } />
-          </Route>
+          { componentPages.map((item) => {
+            if (item.path === '/') {
+              return <IndexRoute component={item.component} />
+            } else {
+              return <Route path={item.path} component={item.component} />
+            }
+          })}
         </Route>
       </Route>
       <Redirect from="/*" to="/style" />
@@ -211,3 +162,9 @@ if (typeof window !== 'undefined') {
   )
   Inferno.render(appRoutes, document.getElementById('app'))
 }
+
+/*
+TODO: Generera kod-exempel i byggsteget så att vi kan välja mellan HTML-exempel och Inferno-exempel
+TODO: Slimma ner kodexempel
+TODO: Se till att vi börjar använda kth-style
+*/
