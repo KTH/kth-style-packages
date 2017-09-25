@@ -105,7 +105,11 @@ function newSmoothScrollVertTo(y, k) {
   })
 }
 
-function MainMenu(props) {
+function MainMenu(props, context) {
+  let currPath = context.router.url.split('/')
+  const tmpLen = currPath.length > 4 ? 4 : currPath.length
+  currPath = currPath.splice(0, tmpLen).join('/')
+
   return (
     <ul className="PageMenu nav flex-column">
       {
@@ -123,12 +127,15 @@ function MainMenu(props) {
                 <Link className="PageMenu-Header nav-link PageLink" to={page.link}>{page.title}</Link>
               </li> 
             )
-          } else {
+          } else if (page.link.startsWith(currPath) && currPath[currPath.length - 1] !== '/') {
+            // 
             return (
               <li class="nav-item">
                 <Link className="nav-link PageLink" to={page.link}>{page.title}</Link>
               </li> 
             )
+          } else {
+            return null
           }
         })
       }

@@ -61,8 +61,16 @@ body {
 }
 
 .PageMenuContainer {
-  max-width: 15rem;
-  width: 10%;
+  max-width: 18rem;
+  min-width: 18rem;
+
+  .nav-item {
+    background-color: #f4f4f4;
+
+    &:hover {
+      background-color: #fafafa;
+    }
+  }
 }
 
 .SectionMenuContainer {
@@ -89,12 +97,14 @@ body {
     color: black;
     font-size: 1.2em;
     font-weight: 700!important;
+    border-bottom: 2px solid #fff;
   }
 
   &-H3 {
     margin-top: 1rem;
     color: black;
     font-weight: 700!important;
+    border-bottom: 1px solid #fff;
   }
 }
 
