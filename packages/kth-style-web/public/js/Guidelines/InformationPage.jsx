@@ -15,26 +15,30 @@ export default function DropdownsPage (props) {
             <p>
                 Om du är intresserad, läs mer om <a href="https://www.kth.se/social/group/kth-style-guide/page/bakgrund-9/">bakgrund</a> till varför informationsrutorna ser ut och beter sig som det gör.
             </p>
-            <h2>Välj typ av information</h2>
+            <h2>Välj informationskomponent </h2>
             <table class="table">
               <thead class="thead-default">
                 <tr>
-                  <th>Namn</th>
-                  <th>Användning</th>
+                  <th>Komponent</th>
+                  <th>Situation</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td>Bekräfta lyckad aktivitet</td>
-                  <td>För att bekräfta att man lyckats utföra en tidigare handling</td>
+                  <td>Alert - Success</td>
+                  <td>Bekräfta att man lyckats utföra en handling</td>
                 </tr>
                 <tr>
-                  <td>Informera</td>
-                  <td>För att informera att något har förändrats på en sida eller annat som användaren behöver bli informerad om</td>
+                  <td>Alert - Information</td>
+                  <td>Informera om att något har förändrats på en sida eller annat som användaren behöver bli informerad om (men ej ha efterfrågat)</td>
+                </tr>
+                  <tr>
+                  <td>Modal – Information</td>
+                  <td>Ge ytterligare information när användaren efterfrågar det</td>
                 </tr>
                 <tr>
-                  <td>Ge felmeddelande</td>
-                  <td>För att informera om att något har gått fel</td>
+                  <td>Alert - ErrorMessage</td>
+                  <td>Ge ett felmeddelande</td>
                 </tr>
               </tbody>
             </table>
