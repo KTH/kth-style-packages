@@ -28,10 +28,10 @@ export default function () {
           <Code>
 {`<Card>
   <CardHeader>The Header</CardHeader>
-  <CardBlock>
+  <CardBody>
     <CardTitle>Special Title Treatment</CardTitle>
     <CardText>With supporting text below as a natural lead-in to additional content.</CardText>
-  </CardBlock>
+  </CardBody>
   <CardFooter className="text-right"><Button color="link">Go now...</Button></CardFooter>
 </Card>`}
           </Code>  

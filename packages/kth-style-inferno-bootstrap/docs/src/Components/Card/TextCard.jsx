@@ -29,11 +29,11 @@ export default function () {
           <Code>
 {`<Card>
   <CardImg top width="100%" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180" alt="Card image cap" />
-  <CardBlock>
+  <CardBody>
     <CardTitle>Card title</CardTitle>
     <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
     <Button>Button</Button>
-  </CardBlock>
+  </CardBody>
 </Card>`}
           </Code>  
         </Scene>
@@ -41,30 +41,30 @@ export default function () {
         <h3>Card with different design</h3>
         <Scene>
           <Card>
-            <CardBlock>
+            <CardBody>
               <CardTitle>Card title</CardTitle>
               <CardSubtitle>Card subtitle goes here</CardSubtitle>
-            </CardBlock>
+            </CardBody>
             <img width="100%" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180" alt="Card image cap" />
-            <CardBlock>
+            <CardBody>
               <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
               <CardLink href="#">Card Link</CardLink>
               <CardLink href="#">Another Link</CardLink>
-            </CardBlock>
+            </CardBody>
           </Card>
 
           <Code>
 {`<Card>
-  <CardBlock>
+  <CardBody>
     <CardTitle>Card title</CardTitle>
     <CardSubtitle>Card subtitle goes here</CardSubtitle>
-  </CardBlock>
+  </CardBody>
   <img width="100%" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180" alt="Card image cap" />
-  <CardBlock>
+  <CardBody>
     <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
     <CardLink href="#">Card Link</CardLink>
     <CardLink href="#">Another Link</CardLink>
-  </CardBlock>
+  </CardBody>
 </Card>`}
           </Code>  
         </Scene>  
