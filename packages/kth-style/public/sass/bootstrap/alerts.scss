@@ -38,8 +38,6 @@
   }
 }
 
-
-
 @mixin message-icons-base($color) {
   font-family: 'kth-style-icons';
   font-size: 1.8rem;
@@ -58,7 +56,7 @@
   margin-bottom: 0;
 } 
 
-.alert-info {
+.alert-info, .alert-warning {
   @extend .message-base;
   background-color: $infoYellow;
   border: solid 1px $infoYellowBorder;
