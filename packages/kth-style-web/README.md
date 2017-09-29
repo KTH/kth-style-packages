@@ -128,3 +128,4 @@ $ npm show kth-style versions
 - buttons.hb - secondary-knappen anbänder fel klass? Default?
 - Mobile
   - Storlek på knappar bör tänkas igenom. Fullbredd?
+
