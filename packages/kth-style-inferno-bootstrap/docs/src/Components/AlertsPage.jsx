@@ -13,36 +13,21 @@ export default function BasicPage (props) {
         </Narrative>
         <Stage>
           <Scene>
-            <Section title="Alert_Success">
-              <Narrative>
-                <h3>Alert Success</h3>
-                <Alert color="success">
-                  <p>Some cool text in a <b>success</b> alert box!</p>
-                </Alert>
-              </Narrative>
-            </Section>
-            <Section title="Alert_Warning">
-              <Narrative>
-                <h3>Alert Information</h3>
-                <Alert color="warning">
-                  <p>Some cool text in a <b>warning</b> alert box!</p>
-                </Alert>
-              </Narrative>
-            </Section>
-            <Section title="Alert_Danger">
-              <Narrative>
-                <h3>Alert Error</h3>
-                <Alert color="danger">
-                  <p>Some cool text in a <b>danger</b> alert box!</p>
-                </Alert>
-              </Narrative>
-            </Section>
+            <Alert color="success">
+              <p>Some cool text in a <b>success</b> alert box!</p>
+            </Alert>
+            <Alert color="info">
+              <p>Some cool text in a <b>info</b> alert box!</p>
+            </Alert>
+            <Alert color="danger">
+              <p>Some cool text in a <b>danger</b> alert box!</p>
+            </Alert>
             <Code>
 {`<Alert color="success">
   <p>Some cool text in a <b>success</b> alert box!</p>
   </Alert>
-  <Alert color="warning">
-  <p>Some cool text in a <b>warning</b> alert box!</p>
+  <Alert color="info">
+  <p>Some cool text in a <b>info</b> alert box!</p>
   </Alert>
   <Alert color="danger">
   <p>Some cool text in a <b>danger</b> alert box!</p>
@@ -88,12 +73,12 @@ export default function BasicPage (props) {
         <Stage>
           <h3>Standard alert box</h3>
           <Scene>
-            <Alert color="warning">
-              <p>Some cool text in a <b>warning</b> alert box!</p>
+            <Alert color="info">
+              <p>Some cool text in a <b>info</b> alert box!</p>
             </Alert>
             <Code>
-{`<Alert color="warning">
-  <p>Some cool text in a <b>warning</b> alert box!</p>
+{`<Alert color="info">
+  <p>Some cool text in a <b>info</b> alert box!</p>
   </Alert>`}
             </Code>
           </Scene>
