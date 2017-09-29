@@ -10,6 +10,7 @@ import BadgePage from './Components/BadgePage.jsx'
 import BreadcrumbPage from './Components/BreadcrumbPage.jsx'
 import ButtonGroupPage from './Components/ButtonGroupPage.jsx'
 import ButtonsPage from './Components/ButtonsPage.jsx'
+import CardPage from './Components/CardPage.jsx'
 import CollapsePage from './Components/CollapsePage.jsx'
 import DropdownsPage from './Components/DropdownsPage.jsx'
 import FormsPage from './Components/FormsPage.jsx'
@@ -71,6 +72,7 @@ class AppLayout extends Component {
         { link: "/style/components/breadcrumb", title: "Breadcrumb"},
         { link: "/style/components/button_group", title: "Button Group"},
         { link: "/style/components/buttons", title: "Buttons"},
+        { link: "/style/components/card", title: "Card"},
         { link: "/style/components/collapse", title: "Collapse"},
         { link: "/style/components/dropdowns", title: "Dropdowns"},
         { link: "/style/components/forms", title: "Forms"},
@@ -151,6 +153,7 @@ if (typeof window !== 'undefined') {
           <Route path="/breadcrumb" component={ BreadcrumbPage } />
           <Route path="/button_group" component={ ButtonGroupPage } />
           <Route path="/buttons" component={ ButtonsPage } />
+          <Route path="/card" component={ CardPage } />
           <Route path="/collapse" component={ CollapsePage } />
           <Route path="/dropdowns" component={ DropdownsPage } />
           <Route path="/forms" component={ FormsPage } />
