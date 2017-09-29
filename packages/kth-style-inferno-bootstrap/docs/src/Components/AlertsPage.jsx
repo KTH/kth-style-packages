@@ -10,12 +10,6 @@ export default function BasicPage (props) {
       <Section title="Alerts">
         <Narrative>
           <p>Provide contextual feedback messages for typical user actions with the handful of available and flexible alert messages.</p>
-          <UXComment>
-            <h2>Konsten att välja en alert-box är en konst. Du ska tänka på en massa olika saker.</h2>
-            <p>Konsten att välja en alert-box. Du ska tänka på en massa olika saker.</p>
-          </UXComment>
-          <UXComment>Konsten att välja en alert-box. Du ska tänka på en massa olika saker.</UXComment>
-          <UXComment>Konsten att välja en alert-box. Du ska tänka på en massa olika saker.</UXComment>
         </Narrative>
         <Stage>
           <h3>Standard alert box</h3>
@@ -23,11 +17,6 @@ export default function BasicPage (props) {
             <Alert color="success">
               <p>Some cool text in a <b>success</b> alert box!</p>
             </Alert>
-            <UXComment>Du ska tänka på en massa olika saker <a href="www.kth.se">läs mer...</a></UXComment>
-            <UXComment>
-              <h2>Konsten att välja en alert-box. Du ska tänka på en massa olika saker.</h2>
-              <p>Konsten att välja en alert-box. Du ska tänka på en massa olika saker.</p>
-            </UXComment>
             <Alert color="warning">
               <p>Some cool text in a <b>warning</b> alert box!</p>
             </Alert>
@@ -77,7 +66,64 @@ export default function BasicPage (props) {
           </Scene>
         </Stage>
       </Section>
+      
+      <Section title="Information Alert">
+        <Narrative>
+          <p>Provide contextual feedback messages for typical user actions with the handful of available and flexible alert messages.</p>
+        </Narrative>
+        <Stage>
+          <h3>Standard alert box</h3>
+          <Scene>
+            <Alert color="warning">
+              <p>Some cool text in a <b>warning</b> alert box!</p>
+            </Alert>
+            <Code>
+{`<Alert color="warning">
+  <p>Some cool text in a <b>warning</b> alert box!</p>
+  </Alert>`}
+            </Code>
+          </Scene>
+        </Stage>
+      </Section>
+      
+      <Section title="Error Alert">
+        <Narrative>
+          <p>Provide contextual feedback messages for typical user actions with the handful of available and flexible alert messages.</p>
+        </Narrative>
+        <Stage>
+          <h3>Standard alert box</h3>
+          <Scene>
+            <Alert color="danger">
+              <p>Some cool text in a <b>danger</b> alert box!</p>
+            </Alert>
+            <Code>
+{`<Alert color="danger">
+  <p>Some cool text in a <b>danger</b> alert box!</p>
+</Alert>`}
+            </Code>
+          </Scene>
+        </Stage>
+      </Section>  
 
+      <Section title="Success Alert">
+        <Narrative>
+          <p>Provide contextual feedback messages for typical user actions with the handful of available and flexible alert messages.</p>
+        </Narrative>
+        <Stage>
+          <h3>Standard alert box</h3>
+          <Scene>
+            <Alert color="success">
+              <p>Some cool text in a <b>success</b> alert box!</p>
+            </Alert>
+            <Code>
+{`<Alert color="success">
+  <p>Some cool text in a <b>success</b> alert box!</p>
+  </Alert>`}
+            </Code>
+          </Scene>
+        </Stage>
+      </Section>
+      
     </Page>
   )
 }
