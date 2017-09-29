@@ -12,17 +12,31 @@ export default function BasicPage (props) {
           <p>Provide contextual feedback messages for typical user actions with the handful of available and flexible alert messages.</p>
         </Narrative>
         <Stage>
-          <h3>Standard alert box</h3>
           <Scene>
-            <Alert color="success">
-              <p>Some cool text in a <b>success</b> alert box!</p>
-            </Alert>
-            <Alert color="warning">
-              <p>Some cool text in a <b>warning</b> alert box!</p>
-            </Alert>
-            <Alert color="danger">
-              <p>Some cool text in a <b>danger</b> alert box!</p>
-            </Alert>
+            <Section title="Alert_Success">
+              <Narrative>
+                <h3>Alert Success</h3>
+                <Alert color="success">
+                  <p>Some cool text in a <b>success</b> alert box!</p>
+                </Alert>
+              </Narrative>
+            </Section>
+            <Section title="Alert_Warning">
+              <Narrative>
+                <h3>Alert Information</h3>
+                <Alert color="warning">
+                  <p>Some cool text in a <b>warning</b> alert box!</p>
+                </Alert>
+              </Narrative>
+            </Section>
+            <Section title="Alert_Danger">
+              <Narrative>
+                <h3>Alert Error</h3>
+                <Alert color="danger">
+                  <p>Some cool text in a <b>danger</b> alert box!</p>
+                </Alert>
+              </Narrative>
+            </Section>
             <Code>
 {`<Alert color="success">
   <p>Some cool text in a <b>success</b> alert box!</p>
