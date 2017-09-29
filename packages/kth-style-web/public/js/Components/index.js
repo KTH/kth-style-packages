@@ -4,6 +4,7 @@ import BadgePage from 'kth-style-inferno-bootstrap/docs/src/Components/BadgePage
 import BreadcrumbPage from 'kth-style-inferno-bootstrap/docs/src/Components/BreadcrumbPage.jsx'
 import ButtonGroupPage from 'kth-style-inferno-bootstrap/docs/src/Components/ButtonGroupPage.jsx'
 import ButtonsPage from 'kth-style-inferno-bootstrap/docs/src/Components/ButtonsPage.jsx'
+import CardPage from 'kth-style-inferno-bootstrap/docs/src/Components/CardPage.jsx'
 import CollapsePage from 'kth-style-inferno-bootstrap/docs/src/Components/CollapsePage.jsx'
 import DropdownsPage from 'kth-style-inferno-bootstrap/docs/src/Components/DropdownsPage.jsx'
 import FormsPage from 'kth-style-inferno-bootstrap/docs/src/Components/FormsPage.jsx'
@@ -48,6 +49,7 @@ const pages = [
   { path: "/components/breadcrumb", title: "Breadcrumb", component: BreadcrumbPage},
   { path: "/components/button_group", title: "Button Group", component: ButtonGroupPage},
   { path: "/components/buttons", title: "Buttons", component: ButtonsPage},
+  { path: "/components/card", title: "Card", component: CardPage},
   { path: "/components/collapse", title: "Collapse", component: CollapsePage},
   { path: "/components/dropdowns", title: "Dropdowns", component: DropdownsPage},
   { path: "/components/forms", title: "Forms", component: FormsPage},
