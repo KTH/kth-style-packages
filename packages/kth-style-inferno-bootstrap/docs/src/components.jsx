@@ -7,12 +7,18 @@ import { Animated } from 'inferno-animation'
 
 export class Section extends Component {
   componentDidMount() {
-    this.context.addSection(this.props.title, this.props.title.toLowerCase())
+    this.context.addSection(this.props.title, this._createId(this.props.title))
+  }
+
+  _createId(title) {
+    // We need to convert titles to reasonable id
+    return title.toLowerCase().replace(/\s/g, '_').replace(/[^a-öA-Ö0-9\s]/g, '').replace(/[åä]/g, 'a').replace(/[ö]/g, 'o')
+
   }
 
   render({ title, children }) {
     return (
-      <div class={classnames(this.props.className, "ExampleSection")} id={this.props.title.toLowerCase()}>
+      <div class={classnames(this.props.className, "ExampleSection")} id={this._createId(this.props.title)}>
         {title && <h2>{title}</h2>}
         {children}
       </div>
