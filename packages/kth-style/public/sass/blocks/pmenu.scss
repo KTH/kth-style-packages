@@ -3,8 +3,7 @@
 
 @import "../common/icons.scss";
 
-//progress icons
-
+//Course filter 
 .nav-filter .nav-item {
     a {
         color: #5E5E5E;
@@ -27,6 +26,7 @@
     }
 }
 
+//Cards
 .course-card, .program-card {
     padding: .6em 0;
     max-width: 35em;
@@ -82,6 +82,8 @@
     }
 }
 
+//Schedule lists 
+
 .event-card {
     margin: 1em 0;
     border-radius: .25em;
@@ -104,23 +106,6 @@
     margin-right: 0.5em;
     margin-left: 0.2em;
     vertical-align: middle;
-}
-
-.course-pie-25::before {
-    @include course-pie-base();
-    content: url('../img/kth-style/icons/clock_25.svg');
-}
-.course-pie-50::before {
-    @include course-pie-base();    
-    content: url('../img/kth-style/icons/clock_50.svg');
-}
-.course-pie-75::before {
-    @include course-pie-base();
-    content: url('../img/kth-style/icons/clock_75.svg');
-}
-.course-pie-100::before {
-    @include course-pie-base();    
-    content: url('../img/kth-style/icons/clock_100.svg');
 }
 
 .course-pie-grey-25::before {

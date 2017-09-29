@@ -58,7 +58,7 @@
   margin-bottom: 0;
 } 
 
-.alert-warning {
+.alert-info {
   @extend .message-base;
   background-color: $infoYellow;
   border: solid 1px $infoYellowBorder;
