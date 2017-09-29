@@ -20,7 +20,6 @@ import componentPages from './Components'
 import guidelinesPages from './Guidelines'
 import pageLayoutPages from './PageLayout'
 
-
 class AppLayout extends Component {
   constructor(props) {
     super(props)
