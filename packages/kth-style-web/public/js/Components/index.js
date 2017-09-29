@@ -29,7 +29,7 @@ import UtilitiesPage from 'kth-style-inferno-bootstrap/docs/src/Layout/Utilities
 import TypographyPage from 'kth-style-inferno-bootstrap/docs/src/Typography/TypographyPage.jsx'
 
 const pages = [
-  { path: "/", title: "Component Reference", header: 'h2', component: GridPage},
+  { path: "", title: "Component Reference", header: 'h2', component: GridPage},
 
   // Layout
   { path: "/layout", title: "Layout", header: "h3", component: OverviewPage},

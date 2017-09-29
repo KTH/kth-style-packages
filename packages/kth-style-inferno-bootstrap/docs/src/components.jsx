@@ -113,7 +113,7 @@ function newSmoothScrollVertTo(y, k) {
 
 function MainMenu(props, context) {
   let currPath = context.router.url.split('/')
-  const tmpLen = currPath.length > 4 ? 4 : currPath.length
+  const tmpLen = currPath.length > 3 ? currPath.length - 1 : currPath.length
   currPath = currPath.splice(0, tmpLen).join('/')
 
   return (
@@ -123,22 +123,22 @@ function MainMenu(props, context) {
           if (page.header) {
             const header = page.header.toUpperCase()
             return (
-              <li class="nav-item">
+              <Animated el="li" class="nav-item" prefix="ContentAnimation">
                 <Link className={`PageMenu-Header-${header} nav-link PageLink`} to={page.link}>{page.title}</Link>
-              </li> 
+              </Animated> 
             )
           } else if (page.subHeader) {
             return (
-              <li class="nav-item">
+              <Animated el="li" class="nav-item" prefix="ContentAnimation">
                 <Link className="PageMenu-Header nav-link PageLink" to={page.link}>{page.title}</Link>
-              </li> 
+              </Animated> 
             )
           } else if (page.link.startsWith(currPath) && currPath[currPath.length - 1] !== '/') {
             // 
             return (
-              <li class="nav-item">
+              <Animated el="li" class="nav-item" prefix="ContentAnimation">
                 <Link className="nav-link PageLink" to={page.link}>{page.title}</Link>
-              </li> 
+              </Animated> 
             )
           } else {
             return null
