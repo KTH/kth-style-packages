@@ -10,28 +10,27 @@ export default function DropdownsPage (props) {
           <table class="table">
             <thead class="thead-default">
               <tr>
-                <th>Namn</th>
-                <th>Användning</th>
+                <th>Komponent             </th>
+                <th>Används för att</th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <td>Länk</td>
-                <td>För att leda vidare användaren till en annan del av webben</td>
+                <td>Leda vidare användaren till en annan del av webben</td>
               </tr>
               <tr>
                 <td>Knapp</td>
-                <td>För att initiera en aktivitet. Ett klick på en knapp får något att hända. Det kan vara att ett formulär man fyllt i skickas in eller att en sökning utförs. Nästan alltid är en del av händelsen att användaren kommer till en ny sida – men det måste hända mer än så.</td>
+                <td>Initiera en aktivitet. Ett klick på en knapp får något att hända. Det kan vara att ett formulär man fyllt i skickas in eller att en sökning utförs. Nästan alltid är en del av händelsen att användaren kommer till en ny sida – men det måste hända mer än så.</td>
               </tr>
               <tr>
-                <td><b>Knappar som länkar</b></td>
-                <td></td>
+               <b>Knappar som länkar</b>
               </tr>
               <tr>
-                <td>Knapp: Primary A</td>
+                <td>Link Button - Primary</td>
                 <td>
                  <p>
-                  Länk till en sida där man kan initiera en aktivitet.
+                  Länka till en sida där man kan initiera en aktivitet.
                  </p>
                  <h4>Tänk på att</h4>
                  <ul>
@@ -42,9 +41,9 @@ export default function DropdownsPage (props) {
                 </td>
               </tr>
               <tr>
-                <td>Knapp: Secondary A</td>
+                <td>Link Button - Menu A</td>
                 <td>
-                  För menyalternativ i form av länkar under en meny-knapp
+                  Lista menyalternativ i form av länkar under en meny-knapp
                 </td>
               </tr>
             </tbody>
