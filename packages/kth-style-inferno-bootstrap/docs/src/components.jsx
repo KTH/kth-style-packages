@@ -123,13 +123,13 @@ function MainMenu(props, context) {
           if (page.header) {
             const header = page.header.toUpperCase()
             return (
-              <Animated el="li" class="nav-item" prefix="ContentAnimation">
+              <li class="nav-item">
                 <Link className={`PageMenu-Header-${header} nav-link PageLink`} to={page.link}>{page.title}</Link>
               </Animated> 
             )
           } else if (page.subHeader) {
             return (
-              <Animated el="li" class="nav-item" prefix="ContentAnimation">
+              <li class="nav-item">
                 <Link className="PageMenu-Header nav-link PageLink" to={page.link}>{page.title}</Link>
               </Animated> 
             )
