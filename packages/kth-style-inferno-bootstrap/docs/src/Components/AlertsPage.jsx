@@ -66,12 +66,12 @@ export default function BasicPage (props) {
         </Stage>
       </Section>
       
-      <Section title="Alert_Information">
+      <Section title="Information Alert">
         <Narrative>
           <p>Provide contextual feedback messages for typical user actions with the handful of available and flexible alert messages.</p>
         </Narrative>
         <Stage>
-          <h3>Alert - Information</h3>
+          <h3>Standard alert box</h3>
           <Scene>
             <Alert color="info">
               <p>Some cool text in a <b>info</b> alert box!</p>
@@ -85,12 +85,12 @@ export default function BasicPage (props) {
         </Stage>
       </Section>
       
-      <Section title="Alert_Error">
+      <Section title="Error Alert">
         <Narrative>
           <p>Provide contextual feedback messages for typical user actions with the handful of available and flexible alert messages.</p>
         </Narrative>
         <Stage>
-          <h3>Alert - Error</h3>
+          <h3>Standard alert box</h3>
           <Scene>
             <Alert color="danger">
               <p>Some cool text in a <b>danger</b> alert box!</p>
@@ -104,12 +104,12 @@ export default function BasicPage (props) {
         </Stage>
       </Section>  
 
-      <Section title="Alert_Success">
+      <Section title="Success Alert">
         <Narrative>
           <p>Provide contextual feedback messages for typical user actions with the handful of available and flexible alert messages.</p>
         </Narrative>
         <Stage>
-          <h3>Alert - Success</h3>
+          <h3>Standard alert box</h3>
           <Scene>
             <Alert color="success">
               <p>Some cool text in a <b>success</b> alert box!</p>
