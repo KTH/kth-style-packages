@@ -26,25 +26,25 @@ export default function DropdownsPage (props) {
               <tbody>
                 <tr>
                   <td>
-                    <a href="/style/api/components/alerts#success_alert">Alert - Success</a>
+                    <a href="/style/api/components/alerts#success_alert">Success - Alert</a>
                   </td>
                   <td>Bekräfta att man lyckats utföra en handling</td>
                 </tr>
                 <tr>
                   <td>
-                      <a href="/style/api/components/alerts#information_alert">Alert - Information</a>
+                      <a href="/style/api/components/alerts#information_alert">Information - Alert</a>
                   </td>
                   <td>Informera om att något har förändrats på en sida eller annat som användaren behöver bli informerad om (men ej ha efterfrågat)</td>
                 </tr>
                 <tr>
                   <td>
-                      Modal – Information
+                      Information - Modal
                   </td>
                   <td>Ge ytterligare information när användaren efterfrågar det</td>
                 </tr>
                 <tr>
                   <td>
-                      <a href="/style/api/components/alerts#error_alert">Alert - Error</a> 
+                      <a href="/style/api/components/alerts#error_alert">Error - Alert</a> 
                   </td>
                   <td>Ge ett felmeddelande</td>
                 </tr>
