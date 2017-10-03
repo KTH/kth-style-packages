@@ -125,13 +125,13 @@ function MainMenu(props, context) {
             return (
               <li class="nav-item">
                 <Link className={`PageMenu-Header-${header} nav-link PageLink`} to={page.link}>{page.title}</Link>
-              </Animated> 
+              </li> 
             )
           } else if (page.subHeader) {
             return (
               <li class="nav-item">
                 <Link className="PageMenu-Header nav-link PageLink" to={page.link}>{page.title}</Link>
-              </Animated> 
+              </li> 
             )
           } else if (page.link.startsWith(currPath) && currPath[currPath.length - 1] !== '/') {
             // 
