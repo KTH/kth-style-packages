@@ -11,7 +11,6 @@ export default function BasicPage (props) {
 
       <Section title="Buttons">
         <Narrative>
-          <p>Use Bootstrap’s custom button styles for actions in forms, dialogs, and more. Includes support for a handful of contextual variations, sizes, states, and more.</p>
           <p>Läs först <a href="/style/guidelines/information">riktlinjer för knappar och länkar/a>.</p>    
         </Narrative>
         <Stage>
