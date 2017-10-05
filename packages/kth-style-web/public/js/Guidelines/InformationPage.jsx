@@ -51,6 +51,14 @@ export default function DropdownsPage (props) {
               </tbody>
             </table>
           </section>
+          <section title="General_Guidelines_Information">
+            <h2>Generella riktlinjer information</h2>
+            <p>Säkerställ att instruktioner är tydliga och lätta att förstå genom att:</p>
+            <ul>
+              <li>Undvik tekniskt språk</li>
+              <li>Beskriv det indataformat som krävs</li>
+            </ul>
+          </section>
     </Page>
   )
 }
