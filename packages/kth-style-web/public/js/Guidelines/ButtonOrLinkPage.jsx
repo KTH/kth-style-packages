@@ -6,10 +6,10 @@ export default function DropdownsPage (props) {
     <Page>
       <h1>Knappar och länkar</h1>
       <p>
-          En länk eller knapp ger användaren olika förväntningar på vad som ska ske när man klickar. Få hjälp nedan att välja.
+          Knappar och länkar ger användaren olika förväntningar på vad som ska ske när man klickar på dem. Eftersom en användare ska förstå innan man klickar vad som kommer att hända är det viktigt att välja rätt komponent. 
       </p>
-      <Section title="Link_Or_Buttons">
-      <h2>Välj knapp eller Länk?</h2>
+      <Section id="Link_Or_Buttons">
+      <h2>Välj om det ska vara en knapp eller Länk</h2>
         <table class="table">
           <thead class="thead-default">
             <tr>
@@ -27,13 +27,13 @@ export default function DropdownsPage (props) {
               <td>Initiera en aktivitet. Ett klick på en knapp får något att hända. Det kan vara att ett formulär man fyllt i skickas in eller att en sökning utförs. Nästan alltid är en del av händelsen att användaren kommer till en ny sida – men det måste hända mer än så.</td>
             </tr>
             <tr>
-              <td><a href="/style/api/components/buttons#linkbutton_primary">Primary - Link button</a></td>
+              <td><a href="/style/api/components/buttons#linkbutton">Link button</a></td>
               <td>
                 Länka till en sida där man kan initiera en aktivitet.
               </td>
             </tr>
             <tr>
-              <td><a href="/style/api/components/buttons#linkbutton_menu">Menu - Link button</a></td>
+              <td><a href="/style/api/components/buttons#menu_linkbutton">Menu link button</a></td>
               <td>
                 Lista menyalternativ i form av länkar under en meny-knapp
               </td>
@@ -41,7 +41,7 @@ export default function DropdownsPage (props) {
           </tbody>
         </table>
       </Section>
-      <Section title="Buttons">>
+      <Section id="Buttons">
       <h2>Knappar</h2>
         <p>
           Knapp används för att initiera en aktivitet. Ett klick på en knapp får något att hända. Det kan vara att ett formulär man fyllt i skickas in eller att en sökning utförs. Nästan alltid är en del av händelsen att användaren kommer till en ny sida – men det måste hända mer än så. Läs mer under <a href="/style/linksorbuttons">Välj om länk eller knapp</a>.
