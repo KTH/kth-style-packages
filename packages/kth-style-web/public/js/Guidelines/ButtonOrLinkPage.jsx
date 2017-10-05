@@ -24,24 +24,13 @@ export default function DropdownsPage (props) {
                 <td>Initiera en aktivitet. Ett klick på en knapp får något att hända. Det kan vara att ett formulär man fyllt i skickas in eller att en sökning utförs. Nästan alltid är en del av händelsen att användaren kommer till en ny sida – men det måste hända mer än så.</td>
               </tr>
               <tr>
-               <b>Knappar som länkar</b>
-              </tr>
-              <tr>
-                <td>Link Button - Primary</td>
+                <td>Link button - Primary</td>
                 <td>
-                 <p>
                   Länka till en sida där man kan initiera en aktivitet.
-                 </p>
-                 <h4>Tänk på att</h4>
-                 <ul>
-                  <li>
-                    Använd sparsamt.
-                  </li>
-                </ul>
                 </td>
               </tr>
               <tr>
-                <td>Link Button - Menu A</td>
+                <td>Link button - Menu</td>
                 <td>
                   Lista menyalternativ i form av länkar under en meny-knapp
                 </td>
@@ -52,7 +41,7 @@ export default function DropdownsPage (props) {
 
         <section id="generella_riktlinjer_link_knapp">
           <h2>Generella riktlinjer för länk och knapp</h2>
-          <p>Specifika riktlinjer hittar du vid respektive komponent (tänk på att ha checkat i "UX comment" (som du hittar högst upp på sidan till höger).</p>
+          <p>Specifika riktlinjer hittar du vid respektive komponent (tänk på att ha checkat i "UX comment", högst upp på sidan till höger).</p>
           <h3>Namngivning</h3>
           <ul>
             <li>
