@@ -16,7 +16,7 @@ export default function DropdownsPage (props) {
             </thead>
             <tbody>
               <tr>
-                <td><a href="/style/api/components/buttons#buttons">Länk</td>
+                <td><a href="/style/api/components/buttons#buttons">Länk</a></td>
                 <td>Leda vidare användaren till en annan del av webben</td>
               </tr>
               <tr>
