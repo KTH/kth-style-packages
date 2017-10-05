@@ -53,6 +53,7 @@ export default function DropdownsPage (props) {
           </section>
           <section title="General_Guidelines_Information">
             <h2>Generella riktlinjer information</h2>
+            <p>Specifika riktlinjer hittar du vid respektive imformationskomponent (tänk på att ha checkat i "UX comment" (som du hittar högst upp på sidan till höger).</p>
             <p>Säkerställ att instruktioner är tydliga och lätta att förstå genom att:</p>
             <ul>
               <li>Undvik tekniskt språk</li>
