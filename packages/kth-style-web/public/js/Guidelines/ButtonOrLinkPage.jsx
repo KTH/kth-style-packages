@@ -83,8 +83,7 @@ export default function DropdownsPage (props) {
           </tr>
         </tbody>
       </table>
-   </Sections>
-    
+   </Section>
         <section id="generella_riktlinjer_link_knapp">
           <h2>Generella riktlinjer för länk och knapp</h2>
           <p>Specifika riktlinjer hittar du vid respektive komponent (tänk på att ha checkat i "UX comment", högst upp på sidan till höger).</p>
