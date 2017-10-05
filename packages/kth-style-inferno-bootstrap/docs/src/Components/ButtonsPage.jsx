@@ -11,7 +11,7 @@ export default function BasicPage (props) {
 
       <Section title="Buttons">
         <Narrative>
-          <p>Läs först <a href="/style/guidelines/information">riktlinjer för knappar och länkar</a>.</p>    
+          <p>Läs först <a href="/style/guidelines/buttonorlink">riktlinjer för knappar och länkar</a>.</p>    
         </Narrative>
         <Stage>
           <h3>Standard Buttons</h3>  
@@ -85,6 +85,10 @@ export default function BasicPage (props) {
             </Code>
           </Scene>
 
+           </Stage>
+        </Section>
+          
+        <Section id="Disabled_Button">
           <h3>Disabled Buttons</h3>
           <Scene>
             <Button color="primary" size="lg" disabled>Primary button</Button>{' '}
@@ -95,17 +99,18 @@ export default function BasicPage (props) {
 <Button color="secondary" size="lg" disabled>Button</Button>`}
             </Code>
           </Scene>
-
-        </Stage>
-      </Section>
-
-      <Section title="Linkbutton_Primary">
+        </Section>
+       
+      <Section id="Linkbutton_Primary">
         <h2>Link button - Primary</h2>
         <UXComment>
           <h4>Användning</h4>
           <ul>
               <li>
                   Länka till en sida där man kan initiera en aktivitet
+              </li>
+               <li>
+                  Namnge: "Till" + namnet på aktiviteten. Exempel: "Till ansökningen"
               </li>
           </ul>
           <h4>Tänk på att</h4>
@@ -116,7 +121,8 @@ export default function BasicPage (props) {
           </ul>
         </UXComment>
       </Section>
-      <Section title="Linkbutton_Menu">
+      
+      <Section id="Linkbutton_Menu">
         <h2>Link button - Menu</h2>
         <UXComment>
           <h4>Användning</h4>
@@ -128,7 +134,8 @@ export default function BasicPage (props) {
         </UXComment>
       </Section>
         
-      <Section title="HIDE - Radio Buttons">
+      <Section id="Radio Buttons">
+        <h2>HIDE - Radio Buttons</h2>
         <RadioButtonStage />
       </Section>     
 
