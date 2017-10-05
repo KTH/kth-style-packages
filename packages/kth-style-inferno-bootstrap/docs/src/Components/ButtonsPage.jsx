@@ -99,7 +99,7 @@ export default function BasicPage (props) {
         </Stage>
       </Section>
 
-      <Section title="Link buttons">
+      <Section title="Linkbutton_Primary">
         <h2>Link button - Primary</h2>
         <UXComment>
           <h4>Användning</h4>
@@ -115,6 +115,8 @@ export default function BasicPage (props) {
               </li>
           </ul>
         </UXComment>
+      </Section>
+      <Section title="Linkbutton_Menu">
         <h2>Link button - Menu</h2>
         <UXComment>
           <h4>Användning</h4>
