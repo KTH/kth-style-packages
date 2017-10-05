@@ -101,8 +101,8 @@ export default function BasicPage (props) {
           </Scene>
         </Section>
        
-      <Section id="Linkbutton_Primary">
-        <h2>Link button - Primary</h2>
+      <Section id="Linkbutton">
+        <h2>Link button</h2>
         <UXComment>
           <h4>Användning</h4>
           <ul>
@@ -122,8 +122,8 @@ export default function BasicPage (props) {
         </UXComment>
       </Section>
       
-      <Section id="Linkbutton_Menu">
-        <h2>Link button - Menu</h2>
+      <Section id="Menu_Linkbutton">
+        <h2>Menu Link button</h2>
         <UXComment>
           <h4>Användning</h4>
           <ul>
