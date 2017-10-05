@@ -71,7 +71,7 @@ export default function BasicPage (props) {
           <p>Provide contextual feedback messages for typical user actions with the handful of available and flexible alert messages.</p>
         </Narrative>
         <Stage>
-          <h3>Information Alert</h3>
+          <h2>Information Alert</h3>
           <Scene>
             <Alert color="info">
               <p>Some cool text in a <b>info</b> alert box!</p>
@@ -90,7 +90,7 @@ export default function BasicPage (props) {
           <p>Provide contextual feedback messages for typical user actions with the handful of available and flexible alert messages.</p>
         </Narrative>
         <Stage>
-          <h3>Error Alert</h3>
+          <h2>Error Alert</h3>
           <Scene>
             <Alert color="danger">
               <p>Some cool text in a <b>danger</b> alert box!</p>
@@ -109,8 +109,37 @@ export default function BasicPage (props) {
           <p>Provide contextual feedback messages for typical user actions with the handful of available and flexible alert messages.</p>
         </Narrative>
         <Stage>
-          <h3>Success Alert</h3>
-          <Scene>
+          <h2>Success Alert</h3>
+          <UXComment>
+              <h4>Användning</h4>
+                <ul>
+                  <li>
+                    För att bekräfta att användaren lyckats utföra en tidigare handling.
+                  </li>
+                  <li>
+                    För längre meddelanden där informationen behöver läsas mer nogrannt.
+                  </li>
+                </ul>
+                <h4>Tänk på att</h4>
+                <ul>
+                   <li>
+                    Placera överst på sidan och se till att fokus är där.
+                  </li>
+                  <li>
+                    Se <a href="#generellariktlinjerinformation">Generella riktlinjer information</a> nedan.
+                  </li>
+                </ul>
+          </UXComment>
+          <h3>With close button</h4>
+          <UXComment>
+           <h4>Användning</h4>
+                <ul>
+                  <li>
+                    För längre meddelanden där informationen behöver läsas mer nogrannt.
+                  </li>
+                </ul>
+          </UXComment>
+            <Scene>
             <Alert color="success">
               <p>Some cool text in a <b>success</b> alert box!</p>
             </Alert>
@@ -121,6 +150,20 @@ export default function BasicPage (props) {
             </Code>
           </Scene>
         </Stage>
+      <h3>Disappears after 5 seconds</h4>
+        <UXComment>
+           <h4>Användning</h4>
+                <ul>
+                  <li>
+                    För korta meddelanden där informationen inte behöver läsas. Exempel: "Saved"
+                  </li>
+                </ul>
+          </UXComment>
+      
+      
+      
+      
+      
       </Section>
       
     </Page>
