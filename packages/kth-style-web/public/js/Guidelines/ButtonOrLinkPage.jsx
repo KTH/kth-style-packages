@@ -16,21 +16,21 @@ export default function DropdownsPage (props) {
             </thead>
             <tbody>
               <tr>
-                <td>Länk</td>
+                <td><a href="/style/api/components/buttons#buttons">Länk</td>
                 <td>Leda vidare användaren till en annan del av webben</td>
               </tr>
               <tr>
-                <td>Knapp</td>
+                <td><a href="/style/api/components/buttons#buttons">Knapp</a></td>
                 <td>Initiera en aktivitet. Ett klick på en knapp får något att hända. Det kan vara att ett formulär man fyllt i skickas in eller att en sökning utförs. Nästan alltid är en del av händelsen att användaren kommer till en ny sida – men det måste hända mer än så.</td>
               </tr>
               <tr>
-                <td>Link button - Primary</td>
+                <td><a href="/style/api/components/buttons#linkbutton_primary">Link button - Primary</a></td>
                 <td>
                   Länka till en sida där man kan initiera en aktivitet.
                 </td>
               </tr>
               <tr>
-                <td>Link button - Menu</td>
+                <td><a href="/style/api/components/buttons#linkbutton_menu">Link button - Menu</a></td>
                 <td>
                   Lista menyalternativ i form av länkar under en meny-knapp
                 </td>
