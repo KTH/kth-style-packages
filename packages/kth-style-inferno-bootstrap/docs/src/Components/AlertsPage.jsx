@@ -71,7 +71,7 @@ export default function BasicPage (props) {
           <p>Provide contextual feedback messages for typical user actions with the handful of available and flexible alert messages.</p>
         </Narrative>
         <Stage>
-          <h2>Information Alert</h3>
+          <h2>Information Alert</h2>
           <Scene>
             <Alert color="info">
               <p>Some cool text in a <b>info</b> alert box!</p>
@@ -90,7 +90,7 @@ export default function BasicPage (props) {
           <p>Provide contextual feedback messages for typical user actions with the handful of available and flexible alert messages.</p>
         </Narrative>
         <Stage>
-          <h2>Error Alert</h3>
+          <h2>Error Alert</h2>
           <Scene>
             <Alert color="danger">
               <p>Some cool text in a <b>danger</b> alert box!</p>
@@ -109,7 +109,7 @@ export default function BasicPage (props) {
           <p>Provide contextual feedback messages for typical user actions with the handful of available and flexible alert messages.</p>
         </Narrative>
         <Stage>
-          <h2>Success Alert</h3>
+          <h2>Success Alert</h2>
           <UXComment>
               <h4>Användning</h4>
                 <ul>
@@ -130,7 +130,7 @@ export default function BasicPage (props) {
                   </li>
                 </ul>
           </UXComment>
-          <h3>With close button</h4>
+          <h3>With close button</h3>
           <UXComment>
            <h4>Användning</h4>
                 <ul>
@@ -150,7 +150,7 @@ export default function BasicPage (props) {
             </Code>
           </Scene>
         </Stage>
-      <h3>Disappears after 5 seconds</h4>
+      <h3>Disappears after 5 seconds</h3>
         <UXComment>
            <h4>Användning</h4>
                 <ul>
@@ -159,13 +159,7 @@ export default function BasicPage (props) {
                   </li>
                 </ul>
           </UXComment>
-      
-      
-      
-      
-      
-      </Section>
-      
+      </Section> 
     </Page>
   )
 }
