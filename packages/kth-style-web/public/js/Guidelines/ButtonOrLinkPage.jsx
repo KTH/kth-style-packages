@@ -27,13 +27,13 @@ export default function DropdownsPage (props) {
               <td>Initiera en aktivitet. Ett klick på en knapp får något att hända. Det kan vara att ett formulär man fyllt i skickas in eller att en sökning utförs. Nästan alltid är en del av händelsen att användaren kommer till en ny sida – men det måste hända mer än så.</td>
             </tr>
             <tr>
-              <td><a href="/style/api/components/buttons#linkbutton">Link button</a></td>
+              <td><a href="/style/api/components/buttons#link_button">Link button</a></td>
               <td>
                 Länka till en sida där man kan initiera en aktivitet.
               </td>
             </tr>
             <tr>
-              <td><a href="/style/api/components/buttons#menu_linkbutton">Menu link button</a></td>
+              <td><a href="/style/api/components/buttons#menu_link_button">Menu link button</a></td>
               <td>
                 Lista menyalternativ i form av länkar under en meny-knapp
               </td>
