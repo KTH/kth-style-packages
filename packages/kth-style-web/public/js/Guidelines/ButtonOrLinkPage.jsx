@@ -78,7 +78,7 @@ export default function DropdownsPage (props) {
             <td>För aktiviteter som är destruktiva</td>
           </tr>
           <tr>
-            <td><a href="/style/api/components/buttons#buttons">Disabled - Button</a></td>
+            <td><a href="/style/api/components/buttons#disabled_button">Disabled - Button</a></td>
             <td>För aktiviteter som inte är möjliga i ett specifikt tillstånd</td>
           </tr>
         </tbody>
