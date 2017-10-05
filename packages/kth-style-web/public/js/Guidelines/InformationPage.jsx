@@ -28,7 +28,7 @@ export default function DropdownsPage (props) {
                   <td>
                     <a href="/style/api/components/alerts#success_alert">Success - Alert</a>
                   </td>
-                  <td>Bekräfta att man lyckats utföra en handling</td>
+                  <td>Bekräfta att användaren har lyckats utföra en handling</td>
                 </tr>
                 <tr>
                   <td>
@@ -46,7 +46,7 @@ export default function DropdownsPage (props) {
                   <td>
                       <a href="/style/api/components/alerts#error_alert">Error - Alert</a> 
                   </td>
-                  <td>Ge ett felmeddelande</td>
+                  <td>För att informera om att något har gått fel</td>
                 </tr>
               </tbody>
             </table>
