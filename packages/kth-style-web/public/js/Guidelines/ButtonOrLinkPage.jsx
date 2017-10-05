@@ -52,6 +52,7 @@ export default function DropdownsPage (props) {
 
         <section id="generella_riktlinjer_link_knapp">
           <h2>Generella riktlinjer för länk och knapp</h2>
+          <p>Specifika riktlinjer hittar du vid respektive komponent (tänk på att ha checkat i "UX comment" (som du hittar högst upp på sidan till höger).</p>
           <h3>Namngivning</h3>
           <ul>
             <li>
