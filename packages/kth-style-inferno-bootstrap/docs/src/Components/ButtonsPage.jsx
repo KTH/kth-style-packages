@@ -11,7 +11,7 @@ export default function BasicPage (props) {
 
       <Section title="Buttons">
         <Narrative>
-          <p>Läs först <a href="/style/guidelines/information">riktlinjer för knappar och länkar/a>.</p>    
+          <p>Läs först <a href="/style/guidelines/information">riktlinjer för knappar och länkar</a>.</p>    
         </Narrative>
         <Stage>
           <h3>Standard Buttons</h3>  
@@ -99,7 +99,7 @@ export default function BasicPage (props) {
         </Stage>
       </Section>
 
-          <Section title="Link buttons">
+      <Section title="Link buttons">
         <h2>Link button - Primary</h2>
         <UXComment>
           <h4>Användning</h4>
