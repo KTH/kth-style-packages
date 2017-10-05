@@ -40,8 +40,6 @@ export default function DropdownsPage (props) {
             </tr>
           </tbody>
         </table>
-      </section>
-      
       </Sections>
       <Section title="Buttons">>
       <h2>Knappar</h2>
