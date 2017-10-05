@@ -12,6 +12,7 @@ export default function BasicPage (props) {
       <Section title="Buttons">
         <Narrative>
           <p>Use Bootstrap’s custom button styles for actions in forms, dialogs, and more. Includes support for a handful of contextual variations, sizes, states, and more.</p>
+          <p>Läs först <a href="/style/guidelines/information">riktlinjer för knappar och länkar/a>.</p>    
         </Narrative>
         <Stage>
           <h3>Standard Buttons</h3>  
@@ -57,6 +58,39 @@ export default function BasicPage (props) {
 <Button outline color="danger">danger</Button>`}
             </Code>
           </Scene>
+          
+      </Section>   
+      <Section title="Link buttons">
+        <h2>Link button - Primary</h2>
+        <UXComment>
+          <h4>Användning</h4>
+          <ul>
+              <li>
+                  Länka till en sida där man kan initiera en aktivitet
+              </li>
+          </ul>
+          <h4>Tänk på att</h4>
+          <ul>
+              <li>
+                  Använda sparsamt
+              </li>
+          </ul>
+        </UXComment>
+        <h2>Link button - Menu</h2>
+        <UXComment>
+          <h4>Användning</h4>
+          <ul>
+            <li>
+              Lista menyalternativ i form av länkar under en meny-knapp
+            </li>
+          </ul>
+        </UXComment>
+      </Section>
+          
+          
+          
+          
+         <Section> 
           
           <h3>Different sizes</h3>
           <Scene>
