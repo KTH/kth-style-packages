@@ -8,7 +8,7 @@ export default function DropdownsPage (props) {
       <p>
           Knappar och länkar ger användaren olika förväntningar på vad som ska ske när man klickar på dem. Eftersom en användare ska förstå innan man klickar vad som kommer att hända är det viktigt att välja rätt komponent. 
       </p>
-      <Section id="Link_Or_Buttons">
+      <Section id="link_or_buttons">
       <h2>Välj om det ska vara en knapp eller Länk</h2>
         <table class="table">
           <thead class="thead-default">
@@ -41,7 +41,7 @@ export default function DropdownsPage (props) {
           </tbody>
         </table>
       </Section>
-      <Section id="Buttons">
+      <Section id="buttons">
       <h2>Knappar</h2>
         <p>
           Knapp används för att initiera en aktivitet. Ett klick på en knapp får något att hända. Det kan vara att ett formulär man fyllt i skickas in eller att en sökning utförs. Nästan alltid är en del av händelsen att användaren kommer till en ny sida – men det måste hända mer än så. Läs mer under <a href="/style/linksorbuttons">Välj om länk eller knapp</a>.
@@ -84,6 +84,11 @@ export default function DropdownsPage (props) {
         </tbody>
       </table>
    </Section>
+      
+   <Section id="links">
+    <h2>Länkar</h2>
+   </Section>  
+        
         <section id="generella_riktlinjer_link_knapp">
           <h2>Generella riktlinjer för länk och knapp</h2>
           <p>Specifika riktlinjer hittar du vid respektive komponent (tänk på att ha checkat i "UX comment", högst upp på sidan till höger).</p>
