@@ -12,7 +12,7 @@ export class Section extends Component {
 
   _createId(title) {
     // We need to convert titles to reasonable id
-    return title.toLowerCase().replace(/\s/g, '_').replace(/[^a-öA-Ö0-9\s]/g, '').replace(/[åä]/g, 'a').replace(/[ö]/g, 'o')
+    return title && title.toLowerCase().replace(/\s/g, '_').replace(/[^a-öA-Ö0-9\s]/g, '').replace(/[åä]/g, 'a').replace(/[ö]/g, 'o')
 
   }
 
