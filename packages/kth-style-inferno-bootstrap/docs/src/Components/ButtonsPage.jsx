@@ -34,59 +34,6 @@ export default function BasicPage (props) {
 <Button color="link">link</Button>`}
             </Code>
           </Scene>
-          <h3>HIDE - Outline Buttons</h3>
-          <Scene>
-            <Button outline color="primary">primary</Button>{' '}
-            <Button outline color="secondary">secondary</Button>{' '}
-            <Button outline color="success">success</Button>{' '}
-            <Button outline color="info">info</Button>{' '}
-            <Button outline color="warning">warning</Button>{' '}
-            <Button outline color="danger">danger</Button>
-
-            <Code>
-{`<Button outline color="primary">primary</Button>
-<Button outline color="secondary">secondary</Button>
-<Button outline color="success">success</Button>
-<Button outline color="info">info</Button>
-<Button outline color="warning">warning</Button>
-<Button outline color="danger">danger</Button>`}
-            </Code>
-          </Scene>
-        
-          <h3>HIDE - Different sizes</h3>
-          <Scene>
-            <Button color="primary" size="lg">Large Button</Button>{' '}
-            <Button color="secondary" size="lg">Large Button</Button>
-            
-            <Code>
-{`<Button color="primary" size="lg">Large Button</Button>
-<Button color="secondary" size="lg">Large Button</Button>`}
-            </Code>
-          </Scene>
-
-          <Scene>
-            <Button color="primary" size="sm">Small Button</Button>{' '}
-            <Button color="secondary" size="sm">Small Button</Button>
-
-            <Code>
-{`<Button color="primary" size="sm">Small Button</Button>
-<Button color="secondary" size="sm">Small Button</Button>`}
-            </Code>
-          </Scene>
-
-          <h3>HIDE - Block Level Buttons</h3>
-          <Scene>
-            <Button color="primary" size="lg" block>Block level button</Button>
-            <Button color="secondary" size="lg" block>Block level button</Button>
-
-            <Code>
-{`<Button color="primary" size="lg" block>Block level button</Button>
-<Button color="secondary" size="lg" block>Block level button</Button>`}
-            </Code>
-          </Scene>
-
-           </Stage>
-        </Section>
           
         <Section id="Disabled_Button">
           <h3>Disabled Buttons</h3>
@@ -133,12 +80,83 @@ export default function BasicPage (props) {
           </ul>
         </UXComment>
       </Section>
+          
         
-      <Section id="Radio Buttons">
+    </Stage>
+  </Section>
+        
+      
+     <Section title="Finns inte riktlinjer för i dag">
+       <Narrative>
+        <p> om behöver använda motivera varför i KTH Style gruppen för att utvärdera om vi tar in den i riktlinjerna.</p>
+       </Narrative>
+       <Stage>
+      <h3>Different sizes</h3>
+          <Scene>
+            <Button color="primary" size="lg">Large Button</Button>{' '}
+            <Button color="secondary" size="lg">Large Button</Button>
+            
+            <Code>
+{`<Button color="primary" size="lg">Large Button</Button>
+<Button color="secondary" size="lg">Large Button</Button>`}
+            </Code>
+          </Scene>
+
+          <Scene>
+            <Button color="primary" size="sm">Small Button</Button>{' '}
+            <Button color="secondary" size="sm">Small Button</Button>
+
+            <Code>
+{`<Button color="primary" size="sm">Small Button</Button>
+<Button color="secondary" size="sm">Small Button</Button>`}
+            </Code>
+          </Scene>
+
+          <h3>Block Level Buttons</h3>
+          <Scene>
+            <Button color="primary" size="lg" block>Block level button</Button>
+            <Button color="secondary" size="lg" block>Block level button</Button>
+
+            <Code>
+{`<Button color="primary" size="lg" block>Block level button</Button>
+<Button color="secondary" size="lg" block>Block level button</Button>`}
+            </Code>
+          </Scene>
+      
+             
+    </Stage>
+  </Section>    
+         
+         
+      <h2>Dölj helt!</h3>
+ <Section id="Radio Buttons">
         <h2>HIDE - Radio Buttons</h2>
         <RadioButtonStage />
-      </Section>     
+      </Section>  
+      
+      
+       <h3>HIDE - Outline Buttons</h3>
+          <Scene>
+            <Button outline color="primary">primary</Button>{' '}
+            <Button outline color="secondary">secondary</Button>{' '}
+            <Button outline color="success">success</Button>{' '}
+            <Button outline color="info">info</Button>{' '}
+            <Button outline color="warning">warning</Button>{' '}
+            <Button outline color="danger">danger</Button>
 
+            <Code>
+{`<Button outline color="primary">primary</Button>
+<Button outline color="secondary">secondary</Button>
+<Button outline color="success">success</Button>
+<Button outline color="info">info</Button>
+<Button outline color="warning">warning</Button>
+<Button outline color="danger">danger</Button>`}
+            </Code>
+          </Scene>
+      
+      
+      
+      
     </Page>
   )
 }
