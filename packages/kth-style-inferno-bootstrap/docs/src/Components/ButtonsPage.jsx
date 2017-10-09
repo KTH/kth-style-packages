@@ -128,7 +128,7 @@ export default function BasicPage (props) {
   </Section>    
          
          
-      <h2>Dölj helt!</h3>
+      <h2>Dölj helt!</h2>
  <Section id="Radio Buttons">
         <h2>HIDE - Radio Buttons</h2>
         <RadioButtonStage />
