@@ -13,29 +13,23 @@ export default function DropdownsPage (props) {
         <table class="table">
           <thead class="thead-default">
             <tr>
-              <th>Komponent</th>
+              <th>Komponenttyp</th>
               <th>Används för att</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td><a href="#links">Länk</a></td>
-              <td>Leda vidare användaren till en annan del av webben</td>
+              <td><a href="#links">Länkar</a></td>
+              <td>Leder användaren vidare till en annan del av webben</td>
             </tr>
             <tr>
-              <td><a href="#buttons">Knapp</a></td>
-              <td>Initiera en aktivitet. Ett klick på en knapp får något att hända. Det kan vara att ett formulär man fyllt i skickas in eller att en sökning utförs. Nästan alltid är en del av händelsen att användaren kommer till en ny sida – men det måste hända mer än så.</td>
+              <td><a href="#buttons">Knappar</a></td>
+              <td>Initierar en aktivitet. Ett klick på en knapp får något att hända. Det kan vara att ett formulär man fyllt i skickas in eller att en sökning utförs. Nästan alltid är en del av händelsen att användaren kommer till en ny sida – men det måste hända mer än så.</td>
             </tr>
             <tr>
               <td><a href="/style/api/components/buttons#link_button">Link button</a></td>
               <td>
-                Länka till en sida där man kan initiera en aktivitet.
-              </td>
-            </tr>
-            <tr>
-              <td><a href="/style/api/components/buttons#menu_link_button">Menu link button</a></td>
-              <td>
-                Lista menyalternativ i form av länkar under en meny-knapp
+                Finns bara en variant och ska användas sparsamt för att länka vidare till en sida där man kan initiera en viktig aktivitet.
               </td>
             </tr>
           </tbody>
