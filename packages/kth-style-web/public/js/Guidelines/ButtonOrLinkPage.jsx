@@ -8,7 +8,7 @@ export default function DropdownsPage (props) {
       <p>
           Knappar och länkar ger användaren olika förväntningar på vad som ska ske när man klickar på dem. Eftersom en användare ska förstå innan man klickar vad som kommer att hända är det viktigt att välja rätt komponent. 
       </p>
-      <Section id="link_or_buttons">
+      <section id="link_or_buttons">
       <h2>Välj om det ska vara en knapp eller Länk</h2>
         <table class="table">
           <thead class="thead-default">
@@ -34,8 +34,8 @@ export default function DropdownsPage (props) {
             </tr>
           </tbody>
         </table>
-      </Section>
-      <Section id="buttons">
+      </section>
+      <section id="buttons">
       <h2>Knappar</h2>
         <p>
           Knapp används för att initiera en aktivitet. Ett klick på en knapp får något att hända. Det kan vara att ett formulär man fyllt i skickas in eller att en sökning utförs. Nästan alltid är en del av händelsen att användaren kommer till en ny sida – men det måste hända mer än så. Läs mer under <a href="/style/linksorbuttons">Välj om länk eller knapp</a>.
@@ -56,32 +56,32 @@ export default function DropdownsPage (props) {
         </thead>
         <tbody>
           <tr>
-            <td><a href="/style/api/components/buttons#buttons">Primary - Button</a></td>
+            <td><a href="/style/api/components/buttons#primary_button">Primary - Button</a></td>
             <td>För primära aktiviteter (man vill uppmuntra användaren att utföra)</td>
           </tr>
           <tr>
-            <td><a href="/style/api/components/buttons#buttons">Submit - Button</a></td>
+            <td><a href="/style/api/components/buttons#success_button">Success button</a></td>
             <td>För att uppmana användaren att avsluta en uppgift som hen har påbörjat</td>
           </tr>
           <tr>
-            <td><a href="/style/api/components/buttons#buttons">Secondary - Button</a></td>
+            <td><a href="/style/api/components/buttons#secondary_button">Secondary button</a></td>
             <td>För sekundära aktiviteter (man kan utföra, men uppmanas inte till det)</td>
           </tr>
           <tr>
-            <td><a href="/style/api/components/buttons#buttons">Delete - Button</a></td>
+            <td><a href="/style/api/components/buttons#danger_buttons">Danger button</a></td>
             <td>För aktiviteter som är destruktiva</td>
           </tr>
           <tr>
-            <td><a href="/style/api/components/buttons#disabled_button">Disabled - Button</a></td>
+            <td><a href="/style/api/components/buttons#disabled_button">Disabled button</a></td>
             <td>För aktiviteter som inte är möjliga i ett specifikt tillstånd</td>
           </tr>
         </tbody>
       </table>
-   </Section>
+   </section>
       
-   <Section id="links">
+   <section id="links">
     <h2>Länkar</h2>
-   </Section>  
+   </section>  
         
         <section id="generella_riktlinjer_link_knapp">
           <h2>Generella riktlinjer för länk och knapp</h2>
