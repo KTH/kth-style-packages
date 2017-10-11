@@ -33,21 +33,21 @@ export default function DropdownsPage (props) {
         </ul>
       </Section> 
       
-      <Section title="Riktlinjer användbarhet">
+      <Section title="Vad är användbarhet?">
          <Narrative>
             <p>Användbarhet definieras enligt ISO-normen 9241-11 som följande: Den grad i vilken användare i ett givet sammanhang kan bruka en produkt för att uppnå specifika mål på ett ändamålsenligt, effektivt och för användaren tillfredsställande sätt.</p>
           </Narrative>
-          <h2 id="riktlinjer_anvandbarhet">Riktlinjer användbarhet</h2>
+          <h3 id="riktlinjer_anvandbarhet">Riktlinjer användbarhet</h3>
           <p>
             <a href="https://www.kth.se/social/group/kth-style-guide/page/usability-heuristics-2/">Usability Heuristics</a>
           </p>
         </Section>
     
-        <Section title="Riktlinjer tillgänglighet">
+        <Section title="Vad är tillgänglighet?">
           <Narrative>
             <p>Tillgänglighet betyder användbarhet för alla oavsett funktionsvariation.</p>
           </Narrative>
-          <h2 id="riktlinjer_tillganglighet">Riktlinjer tillgänglighet</h2>
+          <h3 id="riktlinjer_tillganglighet">Riktlinjer tillgänglighet</h3>
           <p>
              <a href="https://www.w3.org/Translations/WCAG20-sv/">Web Content Accessibility Guidelines (WCAG) 2.0</a>
           </p>
