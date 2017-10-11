@@ -49,7 +49,7 @@ export default function DropdownsPage (props) {
         </thead>
         <tbody>
           <tr>
-            <td><a href="/style/api/components/buttons#primary_button">Primary - Button</a></td>
+            <td><a href="/style/api/components/buttons#primary_button">Primary button</a></td>
             <td>För primära aktiviteter (man vill uppmuntra användaren att utföra)</td>
           </tr>
           <tr>
