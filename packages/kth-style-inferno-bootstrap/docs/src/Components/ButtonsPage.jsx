@@ -59,8 +59,8 @@ export default function BasicPage (props) {
                  <section id="disabled_button">
                     <h3>Disabled Buttons</h3>
                       <Scene>
-                        <Button color="primary" size="lg" disabled>Primary button</Button>{' '}
-                        <Button color="secondary" size="lg" disabled>Button</Button>
+                        <Button color="primary" disabled>Primary button</Button>{' '}
+                        <Button color="secondary" disabled>Button</Button>
                         <Code>
         {`<Button color="primary" size="lg" disabled>Primary button</Button>
         <Button color="secondary" size="lg" disabled>Button</Button>`}
