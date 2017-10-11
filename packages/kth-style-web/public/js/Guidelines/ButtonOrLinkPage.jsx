@@ -9,7 +9,7 @@ export default function DropdownsPage (props) {
           Knappar och länkar ger användaren olika förväntningar på vad som ska ske när man klickar på dem. Eftersom en användare ska förstå innan man klickar vad som kommer att hända är det viktigt att välja rätt komponent. 
       </p>
        <p>
-          Läs gärna mer om <a href="https://www.kth.se/social/group/kth-style-guide/page/bakgrund-10/">bakgrund</a>.
+          Läs gärna mer om <a href="https://www.kth.se/social/group/kth-style-guide/page/bakgrund-10/">bakgrund till varför knappar och länkar ser ut och beter sig som det gör.</a>.
         </p>
       <section id="link_or_buttons">
       <h2>Välj om det ska vara en knapp eller Länk</h2>
