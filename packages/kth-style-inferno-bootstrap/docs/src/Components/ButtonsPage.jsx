@@ -107,7 +107,7 @@ export default function BasicPage (props) {
                        </section>
 
                        <section id="menu_link_button">
-                         <h3>Menu Link button</h2>
+                         <h3>Menu Link button</h3>
                          <UXComment>
                            <h4>Användning</h4>
                            <ul>
