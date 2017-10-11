@@ -8,6 +8,9 @@ export default function DropdownsPage (props) {
       <p>
           Knappar och länkar ger användaren olika förväntningar på vad som ska ske när man klickar på dem. Eftersom en användare ska förstå innan man klickar vad som kommer att hända är det viktigt att välja rätt komponent. 
       </p>
+       <p>
+          Läs gärna mer om <a href="https://www.kth.se/social/group/kth-style-guide/page/bakgrund-10/">bakgrund</a>.
+        </p>
       <section id="link_or_buttons">
       <h2>Välj om det ska vara en knapp eller Länk</h2>
         <table class="table">
@@ -19,12 +22,12 @@ export default function DropdownsPage (props) {
           </thead>
           <tbody>
             <tr>
-              <td><a href="#links">Länkar</a></td>
+              <td><a href="#links">Länk</a></td>
               <td>Leder användaren vidare till en annan del av webben</td>
             </tr>
             <tr>
-              <td><a href="#buttons">Knappar</a></td>
-              <td>Initierar en aktivitet. Ett klick på en knapp får något att hända. Det kan vara att ett formulär man fyllt i skickas in eller att en sökning utförs. Nästan alltid är en del av händelsen att användaren kommer till en ny sida – men det måste hända mer än så.</td>
+              <td>Välj <a href="#choose_button">knapp</a></td>
+              <td>Initierar en aktivitet. Ett klick på en knapp får något att hända. Det kan vara att ett formulär man fyllt i skickas in eller att en sökning utförs. Nästan alltid är en del av händelsen att användaren kommer till en ny sida – men det måste hända mer än så. Det finns finns fem olika typer av knappar. Välj knapp utifrån användning (se nedan).</td>
             </tr>
             <tr>
               <td><a href="/style/api/components/buttons#link_button">Link button</a></td>
@@ -35,18 +38,8 @@ export default function DropdownsPage (props) {
           </tbody>
         </table>
       </section>
-      <section id="buttons">
-      <h2>Knappar</h2>
-        <p>
-          Knapp används för att initiera en aktivitet. Ett klick på en knapp får något att hända. Det kan vara att ett formulär man fyllt i skickas in eller att en sökning utförs. Nästan alltid är en del av händelsen att användaren kommer till en ny sida – men det måste hända mer än så. Läs mer under <a href="/style/linksorbuttons">Välj om länk eller knapp</a>.
-        </p>
-        <p>
-          Det finns finns fem olika typer av knappar. Välj knapp utifrån användning (se nedan).
-        </p>
-        <p>
-          Läs gärna mer om <a href="https://www.kth.se/social/group/kth-style-guide/page/bakgrund-10/">bakgrund</a>.
-        </p>
-      <h2>Välj typ av knapp</h2>
+      <section id="choose_button">
+      <h2>Välj knapp</h2>
       <table class="table" data-example="testtest">
         <thead class="thead-default">
           <tr>
@@ -80,7 +73,7 @@ export default function DropdownsPage (props) {
    </section>
       
    <section id="links">
-    <h2>Länkar</h2>
+    <h2>Länk</h2>
    </section>  
         
         <section id="generella_riktlinjer_link_knapp">
