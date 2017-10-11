@@ -34,57 +34,60 @@ export default function BasicPage (props) {
 <Button color="link">link</Button>`}
             </Code>
           </Scene>
-          
-        <Section id="Disabled_Button">
-          <h3>Disabled Buttons</h3>
-          <Scene>
-            <Button color="primary" size="lg" disabled>Primary button</Button>{' '}
-            <Button color="secondary" size="lg" disabled>Button</Button>
-            
-            <Code>
-{`<Button color="primary" size="lg" disabled>Primary button</Button>
-<Button color="secondary" size="lg" disabled>Button</Button>`}
-            </Code>
-          </Scene>
-        </Section>
+        </Stage>
+        <Stage>
+          <Section id="Disabled_Button">
+            <h3>Disabled Buttons</h3>
+            <Scene>
+              <Button color="primary" size="lg" disabled>Primary button</Button>{' '}
+              <Button color="secondary" size="lg" disabled>Button</Button>
+
+              <Code>
+  {`<Button color="primary" size="lg" disabled>Primary button</Button>
+  <Button color="secondary" size="lg" disabled>Button</Button>`}
+              </Code>
+            </Scene>
+          </Section>
+        </Stage>
+        
+        <Stage>
+          <Section id="link_button">
+            <h2>Link button</h2>
+            <UXComment>
+              <h4>Användning</h4>
+              <ul>
+                  <li>
+                      Länka till en sida där man kan initiera en aktivitet
+                  </li>
+                   <li>
+                      Namnge: "Till" + namnet på aktiviteten. Exempel: "Till ansökningen"
+                  </li>
+              </ul>
+              <h4>Tänk på att</h4>
+              <ul>
+                  <li>
+                      Använda sparsamt
+                  </li>
+              </ul>
+            </UXComment>
+          </Section>
+       </Stage>
        
-      <Section id="link_button">
-        <h2>Link button</h2>
-        <UXComment>
-          <h4>Användning</h4>
-          <ul>
-              <li>
-                  Länka till en sida där man kan initiera en aktivitet
-              </li>
-               <li>
-                  Namnge: "Till" + namnet på aktiviteten. Exempel: "Till ansökningen"
-              </li>
-          </ul>
-          <h4>Tänk på att</h4>
-          <ul>
-              <li>
-                  Använda sparsamt
-              </li>
-          </ul>
-        </UXComment>
+       <Stage>
+          <Section id="menu_link_button">
+            <h2>Menu Link button</h2>
+            <UXComment>
+              <h4>Användning</h4>
+              <ul>
+                <li>
+                  Lista menyalternativ i form av länkar under en meny-knapp
+                </li>
+              </ul>
+            </UXComment>
+          </Section>   
+        </Stage>
       </Section>
       
-      <Section id="menu_link_button">
-        <h2>Menu Link button</h2>
-        <UXComment>
-          <h4>Användning</h4>
-          <ul>
-            <li>
-              Lista menyalternativ i form av länkar under en meny-knapp
-            </li>
-          </ul>
-        </UXComment>
-      </Section>
-          
-        
-    </Stage>
-  </Section>
-        
       
      <Section title="Finns inte riktlinjer för i dag">
        <Narrative>
@@ -121,9 +124,7 @@ export default function BasicPage (props) {
 {`<Button color="primary" size="lg" block>Block level button</Button>
 <Button color="secondary" size="lg" block>Block level button</Button>`}
             </Code>
-          </Scene>
-      
-             
+          </Scene>       
     </Stage>
   </Section>    
          
