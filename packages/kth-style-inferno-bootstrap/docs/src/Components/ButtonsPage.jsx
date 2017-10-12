@@ -21,7 +21,7 @@ export default function BasicPage (props) {
               <Scene>
                 <Button color="primary">primary</Button>{' '}
                 <Code>
-    {`<Button color="primary">primary</Button>`}
+                  {`<Button color="primary">primary</Button>`}
                 </Code>
               </Scene>
             </section>
@@ -31,7 +31,7 @@ export default function BasicPage (props) {
                 <Scene>
                   <Button color="secondary">secondary</Button>{' '}
                   <Code>
-        {<Button color="secondary">secondary</Button>}
+                    {`<Button color="secondary">secondary</Button>`}
                   </Code>
                 </Scene>
               </section>
@@ -41,7 +41,7 @@ export default function BasicPage (props) {
                   <Scene>
                     <Button color="success">success</Button>{' '}
                     <Code>
-        {<Button color="success">success</Button>}
+                      {`<Button color="success">success</Button>`}
                     </Code>
                   </Scene>
                 </section>
@@ -51,7 +51,7 @@ export default function BasicPage (props) {
                   <Scene>
                     <Button color="danger">danger</Button>{' '}
                     <Code>
-                {<Button color="danger">danger</Button>}
+                      {`<Button color="danger">danger</Button>`}
                     </Code>
                   </Scene>
                  </section>
@@ -62,8 +62,8 @@ export default function BasicPage (props) {
                         <Button color="primary" disabled>Primary button</Button>{' '}
                         <Button color="secondary" disabled>Button</Button>
                         <Code>
-        {`<Button color="primary" size="lg" disabled>Primary button</Button>
-        <Button color="secondary" size="lg" disabled>Button</Button>`}
+                          {`<Button color="primary" size="lg" disabled>Primary button</Button>
+                          <Button color="secondary" size="lg" disabled>Button</Button>`}
                         </Code>
                       </Scene>
                     </section>
