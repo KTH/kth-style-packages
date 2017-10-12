@@ -62,8 +62,8 @@ export default function BasicPage (props) {
                         <Button color="primary" disabled>Primary button</Button>{' '}
                         <Button color="secondary" disabled>Button</Button>
                         <Code>
-                          {`<Button color="primary" size="lg" disabled>Primary button</Button>
-                          <Button color="secondary" size="lg" disabled>Button</Button>`}
+                          {`<Button color="primary" size="lg" disabled>Primary button</Button>`}
+                          {`<Button color="secondary" size="lg" disabled>Button</Button>`}
                         </Code>
                       </Scene>
                     </section>
