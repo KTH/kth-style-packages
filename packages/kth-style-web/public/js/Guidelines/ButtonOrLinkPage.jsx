@@ -8,51 +8,38 @@ export default function DropdownsPage (props) {
       <p>
           Knappar och länkar ger användaren olika förväntningar på vad som ska ske när man klickar på dem. Eftersom en användare ska förstå innan man klickar vad som kommer att hända är det viktigt att välja rätt komponent. 
       </p>
-      <Section id="Link_Or_Buttons">
+       <p>
+          Läs gärna mer om <a href="https://www.kth.se/social/group/kth-style-guide/page/bakgrund-10/">bakgrund till varför knappar och länkar ser ut och beter sig som det gör.</a>.
+        </p>
+      <section id="link_or_buttons">
       <h2>Välj om det ska vara en knapp eller Länk</h2>
         <table class="table">
           <thead class="thead-default">
             <tr>
-              <th>Komponent</th>
+              <th>Komponenttyp</th>
               <th>Används för att</th>
             </tr>
           </thead>
           <tbody>
             <tr>
               <td><a href="#links">Länk</a></td>
-              <td>Leda vidare användaren till en annan del av webben</td>
+              <td>Leder användaren vidare till en annan del av webben</td>
             </tr>
             <tr>
-              <td><a href="#buttons">Knapp</a></td>
-              <td>Initiera en aktivitet. Ett klick på en knapp får något att hända. Det kan vara att ett formulär man fyllt i skickas in eller att en sökning utförs. Nästan alltid är en del av händelsen att användaren kommer till en ny sida – men det måste hända mer än så.</td>
+              <td>Välj <a href="#choose_button">knapp</a></td>
+              <td>Initierar en aktivitet. Ett klick på en knapp får något att hända. Det kan vara att ett formulär man fyllt i skickas in eller att en sökning utförs. Nästan alltid är en del av händelsen att användaren kommer till en ny sida – men det måste hända mer än så. Det finns finns fem olika typer av knappar. Välj knapp utifrån användning (se nedan).</td>
             </tr>
             <tr>
               <td><a href="/style/api/components/buttons#link_button">Link button</a></td>
               <td>
-                Länka till en sida där man kan initiera en aktivitet.
-              </td>
-            </tr>
-            <tr>
-              <td><a href="/style/api/components/buttons#menu_link_button">Menu link button</a></td>
-              <td>
-                Lista menyalternativ i form av länkar under en meny-knapp
+                Finns bara en variant och ska användas sparsamt för att länka vidare till en sida där man kan initiera en viktig aktivitet.
               </td>
             </tr>
           </tbody>
         </table>
-      </Section>
-      <Section id="Buttons">
-      <h2>Knappar</h2>
-        <p>
-          Knapp används för att initiera en aktivitet. Ett klick på en knapp får något att hända. Det kan vara att ett formulär man fyllt i skickas in eller att en sökning utförs. Nästan alltid är en del av händelsen att användaren kommer till en ny sida – men det måste hända mer än så. Läs mer under <a href="/style/linksorbuttons">Välj om länk eller knapp</a>.
-        </p>
-        <p>
-          Det finns finns fem olika typer av knappar. Välj knapp utifrån användning (se nedan).
-        </p>
-        <p>
-          Läs gärna mer om <a href="https://www.kth.se/social/group/kth-style-guide/page/bakgrund-10/">bakgrund</a>.
-        </p>
-      <h2>Välj typ av knapp</h2>
+      </section>
+      <section id="choose_button">
+      <h2>Välj knapp</h2>
       <table class="table" data-example="testtest">
         <thead class="thead-default">
           <tr>
@@ -62,28 +49,33 @@ export default function DropdownsPage (props) {
         </thead>
         <tbody>
           <tr>
-            <td><a href="/style/api/components/buttons#buttons">Primary - Button</a></td>
+            <td><a href="/style/api/components/buttons#primary_button">Primary button</a></td>
             <td>För primära aktiviteter (man vill uppmuntra användaren att utföra)</td>
           </tr>
           <tr>
-            <td><a href="/style/api/components/buttons#buttons">Submit - Button</a></td>
+            <td><a href="/style/api/components/buttons#success_button">Success button</a></td>
             <td>För att uppmana användaren att avsluta en uppgift som hen har påbörjat</td>
           </tr>
           <tr>
-            <td><a href="/style/api/components/buttons#buttons">Secondary - Button</a></td>
+            <td><a href="/style/api/components/buttons#secondary_button">Secondary button</a></td>
             <td>För sekundära aktiviteter (man kan utföra, men uppmanas inte till det)</td>
           </tr>
           <tr>
-            <td><a href="/style/api/components/buttons#buttons">Delete - Button</a></td>
+            <td><a href="/style/api/components/buttons#danger_buttons">Danger button</a></td>
             <td>För aktiviteter som är destruktiva</td>
           </tr>
           <tr>
-            <td><a href="/style/api/components/buttons#disabled_button">Disabled - Button</a></td>
+            <td><a href="/style/api/components/buttons#disabled_button">Disabled button</a></td>
             <td>För aktiviteter som inte är möjliga i ett specifikt tillstånd</td>
           </tr>
         </tbody>
       </table>
-   </Section>
+   </section>
+      
+   <section id="links">
+    <h2>Länk</h2>
+   </section>  
+        
         <section id="generella_riktlinjer_link_knapp">
           <h2>Generella riktlinjer för länk och knapp</h2>
           <p>Specifika riktlinjer hittar du vid respektive komponent (tänk på att ha checkat i "UX comment", högst upp på sidan till höger).</p>
