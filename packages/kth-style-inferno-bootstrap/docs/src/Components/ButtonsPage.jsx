@@ -72,9 +72,7 @@ export default function BasicPage (props) {
                 </Stage>
            
                 <Stage>
-                  <Section title="links">
-                    <h2>Länkar</h2>  
-         
+                  <Section title="Länkar">
                     <section id="blue_link">
                       <h3>Blue Link</h3>  
                         <Scene>
