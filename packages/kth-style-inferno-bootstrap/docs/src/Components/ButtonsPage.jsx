@@ -21,7 +21,7 @@ export default function BasicPage (props) {
               <Scene>
                 <Button color="primary">primary</Button>{' '}
                 <Code>
-    {`<Button color="primary">primary</Button>}
+    {`<Button color="primary">primary</Button>`}
                 </Code>
               </Scene>
             </section>
@@ -80,7 +80,7 @@ export default function BasicPage (props) {
                         <Scene>
                           <Button color="link">link</Button>
                           <Code>
-                        {<Button color="link">link</Button>`}
+                        {`<Button color="link">link</Button>`}
                           </Code>
                         </Scene>
                      </section>
