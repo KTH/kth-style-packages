@@ -20,7 +20,7 @@
     "sass-lint": "./node_modules/.bin/sass-lint --config ./.sass-lint.yml './public/sass/**/*.scss' --verbose --no-exit"
   },
   "dependencies": {
-    "bootstrap": "4.0.0-alpha.6",
+    "bootstrap": "^4.0.0-beta",
     "gulp-header": "^1.8.8",
     "jquery": "^3.1.0",
     "merge-stream": "^1.0.1"
