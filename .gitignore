@@ -58,3 +58,4 @@ public/js/app/config*.js
 dist
 .env
 packages/kth-style-web/build
+/tmp

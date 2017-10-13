@@ -8,9 +8,13 @@ if [ ! -d ./build ]; then
   mkdir -p ./build;
 fi
 
+cd ./build
 for p in $PACKAGES; do
 	echo "Processing $p"
-  FILE_NAME=$(npm pack ./packages/$p)
+  FILE_NAME=$(npm pack ../packages/$p)
 done
+cd ..
 
+echo "*** /build ***"
+ls ./build
 echo "*** DONE ***"
