@@ -57,3 +57,4 @@ public/js/app/config*.js
 /public/**/*.css.map
 dist
 .env
+packages/kth-style-web/build
