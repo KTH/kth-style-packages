@@ -10,11 +10,13 @@ fi
 
 cd ./build
 for p in $PACKAGES; do
-	echo "Processing $p"
+	echo "*** Building and packing $p"
+  (cd ../packages/$p && npm install --development && npm run build)
   FILE_NAME=$(npm pack ../packages/$p)
+  rm -r ../packages/$p/node_modules
 done
 cd ..
 
 echo "*** /build ***"
-ls ./build
+ls ./tmp/build
 echo "*** DONE ***"
