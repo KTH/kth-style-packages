@@ -4,6 +4,7 @@ kth-style-inferno-bootstrap
 kth-style-inferno-components"
 
 echo "*** Packing local packages and adding to ./build"
+echo $(which npm)
 if [ ! -d ./build ]; then
   mkdir -p ./build;
 fi
