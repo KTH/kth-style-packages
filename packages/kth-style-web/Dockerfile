@@ -5,6 +5,8 @@ MAINTAINER KTH Webb "webmaster@kth.se"
 # Copy files used by Gulp.
 #COPY ["config", "config"]
 COPY ["public", "public"]
+COPY ["build", "build"]
+COPY ["scripts", "scripts"]
 #COPY ["i18n", "i18n"]
 COPY ["gulpfile.js", "gulpfile.js"]
 COPY ["package.json", "package.json"]
@@ -12,7 +14,7 @@ COPY ["webpack.config.js", "webpack.config.js"]
 COPY ["app.js", "app.js"]
 COPY ["server", "server"]
 
-RUN npm install --development --no-optional && \
+RUN /scripts/ref-install.sh && \
     npm run build && \
     npm prune --production
 
