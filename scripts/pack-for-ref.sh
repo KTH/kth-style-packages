@@ -14,7 +14,7 @@ for p in $PACKAGES; do
 	echo "*** Building and packing $p"
   cd ../packages/$p
   npm install --development
-  npm run build
+  # npm run build
   cd ../../
   FILE_NAME=$(npm pack ../packages/$p)
   rm -r ../packages/$p/node_modules
@@ -22,5 +22,5 @@ done
 cd ..
 
 echo "*** /build ***"
-ls ./tmp/build
+ls ./build
 echo "*** DONE ***"
