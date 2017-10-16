@@ -16,7 +16,8 @@ for p in $PACKAGES; do
   cd ../packages/$p
   npm install --development
   # npm run build
-  cd ../../
+  # Go to build folder
+  cd ../../build
   FILE_NAME=$(npm pack ../packages/$p)
   rm -r ../packages/$p/node_modules
 done
