@@ -7,6 +7,12 @@ export default function DropdownsPage (props) {
       
       <h1>Riktlinjer tillgänglighet</h1>
 
+      <Section title="Riktlinjer tillgänglighet">
+          <p>
+             <a href="https://www.w3.org/Translations/WCAG20-sv/">Web Content Accessibility Guidelines (WCAG) 2.0</a>
+          </p>
+      </Section>
+      
       <Section title="Tillgänglig kod">
         <p>
             Använder du elementen i KTH Styles så ska de uppfylla användbarhet och tillgänglighet. Det finns dock några till saker du behöver tänka på när du kodar på för att det ska bli tillgängligt för användaren.
