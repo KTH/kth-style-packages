@@ -1,7 +1,8 @@
 #!/bin/sh
-PACKAGES="kth-style
-kth-style-inferno-bootstrap
-kth-style-inferno-components"
+##PACKAGES="kth-style
+##kth-style-inferno-bootstrap
+##kth-style-inferno-components"
+PACKAGES="kth-style-inferno-components"
 
 echo "*** Packing local packages and adding to ./build"
 echo $(which npm)
@@ -21,6 +22,6 @@ for p in $PACKAGES; do
 done
 cd ..
 
-echo "*** /build ***"
-ls ./build
+echo "*** Contents of /build ***"
+echo $(ls ./build)
 echo "*** DONE ***"
