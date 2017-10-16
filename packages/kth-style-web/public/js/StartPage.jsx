@@ -85,13 +85,12 @@ export default function DropdownsPage (props) {
             </Narrative>
         </Section>
 
-        <Section title="Grafisk profil">
+        <Section title="KTH:s grafiska profil">
             <Narrative>
             <p>Här kan vi skriva lite text om den grafiska profilen.</p>
             </Narrative>
             <section>
-                <h1>KTH:s grafiska profil</h1>
-                <h2>Bakgrund</h2>
+                <h3>Bakgrund</h3>
                 <p>
                 KTH:s grafiska profil är beslutad av rektor.
                 </p>
@@ -103,8 +102,8 @@ export default function DropdownsPage (props) {
                 </p>
         </section>
         <section>
-            <h2>Färg</h2>
-            <h3>Hur vi använder färger</h3>
+            <h3>Färg</h3>
+            <h4>Hur vi använder färger</h4>
             <ul>
                 <li>
                     Vi utgår ifrån <a href="https://intra.kth.se/polopoly_fs/1.458089!/image/fargreferens_png.png">KTH:s profil färger</a> men har testat kontrast och om dålig kontrast justerat ljusheten (p g a tillgänglighet). Läs mer om kontrast under <a href="/style/accessiblecolors">Färger och tillgänglighet</a>.
@@ -130,7 +129,7 @@ export default function DropdownsPage (props) {
                     Man kan använda färger för att markera, koda innehåll. Tänk på att i samma sammanhang inte samtidigt använda färger i ett dekorativt syfte.
                 </li>
             </ul>
-        <h3>Annpassning av KTHs profilfärger</h3>
+        <h4>Annpassning av KTHs profilfärger</h4>
             <p>
             Målet har varit att kth.se ska möta tillgänglighetskrav på nivå AA för WCAG 2.0 (se <a href="/style/overallprincipals#riktlinjer_tillganglighet">Övergripande principer</a>, Riktlinjer tillgänglighet, riktlinje 1.4) genom att för kth.se ändra färger, och teststorlek på de element som haft för dålig kontrast mellan bakgrund och text. En ytterligare positiv konsekvens av dessa förändringar är att kth.se kommer att ge en lugnare upplevelse vilket kommer att ge en bättre läsbarhet för alla användare.
             </p>
@@ -142,14 +141,14 @@ export default function DropdownsPage (props) {
             </p>
         </section>
         <section>
-            <h2>Font</h2>
-            <h3>Titel</h3>
+            <h3>Font</h3>
+            <h4>Titel</h4>
             <ul>
                 <li>
                     Georgia Regular, Georgia, garamond pro, garamond, times new roman, times, serif;
                 </li>
             </ul>
-            <h3>Rubriker(H2-H4) samt brödtext</h3>
+            <h4>Rubriker(H2-H4) samt brödtext</h4>
             <ul>
                 <li>
                     Serif: ...
