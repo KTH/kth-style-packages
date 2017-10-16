@@ -4,7 +4,7 @@ import { Page, Section, Narrative } from 'kth-style-inferno-bootstrap/docs/src/c
 export default function DropdownsPage (props) {
   return (
     <Page>
-      <h1>Information</h1>
+      <h1>Information/ återkoppling</h1>
           <section>
             <p>
                 Systemet ska konsekvent ge användaren den information/ återkoppling hen behöver för att kunna utföra sina aktiviteter och nå sina mål på ett tillfredställande sätt. Användaren ska även när så behövs kunna efterfråga information.
