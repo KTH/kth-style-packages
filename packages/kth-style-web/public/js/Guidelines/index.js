@@ -4,6 +4,7 @@ import AccessabilityPage from './AccessabilityPage.jsx'
 import InformationPage from './InformationPage.jsx'
 import ButtonOrLinkPage from './ButtonOrLinkPage.jsx'
 import MenuPage from './MenuPage.jsx'
+import ReadMorePage from './ReadMorePage.jsx'
 
 const pages = [
   { path: "", title: "Guidelines", header: "h2", component: StartPage},
@@ -11,7 +12,8 @@ const pages = [
   { path: "/accessability", title: "Tillgänglighet", component: AccessabilityPage},
   { path: "/information", title: "Information/ återkoppling", component: InformationPage},
   { path: "/buttonorlink", title: "Knappar och länkar", component: ButtonOrLinkPage},
-  { path: "/menu", title: "Menyer", component: MenuPage}
+  { path: "/menu", title: "Menyer", component: MenuPage},
+  { path: "/readmore", title: "Läs mer", component: ReadMorePage}
 ]
 
 export default pages
