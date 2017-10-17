@@ -15,11 +15,11 @@ export default function BasicPage (props) {
         <Stage>
           <h2>Information Alert</h2>
           <Scene>
-            <Alert color="info">
+            <Alert color="info" aria-live="polite">
               <p>Some cool text in a <b>info</b> alert box!</p>
             </Alert>
             <Code>
-{`<Alert color="info">
+{`<Alert color="info" aria-live="polite">
   <p>Some cool text in a <b>info</b> alert box!</p>
   </Alert>`}
             </Code>
@@ -59,11 +59,11 @@ export default function BasicPage (props) {
         <Stage>
           <h2>Error Alert</h2>
           <Scene>
-            <Alert color="danger">
+            <Alert color="danger" aria-live="polite">
               <p>Some cool text in a <b>danger</b> alert box!</p>
             </Alert>
             <Code>
-{`<Alert color="danger">
+{`<Alert color="danger" aria-live="polite">
   <p>Some cool text in a <b>danger</b> alert box!</p>
 </Alert>`}
             </Code>
@@ -146,7 +146,7 @@ export default function BasicPage (props) {
                 </ul>
           </UXComment>
             <Scene>
-            <Alert color="success">
+            <Alert color="success" >
               <p>Some cool text in a <b>success</b> alert box!</p>
             </Alert>
             <Code>
@@ -174,20 +174,20 @@ export default function BasicPage (props) {
             <Alert color="success">
               <p>Some cool text in a <b>success</b> alert box!</p>
             </Alert>
-            <Alert color="info">
+            <Alert color="info" aria-live="polite">
               <p>Some cool text in a <b>info</b> alert box!</p>
             </Alert>
-            <Alert color="danger">
+            <Alert color="danger" aria-live="polite">
               <p>Some cool text in a <b>danger</b> alert box!</p>
             </Alert>
             <Code>
 {`<Alert color="success">
   <p>Some cool text in a <b>success</b> alert box!</p>
   </Alert>
-  <Alert color="info">
+  <Alert color="info" aria-live="polite">
   <p>Some cool text in a <b>info</b> alert box!</p>
   </Alert>
-  <Alert color="danger">
+  <Alert color="danger" aria-live="polite">
   <p>Some cool text in a <b>danger</b> alert box!</p>
 </Alert>`}
             </Code>
@@ -200,7 +200,7 @@ export default function BasicPage (props) {
             </Alert>
             <Code>
 {`<Alert onClose={() => {}}>
-  <p>Some cool text in a <b>danger</b> alert box!</p>
+  <p>Some cool text in a <b>success</b> alert box!</p>
 </Alert>`}
             </Code>  
           </Scene>
@@ -216,7 +216,7 @@ export default function BasicPage (props) {
 {`<Alert onClose={() => {}}>
   <span>
     <h4>Attention!</h4>
-    <p>Some cool text in a <b>danger</b> alert box!</p>
+    <p>Some cool text in a <b>success</b> alert box!</p>
   </span>
 </Alert>`}
             </Code>  
