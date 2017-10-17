@@ -41,13 +41,13 @@ export default function DropdownsPage (props) {
       <Section title= "Strukturera med rubriker">
         <p>Skriv här om hur man strukturerar med rubriker, text, listor </p>
       </Section>
-      <Section title= "Strukturera med rubriker">
+      <Section title= "Strukturera med utfällbara rubriklister">
         <p>Skriv här om hur man strukturerar med utfällbara rubriklister </p>
       </Section>
-            <Section title= "Strukturera med rubriker">
+            <Section title= "Strukturera med bakgrunder ">
         <p>Skriv här om hur man strukturerar med bakgrunder </p>
       </Section>
-            <Section title= "Strukturera med rubriker">
+      <Section title= "Strukturera med flikar">
         <p>Skriv här om hur man strukturerar med flikar </p>
       </Section>
     </Page>
