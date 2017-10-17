@@ -23,6 +23,7 @@ for p in $PACKAGES; do
 done
 cd ..
 
-echo "*** Contents of /build ***"
+echo "*** Contents of [kth-style container]/build ***"
+echo "*** These are the locally generated NPM-packages that should be used for deployment of kth-style-web"
 echo $(ls ./build)
 echo "*** DONE ***"

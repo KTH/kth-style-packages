@@ -1,13 +1,8 @@
 #!/bin/sh
 echo "*** Current working directory:"
 echo $(pwd)
-echo "*** Content of kth-style root:"
-echo $(ls ../../)
 echo "*** **************************"
-echo "*** Content of kth-style root/tmp:"
-echo $(ls ../../tmp/)
-echo "*** **************************"
-echo "*** Content of kth-style root/tmp/build:"
+echo "*** Contents of kth-style root/tmp/build:"
 echo $(ls ../../tmp/build)
 echo "*** **************************"
 
