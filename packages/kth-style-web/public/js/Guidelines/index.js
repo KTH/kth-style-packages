@@ -5,6 +5,8 @@ import AccessabilityPage from './AccessabilityPage.jsx'
 import InformationPage from './InformationPage.jsx'
 import ButtonOrLinkPage from './ButtonOrLinkPage.jsx'
 import MenuPage from './MenuPage.jsx'
+import FormPage from './FormPage.jsx'
+import DialoguePage from './DialougePage.jsx'
 import ReadMorePage from './ReadMorePage.jsx'
 
 const pages = [
@@ -15,6 +17,8 @@ const pages = [
   { path: "/information", title: "Information/ återkoppling", component: InformationPage},
   { path: "/buttonorlink", title: "Knappar och länkar", component: ButtonOrLinkPage},
   { path: "/menu", title: "Menyer", component: MenuPage},
+  { path: "/form", title: "Formulär", component: FormPage},
+  { path: "/dialouge", title: "Dialoger", component: DialougePage},
   { path: "/readmore", title: "Läs mer", component: ReadMorePage}
 ]
 
