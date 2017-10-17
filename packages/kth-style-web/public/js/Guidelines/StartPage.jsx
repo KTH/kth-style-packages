@@ -47,10 +47,7 @@ export default function DropdownsPage (props) {
           <Narrative>
             <p>Tillgänglighet betyder användbarhet för alla oavsett funktionsvariation.</p>
           </Narrative>
-          <h3 id="riktlinjer_tillganglighet">Riktlinjer tillgänglighet</h3>
-          <p>
-             <a href="https://www.w3.org/Translations/WCAG20-sv/">Web Content Accessibility Guidelines (WCAG) 2.0</a>
-          </p>
+          <p>Ta del av <a href="/style/guidelines/accessability">Riktlinjer tillgänglighet</a></p>
         </Section>
 
     </Page>
