@@ -6,7 +6,7 @@ export default function DropdownsPage (props) {
     <Page>
       <h1>Riktlinjer tillgänglighet</h1>
 
-      <p> I KTH Style arbetet bygger vi in de <a href="#overgripande_riktlinjer_tillganglighet">övergripande riktlinjerna för tillgänglighet</a> 
+      <p> I KTH Style arbetet bygger vi in de <a href="#overgripande_riktlinjer_tillganglighet">övergripande riktlinjerna för tillgänglighet</a> </p>
       <p>
         Tanken med KTH Style är att underlätta för utvecklarare att ta fram tillgängliga och användbara webbapplikationer. Grunden i KTH Style är därför att bygga in så mycket som möjligt av riktlinjerna för användbarhet och tillgänglighet i komponenterna. För varje komponent behöver man då endast ta del av ett fåtal riktlinjer (som inte går att bygga in) och som förklarar när och hur man använder komponenterna.
       </p>
