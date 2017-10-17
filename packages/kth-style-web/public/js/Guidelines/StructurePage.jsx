@@ -38,6 +38,18 @@ export default function DropdownsPage (props) {
           </ul>
         </p>
       </section>
+      <Section title= "Strukturera med rubriker">
+        <p>Skriv här om hur man strukturerar med rubriker, text, listor </p>
+      </Section>
+      <Section title= "Strukturera med rubriker">
+        <p>Skriv här om hur man strukturerar med utfällbara rubriklister </p>
+      </Section>
+            <Section title= "Strukturera med rubriker">
+        <p>Skriv här om hur man strukturerar med bakgrunder </p>
+      </Section>
+            <Section title= "Strukturera med rubriker">
+        <p>Skriv här om hur man strukturerar med flikar </p>
+      </Section>
     </Page>
   )
 }
