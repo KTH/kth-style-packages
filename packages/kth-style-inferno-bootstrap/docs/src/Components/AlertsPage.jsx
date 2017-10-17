@@ -11,9 +11,9 @@ export default function BasicPage (props) {
           <p>Läs mer om hur man informera användare i olika situationer under <a href="/style/guidelines/information">Riktlinjer information</a>. </p>
         </Narrative>
       </Section>
-      <Section title="Information_Alert">
-        <Stage>
-          <h2>Information Alert</h2>
+      
+      <Stage> 
+        <Section title="Information Alert">
           <Scene>
             <Alert color="info" aria-live="polite">
               <p>Some cool text in a <b>info</b> alert box!</p>
@@ -24,7 +24,7 @@ export default function BasicPage (props) {
   </Alert>`}
             </Code>
           </Scene>
-        </Stage>
+   
         <UXComment>
           <h4>Användning</h4>
           <ul>
@@ -55,9 +55,7 @@ export default function BasicPage (props) {
           </UXComment> 
       </Section>
       
-      <Section title="Error_Alert">
-        <Stage>
-          <h2>Error Alert</h2>
+      <Section title="Error Alert">
           <Scene>
             <Alert color="danger" aria-live="polite">
               <p>Some cool text in a <b>danger</b> alert box!</p>
@@ -68,7 +66,7 @@ export default function BasicPage (props) {
 </Alert>`}
             </Code>
           </Scene>
-        </Stage>
+ 
         <UXComment> 
           <h4>Användning</h4>
           <ul>
@@ -113,9 +111,7 @@ export default function BasicPage (props) {
          </UXComment> 
       </Section>  
 
-      <Section title="Success_Alert">
-        <Stage>
-          <h2>Success Alert</h2>
+      <Section title="Success Alert">
           <UXComment>
               <h4>Användning</h4>
                 <ul>
@@ -155,7 +151,6 @@ export default function BasicPage (props) {
   </Alert>`}
             </Code>
           </Scene>
-        </Stage>
       <h3>Disappears after 5 seconds</h3>
         <UXComment>
            <h4>Användning</h4>
@@ -166,10 +161,10 @@ export default function BasicPage (props) {
                 </ul>
           </UXComment>
       </Section> 
+    </Stage>
       
-      <Section> 
-      <h2>Olika andra varianter av alerts - ha med?</h2>
-      <Stage>
+    <Stage>
+      <Section title="Olika andra varianter av alerts - ha med?"> 
           <Scene>
             <Alert color="success">
               <p>Some cool text in a <b>success</b> alert box!</p>
@@ -221,8 +216,8 @@ export default function BasicPage (props) {
 </Alert>`}
             </Code>  
           </Scene>
-        </Stage>
-     </Section>   
+        </Section> 
+      </Stage>
     </Page>
   )
 }
