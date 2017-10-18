@@ -23,17 +23,26 @@ KTH Style docs server.
 Visual components to add consistency and simplify development of Inferno-apps. 
 
 ### Documentation
-To develop `kth-style-inferno-component` docs:
+To develop docs:
 
 ```
-$ cd packages/kth-style-inferno-bootstrap
-$ npm run build-docs-dev
+$ git clone git@github.com:KTH/kth-style.git
+$ cd kth-style
+$ scripts/start-doc-dev.sh init
 ```
 
-Open a new terminal and run:
+Then open three separate terminals (so you get separate logs to simplify debugging)
 
 ```
-$ npm start
+$ scripts/start-doc-dev.sh kth-style
+```
+
+```
+$ scripts/start-doc-dev.sh kth-style-inferno-bootstrap
+```
+
+```
+$ scripts/start-doc-dev.sh kth-style-web
 ```
 
 You can now visit the docs at http://localhost:8080
