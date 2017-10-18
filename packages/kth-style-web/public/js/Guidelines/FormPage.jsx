@@ -15,6 +15,7 @@ export default function DropdownsPage (props) {
             Om du är intresserad läs gärna <a href="https://www.kth.se/social/group/kth-style-guide/page/bakgrund-17/">bakgrund</a>.
         </p>
       </section>
+      <section>
         <h2>Välj typ av indata-element</h2>
         <table class="table">
           <thead class="thead-default">
