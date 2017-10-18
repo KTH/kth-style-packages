@@ -73,7 +73,47 @@ export default function DropdownsPage (props) {
    </section>
       
    <section id="links">
-    <h2>Länk</h2>
+    <h2>Länkar</h2>
+    <p>
+        Länk används till att leda vidare användaren till en annan del av webben för att knyta ihop olika relaterade delar.
+    </p>
+    <p>
+        Det finns finns fem olika typer av länkar. Välj länk utifrån användning (se nedan).
+    </p>
+    <p>
+      Läs gärna mer om <a href="https://www.kth.se/social/group/kth-style-guide/page/bakgrund-11/">bakgrund</a>.
+    </p>
+    <h2>Välj typ av länk</h2>
+    <table class="table">
+      <thead class="thead-default">
+        <tr>
+          <th>Namn</th>
+          <th>Användning</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Länk-blå</td>
+          <td>För vanlig länk som infogas i svart text på vit bakgrund</td>
+        </tr>
+        <tr>
+          <td>Länk-vit</td>
+          <td>För länk som infogas i vit text på färgad bakgrund</td>
+        </tr>
+        <tr>
+          <td>Länk-tillbaka</td>
+          <td>För att enkelt kunna navigera tillbaka till föregående menyalternativ i de fall då menyn inte erbjuder det</td>
+        </tr>
+        <tr>
+          <td>Länk-bort</td>
+          <td>När man länkar till annan del av (KTH) webb som har en annan navigation</td>
+        </tr>
+        <tr>
+          <td>Länk-upp</td>
+          <td>För att länka till toppen på sidan då långa sidor</td>
+        </tr>
+      </tbody>
+    </table>
    </section>  
         
         <section id="generella_riktlinjer_link_knapp">
