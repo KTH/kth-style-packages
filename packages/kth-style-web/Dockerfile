@@ -5,7 +5,7 @@ MAINTAINER KTH Webb "webmaster@kth.se"
 # Copy files used by Gulp.
 #COPY ["config", "config"]
 COPY ["public", "public"]
-COPY ["build", "build"]
+COPY ["localPackages", "localPackages"]
 COPY ["scripts", "scripts"]
 #COPY ["i18n", "i18n"]
 COPY ["gulpfile.js", "gulpfile.js"]
