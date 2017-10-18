@@ -13,6 +13,7 @@
     "//": "Gulp installs css and javascript",
     "test": "echo \"ok\"",
     "build": "gulp build",
+    "build-dev": "gulp watch",
     "prepare": "npm run build",
     "preversion": "npm run test",
     "postversion": "./scripts/version.sh",
