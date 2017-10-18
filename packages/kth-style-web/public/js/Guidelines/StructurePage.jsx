@@ -43,6 +43,38 @@ export default function DropdownsPage (props) {
       </Section>
       <Section title= "Strukturera med utfällbara rubriklister">
         <p>Skriv här om hur man strukturerar med utfällbara rubriklister </p>
+        <section>
+        <p>
+            Utfällbara rubriklister används när man vill dölja information på en sida för att ge användaren överblick, samtidigt som
+            man ger användaren en möjlighet att kunna se mer information utan att behöva lämna sidan.
+        </p>
+        <p>
+            Det finns finns två olika typer av rubriklister. Välj rubriklist utifrån användning (se nedan).
+        </p>
+        <p>
+            Läs gärna mer om <a href="#">bakgrund</a> till varför rubriklisten ser ut och beter sig som det gör.
+        </p>
+        <h2>Välj typ av rubriklist</h2>
+        <table class="table">
+            <thead class="thead-default">
+                <tr>
+                    <th>Namn</th>
+                    <th>Användning</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Vit-utfällbar-rubriklist</td>
+                    <td>När rubriklisten ska smälta in med övrigt innehåll på sidan</td>
+                </tr>
+                <tr>
+                    <td>Blå-utfällbar-rubriklist</td>
+                    <td>När det är viktigt att rubriklisten syns</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    
       </Section>
             <Section title= "Strukturera med bakgrunder ">
         <p>Skriv här om hur man strukturerar med bakgrunder </p>
