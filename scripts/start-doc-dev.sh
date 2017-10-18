@@ -1,7 +1,13 @@
 #!/bin/sh
 if [ "$1" == "init" ]; then
   echo "Initialising repos..."
-  npm install lerna
+  if [ "$(which lerna)" == "" ]; then
+    echo "...lerna not found, installing"
+    npm -g install lerna
+  else
+    echo "...found lerna"
+  fi
+  echo "...bootstraping project"
   lerna bootstrap
 elif [ "$1" == "kth-style" ]; then
 	echo "Starting kth-style build watcher..."
