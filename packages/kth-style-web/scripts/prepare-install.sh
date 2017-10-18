@@ -11,5 +11,5 @@ if [ ! -d ./build ]; then
   mkdir -p ./build;
 fi
 
-echo "*** Copy local packages to ./build"
-cp ../../tmp/build/*.* ./build/
+echo "*** Copy local packages to ./localPackages"
+cp ../../tmp/build/*.* ./localPackages/

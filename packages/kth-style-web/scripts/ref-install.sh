@@ -1,6 +1,6 @@
 #!/bin/sh
 echo "*** INSTALLING LOCAL PACKAGES ***"
-for filename in ./build/*.tgz; do
+for filename in ./localPackages/*.tgz; do
     # echo "$filename"
     npm install $filename
 done
