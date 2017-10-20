@@ -1,5 +1,4 @@
-import { Page, Code, Section, Stage, Scene, Narrative } from '../components.jsx'
-import UXComment from '../UXComment.jsx'
+import { Page, Code, Section, Stage, Scene, Narrative, UXComment } from '../components.jsx'
 
 import Alert from '../../../lib/Alert.jsx'
 
