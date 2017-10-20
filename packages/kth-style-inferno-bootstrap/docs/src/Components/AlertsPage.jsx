@@ -8,7 +8,7 @@ export default function BasicPage (props) {
       <Section title="Alerts">
         <UXComment>
           <Narrative>
-            <p>Läs först <a href="/style/guidelines/information">Riktlinjer information</a> där du får överblick över hur du informerar i olika situationer och får hjälp att välja rätt typ av informationskomponent.
+            <p>Läs först <a href="/style/guidelines/information">Riktlinjer information/ återkoppling</a> där du får överblick över hur du informerar i olika situationer och får hjälp att välja rätt typ av informationskomponent.
             </p>
           </Narrative>
         </UXComment>
