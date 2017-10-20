@@ -29,22 +29,11 @@ To develop docs:
 $ git clone git@github.com:KTH/kth-style.git
 $ cd kth-style
 $ scripts/start-doc-dev.sh init
-```
-
-Then open three separate terminals (so you get separate logs to simplify debugging)
-
-```
-$ scripts/start-doc-dev.sh kth-style
-```
-
-```
-$ scripts/start-doc-dev.sh kth-style-inferno-bootstrap
-```
-
-```
-$ scripts/start-doc-dev.sh kth-style-web
+$ scripts/start-doc-dev.sh run-all
 ```
 
 You can now visit the docs at http://localhost:8080
 
 The docs will automatically rebuild, all you need to do is reload the browser.
+
+You might need to rerun `scripts/start-doc-dev.sh init` at times if changes have been made to package.json.
