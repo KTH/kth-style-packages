@@ -6,11 +6,13 @@ export default function BasicPage (props) {
   return (
     <Page>
       <Section title="Alerts">
-        <Narrative>
-          <p>Läs mer om hur man informera användare i olika situationer under <a href="/style/guidelines/information">Riktlinjer information</a>. </p>
-        </Narrative>
+        <UXComment>
+          <Narrative>
+            <p>Läs först <a href="/style/guidelines/information">Riktlinjer information</a> där du får överblick över hur du informerar i olika situationer och får hjälp att välja rätt typ av informationskomponent.
+            </p>
+          </Narrative>
+        </UXComment>
       </Section>
-      
       <Stage> 
         <Section title="Information Alert">
           <Scene>
