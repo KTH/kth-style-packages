@@ -26,7 +26,7 @@ Visual components to add consistency and simplify development of Inferno-apps.
 To develop docs:
 
 ```
-$ git clone git@github.com:KTH/kth-style.git
+$ git clone https://github.com/KTH/kth-style.git
 $ cd kth-style
 $ scripts/start-doc-dev.sh init
 $ scripts/start-doc-dev.sh run-all
