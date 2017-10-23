@@ -1,8 +1,8 @@
 import StartPage from './StartPage.jsx'
 import UsabilityPage from './UsabilityPage.jsx'
-import AccessabilityPage from './HeadingPage.jsx'
+import HeadingPage from './HeadingPage.jsx'
 import StructurePage from './StructurePage.jsx'
-import HeadingPage from './AccessabilityPage.jsx'
+import AccessabilityPage from './AccessabilityPage.jsx'
 import InformationPage from './InformationPage.jsx'
 import ButtonOrLinkPage from './ButtonOrLinkPage.jsx'
 import MenuPage from './MenuPage.jsx'
@@ -16,7 +16,7 @@ const pages = [
   { path: "/usability", title: "Användbarhet", component: UsabilityPage},
   { path: "/accessability", title: "Tillgänglighet", component: AccessabilityPage},
   { path: "/structure", title: "Strukturera en sida", component: StructurePage},
-  { path: "/structure", title: "Rubriker, brödtext", component: HeadingPage},
+  { path: "/heading", title: "Rubriker, brödtext", component: HeadingPage},
   { path: "/information", title: "Information/ återkoppling", component: InformationPage},
   { path: "/buttonorlink", title: "Knappar och länkar", component: ButtonOrLinkPage},
   { path: "/menu", title: "Menyer", component: MenuPage},
