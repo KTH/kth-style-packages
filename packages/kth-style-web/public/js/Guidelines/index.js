@@ -9,6 +9,7 @@ import MenuPage from './MenuPage.jsx'
 import FormPage from './FormPage.jsx'
 import DialogPage from './DialogPage.jsx'
 import ReadMorePage from './ReadMorePage.jsx'
+import TextExamplePage from './TextExamplePage.jsx'
 
 const pages = [
   { path: "", title: "Guidelines", header: "h2", component: StartPage},
@@ -21,7 +22,8 @@ const pages = [
   { path: "/menu", title: "Menyer", component: MenuPage},
   { path: "/form", title: "Formulär", component: FormPage},
   { path: "/dialouge", title: "Dialoger", component: DialogPage},
-  { path: "/readmore", title: "Läs mer", component: ReadMorePage}
+  { path: "/readmore", title: "Läs mer", component: ReadMorePage},
+  { path: "/textexample", title: "Läs mer", component: TextExamplePage}
 ]
 
 export default pages
