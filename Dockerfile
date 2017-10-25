@@ -3,7 +3,6 @@ FROM kthse/kth-nodejs:2.3
 COPY ["packages", "packages"]
 COPY ["scripts", "scripts"]
 
-USER jenkins:jenkins
 RUN mkdir /buildOut
 
 RUN pwd
