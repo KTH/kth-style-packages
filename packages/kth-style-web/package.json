@@ -34,7 +34,7 @@
     "kth-node-i18n": "^1.0.2",
     "kth-node-inferno": "^0.1.6",
     "kth-node-ldap": "^2.1.1",
-    "kth-node-log": "^2.0.3",
+    "kth-node-log": "^3.0.0",
     "kth-node-monitor": "^0.1.5",
     "kth-node-passport-cas": "^2.1.1",
     "kth-node-passport-oidc": "git+https://github.com/KTH/kth-node-passport-oidc.git#v1.0.0",
