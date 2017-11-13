@@ -55,7 +55,7 @@ export default function DropdownsPage (props) {
                         Styleguiden ska sammanfatta vilka element som finns att tillgå och ge Utvecklarna riktlinjer när, hur och varför elementen ska användas i utvecklingsarbetet.
                     </li>
                     <li>
-                        Styleguiden bygger på principer för Användbarhet och Tillgänglighet (se <a href="/style/guidelines">Övergripande principer</a>, Riktlinjer för användbarhet, Riktlinjer för tillgänglighet).
+                        Styleguiden bygger på principer för användbarhet och tillgänglighet (se <a href="/style/guidelines/usability">Riktlinjer för användbahet</a> och <a href="/style/guidelines/accessability">Riktlinjer för tillgänglighet</a>).
                     </li>
                     <li>
                         Innehållet diskuteras i de olika grupperingar som använder riktlinjerna och förankras med de centrala funktioner på KTH som förvaltar riktlinjerna.
