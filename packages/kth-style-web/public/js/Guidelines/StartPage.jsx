@@ -37,10 +37,7 @@ export default function DropdownsPage (props) {
          <Narrative>
             <p>Användbarhet definieras enligt ISO-normen 9241-11 som följande: Den grad i vilken användare i ett givet sammanhang kan bruka en produkt för att uppnå specifika mål på ett ändamålsenligt, effektivt och för användaren tillfredsställande sätt.</p>
           </Narrative>
-          <h3 id="riktlinjer_anvandbarhet">Riktlinjer användbarhet</h3>
-          <p>
-            <a href="https://www.kth.se/social/group/kth-style-guide/page/usability-heuristics-2/">Usability Heuristics</a>
-          </p>
+          <p>Ta del av <a href="/style/guidelines/usability">Riktlinjer användbarhet</a></p>
         </Section>
     
         <Section title="Vad är tillgänglighet?">
