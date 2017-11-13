@@ -22,7 +22,7 @@ export default function DropdownsPage (props) {
              Element ska stämmas av mot principer för användbarhet och tillgänglighet (se länkar nedan).
           </li>
           <li>
-             Elementen ska utgå ifrån <a href="/style/graphicalprofile">KTH’s grafiska profil</a> om det inte strider mot principer för tillgänglighet och användbarhet.
+             Elementen ska utgå ifrån <a href="/style/#kth:s_grafiska_profil">KTH’s grafiska profil</a> om det inte strider mot principer för tillgänglighet och användbarhet.
           </li>
           <li>
              Använd vedertagna element, standarder om det inte strider mot principer för tillgänglighet och användbarhet.
