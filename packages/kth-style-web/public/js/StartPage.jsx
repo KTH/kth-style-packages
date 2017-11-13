@@ -106,7 +106,7 @@ export default function DropdownsPage (props) {
             <h4>Hur vi använder färger</h4>
             <ul>
                 <li>
-                    Vi utgår ifrån <a href="https://intra.kth.se/polopoly_fs/1.458089!/image/fargreferens_png.png">KTH:s profil färger</a> men har testat kontrast och om dålig kontrast justerat ljusheten (p g a tillgänglighet). Läs mer om kontrast under <a href="/style/guidelines/accessability/#colorsAndAccessability">Färger och tillgänglighet</a>.
+                    Vi utgår ifrån <a href="https://intra.kth.se/polopoly_fs/1.458089!/image/fargreferens_png.png">KTH:s profil färger</a> men har testat kontrast och om dålig kontrast justerat ljusheten (p g a tillgänglighet). Läs mer om kontrast under <a href="/style/guidelines/accessability/#farger_och_tillganglighet">Färger och tillgänglighet</a>.
                 </li>
                 <li>
                     Färg ska inte vara det enda sättet att skilja på information utan kan fungera som ett bra tillägg till någon visuell markering (som inte bygger på färgskillnader). T ex använd understruket tillsammans med blå färg på länkad text. (Tillgänglighet).
