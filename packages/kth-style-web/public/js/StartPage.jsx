@@ -106,7 +106,7 @@ export default function DropdownsPage (props) {
             <h4>Hur vi använder färger</h4>
             <ul>
                 <li>
-                    Vi utgår ifrån <a href="https://intra.kth.se/polopoly_fs/1.458089!/image/fargreferens_png.png">KTH:s profil färger</a> men har testat kontrast och om dålig kontrast justerat ljusheten (p g a tillgänglighet). Läs mer om kontrast under <a href="/style/accessiblecolors">Färger och tillgänglighet</a>.
+                    Vi utgår ifrån <a href="https://intra.kth.se/polopoly_fs/1.458089!/image/fargreferens_png.png">KTH:s profil färger</a> men har testat kontrast och om dålig kontrast justerat ljusheten (p g a tillgänglighet). Läs mer om kontrast under <a href="/style/guidelines/accessability/#colorsAndAccessability">Färger och tillgänglighet</a>.
                 </li>
                 <li>
                     Färg ska inte vara det enda sättet att skilja på information utan kan fungera som ett bra tillägg till någon visuell markering (som inte bygger på färgskillnader). T ex använd understruket tillsammans med blå färg på länkad text. (Tillgänglighet).
@@ -131,7 +131,7 @@ export default function DropdownsPage (props) {
             </ul>
         <h4>Annpassning av KTHs profilfärger</h4>
             <p>
-            Målet har varit att kth.se ska möta tillgänglighetskrav på nivå AA för WCAG 2.0 (se <a href="/style/overallprincipals#riktlinjer_tillganglighet">Övergripande principer</a>, Riktlinjer tillgänglighet, riktlinje 1.4) genom att för kth.se ändra färger, och teststorlek på de element som haft för dålig kontrast mellan bakgrund och text. En ytterligare positiv konsekvens av dessa förändringar är att kth.se kommer att ge en lugnare upplevelse vilket kommer att ge en bättre läsbarhet för alla användare.
+            Målet har varit att kth.se ska möta tillgänglighetskrav på nivå AA för WCAG 2.0 (se riktlinje 1.4, <a href="/style/guidelines/accessability/#overallGuidelinesAccessability">Övergripande riktlinjer tillgänglighet</a>) genom att för kth.se ändra färger, och teststorlek på de element som haft för dålig kontrast mellan bakgrund och text. En ytterligare positiv konsekvens av dessa förändringar är att kth.se kommer att ge en lugnare upplevelse vilket kommer att ge en bättre läsbarhet för alla användare.
             </p>
             <p>
             Vi har inte velat göra för stora förändringar; kth.se ska fortfarande ge samma design-upplevelse som är baserat på den kth-profil som togs fram för ett antal år sen. Större förändringar än det vi föreslagit här kräver en större redesign med nya profilfärger, annan layout, etc.
