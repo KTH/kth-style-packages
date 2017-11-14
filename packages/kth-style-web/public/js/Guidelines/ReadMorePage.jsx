@@ -24,7 +24,7 @@ export default function DropdownsPage (props) {
        <a href="http://www.w3.org/WAI/gettingstarted/tips/developing.html"> Tips on Developing for Web Accessibility</a>
      </p>
 
-     <h3>Kontrast</h3>
+     <h3>Färger och kontrast</h3>
      <p>
         <a href="https://www.w3schools.com/colors/colors_picker.asp">Gör färgen mörkare eller ljusare för att öka kontrasten</a>
      </p>
