@@ -57,7 +57,7 @@ export default function DropdownsPage (props) {
                   Först, hjälp användare att undvika fel genom att vara så förlåtande som möjligt när det gäller indata (så länge det in strider mot någon annan princip eller teknikalitet) men formatera och lagra datat på ett så tydligt och konsekvent sätt som möjligt. Exempel: tillåt telefonnummer med ”space”, och ta bort det när du processar och lagra datat.
               </li>
               <li>
-                  Sen, när det inte går att undvika fel, hjälp användaren att rätta fel genom att <a href="/style/messages#ge_felmeddelande">ge felmeddelande</a>.
+                  Sen, när det inte går att undvika fel, hjälp användaren att rätta fel genom att <a href="/style/api/components/alerts#error_alert">ge ett felmeddelande</a>.
               </li>
            </ul>
 
