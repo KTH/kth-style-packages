@@ -17,7 +17,7 @@ export default function DropdownsPage (props) {
      <h2>Mer om tillgänglighet</h2>
      <h3>Vägledning för webbutveckling</h3>
      <p>
-       <a href="https://webbriktlinjer.se/riktlinjer/">PTS – Vägledning för webbutveckling</a>
+       <a href="https://webbriktlinjer.se/riktlinjer/">Vägledning för webbutveckling (PTS)</a>
      </p>
      <h3>Tillgänglig kod</h3>
      <p>
@@ -26,17 +26,17 @@ export default function DropdownsPage (props) {
 
      <h3>Färger och kontrast</h3>
      <p>
-        <a href="https://www.w3schools.com/colors/colors_picker.asp">Gör färgen mörkare eller ljusare för att öka kontrasten</a>
+        <a href="https://www.w3schools.com/colors/colors_picker.asp">HTML Color Picker (gör färgen mörkare eller ljusare för att öka kontrasten)</a>
      </p>
      <p>  
-         <a href="http://www.dasplankton.de/ContrastA/">Kontrollera kontrasten</a>
+         <a href="http://www.dasplankton.de/ContrastA/">Contrast-A (kontrollera kontrasten)</a>
      </p>
      <h3>Färgblindhet</h3>
      <p>  
-        <a href="https://sv.wikipedia.org/wiki/Defekt_f%C3%A4rgseende">Det finns olika typer av färgblindhet, och de är olika vanliga</a>
+        <a href="https://sv.wikipedia.org/wiki/Defekt_f%C3%A4rgseende">Defekt färgseende</a>
      </p>
      <p>  
-        <a href="https://chrome.google.com/webstore/detail/colorblinding/dgbgleaofjainknadoffbjkclicbbgaa">Installera en plugin för färgblindhet i Chrome webläsare</a>
+        <a href="https://chrome.google.com/webstore/detail/colorblinding/dgbgleaofjainknadoffbjkclicbbgaa">Colorblinding (installera en plugin för färgblindhet i Chrome webläsare)</a>
      </p>
 
      <h2>KTH övriga riktlinjer</h2>
