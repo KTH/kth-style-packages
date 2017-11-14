@@ -89,10 +89,10 @@ export default function DropdownsPage (props) {
             </p>
           <h3>Färgblindhet</h3>
           <p>
-            När man använder färger för att kunna filtrera information är det viktigt att färgerna går att särskilja även då du är färgblind. <a href="https://sv.wikipedia.org/wiki/Defekt_f%C3%A4rgseende">Det finns olika typer av färgblindhet, och de är olika vanliga</a>. 
+            När man använder färger för att kunna filtrera information är det viktigt att färgerna går att särskilja även då du är färgblind. Det finns olika typer av färgblindhet, och de är olika vanliga (se <a href="https://sv.wikipedia.org/wiki/Defekt_f%C3%A4rgseende">Defekt färseende</a>). 
           </p>
           <p>  
-            Du kan testa hur en sida ser ut för olika färgblindheter genom att <a href="https://chrome.google.com/webstore/detail/colorblinding/dgbgleaofjainknadoffbjkclicbbgaa">installera en plugin för färgblindhet i Chrome webläsare</a>.
+            Du kan testa hur en sida ser ut för olika färgblindheter genom att installera en plugin för färgblindhet i Chrome webläsare (se <a href="https://chrome.google.com/webstore/detail/colorblinding/dgbgleaofjainknadoffbjkclicbbgaa">Colorblinding</a>).
           </p>
         </Section>
     
