@@ -85,7 +85,7 @@ export default function DropdownsPage (props) {
             </Narrative>
         </Section>
 
-        <Section title="KTH:s grafiska profil">
+        <Section title="KTH's grafiska profil" id="kths_grafiska_profil">
             <Narrative>
             <p>Här kan vi skriva lite text om den grafiska profilen.</p>
             </Narrative>
