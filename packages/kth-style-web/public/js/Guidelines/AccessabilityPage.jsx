@@ -48,7 +48,7 @@ export default function DropdownsPage (props) {
 
         <h3>Använd HTML-element som bär mening</h3>
          <p>
-            Använd HTML-element och/eller WAI-ARIA-roller för att föra fram syftet med innehåller i ett element. Exempelvis ska man använda korrekta element för rubriker, listor och tabeller samt där det är möjligt utnyttja HTML5:s <a href="https://www.w3schools.com/html/html5_semantic_elements.asp">Semantiska element</a>. Observera att det är viktigt att vara konsekvent här, så rådfråga eller diskutera med någon kollega om du är osäker.
+            Använd HTML-element och/eller WAI-ARIA-roller för att föra fram syftet med innehåller i ett element. Exempelvis ska man använda korrekta element för rubriker, listor och tabeller samt där det är möjligt utnyttja <a href="https://www.w3schools.com/html/html5_semantic_elements.asp">HTML5's Semantiska Element</a>. Observera att det är viktigt att vara konsekvent här, så rådfråga eller diskutera med någon kollega om du är osäker.
          </p>
 
           <h3 id="hjalp_användaren">Hjälp användaren att undvika och rätta fel</h3>
