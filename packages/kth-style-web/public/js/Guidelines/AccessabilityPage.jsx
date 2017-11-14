@@ -75,7 +75,7 @@ export default function DropdownsPage (props) {
         <Section title="Färger och tillgänglighet">
           <h3>Kontrast</h3>
           <p> 
-          Kontrasten mellan text och bakgrund kan behöva justeras för att möta Tillgänglighetskraven (se riktlinje 1.4, <a href="/style/guidelines/accessability/#overallGuidelinesAccessability">Övergripande riktlinjer tillgänglighet</a>) 
+          Kontrasten mellan text och bakgrund kan behöva justeras för att möta Tillgänglighetskraven (se riktlinje 1.4, <a href="#overgripande_riktlinjer_tillganglighet">Övergripande riktlinjer tillgänglighet</a>) 
           </p>
           <p>  
              Börja med att <a href="http://www.dasplankton.de/ContrastA/">kontrollera kontrasten</a>.
