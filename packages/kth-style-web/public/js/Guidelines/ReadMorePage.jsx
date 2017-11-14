@@ -38,7 +38,7 @@ export default function DropdownsPage (props) {
         <a href="https://sv.wikipedia.org/wiki/Defekt_f%C3%A4rgseende">Defekt färgseende</a>
      </p>
      <p>  
-        <a href="https://chrome.google.com/webstore/detail/colorblinding/dgbgleaofjainknadoffbjkclicbbgaa">Colorblinding (installera en plugin för färgblindhet i Chrome webläsare)</a>
+        <a href="https://chrome.google.com/webstore/detail/colorblinding/dgbgleaofjainknadoffbjkclicbbgaa">Colorblinding</a> (installera en plugin för färgblindhet i Chrome webläsare)
      </p>
 
      <h2>KTH övriga riktlinjer</h2>
