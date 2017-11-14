@@ -68,7 +68,7 @@ export default function DropdownsPage (props) {
 
           <h3>Alla interaktiva element ska gå att navigera med tangenterna</h3>
           <p>
-            Se till att alla interaktiva element får att navigera till och använda  endast med hjälp av tangentbordet. Relevant här är tabbordningen för element, visa vilka element som har fokus (även om du har gett fokus till dem via tangentbordet) samt ange "accesskey" för primär-interaktion om det är relevant.
+            Se till att alla interaktiva element går att navigera till och använda  endast med hjälp av tangentbordet. Relevant här är tabbordningen för element, visa vilka element som har fokus (även om du har gett fokus till dem via tangentbordet) samt ange "accesskey" för primär-interaktion om det är relevant.
           </p>
         </Section>
 
