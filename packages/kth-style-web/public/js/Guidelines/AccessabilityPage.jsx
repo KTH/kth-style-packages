@@ -28,7 +28,7 @@ export default function DropdownsPage (props) {
            Nedan listas de tillägg i koden du behöver göra (för att det inte kan byggas in i komponenterna) för att du ska utveckla tillgängliga webbapplikationer.
         </p>
         <p>
-           Eftersom målet har varit att minimera riktlinjerna så har vi har gjort ett urval från de <a href="#overgripande_riktlinjer_tillganglighet">övergripande riktlinjerna för tillgänglighet</a>. För att se att man inte glömt något (och att dessa riktlinjer är tillräckliga) så behöver man testa koden vad gäller tillgänglighet, se <a href="/style/testhelper">Testhjälpen</a>.
+           Eftersom målet har varit att minimera riktlinjerna så har vi har gjort ett urval från de <a href="#overgripande_riktlinjer_tillganglighet">övergripande riktlinjerna för tillgänglighet</a>. För att se att man inte glömt något (och att dessa riktlinjer är tillräckliga) så behöver man testa koden vad gäller tillgänglighet, se <a href="/style/guidelines/testhelper">Riktlinjer test</a>.
         </p>
        
         <h3>Associera en "label" med varje formulärelement</h3>
