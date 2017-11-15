@@ -135,81 +135,81 @@ export default function DropdownsPage (props) {
     </table>
    </section>  
         
-   <section id="generella_riktlinjer_link">
-     <h3>Generella riktlinjer för länk Blå, Vit, Bort</h3>
-     <h4>Infoga länk i textstycke</h4>
-     <ul>
-      <li>
-        En infoga text i textstycke får en mindre dominant betydelse än en avslutande länk.    
-      </li>
-      <li>
-        Exempel infogad länk i textstycke   
-      </li>
-     </ul>
-     <h4>Avslutande länk</h4>
-      <ul>
-      <li>
-        En avslutande länk läggs på egen rad för att synas mer än infogad länk (därför att det är mer uft runt omkring) efter avslutande stycke, och kan t ex  leda användaren vidare till ytterligare information.    
-      </li>
-      <li>
-        Exempel avslutande länk  
-      </li>
-     </ul>
-     <h4>Länk i punktlista</h4>
-      <ul>
+   <section id="riktlinjer_bla_vit_bort">
+   <h2>Riktlinjer för Länk Blå, Vit, Bort</h2>
+   <h3>Infoga länk i textstycke</h3>
+   <ul>
+    <li>
+      En infoga text i textstycke får en mindre dominant betydelse än en avslutande länk.
+    </li>
+    <li>
+      Exempel infogad länk i textstycke.
+    </li>
+  </ul>
+  <h3>Avslutande länk</h3>
+  <ul>
+    <li>
+      En avslutande länk läggs på egen rad för att synas mer än infogad länk (därför att det är mer uft runt omkring) efter avslutande stycke, och kan t ex  leda användaren vidare till ytterligare information.
+    </li>
+    <li>
+      Exempel avslutande länk.
+     </li>
+  </ul> 
+  <h3>Länk i punktlista</h3>
+    <ul>
       <li>
         Lägg länkar i en punktlista när man vill presentera flera olika val i form av länkar. Se också meny.
       </li>
       <li>
-        Exempel länkar i en punktlista    
+        Exempel länkar i en punktlista
       </li>
-     </ul>
-     <p>Se även <a href="#generella_riktlinjer_link_knapp">Generella riktlinjer för länk och knapp</a>.</p>
-   </section> 
-      
-      <section id="generella_riktlinjer_link_knapp">
-          <h3>Generella riktlinjer för länk och knapp</h3>
-          <p>Specifika riktlinjer hittar du vid respektive komponent (tänk på att ha checkat i "UX comment", högst upp på sidan till höger).</p>
-          <h4>Namngivning</h4>
+    </ul>
+    Se även <a href="#generella_riktlinjer_link_knapp">Generella riktlinjer för länk och knapp</a>.
+   </section>
+     
+   <section id="generella_riktlinjer_link_knapp">
+   <h3>Generella riktlinjer för länk och knapp</h3>
+   <p>Specifika riktlinjer hittar du vid respektive komponent (tänk på att ha checkat i "UX comment", högst upp på sidan till höger).</p>
+   <h4>Namngivning</h4>
+   <ul>
+    <li>
+      Det är viktigt att man namnger interaktiva element konsekvent. Liknande handling ska tex ha samma namngivning på en knapp.
+    </li>
+    <li>
+      Var specifik så att användarna förstår vad som händer när de klickar. Exempel
+      <ul>
+        <li>
+          Knapp: skriv till exempel ”Spara sidan”, ”Skicka kursenkät” "Avsluta” och inte bara ”Ja” eller ”Ok”.
+        </li>
+        <li>
+          Länk: namnge länkar så att de beskriver innehållet de länkar till.
           <ul>
             <li>
-              Det är viktigt att man namnger interaktiva element konsekvent. Liknande handling ska tex ha samma namngivning på en knapp.
+              Undvika vaga länktexter som “Klicka här” eller “Läs mer”.
             </li>
             <li>
-              Var specifik så att användarna förstår vad som händer när de klickar. Exempel
-              <ul>
-                <li>
-                    Knapp: skriv till exempel ”Spara sidan”, ”Skicka kursenkät” "Avsluta” och inte bara ”Ja” eller ”Ok”.
-                </li>
-                <li>
-                    Länk: namnge länkar så att de beskriver innehållet de länkar till.
-                    <ul>
-                        <li>
-                            Undvika vaga länktexter som “Klicka här” eller “Läs mer”.
-                        </li>
-                        <li>
-                            Ge i stället relevant information om vad innehållet länkar till, document typ, storlek, t ex 'Proposal Documents (RTF, 20MB)'
-                        </li>
-                    </ul>
-                  </li>
-                  <li>
-                    Knapp som länkar:
-                    <ul>
-                        <li>
-                            Namnge inte knappen som en aktivitet (verb-form) då användaren inte utför en aktivitet utan endast länkas vidare till annan del av webben.
-                        </li>
-                        <li>
-                            Avsluta namnet på knappen med en ikon för att markera att det är en länk.
-                        </li>
-                        <li>
-                            Exempel: Ansökning -> (istf Ansöka).
-                        </li>
-                    </ul>
-                  </li>
-                </ul>  
-              </li>
-            </ul>     
-        </section>
-    </Page>
+              Ge i stället relevant information om vad innehållet länkar till, document typ, storlek, t ex 'Proposal Documents (RTF, 20MB)'
+            </li>
+          </ul>
+        </li>
+        <li>
+          Knapp som länkar:
+          <ul>
+            <li>
+              Namnge inte knappen som en aktivitet (verb-form) då användaren inte utför en aktivitet utan endast länkas vidare till annan del av webben.
+            </li>
+            <li>
+              Avsluta namnet på knappen med en ikon för att markera att det är en länk.
+            </li>
+            <li>
+              Exempel: Ansökning -> (istf Ansöka).
+            </li>
+          </ul>
+        </li>
+      </ul>  
+    </li>       
+  </ul>     
+</section>
+</Page>
   )
 }
