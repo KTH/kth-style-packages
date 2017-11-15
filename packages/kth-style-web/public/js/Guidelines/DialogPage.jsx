@@ -12,7 +12,7 @@ export default function DropdownsPage (props) {
             Det finns finns två olika typer av dialoger. Välj dialog utifrån användning (se nedan).
         </p>
         <p>
-          Om du är intresserad, läs mer om <a href="#">bakgrund</a>till varför dialogerna ser ut och beter sig som det gör.
+          Läs gärna mer om <a href="#">bakgrund till varför dialogerna ser ut och beter sig som det gör</a>.
         </p>
         <h2>Välj typ av dialog</h2>
         <table class="table">
@@ -51,7 +51,7 @@ export default function DropdownsPage (props) {
         <h4>Tänk på att</h4>
         <ul>
             <li>
-                Det är extra viktigt för dialoger att tänka på namngivning av knapparna, se <a href="#generella_riktlinjer_knappar">Generella riktlinjer knappar</a>.
+                Det är extra viktigt för dialoger att tänka på namngivning av knapparna, se <a href="/style/guidelines/buttonorlink/#generella_riktlinjer_link_knapp">Generella riktlinjer för länk och knapp</a>.
             </li>
         </ul>
 
@@ -77,18 +77,10 @@ export default function DropdownsPage (props) {
            <h4>Tänk på att</h4>
            <ul>
              <li>
-                Det är extra viktigt för dialoger att tänka på namngivning av knapparna, se <a href="#generella_riktlinjer_knappar">Generella riktlinjer knappar</a>.
+                Det är extra viktigt för dialoger att tänka på namngivning av knapparna, se <a href="/style/guidelines/buttonorlink/#generella_riktlinjer_link_knapp">Generella riktlinjer för länk och knapp</a>.
              </li>
            </ul>
          </section>
-
-         <section>
-         <h2>TODO</h2>
-         <ul>
-            <li>Uppdatera länkar</li>
-            <li>Uppdatera komponeneter</li>  
-         </ul>
-       </section>  
     </Page>
   )
 }
