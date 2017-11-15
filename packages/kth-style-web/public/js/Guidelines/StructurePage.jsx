@@ -21,7 +21,7 @@ export default function DropdownsPage (props) {
           </ul>
         </p>
         <p>
-          Se exempel: <a href="/style/textexample">rubriker och brödtext</a>.
+          Se exempel: <a href="/style/page-layout/textpage">rubriker och brödtext</a>.
         </p>
       </section>
 
