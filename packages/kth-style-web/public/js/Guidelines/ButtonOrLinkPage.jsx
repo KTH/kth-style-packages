@@ -71,7 +71,24 @@ export default function DropdownsPage (props) {
         </tbody>
       </table>
    </section>
-      
+   <section id="generella_riktlinjer_knappar">
+    <h2>Generella riktlinjer för knappar</h2>
+    <h3>Placering</h3>
+      <ul>
+        <li>
+          Använd inte ovanför listor då knappen kan tas för dekoration.
+        </li>
+        <li>
+          Knappar ska ligga till höger (på sidor, formulär, dialogboxar).
+        </li>
+        <li>
+          Se även hur man kombimnerar knappar i <a href="/style/dialogs">Dialoger</a>
+        </li>
+        <li>
+          Se även <a href="/style/linksorbuttons#generella_riktlinjer_link_knapp">Generella riktlinjer för länk och knapp</a>.
+        </li>
+      </ul>
+    </section>  
    <section id="links">
     <h2>Länkar</h2>
     <p>
