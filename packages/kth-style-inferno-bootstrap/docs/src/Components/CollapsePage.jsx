@@ -21,6 +21,49 @@ export default function BasicPage (props) {
       <h3>Default closed</h3>
       <Scene>
         <ToggleCollapse defaultOpen={false} />
+   
+        <h3>Vit-utfällbar-rubriklist</h3>
+        TO DO: Visa komponent
+        <UXComment>
+          <h4>Användning</h4>
+          <ul>
+            <li>
+              När rubriklisten ska smälta in med övrigt innehåll på sidan.
+            </li>
+            <li>
+              Exempel: ?
+            </li>
+         </ul>
+         <h4>Tänk på att</h4>
+         <ul>
+           <li>
+             Försäkra dig om att användaren ser den vita rubriklisten (se <a href="/style/testhelper#testa_anvandbarhet">Testa användbarhet</a>). Om inte överväg att använda Blå-utfällbar-rubriklist.
+           </li>
+           <li>
+             Se <a href="/style/guidelines/structure/#generella_riktlinjer_rubriklist">Generella riktlinjer rubriklist</a>.
+           </li>
+        </ul>
+      </UXComment>
+      
+      <h3>Blå-utfällbar-rubriklist</h3>
+      TO DO: Visa komponent
+      <UXComment>
+        <h4>Användning</h4>
+        <ul>
+          <li>
+            När det är viktigt att rubriklisten syns.
+          </li>
+          <li>
+            Exempel: ?
+          </li>
+        </ul>
+        <h4>Tänk på att</h4>
+        <ul>
+          <li>
+            Se <a href="/style/guidelines/structure/#generella_riktlinjer_rubriklist">Generella riktlinjer rubriklist</a>.
+          </li>
+        </ul>
+      </UXComment>
       </Scene>
 
       <h3>Example code:</h3>
