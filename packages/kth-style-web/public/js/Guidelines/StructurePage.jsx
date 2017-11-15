@@ -42,7 +42,6 @@ export default function DropdownsPage (props) {
         <p>Skriv här om hur man strukturerar med rubriker, text, listor </p>
       </Section>
       <Section title= "Strukturera med utfällbara rubriklister">
-        <p>Skriv här om hur man strukturerar med utfällbara rubriklister </p>
         <section>
         <p>
             Utfällbara rubriklister används när man vill dölja information på en sida för att ge användaren överblick, samtidigt som
@@ -73,8 +72,18 @@ export default function DropdownsPage (props) {
                 </tr>
             </tbody>
         </table>
+        <h2 id="generella_riktlinjer_rubriklist">Generella riktlinjer rubriklister</h2>
+        <ul>
+            <li>
+                Rubriken ska beskriva innehållet som kan fällas ut.
+            </li>
+        </ul> 
+        <h2>TODO</h2>
+        <ul>
+            <li>Uppdatera med komponenter och UX riktlinjer från Styleguide1</li>
+            <li>Uppdatera med exempel</li>
+        </ul>  
     </section>
-    
       </Section>
             <Section title= "Strukturera med bakgrunder ">
         <p>Skriv här om hur man strukturerar med bakgrunder </p>
