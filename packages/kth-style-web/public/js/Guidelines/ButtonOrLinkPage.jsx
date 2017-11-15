@@ -135,7 +135,39 @@ export default function DropdownsPage (props) {
     </table>
    </section>  
         
-        <section id="generella_riktlinjer_link_knapp">
+   <section id="generella_riktlinjer_link">
+     <h3>Generella riktlinjer för länk Blå, Vit, Bort</h3>
+     <h4>Infoga länk i textstycke</h4>
+     <ul>
+      <li>
+        En infoga text i textstycke får en mindre dominant betydelse än en avslutande länk.    
+      </li>
+      <li>
+        Exempel infogad länk i textstycke   
+      </li>
+     </ul>
+     <h4>Avslutande länk</h4>
+      <ul>
+      <li>
+        En avslutande länk läggs på egen rad för att synas mer än infogad länk (därför att det är mer uft runt omkring) efter avslutande stycke, och kan t ex  leda användaren vidare till ytterligare information.    
+      </li>
+      <li>
+        Exempel avslutande länk  
+      </li>
+     </ul>
+     <h4>Länk i punktlista</h4>
+      <ul>
+      <li>
+        Lägg länkar i en punktlista när man vill presentera flera olika val i form av länkar. Se också meny.
+      </li>
+      <li>
+        Exempel länkar i en punktlista    
+      </li>
+     </ul>
+     <p>Se även <a href="#generella_riktlinjer_link_knapp">Generella riktlinjer för länk och knapp</a>.</p>
+   </section> 
+      
+      <section id="generella_riktlinjer_link_knapp">
           <h3>Generella riktlinjer för länk och knapp</h3>
           <p>Specifika riktlinjer hittar du vid respektive komponent (tänk på att ha checkat i "UX comment", högst upp på sidan till höger).</p>
           <h4>Namngivning</h4>
