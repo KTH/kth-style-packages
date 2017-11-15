@@ -11,11 +11,12 @@ export default function BasicPage (props) {
         <Narrative>
           <p>Läs först <a href="/style/guidelines/buttonorlink">riktlinjer för knappar och länkar</a>.</p>    
         </Narrative>
-        
+      </Section>
+       
+      <Section title="Knappar">
         <Stage>
-          <Section title="Knappar">          
-            <section id="primary_button">
-              <h3>Primary button</h3>  
+          <section id="primary_button">
+          <h3>Primary button</h3>  
               <Scene>
                 <Button color="primary">primary</Button>{' '}
                 <Code>
@@ -43,6 +44,9 @@ export default function BasicPage (props) {
                 </ul>
               </UXComment>
             </section>
+          </Stage>
+          
+          <Stage>
             <section id="secondary_button">
               <h3>Secondary button</h3>  
               <Scene>
@@ -76,7 +80,9 @@ export default function BasicPage (props) {
                     </li>
                 </ul>
             </UXComment> 
-            </section>   
+          </section>   
+        </Stage>
+        <Stage>   
             <section id="success_button">
               <h3>Success button</h3>  
               <Scene>
@@ -112,6 +118,8 @@ export default function BasicPage (props) {
                 </ul>
               </UXComment>
             </section>
+          </Stage>
+          <Stage>
             <section id="danger_button">
               <h3>Danger button</h3>  
               <Scene>
@@ -141,6 +149,8 @@ export default function BasicPage (props) {
                 </ul>
               </UXComment>
             </section>
+          </Stage>
+          <Stage>
             <section id="disabled_button">
               <h3>Disabled Buttons</h3>
               <Scene>
@@ -171,8 +181,10 @@ export default function BasicPage (props) {
                 </ul>
               </UXComment>
             </section>                  
-          </Section>
-        </Stage>           
+           </Stage> 
+         </Section>
+                 
+        
         <Stage>
           <Section title="Länkar">
             <section id="blue_link">
