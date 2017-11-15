@@ -87,7 +87,7 @@ export default function DropdownsPage (props) {
           Se även hur man kombimnerar knappar i <a href="/style/dialogs">Dialoger</a>
         </li>
         <li>
-          Se även <a href="/style/linksorbuttons#generella_riktlinjer_link_knapp">Generella riktlinjer för länk och knapp</a>.
+          Se även <a href="#generella_riktlinjer_link_knapp">Generella riktlinjer för länk och knapp</a>.
         </li>
       </ul>
     </section>  
@@ -97,7 +97,7 @@ export default function DropdownsPage (props) {
         Länk används till att leda vidare användaren till en annan del av webben för att knyta ihop olika relaterade delar.
     </p>
     <p>
-        Det finns finns fem olika typer av länkar. Välj länk utifrån användning (se nedan).
+        Det finns fem olika typer av länkar. Välj länk utifrån användning (se nedan).
     </p>
     <p>
       Läs gärna mer om <a href="https://www.kth.se/social/group/kth-style-guide/page/bakgrund-11/">bakgrund till varför länkar ser ut och beter sig som de gör</a>.
