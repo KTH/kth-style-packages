@@ -27,7 +27,7 @@ export default function DropdownsPage (props) {
             </tr>
             <tr>
               <td>Välj <a href="#choose_button">knapp</a></td>
-              <td>Initierar en aktivitet. Ett klick på en knapp får något att hända. Det kan vara att ett formulär man fyllt i skickas in eller att en sökning utförs. Nästan alltid är en del av händelsen att användaren kommer till en ny sida – men det måste hända mer än så. Det finns finns fem olika typer av knappar. Välj knapp utifrån användning (se nedan).</td>
+              <td>Initierar en aktivitet. Ett klick på en knapp får något att hända. Det kan vara att ett formulär man fyllt i skickas in eller att en sökning utförs. Nästan alltid är en del av händelsen att användaren kommer till en ny sida – men det måste hända mer än så.</td>
             </tr>
             <tr>
               <td><a href="/style/api/components/buttons#link_button">Link button</a></td>
@@ -40,6 +40,7 @@ export default function DropdownsPage (props) {
       </section>
       <section id="choose_button">
       <h2>Välj knapp</h2>
+      <p>Det finns finns fem olika typer av knappar. Välj knapp utifrån användning.</p>
       <table class="table" data-example="testtest">
         <thead class="thead-default">
           <tr>
