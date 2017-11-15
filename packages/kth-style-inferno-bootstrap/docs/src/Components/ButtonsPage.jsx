@@ -61,13 +61,10 @@ export default function BasicPage (props) {
                         Exempel:
                         <ul>
                             <li>
-                                "Avbryt".
-                            </li>
-                            <li>
                                 Dialoger där inget av alternativen man kan välja ska uppmuntras.
                             </li>
                             <li>
-                                Utfällbara meny-knappar (som använd överst på sidor där man vill få plats med flera val).
+                                "Avbryt".
                             </li>
                         </ul>
                     </li>
