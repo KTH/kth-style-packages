@@ -183,9 +183,103 @@ export default function BasicPage (props) {
                   {`<Button color="link">link</Button>`}
                 </Code>
               </Scene>
-              <UXComment>
               
+              <UXComment>
+              <h4>Användning</h4>
+              <ul>
+                <li>
+                  För länk som infogas i svart text på vit bakgrund.
+                </li>
+                <li>
+                  Exempel: se <a href="#riktlinjer_bla_vit_bort">Riktlinjer för länk: Blå, Vit, Bort</a>
+                </li>
+              </ul>
               </UXComment>
+              
+              <h3>Länk-vit</h3>
+              <p>
+                Plats för vit länk
+              </p>
+              <UXComment>
+                <h4>Användning</h4>
+                <ul>
+                  <li>
+                    För länk som infogas i vit text på färgad bakgrund
+                  </li>
+                  <li>
+                    Exempel: se <a href="#riktlinjer_bla_vit_bort">Riktlinjer för länk: Blå, Vit, Bort</a>
+                  </li>
+                </ul>
+              </UXComment>
+              
+              <h3>Länk-bort</h3>
+              <p>
+                Plats för Länk-bort
+              </p>
+              <UXComment>
+                <h4>Användning:</h4>
+                <ul>
+                    <li>
+                        När man länkar till annan del av (KTH) webb som har en annan navigation (man kan inte kan använda samma meny för att navigera tillbaka).
+                    </li>
+                    <li>
+                        Exempel:
+                        <ul>
+                            <li>
+                                Länk på Programwebb till Student på KTH.
+                            </li>
+                            <li>
+                                 Exempel: se <a href="#riktlinjer_bla_vit_bort">Riktlinjer för länk: Blå, Vit, Bort</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+              </UXComment>
+              
+              <h3>Länk-tillbaka</h3>
+              <p>
+                  Länk-tillbaka
+              </p>
+              <UXComment>
+                <h4>Användning</h4>
+                <ul>
+                    <li>
+                        För att enkelt kunna navigera tillbaka till föregående menyalternativ i de fall då menyn inte erbjuder det
+                    </li>
+                    <li>
+                       Om vänstermeny: placera ovanför menyn, under headern på sidan.
+                    </li>
+                    <li>
+                        Om ingen vänstermeny: placera under headern till vänster på sidan.
+                    </li>
+                    <li>
+                        Exempel: "Student på KTH".
+                    </li>
+                </ul>
+                <h4>Tänk på att</h4>
+                <ul>
+                    <li>
+                        Namnge länken till namnet på sidan man går tillbaka till.
+                    </li>
+                </ul>
+               </UXComment>
+              
+              <h3>Länk-upp</h3>
+              <p>
+                  Länk-upp
+              </p>
+              <UXComment>
+              <h4>Användning</h4>
+              <ul>
+                  <li>
+                      För att länka till toppen på sidan då långa sidor.
+                  </li>
+                  <li>
+                      Placering: Längst ner på sidan till höger.
+                  </li>
+              </ul>
+              </UXComment>
+                
             </section>
             <section id="link_button">
               <h3>Link button</h3> 
