@@ -8,9 +8,7 @@ export default function DropdownsPage (props) {
       <p>
           Knappar och länkar ger användaren olika förväntningar på vad som ska ske när man klickar på dem. Eftersom en användare ska förstå innan man klickar vad som kommer att hända är det viktigt att välja rätt komponent. 
       </p>
-       <p>
-          Läs gärna mer om <a href="https://www.kth.se/social/group/kth-style-guide/page/bakgrund-10/">bakgrund till varför knappar och länkar ser ut och beter sig som det gör.</a>.
-        </p>
+       
       <section id="link_or_buttons">
       <h2>Välj om det ska vara en knapp eller Länk</h2>
         <table class="table">
@@ -39,8 +37,11 @@ export default function DropdownsPage (props) {
         </table>
       </section>
       <section id="choose_button">
-      <h2>Välj knapp</h2>
-      <p>Det finns finns fem olika typer av knappar. Välj knapp utifrån användning.</p>
+      <h2>Knappar</h2>
+      <p>Knapp används för att initiera en aktivitet. Ett klick på en knapp får något att hända. Det kan vara att ett formulär man fyllt i skickas in eller att en sökning utförs. Nästan alltid är en del av händelsen att användaren kommer till en ny sida – men det måste hända mer än så.</p>
+      <p>Det finns finns fem olika typer av knappar. Välj knapp utifrån användning (se nedan).</p>
+      <p>Läs gärna mer om <a href="https://www.kth.se/social/group/kth-style-guide/page/bakgrund-10/">bakgrund till varför knappar ser ut och beter sig som det gör</a>.</p>
+      <h3>Välj knapp</h3>
       <table class="table" data-example="testtest">
         <thead class="thead-default">
           <tr>
@@ -73,8 +74,8 @@ export default function DropdownsPage (props) {
       </table>
    </section>
    <section id="generella_riktlinjer_knappar">
-    <h2>Generella riktlinjer för knappar</h2>
-    <h3>Placering</h3>
+   <h3>Generella riktlinjer för knappar</h3>
+   <h4>Placering</h4>
       <ul>
         <li>
           Använd inte ovanför listor då knappen kan tas för dekoration.
@@ -91,7 +92,7 @@ export default function DropdownsPage (props) {
       </ul>
     </section>  
    <section id="links">
-    <h2>Länkar</h2>
+   <h2>Länkar</h2>
     <p>
         Länk används till att leda vidare användaren till en annan del av webben för att knyta ihop olika relaterade delar.
     </p>
@@ -99,9 +100,9 @@ export default function DropdownsPage (props) {
         Det finns finns fem olika typer av länkar. Välj länk utifrån användning (se nedan).
     </p>
     <p>
-      Läs gärna mer om <a href="https://www.kth.se/social/group/kth-style-guide/page/bakgrund-11/">bakgrund</a>.
+      Läs gärna mer om <a href="https://www.kth.se/social/group/kth-style-guide/page/bakgrund-11/">bakgrund till varför länkar ser ut och beter sig som de gör</a>.
     </p>
-    <h2>Välj typ av länk</h2>
+    <h3>Välj typ av länk</h3>
     <table class="table">
       <thead class="thead-default">
         <tr>
@@ -135,9 +136,9 @@ export default function DropdownsPage (props) {
    </section>  
         
         <section id="generella_riktlinjer_link_knapp">
-          <h2>Generella riktlinjer för länk och knapp</h2>
+          <h3>Generella riktlinjer för länk och knapp</h3>
           <p>Specifika riktlinjer hittar du vid respektive komponent (tänk på att ha checkat i "UX comment", högst upp på sidan till höger).</p>
-          <h3>Namngivning</h3>
+          <h4>Namngivning</h4>
           <ul>
             <li>
               Det är viktigt att man namnger interaktiva element konsekvent. Liknande handling ska tex ha samma namngivning på en knapp.
