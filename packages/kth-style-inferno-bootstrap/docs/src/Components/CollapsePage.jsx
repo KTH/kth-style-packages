@@ -23,7 +23,7 @@ export default function BasicPage (props) {
         <ToggleCollapse defaultOpen={false} />
    
         <h3>Vit-utfällbar-rubriklist</h3>
-        TO DO: Visa komponent
+        <p>TO DO: Visa komponent</p>
         <UXComment>
           <h4>Användning</h4>
           <ul>
@@ -46,7 +46,7 @@ export default function BasicPage (props) {
       </UXComment>
       
       <h3>Blå-utfällbar-rubriklist</h3>
-      TO DO: Visa komponent
+      <p>TO DO: Visa komponent</p>
       <UXComment>
         <h4>Användning</h4>
         <ul>
