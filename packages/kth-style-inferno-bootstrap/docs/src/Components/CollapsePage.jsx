@@ -17,12 +17,11 @@ export default function BasicPage (props) {
       <Scene>
         <ToggleCollapse defaultOpen={true} />
       </Scene>
-
       <h3>Default closed</h3>
       <Scene>
         <ToggleCollapse defaultOpen={false} />
-   
-        <h3>Vit-utfällbar-rubriklist</h3>
+      </Scene>
+      <h3>Vit-utfällbar-rubriklist</h3>
         <p>TO DO: Visa komponent</p>
         <UXComment>
           <h4>Användning</h4>
@@ -44,7 +43,6 @@ export default function BasicPage (props) {
            </li>
         </ul>
       </UXComment>
-      
       <h3>Blå-utfällbar-rubriklist</h3>
       <p>TO DO: Visa komponent</p>
       <UXComment>
@@ -63,9 +61,7 @@ export default function BasicPage (props) {
             Se <a href="/style/guidelines/structure/#generella_riktlinjer_rubriklist">Generella riktlinjer rubriklist</a>.
           </li>
         </ul>
-      </UXComment>
-      </Scene>
-
+      </UXComment>  
       <h3>Example code:</h3>
       <Scene>
         <Code>
