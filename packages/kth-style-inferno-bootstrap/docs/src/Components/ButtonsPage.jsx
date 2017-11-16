@@ -361,7 +361,6 @@ export default function BasicPage (props) {
             </Scene>               
           </Section>  
         </Stage>                  
-      </Section>  
     </Page>
   )
 }
