@@ -344,7 +344,7 @@ export default function BasicPage (props) {
             </section>                  
          </Stage>
              
-       <h2>Stöds inte i dagsläget<h2>
+       <h2>Stöds inte i dagsläget</h2>
        <p> Om man behöver använda komponenter nedan, motivera varför i KTH Style gruppen för att utvärdera om vi tar in den i riktlinjerna.</p>
        <Stage>
             <h3>Different sizes</h3>
