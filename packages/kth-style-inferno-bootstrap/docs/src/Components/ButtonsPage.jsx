@@ -7,13 +7,11 @@ import ButtonGroup from '../../../lib/ButtonGroup.jsx'
 export default function BasicPage (props) {
   return (
     <Page>
-      <Section title="Knappar och länkar">
-        <Narrative>
-          <p>Läs först <a href="/style/guidelines/buttonorlink">riktlinjer för knappar och länkar</a>.</p>    
-        </Narrative>
-      </Section>
+      <h1>Knappar och länkar</h1>
+      <p>Läs först <a href="/style/guidelines/buttonorlink">riktlinjer för knappar och länkar</a>.</p>    
+
        
-      <Section title="Knappar">
+      <h2>Knappar</h2>
         <Stage>
           <section id="primary_button">
           <h3>Primary button</h3>  
@@ -45,7 +43,6 @@ export default function BasicPage (props) {
               </UXComment>
             </section>
           </Stage>
-          
           <Stage>
             <section id="secondary_button">
               <h3>Secondary button</h3>  
@@ -182,11 +179,10 @@ export default function BasicPage (props) {
               </UXComment>
             </section>                  
            </Stage> 
-         </Section>
-                 
+    
         
-        <Stage>
-          <Section title="Länkar">
+          <h2>Länkar</h2>
+          <Stage>
             <section id="blue_link">
               <h3>Blue Link</h3>  
               <Scene>
@@ -207,7 +203,11 @@ export default function BasicPage (props) {
                 </li>
               </ul>
               </UXComment>
-              
+            </section>                  
+         </Stage> 
+      
+          <Stage>
+            <section id="white_link">
               <h3>Länk-vit</h3>
               <p>
                 Plats för vit länk
@@ -223,7 +223,11 @@ export default function BasicPage (props) {
                   </li>
                 </ul>
               </UXComment>
-              
+            </section>                  
+         </Stage>
+            
+         <Stage>
+            <section id="link_away">
               <h3>Länk-bort</h3>
               <p>
                 Plats för Länk-bort
@@ -247,7 +251,11 @@ export default function BasicPage (props) {
                     </li>
                 </ul>
               </UXComment>
-              
+            </section>                  
+         </Stage>
+             
+         <Stage>
+            <section id="link_back">
               <h3>Länk-tillbaka</h3>
               <p>
                   Länk-tillbaka
@@ -275,7 +283,11 @@ export default function BasicPage (props) {
                     </li>
                 </ul>
                </UXComment>
+             </section>                  
+         </Stage>
               
+         <Stage>
+            <section id="link_up">
               <h3>Länk-upp</h3>
               <p>
                   Länk-upp
@@ -291,8 +303,10 @@ export default function BasicPage (props) {
                   </li>
               </ul>
               </UXComment>
-                
-            </section>
+            </section>                  
+         </Stage>
+           
+         <Stage>
             <section id="link_button">
               <h3>Link button</h3> 
               <p>TO DO: Länka till komponent</p>
@@ -313,7 +327,10 @@ export default function BasicPage (props) {
                   </li>
                 </ul>
               </UXComment>
-            </section>  
+            </section>                  
+         </Stage>
+              
+         <Stage>
             <section id="menu_link_button">
               <h3>Menu Link button</h3>
               <UXComment>
@@ -324,15 +341,12 @@ export default function BasicPage (props) {
                   </li>
                 </ul>
               </UXComment>
-            </section>   
-          </Section>
-        </Stage>        
-        <Stage>
-          <Section title="Stöds inte i dagsläget">
-            <Narrative>
-              <p> Om man behöver använda komponenter nedan, motivera varför i KTH Style gruppen för att utvärdera om vi tar in den i riktlinjerna.</p>
-            </Narrative>
-
+            </section>                  
+         </Stage>
+             
+       <h2>Stöds inte i dagsläget</h2>
+       <p> Om man behöver använda komponenter nedan, motivera varför i KTH Style gruppen för att utvärdera om vi tar in den i riktlinjerna.</p>
+       <Stage>
             <h3>Different sizes</h3>
             <Scene>
               <Button color="primary" size="lg">Large Button</Button>{' '}
@@ -358,8 +372,7 @@ export default function BasicPage (props) {
                 {`<Button color="primary" size="lg" block>Block level button</Button>
                 <Button color="secondary" size="lg" block>Block level button</Button>`}
               </Code>
-            </Scene>               
-          </Section>  
+            </Scene>              
         </Stage>                  
     </Page>
   )
