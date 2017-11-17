@@ -335,35 +335,13 @@ pre[class*="language-"]:before {
   align-items: center;
   position: relative;
   min-height: 1.75em;
-  padding: 0.2em 0 0.2em 2.325em;
+  margin-top: 1.6em;
+  padding: 0.2em 0 0.2em;
   margin-bottom: 1.3rem;
-  font-size: 1.5rem;
-}
-
-.ExampleStage .UXComment {
-  font-size: 1.1rem;
-  margin-top: 1.3em;
-}
-
-.UXComment-Content {
-  flex: none;
-  font-size: 0.85em;
-  color: #666;
 }
 
 .UXComment-Content :last-child {
   margin-bottom: 0em;
-}
-
-
-.UXComment-Content h2 {
-  font-size: 1.1em;
-  margin: 0 0 0.1em;
-  color: #555;
-}
-
-.UXComment-Content p {
-  font-size: 0.9em;
 }
 
 .UXComment::before {
@@ -374,7 +352,7 @@ pre[class*="language-"]:before {
   border-radius: 50%;
   background-color: #ccc;
   color: #fafafa;
-  padding: 0.3em 0.3em 0.2em;
+  padding: 0.4em 0.3em 0.2em;
   font-size: 0.85em;
   font-weight: bold;
   border: 0.1em solid #fff;
