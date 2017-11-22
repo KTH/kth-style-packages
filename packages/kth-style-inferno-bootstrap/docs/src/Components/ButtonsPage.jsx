@@ -347,6 +347,7 @@ export default function BasicPage (props) {
        <h2>Stöds inte i dagsläget</h2>
        <p> Om man behöver använda komponenter nedan, motivera varför i KTH Style gruppen för att utvärdera om vi tar in den i riktlinjerna.</p>
        <Stage>
+         <section>
             <h3>Different sizes</h3>
             <Scene>
               <Button color="primary" size="lg">Large Button</Button>{' '}
@@ -372,8 +373,9 @@ export default function BasicPage (props) {
                 {`<Button color="primary" size="lg" block>Block level button</Button>
                 <Button color="secondary" size="lg" block>Block level button</Button>`}
               </Code>
-            </Scene>              
-        </Stage>                  
+            </Scene>
+         </section>
+       </Stage>                  
     </Page>
   )
 }
