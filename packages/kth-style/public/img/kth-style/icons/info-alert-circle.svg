@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100%" height="100%" viewBox="0 0 86 86" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.4.2 (15855) - http://www.bohemiancoding.com/sketch -->
+    <title>info-alert</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Mobile-Portrait" sketch:type="MSArtboardGroup" transform="translate(-42.000000, -45.000000)">
+            <g id="info-alert" sketch:type="MSLayerGroup" transform="translate(42.000000, 45.000000)">
+                <path d="M43,86 C66.7482442,86 86,66.7482442 86,43 C86,19.2517558 66.7482442,0 43,0 C19.2517558,0 0,19.2517558 0,43 C0,66.7482442 19.2517558,86 43,86 Z" id="yellow" fill="#FAB919" sketch:type="MSShapeGroup"></path>
+                <text id="i" stroke="#FFFFFF" fill="#FFFFFF" sketch:type="MSTextLayer" font-family="Athelas" font-size="67" font-style="italic" font-weight="bold" sketch:alignment="middle" line-spacing="86">
+                    <tspan x="34.1895" y="60.910124">i</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

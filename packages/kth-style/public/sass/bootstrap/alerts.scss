@@ -8,17 +8,12 @@
 @import "../common/icons.scss";
 
 .message-base {
-  align-items: center;
   color: $black;
-  display: flex;
-  flex-direction: row;
   font-size: 1.2rem;
-  justify-content: space-between; //Replace it
-  margin-top: 1rem;
-  min-height: 5rem;
+  min-height: 4.4rem;
   border-radius: .15rem;
   position: relative;
-  padding: 1.2rem 2.2rem 1rem 5rem;
+  padding: 1.2rem 2.2rem 1rem 5.4rem;
 
   p:last-of-type, span:last-child, div:last-child {
     margin-bottom: 0;
@@ -38,17 +33,15 @@
   }
 }
 
-@mixin message-icons-base($color) {
-  font-family: 'kth-style-icons';
+@mixin message-icons-base() {
   font-size: 1.8rem;
-  background-color: $color;
   color: #fff;
-  display: flex;
-  align-items: center;
-  padding: 0 1.4rem 0 1.4rem;
+  //align-items: center;
+  //display: flex;
   position: absolute;
+  top: .2em;
   left: .2em;
-  border-radius: 1em;
+  width: 2em;
 }
 
 .alert > :last-child {
@@ -60,9 +53,8 @@
   background-color: $infoYellow;
   border: solid 1px $infoYellowBorder;
   &::before {
-    @include message-icons-base($infoYellowIcon);
-    @extend .icon-info:before;
-    height: 2em;    
+    @include message-icons-base();
+    content: url('../img/kth-style/icons/info-alert-circle.svg');
   }
 }
 
@@ -71,12 +63,8 @@
   background-color: $infoRed;
   border: solid 1px $infoRedBorder;
   &::before {
-    @include message-icons-base($infoRedIcon);
-    -webkit-font-smoothing: antialiased;
-    font-family: Arial;
-    font-size: 2.5rem;
-    font-weight: 700;
-    content: '!';
+    @include message-icons-base();
+    content: url('../img/kth-style/icons/attention-alert-circle.svg');
   }
 }
 
@@ -85,9 +73,7 @@
   background-color: $infoGreen;
   border: solid 1px $infoGreenBorder;
   &::before {
-    @extend .icon-check:before;
-    @include message-icons-base($infoGreenIcon);
-    padding: 0 1.2rem 0 1.2rem;
-    height: 2em;    
+    @include message-icons-base();
+    content: url('../img/kth-style/icons/info-success-circle.svg');
   }
 }
