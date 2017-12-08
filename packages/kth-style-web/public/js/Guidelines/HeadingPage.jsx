@@ -43,7 +43,16 @@ export default function DropdownsPage (props) {
           </tbody>
         </table>
       </section>
-    
+      <section id="generella_riktlinjer_rubriker">
+        <h2>Generella riktlinjer för rubriker</h2>
+        <ul>
+          <li>Välj rubriker som beskriver innehållet.</li>
+          <li>Titeln ska vara unik och ska börja med det unika och mest relevanta</li>
+         <li>När de finns flera sidor som hör i hop, t ex en wizard I flera steg, inkludera aktuellt steg i titeln.</li>
+          <li>Använd rubriker för att ge struktur och mening till längre textinnehåll. Använd korta rubriker för att gruppera relaterade paragrafer.</li>
+         <li>Hoppa inte över rubriknivåer då det försvårar förståelse av sidostrukturen och läsbarheten.</li>
+        </ul>
+      </section>
      </Page>
   )
 }

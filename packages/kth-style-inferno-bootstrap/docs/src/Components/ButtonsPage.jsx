@@ -149,7 +149,7 @@ export default function BasicPage (props) {
           </Stage>
           <Stage>
             <section id="disabled_button">
-              <h3>Disabled Buttons</h3>
+              <h3>Disabled Button</h3>
               <Scene>
                 <Button color="primary" disabled>Primary button</Button>{' '}
                 <Button color="secondary" disabled>Button</Button>
@@ -184,7 +184,7 @@ export default function BasicPage (props) {
           <h2>Länkar</h2>
           <Stage>
             <section id="blue_link">
-              <h3>Blue Link</h3>  
+              <h3>Blue link</h3>  
               <Scene>
                 <Button color="link">link</Button>
                 <Code>
@@ -208,9 +208,9 @@ export default function BasicPage (props) {
       
           <Stage>
             <section id="white_link">
-              <h3>Länk-vit</h3>
+              <h3>White link</h3>
               <p>
-                Plats för vit länk
+                TO DO: Infoga komponent här
               </p>
               <UXComment>
                 <h4>Användning</h4>
@@ -227,10 +227,10 @@ export default function BasicPage (props) {
          </Stage>
             
          <Stage>
-            <section id="link_away">
-              <h3>Länk-bort</h3>
+            <section id="away_link">
+              <h3>Away link</h3>
               <p>
-                Plats för Länk-bort
+                TO DO: Infoga komponent här
               </p>
               <UXComment>
                 <h4>Användning:</h4>
@@ -255,10 +255,10 @@ export default function BasicPage (props) {
          </Stage>
              
          <Stage>
-            <section id="link_back">
-              <h3>Länk-tillbaka</h3>
+            <section id="back_link">
+              <h3>Back link</h3>
               <p>
-                  Länk-tillbaka
+                TO DO: Infoga komponent här
               </p>
               <UXComment>
                 <h4>Användning</h4>
@@ -287,10 +287,10 @@ export default function BasicPage (props) {
          </Stage>
               
          <Stage>
-            <section id="link_up">
-              <h3>Länk-upp</h3>
+            <section id="up_link">
+              <h3>Up link</h3>
               <p>
-                  Länk-upp
+                  TO DO: Infoga komponent här
               </p>
               <UXComment>
               <h4>Användning</h4>
@@ -309,7 +309,7 @@ export default function BasicPage (props) {
          <Stage>
             <section id="link_button">
               <h3>Link button</h3> 
-              <p>TO DO: Länka till komponent</p>
+              <p>TO DO: Infoga komponent här</p>
               <UXComment>
                 <h4>Användning</h4>
                 <ul>

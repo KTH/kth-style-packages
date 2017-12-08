@@ -20,11 +20,11 @@ export default function DropdownsPage (props) {
           </thead>
           <tbody>
             <tr>
-              <td><a href="#links">Länk</a></td>
+              <td><a href="#links">Länk</a> välj ...</td>
               <td>Leder användaren vidare till en annan del av webben</td>
             </tr>
             <tr>
-              <td>Välj <a href="#choose_button">knapp</a></td>
+              <td><a href="#choose_button">Knapp</a> välj ...</td>
               <td>Initierar en aktivitet. Ett klick på en knapp får något att hända. Det kan vara att ett formulär man fyllt i skickas in eller att en sökning utförs. Nästan alltid är en del av händelsen att användaren kommer till en ny sida – men det måste hända mer än så.</td>
             </tr>
             <tr>
@@ -63,7 +63,7 @@ export default function DropdownsPage (props) {
             <td>För sekundära aktiviteter (man kan utföra, men uppmanas inte till det)</td>
           </tr>
           <tr>
-            <td><a href="/style/api/components/buttons#danger_buttons">Danger button</a></td>
+            <td><a href="/style/api/components/buttons#danger_button">Danger button</a></td>
             <td>För aktiviteter som är destruktiva</td>
           </tr>
           <tr>
@@ -84,7 +84,7 @@ export default function DropdownsPage (props) {
           Knappar ska ligga till höger (på sidor, formulär, dialogboxar).
         </li>
         <li>
-          Se även hur man kombimnerar knappar i <a href="/style/dialogs">Dialoger</a>
+          Se även hur man kombimnerar knappar i <a href="/style/guidelines/dialouge">Dialoger</a>
         </li>
         <li>
           Se även <a href="#generella_riktlinjer_link_knapp">Generella riktlinjer för länk och knapp</a>.
@@ -112,23 +112,23 @@ export default function DropdownsPage (props) {
       </thead>
       <tbody>
         <tr>
-          <td>Länk-blå</td>
+          <td><a href="/style/api/components/buttons#blue_link">Blue link</a></td>
           <td>För vanlig länk som infogas i svart text på vit bakgrund</td>
         </tr>
         <tr>
-          <td>Länk-vit</td>
+          <td><a href="/style/api/components/buttons#white_link">White link</a></td>
           <td>För länk som infogas i vit text på färgad bakgrund</td>
         </tr>
         <tr>
-          <td>Länk-tillbaka</td>
+          <td><a href="/style/api/components/buttons#back_link">Back link</a></td>
           <td>För att enkelt kunna navigera tillbaka till föregående menyalternativ i de fall då menyn inte erbjuder det</td>
         </tr>
         <tr>
-          <td>Länk-bort</td>
+          <td><a href="/style/api/components/buttons#away_link">Away link</a></td>
           <td>När man länkar till annan del av (KTH) webb som har en annan navigation</td>
         </tr>
         <tr>
-          <td>Länk-upp</td>
+          <td><a href="/style/api/components/buttons#up_link">Up link</a></td>
           <td>För att länka till toppen på sidan då långa sidor</td>
         </tr>
       </tbody>
