@@ -145,6 +145,7 @@ body {
 .ExampleStage {
   border: 1px solid lightgray;
   background-color: #fdfdfd;
+  margin-bottom: 1rem;
   padding: 1rem;
   border-radius: 0.3rem;
 }
@@ -174,7 +175,7 @@ body {
 }
 
 .ExampleScene-Code {
-  font-family: Courier New, Courier, monospace;
+  //font-family: Courier New, Courier, monospace;
   margin: 1rem -1rem;
 } .ExampleScene-Code pre {
   margin: 0;
@@ -199,20 +200,20 @@ pre[class*="language-"]:before {
   z-index: -1;
 }
 
-.ExampleNarrative {
-  font-size: 1.1em;
-}
+// .ExampleNarrative {
+//   font-size: 1.1em;
+// }
 
-.ExampleStage > h3 {
-  font-size: 1.1em;
-  margin-top: 2em;
-  border-bottom: 1px dashed #ddd;
-  padding-bottom: 0.5em;
-}
+// .ExampleStage > h3 {
+//   font-size: 1.1em;
+//   margin-top: 2em;
+//   border-bottom: 1px dashed #ddd;
+//   padding-bottom: 0.5em;
+// }
 
-.ExampleStage > h3:first-child {
-  margin-top: 0.5em;
-}
+// .ExampleStage > h3:first-child {
+//   margin-top: 0.5em;
+// }
 
 .modal {
   display: block;
@@ -350,7 +351,7 @@ pre[class*="language-"]:before {
   left: 0;
   top: 0;
   border-radius: 50%;
-  background-color: #ccc;
+  background-color: grey;
   color: #fafafa;
   padding: 0.4em 0.3em 0.2em;
   font-size: 0.85em;
