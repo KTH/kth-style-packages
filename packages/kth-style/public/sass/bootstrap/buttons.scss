@@ -1,3 +1,13 @@
+@mixin btn-coloring-base($color, $colorHover) {
+  background-color: $color;
+  border-color: $color;
+  &:hover {
+    background-color: $colorHover;
+    border-color: $colorHover;
+  }
+}
+
+
 .btn {
   letter-spacing: $moreSpaceLetterSpacing;
   padding: 0.5rem 1.5rem;
@@ -9,33 +19,26 @@
 }
 
 .btn-primary {
-  background-color: $lightBlue;
-  border-color:  $lightBlue;
-  &:hover {
-    background-color: $lightBlueHover;
-    border-color: $lightBlueHover;
-  }
+  @include btn-coloring-base($lightBlue, $lightBlueHover);
 }
 
 .btn-secondary {
-  background-color: $white;
+  @include btn-coloring-base($white, $lightGrey);
   color: $textColor;
   border-color: $darkGrey;
 
   &:hover {
-    background-color: $lightGrey;
     border-color: $darkGrey;
     color: $textColor;
   }
 }
 
+.btn-success {
+  @include btn-coloring-base($green, $greenHover);
+}
+
 .btn-danger {
-  background-color: $lightRed;
-  border-color: $lightRed;
-  &:hover{
-    background-color: $lightRedHover;
-    border-color: $lightRedHover;
-  }
+  @include btn-coloring-base($lightRed, $lightRedHover);
 }
 
 .btn-link {
