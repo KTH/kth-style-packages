@@ -5,6 +5,10 @@
     background-color: $colorHover;
     border-color: $colorHover;
   }
+  &:disabled {
+    background-color: $color;
+    border-color: $color;
+  }
 }
 
 
