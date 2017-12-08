@@ -10,6 +10,11 @@
 
 .btn-primary {
   background-color: $lightBlue;
+  border-color:  $lightBlue;
+  &:hover {
+    background-color: $lightBlueHover;
+    border-color: $lightBlueHover;
+  }
 }
 
 .btn-secondary {
@@ -17,14 +22,20 @@
   color: $textColor;
   border-color: $darkGrey;
 
-  &:hover{
+  &:hover {
+    background-color: $lightGrey;
     border-color: $darkGrey;
+    color: $textColor;
   }
 }
 
 .btn-danger {
   background-color: $lightRed;
   border-color: $lightRed;
+  &:hover{
+    background-color: $lightRedHover;
+    border-color: $lightRedHover;
+  }
 }
 
 .btn-link {
