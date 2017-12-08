@@ -35,6 +35,10 @@
     border-color: $darkGrey;
     color: $textColor;
   }
+
+  &:disabled {
+    border-color: $darkGrey;
+  }
 }
 
 .btn-success {
