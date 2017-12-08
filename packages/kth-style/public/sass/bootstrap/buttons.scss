@@ -5,3 +5,18 @@
     margin-left: 0;
   }
 }
+
+.btn-primary {
+  background-color: $lightBlue;
+}
+
+// .btn-secondary {
+//   background-color: $white;
+//   color: $textColor;
+//   border-color: $darkGrey;
+// }
+
+.btn-danger {
+  background-color: $lightRed;
+  border-color: $lightRed;
+}

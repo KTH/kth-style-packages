@@ -5,8 +5,6 @@
 
   Uses kth-style-icons font. See icons.scss
 */
-@import "../common/icons.scss";
-
 .message-base {
   color: $black;
   font-size: 1.2rem;
@@ -36,8 +34,6 @@
 @mixin message-icons-base() {
   font-size: 1.8rem;
   color: #fff;
-  //align-items: center;
-  //display: flex;
   position: absolute;
   top: .2em;
   left: .2em;
