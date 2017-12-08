@@ -1,5 +1,7 @@
 .btn {
   letter-spacing: $moreSpaceLetterSpacing;
+  padding: 0.5rem 1.5rem;
+  border: 1px solid;
 
   &:first-child {
     margin-left: 0;
@@ -10,11 +12,15 @@
   background-color: $lightBlue;
 }
 
-// .btn-secondary {
-//   background-color: $white;
-//   color: $textColor;
-//   border-color: $darkGrey;
-// }
+.btn-secondary {
+  background-color: $white;
+  color: $textColor;
+  border-color: $darkGrey;
+
+  &:hover{
+    border-color: $darkGrey;
+  }
+}
 
 .btn-danger {
   background-color: $lightRed;
