@@ -38,3 +38,20 @@
   margin: 0 38px 14px 0;
   background: transparent url('../img/kth-style/icons/gray-arrow-left.svg') 27px 7px no-repeat;
 }
+
+.verticalNavCard { // Card with vertical navigation like course-card in PM
+  .header3 {
+    border-bottom: solid 1px #bdbcbc;
+  }
+  h3, h4 {
+      color: $brighterBlack;
+  }
+  .nav-item a {
+    &:focus {
+        background-color: #e6e6e6;
+    }
+    &:hover {
+        background-color: #e6e6e6;
+    }
+  }
+}
