@@ -1,4 +1,5 @@
 import { Page, Section, Narrative } from 'kth-style-inferno-bootstrap/docs/src/components.jsx'
+import Alert from 'kth-style-inferno-bootstrap/lib/Alert.jsx'
 import Jumbotron from 'kth-style-inferno-bootstrap/lib/Jumbotron.jsx'
 
 export default function DropdownsPage (props) {
@@ -9,6 +10,9 @@ export default function DropdownsPage (props) {
         
         <Section title="Bakgrund">
             <Narrative>
+            <Alert color="info" aria-live="polite">
+                <p>KTH Style är under utveckling. Riktlinjer och utseende kan komma att ändras fram till lansering.</p>
+            </Alert>
             <p>
                 KTH webb är riktlinje för style men olika delar har kopierats vid olika lägen och tolkats olika vilket gör att utseende varierar mellan olika tjänster. Även inom KTH webb finns delar som är tveksamma vad gäller principer för Användbarhet och Tillgänglighet. Det finns inte heller några riktlinjer eller principer nedskrivna för hur man ska använda de olika elementen för att uppnå bra UX.
             </p>
