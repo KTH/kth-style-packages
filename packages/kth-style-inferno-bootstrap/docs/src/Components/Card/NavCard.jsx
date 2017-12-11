@@ -16,23 +16,23 @@ export default function () {
       </Narrative>  
       <Stage>
         <Scene>
-            <Card>
+            <Card className="verticalNavCard">
                 <CardBody>
                     <div className="course-card big-icon">
                         <span>
                             <h4>Algebra och geometri (SF1624)</h4>
                             <Nav  vertical>
                                 <NavItem>
-                                    <NavLink href="http://localdev.kth.se:8000/social/course/EQ2220/">Kursinformation</NavLink>
+                                    <NavLink href="#">Kursinformation</NavLink>
                                 </NavItem>
                                 <NavItem>
-                                    <NavLink href="https://kth.test.instructure.com/courses/2340" className="icon-canvas">Material HT17-9</NavLink>
+                                    <NavLink href="#" className="icon-canvas">Material HT17-9</NavLink>
                                 </NavItem>
                                 <NavItem>
-                                    <NavLink href="https://kth.test.instructure.com/courses/2340" className="icon-canvas">Material HT17-9</NavLink>
+                                    <NavLink href="#" className="icon-canvas">Material HT17-9</NavLink>
                                 </NavItem>
                                 <NavItem>
-                                    <NavLink href="https://kth.test.instructure.com/courses/2340" className="icon-canvas">Material HT17-9</NavLink>
+                                    <NavLink href="#" className="icon-canvas">Material HT17-9</NavLink>
                                 </NavItem>
                             </Nav>
                         </span>
@@ -42,23 +42,23 @@ export default function () {
             </Card>
 
             <Code>
-{`<Card>
+{`<Card className="verticalNavCard">
 <CardBody>
     <div className="course-card big-icon">
         <span>
             <h4>Algebra och geometri (SF1624)</h4>
-            <Nav  vertical className="white-m">
+            <Nav  vertical>
                 <NavItem>
-                    <NavLink href="http://localdev.kth.se:8000/social/course/EQ2220/">Kursinformation</NavLink>
+                    <NavLink href="#">Kursinformation</NavLink>
                 </NavItem>
                 <NavItem>
-                    <NavLink href="https://kth.test.instructure.com/courses/2340" className="icon-canvas">Material HT17-9</NavLink>
+                    <NavLink href="#" className="icon-canvas">Material HT17-9</NavLink>
                 </NavItem>
                 <NavItem>
-                    <NavLink href="https://kth.test.instructure.com/courses/2340" className="icon-canvas">Material HT17-9</NavLink>
+                    <NavLink href="#" className="icon-canvas">Material HT17-9</NavLink>
                 </NavItem>
                 <NavItem>
-                    <NavLink href="https://kth.test.instructure.com/courses/2340" className="icon-canvas">Material HT17-9</NavLink>
+                    <NavLink href="#" className="icon-canvas">Material HT17-9</NavLink>
                 </NavItem>
             </Nav>
         </span>
