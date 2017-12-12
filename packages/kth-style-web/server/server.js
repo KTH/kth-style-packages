@@ -22,6 +22,9 @@ const prismjsDir = _getModulePath('prismjs')
 const staticDir = path.resolve(__dirname, '../dist')
 console.log(staticDir)
 
+// System routes
+app.use('/style/_monitor', (req, res) => res.send('APPLICATION_STATUS: OK'))
+
 app.use('/style/kth-style', express.static(kthStyleDir + '/dist'))
 app.use('/style/prism', express.static(prismjsDir + '/themes'))
 app.use('/style/static', express.static(staticDir))
@@ -31,13 +34,12 @@ app.use((req, res) => {
 
 // *** SERVER ERROR HANDLER ***
 app.use(function (err, req, res, next) {
-    console.log(err)
-    return res.status(404).json({
-        error: 'Server error',
-        err: err
-    })
+  console.log(err)
+  return res.status(404).json({
+    error: 'Server error',
+    err: err
+  })
 })
-
 
 /*
     ********** /END ERROR HANDLING **********
@@ -46,7 +48,7 @@ app.use(function (err, req, res, next) {
 module.exports = function (PORT, done) {
   const msg = '*** Listening on port: ' + PORT + ' ***'
   console.log(
-    ' '  + '*'.repeat(msg.length) + '\n', msg + '\n', '*'.repeat(msg.length)
+    ' ' + '*'.repeat(msg.length) + '\n', msg + '\n', '*'.repeat(msg.length)
   )
   return app.listen(PORT, done)
 }
