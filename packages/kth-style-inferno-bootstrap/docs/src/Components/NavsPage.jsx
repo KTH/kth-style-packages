@@ -5,6 +5,8 @@ import VerticalSection from './Navs/Vertical.jsx'
 import TabbedSection from './Navs/Tabbed.jsx'
 import PillsSection from './Navs/Pills.jsx'
 import FilterHorizontal from './Navs/FilterHorizontal.jsx'
+import PersonalMenu from './Navs/PersonalMenu.jsx'
+
 
 export default function BasicPage (props) {
   return (
@@ -14,6 +16,7 @@ export default function BasicPage (props) {
       <TabbedSection />
       <PillsSection />
       <FilterHorizontal />
+      <PersonalMenu />
     </Page>
   )
 }
