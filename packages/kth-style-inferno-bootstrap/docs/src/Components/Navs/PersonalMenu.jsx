@@ -35,14 +35,30 @@ export default function () {
           <Code>
 {`<div id='kth-menu-container'>
     <Nav className="main-m">
-        <MenuLink href="#" title="Lena" />
-        <MenuLink href="#" title="Schema" />
-        <MenuLink href="#" title="Kurser&Program" />
-        <MenuLink href="#" title="Grupper" />
-        <MenuLink href="#" title="Studieadministrationn" />
-        <MenuLink href="#" title="Mail" />
-        <MenuLink href="#" title="Noticer" /> 
-        <MenuLink href="#" title="Inställningar" />
+        <NavItem>
+          <Link className="nav-link" to="#">Lena</Link>
+        </NavItem>
+        <NavItem>
+          <Link className="nav-link" to="#">Schema</Link>
+        </NavItem>
+        <NavItem>
+          <Link className="nav-link" to="#">Kurser&Program</Link>
+        </NavItem>
+        <NavItem>
+          <Link className="nav-link" to="#">Grupper</Link>
+        </NavItem>
+        <NavItem>
+          <Link className="nav-link" to="#">Studieadministrationn</Link>
+        </NavItem>
+        <NavItem>
+          <Link className="nav-link" to="#">Mail</Link>
+        </NavItem>
+        <NavItem>
+          <Link className="nav-link" to="#">Noticer</Link>
+        </NavItem>
+        <NavItem>
+          <Link className="nav-link" to="#">Inställningar</Link>
+        </NavItem>
     </Nav>
 </div>`}
           </Code> 
