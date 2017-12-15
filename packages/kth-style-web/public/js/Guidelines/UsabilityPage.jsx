@@ -51,7 +51,7 @@ export default function DropdownsPage (props) {
       
       <h2 id="anvandaren_upplever_kontroll_och_frihet">Användaren upplever kontroll och frihet</h2>
       <p>
-        Användaren har kontroll över applikationen, t ex så har användaren ett tydligt sätt att navigera (”jag vet var jag är och vad jag kan göra”) och det alltid finns en utväg (t ex genom ”Ångra” och Återställ”).
+        Användaren har kontroll över applikationen, t ex så har användaren ett tydligt sätt att navigera (”jag vet var jag är och vad jag kan göra”) och det alltid finns en utväg (t ex genom ”Ångra” och "Återställ”).
       </p>
       
       <h2 id="konsekvent_design">Konsekvent design som utgår från standarder</h2>
