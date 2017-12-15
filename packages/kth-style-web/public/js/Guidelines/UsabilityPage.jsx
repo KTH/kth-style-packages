@@ -4,6 +4,10 @@ export default function DropdownsPage (props) {
   return (
     <Page>
       <h1 id="riktlinjer_anvandbarhet">Riktlinjer användbarhet</h1>
+       <p>
+        Riktlinjerna baserar sig på <a href="https://www.nngroup.com/articles/ten-usability-heuristics/">Jacob Nielsen's 10 usability heuristics</a>.
+      </p>
+      
       
       <h2 id="enkelhet">Enkelhet</h2>
       <p>
