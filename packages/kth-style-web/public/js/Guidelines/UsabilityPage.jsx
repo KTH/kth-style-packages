@@ -35,7 +35,7 @@ export default function DropdownsPage (props) {
             Den konceptuella modellen i stort     
           </li>
           <li>
-            Hur uppgiften utföras     
+            Hur uppgiften kan utföras     
           </li>
           <li>
             Språk, fraser, terminologi     
