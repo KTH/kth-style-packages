@@ -8,7 +8,6 @@
 @import '../variables/colors';
 @import '../variables/componentColors';
 @import '../variables/sizes';
-@import '../variables/sizes';
 @import '../variables/fonts';
 // @import '../../node_modules/bootstrap/scss/_variables';
 @import 'node_modules/bootstrap/scss/mixins/breakpoints';
@@ -26,16 +25,15 @@ $brand-danger:  $red;
 $body-color: $textColor;
 
 $font-family-sans-serif: $sansSerif;
-$font-family-serif: $serif;
+$font-family-base: $sansSerif;
 
 // * Headings
-
-$font-size-h1: $h1-fontSize;
-$font-size-h2: $h2-fontSize;
-$font-size-h3: $h3-fontSize;
-$font-size-h4: $h4-fontSize;
-$font-size-h5: $h5-fontSize;
-$font-size-h6: $h6-fontSize;
+$h1-font-size: $h1-fontSize;
+$h2-font-size: $h2-fontSize;
+$h3-font-size: $h3-fontSize;
+$h4-font-size: $h4-fontSize;
+$h5-font-size: $h5-fontSize;
+$h6-font-size: $h6-fontSize;
 
 $headings-line-height: $headers-line-height;
 
@@ -60,16 +58,6 @@ $container-max-widths: (
 $btn-font-weight: bold;
 $btn-padding-x: 1.5rem;
 $btn-padding-y: 0.5rem;
-
-$btn-primary-bg:                 $lightBlue;
-$btn-primary-border:             $lightBlue;
-
-$btn-secondary-color:            $textColor;
-$btn-secondary-bg:               $white;
-$btn-secondary-border:           $darkGrey;
-
-$btn-danger-bg:                  $lightRed;
-$btn-danger-border:              $lightRed;
 
 // Links
 $link-color:            $standardLinkColor;

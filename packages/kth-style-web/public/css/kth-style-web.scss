@@ -148,6 +148,11 @@ body {
   margin-bottom: 1rem;
   padding: 1rem;
   border-radius: 0.3rem;
+
+  h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 }
 
 .ExampleStage > :first-child {
@@ -163,7 +168,7 @@ body {
 }
 
 .ExampleScene {
-  margin: 1rem 0;
+  margin: 1.5rem 0;
 }
 
 .ExampleScene .card {
@@ -176,7 +181,7 @@ body {
 
 .ExampleScene-Code {
   //font-family: Courier New, Courier, monospace;
-  margin: 1rem -1rem;
+  margin: 2.2rem -1rem;
 } .ExampleScene-Code pre {
   margin: 0;
   z-index: 1;
@@ -336,8 +341,8 @@ pre[class*="language-"]:before {
   align-items: center;
   position: relative;
   min-height: 1.75em;
-  margin-top: 1.6em;
-  padding: 0.2em 0 0.2em;
+  margin-top: 3rem;
+  padding: 1rem 0 0.2em;
   margin-bottom: 1.3rem;
 }
 

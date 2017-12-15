@@ -44,7 +44,7 @@ export default function DropdownsPage (props) {
           <Narrative>
             <p>Tillgänglighet betyder användbarhet för alla oavsett funktionsvariation.</p>
           </Narrative>
-          <p>Ta del av <a href="/style/guidelines/accessability">Riktlinjer tillgänglighet</a></p>
+          <p>Ta del av <a href="/style/guidelines/accessability">Riktlinjer tillgänglighet</a>.</p>
         </Section>
 
     </Page>
