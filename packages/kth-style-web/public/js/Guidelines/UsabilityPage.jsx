@@ -67,10 +67,10 @@ export default function DropdownsPage (props) {
         Applikationen hjälper användaren att undvika fel. Antingen genom att:
         <ul>
           <li>
-            Ta bort möjligheter att göra fel (t ex genom att vara tillåtande vad gäller olika format på indata och justera det efteråt ) eller    
+            Ta bort möjligheter att göra fel (t ex genom att vara tillåtande vad gäller olika format på indata och justera det efteråt )   
           </li>
           <li>
-            Ge användaren en möjlighet att bekräfta innan man utför en handling som kan innebära riskabla förändringar.
+            Ge användaren en möjlighet att bekräfta innan man utför en handling som kan innebära riskabla förändringar
           </li>
         </ul>
       </p>
@@ -80,13 +80,13 @@ export default function DropdownsPage (props) {
         Felmeddelandena som tillhandahålls av applikationen:
         <ul>
           <li>
-            Pratar användarens språk,   
+            Pratar användarens språk   
           </li>
           <li>
             Beskriver exakt det specifika problemet istället för att ge en generell beskrivning   
           </li>
           <li>
-            Hjälper konstruktivt användaren att lösa problemet,  
+            Hjälper konstruktivt användaren att lösa problemet  
           </li>
         </ul>
       </p>
