@@ -3,7 +3,7 @@ import { Page, Section, Narrative } from 'kth-style-inferno-bootstrap/docs/src/c
 export default function DropdownsPage (props) {
   return (
     <Page>
-      <h1>Formulär och indata-element</h1>
+      <h1>Formulär- och indatakomponenter</h1>
       <section>
         <p>
             Formulär används för att få in data från användaren.
@@ -12,11 +12,11 @@ export default function DropdownsPage (props) {
             Det finns olika typer av indata-element som har olika användningsområde (se nedan).
         </p>
         <p>
-            Om du är intresserad läs gärna <a href="https://www.kth.se/social/group/kth-style-guide/page/bakgrund-17/">bakgrund</a>.
+            Om du är intresserad läs gärna <a href="https://www.kth.se/social/group/kth-style-guide/page/bakgrund-17/">bakgrund till varför formulär- och indatakomponenter ser ut och beter sig som det gör</a>.
         </p>
       </section>
       <section>
-        <h2>Välj typ av indata-element</h2>
+        <h2>Välj typ av formulär- och indatakomponenter</h2>
         <table class="table">
           <thead class="thead-default">
             <tr>
@@ -50,7 +50,7 @@ export default function DropdownsPage (props) {
       </section>
 
      <section>
-       <h2>Olika typer av indata-element</h2>
+       <h2>Olika typer av formulär- och indatakomponenter</h2>
 
         <h3>Fritextsvar</h3>
         <p> Komponent ska infogas </p>
