@@ -72,7 +72,7 @@ export default function DropdownsPage (props) {
           <li>
             Ge användaren en möjlighet att bekräfta innan man utför en handling som kan innebära riskabla förändringar.
           </li>
-        <ul>
+        </ul>
       </p>
       
       <h2 id="hjalp_anvandaren_problem">Hjälp användaren att upptäcka, förstå och lösa problem</h2>
