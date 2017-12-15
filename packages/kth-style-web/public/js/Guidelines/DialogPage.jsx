@@ -12,7 +12,7 @@ export default function DropdownsPage (props) {
             Det finns finns två olika typer av dialoger. Välj dialog utifrån användning (se nedan).
         </p>
         <p>
-          Läs gärna mer om <a href="#">bakgrund till varför dialogerna ser ut och beter sig som det gör</a>.
+          Läs gärna mer om <a href="https://www.kth.se/social/group/kth-style-guide/page/bakgrund-16/">bakgrund till varför dialogerna ser ut och beter sig som det gör</a>.
         </p>
         <h2>Välj typ av dialog</h2>
         <table class="table">
