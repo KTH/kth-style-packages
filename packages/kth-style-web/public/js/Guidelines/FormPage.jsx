@@ -164,16 +164,16 @@ export default function DropdownsPage (props) {
         <h2 id="generella_riktlinjer_formular">Generella riktlinjer för formulär och indatakomponenter</h2>
 
         <h3>Reducera fält</h3>
-        <p>Ta bort fält om något av följande gäller:</p>
+        <p>Ta bort fält om indata kan:</p>
         <ul>
           <li>
-            Data kan erhållas på annat sätt,
+            Erhållas på annat sätt,
           </li>
           <li>
             Inhämtas vid en senare mer passande tidpunkt
           </li>
           <li>
-            Kan utelämnas, för att det inte egentligen verkligen behövs
+            Utelämnas, för att det inte egentligen verkligen behövs
           </li>
         </ul>
 
