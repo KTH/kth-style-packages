@@ -31,7 +31,7 @@ export default function DropdownsPage (props) {
             </tr>
             <tr>
               <td>Rullgardinsmeny</td>
-              <td>För flervalssvar, när bara ett val är möjligt och alternativen är fler än att de kan presenteras på en rad. ...?</td>
+              <td>För flervalssvar, när bara ett val är möjligt och alternativen är fler än att de kan presenteras på en rad.</td>
             </tr>
             <tr>
               <td>Radioknappar</td>
