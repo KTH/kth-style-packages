@@ -60,7 +60,7 @@ export default function DropdownsPage (props) {
                 När indata i form av text krävs.
             </li>
             <li>
-                Exempel: se <a href="/style/formexample">formulär</a>.
+                Exempel: se <a href="/style/page-layout/formpage">formulär</a>.
             </li>
         </ul>
         <h4>Tänk på att</h4>
@@ -79,14 +79,14 @@ export default function DropdownsPage (props) {
         </ul>
 
     <h3>Rullgardinsmeny</h3>
-        <p> Komponent ska infogas </p>
+        <p>Komponent ska infogas </p>
         <h4>Användning</h4>
         <ul>
             <li>
                 För flervalssvar, när bara ett val är möjligt och alternativen är fler än tre alternativ.
             </li>
             <li>
-                Exempel: se <a href="/style/formexample">formulär</a>.
+                Exempel: se <a href="/style/page-layout/formpage">formulär</a>.
             </li>
         </ul>
         <h4>Tänk på att</h4>
@@ -116,7 +116,7 @@ export default function DropdownsPage (props) {
                 För flervalssvar, när bara ett val är möjligt och alternativen är färre.
             </li>
             <li>
-                Exempel: se <a href="/style/formexample">formulär</a>.
+                Exempel: se <a href="/style/page-layout/formpage">formulär</a>.
             </li>
         </ul>
         <h4>Tänk på att</h4>
@@ -137,7 +137,7 @@ export default function DropdownsPage (props) {
                 För flervalssvar,  när flera val är möjliga.
             </li>
             <li>
-                Exempel: se <a href="/style/formexample">formulär</a>.
+                Exempel: se <a href="/style/page-layout/formpage">formulär</a>.
             </li>
         </ul>
         <h4>Tänk på att</h4>
@@ -155,7 +155,7 @@ export default function DropdownsPage (props) {
               När ett datum ska väljas
             </li>
             <li>
-              Exempel: se <a href="/style/formexample">formulär</a>.
+              Exempel: se <a href="/style/page-layout/formpage">formulär</a>.
             </li>
         </ul>
         <h4>Tänk på att</h4>
@@ -224,7 +224,6 @@ export default function DropdownsPage (props) {
         <ul>
           <li>Flytta avsnittet "Olika typer av formulär- och indatakomponenter" till Komponentsidan och lägg in komponenter</li>
           <li>Uppdatera länk till Information modal</li>
-          <li>Lägg till Exempel på formulär under "Sidlayout" så visar alla element med bra exempel och grupperat och uppdatera länkar så länkar dit från denna sida</li>
         </ul>
       </section> 
     </Page>
