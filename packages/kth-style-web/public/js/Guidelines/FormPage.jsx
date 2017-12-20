@@ -31,11 +31,11 @@ export default function DropdownsPage (props) {
             </tr>
             <tr>
               <td>Rullgardinsmeny</td>
-              <td>För flervalssvar, när bara ett val är möjligt och alternativen är mer än ...?</td>
+              <td>För flervalssvar, när bara ett val är möjligt och alternativen är fler än att de kan presenteras på en rad. ...?</td>
             </tr>
             <tr>
               <td>Radioknappar</td>
-              <td>För flervalssvar, när bara ett val är möjligt och alternativen är mindre än ..?</td>
+              <td>För flervalssvar, när bara ett val är möjligt och alternativen är mindre än att de får plats på en rad.</td>
             </tr>
             <tr>
               <td>Checkboxar</td>
@@ -78,7 +78,7 @@ export default function DropdownsPage (props) {
         <h4>Användning</h4>
         <ul>
             <li>
-                För flervalssvar, när bara ett val är möjligt och alternativen är mer än ...?
+                För flervalssvar, när bara ett val är möjligt och alternativen är mer än att de kan presenteras på en rad.
             </li>
             <li>
                 Exempel: se <a href="/style/formexample">formulär</a>.
@@ -87,13 +87,13 @@ export default function DropdownsPage (props) {
         <h4>Tänk på att</h4>
         <ul>
             <li>
-                Undvik drop-downs när det endast finns 2 eller 3 alternativ. Visa dem istället som radio-knappar (som endast kräver en enda klick).
+                Undvik drop-downs när det endast finns 2 eller 3 alternativ. Visa dem istället som radio-knappar (som endast kräver ett klick).
             </li>
             <li>
                  Överväg användningsfrekvens, lista de vanligaste valen först när det är möjligt.
             </li>
             <li>
-                Ha kontextuell sökning i rullgardins om det finns mer än 25? Alternativ
+                Ha kontextuell sökning i rullgardins om det finns mer än 25 alternativ
             </li>
             <li>
                 Se <a href="#generella_riktlinjer_formular">Generella riktlinjer formulär</a>.
@@ -105,7 +105,7 @@ export default function DropdownsPage (props) {
         <h4>Användning</h4>
         <ul>
             <li>
-                För flervalssvar, när bara ett val är möjligt och alternativen är mindre än ?
+                För flervalssvar, när bara ett val är möjligt och alternativen är mindre än att de får plats på en rad.
             </li>
             <li>
                 Exempel: se <a href="/style/formexample">formulär</a>.
@@ -156,19 +156,19 @@ export default function DropdownsPage (props) {
       </section>
 
       <section>
-        <h2 id="generella_riktlinjer_formular">Generella riktlinjer för formulär</h2>
+        <h2 id="generella_riktlinjer_formular">Generella riktlinjer för formulär och indatakomponenter</h2>
 
         <h3>Reducera fält</h3>
-        <p>Ta bort fält:</p>
+        <p>Ta bort fält om något av följande gäller:</p>
         <ul>
           <li>
-            Där data kan erhållas på annat sätt,
+            Data kan erhållas på annat sätt,
           </li>
           <li>
-            vid en senare mer passande tidpunkt, eller
+            Inhämtas vid en senare mer passande tidpunkt
           </li>
           <li>
-            helt enkelt utelämnas. för att det inte egentligen verkligen behövs
+            Kan utelämnas, för att det inte egentligen verkligen behövs
           </li>
         </ul>
 
@@ -187,7 +187,7 @@ export default function DropdownsPage (props) {
 
         <h3>Eliminera godtycklig formattering</h3>
         <p>
-          Eliminera så mycket som möjligt av godtyckliga formateringsregler genom att vara tillåtande vad gäller indata (se <a href="/style/accessiblecode#hjalp_användaren">Hjälp användaren att undvika och rätta fel</a>).
+          Eliminera så mycket som möjligt av godtyckliga formateringsregler genom att vara tillåtande vad gäller indata (se <a href="/style/guidelines/accessability#hjalp_användaren">Hjälp användaren att undvika och rätta fel</a>).
         </p>
 
         <h3>Gruppera relaterade fält tillsammans</h3>
@@ -214,8 +214,8 @@ export default function DropdownsPage (props) {
       <section>
         <h2>TODO</h2>
         <ul>
-          <li>Uppdatera länkar.</li>
-          <li>Uppdatera Exempelformulär så visar alla element med bra exempel och grupperat</li>
+          <li>Flytta avsnittet "Olika typer av formulär- och indatakomponenter" till Komponentsidan och lägg in komponenter</li>
+          <li>Lägg till Exempel på formulär under "Sidlayout" så visar alla element med bra exempel och grupperat och uppdatera länkar så länkar dit från denna sida</li>
         </ul>
       </section> 
     </Page>
