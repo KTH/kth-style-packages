@@ -31,11 +31,11 @@ export default function DropdownsPage (props) {
             </tr>
             <tr>
               <td>Rullgardinsmeny</td>
-              <td>För flervalssvar, när bara ett val är möjligt och alternativen är fler än att de kan presenteras på en rad.</td>
+              <td>För flervalssvar, när bara ett val är möjligt och alternativen är fler.</td>
             </tr>
             <tr>
               <td>Radioknappar</td>
-              <td>För flervalssvar, när bara ett val är möjligt och alternativen är mindre än att de kan presenteras på en rad.</td>
+              <td>För flervalssvar, när bara ett val är möjligt och alternativen är färre.</td>
             </tr>
             <tr>
               <td>Checkboxar</td>
@@ -83,7 +83,7 @@ export default function DropdownsPage (props) {
         <h4>Användning</h4>
         <ul>
             <li>
-                För flervalssvar, när bara ett val är möjligt och alternativen är mer än att de kan presenteras på en rad.
+                För flervalssvar, när bara ett val är möjligt och alternativen är fler än tre alternativ.
             </li>
             <li>
                 Exempel: se <a href="/style/formexample">formulär</a>.
@@ -92,7 +92,7 @@ export default function DropdownsPage (props) {
         <h4>Tänk på att</h4>
         <ul>
             <li>
-                Undvik drop-downs när det endast finns 2 eller 3 alternativ. Visa dem istället som radio-knappar (som endast kräver ett klick).
+                Undvik rullgardinsmeny när det finns färre än tre alternativ. Visa dem istället som radio-knappar (se ovan).
             </li>
             <li>
                  Överväg användningsfrekvens, lista de vanligaste valen först när det är möjligt.
@@ -110,7 +110,7 @@ export default function DropdownsPage (props) {
         <h4>Användning</h4>
         <ul>
             <li>
-                För flervalssvar, när bara ett val är möjligt och alternativen är mindre än att de kan presenteras på en rad.
+                För flervalssvar, när bara ett val är möjligt och alternativen är färre.
             </li>
             <li>
                 Exempel: se <a href="/style/formexample">formulär</a>.
@@ -118,9 +118,12 @@ export default function DropdownsPage (props) {
         </ul>
         <h4>Tänk på att</h4>
         <ul>
-            <li>
-                Se <a href="#generella_riktlinjer_formular">Generella riktlinjer formulär</a>.
-            </li>    
+          <li>
+            Alternativen ska inte vara fler än att de kan presenteras överskådligt på en rad. Annars använd rullgardinsmeny.
+          </li>
+          <li>
+            Se <a href="#generella_riktlinjer_formular">Generella riktlinjer formulär</a>.
+          </li>    
         </ul>
 
      <h3>Checkboxar</h3>
@@ -180,10 +183,7 @@ export default function DropdownsPage (props) {
         <h3>Skilj på valfria och obligatoriska fält</h3>
         <ul>
           <li>
-            Först eliminera så många valfria fält som möjligt (se ovan).
-          </li>
-          <li>
-            Försök att begränsa formuläret till endast 1 eller 2 valfria fält, och tydligt märk dem som ”Optional”.
+            Försök att begränsa formuläret till endast ett eller två valfria fält, och tydligt märk dem som ”Optional”.
           </li>
           <li>
             Om vissa fält verkligen är nödvändiga, men gäller endast en del av användarna, visa det.
@@ -202,17 +202,17 @@ export default function DropdownsPage (props) {
 
         <h3>Förklara särskilda krav på indata eller på formattering</h3>
         <p>
-          När du har försökt att elimenera godtyckliga krav på indata (se ovan), ange exakta instruktioner på indata eller på formattering, som t ex format på telefonnummer eller kreditkort.
+          När du har försökt att elimenera godtyckliga krav på indata (se ovan), ange exakta instruktioner på indata eller på formattering, som t ex format på telefonnummer eller personnummer.
         </p>
 
         <h3>Dölj inte grundläggande hjälptext</h3>
         <p>
-          Exponera grundläggande instruktioner där det är möjligt. För mer omfattande hjälptexter, infoga hjälpinformation som nås via en i-ikon (se Information).
+          Exponera grundläggande instruktioner där det är möjligt. För mer omfattande hjälptexter, infoga hjälpinformation som nås via en i-ikon (se <a href="/style/components/modal#information">Information modal</a>).
         </p>
 
         <h3>Håll dig till standard</h3>
         <p>
-          Håll dig till standard både för rubriker på fält (t ex kreditkortsnummer, utgångsdatum, Säkerhetskod) och de val du erbjuder.
+          Håll dig till standard både för rubriker på fält (t ex kreditkortsnummer, utgångsdatum) och de val du erbjuder.
         </p>
       </section>
 
@@ -220,6 +220,7 @@ export default function DropdownsPage (props) {
         <h2>TODO</h2>
         <ul>
           <li>Flytta avsnittet "Olika typer av formulär- och indatakomponenter" till Komponentsidan och lägg in komponenter</li>
+          <li>Uppdatera länk till Information modal</li>
           <li>Lägg till Exempel på formulär under "Sidlayout" så visar alla element med bra exempel och grupperat och uppdatera länkar så länkar dit från denna sida</li>
         </ul>
       </section> 
