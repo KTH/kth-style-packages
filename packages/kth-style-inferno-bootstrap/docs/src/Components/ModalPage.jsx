@@ -18,7 +18,25 @@ export default function BasicPage (props) {
       <p>Use modals to present essential information that takes over the entire window.</p>  
     </Narrative>  
 
-   
+     <Stage>
+      <h4>Efterfrågad information</h4>
+      <UXComment>
+        <p> TO DO: Lägg till komponet för informera när klickat på i-ikon </p>
+        
+        <h4>Användning</h4>
+        <ul>
+          <li>
+            För att informera användaren när denne efterfrågat informationen (t ex hjälp-information)
+          </li>
+        </ul>
+        <h4>Tänk på att</h4>
+        <ul>
+          <li>
+            Se <a href="#generellariktlinjerinformation">Generella riktlinjer information</a> nedan.
+          </li>
+        </ul>
+      </UXComment>
+    </Stage>
 
 
     <Stage>
@@ -148,25 +166,7 @@ export default function BasicPage (props) {
   </Section>
 
 
-  <Stage>
-      <h4>Efterfrågad information</h4>
-      <UXComment>
-        <p> TO DO: Lägg till komponet för informera när klickat på i-ikon </p>
-        
-        <h4>Användning</h4>
-        <ul>
-          <li>
-            För att informera användaren när denne efterfrågat informationen (t ex hjälp-information)
-          </li>
-        </ul>
-        <h4>Tänk på att</h4>
-        <ul>
-          <li>
-            Se <a href="#generellariktlinjerinformation">Generella riktlinjer information</a> nedan.
-          </li>
-        </ul>
-      </UXComment>
-    </Stage>
+
 
     </Page>
   )
