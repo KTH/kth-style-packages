@@ -35,7 +35,7 @@ export default function DropdownsPage (props) {
             </tr>
             <tr>
               <td>Radioknappar</td>
-              <td>För flervalssvar, när bara ett val är möjligt och alternativen är mindre än att de får plats på en rad.</td>
+              <td>För flervalssvar, när bara ett val är möjligt och alternativen är mindre än att de kan presenteras på en rad.</td>
             </tr>
             <tr>
               <td>Checkboxar</td>
@@ -66,7 +66,12 @@ export default function DropdownsPage (props) {
         <h4>Tänk på att</h4>
         <ul>
             <li>
-                Matcha fält till typen och storleken på data.Exempel: postnummer.
+                Matcha fält till typen och storleken på data.
+                <ul>
+                  <li>
+                    Exempel: postnummer.
+                  </li>
+                </ul>
             </li>
             <li>
                 Se <a href="#generella_riktlinjer_formular">Generella riktlinjer formulär</a>.
@@ -105,7 +110,7 @@ export default function DropdownsPage (props) {
         <h4>Användning</h4>
         <ul>
             <li>
-                För flervalssvar, när bara ett val är möjligt och alternativen är mindre än att de får plats på en rad.
+                För flervalssvar, när bara ett val är möjligt och alternativen är mindre än att de kan presenteras på en rad.
             </li>
             <li>
                 Exempel: se <a href="/style/formexample">formulär</a>.
