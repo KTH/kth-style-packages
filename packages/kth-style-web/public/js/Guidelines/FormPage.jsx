@@ -9,7 +9,7 @@ export default function DropdownsPage (props) {
             Formulär används för att få in data från användaren.
         </p>
         <p>
-            Det finns olika typer av indata-element som har olika användningsområde (se nedan).
+            Det finns olika typer av indatakomponenter som har olika användningsområde (se nedan).
         </p>
         <p>
             Om du är intresserad läs gärna <a href="https://www.kth.se/social/group/kth-style-guide/page/bakgrund-17/">bakgrund till varför formulär- och indatakomponenter ser ut och beter sig som det gör</a>.
