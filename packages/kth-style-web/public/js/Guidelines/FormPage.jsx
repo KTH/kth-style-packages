@@ -95,10 +95,13 @@ export default function DropdownsPage (props) {
                 Undvik rullgardinsmeny när det finns färre än tre alternativ. Visa dem istället som radio-knappar (se ovan).
             </li>
             <li>
+                Undvik rullgardinsmeny när indata är något som är välbekant för användaren och snabbare kan matas in än att välja från en lång lista
+            </li>
+            <li>
                  Överväg användningsfrekvens, lista de vanligaste valen först när det är möjligt.
             </li>
             <li>
-                Ha kontextuell sökning i rullgardins om det finns mer än 25 alternativ
+                Användaren ska kunna söka fram rätt alternativ i rullgardinsmenyn genom att använda bokstavstangenterna.
             </li>
             <li>
                 Se <a href="#generella_riktlinjer_formular">Generella riktlinjer formulär</a>.
