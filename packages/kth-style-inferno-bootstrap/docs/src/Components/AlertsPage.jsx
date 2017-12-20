@@ -6,15 +6,17 @@ export default function BasicPage (props) {
   return (
     <Page>
       <Section title="Alerts">
-        <UXComment>
+        
           <Narrative>
             <p>Läs först <a href="/style/guidelines/information">Riktlinjer information/ återkoppling</a> där du får överblick över hur du informerar i olika situationer och får hjälp att välja rätt typ av informationskomponent.
             </p>
           </Narrative>
-        </UXComment>
+   
       </Section>
       <Stage> 
-        <Section title="Information Alert">
+          <section id="information_alert">
+          <h3>Information Alert</h3>  
+          
           <Scene>
             <Alert color="info" aria-live="polite">
               <p>Some cool text in a <b>info</b> alert box!</p>
@@ -54,9 +56,11 @@ export default function BasicPage (props) {
               </li>
             </ul>
           </UXComment> 
-      </Section>
+        </Stage>
       
-      <Section title="Error Alert">
+        <Stage>
+          <section id="error_alert">
+          <h3>Error Alert</h3>  
           <Scene>
             <Alert color="danger" aria-live="polite">
               <p>Some cool text in a <b>danger</b> alert box!</p>
@@ -110,9 +114,10 @@ export default function BasicPage (props) {
             </li>
           </ul>
          </UXComment> 
-      </Section>  
-
-      <Section title="Success Alert">
+       </Stage>
+       <Stage>
+        <section id="success_alert">
+        <h3>Success Alert</h3>    
           <UXComment>
               <h4>Användning</h4>
                 <ul>
@@ -133,15 +138,7 @@ export default function BasicPage (props) {
                   </li>
                 </ul>
           </UXComment>
-          <h3>With close button</h3>
-          <UXComment>
-           <h4>Användning</h4>
-                <ul>
-                  <li>
-                    För längre meddelanden där informationen behöver läsas mer nogrannt.
-                  </li>
-                </ul>
-          </UXComment>
+       
             <Scene>
             <Alert color="success" >
               <p>Some cool text in a <b>success</b> alert box!</p>
@@ -152,7 +149,16 @@ export default function BasicPage (props) {
   </Alert>`}
             </Code>
           </Scene>
-      <h3>Disappears after 5 seconds</h3>
+          <h3>TO DO: Uppdatera text i alert: Success alert finns kvar, kan stängas av användaren.</h3>
+          <UXComment>
+           <h4>Användning</h4>
+                <ul>
+                  <li>
+                    För längre meddelanden där informationen behöver läsas mer nogrannt.
+                  </li>
+                </ul>
+          </UXComment>
+      <h3>TO DO: Lägg till komponent som försvinner efter 5 sekunder. Text i alert: Sucess alert försvinner efter 5 sekunder.</h3>
         <UXComment>
            <h4>Användning</h4>
                 <ul>
@@ -161,34 +167,9 @@ export default function BasicPage (props) {
                   </li>
                 </ul>
           </UXComment>
-      </Section> 
     </Stage>
       
     <Stage>
-      <Section title="Olika andra varianter av alerts - ha med?"> 
-          <Scene>
-            <Alert color="success">
-              <p>Some cool text in a <b>success</b> alert box!</p>
-            </Alert>
-            <Alert color="info" aria-live="polite">
-              <p>Some cool text in a <b>info</b> alert box!</p>
-            </Alert>
-            <Alert color="danger" aria-live="polite">
-              <p>Some cool text in a <b>danger</b> alert box!</p>
-            </Alert>
-            <Code>
-{`<Alert color="success">
-  <p>Some cool text in a <b>success</b> alert box!</p>
-  </Alert>
-  <Alert color="info" aria-live="polite">
-  <p>Some cool text in a <b>info</b> alert box!</p>
-  </Alert>
-  <Alert color="danger" aria-live="polite">
-  <p>Some cool text in a <b>danger</b> alert box!</p>
-</Alert>`}
-            </Code>
-          </Scene>
-
           <h3>Alert box with close button</h3>
           <Scene>
             <Alert onClose={() => {}}>
@@ -217,7 +198,6 @@ export default function BasicPage (props) {
 </Alert>`}
             </Code>  
           </Scene>
-        </Section> 
       </Stage>
     </Page>
   )
