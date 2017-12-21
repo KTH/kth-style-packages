@@ -114,7 +114,17 @@ export default function BasicPage (props) {
      <Stage>
         <section id="success_alert">
         <h3>Success Alert</h3>    
-          <UXComment>
+            <Scene>
+            <Alert color="success" >
+              <p>Some cool text in a <b>success</b> alert box!</p>
+            </Alert>
+            <Code>
+{`<Alert color="success">
+  <p>Some cool text in a <b>success</b> alert box!</p>
+  </Alert>`}
+            </Code>
+          </Scene>
+           <UXComment>
               <h4>Användning</h4>
                 <ul>
                   <li>
@@ -134,43 +144,25 @@ export default function BasicPage (props) {
                   </li>
                 </ul>
           </UXComment>
-       
-            <Scene>
-            <Alert color="success" >
-              <p>Some cool text in a <b>success</b> alert box!</p>
-            </Alert>
-            <Code>
-{`<Alert color="success">
-  <p>Some cool text in a <b>success</b> alert box!</p>
-  </Alert>`}
-            </Code>
-          </Scene>
-          <h3>TO DO: Uppdatera text i alert: Success alert finns kvar, kan stängas av användaren.</h3>
+          
+          <h3>Variant av Success alert som försvinner efter 5 sekunder</h3>
+          <p>TO DO: Lägg till komponent som försvinner efter 5 sekunder.</p>
           <UXComment>
-           <h4>Användning</h4>
-                <ul>
-                  <li>
-                    För längre meddelanden där informationen behöver läsas mer nogrannt.
-                  </li>
-                </ul>
-          </UXComment>
-      <h3>TO DO: Lägg till komponent som försvinner efter 5 sekunder. Text i alert: Sucess alert försvinner efter 5 sekunder.</h3>
-        <UXComment>
-           <h4>Användning</h4>
-                <ul>
-                  <li>
-                    För korta meddelanden där informationen inte behöver läsas. Exempel: "Saved"
-                  </li>
-                </ul>
-          </UXComment>
+             <h4>Användning</h4>
+                  <ul>
+                    <li>
+                      För korta meddelanden där informationen är kort och inte behöver granskas. Exempel: "Saved"
+                    </li>
+                  </ul>
+            </UXComment>
        </section>
     </Stage>
       
     <Stage>
-        <h3>Alert box with close button</h3>
+        <h3>Alert with close button</h3>
         <Scene>
             <Alert onClose={() => {}}>
-              <p>Some cool text in a <b>success</b> alert box!</p>
+              <p>Success alert with close button</p>
             </Alert>
             <Code>
 {`<Alert onClose={() => {}}>
@@ -178,12 +170,13 @@ export default function BasicPage (props) {
 </Alert>`}
             </Code>  
           </Scene>
-          <h3>Alert box with header</h3>
+          
+          <h3>Alert with heading</h3>
           <Scene>
             <Alert onClose={() => {}}>
               <span>
                 <h4>Attention!</h4>
-                <p>Some cool text in a <b>success</b> alert box!</p>
+                <p>Success alert with heading</p>
               </span>
             </Alert>
             <Code>
