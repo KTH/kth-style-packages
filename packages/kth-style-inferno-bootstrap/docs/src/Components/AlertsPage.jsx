@@ -5,19 +5,13 @@ import Alert from '../../../lib/Alert.jsx'
 export default function BasicPage (props) {
   return (
     <Page>
-      <Section title="Alerts">
-        
-          <Narrative>
-            <p>Läs först <a href="/style/guidelines/information">Riktlinjer information/ återkoppling</a> där du får överblick över hur du informerar i olika situationer och får hjälp att välja rätt typ av informationskomponent.
-            </p>
-          </Narrative>
-   
-      </Section>
+      <h1>Alerts</h1>
+      <p>Läs först <a href="/style/guidelines/information">Riktlinjer information/ återkoppling</a> där du får överblick över hur du informerar i olika situationer och får hjälp att välja rätt typ av informationskomponent.</p>
+    
       <Stage> 
-          <section id="information_alert">
-          <h3>Information Alert</h3>  
-          
-          <Scene>
+        <section id="information_alert">
+        <h3>Information Alert</h3>  
+        <Scene>
             <Alert color="info" aria-live="polite">
               <p>Some cool text in a <b>info</b> alert box!</p>
             </Alert>
@@ -26,7 +20,7 @@ export default function BasicPage (props) {
   <p>Some cool text in a <b>info</b> alert box!</p>
   </Alert>`}
             </Code>
-          </Scene>
+        </Scene>
    
         <UXComment>
           <h4>Användning</h4>
@@ -56,10 +50,11 @@ export default function BasicPage (props) {
               </li>
             </ul>
           </UXComment> 
-        </Stage>
+        </section>
+      </Stage>
       
-        <Stage>
-          <section id="error_alert">
+      <Stage>
+        <section id="error_alert">
           <h3>Error Alert</h3>  
           <Scene>
             <Alert color="danger" aria-live="polite">
@@ -114,8 +109,9 @@ export default function BasicPage (props) {
             </li>
           </ul>
          </UXComment> 
-       </Stage>
-       <Stage>
+       </section>
+     </Stage>
+     <Stage>
         <section id="success_alert">
         <h3>Success Alert</h3>    
           <UXComment>
@@ -167,11 +163,12 @@ export default function BasicPage (props) {
                   </li>
                 </ul>
           </UXComment>
+       </section>
     </Stage>
       
     <Stage>
-          <h3>Alert box with close button</h3>
-          <Scene>
+        <h3>Alert box with close button</h3>
+        <Scene>
             <Alert onClose={() => {}}>
               <p>Some cool text in a <b>success</b> alert box!</p>
             </Alert>
