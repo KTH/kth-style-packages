@@ -222,7 +222,6 @@ export default function DropdownsPage (props) {
         <h2>TODO</h2>
         <ul>
           <li>Flytta avsnittet "Olika typer av formulär- och indatakomponenter" till Komponentsidan och lägg in komponenter</li>
-          <li>Uppdatera länk till Information modal</li>
         </ul>
       </section> 
     </Page>
