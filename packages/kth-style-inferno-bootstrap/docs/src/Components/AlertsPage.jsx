@@ -146,7 +146,7 @@ export default function BasicPage (props) {
           </UXComment>
           
           <h3>Variant av Success alert som försvinner efter 5 sekunder</h3>
-          <br>
+          <br></br>
           <p>TO DO: Lägg till komponent som försvinner efter 5 sekunder.</p>
           <UXComment>
              <h4>Användning</h4>
