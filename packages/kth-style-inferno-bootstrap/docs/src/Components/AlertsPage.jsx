@@ -13,7 +13,7 @@ export default function BasicPage (props) {
         <h3>Information Alert</h3>  
         <Scene>
             <Alert color="info" aria-live="polite">
-              <p>Some cool text in a <b>info</b> alert box!</p>
+              <p>Some text in a <b>Information alert</b></p>
             </Alert>
             <Code>
 {`<Alert color="info" aria-live="polite">
@@ -58,7 +58,7 @@ export default function BasicPage (props) {
           <h3>Error Alert</h3>  
           <Scene>
             <Alert color="danger" aria-live="polite">
-              <p>Some cool text in a <b>danger</b> alert box!</p>
+              <p>Some text in a <b>Error alert</b></p>
             </Alert>
             <Code>
 {`<Alert color="danger" aria-live="polite">
@@ -116,7 +116,7 @@ export default function BasicPage (props) {
         <h3>Success Alert</h3>    
             <Scene>
             <Alert color="success" >
-              <p>Some cool text in a <b>success</b> alert box!</p>
+              <p>Some text in a <b>Success alert</b></p>
             </Alert>
             <Code>
 {`<Alert color="success">
@@ -163,11 +163,11 @@ export default function BasicPage (props) {
         <h3>Alert with close button</h3>
         <Scene>
             <Alert onClose={() => {}}>
-              <p>Success alert with close button</p>
+              <p>Some text in a Success alert with close button</p>
             </Alert>
             <Code>
 {`<Alert onClose={() => {}}>
-  <p>Some cool text in a <b>success</b> alert box!</p>
+  <p>Some text in a Success alert with close button</b></p>
 </Alert>`}
             </Code>  
           </Scene>
@@ -184,7 +184,7 @@ export default function BasicPage (props) {
 {`<Alert onClose={() => {}}>
   <span>
     <h4>Attention!</h4>
-    <p>Some cool text in a <b>success</b> alert box!</p>
+    <p>Some text in a Success alert with close button</p>
   </span>
 </Alert>`}
             </Code>  
