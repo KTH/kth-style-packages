@@ -209,7 +209,7 @@ export default function DropdownsPage (props) {
 
         <h3>Dölj inte grundläggande hjälptext</h3>
         <p>
-          Exponera grundläggande instruktioner där det är möjligt. För mer omfattande hjälptexter, infoga hjälpinformation som nås via en i-ikon (se <a href="/style/components/modal#information_modal">Information modal</a>).
+          Exponera grundläggande instruktioner där det är möjligt. För mer omfattande hjälptexter, infoga hjälpinformation som nås via en i-ikon (se <a href="/style/api/components/modal#information_modal">Information modal</a>).
         </p>
 
         <h3>Håll dig till standard</h3>
