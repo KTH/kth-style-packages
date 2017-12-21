@@ -13,7 +13,7 @@ export default function DropdownsPage (props) {
                 Det finns fyra olika situationer när man ska ge information/ återkoppling. Tabellen nedan ska hjälpa dig välja rätt informationskomponent.
             </p>
             <p>
-                Om du är intresserad, läs mer om <a href="https://www.kth.se/social/group/kth-style-guide/page/bakgrund-9/">bakgrund</a> till varför informationskomponenterna ser ut och beter sig som det gör.
+                Om du är intresserad, läs mer om <a href="https://www.kth.se/social/group/kth-style-guide/page/bakgrund-9/">bakgrund till val av informationskomponenter</a>.
             </p>
             <h2>Välj informationskomponent</h2>
             <table class="table">
@@ -38,7 +38,7 @@ export default function DropdownsPage (props) {
                 </tr>
                 <tr>
                   <td>
-                      Information modal
+                      <a href="/style/api/components/modal#information_modal">Information modal</a>
                   </td>
                   <td>Ge ytterligare information när användaren efterfrågar det</td>
                 </tr>
