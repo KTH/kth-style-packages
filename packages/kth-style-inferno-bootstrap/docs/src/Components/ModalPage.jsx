@@ -12,13 +12,10 @@ import ModalFooter from '../../../lib/Modal/ModalFooter.jsx'
 export default function BasicPage (props) {
   return (
     <Page>
-
-    <Section title="Basic Modal">
-    <Narrative>
+    <h1>Modal</h1>
+    <section>
       <p>Use modals to present essential information that takes over the entire window.</p>  
-    </Narrative>  
-
-    <Stage>
+      <Stage>
       <Scene>
 
         <ButtonGroup>  
@@ -142,28 +139,28 @@ export default function BasicPage (props) {
         </Code>
       </Scene>
     </Stage>
-  </Section>
-      
-  <Stage>
-    <h3>Information modal</h3>
-    <section id="information_modal">
-    <p> TO DO: Lägg till komponet för informera när klickat på i-ikon </p>
-    <UXComment>
-      <h4>Användning</h4>
-      <ul>
-        <li>
-          För att informera användaren när denne efterfrågat informationen (t ex hjälp-information)
-        </li>
-      </ul>
-      <h4>Tänk på att</h4>
-      <ul>
-        <li>
-          Se <a href="#generellariktlinjerinformation">Generella riktlinjer information</a> nedan.
-        </li>
-      </ul>
-    </UXComment>
-  </Stage>
 
+      
+    <Stage>
+      <h3>Information modal</h3>
+      <section id="information_modal">
+      <p> TO DO: Lägg till komponet för informera när klickat på i-ikon </p>
+      <UXComment>
+        <h4>Användning</h4>
+        <ul>
+          <li>
+            För att informera användaren när denne efterfrågat informationen (t ex hjälp-information)
+          </li>
+        </ul>
+        <h4>Tänk på att</h4>
+        <ul>
+          <li>
+            Se <a href="#generellariktlinjerinformation">Generella riktlinjer information</a> nedan.
+          </li>
+        </ul>
+      </UXComment>
+    </Stage>
+  </section>
     </Page>
   )
 }
