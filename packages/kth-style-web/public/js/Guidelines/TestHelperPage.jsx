@@ -38,14 +38,29 @@ export default function DropdownsPage (props) {
         <p>
           Resultatet från tillgänglighetsscriptet läggs i mappen "accessibility/reports" i repot. Av varje sida som testas skapas en html-rapport med varningar och errors samt en skärmdump av den testade sidan.
         </p>
+      
+      <h3>Uppdatera KTH Style då hittar fel</h3>
+        <p>
+          Om du hittar tillgänglighetfel när du kör testverktyget så kan det vara någon av följande som behöver åtgärdas:
+        </p>
+        <ul>
+            <li>
+                Ändra css,
+            </li>
+            <li>
+                Ändra komponentkod,
+            </li>
+            <li>
+                Ändra, lägg till riktlinjer för tillgänglig kod.
+            </li>
+        </ul>
+        <p>Det finns en del varningar som är oviktiga och man kan ignorera, då kan man lägga till "Ignore" i någon fil (så kommer de inte upp nästa gång).</p>
       </section>
-
-
       <section>
       <h2>TODO</h2>
       <ul>
         <li>Uppdatera vad mer som behöver testas manuellt</li>
-        <li>Uppdatera med instruktioner testverktyg</li>  
+        
       </ul>
       </section>   
     </Page>
