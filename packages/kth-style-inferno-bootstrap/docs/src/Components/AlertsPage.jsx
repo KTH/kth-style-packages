@@ -17,7 +17,7 @@ export default function BasicPage (props) {
             </Alert>
             <Code>
 {`<Alert color="info" aria-live="polite">
-  <p>Some cool text in a <b>info</b> alert box!</p>
+  <p>Some text in a <b>Information alert</b></p>
   </Alert>`}
             </Code>
         </Scene>
@@ -62,7 +62,7 @@ export default function BasicPage (props) {
             </Alert>
             <Code>
 {`<Alert color="danger" aria-live="polite">
-  <p>Some cool text in a <b>danger</b> alert box!</p>
+  <p>Some text in a <b>Error alert</b></p>
 </Alert>`}
             </Code>
           </Scene>
@@ -120,7 +120,7 @@ export default function BasicPage (props) {
             </Alert>
             <Code>
 {`<Alert color="success">
-  <p>Some cool text in a <b>success</b> alert box!</p>
+  <p>Some text in a <b>Success alert</b></p>
   </Alert>`}
             </Code>
           </Scene>
@@ -146,6 +146,7 @@ export default function BasicPage (props) {
           </UXComment>
           
           <h3>Variant av Success alert som försvinner efter 5 sekunder</h3>
+          <br>
           <p>TO DO: Lägg till komponent som försvinner efter 5 sekunder.</p>
           <UXComment>
              <h4>Användning</h4>
