@@ -82,7 +82,7 @@ export default function DropdownsPage (props) {
         <h4>Användning</h4>
         <ul>
             <li>
-                För flervalssvar, när bara ett val är möjligt och alternativen är fler än tre alternativ.
+                För flervalssvar, när bara ett val är möjligt och alternativen är fler.
             </li>
             <li>
                 Exempel: se <a href="/style/page-layout/formexamplepage">formulär</a>.
