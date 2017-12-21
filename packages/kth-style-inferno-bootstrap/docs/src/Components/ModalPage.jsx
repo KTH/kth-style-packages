@@ -144,22 +144,23 @@ export default function BasicPage (props) {
     <Stage>
       <h3>Information modal</h3>
       <section id="information_modal">
-      <br>
-      <p> TO DO: Lägg till komponet för informera när klickat på i-ikon </p>
-      <UXComment>
-        <h4>Användning</h4>
-        <ul>
-          <li>
-            För att informera användaren när denne efterfrågat informationen (t ex hjälp-information)
-          </li>
-        </ul>
-        <h4>Tänk på att</h4>
-        <ul>
-          <li>
-            Se <a href="#generellariktlinjerinformation">Generella riktlinjer information</a> nedan.
-          </li>
-        </ul>
-      </UXComment>
+        <br>
+        <p> TO DO: Lägg till komponet för informera när klickat på i-ikon </p>
+        <UXComment>
+          <h4>Användning</h4>
+          <ul>
+            <li>
+              För att informera användaren när denne efterfrågat informationen (t ex hjälp-information)
+            </li>
+          </ul>
+          <h4>Tänk på att</h4>
+          <ul>
+            <li>
+              Se <a href="#generellariktlinjerinformation">Generella riktlinjer information</a> nedan.
+            </li>
+          </ul>
+        </UXComment>
+      </section>
     </Stage>
  
     </Page>
