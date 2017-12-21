@@ -150,13 +150,13 @@ export default function BasicPage (props) {
           <h4>Användning</h4>
           <ul>
             <li>
-              För att informera användaren när denne efterfrågat informationen (t ex hjälp-information)
+              För att informera användaren när denne efterfrågat informationen som t ex hjälpinformation.
             </li>
           </ul>
           <h4>Tänk på att</h4>
           <ul>
             <li>
-              Se <a href="#generellariktlinjerinformation">Generella riktlinjer information</a> nedan.
+              Se <a href="/style/guidelines/information#general_guidelines_information">Generella riktlinjer information</a>.
             </li>
           </ul>
         </UXComment>
