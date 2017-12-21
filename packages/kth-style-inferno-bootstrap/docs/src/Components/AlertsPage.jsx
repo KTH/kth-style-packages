@@ -160,7 +160,7 @@ export default function BasicPage (props) {
     </Stage>
       
     <Stage>
-        <h3>Alert with close button</h3>
+        <h3>Varianter av Alerts</h3>
         <Scene>
             <Alert onClose={() => {}}>
               <p>Some text in a Success alert with close button</p>
@@ -172,7 +172,6 @@ export default function BasicPage (props) {
             </Code>  
           </Scene>
           
-          <h3>Alert with heading</h3>
           <Scene>
             <Alert onClose={() => {}}>
               <span>
@@ -184,7 +183,7 @@ export default function BasicPage (props) {
 {`<Alert onClose={() => {}}>
   <span>
     <h4>Attention!</h4>
-    <p>Some text in a Success alert with close button</p>
+    <p>Success alert with heading</p>
   </span>
 </Alert>`}
             </Code>  
