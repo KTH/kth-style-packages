@@ -5,9 +5,8 @@ export default function DropdownsPage (props) {
     <Page>
       <h1>Formulär- och indatakomponenter</h1>
       <section>
-        <p>
-            Formulär används för att få in data från användaren.
-        </p>
+        <p>Formulär används för att få in data från användaren.</p>
+
         <p>
             Det finns olika typer av indatakomponenter som har olika användningsområde (se nedan).
         </p>
