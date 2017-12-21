@@ -10,7 +10,7 @@ export default function DropdownsPage (props) {
       </p>
        
       <section id="link_or_buttons">
-      <h2>Välj om det ska vara en knapp eller Länk</h2>
+      <h2>Välj om det ska vara en knapp eller länk</h2>
         <table class="table">
           <thead class="thead-default">
             <tr>
