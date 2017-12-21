@@ -73,7 +73,7 @@ export default function DropdownsPage (props) {
                 </ul>
             </li>
             <li>
-                Se <a href="#generella_riktlinjer_formular">Generella riktlinjer formulär</a>.
+                Se <a href="#generella_riktlinjer_formular">Generella riktlinjer för formulär och indatakomponenter</a>.
             </li>    
         </ul>
 
@@ -103,7 +103,7 @@ export default function DropdownsPage (props) {
                 Användaren ska kunna söka fram rätt alternativ i rullgardinsmenyn genom att använda bokstavstangenterna.
             </li>
             <li>
-                Se <a href="#generella_riktlinjer_formular">Generella riktlinjer formulär</a>.
+                Se <a href="#generella_riktlinjer_formular">Generella riktlinjer för formulär och indatakomponenter</a>.
             </li>    
         </ul>
 
@@ -124,7 +124,7 @@ export default function DropdownsPage (props) {
             Alternativen ska inte vara fler än att de kan presenteras överskådligt på en rad. Annars använd rullgardinsmeny.
           </li>
           <li>
-            Se <a href="#generella_riktlinjer_formular">Generella riktlinjer formulär</a>.
+            Se <a href="#generella_riktlinjer_formular">Generella riktlinjer för formulär och indatakomponenter</a>.
           </li>    
         </ul>
 
@@ -142,7 +142,7 @@ export default function DropdownsPage (props) {
         <h4>Tänk på att</h4>
         <ul>
             <li>
-                Se <a href="#generella_riktlinjer_formular">Generella riktlinjer formulär</a>.
+                Se <a href="#generella_riktlinjer_formular">Generella riktlinjer för formulär och indatakomponenter</a>.
             </li>    
         </ul>
 
@@ -160,7 +160,7 @@ export default function DropdownsPage (props) {
         <h4>Tänk på att</h4>
         <ul>
             <li>
-                Se <a href="#generella_riktlinjer_formular">Generella riktlinjer formulär</a>.
+                Se <a href="#generella_riktlinjer_formular">Generella riktlinjer för formulär och indatakomponenter</a>.
             </li>    
         </ul>
       </section>
@@ -209,7 +209,7 @@ export default function DropdownsPage (props) {
 
         <h3>Dölj inte grundläggande hjälptext</h3>
         <p>
-          Exponera grundläggande instruktioner där det är möjligt. För mer omfattande hjälptexter, infoga hjälpinformation som nås via en i-ikon (se <a href="/style/components/modal#information">Information modal</a>).
+          Exponera grundläggande instruktioner där det är möjligt. För mer omfattande hjälptexter, infoga hjälpinformation som nås via en i-ikon (se <a href="/style/components/modal#information_modal">Information modal</a>).
         </p>
 
         <h3>Håll dig till standard</h3>
