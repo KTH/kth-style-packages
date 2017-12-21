@@ -144,7 +144,7 @@ export default function BasicPage (props) {
     <Stage>
       <h3>Information modal</h3>
       <section id="information_modal">
-        <br>
+        <br></br>
         <p> TO DO: Lägg till komponet för informera när klickat på i-ikon </p>
         <UXComment>
           <h4>Användning</h4>
