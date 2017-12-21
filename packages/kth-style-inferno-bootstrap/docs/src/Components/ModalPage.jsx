@@ -13,7 +13,7 @@ export default function BasicPage (props) {
   return (
     <Page>
     <h1>Modal</h1>
-    <section>
+ 
       <p>Use modals to present essential information that takes over the entire window.</p>  
       <Stage>
       <Scene>
@@ -161,7 +161,7 @@ export default function BasicPage (props) {
         </ul>
       </UXComment>
     </Stage>
-  </section>
+ 
     </Page>
   )
 }
