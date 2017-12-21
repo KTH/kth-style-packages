@@ -1,7 +1,7 @@
 /* PageLayout */
 import StartPage from './StartPage.jsx'
 import TextPage from './TextPage.jsx'
-import FormExmplePage from './FormExamplePage.jsx'
+import FormExamplePage from './FormExamplePage.jsx'
 
 
 const pages = [
