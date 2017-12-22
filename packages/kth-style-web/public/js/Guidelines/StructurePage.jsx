@@ -89,7 +89,7 @@ export default function DropdownsPage (props) {
         <h4>Tänk på att</h4>
         <ul>
             <li>
-                Försäkra dig om att användaren ser den vita rubriklisten (se <a href="/style/testhelper#testa_anvandbarhet">Testa användbarhet</a>).
+                Försäkra dig om att användaren ser den vita rubriklisten (se <a href="/style/guidelines/testhelper#testa_anvandbarhet">Testa användbarhet</a>).
                 Om inte överväg att använda Blå-utfällbar-rubriklist.
             </li>
             <li>
