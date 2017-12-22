@@ -6,7 +6,7 @@ export default function DropdownsPage (props) {
       <h1>Riktlinjer test</h1>
       <section>
         <p>
-            Om du använder KTH Style med komponenter/ tillhörande riktlinjer samt följer rekommendationer under <a href="/style/accessiblecode">Tillgänglig kod</a> så får du mycket av Användbarhet och Tillgänglighet gratis. 
+            Om du använder KTH Style med komponenter/ tillhörande riktlinjer samt följer rekommendationer under <a href="/style/guidelines/accessability#tillganglig_kod">Tillgänglig kod</a> så får du mycket av Användbarhet och Tillgänglighet gratis. 
         </p>
         <p>
           Men som alltid är det under testning du hittar det du inte tänkt på. Det kan vara saker som är specifikt för din applikation men det kan också vara saker vi behöver ta in i KTH Style för att förbättra den, så därför är det viktigt att du återkopplar till ansvariga för KTH Style när du hittat områden för förbättring.
