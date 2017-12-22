@@ -141,7 +141,7 @@ export default function DropdownsPage (props) {
             Vi har inte velat göra för stora förändringar; kth.se ska fortfarande ge samma design-upplevelse som är baserat på den kth-profil som togs fram för ett antal år sen. Större förändringar än det vi föreslagit här kräver en större redesign med nya profilfärger, annan layout, etc.
             </p>
             <p>
-            I nuvarande förslag har vi mörkat ner den ljusa blå profilfärgen till nivå AA för stor text (se <a href="/style/colors">Färger</a>) och ersatt den ljusa gröna med den gröna profilfärgen, vilket gör att vi inte frångår KTHs profil för mycket. Det kräver dock att vit text på färgad bakgrund har en fontstorlek på minst 14 om fet och annars 18 px. Alla element utom plattor kommer uppfylla detta.
+            I nuvarande förslag har vi mörkat ner den ljusa blå profilfärgen till nivå AA för stor text (se <a href="https://www.kth.se/social/group/kth-style-guide/page/farger/">Färger</a>) och ersatt den ljusa gröna med den gröna profilfärgen, vilket gör att vi inte frångår KTHs profil för mycket. Det kräver dock att vit text på färgad bakgrund har en fontstorlek på minst 14 om fet och annars 18 px. Alla element utom plattor kommer uppfylla detta.
             </p>
         </section>
         <section>
