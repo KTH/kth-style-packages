@@ -8,7 +8,7 @@ export default function DropdownsPage (props) {
           Det finns fyra rubriknivåer samt brödtext (se nedan).
         </p>
         <p>
-          Läs gärna mer om <a href="https://www.kth.se/social/group/kth-style-guide/page/bakgrund-14/">bakgrund</a> till val av rubriknivå och brödtext.
+          Läs gärna mer om <a href="https://www.kth.se/social/group/kth-style-guide/page/bakgrund-14/">bakgrund till val av rubriknivå och brödtext</a>.
         </p>
        <Section title="Välj typ av rubriker, brödtext">
         <table class="table">
