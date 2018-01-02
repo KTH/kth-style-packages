@@ -20,8 +20,8 @@ export default function DropdownsPage (props) {
         <table class="table">
           <thead class="thead-default">
             <tr>
-              <th>Namn</th>
-              <th>Användning</th>
+              <th>Komponenttyp</th>
+              <th>Används för att</th>
             </tr>
           </thead>
           <tbody>
@@ -53,7 +53,7 @@ export default function DropdownsPage (props) {
         <h4>Tänk på att</h4>
         <ul>
             <li>
-                Det är extra viktigt för dialoger att tänka på namngivning av knapparna, se <a href="/style/guidelines/buttonorlink/#generella_riktlinjer_link_knapp">Generella riktlinjer för länk och knapp</a>.
+                Det är extra viktigt för dialoger att tänka på namngivning av knapparna, se <a href="/style/guidelines/buttonorlink/#generella_riktlinjer_for_lank_och_knapp">Generella riktlinjer för länk och knapp</a>.
             </li>
         </ul>
 
@@ -79,7 +79,7 @@ export default function DropdownsPage (props) {
            <h4>Tänk på att</h4>
            <ul>
              <li>
-                Det är extra viktigt för dialoger att tänka på namngivning av knapparna, se <a href="/style/guidelines/buttonorlink/#generella_riktlinjer_link_knapp">Generella riktlinjer för länk och knapp</a>.
+                Det är extra viktigt för dialoger att tänka på namngivning av knapparna, se <a href="/style/guidelines/buttonorlink/#generella_riktlinjer_for_lank_och_knapp">Generella riktlinjer för länk och knapp</a>.
              </li>
            </ul>
          </section>
