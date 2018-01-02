@@ -57,7 +57,7 @@ export default function DropdownsPage (props) {
             </tr>
             <tr>
               <td><a href="/style/api/components/buttons#success_button">Success button</a></td>
-              <td>Aktiviteter som användaren har påbörjat (man vill uppmuntra användaren att slutföra)</td>
+              <td>Aktiviteter som användaren har påbörjat (man vill uppmana användaren att slutföra)</td>
             </tr>
             <tr>
               <td><a href="/style/api/components/buttons#secondary_button">Secondary button</a></td>
@@ -127,11 +127,11 @@ export default function DropdownsPage (props) {
          </tr>
          <tr>
            <td><a href="/style/api/components/buttons#away_link">Away link</a></td>
-           <td>Länka till annan del av (KTH) webb som har en annan navigation</td>
+           <td>Navigera till annan del av (KTH) webb som har en annan navigation</td>
          </tr>
          <tr>
            <td><a href="/style/api/components/buttons#up_link">Up link</a></td>
-           <td>Länka till toppen på sidan då långa sidor</td>
+           <td>Navigera till toppen på sidan då långa sidor</td>
          </tr>
        </tbody>
      </table>
