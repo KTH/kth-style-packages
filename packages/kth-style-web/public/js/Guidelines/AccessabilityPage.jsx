@@ -11,7 +11,7 @@ export default function DropdownsPage (props) {
         Tanken med KTH Style är att underlätta för utvecklarare att ta fram tillgängliga och användbara webbapplikationer. Grunden i KTH Style är därför att bygga in så mycket som möjligt av riktlinjerna för användbarhet och tillgänglighet i komponenterna. För varje komponent behöver man då endast ta del av ett fåtal riktlinjer (som inte går att bygga in) och som förklarar när och hur man använder komponenterna.
       </p>
       <p>
-        Det finns dock några saker, som inte ligger på komponent-nivå, som du behöver tänka på när du kodar på för att det ska bli tillgängligt för användaren. Nedan (under <a href="#tillganglig_kod">Tillgänglig kod</a>) ser du en sammanställning av de viktigaste sakerna att tänka på vad gäller webbutveckling. 
+        Det finns dock några saker, som inte ligger på komponent-nivå, som du behöver tänka på när du kodar för att det ska bli tillgängligt för användaren. Nedan (under <a href="#tillganglig_kod">Tillgänglig kod</a>) ser du en sammanställning av de viktigaste sakerna att tänka på vad gäller webbutveckling. 
       </p>
       <p>
       En del av arbetet med att ta fram tillgängliga komponenter har handlat om att se över de färger vi använt. Nedan finns tips på hur man arbetar med <a href="#farger_och_tillganglighet">Färger och Tillgänglighet</a>.
