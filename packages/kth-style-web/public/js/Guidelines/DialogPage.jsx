@@ -27,11 +27,11 @@ export default function DropdownsPage (props) {
           <tbody>
             <tr>
               <td>Confirm</td>
-              <td>När man vill att användaren ska bekräfta ett gjort val som inte kan ångras</td>
+              <td>Användaren ska bekräfta ett gjort val som inte kan ångras</td>
             </tr>
             <tr>
               <td>Choose</td>
-              <td>När användaren ska göra val som är mindre allvarligt (det går att ångra)</td>
+              <td>Användaren ska göra ett val som är mindre riskabelt (det går att ångra)</td>
             </tr>
              </tbody>
         </table>
@@ -41,10 +41,10 @@ export default function DropdownsPage (props) {
         <h2>Flytta till Komponenter: Olika typer av dialoger</h2>
         <h3>Confirm</h3>
         <p> Infoga komponent här...</p>
-        <h4>Användning</h4>
+        <h4>Används</h4>
         <ul>
             <li>
-                När man vill att användaren ska bekräfta ett gjort val som inte kan ångras.
+                För att att användaren ska bekräfta ett gjort val som inte kan ångras.
             </li>
             <li>
                 Exempel: ta bort fil.
@@ -59,10 +59,10 @@ export default function DropdownsPage (props) {
 
         <h3>Choose</h3>
         <p> Infoga komponent här...</p>
-        <h4>Användning</h4>
+        <h4>Används</h4>
         <ul>
             <li>
-                När användaren ska göra val som är mindre allvarligt (det går att ångra).
+                För att användaren ska göra val som är mindre riskabelt (det går att ångra).
             </li>
             <li>
                 Exempel:
