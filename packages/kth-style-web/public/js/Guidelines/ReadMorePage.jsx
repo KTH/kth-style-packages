@@ -6,7 +6,7 @@ export default function DropdownsPage (props) {
       
      <Section title="Riktlinjer användbarhet">
        <p>
-         <a href="https://www.kth.se/social/group/kth-style-guide/page/usability-heuristics-2/">Usability Heuristics</a>
+         <a href="/style/guidelines/usability">Riktlinjer användbarhet</a>
        </p>
      </Section>
      <Section title="Riktlinjer tillgänglighet">
