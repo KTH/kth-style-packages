@@ -19,7 +19,7 @@ export default function DropdownsPage (props) {
               <thead class="thead-default">
                 <tr>
                   <th>Komponenttyp</th>
-                  <th>Användning</th>
+                  <th>Används för att</th>
                 </tr>
               </thead>
               <tbody>
@@ -27,25 +27,25 @@ export default function DropdownsPage (props) {
                   <td>
                     <a href="/style/api/components/alerts#success_alert">Success alert</a>
                   </td>
-                  <td>För att bekräfta att användaren har lyckats utföra en handling</td>
+                  <td>Bekräfta att användaren har lyckats utföra en handling</td>
                 </tr>
                 <tr>
                   <td>
                       <a href="/style/api/components/alerts#information_alert">Information alert</a>
                   </td>
-                  <td>För att informera om att något har förändrats på en sida eller annat som användaren behöver bli informerad om (men ej ha efterfrågat)</td>
+                  <td>Informera om att något har förändrats på en sida eller annat som användaren behöver bli informerad om (men ej ha efterfrågat)</td>
                 </tr>
                 <tr>
                   <td>
                       <a href="/style/api/components/modal#information_modal">Information modal</a>
                   </td>
-                  <td>För att ge ytterligare information när användaren efterfrågar det</td>
+                  <td>Ge ytterligare information när användaren efterfrågar det</td>
                 </tr>
                 <tr>
                   <td>
                       <a href="/style/api/components/alerts#error_alert">Error alert</a> 
                   </td>
-                  <td>För att informera om att något har gått fel</td>
+                  <td>Informera om att något har gått fel</td>
                 </tr>
               </tbody>
             </table>
