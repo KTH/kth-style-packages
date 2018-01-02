@@ -9,48 +9,47 @@ export default function BasicPage (props) {
       <p>Läs först <a href="/style/guidelines/information">Riktlinjer information/ återkoppling</a> där du får överblick över hur du informerar i olika situationer och får hjälp att välja rätt typ av informationskomponent.</p>
     
       <Stage> 
-        <section id="information_alert">
-        <h3>Information Alert</h3>  
-        <Scene>
-            <Alert color="info" aria-live="polite">
-              <p>Some text in a <b>Information alert</b></p>
-            </Alert>
-            <Code>
-{`<Alert color="info" aria-live="polite">
-  <p>Some text in a <b>Information alert</b></p>
-  </Alert>`}
-            </Code>
-        </Scene>
-   
-        <UXComment>
-          <h4>Användning</h4>
-          <ul>
-            <li>
-              För att informera användaren på en sida när användaren inte efterfrågat informationen.
-            </li>
-            <li>
-              Se .. hur man informerar när användaren har efterfrågat informationen...länk till modal
-            </li>
-            <li>
-              Placera
-              <ul>
-                <li>
-                  Överst på sidan (vilket kan innebära att man behöver "refrecha" sidan)
-                </li>
-                <li>
-                 Eller när det behövs, kila in den på rätt plats på sidan (t ex för information i schemat som gäller visst datum).
-                </li>
-              </ul>
-            </li>
-          </ul>
-            <h4>Tänk på att</h4>
+        <Section title="Information Alert">  
+          <Scene>
+              <Alert color="info" aria-live="polite">
+                <p>Some text in a <b>Information alert</b></p>
+              </Alert>
+              <Code>
+  {`<Alert color="info" aria-live="polite">
+    <p>Some text in a <b>Information alert</b></p>
+    </Alert>`}
+              </Code>
+          </Scene>
+
+          <UXComment>
+            <h4>Användning</h4>
             <ul>
               <li>
-                Se <a href="/style/guidelines/information#general_guidelines_information">Generella riktlinjer information</a>.
+                För att informera användaren på en sida när användaren inte efterfrågat informationen.
+              </li>
+              <li>
+                Se .. hur man informerar när användaren har efterfrågat informationen...länk till modal
+              </li>
+              <li>
+                Placera
+                <ul>
+                  <li>
+                    Överst på sidan (vilket kan innebära att man behöver "refrecha" sidan)
+                  </li>
+                  <li>
+                   Eller när det behövs, kila in den på rätt plats på sidan (t ex för information i schemat som gäller visst datum).
+                  </li>
+                </ul>
               </li>
             </ul>
-          </UXComment> 
-        </section>
+              <h4>Tänk på att</h4>
+              <ul>
+                <li>
+                  Se <a href="/style/guidelines/information#general_guidelines_information">Generella riktlinjer information</a>.
+                </li>
+              </ul>
+            </UXComment> 
+          </Section>
       </Stage>
       
       <Stage>
