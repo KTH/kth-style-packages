@@ -46,7 +46,7 @@ export default function DropdownsPage (props) {
         <table class="table" data-example="testtest">
           <thead class="thead-default">
             <tr>
-              <th>Namn</th>
+              <th>Komponenttyp</th>
               <th>Användning</th>
             </tr>
           </thead>
@@ -108,7 +108,7 @@ export default function DropdownsPage (props) {
        <table class="table">
          <thead class="thead-default">
           <tr>
-            <th>Namn</th>
+            <th>Komponenttyp</th>
             <th>Användning</th>
           </tr>
          </thead>
