@@ -38,7 +38,7 @@ export default function DropdownsPage (props) {
       <Section title="Knappar">
         <p>Knapp används för att initiera en aktivitet. Ett klick på en knapp får något att hända. Det kan vara att ett formulär man fyllt i skickas in eller att en sökning utförs. Nästan alltid är en del av händelsen att användaren kommer till en ny sida – men det måste hända mer än så.</p>
         <p>Det finns finns fem olika typer av knappar. Välj knapp utifrån användning (se nedan).</p>
-        <p>Läs gärna mer om <a href="https://www.kth.se/social/group/kth-style-guide/page/bakgrund-10/">bakgrund till val av knappar</a>.</p>
+        <p>Läs gärna <a href="https://www.kth.se/social/group/kth-style-guide/page/bakgrund-10/">bakgrund till val av knappar</a>.</p>
       </Section>
       
       <section id="valj_typ_av_knapp">
@@ -100,7 +100,7 @@ export default function DropdownsPage (props) {
          Det finns fem olika typer av länkar. Välj länk utifrån användning (se nedan).
        </p>
        <p>
-         Läs gärna mer om <a href="https://www.kth.se/social/group/kth-style-guide/page/bakgrund-11/">bakgrund till val av länkar</a>.
+         Läs gärna <a href="https://www.kth.se/social/group/kth-style-guide/page/bakgrund-11/">bakgrund till val av länkar</a>.
        </p>
      </Section> 
      <section id="valj_typ_av_lank">
