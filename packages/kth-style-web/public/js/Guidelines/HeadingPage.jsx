@@ -4,14 +4,13 @@ export default function DropdownsPage (props) {
   return (
     <Page>
       <h1>Rubriker, brödtext</h1>
-      <section>
         <p>
           Det finns fyra rubriknivåer samt brödtext (se nedan).
         </p>
         <p>
           Läs gärna mer om <a href="https://www.kth.se/social/group/kth-style-guide/page/bakgrund-14/">bakgrund</a> till val av rubriknivå och brödtext.
         </p>
-        <h2>Välj typ av rubriker, brödtext</h2>
+       <Section title="Välj typ av rubriker, brödtext">
         <table class="table">
           <thead class="thead-default">
             <tr>
@@ -42,9 +41,8 @@ export default function DropdownsPage (props) {
             </tr>
           </tbody>
         </table>
-      </section>
-      <section id="generella_riktlinjer_rubriker">
-        <h2>Generella riktlinjer för rubriker</h2>
+      </Section>
+      <Section title="Generella riktlinjer för rubriker">
         <ul>
           <li>Välj rubriker som beskriver innehållet.</li>
           <li>Titeln ska vara unik och ska börja med det unika och mest relevanta</li>
@@ -52,7 +50,7 @@ export default function DropdownsPage (props) {
           <li>Använd rubriker för att ge struktur och mening till längre textinnehåll. Använd korta rubriker för att gruppera relaterade paragrafer.</li>
          <li>Hoppa inte över rubriknivåer då det försvårar förståelse av sidostrukturen och läsbarheten.</li>
         </ul>
-      </section>
+      </Section>
      </Page>
   )
 }
