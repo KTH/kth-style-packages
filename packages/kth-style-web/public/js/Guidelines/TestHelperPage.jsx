@@ -29,7 +29,7 @@ export default function DropdownsPage (props) {
         </ul>
         <h3>Testa med testverktyg</h3>
         <p>
-          KTH-Style har ett script som ger möjlighet att automatiskt test (utvärdera) tillgänglihet mot standarden WCAG2AA. Du kan köra scriptet med npm genom att köra <kbd>npm run test-accessibility</kbd>. För att detta ska fungera måste KTH-Style vara deployat på localhost:3000.
+          KTH-Style har ett script som ger möjlighet att automatiskt test (utvärdera) tillgänglihet mot standarden WCAG2AA (se <a href="#overgripande_riktlinjer_tillganglighet">övergripande riktlinjerna för tillgänglighet</a>). Du kan köra scriptet med npm genom att köra <kbd>npm run test-accessibility</kbd>. För att detta ska fungera måste KTH-Style vara deployat på localhost:3000.
         </p>
         <p>
           Resultatet från tillgänglighetsscriptet läggs i mappen "accessibility/reports" i repot. Av varje sida som testas skapas en html-rapport med varningar och errors samt en skärmdump av den testade sidan.
