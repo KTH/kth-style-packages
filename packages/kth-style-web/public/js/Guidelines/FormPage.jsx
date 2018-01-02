@@ -11,7 +11,7 @@ export default function DropdownsPage (props) {
             Det finns olika typer av indatakomponenter som har olika användningsområde (se nedan).
         </p>
         <p>
-            Om du är intresserad läs gärna <a href="https://www.kth.se/social/group/kth-style-guide/page/bakgrund-17/">bakgrund till varför formulär- och indatakomponenter ser ut och beter sig som det gör</a>.
+            Om du är intresserad läs gärna <a href="https://www.kth.se/social/group/kth-style-guide/page/bakgrund-17/">bakgrund till val av formulär- och indatakomponenter</a>.
         </p>
       </section>
      <Section title="Välj typ av formulär- och indatakomponenter">
