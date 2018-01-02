@@ -20,8 +20,8 @@ export default function DropdownsPage (props) {
           <p>
           Applikationens urval av funktioner och design fokuserar på att lösa de viktigaste och mest använda uppgifterna för användarna.
         </p>
-
-         <Section title="Visa status">
+      </Section>
+      <Section title="Visa status">
         <p>
           Applikationen informerar användarna tydligt om vad som händer genom korrekt feedback inom rimlig tid.
         </p>
