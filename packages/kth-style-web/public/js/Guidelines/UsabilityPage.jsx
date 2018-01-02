@@ -52,8 +52,8 @@ export default function DropdownsPage (props) {
         <p>
           Användaren har kontroll över applikationen, t ex så har användaren ett tydligt sätt att navigera (”jag vet var jag är och vad jag kan göra”) och det alltid finns en utväg (t ex genom ”Ångra” och "Återställ”).
         </p>
-
-        <Section title="Konsekvent design som utgår från standarder">
+      </Section>
+      <Section title="Konsekvent design som utgår från standarder">
         <p>
           Informationen presenteras konsekvent för att underlätta igenkänning för användaren. Samma kommando eller åtgärd har samma effekt igenom hela applikationen. Ord, situationer betyder alltid samma sak.
         </p>
