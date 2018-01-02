@@ -51,7 +51,7 @@ export default function DropdownsPage (props) {
             </table>
           </Section>
       
-          <Section title="General_Guidelines_Information">
+          <Section title="Generella riktlinjer information">
             <p>Specifika riktlinjer hittar du vid respektive imformationskomponent (tänk på att ha checkat i "UX comment", högst upp på sidan till höger).</p>
             <p>Säkerställ att instruktioner är tydliga och lätta att förstå genom att:</p>
             <ul>
