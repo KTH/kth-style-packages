@@ -13,8 +13,7 @@ export default function BasicPage (props) {
        
       <h2>Knappar</h2>
         <Stage>
-          <section id="primary_button">
-          <h3>Primary button</h3>  
+          <Section title="Primary button">  
               <Scene>
                 <Button color="primary">primary</Button>{' '}
                 <Code>
@@ -41,11 +40,10 @@ export default function BasicPage (props) {
                     </li>
                 </ul>
               </UXComment>
-            </section>
+            </Section>
           </Stage>
           <Stage>
-            <section id="secondary_button">
-              <h3>Secondary button</h3>  
+            <Section title="Secondary button">  
               <Scene>
                 <Button color="secondary">secondary</Button>{' '}
                 <Code>
@@ -77,11 +75,10 @@ export default function BasicPage (props) {
                     </li>
                 </ul>
             </UXComment> 
-          </section>   
+          </Section>   
         </Stage>
         <Stage>   
-            <section id="success_button">
-              <h3>Success button</h3>  
+            <Section title="Success button">  
               <Scene>
                 <Button color="success">success</Button>{' '}
                 <Code>
@@ -114,11 +111,10 @@ export default function BasicPage (props) {
                     </li>
                 </ul>
               </UXComment>
-            </section>
+            </Section>
           </Stage>
           <Stage>
-            <section id="danger_button">
-              <h3>Danger button</h3>  
+            <Section title="Danger button">  
               <Scene>
                 <Button color="danger">danger</Button>{' '}
                 <Code>
@@ -145,11 +141,10 @@ export default function BasicPage (props) {
                     </li>
                 </ul>
               </UXComment>
-            </section>
+            </Section>
           </Stage>
           <Stage>
-            <section id="disabled_button">
-              <h3>Disabled Button</h3>
+            <Section title="Disabled Button">
               <Scene>
                 <Button color="primary" disabled>Primary button</Button>{' '}
                 <Button color="secondary" disabled>Button</Button>
@@ -177,14 +172,13 @@ export default function BasicPage (props) {
                     </li>
                 </ul>
               </UXComment>
-            </section>                  
+            </Section>                  
            </Stage> 
     
         
           <h2>Länkar</h2>
           <Stage>
-            <section id="blue_link">
-              <h3>Blue link</h3>  
+            <Section title="Blue link">  
               <Scene>
                 <Button color="link">link</Button>
                 <Code>
@@ -203,12 +197,11 @@ export default function BasicPage (props) {
                 </li>
               </ul>
               </UXComment>
-            </section>                  
+            </Section>                  
          </Stage> 
       
           <Stage>
-            <section id="white_link">
-              <h3>White link</h3>
+            <Section title="White link">
               <p>
                 TO DO: Infoga komponent här
               </p>
@@ -223,12 +216,11 @@ export default function BasicPage (props) {
                   </li>
                 </ul>
               </UXComment>
-            </section>                  
+            </Section>                  
          </Stage>
             
          <Stage>
-            <section id="away_link">
-              <h3>Away link</h3>
+            <Section title="Away link">
               <p>
                 TO DO: Infoga komponent här
               </p>
@@ -251,12 +243,11 @@ export default function BasicPage (props) {
                     </li>
                 </ul>
               </UXComment>
-            </section>                  
+            </Section>                  
          </Stage>
              
          <Stage>
-            <section id="back_link">
-              <h3>Back link</h3>
+            <Section title="Back link">
               <p>
                 TO DO: Infoga komponent här
               </p>
@@ -283,12 +274,11 @@ export default function BasicPage (props) {
                     </li>
                 </ul>
                </UXComment>
-             </section>                  
+             </Section>                  
          </Stage>
               
          <Stage>
-            <section id="up_link">
-              <h3>Up link</h3>
+            <Section title="Up link">
               <p>
                   TO DO: Infoga komponent här
               </p>
@@ -303,12 +293,11 @@ export default function BasicPage (props) {
                   </li>
               </ul>
               </UXComment>
-            </section>                  
+            </Section>                  
          </Stage>
            
          <Stage>
-            <section id="link_button">
-              <h3>Link button</h3> 
+            <Section title="Link button"> 
               <p>TO DO: Infoga komponent här</p>
               <UXComment>
                 <h4>Användning</h4>
@@ -327,12 +316,11 @@ export default function BasicPage (props) {
                   </li>
                 </ul>
               </UXComment>
-            </section>                  
+            </Section>                  
          </Stage>
               
          <Stage>
-            <section id="menu_link_button">
-              <h3>Menu Link button</h3>
+            <Section title="Menu Link button">
               <UXComment>
                 <h4>Användning</h4>
                 <ul>
@@ -341,14 +329,14 @@ export default function BasicPage (props) {
                   </li>
                 </ul>
               </UXComment>
-            </section>                  
+            </Section>                  
          </Stage>
              
        <h2>Stöds inte i dagsläget</h2>
        <p> Om man behöver använda komponenter nedan, motivera varför i KTH Style gruppen för att utvärdera om vi tar in den i riktlinjerna.</p>
        <Stage>
-         <section>
-            <h3>Different sizes</h3>
+         <Section title="Different sizes">
+           <h3>Big size</h3>
             <Scene>
               <Button color="primary" size="lg">Large Button</Button>{' '}
               <Button color="secondary" size="lg">Large Button</Button>
@@ -374,7 +362,7 @@ export default function BasicPage (props) {
                 <Button color="secondary" size="lg" block>Block level button</Button>`}
               </Code>
             </Scene>
-         </section>
+         </Section>
        </Stage>                  
     </Page>
   )
