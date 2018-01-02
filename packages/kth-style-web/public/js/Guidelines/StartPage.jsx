@@ -9,7 +9,7 @@ export default function DropdownsPage (props) {
      
       <Section title="Övergripande principer">
         <p> 
-          Nedan anges övergripande principer som gäller för alla element i Styleguiden. Syftet är att förenkla för slutanvändaren av KTH webb:
+          Nedan anges övergripande principer som gäller för alla element i Styleguiden. Syftet med KTH Style är att förenkla för slutanvändaren av KTH webb genom att:
         </p>
         <ul>
           <li>
