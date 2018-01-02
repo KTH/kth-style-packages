@@ -19,11 +19,11 @@ export default function DropdownsPage (props) {
           </thead>
           <tbody>
             <tr>
-              <td><a href="#valj_typ_av_lank">Länk</a> välj ...</td>
+              <td><a href="#valj_typ_av_lank">Länk</a> (välj typ)</td>
               <td>Leder användaren vidare till en annan del av webben</td>
             </tr>
             <tr>
-              <td><a href="#valj_typ_av_knapp">Knapp</a> välj ...</td>
+              <td><a href="#valj_typ_av_knapp">Knapp</a> (välj typ)</td>
               <td>Initierar en aktivitet. Ett klick på en knapp får något att hända. Det kan vara att ett formulär man fyllt i skickas in eller att en sökning utförs. Nästan alltid är en del av händelsen att användaren kommer till en ny sida – men det måste hända mer än så.</td>
             </tr>
             <tr>
