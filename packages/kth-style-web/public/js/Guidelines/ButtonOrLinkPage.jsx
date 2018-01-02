@@ -19,11 +19,11 @@ export default function DropdownsPage (props) {
           </thead>
           <tbody>
             <tr>
-              <td><a href="#links">Länk</a> välj ...</td>
+              <td><a href="#valj_typ_av_lank">Länk</a> välj ...</td>
               <td>Leder användaren vidare till en annan del av webben</td>
             </tr>
             <tr>
-              <td><a href="#choose_button">Knapp</a> välj ...</td>
+              <td><a href="#valj_typ_av_knapp">Knapp</a> välj ...</td>
               <td>Initierar en aktivitet. Ett klick på en knapp får något att hända. Det kan vara att ett formulär man fyllt i skickas in eller att en sökning utförs. Nästan alltid är en del av händelsen att användaren kommer till en ny sida – men det måste hända mer än så.</td>
             </tr>
             <tr>
@@ -41,8 +41,8 @@ export default function DropdownsPage (props) {
         <p>Läs gärna mer om <a href="https://www.kth.se/social/group/kth-style-guide/page/bakgrund-10/">bakgrund till varför knappar ser ut och beter sig som det gör</a>.</p>
       </Section>
       
-      <section>
-        <h3>Välj knapp</h3>
+      <section id="valj_typ_av_knapp">
+        <h3>Välj typ av knapp</h3>
         <table class="table" data-example="testtest">
           <thead class="thead-default">
             <tr>
@@ -88,7 +88,7 @@ export default function DropdownsPage (props) {
            Se även hur man kombimnerar knappar i <a href="/style/guidelines/dialouge">Dialoger</a>
          </li>
          <li>
-           Se även <a href="#generella_riktlinjer_link_knapp">Generella riktlinjer för länk och knapp</a>.
+           Se även <a href="#generella_riktlinjer_for_lank_och_knapp">Generella riktlinjer för länk och knapp</a>.
          </li>
        </ul>
      </section>  
@@ -103,7 +103,7 @@ export default function DropdownsPage (props) {
          Läs gärna mer om <a href="https://www.kth.se/social/group/kth-style-guide/page/bakgrund-11/">bakgrund till varför länkar ser ut och beter sig som de gör</a>.
        </p>
      </Section> 
-     <section>
+     <section id="valj_typ_av_lank">
        <h3>Välj typ av länk</h3>
        <table class="table">
          <thead class="thead-default">
@@ -166,7 +166,7 @@ export default function DropdownsPage (props) {
           Exempel länkar i en punktlista
         </li>
       </ul>
-      Se även <a href="#generella_riktlinjer_link_knapp">Generella riktlinjer för länk och knapp</a>.
+      Se även <a href="#generella_riktlinjer_for_lank_och_knapp">Generella riktlinjer för länk och knapp</a>.
    </section>
      
   <Section title="Generella riktlinjer för länk och knapp">
