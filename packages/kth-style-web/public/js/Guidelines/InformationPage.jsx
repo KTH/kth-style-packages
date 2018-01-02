@@ -5,17 +5,16 @@ export default function DropdownsPage (props) {
   return (
     <Page>
       <h1>Information/ återkoppling</h1>
-          <section>
-            <p>
-                Systemet ska konsekvent ge användaren den information/ återkoppling hen behöver för att kunna utföra sina aktiviteter och nå sina mål på ett tillfredställande sätt. Användaren ska även när så behövs kunna efterfråga information.
-            </p>
-            <p>
-                Det finns fyra olika situationer när man ska ge information/ återkoppling. Tabellen nedan ska hjälpa dig välja rätt informationskomponent.
-            </p>
-            <p>
-                Om du är intresserad, läs mer om <a href="https://www.kth.se/social/group/kth-style-guide/page/bakgrund-9/">bakgrund till val av informationskomponenter</a>.
-            </p>
-            <h2>Välj informationskomponent</h2>
+          <p>
+            Systemet ska konsekvent ge användaren den information/ återkoppling hen behöver för att kunna utföra sina aktiviteter och nå sina mål på ett tillfredställande sätt. Användaren ska även när så behövs kunna efterfråga information.
+          </p>
+          <p>
+            Det finns fyra olika situationer när man ska ge information/ återkoppling. Tabellen nedan ska hjälpa dig välja rätt informationskomponent.
+          </p>
+          <p>
+            Om du är intresserad, läs mer om <a href="https://www.kth.se/social/group/kth-style-guide/page/bakgrund-9/">bakgrund till val av informationskomponenter</a>.
+          </p>
+          <Section title="Välj informationskomponent">
             <table class="table">
               <thead class="thead-default">
                 <tr>
@@ -50,16 +49,16 @@ export default function DropdownsPage (props) {
                 </tr>
               </tbody>
             </table>
-          </section>
-          <section title="General_Guidelines_Information">
-            <h2>Generella riktlinjer information</h2>
+          </Section>
+      
+          <Section title="General_Guidelines_Information">
             <p>Specifika riktlinjer hittar du vid respektive imformationskomponent (tänk på att ha checkat i "UX comment", högst upp på sidan till höger).</p>
             <p>Säkerställ att instruktioner är tydliga och lätta att förstå genom att:</p>
             <ul>
               <li>Undvik tekniskt språk</li>
               <li>Beskriv det indataformat som krävs</li>
             </ul>
-          </section>
+          </Section>
     </Page>
   )
 }
