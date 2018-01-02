@@ -15,29 +15,29 @@ export default function DropdownsPage (props) {
           <thead class="thead-default">
             <tr>
               <th>Namn</th>
-              <th>Användning</th>
+              <th>Används som</th>
             </tr>
           </thead>
           <tbody>
             <tr>
               <td>Titel (H1)</td>
-              <td>Som huvudrubrik, ska inte användas längre ned på sidor och ska bara förekomma en gång på varje sida.</td>
+              <td>Huvudrubrik, ska inte användas längre ned på sidor och ska bara förekomma en gång på varje sida.</td>
             </tr>
             <tr>
               <td>Rubriknivå 2 (H2)</td>
-              <td>Som andra rubriknivå.</td>
+              <td>Andra rubriknivå.</td>
             </tr>
             <tr>
               <td>Rubriknivå 3 (H3)</td>
-              <td>Som tredje rubriknivå.</td>
+              <td>Tredje rubriknivå.</td>
             </tr>
             <tr>
               <td>Rubriknivå 4 (H4)</td>
-              <td>Som fjärde rubriknivå.</td>
+              <td>Fjärde rubriknivå.</td>
             </tr>
             <tr>
               <td>Brödtext</td>
-              <td>Som innehållstext under rubriker.</td>
+              <td>Innehållstext under rubriker.</td>
             </tr>
           </tbody>
         </table>
