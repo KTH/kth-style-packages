@@ -14,22 +14,22 @@ export default function DropdownsPage (props) {
           <thead class="thead-default">
             <tr>
               <th>Komponenttyp</th>
-              <th>Användning</th>
+              <th>Används för att</th>
             </tr>
           </thead>
           <tbody>
             <tr>
               <td><a href="#valj_typ_av_lank">Länk (välj typ)</a></td>
-              <td>Leder användaren vidare till en annan del av webben</td>
+              <td>Leda användaren vidare till en annan del av webben</td>
             </tr>
             <tr>
               <td><a href="#valj_typ_av_knapp">Knapp (välj typ)</a></td>
-              <td>Initierar en aktivitet. Ett klick på en knapp får något att hända. Det kan vara att ett formulär man fyllt i skickas in eller att en sökning utförs. Nästan alltid är en del av händelsen att användaren kommer till en ny sida – men det måste hända mer än så.</td>
+              <td>Initiera en aktivitet. Ett klick på en knapp får något att hända. Det kan vara att ett formulär man fyllt i skickas in eller att en sökning utförs. Nästan alltid är en del av händelsen att användaren kommer till en ny sida – men det måste hända mer än så.</td>
             </tr>
             <tr>
               <td><a href="/style/api/components/buttons#link_button">Link button</a></td>
               <td>
-                Finns bara en variant och ska användas sparsamt för att länka vidare till en sida där man kan initiera en viktig aktivitet.
+                Länka vidare till en sida där man kan initiera en viktig aktivitet. Notera att det finns bara en variant och att den ska användas sparsamt.
               </td>
             </tr>
           </tbody>
@@ -47,29 +47,29 @@ export default function DropdownsPage (props) {
           <thead class="thead-default">
             <tr>
               <th>Komponenttyp</th>
-              <th>Användning</th>
+              <th>Används för</th>
             </tr>
           </thead>
           <tbody>
             <tr>
               <td><a href="/style/api/components/buttons#primary_button">Primary button</a></td>
-              <td>För primära aktiviteter (man vill uppmuntra användaren att utföra)</td>
+              <td>Primära aktiviteter (man vill uppmuntra användaren att utföra)</td>
             </tr>
             <tr>
               <td><a href="/style/api/components/buttons#success_button">Success button</a></td>
-              <td>För att uppmana användaren att avsluta en uppgift som hen har påbörjat</td>
+              <td>Att uppmana användaren att avsluta en uppgift som hen har påbörjat</td>
             </tr>
             <tr>
               <td><a href="/style/api/components/buttons#secondary_button">Secondary button</a></td>
-              <td>För sekundära aktiviteter (man kan utföra, men uppmanas inte till det)</td>
+              <td>Sekundära aktiviteter (man kan utföra, men uppmanas inte till det)</td>
             </tr>
             <tr>
               <td><a href="/style/api/components/buttons#danger_button">Danger button</a></td>
-              <td>För aktiviteter som är destruktiva</td>
+              <td>Destruktiva aktiviteter</td>
             </tr>
             <tr>
               <td><a href="/style/api/components/buttons#disabled_button">Disabled button</a></td>
-              <td>För aktiviteter som inte är möjliga i ett specifikt tillstånd</td>
+              <td>Aktiviteter som inte är möjliga i ett specifikt tillstånd</td>
             </tr>
           </tbody>
         </table>
@@ -109,29 +109,29 @@ export default function DropdownsPage (props) {
          <thead class="thead-default">
           <tr>
             <th>Komponenttyp</th>
-            <th>Användning</th>
+            <th>Används för att</th>
           </tr>
          </thead>
        <tbody>
          <tr>
            <td><a href="/style/api/components/buttons#blue_link">Blue link</a></td>
-           <td>För vanlig länk som infogas i svart text på vit bakgrund</td>
+           <td>Infoga länk i svart innehållstext på vit bakgrund</td>
          </tr>
          <tr>
            <td><a href="/style/api/components/buttons#white_link">White link</a></td>
-           <td>För länk som infogas i vit text på färgad bakgrund</td>
+           <td>Infoga länk i vit innehållstext på färgad bakgrund</td>
          </tr>
          <tr>
            <td><a href="/style/api/components/buttons#back_link">Back link</a></td>
-           <td>För att enkelt kunna navigera tillbaka till föregående menyalternativ i de fall då menyn inte erbjuder det</td>
+           <td>Navigera tillbaka till föregående menyalternativ i de fall då menyn inte erbjuder det</td>
          </tr>
          <tr>
            <td><a href="/style/api/components/buttons#away_link">Away link</a></td>
-           <td>När man länkar till annan del av (KTH) webb som har en annan navigation</td>
+           <td>Länka till annan del av (KTH) webb som har en annan navigation</td>
          </tr>
          <tr>
            <td><a href="/style/api/components/buttons#up_link">Up link</a></td>
-           <td>För att länka till toppen på sidan då långa sidor</td>
+           <td>Länka till toppen på sidan då långa sidor</td>
          </tr>
        </tbody>
      </table>
