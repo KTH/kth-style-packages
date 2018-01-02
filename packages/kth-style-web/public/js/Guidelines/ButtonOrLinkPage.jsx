@@ -9,8 +9,7 @@ export default function DropdownsPage (props) {
           Knappar och länkar ger användaren olika förväntningar på vad som ska ske när man klickar på dem. Eftersom en användare ska förstå innan man klickar vad som kommer att hända är det viktigt att välja rätt komponent. 
       </p>
        
-      <section id="link_or_buttons">
-      <h2>Välj om det ska vara en knapp eller länk</h2>
+     <Section title="Välj om det ska vara en knapp eller länk">
         <table class="table">
           <thead class="thead-default">
             <tr>
@@ -35,12 +34,12 @@ export default function DropdownsPage (props) {
             </tr>
           </tbody>
         </table>
-      </section>
-      <section id="choose_button">
-      <h2>Knappar</h2>
+      </Section>
+      <Section title="Knappar">
       <p>Knapp används för att initiera en aktivitet. Ett klick på en knapp får något att hända. Det kan vara att ett formulär man fyllt i skickas in eller att en sökning utförs. Nästan alltid är en del av händelsen att användaren kommer till en ny sida – men det måste hända mer än så.</p>
       <p>Det finns finns fem olika typer av knappar. Välj knapp utifrån användning (se nedan).</p>
       <p>Läs gärna mer om <a href="https://www.kth.se/social/group/kth-style-guide/page/bakgrund-10/">bakgrund till varför knappar ser ut och beter sig som det gör</a>.</p>
+      </Section>
       <h3>Välj knapp</h3>
       <table class="table" data-example="testtest">
         <thead class="thead-default">
@@ -91,8 +90,7 @@ export default function DropdownsPage (props) {
         </li>
       </ul>
     </section>  
-   <section id="links">
-   <h2>Länkar</h2>
+   <Section title="Länkar">
     <p>
         Länk används till att leda vidare användaren till en annan del av webben för att knyta ihop olika relaterade delar.
     </p>
@@ -102,6 +100,7 @@ export default function DropdownsPage (props) {
     <p>
       Läs gärna mer om <a href="https://www.kth.se/social/group/kth-style-guide/page/bakgrund-11/">bakgrund till varför länkar ser ut och beter sig som de gör</a>.
     </p>
+    </Section> 
     <h3>Välj typ av länk</h3>
     <table class="table">
       <thead class="thead-default">
@@ -133,11 +132,10 @@ export default function DropdownsPage (props) {
         </tr>
       </tbody>
     </table>
-   </section>  
-        
+      
    <section id="riktlinjer_bla_vit_bort">
-   <h2>Riktlinjer för Länk Blå, Vit, Bort</h2>
-   <h3>Infoga länk i textstycke</h3>
+   <h3>Riktlinjer för Länk Blå, Vit, Bort</h3>
+   <h4>Infoga länk i textstycke</h4>
    <ul>
     <li>
       En infoga text i textstycke får en mindre dominant betydelse än en avslutande länk.
@@ -146,7 +144,7 @@ export default function DropdownsPage (props) {
       Exempel infogad länk i textstycke.
     </li>
   </ul>
-  <h3>Avslutande länk</h3>
+  <h4>Avslutande länk</h4>
   <ul>
     <li>
       En avslutande länk läggs på egen rad för att synas mer än infogad länk (därför att det är mer uft runt omkring) efter avslutande stycke, och kan t ex  leda användaren vidare till ytterligare information.
@@ -155,7 +153,7 @@ export default function DropdownsPage (props) {
       Exempel avslutande länk.
      </li>
   </ul> 
-  <h3>Länk i punktlista</h3>
+  <h4>Länk i punktlista</h4>
     <ul>
       <li>
         Lägg länkar i en punktlista när man vill presentera flera olika val i form av länkar. Se också meny.
@@ -167,10 +165,9 @@ export default function DropdownsPage (props) {
     Se även <a href="#generella_riktlinjer_link_knapp">Generella riktlinjer för länk och knapp</a>.
    </section>
      
-   <section id="generella_riktlinjer_link_knapp">
-   <h3>Generella riktlinjer för länk och knapp</h3>
+  <Section title="Generella riktlinjer för länk och knapp">
    <p>Specifika riktlinjer hittar du vid respektive komponent (tänk på att ha checkat i "UX comment", högst upp på sidan till höger).</p>
-   <h4>Namngivning</h4>
+   <h3>Namngivning</h3>
    <ul>
     <li>
       Det är viktigt att man namnger interaktiva element konsekvent. Liknande handling ska tex ha samma namngivning på en knapp.
@@ -209,7 +206,7 @@ export default function DropdownsPage (props) {
       </ul>  
     </li>       
   </ul>     
-</section>
+</Section>
 </Page>
   )
 }
