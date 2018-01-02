@@ -57,7 +57,7 @@ export default function DropdownsPage (props) {
             </tr>
             <tr>
               <td><a href="/style/api/components/buttons#success_button">Success button</a></td>
-              <td>Att uppmana användaren att avsluta en uppgift som hen har påbörjat</td>
+              <td>Aktiviteter som användaren har påbörjat (man vill uppmuntra användaren att slutföra)</td>
             </tr>
             <tr>
               <td><a href="/style/api/components/buttons#secondary_button">Secondary button</a></td>
