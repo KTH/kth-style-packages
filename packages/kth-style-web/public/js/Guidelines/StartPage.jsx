@@ -13,22 +13,19 @@ export default function DropdownsPage (props) {
         </p>
         <ul>
           <li>
-             Reducera element till ett minimum.
+             Komponenter som ingår i KTH Style är redcerade till ett minimum.
           </li>
           <li>
-             Utseende och beteende för ett element ska vara kopplade eftersom användaren förväntar sig att det är samma beteende när det är samma utseende.
+             Utseende och beteende för ett element är kopplade (eftersom användaren förväntar sig att det är samma beteende när det är samma utseende).
           </li>
           <li>
-             Element ska stämmas av mot principer för användbarhet och tillgänglighet (se länkar nedan).
+             Element har stämts av mot principer för användbarhet och tillgänglighet (se länkar nedan).
           </li>
           <li>
-             Elementen ska utgå ifrån <a href="/style/#kths_grafiska_profil">KTH’s grafiska profil</a> om det inte strider mot principer för tillgänglighet och användbarhet.
+             Elementen utgår ifrån <a href="/style/#kths_grafiska_profil">KTH’s grafiska profil</a> om det inte strider mot principer för tillgänglighet och användbarhet.
           </li>
           <li>
-             Använd vedertagna element, standarder om det inte strider mot principer för tillgänglighet och användbarhet.
-          </li>
-          <li>
-             KTH strävar efter att så stor del som möjligt av formen sätts med automatik i applikationerna och inte är beroende av webbredaktörernas val.
+             Så stor del som möjligt av formen sätts med automatik i applikationerna och är inte beroende av webbredaktörernas val.
           </li>
         </ul>
       </Section> 
