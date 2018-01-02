@@ -127,7 +127,7 @@ export default function DropdownsPage (props) {
          </tr>
          <tr>
            <td><a href="/style/api/components/buttons#away_link">Away link</a></td>
-           <td>Navigera till annan del av (KTH) webb som har en annan navigation</td>
+           <td>Navigera till annan del av (KTH) webb som har annan menynavigation</td>
          </tr>
          <tr>
            <td><a href="/style/api/components/buttons#up_link">Up link</a></td>
