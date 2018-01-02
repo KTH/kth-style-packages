@@ -53,8 +53,7 @@ export default function BasicPage (props) {
       </Stage>
       
       <Stage>
-        <section id="error_alert">
-          <h3>Error Alert</h3>  
+        <Section title="Error Alert">  
           <Scene>
             <Alert color="danger" aria-live="polite">
               <p>Some text in a <b>Error alert</b></p>
@@ -108,12 +107,11 @@ export default function BasicPage (props) {
             </li>
           </ul>
          </UXComment> 
-       </section>
+       </Section>
      </Stage>
      <Stage>
-        <section id="success_alert">
-        <h3>Success Alert</h3>    
-            <Scene>
+        <Section title="Success Alert">    
+          <Scene>
             <Alert color="success" >
               <p>Some text in a <b>Success alert</b></p>
             </Alert>
@@ -155,11 +153,11 @@ export default function BasicPage (props) {
                     </li>
                   </ul>
             </UXComment>
-       </section>
+       </Section>
     </Stage>
       
     <Stage>
-        <h3>Varianter av Alerts</h3>
+        <Section title="Varianter av Alerts">
         <Scene>
             <Alert onClose={() => {}}>
               <p>Some text in a Success alert with close button</p>
@@ -187,6 +185,7 @@ export default function BasicPage (props) {
 </Alert>`}
             </Code>  
           </Scene>
+        </Section>
       </Stage>
     </Page>
   )
