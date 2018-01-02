@@ -47,7 +47,7 @@ export default function DropdownsPage (props) {
             Det finns finns två olika typer av rubriklister. Välj rubriklist utifrån användning (se nedan).
         </p>
         <p>
-            Läs gärna mer om <a href="https://www.kth.se/social/group/kth-style-guide/page/bakgrund-12/">bakgrund</a> till varför rubriklisten ser ut och beter sig som det gör.
+            Läs gärna <a href="https://www.kth.se/social/group/kth-style-guide/page/bakgrund-12/">bakgrund till val av rubriklister</a>.
         </p>
       </Section>
       <h3>Välj typ av rubriklist</h3>
