@@ -14,7 +14,7 @@ export default function DropdownsPage (props) {
           <thead class="thead-default">
             <tr>
               <th>Komponenttyp</th>
-              <th>Används för att</th>
+              <th>Användning</th>
             </tr>
           </thead>
           <tbody>
