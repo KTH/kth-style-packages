@@ -14,7 +14,9 @@ export default function DropdownsPage (props) {
         <p>
           Läs gärna mer om <a href="https://www.kth.se/social/group/kth-style-guide/page/bakgrund-16/">bakgrund till varför dialogerna ser ut och beter sig som det gör</a>.
         </p>
-        <h2>Välj typ av dialog</h2>
+      </section>
+      
+      <Section title="Välj typ av dialog">
         <table class="table">
           <thead class="thead-default">
             <tr>
@@ -33,10 +35,10 @@ export default function DropdownsPage (props) {
             </tr>
              </tbody>
         </table>
-      </section>
+      </Section>
 
       <section>
-        <h2>Olika typer av dialoger</h2>
+        <h2>Flytta till Komponenter: Olika typer av dialoger</h2>
         <h3>Confirm</h3>
         <p> Infoga komponent här...</p>
         <h4>Användning</h4>
