@@ -7,7 +7,9 @@ export default function DropdownsPage (props) {
       <h1>Information/ återkoppling</h1>
           <p>
             Systemet ska konsekvent ge användaren den information/ återkoppling hen behöver för att kunna utföra sina aktiviteter och nå sina mål på ett tillfredställande sätt. Användaren ska även när så behövs kunna efterfråga information.
-            Det finns fyra olika situationer när man ska ge information/ återkoppling (se tabellen nedan).
+          </p>
+          <p>
+            Det finns fyra olika situationer när man ska ge information/ återkoppling. Välj komponenttyp utifrån användning (se tabellen nedan).
           </p>
           <p>
             Läs gärna <a href="https://www.kth.se/social/group/kth-style-guide/page/bakgrund-9/">bakgrund till val av informationskomponenter</a>.
