@@ -3,7 +3,7 @@ import { Page, Section, Narrative } from 'kth-style-inferno-bootstrap/docs/src/c
 export default function DropdownsPage (props) {
   return (
     <Page>
-      <h1>Rubriker, brödtext</h1>
+      <h1>Riktlinjer rubriker, brödtext</h1>
         <p>
           Använd rubriker för att ge struktur och mening till längre textinnehåll och brödtext för textinnehåll. 
         </p>
@@ -28,19 +28,19 @@ export default function DropdownsPage (props) {
             </tr>
             <tr>
                <td><a href="/style/api/content/typography#rubrikniva_2">Rubriknivå 2</a></td>
-              <td>Andra rubriknivå (h2).</td>
+              <td>Andra rubriknivå (h2)</td>
             </tr>
             <tr>
               <td><a href="/style/api/content/typography#rubrikniva_3">Rubriknivå 3</a></td>
-              <td>Tredje rubriknivå (h3).</td>
+              <td>Tredje rubriknivå (h3)</td>
             </tr>
             <tr>
-              <td><td><a href="/style/api/content/typography#rubrikniva_4">Rubriknivå 4</a></td></td>
-              <td>Fjärde rubriknivå (h4).</td>
+              <td><a href="/style/api/content/typography#rubrikniva_4">Rubriknivå 4</a></td>
+              <td>Fjärde rubriknivå (h4)</td>
             </tr>
             <tr>
               <td>Brödtext</td>
-              <td>Innehållstext under rubriker.</td>
+              <td>Innehållstext under rubriker</td>
             </tr>
           </tbody>
         </table>
