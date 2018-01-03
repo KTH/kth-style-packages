@@ -8,8 +8,8 @@ export default function BasicPage (props) {
       <h1>Alerts</h1>
       <p>Läs först <a href="/style/guidelines/information">Riktlinjer information/ återkoppling</a> där du får överblick över hur du informerar i olika situationer och får hjälp att välja rätt typ av informationskomponent.</p>
     
-      <Stage> 
-        <Section title="Information Alert">  
+      <Section title="Information Alert">  
+        <Stage> 
           <Scene>
               <Alert color="info" aria-live="polite">
                 <p>Some text in a <b>Information alert</b></p>
@@ -49,11 +49,11 @@ export default function BasicPage (props) {
                 </li>
               </ul>
             </UXComment> 
-          </Section>
-      </Stage>
-      
-      <Stage>
+          </Stage>
+        </Section>
+    
         <Section title="Error Alert">  
+          <Stage>
           <Scene>
             <Alert color="danger" aria-live="polite">
               <p>Some text in a <b>Error alert</b></p>
@@ -107,10 +107,10 @@ export default function BasicPage (props) {
             </li>
           </ul>
          </UXComment> 
-       </Section>
-     </Stage>
-     <Stage>
-        <Section title="Success Alert">    
+        </Stage>
+      </Section>
+      <Section title="Success Alert">    
+        <Stage>
           <Scene>
             <Alert color="success" >
               <p>Some text in a <b>Success alert</b></p>
@@ -153,40 +153,39 @@ export default function BasicPage (props) {
                     </li>
                   </ul>
             </UXComment>
-       </Section>
-    </Stage>
-      
-    <Stage>
-        <Section title="Varianter av Alerts">
-        <Scene>
-            <Alert onClose={() => {}}>
-              <p>Some text in a Success alert with close button</p>
-            </Alert>
-            <Code>
-{`<Alert onClose={() => {}}>
-  <p>Some text in a Success alert with close button</b></p>
-</Alert>`}
-            </Code>  
-          </Scene>
-          
-          <Scene>
-            <Alert onClose={() => {}}>
-              <span>
-                <h4>Attention!</h4>
-                <p>Success alert with heading</p>
-              </span>
-            </Alert>
-            <Code>
-{`<Alert onClose={() => {}}>
-  <span>
-    <h4>Attention!</h4>
-    <p>Success alert with heading</p>
-  </span>
-</Alert>`}
-            </Code>  
-          </Scene>
+          </Stage>
         </Section>
-      </Stage>
+        <Section title="Varianter av Alerts">
+           <Stage>
+            <Scene>
+                <Alert onClose={() => {}}>
+                  <p>Some text in a Success alert with close button</p>
+                </Alert>
+                <Code>
+    {`<Alert onClose={() => {}}>
+      <p>Some text in a Success alert with close button</b></p>
+    </Alert>`}
+                </Code>  
+              </Scene>
+          
+              <Scene>
+                <Alert onClose={() => {}}>
+                  <span>
+                    <h4>Attention!</h4>
+                    <p>Success alert with heading</p>
+                  </span>
+                </Alert>
+                <Code>
+    {`<Alert onClose={() => {}}>
+      <span>
+        <h4>Attention!</h4>
+        <p>Success alert with heading</p>
+      </span>
+    </Alert>`}
+                </Code>  
+              </Scene>
+           </Stage>
+        </Section>
     </Page>
   )
 }
