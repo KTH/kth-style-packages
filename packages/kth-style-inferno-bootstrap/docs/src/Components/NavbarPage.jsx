@@ -10,18 +10,7 @@ export default function NavbarPage (props) {
         </p>
         <p>Läs först <a href="/style/guidelines/menu">riktlinjer meny</a> där du får hjälp att välja rätt typ av komponent.</p>
   
-        <Section title="Menu Link button">
-          <Stage>
-              <UXComment>
-                <h4>Användning</h4>
-                <ul>
-                  <li>
-                    Lista menyalternativ i form av länkar under en meny-knapp
-                  </li>
-                </ul>
-              </UXComment>
-            </Stage>
-         </Section>   
+  
     </Page>
   )
 }
