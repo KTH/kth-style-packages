@@ -6,7 +6,7 @@ export default function DropdownsPage (props) {
     <Page>
       <h1>Knappar och länkar</h1>
       <p>
-          Knappar och länkar ger användaren olika förväntningar på vad som ska ske när man klickar på dem. Eftersom en användare ska förstå innan man klickar vad som kommer att hända är det viktigt att välja rätt komponent. 
+          Knappar och länkar ger användaren olika förväntningar på vad som ska ske när man klickar på dem. Eftersom en användare ska förstå innan man klickar vad som kommer att hända är det viktigt att välja rätt komponent (se tabellen nedan).
       </p>
        
      <Section title="Välj om det ska vara en knapp eller länk">
