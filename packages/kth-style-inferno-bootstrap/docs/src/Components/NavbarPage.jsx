@@ -1,4 +1,4 @@
-import { Page, Code, Section, Stage, Scene, Narrative } from '../components.jsx'
+import { Page, Code, Section, Stage, Scene, Narrative, UXComment } from '../components.jsx'
 
 export default function NavbarPage (props) {
   return (
