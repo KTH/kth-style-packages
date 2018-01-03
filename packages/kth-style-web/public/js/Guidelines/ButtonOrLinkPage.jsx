@@ -6,7 +6,7 @@ export default function DropdownsPage (props) {
     <Page>
       <h1>Knappar och länkar</h1>
       <p>
-          Knappar och länkar ger användaren olika förväntningar på vad som ska ske när man klickar på dem. Eftersom en användare ska förstå innan man klickar vad som kommer att hända är det viktigt att välja rätt komponent (se tabellen nedan).
+          Knappar och länkar ger användaren olika förväntningar på vad som ska ske när man klickar på dem. Eftersom en användare ska förstå innan man klickar vad som kommer att hända är det viktigt att välja rätt komponenttyp (se tabellen nedan).
       </p>
        
      <Section title="Välj om det ska vara en knapp eller länk">
@@ -37,7 +37,7 @@ export default function DropdownsPage (props) {
       </Section>
       <Section title="Knappar">
         <p>Knapp används för att initiera en aktivitet. Ett klick på en knapp får något att hända. Det kan vara att ett formulär man fyllt i skickas in eller att en sökning utförs. Nästan alltid är en del av händelsen att användaren kommer till en ny sida – men det måste hända mer än så.</p>
-        <p>Det finns finns fem olika typer av knappar. Välj knapp utifrån användning (se nedan).</p>
+        <p>Det finns finns fem olika typer av knappar. Välj komponenttyp utifrån användning (se tabellen nedan).</p>
         <p>Läs gärna <a href="https://www.kth.se/social/group/kth-style-guide/page/bakgrund-10/">bakgrund till val av knappar</a>.</p>
       </Section>
       
@@ -97,7 +97,7 @@ export default function DropdownsPage (props) {
          Länk används till att leda vidare användaren till en annan del av webben för att knyta ihop olika relaterade delar.
        </p>
        <p>
-         Det finns fem olika typer av länkar. Välj länk utifrån användning (se nedan).
+         Det finns fem olika typer av länkar. Välj komponenttyp utifrån användning (se tabellen nedan).
        </p>
        <p>
          Läs gärna <a href="https://www.kth.se/social/group/kth-style-guide/page/bakgrund-11/">bakgrund till val av länkar</a>.
