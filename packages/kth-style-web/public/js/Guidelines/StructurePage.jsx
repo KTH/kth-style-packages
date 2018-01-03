@@ -88,7 +88,7 @@ export default function DropdownsPage (props) {
       <h4>Användning</h4>
       <ul>
         <li>
-          När rubriklisten ska smälta in med övrigt innehåll på sidan.
+          Dölja innehåll under en rubriklist som inte tar för mycket fokus på sidan. Innehållet är inte kritiskkt.
         </li>
         <li>
           Exempel: ?
@@ -108,7 +108,7 @@ export default function DropdownsPage (props) {
       <h4>Användning</h4>
       <ul>
         <li>
-          När det är viktigt att rubriklisten syns.
+          Dölja mer kritiskt innehåll under en rubriklist som syns.
         </li>
         <li>
           Exempel: ?
