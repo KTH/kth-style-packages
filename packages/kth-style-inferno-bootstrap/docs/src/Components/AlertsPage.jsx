@@ -25,7 +25,7 @@ export default function BasicPage (props) {
             <h4>Användning</h4>
             <ul>
               <li>
-                För att informera användaren på en sida när användaren inte efterfrågat informationen.
+                För att informera om att något har förändrats på en sida eller annat som användaren behöver bli informerad om (men ej ha efterfrågat)
               </li>
               <li>
                 Se .. hur man informerar när användaren har efterfrågat informationen...länk till modal
@@ -125,7 +125,7 @@ export default function BasicPage (props) {
               <h4>Användning</h4>
                 <ul>
                   <li>
-                    För att bekräfta att användaren lyckats utföra en tidigare handling.
+                    För att bekräfta att användaren lyckats utföra en handling.
                   </li>
                   <li>
                     För längre meddelanden där informationen behöver läsas mer nogrannt.
