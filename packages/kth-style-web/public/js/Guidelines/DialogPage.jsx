@@ -26,11 +26,11 @@ export default function DropdownsPage (props) {
           </thead>
           <tbody>
             <tr>
-              <td>Confirm</td>
+              <td><a href="/style/api/components/modal#confirm_modal">Confirm modal</a></td>
               <td>Bekräfta en destruktiv aktivitet (t ex radera) som användaren gjort</td>
             </tr>
             <tr>
-              <td>Choose</td>
+              <td><a href="/style/api/components/modal#choose_modal">Choose modal</a></td>
               <td>Presentera val som användaren kan göra som inte är destruktiva (det går att ångra)</td>
             </tr>
              </tbody>
