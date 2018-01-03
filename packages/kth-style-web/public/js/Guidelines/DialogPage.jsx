@@ -3,7 +3,7 @@ import { Page, Section, Narrative } from 'kth-style-inferno-bootstrap/docs/src/c
 export default function DropdownsPage (props) {
   return (
     <Page>
-      <h1>Dialoger</h1>
+      <h1>Riktlinjer dialoger</h1>
       <section>
         <p>
             Dialoger används då man behöver direkt input från användaren. Användningen ska minimeras då de avbryter användarens flöde men måste användas vid viktiga val.
