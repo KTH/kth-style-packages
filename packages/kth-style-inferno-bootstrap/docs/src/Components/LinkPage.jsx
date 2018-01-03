@@ -10,8 +10,8 @@ export default function BasicPage (props) {
       <h1>Links</h1>
       <p>Läs först <a href="/style/guidelines/buttonorlink">riktlinjer knappar, länkar</a> där du får hjälp att välja rätt typ av komponent.</p>    
 
-          <Stage>
-            <Section title="Blue link">  
+          <Section title="Blue link">  
+            <Stage>
               <Scene>
                 <Button color="link">link</Button>
                 <Code>
@@ -29,12 +29,11 @@ export default function BasicPage (props) {
                   Exempel: se <a href="#riktlinjer_bla_vit_bort">Riktlinjer för länk: Blå, Vit, Bort</a>
                 </li>
               </ul>
-              </UXComment>
-            </Section>                  
-         </Stage> 
-      
-          <Stage>
-            <Section title="White link">
+            </UXComment>           
+          </Stage> 
+         </Section>  
+         <Section title="White link">
+           <Stage>
               <p>
                 TO DO: Infoga komponent här
               </p>
@@ -49,11 +48,10 @@ export default function BasicPage (props) {
                   </li>
                 </ul>
               </UXComment>
-            </Section>                  
-         </Stage>
-            
-         <Stage>
-            <Section title="Away link">
+            </Stage>
+          </Section>                  
+          <Section title="Away link">
+            <Stage>
               <p>
                 TO DO: Infoga komponent här
               </p>
@@ -76,11 +74,10 @@ export default function BasicPage (props) {
                     </li>
                 </ul>
               </UXComment>
-            </Section>                  
-         </Stage>
-             
-         <Stage>
-            <Section title="Back link">
+            </Stage>
+          </Section>                  
+          <Section title="Back link">
+            <Stage>
               <p>
                 TO DO: Infoga komponent här
               </p>
@@ -107,11 +104,10 @@ export default function BasicPage (props) {
                     </li>
                 </ul>
                </UXComment>
-             </Section>                  
-         </Stage>
-              
-         <Stage>
-            <Section title="Up link">
+             </Stage>
+           </Section>                  
+           <Section title="Up link">
+             <Stage>
               <p>
                   TO DO: Infoga komponent här
               </p>
@@ -126,13 +122,12 @@ export default function BasicPage (props) {
                   </li>
               </ul>
               </UXComment>
-            </Section>                  
-         </Stage>
-           
-         <Stage>
-            <Section title="Link button"> 
-              <p>TO DO: Infoga komponent här</p>
-              <UXComment>
+           </Stage>
+         </Section> 
+         <Section title="Link button"> 
+           <Stage>
+             <p>TO DO: Infoga komponent här</p>
+             <UXComment>
                 <h4>Användning</h4>
                 <ul>
                   <li>
@@ -149,9 +144,8 @@ export default function BasicPage (props) {
                   </li>
                 </ul>
               </UXComment>
-            </Section>                  
-         </Stage>
-                     
+           </Stage>
+        </Section>        
     </Page>
   )
 }
