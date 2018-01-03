@@ -58,18 +58,18 @@ export default function DropdownsPage (props) {
         <table class="table">
           <thead class="thead-default">
             <tr>
-              <th>Namn</th>
-              <th>Användning</th>
+              <th>Komponenttyp</th>
+              <th>Används för att</th>
             </tr>
           </thead>
           <tbody>
             <tr>
               <td>Vit-utfällbar-rubriklist</td>
-              <td>När rubriklisten ska smälta in med övrigt innehåll på sidan</td>
+              <td>Dölja innehåll under en rubriklist som inte tar för mycket fokus på sidan. Innehållet är inte kritiskkt. </td>
             </tr>
             <tr>
               <td>Blå-utfällbar-rubriklist</td>
-              <td>När det är viktigt att rubriklisten syns</td>
+              <td>Dölja mer kritiskt innehåll under en rubriklist som syns.</td>
             </tr>
           </tbody>
         </table>
