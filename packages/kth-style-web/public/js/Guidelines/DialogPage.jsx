@@ -44,7 +44,7 @@ export default function DropdownsPage (props) {
         <h4>Används</h4>
         <ul>
             <li>
-                För att att användaren ska bekräfta ett gjort val som inte kan ångras.
+                För att bekräfta en destruktiv aktivitet (t ex radera) som användaren gjort.
             </li>
             <li>
                 Exempel: ta bort fil.
@@ -62,7 +62,7 @@ export default function DropdownsPage (props) {
         <h4>Används</h4>
         <ul>
             <li>
-                För att användaren ska göra val som är mindre riskabelt (det går att ångra).
+                För att presentera val som användaren kan göra som inte är destruktiva (det går att ångra).
             </li>
             <li>
                 Exempel:
