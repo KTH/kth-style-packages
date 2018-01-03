@@ -69,7 +69,7 @@ export default function DropdownsPage (props) {
             </tr>
             <tr>
               <td>Blå-utfällbar-rubriklist</td>
-              <td>För att dölja mer kritiskt innehåll under en rubriklist som syns.</td>
+              <td>Dölja mer kritiskt innehåll under en rubriklist som syns.</td>
             </tr>
           </tbody>
         </table>
@@ -108,7 +108,7 @@ export default function DropdownsPage (props) {
       <h4>Användning</h4>
       <ul>
         <li>
-          Dölja mer kritiskt innehåll under en rubriklist som syns.
+          För att dölja mer kritiskt innehåll under en rubriklist som syns.
         </li>
         <li>
           Exempel: ?
