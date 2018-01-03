@@ -12,15 +12,10 @@ export default function BasicPage (props) {
       
       <Stage>
         <Section title="Vit utfällbar rubriklist">
-          <h3>Default open</h3>  
-          <Scene>
-            <ToggleCollapse defaultOpen={true} />
-          </Scene>
-          <h3>Default closed</h3>
           <Scene>
             <ToggleCollapse defaultOpen={false} />
           </Scene>
-            <p>TO DO: Visa komponent</p>
+            <p>TO DO: Justera komponent (färg, pil, storlek)</p>
             <UXComment>
               <h4>Användning</h4>
               <ul>
@@ -119,16 +114,11 @@ export default function BasicPage (props) {
   
        <Stage>
          <Section title="Blå utfällbar rubriklist">
-            <h3>Default open</h3>  
-            <Scene>
-              <ToggleCollapse defaultOpen={true} />
-            </Scene>
-            <h3>Default closed</h3>
             <Scene>
               <ToggleCollapse defaultOpen={false} />
             </Scene>
 
-            <p>TO DO: Visa komponent</p>
+            <p>TO DO: Justera komponent (färg, pil, storlek)</p>
             <UXComment>
               <h4>Användning</h4>
               <ul>
