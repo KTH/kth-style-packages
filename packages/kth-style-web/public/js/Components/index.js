@@ -46,28 +46,29 @@ const pages = [
   // Components
   { path: "/components", title: "Components", header: "h3", component: AlertsPage},
   { path: "/components/alerts", title: "Alerts", component: AlertsPage},
-  { path: "/components/button_group", title: "Button Group", component: ButtonGroupPage},
   { path: "/components/buttons", title: "Buttons", component: ButtonsPage},
-  { path: "/components/card", title: "Card", component: CardPage},
   { path: "/components/collapse", title: "Collapse", component: CollapsePage},
-  { path: "/components/dropdowns", title: "Dropdowns", component: DropdownsPage},
   { path: "/components/forms", title: "Forms", component: FormsPage},
-  { path: "/components/input_group", title: "Input Group", component: InputGroupPage},
-  { path: "/components/jumbotron", title: "Jumbotron", component: JumbotronPage},
   { path: "/components/links", title: "Links", component: LinkPage},
-  { path: "/components/list_group", title: "List Group", component: ListGroupPage},
   { path: "/components/modal", title: "Modal", component: ModalPage},
   { path: "/components/navbar", title: "Navbar", component: NavbarPage},
-  { path: "/components/navs", title: "Navs", component: NavsPage},
-  { path: "/components/pagination", title: "Pagination", component: PaginationPage},
-  { path: "/components/popovers", title: "Popovers", component: PopoversPage},
-  { path: "/components/progress", title: "Progress", component: ProgressPage},
-  { path: "/components/tooltips", title: "Tooltips", component: TooltipsPage},
+  
 
   // Components in Progress
   { path: "/components", title: "Components under consideration", header: "h3", component: AlertsPage},
   { path: "/components/badge", title: "Badge", component: BadgePage},
-  { path: "/components/breadcrumb", title: "Breadcrumb", component: BreadcrumbPage}  
+  { path: "/components/breadcrumb", title: "Breadcrumb", component: BreadcrumbPage},
+  { path: "/components/button_group", title: "Button Group", component: ButtonGroupPage},
+   { path: "/components/card", title: "Card", component: CardPage},
+  { path: "/components/dropdowns", title: "Dropdowns", component: DropdownsPage},
+  { path: "/components/input_group", title: "Input Group", component: InputGroupPage},
+  { path: "/components/jumbotron", title: "Jumbotron", component: JumbotronPage},
+   { path: "/components/list_group", title: "List Group", component: ListGroupPage},
+  { path: "/components/navs", title: "Navs", component: NavsPage},
+  { path: "/components/pagination", title: "Pagination", component: PaginationPage},
+  { path: "/components/popovers", title: "Popovers", component: PopoversPage},
+  { path: "/components/progress", title: "Progress", component: ProgressPage},
+  { path: "/components/tooltips", title: "Tooltips", component: TooltipsPage}
 ]
 
 export default pages
