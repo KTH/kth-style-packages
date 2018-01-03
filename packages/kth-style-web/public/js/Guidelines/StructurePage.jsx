@@ -3,7 +3,7 @@ import { Page, Section, Narrative } from 'kth-style-inferno-bootstrap/docs/src/c
 export default function DropdownsPage (props) {
   return (
     <Page>
-      <h1>Struktur, layout på sida</h1>
+      <h1>Riktlinjer struktur, layout</h1>
       <p>
         En bra struktur på sidan gör att den upplevs renare och det blir lättare att scanna sidan, vilket gör att slutanvändaren får överblick, kan hitta och förstå innehållet bättre.
       </p>
