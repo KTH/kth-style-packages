@@ -39,7 +39,7 @@ export default function DropdownsPage (props) {
               <td>Fjärde rubriknivå (h4)</td>
             </tr>
             <tr>
-              <td><a href="/style/api/content/typography#Brodtext">Brödtext</a></td>
+              <td><a href="/style/api/content/typography#brodtext">Brödtext</a></td>
               <td>Innehållstext under rubriker</td>
             </tr>
           </tbody>
