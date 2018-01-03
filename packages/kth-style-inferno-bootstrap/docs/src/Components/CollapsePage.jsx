@@ -7,12 +7,13 @@ import Collapse from '../../../lib/Collapse.jsx'
 export default function BasicPage (props) {
   return (
     <Page>
-
-    <Section title="Collapse">
-    <Narrative>
-      <p>Toggle visibility of content with animation.</p>  
-    </Narrative>  
+      <h1>Collapse</h1>
+      
+    
+      <p>Läs först <a href="/style/guidelines/structure">riktlinjer för struktur, layout på sida</a> där du får överblick hur du kan strukturera en sida och få hjälp att välja rätt typ av komponent.</p>  
+  
     <Stage>
+      <Section title="Vit-utfällbar-rubriklist">
       <h3>Default open</h3>  
       <Scene>
         <ToggleCollapse defaultOpen={true} />
@@ -134,9 +135,8 @@ export default function BasicPage (props) {
 `}  
         </Code>
       </Scene>
-    </Stage>
-  </Section>
-
+    </Section>
+   </Stage>
     </Page>
   )
 }
