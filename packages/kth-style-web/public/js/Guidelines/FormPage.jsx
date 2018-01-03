@@ -102,7 +102,7 @@ export default function DropdownsPage (props) {
         <h4>Användning</h4>
         <ul>
             <li>
-                När indata i form av text krävs.
+                För indata i form av text.
             </li>
             <li>
                 Exempel: se <a href="/style/page-layout/formexamplepage">formulär</a>.
@@ -128,7 +128,7 @@ export default function DropdownsPage (props) {
         <h4>Användning</h4>
         <ul>
             <li>
-                För flervalssvar, när bara ett val är möjligt och alternativen är fler.
+                Flervalssvar när bara ett val är möjligt (och alternativen är många).
             </li>
             <li>
                 Exempel: se <a href="/style/page-layout/formexamplepage">formulär</a>.
@@ -158,7 +158,7 @@ export default function DropdownsPage (props) {
         <h4>Användning</h4>
         <ul>
             <li>
-                För flervalssvar, när bara ett val är möjligt och alternativen är färre.
+                Flervalssvar när bara ett val är möjligt (och alternativen är färre).
             </li>
             <li>
                 Exempel: se <a href="/style/page-layout/formexamplepage">formulär</a>.
@@ -179,7 +179,7 @@ export default function DropdownsPage (props) {
         <h4>Användning</h4>
         <ul>
             <li>
-                För flervalssvar,  när flera val är möjliga.
+                För flervalssvar när flera val är möjliga.
             </li>
             <li>
                 Exempel: se <a href="/style/page-layout/formexamplepage">formulär</a>.
@@ -197,7 +197,7 @@ export default function DropdownsPage (props) {
         <h4>Användning</h4>
         <ul>
             <li>
-              När ett datum ska väljas
+              För val av datum.
             </li>
             <li>
               Exempel: se <a href="/style/page-layout/formexamplepage">formulär</a>.
