@@ -12,8 +12,9 @@ export default function TypographyPage () {
       </p>
       
       
-      <Stage> 
-        <Section title="Titel">  
+      
+      <Section title="Titel">  
+        <Stage> 
           <div class="examples-container">
             <div data-examples-view="Titel">
               <h1 data-example>En huvudrubrik eller titel ska inte vara för lång</h1>
@@ -39,11 +40,10 @@ export default function TypographyPage () {
                   Se <a href="/style/guidelines/heading#generella_riktlinjer_for_rubriker"> Generella riktlinjer för rubriker.</a>
               </li>
           </ul>
-        </Section>
-      </Stage>
-      
-      <Stage> 
-        <Section title="Rubriknivå 2">  
+        </Stage>
+      </Section>
+      <Section title="Rubriknivå 2"> 
+        <Stage> 
            <div class="examples-container">
             <div data-examples-view="rubriknivå-2">
               <h2 data-example>Du gör du en grov indelning av sidan genom att använda rubriknivå två</h2>
@@ -66,11 +66,10 @@ export default function TypographyPage () {
                     Se <a href="/style/guidelines/heading#generella_riktlinjer_for_rubriker"> Generella riktlinjer för rubriker.</a>
               </li>
           </ul>
-        </Section>
-      </Stage>
-        
-      <Stage> 
-        <Section title="Rubriknivå 3">  
+        </Stage>
+      </Section>
+      <Section title="Rubriknivå 3">  
+        <Stage> 
           <div class="examples-container">
             <div data-examples-view="rubriknivå-3">
               <h3 data-example>Med rubriknivå tre så gör du en finare indelning av sidan</h3>
@@ -93,11 +92,10 @@ export default function TypographyPage () {
               Se <a href="/style/guidelines/heading#generella_riktlinjer_for_rubriker"> Generella riktlinjer för rubriker.</a>
           </li>
           </ul>
-        </Section>
-      </Stage>
-       
-     <Stage> 
-        <Section title="Rubriknivå 4">  
+        </Stage>
+      </Section>
+      <Section title="Rubriknivå 4">  
+        <Stage> 
           <div class="examples-container">
           <div data-examples-view="rubriknivå-4">
             <h4 data-example>Den finaste rubrikindelningen ger rubriknivå fyra</h4>
@@ -119,12 +117,11 @@ export default function TypographyPage () {
               <li>
                     Se <a href="/style/guidelines/heading#generella_riktlinjer_for_rubriker"> Generella riktlinjer för rubriker.</a>
               </li>
-          </ul>
-       </Section>
-      </Stage>
-   
-      <Stage> 
-        <Section title="Brödtext">  
+          </ul> 
+        </Stage>
+      </Section>
+      <Section title="Brödtext"> 
+        <Stage> 
           <div class="examples-container">
           <div data-examples-view="brödtext">
             <p data-example>Brödtext används för innehållstext som är en längre sammanhängande text indelad i stycken för att ge bra läsbarhet.</p>
@@ -158,8 +155,8 @@ export default function TypographyPage () {
                   Vill man ge titlar på skrifter och liknande en grafisk markering är citattecken att föredra framför kursiv text.
               </li>
           </ul>
-        </Section>
-      </Stage>
+        </Stage>
+      </Section>
     </Page>
   )
 }
