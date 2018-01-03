@@ -8,7 +8,7 @@ export default function BasicPage (props) {
   return (
     <Page>
       <h1>Collapse</h1>
-      <p>Läs först <a href="/style/guidelines/structure">riktlinjer för struktur, layout på sida</a> där du får överblick hur du kan strukturera en sida och få hjälp att välja rätt typ av komponent.</p>  
+      <p>Läs först <a href="/style/guidelines/structure">riktlinjer struktur, layout</a> där du får överblick hur du kan strukturera en sida och få hjälp att välja rätt typ av komponenter.</p>  
       
       <Stage>
         <Section title="White collapse">
