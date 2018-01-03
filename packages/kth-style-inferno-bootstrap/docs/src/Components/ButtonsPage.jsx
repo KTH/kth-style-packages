@@ -7,13 +7,11 @@ import ButtonGroup from '../../../lib/ButtonGroup.jsx'
 export default function BasicPage (props) {
   return (
     <Page>
-      <h1>Knappar och länkar</h1>
+      <h1>Knappar</h1>
       <p>Läs först <a href="/style/guidelines/buttonorlink">riktlinjer knappar, länkar</a> där du får hjälp att välja rätt typ av komponent.</p>    
 
-       
-      <h2>Knappar</h2>
-        <Stage>
           <Section title="Primary button">  
+            <Stage> 
               <Scene>
                 <Button color="primary">primary</Button>{' '}
                 <Code>
@@ -40,10 +38,10 @@ export default function BasicPage (props) {
                     </li>
                 </ul>
               </UXComment>
-            </Section>
           </Stage>
-          <Stage>
-            <Section title="Secondary button">  
+          </Section>
+          <Section title="Secondary button">  
+            <Stage>
               <Scene>
                 <Button color="secondary">secondary</Button>{' '}
                 <Code>
@@ -75,10 +73,10 @@ export default function BasicPage (props) {
                     </li>
                 </ul>
             </UXComment> 
-          </Section>   
-        </Stage>
-        <Stage>   
-            <Section title="Success button">  
+          </Stage>
+       </Section> 
+       <Section title="Success button">  
+         <Stage>   
               <Scene>
                 <Button color="success">success</Button>{' '}
                 <Code>
@@ -111,10 +109,10 @@ export default function BasicPage (props) {
                     </li>
                 </ul>
               </UXComment>
-            </Section>
-          </Stage>
-          <Stage>
-            <Section title="Danger button">  
+            </Stage>
+          </Section>
+          <Section title="Danger button">  
+            <Stage>
               <Scene>
                 <Button color="danger">danger</Button>{' '}
                 <Code>
@@ -141,10 +139,10 @@ export default function BasicPage (props) {
                     </li>
                 </ul>
               </UXComment>
-            </Section>
-          </Stage>
-          <Stage>
-            <Section title="Disabled Button">
+            </Stage>
+          </Section>
+          <Section title="Disabled Button">
+            <Stage>
               <Scene>
                 <Button color="primary" disabled>Primary button</Button>{' '}
                 <Button color="secondary" disabled>Button</Button>
@@ -172,8 +170,8 @@ export default function BasicPage (props) {
                     </li>
                 </ul>
               </UXComment>
-            </Section>                  
-           </Stage> 
+            </Stage> 
+          </Section>  
              
        <h2>Stöds inte i dagsläget</h2>
        <p> Om man behöver använda komponenter nedan, motivera varför i KTH Style gruppen för att utvärdera om vi tar in den i riktlinjerna.</p>
