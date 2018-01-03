@@ -47,7 +47,7 @@ export default function DropdownsPage (props) {
             man ger användaren en möjlighet att kunna se mer information utan att behöva lämna sidan.
         </p>
         <p>
-            Det finns finns två olika typer av rubriklister. Välj rubriklist utifrån användning (se nedan).
+            Det finns finns två olika typer av rubriklister. Välj komponenttyp utifrån användning (se tabellen nedan).
         </p>
         <p>
             Läs gärna <a href="https://www.kth.se/social/group/kth-style-guide/page/bakgrund-12/">bakgrund till val av rubriklister</a>.
