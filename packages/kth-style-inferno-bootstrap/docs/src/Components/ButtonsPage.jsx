@@ -303,7 +303,7 @@ export default function BasicPage (props) {
                 <h4>Användning</h4>
                 <ul>
                   <li>
-                    Länka till en sida där man kan initiera en aktivitet
+                    För att navigera till en sida där användaren kan initiera en viktig aktivitet 
                   </li>
                   <li>
                     Namnge: "Till" + namnet på aktiviteten. Exempel: "Till ansökningen"
