@@ -10,6 +10,7 @@ import DropdownsPage from 'kth-style-inferno-bootstrap/docs/src/Components/Dropd
 import FormsPage from 'kth-style-inferno-bootstrap/docs/src/Components/FormsPage.jsx'
 import InputGroupPage from 'kth-style-inferno-bootstrap/docs/src/Components/InputGroupPage.jsx'
 import JumbotronPage from 'kth-style-inferno-bootstrap/docs/src/Components/JumbotronPage.jsx'
+import LinkPage from 'kth-style-inferno-bootstrap/docs/src/Components/LinkPage.jsx'
 import ListGroupPage from 'kth-style-inferno-bootstrap/docs/src/Components/ListGroupPage.jsx'
 import ModalPage from 'kth-style-inferno-bootstrap/docs/src/Components/ModalPage.jsx'
 import NavbarPage from 'kth-style-inferno-bootstrap/docs/src/Components/NavbarPage.jsx'
@@ -53,6 +54,7 @@ const pages = [
   { path: "/components/forms", title: "Forms", component: FormsPage},
   { path: "/components/input_group", title: "Input Group", component: InputGroupPage},
   { path: "/components/jumbotron", title: "Jumbotron", component: JumbotronPage},
+  { path: "/components/links", title: "Links", component: LinkPage},
   { path: "/components/list_group", title: "List Group", component: ListGroupPage},
   { path: "/components/modal", title: "Modal", component: ModalPage},
   { path: "/components/navbar", title: "Navbar", component: NavbarPage},
