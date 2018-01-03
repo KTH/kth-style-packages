@@ -15,11 +15,7 @@ export default function TypographyPage () {
       
       <Section title="Titel">  
         <Stage> 
-          <div class="examples-container">
-            <div data-examples-view="Titel">
-              <h1 data-example>En huvudrubrik eller titel ska inte vara för lång</h1>
-            </div>
-          </div>
+          <h1>En huvudrubrik eller titel ska inte vara för lång</h1>
           <h4>Användning</h4>
           <ul>
               <li>
@@ -44,11 +40,7 @@ export default function TypographyPage () {
       </Section>
       <Section title="Rubriknivå 2"> 
         <Stage> 
-           <div class="examples-container">
-            <div data-examples-view="rubriknivå-2">
-              <h2 data-example>Du gör du en grov indelning av sidan genom att använda rubriknivå två</h2>
-            </div>
-          </div>
+          <h2>Med rubriknivå två gör du en grov indelning av sidan</h2>
           <h4>Användning</h4>
           <ul>
               <li>
@@ -70,11 +62,7 @@ export default function TypographyPage () {
       </Section>
       <Section title="Rubriknivå 3">  
         <Stage> 
-          <div class="examples-container">
-            <div data-examples-view="rubriknivå-3">
-              <h3 data-example>Med rubriknivå tre så gör du en finare indelning av sidan</h3>
-            </div>
-          </div>
+          <h3>Med rubriknivå tre så gör du en finare indelning av sidan</h3>
           <h4>Användning</h4>
           <ul>
               <li>
@@ -96,11 +84,7 @@ export default function TypographyPage () {
       </Section>
       <Section title="Rubriknivå 4">  
         <Stage> 
-          <div class="examples-container">
-          <div data-examples-view="rubriknivå-4">
-            <h4 data-example>Den finaste rubrikindelningen ger rubriknivå fyra</h4>
-          </div>
-        </div>
+          <h4>Den finaste rubrikindelningen ger rubriknivå fyra</h4>
           <h4>Användning</h4>
           <ul>
               <li>
@@ -122,11 +106,7 @@ export default function TypographyPage () {
       </Section>
       <Section title="Brödtext"> 
         <Stage> 
-          <div class="examples-container">
-          <div data-examples-view="brödtext">
-            <p data-example>Brödtext används för innehållstext som är en längre sammanhängande text indelad i stycken för att ge bra läsbarhet.</p>
-          </div>
-        </div>
+          <p>Brödtext används för innehållstext som är en längre sammanhängande text indelad i stycken för att ge bra läsbarhet.</p>
           <h4>Användning</h4>
           <ul>
               <li>
