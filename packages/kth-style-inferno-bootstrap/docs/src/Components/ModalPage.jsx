@@ -15,8 +15,8 @@ export default function BasicPage (props) {
     <h1>Modal</h1>
       <p>Läs först riktlinjer för <a href="/style/guidelines/dialouge">dialoger</a> och <a href="/style/guidelines/information">information/ återkoppling</a> för att förstå när man använder modaler.</p>  
       
-    <Stage>
       <Section title="Information modal">
+        <Stage>
         <br></br>
         <p> TO DO: Lägg till komponet för informera när klickat på i-ikon </p>
       <Scene>
@@ -141,10 +141,6 @@ export default function BasicPage (props) {
 }`}  
         </Code>
       </Scene>
-  
-
-      
-    
         <UXComment>
           <h4>Användning</h4>
           <ul>
@@ -162,13 +158,10 @@ export default function BasicPage (props) {
             </li>
           </ul>
         </UXComment>
-      </Section>
-    </Stage>
-      
-      
-      
+      </Stage>
+    </Section>
+    <Section title="Confirm modal">
       <Stage>
-      <Section title="Confirm modal">
         <br></br>
         <p> TO DO: Design av dialog </p>
       <Scene>
@@ -293,15 +286,10 @@ export default function BasicPage (props) {
               </li>
           </ul>
         </UXComment>
-      </Section>
-    </Stage>
-
-      
-      
-      
-      
-     <Stage>
-      <Section title="Choose modal">
+      </Stage>
+    </Section>
+    <Section title="Choose modal">
+      <Stage>
         <br></br>
         <p> TO DO: Design av dialog </p>
       <Scene>
@@ -434,16 +422,9 @@ export default function BasicPage (props) {
                </li>
              </ul>
           </UXComment>
+        </Stage>
       </Section>
-    </Stage>
-      
-      
-      
-      
-  
-      
-      
- 
+   
     </Page>
   )
 }
