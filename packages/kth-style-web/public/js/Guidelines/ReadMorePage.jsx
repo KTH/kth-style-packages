@@ -3,7 +3,7 @@ import { Page, Section, Narrative } from 'kth-style-inferno-bootstrap/docs/src/c
 export default function DropdownsPage (props) {
   return (
     <Page>
-      
+     <h1>Läs mer</h1>
      <Section title="Riktlinjer användbarhet">
        <p>
          <a href="/style/guidelines/usability">Riktlinjer användbarhet</a>
