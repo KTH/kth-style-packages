@@ -127,7 +127,7 @@ export default function TypographyPage () {
         <Section title="Brödtext">  
           <div class="examples-container">
           <div data-examples-view="brödtext">
-            <p data-example>Brödtext</p>
+            <p data-example>Brödtext används för innehållstext som är en längre sammanhängande text indelad i stycken för att ge bra läsbarhet.</p>
           </div>
         </div>
           <h4>Användning</h4>
