@@ -5,7 +5,7 @@ export default function DropdownsPage (props) {
     <Page>
       <h1>Riktlinjer struktur, layout</h1>
       <p>
-        En bra struktur på sidan gör att den upplevs renare och det blir lättare att scanna sidan, vilket gör att slutanvändaren får överblick, kan hitta och förstå innehållet bättre.
+        En sida med bra struktur upplevs renare och är lättare att scanna, vilket gör att slutanvändaren får överblick, kan hitta och förstå innehållet bättre.
       </p>
       <Section title="Gruppera innehåll">
         <p>
