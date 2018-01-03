@@ -39,23 +39,7 @@ export default function DropdownsPage (props) {
 
       <section>
         <h2>Flytta till Komponenter: Olika typer av dialoger</h2>
-        <h3>Confirm</h3>
-        <p> Infoga komponent här...</p>
-        <h4>Används</h4>
-        <ul>
-            <li>
-                För att bekräfta en destruktiv aktivitet (t ex radera) som användaren gjort.
-            </li>
-            <li>
-                Exempel: ta bort fil.
-            </li>
-        </ul>
-        <h4>Tänk på att</h4>
-        <ul>
-            <li>
-                Det är extra viktigt för dialoger att tänka på namngivning av knapparna, se <a href="/style/guidelines/buttonorlink/#generella_riktlinjer_for_lank_och_knapp">Generella riktlinjer för länk och knapp</a>.
-            </li>
-        </ul>
+       
 
         <h3>Choose</h3>
         <p> Infoga komponent här...</p>
