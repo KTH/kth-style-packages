@@ -150,7 +150,10 @@ export default function BasicPage (props) {
           <h4>Användning</h4>
           <ul>
             <li>
-              För att informera användaren när denne efterfrågat informationen som t ex hjälpinformation.
+              För att ge ytterligare information när användaren efterfrågar det
+            </li>
+            <li>
+              T ex hjälpinformation.
             </li>
           </ul>
           <h4>Tänk på att</h4>
