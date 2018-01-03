@@ -114,23 +114,23 @@ export default function DropdownsPage (props) {
          </thead>
        <tbody>
          <tr>
-           <td><a href="/style/api/components/buttons#blue_link">Blue link</a></td>
+           <td><a href="/style/api/components/links#blue_link">Blue link</a></td>
            <td>Infogad länk i svart innehållstext på vit bakgrund</td>
          </tr>
          <tr>
-           <td><a href="/style/api/components/buttons#white_link">White link</a></td>
+           <td><a href="/style/api/components/links#white_link">White link</a></td>
            <td>Infogad länk i vit innehållstext på färgad bakgrund</td>
          </tr>
          <tr>
-           <td><a href="/style/api/components/buttons#back_link">Back link</a></td>
+           <td><a href="/style/api/components/links#back_link">Back link</a></td>
            <td>Navigera tillbaka till föregående menyalternativ i de fall då menyn inte erbjuder det</td>
          </tr>
          <tr>
-           <td><a href="/style/api/components/buttons#away_link">Away link</a></td>
+           <td><a href="/style/api/components/links#away_link">Away link</a></td>
            <td>Navigera till annan del av (KTH) webb som har annan menynavigation</td>
          </tr>
          <tr>
-           <td><a href="/style/api/components/buttons#up_link">Up link</a></td>
+           <td><a href="/style/api/components/links#up_link">Up link</a></td>
            <td>Navigera till toppen på sidan då långa sidor</td>
          </tr>
        </tbody>
