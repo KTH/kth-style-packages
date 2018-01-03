@@ -83,43 +83,6 @@ export default function DropdownsPage (props) {
         </ul>
       </section>
       
-      <h2>Flytta till Komponenter: Olika typer av rubriklister</h2>
-      <h3>Vit-utfällbar-rubriklist</h3>
-      <h4>Användning</h4>
-      <ul>
-        <li>
-          För att dölja innehåll under en rubriklist som inte tar för mycket fokus på sidan. Innehållet är inte kritiskkt.
-        </li>
-        <li>
-          Exempel: ?
-        </li>
-      </ul>
-      <h4>Tänk på att</h4>
-      <ul>
-        <li>
-          Försäkra dig om att användaren ser den vita rubriklisten (se <a href="/style/guidelines/testhelper#testa_anvandbarhet">Testa användbarhet</a>).
-          Om inte överväg att använda Blå-utfällbar-rubriklist.
-        </li>
-        <li>
-          Se <a href="#generella_riktlinjer_rubriklist">Generella riktlinjer rubriklist</a>.
-        </li>
-      </ul>
-      <h3>Blå-utfällbar-rubriklist</h3>
-      <h4>Användning</h4>
-      <ul>
-        <li>
-          För att dölja mer kritiskt innehåll under en rubriklist som syns.
-        </li>
-        <li>
-          Exempel: ?
-        </li>
-      </ul>
-      <h4>Tänk på att</h4>
-      <ul>
-        <li>
-          Se <a href="#generella_riktlinjer_rubriklist">Generella riktlinjer rubriklist</a>.
-        </li>
-      </ul>
       <Section title= "Strukturera med bakgrunder ">
         <p>Skriv här om hur man strukturerar med bakgrunder </p>
       </Section>
