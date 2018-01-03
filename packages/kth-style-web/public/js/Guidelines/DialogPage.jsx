@@ -9,7 +9,7 @@ export default function DropdownsPage (props) {
             Dialoger används då man behöver direkt input från användaren. Användningen ska minimeras då de avbryter användarens flöde. 
         </p>
         <p>
-            Det finns finns två olika typer av dialoger. Välj dialog utifrån användning (se nedan).
+            Det finns finns två olika typer av dialoger. Välj dialog utifrån användning (se tabellen nedan).
         </p>
         <p>
           Läs gärna <a href="https://www.kth.se/social/group/kth-style-guide/page/bakgrund-16/">bakgrund till val av dialoger</a>.
