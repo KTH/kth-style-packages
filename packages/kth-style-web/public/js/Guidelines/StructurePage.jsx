@@ -4,9 +4,12 @@ export default function DropdownsPage (props) {
   return (
     <Page>
       <h1>Struktur, layout på sida</h1>
+      <p>
+        En bra struktur på sidan gör att den upplevs ”renare” och det blir lättare att ”scanna” sidan, vilket gör att slutanvändaren får överblick, kan hitta och förstå innehållet bättre (Användbarhet, Tillgänglighet).
+      </p>
       <Section title="Gruppera innehåll">
         <p>
-          Lägg objekt som hör ihop närmare och använd luft för att separera till andra element. Använd rubriker för att gruppera innehåll. En bra struktur på sidan gör att den upplevs ”renare” och det blir lättare att ”scanna” sidan, vilket gör att slutanvändaren får överblick, kan hitta och förstå innehållet bättre (Användbarhet, Tillgänglighet).
+          Lägg objekt som hör ihop närmare och använd luft för att separera till andra element. Använd rubriker för att gruppera innehåll.
         </p>
         <p>
           Avstånd för innehållssamlingar:
