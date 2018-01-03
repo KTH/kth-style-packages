@@ -89,7 +89,7 @@ export default function BasicPage (props) {
                 <h4>Användning</h4>
                 <ul>
                     <li>
-                        För att uppmana användaren att avsluta en uppgift som hen har påbörjat.
+                        För aktiviteter som användaren har påbörjat (man vill uppmana användaren att slutföra).
                     </li>
                     <li>
                         Exempel: "Spara" och "Ok".
@@ -125,7 +125,7 @@ export default function BasicPage (props) {
                 <h4>Användning</h4>
                 <ul>
                     <li>
-                        För aktiviteter som är destruktiva.
+                        För destruktiva aktiviteter.
                     </li>
                     <li>
                         Exempel: "Ta bort".
@@ -190,7 +190,7 @@ export default function BasicPage (props) {
               <h4>Användning</h4>
               <ul>
                 <li>
-                  För länk som infogas i svart text på vit bakgrund.
+                  För infogad länk i svart innehållstext på vit bakgrund.
                 </li>
                 <li>
                   Exempel: se <a href="#riktlinjer_bla_vit_bort">Riktlinjer för länk: Blå, Vit, Bort</a>
@@ -209,7 +209,7 @@ export default function BasicPage (props) {
                 <h4>Användning</h4>
                 <ul>
                   <li>
-                    För länk som infogas i vit text på färgad bakgrund
+                    För infogad länk i vit innehållstext på färgad bakgrund.
                   </li>
                   <li>
                     Exempel: se <a href="#riktlinjer_bla_vit_bort">Riktlinjer för länk: Blå, Vit, Bort</a>
@@ -228,7 +228,7 @@ export default function BasicPage (props) {
                 <h4>Användning:</h4>
                 <ul>
                     <li>
-                        När man länkar till annan del av (KTH) webb som har en annan navigation (man kan inte kan använda samma meny för att navigera tillbaka).
+                        För att navigera till annan del av (KTH) webb som har annan menynavigation.
                     </li>
                     <li>
                         Exempel:
@@ -255,7 +255,7 @@ export default function BasicPage (props) {
                 <h4>Användning</h4>
                 <ul>
                     <li>
-                        För att enkelt kunna navigera tillbaka till föregående menyalternativ i de fall då menyn inte erbjuder det
+                        För att navigera tillbaka till föregående menyalternativ i de fall då menyn inte erbjuder det.
                     </li>
                     <li>
                        Om vänstermeny: placera ovanför menyn, under headern på sidan.
@@ -286,7 +286,7 @@ export default function BasicPage (props) {
               <h4>Användning</h4>
               <ul>
                   <li>
-                      För att länka till toppen på sidan då långa sidor.
+                      För att navigera till toppen på sidan då långa sidor.
                   </li>
                   <li>
                       Placering: Längst ner på sidan till höger.
