@@ -10,8 +10,9 @@ export default function BasicPage (props) {
       <h1>Collapse</h1>
       <p>Läs först <a href="/style/guidelines/structure">riktlinjer struktur, layout</a> där du får överblick hur du kan strukturera en sida och få hjälp att välja rätt typ av komponenter.</p>  
       
-      <Stage>
-        <Section title="White collapse">
+      
+      <Section title="White collapse">
+        <Stage>
           <Scene>
             <ToggleCollapse defaultOpen={false} />
           </Scene>
@@ -109,11 +110,11 @@ export default function BasicPage (props) {
         `}  
                 </Code>
               </Scene>
-        </Section>
-       </Stage>
-  
-       <Stage>
+            </Stage>
+          </Section>
+       
          <Section title="Blue collapse">
+           <Stage>
             <Scene>
               <ToggleCollapse defaultOpen={false} />
             </Scene>
@@ -208,8 +209,9 @@ export default function BasicPage (props) {
       `}  
               </Code>
             </Scene>
+          </Stage> 
          </Section>
-       </Stage> 
+      
   
   
     </Page>
