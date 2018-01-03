@@ -29,14 +29,14 @@ export default function TypographyPage () {
               </li>
               <li>
                 <p>
-                  Se exempel: <a href="/style/textexample">rubriker och brödtext.</a>
+                  Se exempel: <a href="/style/page-layout/textpage">rubriker och brödtext.</a>
                 </p>
               </li>
           </ul>
           <h4>Tänk på att</h4>
           <ul>
               <li>
-                  Se <a href="#generella_riktlinjer_rubriker"> Generella riktlinjer för rubriker.</a>
+                  Se <a href="/style/guidelines/heading#generella_riktlinjer_for_rubriker"> Generella riktlinjer för rubriker.</a>
               </li>
           </ul>
         </Section>
@@ -56,14 +56,14 @@ export default function TypographyPage () {
               </li>
               <li>
                 <p>
-                  Se exempel: <a href="/style/textexample">rubriker och brödtext.</a>
+                  Se exempel: <a href="/style/page-layout/textpage">rubriker och brödtext.</a>
                 </p>
               </li>
           </ul>
           <h4>Tänk på att</h4>
           <ul>
               <li>
-                    Se <a href="#generella_riktlinjer_rubriker"> Generella riktlinjer för rubriker.</a>
+                    Se <a href="/style/guidelines/heading#generella_riktlinjer_for_rubriker"> Generella riktlinjer för rubriker.</a>
               </li>
           </ul>
         </Section>
@@ -83,14 +83,14 @@ export default function TypographyPage () {
               </li>
               <li>
                 <p>
-                  Se exempel: <a href="/style/textexample">rubriker och brödtext.</a>
+                  Se exempel: <a href="/style/page-layout/textpage">rubriker och brödtext.</a>
                 </p>
               </li>
           </ul>
           <h4>Tänk på att</h4>
               <ul>
           <li>
-              Se <a href="#generella_riktlinjer_rubriker"> Generella riktlinjer för rubriker.</a>
+              Se <a href="/style/guidelines/heading#generella_riktlinjer_for_rubriker"> Generella riktlinjer för rubriker.</a>
           </li>
           </ul>
         </Section>
@@ -110,14 +110,14 @@ export default function TypographyPage () {
               </li>
               <li>
                 <p>
-                  Se exempel: <a href="/style/textexample">rubriker och brödtext.</a>
+                  Se exempel: <a href="/style/page-layout/textpage">rubriker och brödtext.</a>
                 </p>
               </li>
           </ul>
           <h4>Tänk på att</h4>
           <ul>
               <li>
-                    Se <a href="#generella_riktlinjer_rubriker"> Generella riktlinjer för rubriker.</a>
+                    Se <a href="/style/guidelines/heading#generella_riktlinjer_for_rubriker"> Generella riktlinjer för rubriker.</a>
               </li>
           </ul>
        </Section>
@@ -137,7 +137,7 @@ export default function TypographyPage () {
               </li>
               <li>
                 <p>
-                  Se exempel: <a href="/style/textexample">rubriker och brödtext.</a>
+                  Se exempel: <a href="/style/page-layout/textpage">rubriker och brödtext.</a>
                 </p>
               </li>
           </ul>
