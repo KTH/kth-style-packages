@@ -16,7 +16,7 @@ export default function TypographyPage () {
         <Section title="Titel (H1)">  
           <div class="examples-container">
             <div data-examples-view="Titel">
-              <h1 data-example>Titel (H1)</h1>
+              <h1 data-example>En huvudrubrik eller titel ska inte vara för lång</h1>
             </div>
           </div>
           <h4>Användning</h4>
@@ -46,7 +46,7 @@ export default function TypographyPage () {
         <Section title="Rubriknivå 2 (H2)">  
            <div class="examples-container">
             <div data-examples-view="rubriknivå-2">
-              <h2 data-example>Rubriknivå 2 (H2)</h2>
+              <h2 data-example>Du gör du en grov indelning av sidan genom att använda rubriknivå två</h2>
             </div>
           </div>
           <h4>Användning</h4>
@@ -73,7 +73,7 @@ export default function TypographyPage () {
         <Section title="Rubriknivå 3 (H3)">  
           <div class="examples-container">
             <div data-examples-view="rubriknivå-3">
-              <h3 data-example>Rubriknivå 3 (H3)</h3>
+              <h3 data-example>Med rubriknivå tre så gör du en finare indelning av sidan</h3>
             </div>
           </div>
           <h4>Användning</h4>
@@ -100,7 +100,7 @@ export default function TypographyPage () {
         <Section title="Rubriknivå 4 (H4)">  
           <div class="examples-container">
           <div data-examples-view="rubriknivå-4">
-            <h4 data-example>Rubriknivå 4 (H4)</h4>
+            <h4 data-example>Den finaste rubrikindelningen ger rubriknivå fyra</h4>
           </div>
         </div>
           <h4>Användning</h4>
