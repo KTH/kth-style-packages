@@ -9,7 +9,7 @@ export default function DropdownsPage (props) {
             Formulär används för att få in data från användaren.
         </p>
           <p>
-            Det finns olika fem olika typer av indatakomponenter. Välj komponenttyp utifrån användning (se tabellen nedan).
+            Det finns fem olika typer av indatakomponenter. Välj komponenttyp utifrån användning (se tabellen nedan).
         </p>
         
         <p>
