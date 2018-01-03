@@ -4,7 +4,7 @@ import { Page, Section, Narrative } from 'kth-style-inferno-bootstrap/docs/src/c
 export default function DropdownsPage (props) {
   return (
     <Page>
-      <h1>Knappar och länkar</h1>
+      <h1>Riktlinjer knappar, länkar</h1>
       <p>
           Knappar och länkar ger användaren olika förväntningar på vad som ska ske när man klickar på dem. Eftersom en användare ska förstå innan man klickar vad som kommer att hända är det viktigt att välja rätt komponenttyp (se tabellen nedan).
       </p>
