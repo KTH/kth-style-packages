@@ -6,7 +6,7 @@ export default function DropdownsPage (props) {
       <h1>Dialoger</h1>
       <section>
         <p>
-            Dialoger används då man behöver direkt input från användaren. Användningen ska minimeras då de avbryter användarens flöde. 
+            Dialoger används då man behöver direkt input från användaren. Användningen ska minimeras då de avbryter användarens flöde men måste användas vid viktiga val.
         </p>
         <p>
             Det finns finns två olika typer av dialoger. Välj komponenttyp utifrån användning (se tabellen nedan).
@@ -21,17 +21,17 @@ export default function DropdownsPage (props) {
           <thead class="thead-default">
             <tr>
               <th>Komponenttyp</th>
-              <th>Används för att</th>
+              <th>Används för</th>
             </tr>
           </thead>
           <tbody>
             <tr>
               <td>Confirm</td>
-              <td>Användaren ska bekräfta ett gjort val som inte kan ångras</td>
+              <td>Bekräfta en destruktiv aktivitet (t ex radera) som användaren gjort</td>
             </tr>
             <tr>
               <td>Choose</td>
-              <td>Användaren ska göra ett val som är mindre riskabelt (det går att ångra)</td>
+              <td>Presentera val som användaren kan göra som inte är destruktiva (det går att ångra)</td>
             </tr>
              </tbody>
         </table>
