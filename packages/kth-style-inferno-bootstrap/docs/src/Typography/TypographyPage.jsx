@@ -6,7 +6,7 @@ export default function TypographyPage () {
 
       
       <h1>Typography</h1>
-      <p>Läs först <a href="/style/guidelines/heading">Riktlinjer rubriker brödtext</a> där du får hjälp att välja rätt typ av komponent.</p>
+      <p>Läs först <a href="/style/guidelines/heading">Riktlinjer rubriker, brödtext</a> där du får hjälp att välja rätt typ av komponent.</p>
       <p>
         TODO, Compare with <a href="https://getbootstrap.com/docs/4.0/content/typography/">Bootstrap</a>
       </p>
