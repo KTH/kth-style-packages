@@ -27,7 +27,7 @@ export default function BasicPage (props) {
           <h4>Användning</h4>
           <ul>
             <li>
-              När rubriklisten ska smälta in med övrigt innehåll på sidan.
+              För att dölja innehåll under en rubriklist som inte tar för mycket fokus på sidan. Innehållet är inte kritiskkt.
             </li>
             <li>
               Exempel: ?
@@ -49,7 +49,7 @@ export default function BasicPage (props) {
         <h4>Användning</h4>
         <ul>
           <li>
-            När det är viktigt att rubriklisten syns.
+            För att dölja mer kritiskt innehåll under en rubriklist som syns.
           </li>
           <li>
             Exempel: ?
