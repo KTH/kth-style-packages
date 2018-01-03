@@ -45,8 +45,6 @@ const pages = [
   // Components
   { path: "/components", title: "Components", header: "h3", component: AlertsPage},
   { path: "/components/alerts", title: "Alerts", component: AlertsPage},
-  { path: "/components/badge", title: "Badge", component: BadgePage},
-  { path: "/components/breadcrumb", title: "Breadcrumb", component: BreadcrumbPage},
   { path: "/components/button_group", title: "Button Group", component: ButtonGroupPage},
   { path: "/components/buttons", title: "Buttons", component: ButtonsPage},
   { path: "/components/card", title: "Card", component: CardPage},
@@ -62,7 +60,12 @@ const pages = [
   { path: "/components/pagination", title: "Pagination", component: PaginationPage},
   { path: "/components/popovers", title: "Popovers", component: PopoversPage},
   { path: "/components/progress", title: "Progress", component: ProgressPage},
-  { path: "/components/tooltips", title: "Tooltips", component: TooltipsPage}
+  { path: "/components/tooltips", title: "Tooltips", component: TooltipsPage},
+
+  // Components in Progress
+  { path: "/components", title: "Components under consideration", header: "h3", component: AlertsPage},
+  { path: "/components/badge", title: "Badge", component: BadgePage},
+  { path: "/components/breadcrumb", title: "Breadcrumb", component: BreadcrumbPage}  
 ]
 
 export default pages
