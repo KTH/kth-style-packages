@@ -174,22 +174,6 @@ export default function BasicPage (props) {
               </UXComment>
             </Section>                  
            </Stage> 
-    
-        
-          
-              
-         <Stage>
-            <Section title="Menu Link button">
-              <UXComment>
-                <h4>Användning</h4>
-                <ul>
-                  <li>
-                    Lista menyalternativ i form av länkar under en meny-knapp
-                  </li>
-                </ul>
-              </UXComment>
-            </Section>                  
-         </Stage>
              
        <h2>Stöds inte i dagsläget</h2>
        <p> Om man behöver använda komponenter nedan, motivera varför i KTH Style gruppen för att utvärdera om vi tar in den i riktlinjerna.</p>
