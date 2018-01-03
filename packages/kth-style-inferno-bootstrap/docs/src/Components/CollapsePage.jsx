@@ -34,7 +34,7 @@ export default function BasicPage (props) {
              <h4>Tänk på att</h4>
              <ul>
                <li>
-                 Försäkra dig om att användaren ser den vita rubriklisten (se <a href="/style/testhelper#testa_anvandbarhet">Testa användbarhet</a>). Om inte överväg att använda Blå-utfällbar-rubriklist.
+                 Försäkra dig om att användaren ser den vita rubriklisten (se <a href="/style/testhelper#testa_anvandbarhet">Testa användbarhet</a>). Om inte överväg att använda Blå utfällbar rubriklist.
                </li>
                <li>
                  Se <a href="/style/guidelines/structure/#generella_riktlinjer_rubriklist">Generella riktlinjer rubriklist</a>.
