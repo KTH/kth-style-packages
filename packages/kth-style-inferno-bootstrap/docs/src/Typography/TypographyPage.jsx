@@ -119,7 +119,7 @@ export default function TypographyPage () {
         <h4>Användning</h4>
         <ul>
             <li>
-                Som innehållstext under rubriker.
+                För innehållstext under rubriker.
             </li>
             <li>
               <p>
