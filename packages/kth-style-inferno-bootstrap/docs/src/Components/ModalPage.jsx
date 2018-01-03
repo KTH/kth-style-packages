@@ -13,9 +13,13 @@ export default function BasicPage (props) {
   return (
     <Page>
     <h1>Modal</h1>
- 
-      <p>Use modals to present essential information that takes over the entire window.</p>  
-      <Stage>
+      <p>Läs först riktlinjer för <a href="/style/guidelines/dialouge">dialoger</a> och <a href="/style/guidelines/information">information/ återkoppling</a> för att förstå när man använder modaler.</p>  
+      
+    <Stage>
+      <h2>Information modal</h2>
+      <section id="information_modal">
+        <br></br>
+        <p> TO DO: Lägg till komponet för informera när klickat på i-ikon </p>
       <Scene>
 
         <ButtonGroup>  
@@ -138,14 +142,10 @@ export default function BasicPage (props) {
 }`}  
         </Code>
       </Scene>
-    </Stage>
+  
 
       
-    <Stage>
-      <h3>Information modal</h3>
-      <section id="information_modal">
-        <br></br>
-        <p> TO DO: Lägg till komponet för informera när klickat på i-ikon </p>
+    
         <UXComment>
           <h4>Användning</h4>
           <ul>
