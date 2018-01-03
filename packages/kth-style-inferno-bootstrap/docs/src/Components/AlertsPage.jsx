@@ -72,7 +72,7 @@ export default function BasicPage (props) {
               Först fundera på om det går att hjälpa användaren att undvika felet (länk till Tillgänglig kod).
             </li>
             <li>
-              Om felet inte kommaer att gå att undvika: använd "Error alert" för att informera om att något har gått fel.
+              Om felet inte går att undvika: använd "Error alert" för att informera om att något har gått fel.
             </li>
             <li>
               Placera
