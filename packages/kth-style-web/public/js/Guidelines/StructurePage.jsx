@@ -64,11 +64,11 @@ export default function DropdownsPage (props) {
           </thead>
           <tbody>
             <tr>
-              <td>Vit-utfällbar-rubriklist</td>
+              <td><a href="/style/api/components/collapse#white_collapse">White collapse</a></td>
               <td>Dölja innehåll under en rubriklist som inte tar för mycket fokus på sidan. Innehållet är inte kritiskkt. </td>
             </tr>
             <tr>
-              <td>Blå-utfällbar-rubriklist</td>
+              <td><td><a href="/style/api/components/collapse#blue_collapse">Blue collapse</a></td>
               <td>Dölja mer kritiskt innehåll under en rubriklist som syns.</td>
             </tr>
           </tbody>
