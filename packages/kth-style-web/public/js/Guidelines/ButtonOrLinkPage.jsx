@@ -14,13 +14,13 @@ export default function DropdownsPage (props) {
           <thead class="thead-default">
             <tr>
               <th>Komponenttyp</th>
-              <th>Används för att</th>
+              <th>Används för</th>
             </tr>
           </thead>
           <tbody>
             <tr>
               <td><a href="#valj_typ_av_lank">Länk (välj typ)</a></td>
-              <td>Leda användaren vidare till en annan del av webben</td>
+              <td>Navigera till en annan del av webben</td>
             </tr>
             <tr>
               <td><a href="#valj_typ_av_knapp">Knapp (välj typ)</a></td>
@@ -29,7 +29,7 @@ export default function DropdownsPage (props) {
             <tr>
               <td><a href="/style/api/components/buttons#link_button">Link button</a></td>
               <td>
-                Länka vidare till en sida där man kan initiera en viktig aktivitet. Notera att det finns bara en variant och att den ska användas sparsamt.
+                Navigera till en sida där användaren kan initiera en viktig aktivitet. Notera att det finns bara en variant och att den ska användas sparsamt.
               </td>
             </tr>
           </tbody>
@@ -109,17 +109,17 @@ export default function DropdownsPage (props) {
          <thead class="thead-default">
           <tr>
             <th>Komponenttyp</th>
-            <th>Används för att</th>
+            <th>Används för</th>
           </tr>
          </thead>
        <tbody>
          <tr>
            <td><a href="/style/api/components/buttons#blue_link">Blue link</a></td>
-           <td>Infoga länk i svart innehållstext på vit bakgrund</td>
+           <td>Infogad länk i svart innehållstext på vit bakgrund</td>
          </tr>
          <tr>
            <td><a href="/style/api/components/buttons#white_link">White link</a></td>
-           <td>Infoga länk i vit innehållstext på färgad bakgrund</td>
+           <td>Infogad länk i vit innehållstext på färgad bakgrund</td>
          </tr>
          <tr>
            <td><a href="/style/api/components/buttons#back_link">Back link</a></td>
