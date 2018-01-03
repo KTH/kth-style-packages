@@ -5,7 +5,7 @@ export default function DropdownsPage (props) {
     <Page>
       <h1>Rubriker, brödtext</h1>
         <p>
-          Det finns fyra rubriknivåer samt brödtext (se nedan).
+          Använd rubriker för att ge struktur och mening till längre textinnehåll. Brödtext används för innehållstext. Det finns fyra rubriknivåer samt brödtext (se nedan).
         </p>
         <p>
           Läs gärna <a href="https://www.kth.se/social/group/kth-style-guide/page/bakgrund-14/">bakgrund till val av rubriknivå och brödtext</a>.
@@ -47,7 +47,7 @@ export default function DropdownsPage (props) {
           <li>Välj rubriker som beskriver innehållet.</li>
           <li>Titeln ska vara unik och ska börja med det unika och mest relevanta</li>
          <li>När de finns flera sidor som hör i hop, t ex en wizard I flera steg, inkludera aktuellt steg i titeln.</li>
-          <li>Använd rubriker för att ge struktur och mening till längre textinnehåll. Använd korta rubriker för att gruppera relaterade paragrafer.</li>
+          <li>Använd korta rubriker för att gruppera relaterade paragrafer.</li>
          <li>Hoppa inte över rubriknivåer då det försvårar förståelse av sidostrukturen och läsbarheten.</li>
         </ul>
       </Section>
