@@ -20,7 +20,7 @@ export default function TypographyPage () {
         <h4>Användning</h4>
         <ul>
             <li>
-                Som huvudrubrik.
+                För huvudrubrik.
             </li>
             <li>
                 Ska inte användas längre ned på sidor och ska bara förekomma en gång på varje sida.
@@ -47,7 +47,7 @@ export default function TypographyPage () {
         <h4>Användning</h4>
         <ul>
             <li>
-                Som andra rubriknivå.
+                För andra rubriknivå.
             </li>
             <li>
               <p>
@@ -71,7 +71,7 @@ export default function TypographyPage () {
         <h4>Användning</h4>
         <ul>
             <li>
-                Som  tredje rubriknivå.
+                För tredje rubriknivå.
             </li>
             <li>
               <p>
@@ -95,7 +95,7 @@ export default function TypographyPage () {
         <h4>Användning</h4>
         <ul>
             <li>
-                Som  fjärde rubriknivå.
+                För fjärde rubriknivå.
             </li>
             <li>
               <p>
