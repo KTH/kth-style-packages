@@ -11,7 +11,7 @@ export default function BasicPage (props) {
       <p>Läs först <a href="/style/guidelines/structure">riktlinjer för struktur, layout på sida</a> där du får överblick hur du kan strukturera en sida och få hjälp att välja rätt typ av komponent.</p>  
       
       <Stage>
-        <Section title="Vit utfällbar rubriklist">
+        <Section title="White collapse">
           <Scene>
             <ToggleCollapse defaultOpen={false} />
           </Scene>
@@ -113,7 +113,7 @@ export default function BasicPage (props) {
        </Stage>
   
        <Stage>
-         <Section title="Blå utfällbar rubriklist">
+         <Section title="Blue collapse">
             <Scene>
               <ToggleCollapse defaultOpen={false} />
             </Scene>
