@@ -13,7 +13,7 @@ export default function TypographyPage () {
       
       
       <Stage> 
-        <Section title="Titel (H1)">  
+        <Section title="Titel">  
           <div class="examples-container">
             <div data-examples-view="Titel">
               <h1 data-example>En huvudrubrik eller titel ska inte vara för lång</h1>
@@ -22,7 +22,7 @@ export default function TypographyPage () {
           <h4>Användning</h4>
           <ul>
               <li>
-                  För huvudrubrik.
+                  För huvudrubrik (h1).
               </li>
               <li>
                   Ska inte användas längre ned på sidor och ska bara förekomma en gång på varje sida.
@@ -43,7 +43,7 @@ export default function TypographyPage () {
       </Stage>
       
       <Stage> 
-        <Section title="Rubriknivå 2 (H2)">  
+        <Section title="Rubriknivå 2">  
            <div class="examples-container">
             <div data-examples-view="rubriknivå-2">
               <h2 data-example>Du gör du en grov indelning av sidan genom att använda rubriknivå två</h2>
@@ -52,7 +52,7 @@ export default function TypographyPage () {
           <h4>Användning</h4>
           <ul>
               <li>
-                  För andra rubriknivå.
+                  För andra rubriknivå (h2).
               </li>
               <li>
                 <p>
@@ -70,7 +70,7 @@ export default function TypographyPage () {
       </Stage>
         
       <Stage> 
-        <Section title="Rubriknivå 3 (H3)">  
+        <Section title="Rubriknivå 3">  
           <div class="examples-container">
             <div data-examples-view="rubriknivå-3">
               <h3 data-example>Med rubriknivå tre så gör du en finare indelning av sidan</h3>
@@ -79,7 +79,7 @@ export default function TypographyPage () {
           <h4>Användning</h4>
           <ul>
               <li>
-                  För tredje rubriknivå.
+                  För tredje rubriknivå (h3).
               </li>
               <li>
                 <p>
@@ -97,7 +97,7 @@ export default function TypographyPage () {
       </Stage>
        
      <Stage> 
-        <Section title="Rubriknivå 4 (H4)">  
+        <Section title="Rubriknivå 4">  
           <div class="examples-container">
           <div data-examples-view="rubriknivå-4">
             <h4 data-example>Den finaste rubrikindelningen ger rubriknivå fyra</h4>
@@ -106,7 +106,7 @@ export default function TypographyPage () {
           <h4>Användning</h4>
           <ul>
               <li>
-                  För fjärde rubriknivå.
+                  För fjärde rubriknivå (h4).
               </li>
               <li>
                 <p>
