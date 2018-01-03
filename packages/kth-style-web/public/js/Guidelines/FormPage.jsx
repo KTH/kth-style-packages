@@ -3,7 +3,7 @@ import { Page, Section, Narrative } from 'kth-style-inferno-bootstrap/docs/src/c
 export default function DropdownsPage (props) {
   return (
     <Page>
-      <h1>Formulär- och indatakomponenter</h1>
+      <h1>Riktlinjer formulär- och indatakomponenter</h1>
       <section>
         <p>
             Formulär används för att få in data från användaren.
