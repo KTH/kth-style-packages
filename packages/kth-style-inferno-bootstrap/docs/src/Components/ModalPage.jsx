@@ -16,8 +16,7 @@ export default function BasicPage (props) {
       <p>Läs först riktlinjer för <a href="/style/guidelines/dialouge">dialoger</a> och <a href="/style/guidelines/information">information/ återkoppling</a> för att förstå när man använder modaler.</p>  
       
     <Stage>
-      <h2>Information modal</h2>
-      <section id="information_modal">
+      <Section title="Information modal">
         <br></br>
         <p> TO DO: Lägg till komponet för informera när klickat på i-ikon </p>
       <Scene>
@@ -163,7 +162,7 @@ export default function BasicPage (props) {
             </li>
           </ul>
         </UXComment>
-      </section>
+      </Section>
     </Stage>
  
     </Page>
