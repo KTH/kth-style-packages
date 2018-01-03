@@ -23,20 +23,20 @@ export default function DropdownsPage (props) {
           </thead>
           <tbody>
             <tr>
-              <td>Titel (H1)</td>
-              <td>Huvudrubrik, ska inte användas längre ned på sidor och ska bara förekomma en gång på varje sida.</td>
+              <td><a href="/style/api/content/typography#titel">Titel</a></td>
+              <td>Huvudrubrik (h1), ska inte användas längre ned på sidor och ska bara förekomma en gång på varje sida.</td>
             </tr>
             <tr>
-              <td>Rubriknivå 2 (H2)</td>
-              <td>Andra rubriknivå.</td>
+               <td><a href="/style/api/content/typography#rubrikniva_2">Rubriknivå 2</a></td>
+              <td>Andra rubriknivå (h2).</td>
             </tr>
             <tr>
-              <td>Rubriknivå 3 (H3)</td>
-              <td>Tredje rubriknivå.</td>
+              <td><a href="/style/api/content/typography#rubrikniva_3">Rubriknivå 3</a></td>
+              <td>Tredje rubriknivå (h3).</td>
             </tr>
             <tr>
-              <td>Rubriknivå 4 (H4)</td>
-              <td>Fjärde rubriknivå.</td>
+              <td><td><a href="/style/api/content/typography#rubrikniva_4">Rubriknivå 4</a></td></td>
+              <td>Fjärde rubriknivå (h4).</td>
             </tr>
             <tr>
               <td>Brödtext</td>
