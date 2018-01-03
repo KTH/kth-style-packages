@@ -94,7 +94,7 @@ export default function DropdownsPage (props) {
      </section>  
      <Section title="Länkar">
        <p>
-         Länk används till att leda vidare användaren till en annan del av webben för att knyta ihop olika relaterade delar.
+         Länk används för att navigera till en annan del av webben. Länkar möjliggör att man kan knyta ihop relaterade sidor.
        </p>
        <p>
          Det finns fem olika typer av länkar. Välj komponenttyp utifrån användning (se tabellen nedan).
