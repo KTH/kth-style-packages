@@ -3,20 +3,20 @@ import { Page, Section, Narrative } from 'kth-style-inferno-bootstrap/docs/src/c
 export default function DropdownsPage (props) {
   return (
     <Page>
-      <h1>Riktlinjer formulär- och indatakomponenter</h1>
+      <h1>Riktlinjer formulär</h1>
       <section>
         <p>
             Formulär används för att få in data från användaren.
         </p>
           <p>
-            Det finns fem olika typer av indatakomponenter. Välj komponenttyp utifrån användning (se tabellen nedan).
+            Det finns fem olika typer av formulärkomponenter. Välj komponenttyp utifrån användning (se tabellen nedan).
         </p>
         
         <p>
-            Läs gärna <a href="https://www.kth.se/social/group/kth-style-guide/page/bakgrund-17/">bakgrund till val av formulär- och indatakomponenter</a>.
+            Läs gärna <a href="https://www.kth.se/social/group/kth-style-guide/page/bakgrund-17/">bakgrund till val av formulärkomponenter</a>.
         </p>
       </section>
-     <Section title="Välj typ av formulär- och indatakomponenter">
+     <Section title="Välj typ av formulärkomponenter">
         <table class="table">
           <thead class="thead-default">
             <tr>
@@ -48,7 +48,7 @@ export default function DropdownsPage (props) {
           </tbody>
         </table>
       </Section>
-      <Section title="Generella riktlinjer för formulär och indatakomponenter">
+      <Section title="Generella riktlinjer för formulärkomponenter">
         <h3>Reducera fält</h3>
         <p>Ta bort fält om indata kan:</p>
         <ul>
@@ -95,7 +95,7 @@ export default function DropdownsPage (props) {
       </Section>
       
        <section>
-       <h2>Flytta till Komponenter: Olika typer av formulär- och indatakomponenter</h2>
+       <h2>Flytta till Komponenter: Olika typer av formulärkomponenter</h2>
 
         <h3>Fritextsvar</h3>
         <p> Komponent ska infogas </p>
@@ -119,7 +119,7 @@ export default function DropdownsPage (props) {
                 </ul>
             </li>
             <li>
-                Se <a href="#generella_riktlinjer_for_formular_och_indatakomponenter">Generella riktlinjer för formulär och indatakomponenter</a>.
+                Se <a href="#generella_riktlinjer_for_formularkomponenter">Generella riktlinjer för formulärkomponenter</a>.
             </li>    
         </ul>
 
@@ -149,7 +149,7 @@ export default function DropdownsPage (props) {
                 Användaren ska kunna söka fram rätt alternativ i rullgardinsmenyn genom att använda bokstavstangenterna.
             </li>
             <li>
-                Se <a href="#generella_riktlinjer_for_formular_och_indatakomponenter">Generella riktlinjer för formulär och indatakomponenter</a>.
+                Se <a href="#generella_riktlinjer_for_formularkomponenter">Generella riktlinjer för formulärkomponenter</a>.
             </li>    
         </ul>
 
@@ -170,7 +170,7 @@ export default function DropdownsPage (props) {
             Alternativen ska inte vara fler än att de kan presenteras överskådligt på en rad. Annars använd rullgardinsmeny.
           </li>
           <li>
-            Se <a href="#generella_riktlinjer_for_formular_och_indatakomponenter">Generella riktlinjer för formulär och indatakomponenter</a>.
+            Se <a href="#generella_riktlinjer_for_formularkomponenter">Generella riktlinjer för formulärkomponenter</a>.
           </li>    
         </ul>
 
@@ -188,7 +188,7 @@ export default function DropdownsPage (props) {
         <h4>Tänk på att</h4>
         <ul>
             <li>
-                Se <a href="#generella_riktlinjer_for_formular_och_indatakomponenter">Generella riktlinjer för formulär och indatakomponenter</a>.
+                Se <a href="#generella_riktlinjer_for_formularkomponenter">Generella riktlinjer för formulärkomponenter</a>.
             </li>    
         </ul>
 
@@ -206,7 +206,7 @@ export default function DropdownsPage (props) {
         <h4>Tänk på att</h4>
         <ul>
             <li>
-                Se <a href="#generella_riktlinjer_for_formular_och_indatakomponenter">Generella riktlinjer för formulär och indatakomponenter</a>.
+                Se <a href="#generella_riktlinjer_for_formularkomponenter">Generella riktlinjer för formulärkomponenter</a>.
             </li>    
         </ul>
       </section>
