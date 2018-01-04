@@ -5,7 +5,7 @@ import Jumbotron from 'kth-style-inferno-bootstrap/lib/Jumbotron.jsx'
 export default function DropdownsPage (props) {
   return (
     <Page>
-        <h1>Om KTH Style</h1>
+        <h1>KTH Style</h1>
         <img className="HeroImage" src="/style/static/img/Banner.png" />
         
         <Section title="Bakgrund">
