@@ -96,10 +96,10 @@ export default function BasicPage (props) {
                 <h4>Tänk på att</h4>
                 <ul>
                     <li>
-                        Komplettera med ett avbryt-alternativ (se <a href="/style/dialogs">Dialoger</a>).
+                        Komplettera med ett avbryt-alternativ (se <a href="/style/api/components/modal#choose_modal">Choose modal</a>).
                     </li>
                     <li>
-                        Använd inte för destruktiva aktiviteter som ex "Ta bort fil" (se <a href="/style/dialogs">Dialoger</a>).
+                        Använd inte för destruktiva aktiviteter som ex "Ta bort fil" (se <a href="/style/api/components/modal#confirm_modal">Confirm modal</a>).
                     </li>
                     <li>
                         Var försiktig att göra knappen till default-val då slutanvändaren kan råka göra valet oavsiktligt genom ”Enter”.
@@ -132,7 +132,7 @@ export default function BasicPage (props) {
                 <h4>Tänk på att</h4>
                 <ul>
                     <li>
-                        "Delete" ska följas av dialog där användaren får bekräfta sitt val (se <a href="/style/dialogs">Dialoger</a>)
+                        "Delete" ska följas av dialog där användaren får bekräfta sitt val (se <a href="/style/api/components/modal#confirm_modal">Confirm modal</a>).
                     </li>
                     <li>
                         Se <a href="/style/guidelines/buttonorlink#generella_riktlinjer_knappar">Generella riktlinjer för knappar</a>.
