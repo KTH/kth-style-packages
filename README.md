@@ -48,7 +48,7 @@ $ npm i bootstrap -s
 
 In file server/server.js:
 
-###If you use 'kth-node-server' module as a server (example lms-export-results API):
+### If 'kth-node-server' module is used as a server (f.e., lms-export-results API):
 
 ```
 const path = require('path')
@@ -59,7 +59,7 @@ const prefix = config.proxyPrefixPath.uri
 server.use(prefix +'/kth-style', express.static(path.join(__dirname, '../node_modules/kth-style/dist')))
 ```
 
-###if you use express module (f.e. kth-style-web):
+### If 'express' module is used (f.e., kth-style-web):
 
 ```
 const path = require('path')
