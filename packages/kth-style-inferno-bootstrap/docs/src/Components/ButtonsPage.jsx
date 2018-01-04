@@ -174,7 +174,6 @@ export default function BasicPage (props) {
           </Section>  
              
        <Section title="Different sizes">
-        <p> Om man behöver använda komponenter nedan, motivera varför i KTH Style gruppen för att utvärdera om vi tar in den i riktlinjerna.</p>
        <Stage>
            <h3>Big size</h3>
             <Scene>
