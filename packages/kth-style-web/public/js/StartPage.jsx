@@ -7,23 +7,21 @@ export default function DropdownsPage (props) {
     <Page>
         <h1>KTH Style</h1>
         <img className="HeroImage" src="/style/static/img/Banner.png" />
-        
+        <Alert color="info" aria-live="polite">
+          <span>
+            <h4>KTH Style är under utveckling!</h4>
+            <p>Riktlinjer och utseende kan komma att ändras fram till lansering.</p>
+           </span>
+        </Alert>
         <Section title="Bakgrund">
-            <Narrative>
-            <Alert color="info" aria-live="polite">
-                <p>KTH Style är under utveckling. Riktlinjer och utseende kan komma att ändras fram till lansering.</p>
-            </Alert>
             <p>
                 KTH webb är riktlinje för style men olika delar har kopierats vid olika lägen och tolkats olika vilket gör att utseende varierar mellan olika tjänster. Även inom KTH webb finns delar som är tveksamma vad gäller principer för Användbarhet och Tillgänglighet. Det finns inte heller några riktlinjer eller principer nedskrivna för hur man ska använda de olika elementen för att uppnå bra UX.
             </p>
             <p>
                 Kth style har tidigare mer handlat om att man ska förstå att man är på kth.se ("se kth-igt ut").
             </p>
-            </Narrative>
-        </Section>
         
-        <Section title="Målgrupp">
-            <Narrative>
+        <h3>Målgrupp</h3>
                 <p>
                     Utvecklare av KTH-förvaltade webbmiljöer.
                 </p>
@@ -33,11 +31,8 @@ export default function DropdownsPage (props) {
                 <p>
                     Externa parter som utvecklar webbtjänster i enlighet med form på KTH:s webbplats.
                 </p>
-            </Narrative>
-        </Section>
       
-        <Section title="Syfte, mål">
-            <Narrative>
+        <h3>Syfte, mål</h3>
             <p>
                 Målet med styleguiden är att:
                 <ul>
@@ -66,11 +61,8 @@ export default function DropdownsPage (props) {
                     </li>
                 </ul>
             </p>
-            </Narrative>
-        </Section>
         
-        <Section title="Avgränsning">
-            <Narrative>
+        <h3>Avgränsning</h3>
             <p>
                 Förankring i grafisk profil är relevant för all digital kommunikation på KTH som medger formmässiga anpassningar. Styleguiden gäller därför både för applikationer som används internt på KTH och externa målgrupper.
             </p>
@@ -86,13 +78,10 @@ export default function DropdownsPage (props) {
             <p>
                 Styleguiden stödjer de webbläsare och versioner som WIKS stödjer...
             </p>
-            </Narrative>
-        </Section>
 
+        </Section>
         <Section title="KTH's grafiska profil" id="kths_grafiska_profil">
-            <Narrative>
             <p>Här kan vi skriva lite text om den grafiska profilen.</p>
-            </Narrative>
             <section>
                 <h3>Bakgrund</h3>
                 <p>
@@ -164,23 +153,15 @@ export default function DropdownsPage (props) {
             </section>
         </Section>
 
-        <Section title="Bootstrap 4">
-            <Narrative>
+       <Section title="Teknik">
+        <h3>Bootstrap 4</h3>
             <p>Här kan vi skriva lite text om KTH Style Bootstrap.</p>
-            </Narrative>
-        </Section>
 
-        <Section title="Inferno.js">
-            <Narrative>
-            <p>Här kan vi skriva lite text om att använda KTH Style Bootstrap med Inferno.js.</p>        
-            </Narrative>
-        </Section>
+        <h3>Inferno.js</h3>
+            <p>Här kan vi skriva lite text om att använda KTH Style Bootstrap med Inferno.js.</p>   
 
-        <Section title=".Net etc.">
-            <Narrative>
+       <h3>.Net etc.</h3>
             <p>Här kan vi skriva lite text om att använda KTH Style Bootstrap i andra projekt.</p>
-            </Narrative>
-        </Section>      
     </Page>
   )
 }
