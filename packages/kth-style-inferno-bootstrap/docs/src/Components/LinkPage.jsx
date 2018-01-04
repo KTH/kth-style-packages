@@ -26,7 +26,7 @@ export default function BasicPage (props) {
                   För infogad länk i svart innehållstext på vit bakgrund.
                 </li>
                 <li>
-                  Exempel: se <a href="#riktlinjer_bla_vit_bort">Riktlinjer för länk: Blå, Vit, Bort</a>
+                  Exempel: se <a href="/style/guidelines/buttonorlink#riktlinjer_bla_vit_bort">Riktlinjer för länk: Blå, Vit, Bort</a>
                 </li>
               </ul>
             </UXComment>           
@@ -44,7 +44,7 @@ export default function BasicPage (props) {
                     För infogad länk i vit innehållstext på färgad bakgrund.
                   </li>
                   <li>
-                    Exempel: se <a href="#riktlinjer_bla_vit_bort">Riktlinjer för länk: Blå, Vit, Bort</a>
+                    Exempel: se <a href="/style/guidelines/buttonorlink#riktlinjer_bla_vit_bort">Riktlinjer för länk: Blå, Vit, Bort</a>
                   </li>
                 </ul>
               </UXComment>
@@ -68,7 +68,7 @@ export default function BasicPage (props) {
                                 Länk på Programwebb till Student på KTH.
                             </li>
                             <li>
-                                 Exempel: se <a href="#riktlinjer_bla_vit_bort">Riktlinjer för länk: Blå, Vit, Bort</a>
+                                 Exempel: se <a href="/style/guidelines/buttonorlink#riktlinjer_bla_vit_bort">Riktlinjer för länk: Blå, Vit, Bort</a>
                             </li>
                         </ul>
                     </li>
