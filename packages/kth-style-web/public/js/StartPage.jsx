@@ -6,13 +6,15 @@ export default function DropdownsPage (props) {
   return (
     <Page>
         <h1>KTH Style</h1>
-        <img className="HeroImage" src="/style/static/img/Banner.png" />
         <Alert color="info" aria-live="polite">
           <span>
             <h4>KTH Style är under utveckling!</h4>
             <p>Riktlinjer och utseende kan komma att ändras fram till lansering.</p>
            </span>
         </Alert>
+      
+        <img className="HeroImage" src="/style/static/img/Banner.png" />
+        
         <Section title="Bakgrund">
             <p>
                 KTH webb är riktlinje för style men olika delar har kopierats vid olika lägen och tolkats olika vilket gör att utseende varierar mellan olika tjänster. Även inom KTH webb finns delar som är tveksamma vad gäller principer för Användbarhet och Tillgänglighet. Det finns inte heller några riktlinjer eller principer nedskrivna för hur man ska använda de olika elementen för att uppnå bra UX.
