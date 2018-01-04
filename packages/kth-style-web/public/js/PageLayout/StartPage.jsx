@@ -3,7 +3,7 @@ import { Page, Section, Narrative } from 'kth-style-inferno-bootstrap/docs/src/c
 export default function DropdownsPage (props) {
   return (
     <Page>
-
+      <h1>Sidlayout</h1>
       <Section title="Introduktion">
         <Narrative>
           <p>Här kan vi skriva lite text som sidlayouterna.</p>
