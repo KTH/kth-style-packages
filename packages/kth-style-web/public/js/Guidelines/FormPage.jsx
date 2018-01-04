@@ -26,23 +26,23 @@ export default function DropdownsPage (props) {
           </thead>
           <tbody>
             <tr>
-              <td>a href="/style/api/components/forms#text_input">Text input</a></td>
+              <td><a href="/style/api/components/forms#text_input">Text input</a></td>
               <td>Indata i form av text</td>
             </tr>
              <tr>
-              <td>a href="/style/api/components/forms#radio_buttons">Radio buttons</a></td>
+              <td><a href="/style/api/components/forms#radio_buttons">Radio buttons</a></td>
               <td>Flervalssvar när bara ett val är möjligt (och alternativen är färre)</td>
             </tr>
             <tr>
-              <td>a href="/style/api/components/forms#drop_down">Drop down</a></td>
+              <td><a href="/style/api/components/forms#drop_down">Drop down</a></td>
               <td>Flervalssvar när bara ett val är möjligt (och alternativen är många)</td>
             </tr>
             <tr>
-              <td>a href="/style/api/components/forms#check_box">Check box</a></td>
+              <td><a href="/style/api/components/forms#check_box">Check box</a></td>
               <td>Flervalssvar när flera val är möjliga</td>
             </tr>
             <tr>
-              <td>a href="/style/api/components/forms#date_picker">Date picker</a></td>
+              <td><a href="/style/api/components/forms#date_picker">Date picker</a></td>
               <td>Val av datum</td>
             </tr>
           </tbody>
