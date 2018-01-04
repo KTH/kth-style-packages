@@ -149,12 +149,6 @@ export default function BasicPage (props) {
         </Stage>
       </Section>
       
-    <!--
-    <InputSection />
-    <InputGroupSection />
-    <InputWithButton />
-    <ButtonShorthand /> 
-    -->
     </Page>
   )
 }
