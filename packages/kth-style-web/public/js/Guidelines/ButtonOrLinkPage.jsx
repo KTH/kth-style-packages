@@ -27,7 +27,7 @@ export default function DropdownsPage (props) {
               <td>Initiera en aktivitet. Ett klick på en knapp får något att hända. Det kan vara att ett formulär man fyllt i skickas in eller att en sökning utförs. Nästan alltid är en del av händelsen att användaren kommer till en ny sida – men det måste hända mer än så.</td>
             </tr>
             <tr>
-              <td><a href="/style/api/components/buttons#link_button">Link button</a></td>
+              <td><a href="/style/api/components/links#link_button">Link button</a></td>
               <td>
                 Navigera till en sida där användaren kan initiera en viktig aktivitet. Notera att det finns bara en variant och att den ska användas sparsamt.
               </td>
