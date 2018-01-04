@@ -11,8 +11,9 @@ export default function BasicPage (props) {
         
       <h1>Form</h1>
       <Section title="Text input">  
-      <p> Komponent ska infogas </p>
+     
         <Stage> 
+          <p> Komponent ska infogas </p>
           <UXComment>
             <h4>Användning</h4>
             <ul>
@@ -34,7 +35,7 @@ export default function BasicPage (props) {
                     </ul>
                 </li>
                 <li>
-                    Se <a href="#generella_riktlinjer_for_formularkomponenter">Generella riktlinjer för formulärkomponenter</a>.
+                    Se <a href="/style/guidelines/form#generella_riktlinjer_for_formularkomponenter">Generella riktlinjer för formulärkomponenter</a>.
                 </li>    
             </ul>
           </UXComment>
@@ -60,7 +61,7 @@ export default function BasicPage (props) {
                 Alternativen ska inte vara fler än att de kan presenteras överskådligt på en rad. Annars använd rullgardinsmeny.
               </li>
               <li>
-                Se <a href="#generella_riktlinjer_for_formularkomponenter">Generella riktlinjer för formulärkomponenter</a>.
+                Se <a href="/style/guidelines/form#generella_riktlinjer_for_formularkomponenter">Generella riktlinjer för formulärkomponenter</a>.
               </li>    
             </ul>
           </UXComment>
@@ -95,7 +96,7 @@ export default function BasicPage (props) {
                       Användaren ska kunna söka fram rätt alternativ i rullgardinsmenyn genom att använda bokstavstangenterna.
                   </li>
                   <li>
-                      Se <a href="#generella_riktlinjer_for_formularkomponenter">Generella riktlinjer för formulärkomponenter</a>.
+                      Se <a href="/style/guidelines/form#generella_riktlinjer_for_formularkomponenter">Generella riktlinjer för formulärkomponenter</a>.
                   </li>    
               </ul>          
             </UXComment>
@@ -118,7 +119,7 @@ export default function BasicPage (props) {
             <h4>Tänk på att</h4>
             <ul>
                 <li>
-                    Se <a href="#generella_riktlinjer_for_formularkomponenter">Generella riktlinjer för formulärkomponenter</a>.
+                    Se <a href="/style/guidelines/form#generella_riktlinjer_for_formularkomponenter">Generella riktlinjer för formulärkomponenter</a>.
                 </li>    
             </ul>
           </UXComment>
@@ -141,7 +142,7 @@ export default function BasicPage (props) {
             <h4>Tänk på att</h4>
             <ul>
                 <li>
-                    Se <a href="#generella_riktlinjer_for_formularkomponenter">Generella riktlinjer för formulärkomponenter</a>.
+                    Se <a href="/style/guidelines/form#generella_riktlinjer_for_formularkomponenter">Generella riktlinjer för formulärkomponenter</a>.
                 </li>    
             </ul>
           </UXComment>
