@@ -117,6 +117,46 @@ $ npm show kth-style versions
 ## Migrate from KTH Style 1.x (WORK IN PROGRESS)
  - Glyphicons are now removed as standard icons in Bootstrap. We now use Fontello (fontello.com). See the icons section in the "Develop in KTH Style" section
 
+## How to start using KTH-STYLE
+To use it in Node JS project:
+As an example, the user can look at projects lms-exports-results, places-web and so on.
+```
+$ npm i kth-style -s
+$ npm i bootstrap -s
+```
+
+In file server/server.js:
+
+### If 'kth-node-server' module is used as a server (f.e., lms-export-results API):
+
+```
+const path = require('path')
+const express = require('express')
+const server = require('kth-node-server')
+const prefix = config.proxyPrefixPath.uri
+
+server.use(prefix +'/kth-style', express.static(path.join(__dirname, '../node_modules/kth-style/dist')))
+```
+
+### If 'express' module is used (f.e., kth-style-web):
+
+```
+const path = require('path')
+const express = require('express')
+const app = express()
+
+app.use(prefix +'/kth-style', express.static(path.join(__dirname, '../node_modules/kth-style/dist')))
+```
+
+### Linking to stylesheet
+Then link to the KTH-bootstrap stylesheet in /dist directory, f.e.:
+
+```
+<link rel="stylesheet" href="/api/lms-export-results/kth-style/css/kth-bootstrap.css">
+
+```
+
+
 ## TODO
 - Gör bredcrumbs som med en lista (som exempelvis Bootstrap gör).
 - Add new icons and handle licenses for fontello. (icon to add "plus-circle" from Entypo)
