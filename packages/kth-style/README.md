@@ -121,8 +121,7 @@ $ npm show kth-style versions
 To use it in Node JS project:
 As an example, the user can look at projects lms-exports-results, places-web and so on.
 ```
-$ npm i kth-style -s
-$ npm i bootstrap -s
+$ npm i -S kth-style bootstrap
 ```
 
 In file server/server.js:
