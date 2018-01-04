@@ -38,7 +38,7 @@ The docs will automatically rebuild, all you need to do is reload the browser.
 
 You might need to rerun `scripts/start-doc-dev.sh init` at times if changes have been made to package.json.
 
-### How to start using KTH-STYLE
+## How to start using KTH-STYLE
 To use it in Node JS project:
 As an example, the user can look at projects lms-exports-results, places-web and so on.
 ```
@@ -48,7 +48,7 @@ $ npm i bootstrap -s
 
 In file server/server.js:
 
-####If you use 'kth-node-server' module as a server (example lms-export-results API):
+###If you use 'kth-node-server' module as a server (example lms-export-results API):
 
 ```
 const path = require('path')
@@ -59,7 +59,7 @@ const prefix = config.proxyPrefixPath.uri
 server.use(prefix +'/kth-style', express.static(path.join(__dirname, '../node_modules/kth-style/dist')))
 ```
 
-####if you use express module (f.e. kth-style-web):
+###if you use express module (f.e. kth-style-web):
 
 ```
 const path = require('path')
@@ -69,5 +69,11 @@ const app = express()
 app.use(prefix +'/kth-style', express.static(path.join(__dirname, '../node_modules/kth-style/dist')))
 ```
 
+### Linking to stylesheet
+Then link to the KTH-bootstrap stylesheet in /dist directory, f.e.:
 
+```
+<link rel="stylesheet" href="/api/lms-export-results/kth-style/css/kth-bootstrap.css">
+
+```
 
