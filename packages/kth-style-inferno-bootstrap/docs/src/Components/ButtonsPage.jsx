@@ -34,7 +34,7 @@ export default function BasicPage (props) {
                 <h4>Tänk på att</h4>
                 <ul>
                     <li>
-                        Se <a href="#generella_riktlinjer_knappar">Generella riktlinjer för knappar</a>.
+                        Se <a href="/style/guidelines/buttonorlink#generella_riktlinjer_knappar">Generella riktlinjer för knappar</a>.
                     </li>
                 </ul>
               </UXComment>
@@ -69,7 +69,7 @@ export default function BasicPage (props) {
                 <h4>Tänk på att: </h4>
                 <ul>
                     <li>
-                        Se <a href="#generella_riktlinjer_knappar">Generella riktlinjer för knappar</a>.
+                        Se <a href="/style/guidelines/buttonorlink#generella_riktlinjer_knappar">Generella riktlinjer för knappar</a>.
                     </li>
                 </ul>
             </UXComment> 
@@ -105,7 +105,7 @@ export default function BasicPage (props) {
                         Var försiktig att göra knappen till default-val då slutanvändaren kan råka göra valet oavsiktligt genom ”Enter”.
                     </li>
                     <li>
-                        Se även <a href="#generella_riktlinjer_knappar">Generella riktlinjer för knappar</a>.
+                        Se <a href="/style/guidelines/buttonorlink#generella_riktlinjer_knappar">Generella riktlinjer för knappar</a>.
                     </li>
                 </ul>
               </UXComment>
@@ -135,7 +135,7 @@ export default function BasicPage (props) {
                         "Delete" ska följas av dialog där användaren får bekräfta sitt val (se <a href="/style/dialogs">Dialoger</a>)
                     </li>
                     <li>
-                        Se även <a href="#generella_riktlinjer_knappar">Generella riktlinjer för knappar</a>.
+                        Se <a href="/style/guidelines/buttonorlink#generella_riktlinjer_knappar">Generella riktlinjer för knappar</a>.
                     </li>
                 </ul>
               </UXComment>
@@ -166,7 +166,7 @@ export default function BasicPage (props) {
                 <h4>Tänk på att</h4>
                 <ul>
                     <li>
-                        Se <a href="#generella_riktlinjer_knappar">Generella riktlinjer för knappar.</a>
+                        Se <a href="/style/guidelines/buttonorlink#generella_riktlinjer_knappar">Generella riktlinjer för knappar</a>.
                     </li>
                 </ul>
               </UXComment>
