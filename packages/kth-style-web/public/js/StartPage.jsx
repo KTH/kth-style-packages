@@ -154,14 +154,16 @@ export default function DropdownsPage (props) {
         </Section>
 
        <Section title="Teknik">
-        <h3>Bootstrap 4</h3>
-            <p>Här kan vi skriva lite text om KTH Style Bootstrap.</p>
+          <h3>Bootstrap 4</h3>
+              <p>Här kan vi skriva lite text om KTH Style Bootstrap.</p>
 
-        <h3>Inferno.js</h3>
-            <p>Här kan vi skriva lite text om att använda KTH Style Bootstrap med Inferno.js.</p>   
+          <h3>Inferno.js</h3>
+              <p>Här kan vi skriva lite text om att använda KTH Style Bootstrap med Inferno.js.</p>   
 
-       <h3>.Net etc.</h3>
-            <p>Här kan vi skriva lite text om att använda KTH Style Bootstrap i andra projekt.</p>
+         <h3>.Net etc.</h3>
+              <p>Här kan vi skriva lite text om att använda KTH Style Bootstrap i andra projekt.</p>
+       </Section>
+     
     </Page>
   )
 }
