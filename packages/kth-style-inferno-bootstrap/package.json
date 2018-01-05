@@ -6,7 +6,7 @@
   "scripts": {
     "start": "npm run build-docs && node docs/server.js",
     "prepare": "npm run build",
-    "// postversion": "git push && git push --tags",
+    "postversion": "git push && git push --tags",
     "build": "rm -rf ./dist && NODE_ENV=production babel lib --out-dir dist  --source-maps",
     "build-dev": "rm -rf ./dist && babel lib --out-dir dist --watch --source-maps",
     "build-docs": "rm -rf ./docs/dist && node_modules/.bin/webpack --config ./docs/webpack.config.js",
