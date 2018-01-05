@@ -59,3 +59,4 @@ dist
 .env
 packages/kth-style-web/build
 /tmp
+package-lock.json
