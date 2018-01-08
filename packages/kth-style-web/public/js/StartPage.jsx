@@ -15,6 +15,21 @@ export default function DropdownsPage (props) {
       
         <img className="HeroImage" src="/style/static/img/Banner.png" />
         
+      
+       <Section title="Vad är KTH Style?">
+            <p>
+                KTH Style är en guide för style med tillhörande riktlinjer för användbarhet och tillgänglighet. 
+            </p>
+            <p>
+               Arbetet drivs av KTH Style gruppen som består av användbarhetsspecialist på KTHs IT-avdelning, verksamhetsansvarig och huvudredaktör för KTHs centrala webbplats samt intranätet. Arbetet med att implementera komponenter och bygga upp dokumentation för KTH Style har utförts av utvecklare och användbarhetsspecialist i KTH Style utvecklargrupp.
+            </p>
+            <p>
+              Tanken med KTH Style är att underlätta för utvecklarare på KTH IT avdelning att ta fram tillgängliga och användbara webbapplikationer. Grunden i KTH Style är därför att bygga in så mycket som möjligt av riktlinjerna för användbarhet och tillgänglighet i komponenterna. De riktlinjer som inte går att bygga in inkluderas i anslutning till komponenterna.
+            </p>
+            <p>
+              KTH Style är ett levande dokument som kontinuerligt uppdateras för att förbättra användbarhet och tillgänglighet. KTH style ska utvärderas i de applikationer som använder KTH Style och när uppdateringar behöver göras p g a genomförda tester (eller nya behov av nya/ modifierade komponenter) så ska det tas upp i KTH Style gruppen som förvaltar riktlinjerna.
+            </p>
+      
         <Section title="Bakgrund">
             <p>
                 KTH webb är riktlinje för style men olika delar har kopierats vid olika lägen och tolkats olika vilket gör att utseende varierar mellan olika tjänster. Även inom KTH webb finns delar som är tveksamma vad gäller principer för Användbarhet och Tillgänglighet. Det finns inte heller några riktlinjer eller principer nedskrivna för hur man ska använda de olika elementen för att uppnå bra UX.
