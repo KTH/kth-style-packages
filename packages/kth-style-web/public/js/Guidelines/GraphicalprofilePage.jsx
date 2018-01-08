@@ -5,7 +5,7 @@ export default function DropdownsPage (props) {
     <Page>
       <h1>Grafisk profil</h1>
 
-      <Section title"Färg">
+      <Section title="Färg">
         <h3>Hur vi använder färger</h3>
               <ul>
                   <li>
