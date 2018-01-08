@@ -99,7 +99,7 @@ export default function DropdownsPage (props) {
           Det du som utvecklare behöver göra är att ta del av de riktlinjer som först ger en övergripande förståelse av användbarhet och tillgänglighet för att sedan gå in på riktlinjer för specifikt område som t ex information/ återkoppling. För varje område får du veta varför (du t ex ska informera/ ge återkoppling), när du ska göra det (du får t ex hjälp att välja vilken informationskomponent du ska använda för att uppnå vad) och övergripande hur du t ex informerar. För varje komponent finns sedan komponenten presenterad, kod och enstaka UX riktlinjer listas.
         </p>
         <h3>Tekniskt</h3>
-        <p> Läs <a href="https://github.com/KTH/kth-style#how-to-start-using-kth-styleinstruktioner">How to start using KTH style</a>  
+        <p> Läs <a href="https://github.com/KTH/kth-style#how-to-start-using-kth-style">How to start using KTH style</a>  
         </p>
       </Section>
         
