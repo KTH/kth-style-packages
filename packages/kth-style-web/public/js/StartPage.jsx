@@ -86,7 +86,7 @@ export default function DropdownsPage (props) {
                 Tidigare fungerade KTH webb som riktlinje för style men eftersom olika delar kopierades vid olika lägen och tolkades olika medförde det att utseende mellan olika tjänster varierade. Även inom KTH webb finns delar som är tveksamma vad gäller principer för användbarhet och tillgänglighet. Det fanns inte heller några riktlinjer eller principer nedskrivna för hur man ska använda de olika elementen för att uppnå bra UX. Style har tidigare mer handlat om att man ska förstå att man är på kth.se ("det ska se kth-igt ut").
             </p>
             <p>
-                För att förbättra användbarhet och tillgängligheten på KTH webb startades KTH Style gruppen (se ovan) vars arbete bestått i att inventera kth.se, rensa ut och ta fram nya/ modifierade komponenter med riktlinjer. Samtidigt pågick ett arbete med att bygga uppe ett ramverk för applikationer, ”Node”. I ”Node” har KTH Style inkluderats och dokumentation för KTH Style byggts. När det här skrivs har stora delar av kth.se ännu inte uppdaterats efter KTH style.
+                För att förbättra användbarhet och tillgängligheten på KTH webb startades KTH Style gruppen (se ovan) vars arbete bestått i att inventera kth.se, rensa ut och ta fram nya/ modifierade komponenter med riktlinjer. Samtidigt pågick ett arbete med att bygga uppe ett ramverk för applikationer, Node mallarna. I Node har KTH Style inkluderats och dokumentation för KTH Style byggts. När det här skrivs har stora delar av KTH webb ännu inte uppdaterats efter KTH style.
             </p>
         </Section>
       
