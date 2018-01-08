@@ -24,7 +24,7 @@ export default function DropdownsPage (props) {
                Arbetet drivs av KTH Style gruppen som består av användbarhetsspecialist på KTHs IT-avdelning, verksamhetsansvarig och huvudredaktör för KTHs centrala webbplats samt intranätet. Arbetet med att implementera komponenter och bygga upp dokumentation för KTH Style har utförts av utvecklare och användbarhetsspecialist i KTH Style utvecklargrupp.
             </p>
             <p>
-              Tanken med KTH Style är att underlätta för utvecklarare på KTH IT avdelning att ta fram tillgängliga och användbara webbapplikationer. Grunden i KTH Style är därför att bygga in så mycket som möjligt av riktlinjerna för användbarhet och tillgänglighet i komponenterna. De riktlinjer som inte går att bygga in inkluderas i anslutning till komponenterna.
+              Tanken med KTH Style är att underlätta för utvecklarare på KTHS IT avdelning att ta fram tillgängliga och användbara webbapplikationer. Grunden i KTH Style är därför att bygga in så mycket som möjligt av riktlinjerna för användbarhet och tillgänglighet i komponenterna. De riktlinjer som inte går att bygga in inkluderas i anslutning till komponenterna.
             </p>
             <p>
               KTH Style är ett levande dokument som kontinuerligt uppdateras för att förbättra användbarhet och tillgänglighet. KTH style ska utvärderas i de applikationer som använder KTH Style och när uppdateringar behöver göras p g a genomförda tester (eller nya behov av nya/ modifierade komponenter) så ska det tas upp i KTH Style gruppen som förvaltar riktlinjerna.
@@ -60,9 +60,6 @@ export default function DropdownsPage (props) {
                 Utvecklare av KTH-förvaltade webbmiljöer.       
               </li>
               <li>
-                Utvecklare av KTH-förvaltade webbmiljöer.       
-              </li>
-              <li>
                 Webbredaktörer och webbansvariga på KTH använder styleguiden för allmän orientering i KTH:s webbform. För riktlinjer som styr formmässiga delar av det redaktionella arbetet hänvisas till dokumentation på KTH Intranät.  
               </li>
                <li>
@@ -81,22 +78,22 @@ export default function DropdownsPage (props) {
                 Styleguiden tar främst fasta på enskilda element och ger endast översiktlig vägledning i hur dessa bör förhålla sig till varandra. Olika applikationer ger olika förutsättningar för hur forminslagen kan disponeras över olika ytor. Alla tillämpningar av styleguiden behöver därför förankras med de centrala funktioner på KTH som förvaltar riktlinjerna.
             </p>
             <p>
-                Styleguiden stödjer de webbläsare och versioner som WIKS stödjer...
+                Styleguiden ska stödja de webbläsare och versioner som WIKS stödjer.
             </p>
           
          <h3>Bakgrund</h3>
             <p>
-                Tidigare fungerade KTH webb som riktlinje för style men olika delar har kopierats vid olika lägen och tolkats olika vilket gör att utseende varierar mellan olika tjänster. Även inom KTH webb finns delar som är tveksamma vad gäller principer för användbarhet och tillgänglighet. Det fanns inte heller några riktlinjer eller principer nedskrivna för hur man ska använda de olika elementen för att uppnå bra UX. Kth style har tidigare mer handlat om att man ska förstå att man är på kth.se ("se kth-igt ut").
+                Tidigare fungerade KTH webb som riktlinje för style men olika delar har kopierats vid olika lägen och tolkats olika vilket har medfört att utseende varierar mellan olika tjänster. Även inom KTH webb finns delar som är tveksamma vad gäller principer för användbarhet och tillgänglighet. Det fanns inte heller några riktlinjer eller principer nedskrivna för hur man ska använda de olika elementen för att uppnå bra UX. Style har tidigare mer handlat om att man ska förstå att man är på kth.se ("det ska se kth-igt ut").
             </p>
             <p>
-                För att förbättra användbarhet och tillgängligheten på KTH webb startades KTH Style gruppen (se ovan) vars arbete bestått i att inventera kth.se, rensa ut och ta fram nya/ modifierade komponenter med riktlinjer. Samtidigt pågick ett arbete med att bygga uppe ett ramverk för applikationer, ”Node”. I ”Node” har KTH Style inkluderats och dokumentation för KTH Style byggts.
+                För att förbättra användbarhet och tillgängligheten på KTH webb startades KTH Style gruppen (se ovan) vars arbete bestått i att inventera kth.se, rensa ut och ta fram nya/ modifierade komponenter med riktlinjer. Samtidigt pågick ett arbete med att bygga uppe ett ramverk för applikationer, ”Node”. I ”Node” har KTH Style inkluderats och dokumentation för KTH Style byggts. När det här skrivs har stora delar av kth.se ännu inte uppdaterats efter KTH style.
             </p>
         </Section>
       
       <Section title="Hur använder jag som utvecklare KTH style?">
       <h3>Riktlinjer för användbarhet och tillgänglighet</h3>
         <p>
-          Det du som utvecklare behöver göra är att ta del av de riktlinjer som först ger en övergripande förståelse av användbarhet och tillgänglighet för att sedan gå in på riktlinjer för specifikt område som t ex information/ återkoppling. För varje område får du veta varför (du t ex ska informera/ ge återkoppling), när du ska göra det (du får t ex hjälp att välja vilken informationskomponent du ska använda för att uppnå vad) och övergripande hur du t ex informerar. För varje komponent finns sedan komponenten presenterad, kod och enstaka UX riktlinjer listas.
+          Det du som utvecklare behöver göra är att ta del av de riktlinjer som först ger en övergripande förståelse av användbarhet och tillgänglighet för att sedan gå in på riktlinjer för specifikt område (som t ex information/ återkoppling). För varje område får du veta varför (du t ex ska informera/ ge återkoppling), när du ska göra det (du får t ex hjälp att välja vilken informationskomponent du ska använda för att uppnå vad) och övergripande (hur du t ex informerar). För varje komponent finns sedan komponenten presenterad, kod och enstaka UX riktlinjer listas.
         </p>
         <h3>Tekniskt</h3>
         <p> Läs <a href="https://github.com/KTH/kth-style#how-to-start-using-kth-style">How to start using KTH style</a>  
