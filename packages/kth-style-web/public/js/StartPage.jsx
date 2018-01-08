@@ -30,7 +30,7 @@ export default function DropdownsPage (props) {
               KTH Style är ett levande dokument som kontinuerligt uppdateras för att förbättra användbarhet och tillgänglighet. KTH style ska utvärderas i de applikationer som använder KTH Style och när uppdateringar behöver göras p g a genomförda tester (eller nya behov av nya/ modifierade komponenter) så ska det tas upp i KTH Style gruppen som förvaltar riktlinjerna.
             </p>
       
-        <Section title="Bakgrund">
+        <h3>Bakgrund"</h3>
             <p>
                 KTH webb är riktlinje för style men olika delar har kopierats vid olika lägen och tolkats olika vilket gör att utseende varierar mellan olika tjänster. Även inom KTH webb finns delar som är tveksamma vad gäller principer för Användbarhet och Tillgänglighet. Det finns inte heller några riktlinjer eller principer nedskrivna för hur man ska använda de olika elementen för att uppnå bra UX.
             </p>
@@ -49,7 +49,7 @@ export default function DropdownsPage (props) {
                     Externa parter som utvecklar webbtjänster i enlighet med form på KTH:s webbplats.
                 </p>
       
-        <h3>Syfte, mål</h3>
+        <h3>Mål</h3>
             <p>
                 Målet med styleguiden är att:
                 <ul>
