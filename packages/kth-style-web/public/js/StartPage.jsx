@@ -59,8 +59,6 @@ export default function DropdownsPage (props) {
               <li>
                 Utvecklare av KTH-förvaltade webbmiljöer.       
               </li>
-            </ul>
-              <ul>
               <li>
                 Utvecklare av KTH-förvaltade webbmiljöer.       
               </li>
@@ -102,10 +100,11 @@ export default function DropdownsPage (props) {
         </p>
         <h3>Tekniskt</h3>
         <p> Läs <a href="https://github.com/KTH/kth-style#how-to-start-using-kth-styleinstruktioner">How to start using KTH style</a>  
+        </p>
       </Section>
         
       <Section title="KTH's grafiska profil" id="kths_grafiska_profil">
-            <p>Här kan vi skriva lite text om den grafiska profilen.</p>
+           
             <section>
                 <h3>Bakgrund</h3>
                 <p>
