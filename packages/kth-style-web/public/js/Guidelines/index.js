@@ -10,11 +10,13 @@ import MenuPage from './MenuPage.jsx'
 import FormPage from './FormPage.jsx'
 import DialogPage from './DialogPage.jsx'
 import ReadMorePage from './ReadMorePage.jsx'
+import GraphicalprofilePage from './GraphicalprofilePage.jsx'
 
 const pages = [
   { path: "", title: "Guidelines", header: "h2", component: StartPage},
   { path: "/usability", title: "Användbarhet", component: UsabilityPage},
   { path: "/accessability", title: "Tillgänglighet", component: AccessabilityPage},
+  { path: "/graphicalprofile", title: "Grafisk profil", component: GraphicalprofilePage},
   { path: "/testhelper", title: "Test", component: TestHelperPage},
   { path: "/structure", title: "Struktur, layout", component: StructurePage},
   { path: "/heading", title: "Rubriker, brödtext", component: HeadingPage},
