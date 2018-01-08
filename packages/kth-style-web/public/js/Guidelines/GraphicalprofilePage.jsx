@@ -50,7 +50,7 @@ export default function DropdownsPage (props) {
                     Georgia Regular, Georgia, garamond pro, garamond, times new roman, times, serif;
                 </li>
             </ul>
-            <h3>Rubriker(H2-H4) samt brödtext</h3>
+            <h3>Rubriker (h2-h4) samt brödtext</h3>
             <ul>
                 <li>
                     Serif: ...
