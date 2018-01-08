@@ -98,7 +98,7 @@ export default function DropdownsPage (props) {
             Tillkommande forminslag och avsteg från grafisk profil sker utifrån webbspecifika behov samt krav på användbarhet och tillgänglighet (se <a href="/style/guidelines/usability">Riktlinjer för användbahet</a> och <a href="/style/guidelines/accessability">Riktlinjer för tillgänglighet</a>).
           </p>
           <p>
-            Läs mer om hur KTH style har applicerat KTHs <a href="/style/guidelines/graphicalprofile">grafiska profil</a> vad gäller färger och fonter.
+            Läs mer om hur KTH style har anpassat KTHs <a href="/style/guidelines/graphicalprofile">grafiska profil</a> för webb.
           </p>
         </Section>
       
