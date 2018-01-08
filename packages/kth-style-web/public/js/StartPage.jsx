@@ -90,46 +90,36 @@ export default function DropdownsPage (props) {
             </p>
         </Section>
       
-      <Section title="Hur använder jag som utvecklare KTH style?">
-      <h3>Riktlinjer för användbarhet och tillgänglighet</h3>
-        <p>
-          Det du som utvecklare behöver göra är att ta del av de riktlinjer som först ger en övergripande förståelse av användbarhet och tillgänglighet för att sedan gå in på riktlinjer för specifikt område (som t ex information/ återkoppling). För varje område får du veta varför (du t ex ska informera/ ge återkoppling), när du ska göra det (du får t ex hjälp att välja vilken informationskomponent du ska använda för att uppnå vad) och övergripande (hur du t ex informerar). För varje komponent finns sedan komponenten presenterad, kod och enstaka UX riktlinjer listas.
-        </p>
-        <h3>Tekniskt</h3>
-        <p> Läs <a href="https://github.com/KTH/kth-style#how-to-start-using-kth-style">How to start using KTH style</a>  
-        </p>
-      </Section>
-        
-      <Section title="KTH's grafiska profil" id="kths_grafiska_profil">
-           
-            <section>
-                <p>
-                  KTH:s grafiska profil är beslutad av rektor.
-                </p>
-                <p>
-                  Profilen omfattar dock inte ett officiellt KTH-utseende på webb. Den webbform som tillämpas på centralt förvaltade webbmiljöer är en tillämpning av den grafiska profilen. Av det följer att forminslag följer grafisk profil i de fall denna är tillämplig. Hit hör val av fonter, färger, hantering av KTH:s logotyp och bruk av profilens särskilda grafiska element. 
-                </p>
-                <p>
-                  Tillkommande forminslag och avsteg från grafisk profil sker utifrån webbspecifika behov samt krav på användbarhet och tillgänglighet (se <a href="/style/guidelines/usability">Riktlinjer för användbahet</a> och <a href="/style/guidelines/accessability">Riktlinjer för tillgänglighet</a>).
-                </p>
-                <p>
-                  Läs mer om hur KTH style har applicerat KTHs <a href="https:/style/guidelines/graphicalprofile">KTH:s profil färger</a>grafisk profil vad gäller färger och fonter.
-                </p>
-        </section>
-     
+        <Section title="KTH's grafiska profil" id="kths_grafiska_profil">
+          <p>
+            KTH:s grafiska profil är beslutad av rektor.
+          </p>
+          <p>
+            Profilen omfattar dock inte ett officiellt KTH-utseende på webb. Den webbform som tillämpas på centralt förvaltade webbmiljöer är en tillämpning av den grafiska profilen. Av det följer att forminslag följer grafisk profil i de fall denna är tillämplig. Hit hör val av fonter, färger, hantering av KTH:s logotyp och bruk av profilens särskilda grafiska element. 
+          </p>
+          <p>
+            Tillkommande forminslag och avsteg från grafisk profil sker utifrån webbspecifika behov samt krav på användbarhet och tillgänglighet (se <a href="/style/guidelines/usability">Riktlinjer för användbahet</a> och <a href="/style/guidelines/accessability">Riktlinjer för tillgänglighet</a>).
+          </p>
+          <p>
+            Läs mer om hur KTH style har applicerat KTHs <a href="https:/style/guidelines/graphicalprofile">KTH:s profil färger</a>grafisk profil vad gäller färger och fonter.
+          </p>
         </Section>
-
-       <Section title="Teknik">
+      
+        <Section title="Hur använder jag som utvecklare KTH style?">
+          <h3>Riktlinjer för användbarhet och tillgänglighet</h3>
+          <p>
+            Det du som utvecklare behöver göra är att ta del av de riktlinjer som först ger en övergripande förståelse av användbarhet och tillgänglighet för att sedan gå in på riktlinjer för specifikt område (som t ex information/ återkoppling). För varje område får du veta varför (du t ex ska informera/ ge återkoppling), när du ska göra det (du får t ex hjälp att välja vilken informationskomponent du ska använda för att uppnå vad) och övergripande (hur du t ex informerar). För varje komponent finns sedan komponenten presenterad, kod och enstaka UX riktlinjer listas.
+          </p>
+          <h3>Tekniskt</h3>
+          <p> Läs <a href="https://github.com/KTH/kth-style#how-to-start-using-kth-style">How to start using KTH style</a>.</p>
           <h3>Bootstrap 4</h3>
-              <p>Här kan vi skriva lite text om KTH Style Bootstrap.</p>
-
+          <p>Här kan vi skriva lite text om KTH Style Bootstrap.</p>
           <h3>Inferno.js</h3>
-              <p>Här kan vi skriva lite text om att använda KTH Style Bootstrap med Inferno.js.</p>   
-
-         <h3>.Net etc.</h3>
-              <p>Här kan vi skriva lite text om att använda KTH Style Bootstrap i andra projekt.</p>
-       </Section>
-     
+          <p>Här kan vi skriva lite text om att använda KTH Style Bootstrap med Inferno.js.</p>  
+          <h3>.Net etc.</h3>
+          <p>Här kan vi skriva lite text om att använda KTH Style Bootstrap i andra projekt.</p>
+        </Section>
+        
     </Page>
   )
 }
