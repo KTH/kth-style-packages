@@ -92,16 +92,13 @@ export default function DropdownsPage (props) {
       
         <Section title="KTH's grafiska profil" id="kths_grafiska_profil">
           <p>
-            KTH:s grafiska profil är beslutad av rektor.
-          </p>
-          <p>
-            Profilen omfattar dock inte ett officiellt KTH-utseende på webb. Den webbform som tillämpas på centralt förvaltade webbmiljöer är en tillämpning av den grafiska profilen. Av det följer att forminslag följer grafisk profil i de fall denna är tillämplig. Hit hör val av fonter, färger, hantering av KTH:s logotyp och bruk av profilens särskilda grafiska element. 
+            KTH:s grafiska profil är beslutad av rektor. Profilen omfattar dock inte ett officiellt KTH-utseende på webb. Den webbform som tillämpas på centralt förvaltade webbmiljöer är en tillämpning av den grafiska profilen. Av det följer att forminslag följer grafisk profil i de fall denna är tillämplig. Hit hör val av fonter, färger, hantering av KTH:s logotyp och bruk av profilens särskilda grafiska element. 
           </p>
           <p>
             Tillkommande forminslag och avsteg från grafisk profil sker utifrån webbspecifika behov samt krav på användbarhet och tillgänglighet (se <a href="/style/guidelines/usability">Riktlinjer för användbahet</a> och <a href="/style/guidelines/accessability">Riktlinjer för tillgänglighet</a>).
           </p>
           <p>
-            Läs mer om hur KTH style har applicerat KTHs <a href="https:/style/guidelines/graphicalprofile">KTH:s profil färger</a>grafisk profil vad gäller färger och fonter.
+            Läs mer om hur KTH style har applicerat KTHs <a href="/style/guidelines/graphicalprofile">grafiska profil</a> vad gäller färger och fonter.
           </p>
         </Section>
       
