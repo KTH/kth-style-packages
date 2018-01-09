@@ -16,7 +16,7 @@ export default function DropdownsPage (props) {
               Då man använder färg i dekorativt syfte ska man göra detta utan att det samtidigt påverkar användbarhet och tillgänglighet. Exempel på felaktig användning:
               <ul>
                 <li>
-                  Man använder interaktiva element som knappar för att dekorera i stället för att det egentligen hade varit mer passande med en länk. Färger ska inte distrahera användaren från det som egentligen är uppgiften på sidan.
+                  Man använder interaktiva element som knappar för att dekorera i stället för att det egentligen hade varit mer passande med en länk.
                 </li>
                 <li>
                   Man använder färger för att tagga visst innehåll samtidigt som man använder färger för annat innehåll i ett dekorativt syfte.  
