@@ -34,7 +34,7 @@ export default function DropdownsPage (props) {
             För att möta tillgänglighetskrav på nivå AA för WCAG 2.0 (se riktlinje 1.4, <a href="/style/guidelines/accessability/#overgripande_riktlinjer_tillganglighet">Övergripande riktlinjer tillgänglighet</a>) har vi därför i KTH style justerat färger och textstorlek på de element som haft för dålig kontrast mellan bakgrund och text. Om det har gått har färgens ljushet ändrats något (se <a href="https://www.w3schools.com/colors/colors_picker.asp">gör färgen mörkare eller ljusare för att öka kontrasten</a>, om det gett för stor skillnad mot orginalfärgen har färgen bytts ut mot en annan profilfärg. En ytterligare positiv konsekvens av dessa förändringar är att det ger en lugnare upplevelse vilket kommer att ge en bättre läsbarhet för alla användare.
           </p>
           <p>
-            Se sammanställning av (se sammanställning av <a href="https://www.kth.se/social/group/kth-style-guide/page/farger/">färger</a>).
+            Se sammanställning av <a href="https://www.kth.se/social/group/kth-style-guide/page/farger/">färger</a>.
           </p>
           <h3>Färgstyrka</h3>
            <p> 
