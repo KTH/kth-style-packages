@@ -6,7 +6,9 @@ export default function DropdownsPage (props) {
       <h1>Riktlinjer färger</h1>
 
       <Section title="Färg">
-        <p> Färger på kompomnenter i KTH style ska ge bra tillgänglighet. Det finns några riktlinjer för hur man använder färgade komponenter som är bra att känna till:
+        <p> 
+          Färger på kompomnenter i KTH style ska ge bra tillgänglighet. Det finns några riktlinjer för hur man använder färgade komponenter som är bra att känna till:
+        </p>
           <ul>
             <li>
               Färg ska inte vara det enda sättet att skilja på information utan kan fungera som ett bra tillägg till någon visuell markering (som inte bygger på färgskillnader).
