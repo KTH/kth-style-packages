@@ -5,9 +5,8 @@ export default function DropdownsPage (props) {
     <Page>
       <h1>Riktlinjer färger</h1>
 
-      <Section title="Färg">
         <p> 
-          Färger på kompomnenter i KTH style ska ge bra tillgänglighet. Det finns några riktlinjer för hur man använder färgade komponenter som är bra att känna till:
+          Färger på kompomnenter i KTH style är anpassade för att ge bra tillgänglighet (se nedan). Det finns några riktlinjer för hur man använder färgade komponenter som kan vara bra att känna till:
         </p>
           <ul>
             <li>
@@ -25,7 +24,7 @@ export default function DropdownsPage (props) {
               </ul>
             </li>
           </ul>
-        </Section>
+
         <Section title="Färger och tillgänglighet">
           <h3>Kontrast</h3>
           <p>
