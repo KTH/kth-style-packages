@@ -35,7 +35,7 @@ export default function DropdownsPage (props) {
                 Målet med KTH style är att:
                 <ul>
                     <li>
-                        Förbättra upplevelsen för slutanvändaren, som är den som tar del av innehåll eller använder funktioner på KTH:s webbplats.
+                        Ge slutanvändaren, som är den som tar del av innehåll eller använder funktioner på KTHs webbplats, en bra användarupplevelse.
                     </li>
                     <li>
                         Det som möter slutanvändaren ska se ut och bete sig konsekvent i alla miljöer som omfattas av KTH:s centralt förvaltade webbform.
@@ -52,6 +52,10 @@ export default function DropdownsPage (props) {
                         Styleguiden bygger på principer för användbarhet och tillgänglighet (se <a href="/style/guidelines/usability">Riktlinjer för användbahet</a> och <a href="/style/guidelines/accessability">Riktlinjer för tillgänglighet</a>).
                     </li>
                 </ul>
+            </p>
+         
+            <p>
+              Läs också <a href="/style/guidelines#overgripande_principer">övergripande principer</a> för KTH style.
             </p>
          
             <h3>Målgrupp</h3>
