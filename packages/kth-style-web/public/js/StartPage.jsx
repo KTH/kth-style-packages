@@ -60,25 +60,23 @@ export default function DropdownsPage (props) {
                 Utvecklare av KTH-förvaltade webbmiljöer.       
               </li>
               <li>
-                Webbredaktörer och webbansvariga på KTH använder KTH style för allmän orientering i KTH:s webbform. För riktlinjer som styr formmässiga delar av det redaktionella arbetet hänvisas till dokumentation på KTH Intranät.  
+                Externa parter som utvecklar webbtjänster på KTHs webbplats.     
               </li>
-               <li>
-                Externa parter som utvecklar webbtjänster i enlighet med form på KTH:s webbplats.     
+              <li>
+                Webbredaktörer och webbansvariga på KTH kn använda KTH style för allmän orientering i KTHs webbform. För riktlinjer som styr det redaktionella arbetet hänvisas till dokumentation på KTHs Intranät (se <a href="https://intra.kth.se/administration/kommunikation/webbpublicering/skapa-innehall">Publicera på webb/ Skapa innehåll</a>).  
               </li>
+               
            </ul>
         
           <h3>Avgränsning</h3>
             <p>
-              Styleguiden gäller både för applikationer som används internt på KTH och för externa målgrupper.
+                KTH style omfattar webb som förvaltas av KTH centralt. KTH style omfattar inte applikationer som förvaltas lokalt på KTH. 
             </p>
             <p>
-                KTH style omfattar webb som förvaltas av KTH centralt. KTH style omfattar inte applikationer som förvaltas lokalt på KTH och baseras på fri form, egna tolkningar av den grafiska profilen eller daterade centrala stilmallar (ambitionen är att fasa ut sådan form).
+                KTH style omfattar främst de element som är gemensamma för flertalet applikationer. Övriga element som är specifika för en viss applikation, eller del av, ska genomgå samma översyn men inte göras tillgängliga i KTH style (det kan vara en egen del som utgår från KTH style).
             </p>
             <p>
-                KTH style omfattar främst de element som är gemensamma för flertalet applikationer. Övriga element som är specifika för en viss applikation eller del av ska genomgå samma översyn men inte göras tillgängliga i KTH style (kan vara en egen del som utgår från KTH style).
-            </p>
-            <p>
-                KTH style tar främst fasta på enskilda element och ger endast översiktlig vägledning i hur dessa bör förhålla sig till varandra. Olika applikationer ger olika förutsättningar för hur forminslagen kan disponeras över olika ytor. Är man osäker på tillämpning av KTH style, kontakta <a href="https://www.kth.se/social/group/kth-style-guide/">KTH style gruppen</a> som förvaltar riktlinjerna.
+                KTH style tar främst fasta på enskilda element och ger endast översiktlig vägledning i hur dessa ska förhålla sig till varandra. Olika applikationer har olika förutsättningar för hur komponenter kan disponeras över en yta. Är man osäker på tillämpning av KTH style, kontakta <a href="https://www.kth.se/social/group/kth-style-guide/">KTH style gruppen</a> som förvaltar riktlinjerna.
             </p>
             <p>
                 KTH style ska stödja de webbläsare och versioner som WIKS stödjer.
