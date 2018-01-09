@@ -63,7 +63,7 @@ export default function DropdownsPage (props) {
                 Externa parter som utvecklar webbtjänster på KTHs webbplats.     
               </li>
               <li>
-                Webbredaktörer och webbansvariga på KTH kn använda KTH style för allmän orientering i KTHs webbform. För riktlinjer som styr det redaktionella arbetet hänvisas till dokumentation på KTHs Intranät (se <a href="https://intra.kth.se/administration/kommunikation/webbpublicering/skapa-innehall">Publicera på webb/ Skapa innehåll</a>).  
+                Webbredaktörer och webbansvariga på KTH kan använda KTH style för allmän orientering i KTHs webbform. För riktlinjer som styr det redaktionella arbetet hänvisas till dokumentation på KTHs Intranät (se <a href="https://intra.kth.se/administration/kommunikation/webbpublicering/skapa-innehall">Publicera på webb/ Skapa innehåll</a>).  
               </li>
                
            </ul>
