@@ -76,7 +76,7 @@ export default function DropdownsPage (props) {
                 KTH style omfattar främst de element som är gemensamma för flertalet applikationer. Övriga element som är specifika för en viss applikation, eller del av, ska genomgå samma översyn men inte göras tillgängliga i KTH style (det kan vara en egen del som utgår från KTH style).
             </p>
             <p>
-                KTH style tar främst fasta på enskilda element och ger endast översiktlig vägledning i hur dessa ska förhålla sig till varandra. Olika applikationer har olika förutsättningar för hur komponenter kan disponeras över en yta. Är man osäker på tillämpning av KTH style, kontakta <a href="https://www.kth.se/social/group/kth-style-guide/">KTH style gruppen</a> som förvaltar riktlinjerna.
+                KTH style tar främst fasta på enskilda komponenter och ger endast översiktlig vägledning i hur dessa ska förhålla sig till varandra. Olika applikationer har olika förutsättningar för hur komponenter kan disponeras över en yta. Är man osäker på tillämpning av KTH style, kontakta <a href="https://www.kth.se/social/group/kth-style-guide/">KTH style gruppen</a> som förvaltar riktlinjerna.
             </p>
             <p>
                 KTH style ska stödja de webbläsare och versioner som WIKS stödjer.
