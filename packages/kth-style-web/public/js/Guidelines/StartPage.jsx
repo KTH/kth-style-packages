@@ -30,14 +30,14 @@ export default function DropdownsPage (props) {
         </ul>
       </Section> 
       
-      <Section title="Vad är användbarhet?">
+      <Section title="Användbarhet">
          <Narrative>
             <p>Användbarhet definieras enligt ISO-normen 9241-11 som följande: Den grad i vilken användare i ett givet sammanhang kan bruka en produkt för att uppnå specifika mål på ett ändamålsenligt, effektivt och för användaren tillfredsställande sätt.</p>
           </Narrative>
           <p>Ta del av <a href="/style/guidelines/usability">Riktlinjer användbarhet</a></p>
         </Section>
     
-        <Section title="Vad är tillgänglighet?">
+        <Section title="Tillgänglighet">
           <Narrative>
             <p>Tillgänglighet betyder användbarhet för alla oavsett funktionsvariation.</p>
           </Narrative>
