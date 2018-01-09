@@ -10,16 +10,16 @@ export default function DropdownsPage (props) {
         </p>
           <ul>
             <li>
-              Färg ska inte vara det enda sättet att skilja på information utan kan fungera som ett bra tillägg till någon visuell markering (som inte bygger på färgskillnader).
+              Färg ska inte vara det enda sättet att skilja på olika typer av information utan färg kan fungera som ett komplement (t ex ska en röd knapp ha en förklarande text). Läs mer om färgblindhet nedan.
             </li>
             <li>
               Då man använder färg i dekorativt syfte ska man göra detta utan att det samtidigt påverkar användbarhet och tillgänglighet. Exempel på felaktig användning:
               <ul>
                 <li>
-                  Man använder interaktiva element som knappar för att dekorera i stället för att det egentligen hade varit mer passande med en länk. Färger ska inte distrahera användaren från det som egentligen är uppgiften på sidan (Användbarhet).
+                  Man använder interaktiva element som knappar för att dekorera i stället för att det egentligen hade varit mer passande med en länk. Färger ska inte distrahera användaren från det som egentligen är uppgiften på sidan.
                 </li>
                 <li>
-                  Om man använder färger för att tagga innehåll så ska man inte samtidigt använda färger i ett dekorativt syfte.  
+                  Man använder färger för att tagga visst innehåll samtidigt som man använder färger för annat innehåll i ett dekorativt syfte.  
                 </li>
               </ul>
             </li>
