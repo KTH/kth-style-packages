@@ -69,6 +69,9 @@ export default function DropdownsPage (props) {
         
           <h3>Avgränsning</h3>
             <p>
+              Styleguiden gäller både för applikationer som används internt på KTH och för externa målgrupper.
+            </p>
+            <p>
                 KTH style omfattar webb som förvaltas av KTH centralt. KTH style omfattar inte applikationer som förvaltas lokalt på KTH och baseras på fri form, egna tolkningar av den grafiska profilen eller daterade centrala stilmallar (ambitionen är att fasa ut sådan form).
             </p>
             <p>
