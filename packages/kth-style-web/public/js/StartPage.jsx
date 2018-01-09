@@ -107,7 +107,7 @@ export default function DropdownsPage (props) {
         <Section title="Hur använder jag som utvecklare KTH style?">
           <h3>Riktlinjer för användbarhet och tillgänglighet</h3>
           <p>
-            Det du som utvecklare behöver göra är att ta del av de riktlinjer som först ger en övergripande förståelse av användbarhet och tillgänglighet för att sedan gå in på riktlinjer för specifikt område (som t ex information/ återkoppling). För varje område får du veta varför (du t ex ska informera/ ge återkoppling), när du ska göra det (du får t ex hjälp att välja vilken informationskomponent du ska använda för att uppnå vad) och övergripande (hur du t ex informerar). För varje komponent listas sedan komponenten, kod och UX riktlinjer specifika för komponenten.
+            Det du som utvecklare behöver göra är att ta del av de <a href="/style/guidelines">riktlinjer</a> som först ger en övergripande förståelse av användbarhet och tillgänglighet för att sedan gå in på riktlinjer för specifikt område (som t ex information/ återkoppling). För varje område får du veta varför (du t ex ska informera/ ge återkoppling), när du ska göra det (du får t ex hjälp att välja vilken informationskomponent du ska använda för att uppnå vad) och övergripande (hur du t ex informerar). För varje komponent listas sedan komponenten, kod och UX riktlinjer specifika för komponenten.
           </p>
           <h3>Tekniskt</h3>
           <h4>Bootstrap 4, Inferno</h4>
