@@ -6,59 +6,46 @@ export default function DropdownsPage (props) {
       <h1>Riktlinjer färger</h1>
 
       <Section title="Färg">
-        <h3>Hur vi använder färger</h3>
+        <p> Färger på kompomnenter i KTH style ska ge bra tillgänglighet. Det finns några riktlinjer för hur man använder färgade komponenter som är bra att känna till:
+          <ul>
+            <li>
+              Färg ska inte vara det enda sättet att skilja på information utan kan fungera som ett bra tillägg till någon visuell markering (som inte bygger på färgskillnader).
+            </li>
+            <li>
+              Då man använder färg i dekorativt syfte ska man göra detta utan att det samtidigt påverkar användbarhet och tillgänglighet. Exempel på felaktig användning:
               <ul>
-                  <li>
-                      Vi utgår ifrån <a href="https://intra.kth.se/polopoly_fs/1.458089!/image/fargreferens_png.png">KTH:s profil färger</a> men har testat kontrast och om dålig kontrast justerat ljusheten (p g a tillgänglighet). Läs mer om kontrast under <a href="/style/guidelines/accessability/#farger_och_tillganglighet">Färger och tillgänglighet</a>.
-                  </li>
-                  <li>
-                      Färg ska inte vara det enda sättet att skilja på information utan kan fungera som ett bra tillägg till någon visuell markering (som inte bygger på färgskillnader).
-                  </li>
-                  <li>
-                      Då man använder färg i dekorativt syfte ska man göra detta utan att det samtidigt påverkar användbarhet och tillgänglighet. Exempel på felaktig användning:
-                      <ul>
-                          <li>
-                              Man använder interaktiva element som knappar för att dekorera i stället för att det egentligen hade varit mer passande med en länk. Färger ska inte distrahera användaren från det som egentligen är uppgiften på sidan (Användbarhet).
-                          </li>
-                          <li>
-                              Man använder färgade plattor med vit text som inte ger tillräcklig kontrast och därför försvårar läsbarhet (Tillgänglighet).
-                          </li>
-                          <li>
-                              Man hoppar över H2:an för att man inte tycker om den gröna färgen på rubriken (Tillgänglighet).
-                          </li>
-                      </ul>
-                  </li>
-                  <li>
-                      Man kan använda färger för att markera, koda innehåll. Tänk på att i samma sammanhang inte samtidigt använda färger i ett dekorativt syfte.
-                  </li>
+                <li>
+                  Man använder interaktiva element som knappar för att dekorera i stället för att det egentligen hade varit mer passande med en länk. Färger ska inte distrahera användaren från det som egentligen är uppgiften på sidan (Användbarhet).
+                </li>
+                <li>
+                  Om man använder färger för att tagga innehåll så ska man inte samtidigt använda färger i ett dekorativt syfte.  
+                </li>
               </ul>
-          <h3>Annpassning av KTHs profilfärger</h3>
-              <p>
-              Målet har varit att kth.se ska möta tillgänglighetskrav på nivå AA för WCAG 2.0 (se riktlinje 1.4, <a href="/style/guidelines/accessability/#overgripande_riktlinjer_tillganglighet">Övergripande riktlinjer tillgänglighet</a>) genom att för kth.se ändra färger, och textstorlek på de element som haft för dålig kontrast mellan bakgrund och text. En ytterligare positiv konsekvens av dessa förändringar är att kth.se kommer att ge en lugnare upplevelse vilket kommer att ge en bättre läsbarhet för alla användare.
-              </p>
-              <p>
-              Vi har inte velat göra för stora förändringar; kth.se ska fortfarande ge samma design-upplevelse som är baserat på den kth-profil som togs fram för ett antal år sen. Större förändringar än det vi föreslagit här kräver en större redesign med nya profilfärger, annan layout, etc.
-              </p>
-              <p>
-              I nuvarande förslag har vi mörkat ner den ljusa blå profilfärgen till nivå AA för stor text (se <a href="https://www.kth.se/social/group/kth-style-guide/page/farger/">Färger</a>) och ersatt den ljusa gröna med den gröna profilfärgen, vilket gör att vi inte frångår KTHs profil för mycket. Det kräver dock att vit text på färgad bakgrund har en fontstorlek på minst 14 om fet och annars 18 px. Alla element utom plattor kommer uppfylla detta.
-              </p>
+            </li>
+          </ul>
         </Section>
-        <Section title="Font">
-            <h3>Titel</h3>
-            <ul>
-                <li>
-                    Georgia Regular, Georgia, garamond pro, garamond, times new roman, times, serif;
-                </li>
-            </ul>
-            <h3>Rubriker (h2-h4) samt brödtext</h3>
-            <ul>
-                <li>
-                    Serif: ...
-                </li>
-                <li>
-                    Sans serif: font-family: Arial, Helvetica Neue, helvetica, sans-serif
-                </li>
-            </ul>
+        <Section title="Färger och tillgänglighet">
+          <h3>Kontrast</h3>
+          <p>
+            Vissa av  <a href="https://intra.kth.se/polopoly_fs/1.458089!/image/fargreferens_png.png">KTHs profil färger</a> har i dagsläget inte tillräcklig kontrast (<a href="http://www.dasplankton.de/ContrastA/">kontrollera kontrasten</a>).
+          </p>   
+          <p>
+            För att möta tillgänglighetskrav på nivå AA för WCAG 2.0 (se riktlinje 1.4, <a href="/style/guidelines/accessability/#overgripande_riktlinjer_tillganglighet">Övergripande riktlinjer tillgänglighet</a>) har vi därför i KTH style justerat färger och textstorlek på de element som haft för dålig kontrast mellan bakgrund och text. Om det har gått har färgens ljushet ändrats något (se <a href="https://www.w3schools.com/colors/colors_picker.asp">gör färgen mörkare eller ljusare för att öka kontrasten</a>, om det gett för stor skillnad mot orginalfärgen har färgen bytts ut mot en annan profilfärg. En ytterligare positiv konsekvens av dessa förändringar är att det ger en lugnare upplevelse vilket kommer att ge en bättre läsbarhet för alla användare.
+          </p>
+          <p>
+            Se sammanställning av (se sammanställning av <a href="https://www.kth.se/social/group/kth-style-guide/page/farger/">färger</a>).
+          </p>
+          <h3>Färgstyrka</h3>
+           <p> 
+            Starka färger ska undvikas då de har negativ påverkan på personer med koncentrationssvårighter. Det finns inget sätt att mäta om en färg är för stark. Detta behöver utredas vidare ...
+           </p>
+           <h3>Färgblindhet</h3>
+           <p>
+            När man använder färger för att kunna filtrera information är det viktigt att färgerna går att särskilja även då du är färgblind. Det finns olika typer av färgblindhet, och de är olika vanliga (se <a href="https://sv.wikipedia.org/wiki/Defekt_f%C3%A4rgseende">Defekt färseende</a>). 
+           </p>
+           <p>  
+            Du kan testa hur en sida ser ut för olika färgblindheter genom att installera en plugin för färgblindhet i Chrome webläsare (se <a href="https://chrome.google.com/webstore/detail/colorblinding/dgbgleaofjainknadoffbjkclicbbgaa">Colorblinding</a>).
+           </p>
         </Section>
     </Page>
   )
