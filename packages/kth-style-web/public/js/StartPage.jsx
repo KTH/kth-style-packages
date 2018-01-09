@@ -21,7 +21,7 @@ export default function DropdownsPage (props) {
                 KTH Style är en guide för style med tillhörande riktlinjer för användbarhet och tillgänglighet. 
             </p>
             <p>
-               Arbetet drivs av KTH Style gruppen som består av användbarhetsspecialist på KTHs IT-avdelning, verksamhetsansvarig och huvudredaktör för KTHs centrala webbplats samt intranätet. Arbetet med att implementera komponenter och bygga upp dokumentation för KTH Style har utförts av utvecklare och användbarhetsspecialist i KTH Style utvecklargrupp.
+               Arbetet drivs av <a href="https://www.kth.se/social/group/kth-style-guide/">KTH style gruppen</a> som består av användbarhetsspecialist på KTHs IT-avdelning, verksamhetsansvarig och huvudredaktör för KTHs centrala webbplats samt intranätet. Arbetet med att implementera komponenter och bygga upp dokumentation för KTH Style har utförts av utvecklare och användbarhetsspecialist i KTH Style utvecklargrupp.
             </p>
             <p>
               Tanken med KTH Style är att underlätta för utvecklarare på KTHs IT avdelning att ta fram tillgängliga och användbara webbapplikationer. Grunden i KTH Style är därför att bygga in så mycket som möjligt av riktlinjerna för användbarhet och tillgänglighet i komponenterna. De riktlinjer som inte går att bygga in inkluderas i anslutning till komponenterna.
@@ -86,7 +86,7 @@ export default function DropdownsPage (props) {
                 Tidigare fungerade KTH webb som riktlinje för style men eftersom olika delar kopierades vid olika lägen och tolkades olika medförde det att utseende mellan olika tjänster varierade. Även inom KTH webb finns delar som är tveksamma vad gäller principer för användbarhet och tillgänglighet. Det fanns inte heller några riktlinjer eller principer nedskrivna för hur man ska använda de olika elementen för att uppnå bra användbarhet och tillgänglighet. Style har tidigare mer handlat om att man ska förstå att man är på kth.se ("det ska se kth-igt ut").
             </p>
             <p>
-                För att förbättra användbarhet och tillgängligheten på KTH webb startades KTH Style gruppen vars arbete bestått i att inventera kth.se, rensa ut och ta fram nya/ modifierade komponenter med riktlinjer (du hittar arbetsmatial och kontaktpersoner i <a href="https://www.kth.se/social/group/kth-style-guide/">KTH style gruppen</a>. Samtidigt pågick ett arbete med att bygga uppe ett ramverk för applikationer där KTH Style inkluderats och dokumentation för KTH Style byggts upp. När det här skrivs har stora delar av KTH webb (kth.se) ännu inte uppdaterats utifrån KTH style.
+                För att förbättra användbarhet och tillgängligheten på KTH webb startades KTH Style gruppen vars arbete bestått i att inventera kth.se, rensa ut och ta fram nya/ modifierade komponenter med riktlinjer (du hittar arbetsmatial och kontaktpersoner i <a href="https://www.kth.se/social/group/kth-style-guide/">KTH style gruppen</a>). Samtidigt pågick ett arbete med att bygga uppe ett ramverk för applikationer där KTH Style inkluderats och dokumentation för KTH Style byggts upp. När det här skrivs har stora delar av KTH webb (kth.se) ännu inte uppdaterats utifrån KTH style.
             </p>
         </Section>
       
