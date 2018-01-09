@@ -38,7 +38,7 @@ export default function DropdownsPage (props) {
                         Ge slutanvändaren, som är den som tar del av innehåll eller använder funktioner på KTHs webbplats, en bra användarupplevelse.
                     </li>
                     <li>
-                        Det som möter slutanvändaren ska se ut och bete sig konsekvent i alla miljöer som omfattas av KTH:s centralt förvaltade webbform.
+                        Det som möter slutanvändaren ska se ut och bete sig konsekvent i alla miljöer som omfattas av webb som är förvaltade av KTH centralt.
                     </li>
                 </ul>
             </p>
