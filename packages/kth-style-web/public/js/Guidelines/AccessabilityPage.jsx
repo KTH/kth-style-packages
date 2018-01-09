@@ -72,29 +72,7 @@ export default function DropdownsPage (props) {
           </p>
         </Section>
 
-        <Section title="Färger och tillgänglighet">
-          <h3>Kontrast</h3>
-          <p> 
-          Kontrasten mellan text och bakgrund kan behöva justeras för att möta Tillgänglighetskraven (se riktlinje 1.4, <a href="#overgripande_riktlinjer_tillganglighet">Övergripande riktlinjer tillgänglighet</a>) 
-          </p>
-          <p>  
-             Börja med att <a href="http://www.dasplankton.de/ContrastA/">kontrollera kontrasten</a>.
-          </p>
-          <p>
-            <a href="https://www.w3schools.com/colors/colors_picker.asp">Gör färgen mörkare eller ljusare för att öka kontrasten</a>.
-          </p>
-          <h3>Färgstyrka</h3>
-            <p> 
-              Starka färger ska undvikas då de har negativ påverkan på personer med koncentrationssvårighter. Det finns inget sätt att mäta om en färg är för stark. Detta behöver utredas vidare ...
-            </p>
-          <h3>Färgblindhet</h3>
-          <p>
-            När man använder färger för att kunna filtrera information är det viktigt att färgerna går att särskilja även då du är färgblind. Det finns olika typer av färgblindhet, och de är olika vanliga (se <a href="https://sv.wikipedia.org/wiki/Defekt_f%C3%A4rgseende">Defekt färseende</a>). 
-          </p>
-          <p>  
-            Du kan testa hur en sida ser ut för olika färgblindheter genom att installera en plugin för färgblindhet i Chrome webläsare (se <a href="https://chrome.google.com/webstore/detail/colorblinding/dgbgleaofjainknadoffbjkclicbbgaa">Colorblinding</a>).
-          </p>
-        </Section>
+        
     
     </Page>
   )
