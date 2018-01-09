@@ -14,7 +14,7 @@ export default function DropdownsPage (props) {
         Det finns dock några saker, som inte ligger på komponent-nivå, som du behöver tänka på när du kodar för att det ska bli tillgängligt för användaren. Nedan (under <a href="#tillganglig_kod">Tillgänglig kod</a>) ser du en sammanställning av de viktigaste sakerna att tänka på vad gäller webbutveckling. 
       </p>
       <p>
-      En del av arbetet med att ta fram tillgängliga komponenter har handlat om att se över de färger vi använt (läs mer om <a href="/style/guidelines/colors#farger_och_tillganglighet">Färger och Tillgänglighet</a>.
+      En del av arbetet med att ta fram tillgängliga komponenter har handlat om att se över de färger vi använt (läs mer om <a href="/style/guidelines/colors#farger_och_tillganglighet">färger och tillgänglighet</a>).
       </p>
         
       <Section title="Övergripande riktlinjer tillgänglighet">
