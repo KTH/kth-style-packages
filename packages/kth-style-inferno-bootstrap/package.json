@@ -18,11 +18,11 @@
     "classnames": "^2.2.5",
     "inferno": "^3.7.1",
     "inferno-animation": "^0.4.5",
-    "inferno-bootstrap": "^0.2.4",
+    "inferno-bootstrap": "^0.2.7",
     "inferno-component": "^3.7.1",
-    "inferno-router": "^3.7.1",
     "inferno-popper": "^0.1.9",
-    "kth-style": "^2.0.0-alpha.24"
+    "inferno-router": "^3.7.1",
+    "kth-style": "^2.0.1-0"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
