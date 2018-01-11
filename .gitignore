@@ -60,3 +60,6 @@ dist
 packages/kth-style-web/build
 /tmp
 package-lock.json
+packages/kth-style/package-lock.json
+packages/kth-style-inferno-bootstrap/package-lock.json
+packages/kth-style-inferno-bootstrap-components/package-lock.json
