@@ -7,8 +7,8 @@
     "start": "npm run build-docs && node docs/server.js",
     "prepare": "npm run build",
     "// postversion": "git push && git push --tags",
-    "build": "rm -rf ./dist && NODE_ENV=production babel lib --out-dir dist  --source-maps",
-    "build-dev": "rm -rf ./dist && babel lib --out-dir dist --watch --source-maps",
+    "build": "rm -rf ./dist && NODE_ENV=production babel lib --out-dir dist  --source-maps && tsc",
+    "build-dev": "rm -rf ./dist && babel lib --out-dir dist --watch --source-maps && tsc",
     "build-docs": "rm -rf ./docs/dist && node_modules/.bin/webpack --config ./docs/webpack.config.js",
     "build-docs-dev": "rm -rf ./docs/dist && node_modules/.bin/webpack --watch --config ./docs/webpack.config.js"
   },
@@ -50,6 +50,9 @@
     "sass-loader": "^6.0.6",
     "sinon": "^2.3.8",
     "style-loader": "^0.18.2",
+    "tslint": "^5.8.0",
+    "tslint-config-standard": "^7.0.0",
+    "typescript": "^2.6.2",
     "webpack": "^2.7.0"
   }
 }
