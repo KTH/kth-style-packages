@@ -157,7 +157,7 @@ function PageMenu(props) {
         <h4 className="SectionMenu-Header">Page Sections</h4>
       </li>
       {
-        props.pageSections.sort((a, b) => a.title == b.title ? 0 : (a.title < b.title ? -1 : 1)).map((item) => {
+        props.pageSections.map((item) => {
           return (
             <li class="nav-item">
               <a className="nav-link SectionLink" href={'#' + item.anchor} onClick={(e) => { 
