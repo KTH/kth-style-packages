@@ -1,7 +1,7 @@
 @mixin btn-coloring-base($color, $colorHover) {
   background-color: $color;
   border-color: $color;
-  &:hover {
+  &:hover, &:visited {
     background-color: $colorHover;
     border-color: $colorHover;
   }
@@ -31,13 +31,9 @@
   color: $textColor;
   border-color: $darkGrey;
 
-  &:hover {
+  &:hover, &:visited, &:disabled {
     border-color: $darkGrey;
     color: $textColor;
-  }
-
-  &:disabled {
-    border-color: $darkGrey;
   }
 }
 
