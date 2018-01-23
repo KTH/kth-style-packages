@@ -77,5 +77,3 @@ Then link to the KTH-bootstrap stylesheet in /dist directory, f.e.:
 ```
 
 
-
-
