@@ -245,9 +245,7 @@ export function UXComment ({ children }, context) {
 
   return (
     <Animated prefix="ContentAnimation" className="UXComment">
-      <div className="UXComment-Content">
         {children}
-      </div>
     </Animated>
   )
 }

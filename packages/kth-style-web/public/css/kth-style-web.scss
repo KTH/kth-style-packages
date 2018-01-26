@@ -333,31 +333,29 @@ pre[class*="language-"]:before {
 }
 
 .UXComment {
-  display: flex;
-  align-items: center;
   position: relative;
   min-height: 1.75em;
   margin-top: 3rem;
   padding: 1rem 0 0.2em;
   margin-bottom: 1.3rem;
-}
 
-.UXComment-Content :last-child {
-  margin-bottom: 0em;
-}
-
-.UXComment::before {
-  content: 'UX';
-  position: absolute;
-  left: 0;
-  top: 0;
-  border-radius: 50%;
-  background-color: grey;
-  color: #fafafa;
-  padding: 0.4em 0.3em 0.2em;
-  font-size: 0.85em;
-  font-weight: bold;
-  border: 0.1em solid #fff;
+  &::before {
+    content: 'UX';
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 50%;
+    background-color: grey;
+    color: #fafafa;
+    padding: 0.4em 0.3em 0.2em;
+    font-size: 0.85em;
+    font-weight: bold;
+    border: 0.1em solid #fff;
+  }
+  
+  &>:last-child {
+    margin-bottom: 0em;
+  }
 }
 
 /* View State collapsables */
