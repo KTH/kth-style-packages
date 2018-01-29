@@ -21,7 +21,7 @@ export default function DropdownsPage (props) {
                <li>
                  Vi har tex ett utseende på information som kan fällas ut där vi använder oss av en ikon i form av en specifik pil. Liknande pilar ska därför inte användas framför länkar som leder använder iväg till annan sida.
                </li>
-             <ul>
+             </ul>
           </li>
           <li>
              Element har stämts av mot principer för användbarhet och tillgänglighet (se länkar nedan).
