@@ -1,4 +1,4 @@
-import { Page, Section, Stage, Scene, Code, Narrative } from '../components.jsx'
+import { Page, Section, Stage, Scene, Code, Narrative, UXComment} from '../components.jsx'
 
 export default function TypographyPage () {
   return (
@@ -16,7 +16,7 @@ export default function TypographyPage () {
       <Section title="Titel">  
         <Stage> 
           <h1>En huvudrubrik eller titel ska inte vara för lång</h1>
-          <div>
+          <UXComment>
             <h4>Användning</h4>
             <ul>
                 <li>
@@ -37,13 +37,13 @@ export default function TypographyPage () {
                     Se <a href="/style/guidelines/heading#generella_riktlinjer_for_rubriker"> Generella riktlinjer för rubriker.</a>
                 </li>
             </ul>
-          </div>
+          </UXComment>
         </Stage>
       </Section>
       <Section title="Rubriknivå 2"> 
         <Stage> 
           <h2>Med rubriknivå två gör du en grov indelning av sidan</h2>
-          <div>
+          <UXComment>
             <h4>Användning</h4>
             <ul>
                 <li>
@@ -61,13 +61,13 @@ export default function TypographyPage () {
                       Se <a href="/style/guidelines/heading#generella_riktlinjer_for_rubriker"> Generella riktlinjer för rubriker.</a>
                 </li>
             </ul>
-          </div>
+          </UXComment>
         </Stage>
       </Section>
       <Section title="Rubriknivå 3">  
         <Stage> 
           <h3>Med rubriknivå tre så gör du en finare indelning av sidan</h3>
-          <div>
+          <UXComment>
             <h4>Användning</h4>
             <ul>
                 <li>
@@ -85,13 +85,13 @@ export default function TypographyPage () {
                 Se <a href="/style/guidelines/heading#generella_riktlinjer_for_rubriker"> Generella riktlinjer för rubriker.</a>
             </li>
             </ul>
-          </div>
+          </UXComment>
         </Stage>
       </Section>
       <Section title="Rubriknivå 4">  
         <Stage> 
           <h4>Den finaste rubrikindelningen ger rubriknivå fyra</h4>
-          <div>
+          <UXComment>
             <h4>Användning</h4>
             <ul>
                 <li>
@@ -109,13 +109,13 @@ export default function TypographyPage () {
                       Se <a href="/style/guidelines/heading#generella_riktlinjer_for_rubriker"> Generella riktlinjer för rubriker.</a>
                 </li>
             </ul> 
-          </div>
+          </UXComment>
         </Stage>
       </Section>
       <Section title="Brödtext"> 
         <Stage> 
           <p>Brödtext används för innehållstext som är en längre sammanhängande text indelad i stycken för att ge bra läsbarhet.</p>
-          <div>
+          <UXComment>
             <h4>Användning</h4>
             <ul>
                 <li>
@@ -144,7 +144,7 @@ export default function TypographyPage () {
                     Vill man ge titlar på skrifter och liknande en grafisk markering är citattecken att föredra framför kursiv text.
                 </li>
             </ul>
-          </div>
+          </UXComment>
         </Stage>
       </Section>
     </Page>
