@@ -16,7 +16,7 @@ export default function DropdownsPage (props) {
              Komponenter som ingår i KTH Style är reducerade till ett minimum. Komponenter finnas för att de har en specifik funktion, ett användningsområde.
           </li>
           <li>
-             För varje funktion ska det finnas en specifik komponent och en komponent ska ha en specifik funktion. På så sätt är utseende och beteende för ett element ihopkopplade och användaren kan förvänta sig att det är samma beteende för samma utseende.
+             För varje funktion ska det finnas en specifik komponent och en komponent ska ha en specifik funktion. På så sätt är utseende och beteende för en komponent ihopkopplade och användaren kan förvänta sig att det är samma beteende för samma utseende.
              <ul>
                <li>
                  Vi har tex ett utseende på information som kan fällas ut där vi använder oss av en ikon i form av en specifik pil. Liknande pilar ska därför inte användas framför länkar som leder använder iväg till annan sida.
@@ -24,10 +24,10 @@ export default function DropdownsPage (props) {
              </ul>
           </li>
           <li>
-             Element har stämts av mot principer för användbarhet och tillgänglighet (se länkar nedan).
+             Komponenter har stämts av mot principer för användbarhet och tillgänglighet (se länkar nedan).
           </li>
           <li>
-             Elementen utgår ifrån <a href="/style/#kths_grafiska_profil">KTHs grafiska profil</a> om det inte strider mot principer för tillgänglighet och användbarhet.
+             Komponenter utgår ifrån <a href="/style/#kths_grafiska_profil">KTHs grafiska profil</a> om det inte strider mot principer för tillgänglighet och användbarhet.
           </li>
           <li>
              Så stor del som möjligt av formen sätts med automatik i applikationerna och är inte beroende av webbredaktörernas val.
