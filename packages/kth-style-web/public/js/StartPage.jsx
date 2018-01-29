@@ -18,7 +18,7 @@ export default function DropdownsPage (props) {
       
        <Section title="Vad är KTH Style?">
             <p>
-                KTH Style är en guide för style med tillhörande riktlinjer för användbarhet och tillgänglighet. 
+                KTH Style är en guide för standardiserad form med tillhörande riktlinjer för användbarhet och tillgänglighet. 
             </p>
             <p>
               Tanken med KTH Style är att underlätta för utvecklarare på KTHs IT avdelning att ta fram tillgängliga och användbara webbapplikationer. Grunden i KTH Style är därför att bygga in så mycket som möjligt av riktlinjerna för användbarhet och tillgänglighet i komponenterna. De riktlinjer som inte går att bygga in inkluderas i anslutning till komponenterna.
