@@ -21,7 +21,7 @@ export default function DropdownsPage (props) {
                 KTH Style är en guide för standardiserad form med tillhörande riktlinjer för användbarhet och tillgänglighet. 
             </p>
             <p>
-              Tanken med KTH Style är att underlätta för utvecklarare på KTHs IT avdelning att ta fram tillgängliga och användbara webbapplikationer. Grunden i KTH Style är därför att bygga in så mycket som möjligt av riktlinjerna för användbarhet och tillgänglighet i komponenterna. De riktlinjer som inte går att bygga in inkluderas i anslutning till komponenterna.
+              Tanken med KTH Style är att underlätta för utvecklare på KTHs IT avdelning att ta fram tillgängliga och användbara webbapplikationer. Grunden i KTH Style är därför att bygga in så mycket som möjligt av riktlinjerna för användbarhet och tillgänglighet i komponenterna. De riktlinjer som inte går att bygga in inkluderas i anslutning till komponenterna.
             </p>
             <p>
                Arbetet drivs av <a href="https://www.kth.se/social/group/kth-style-guide/">KTH style gruppen</a> som består av användbarhetsspecialist på KTHs IT-avdelning, verksamhetsansvarig och huvudredaktör för KTHs centrala webbplats samt intranätet. Arbetet med att implementera komponenter och bygga upp dokumentation för KTH Style har utförts av utvecklare och användbarhetsspecialist i KTH Style utvecklargrupp.
