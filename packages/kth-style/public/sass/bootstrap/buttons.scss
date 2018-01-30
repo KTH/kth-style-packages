@@ -30,10 +30,10 @@
 .btn-secondary {
   @include btn-coloring-base($white, $lightGrey);
   color: $textColor;
-  border-color: $darkGrey;
+  border-color: $midGrey;
 
   &:hover, &:visited, &:disabled {
-    border-color: $darkGrey;
+    border-color: $midGrey;
     color: $textColor;
   }
 }
