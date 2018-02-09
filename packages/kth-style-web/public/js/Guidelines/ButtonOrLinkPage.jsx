@@ -52,11 +52,11 @@ export default function DropdownsPage (props) {
           </thead>
           <tbody>
             <tr>
-              <td><a href="/style/api/components/buttons#primary_button">Primary button</a></td>
+              <td><a href="/style/api/components/buttons#call_to_action_button">Call to action button</a></td>
               <td>Primära aktiviteter (man vill uppmuntra användaren att utföra)</td>
             </tr>
             <tr>
-              <td><a href="/style/api/components/buttons#success_button">Success button</a></td>
+              <td><a href="/style/api/components/buttons#save_button">Save button</a></td>
               <td>Aktiviteter som användaren har påbörjat (man vill uppmana användaren att slutföra)</td>
             </tr>
             <tr>
@@ -64,7 +64,7 @@ export default function DropdownsPage (props) {
               <td>Sekundära aktiviteter (man kan utföra, men uppmanas inte till det)</td>
             </tr>
             <tr>
-              <td><a href="/style/api/components/buttons#danger_button">Danger button</a></td>
+              <td><a href="/style/api/components/buttons#delete_button">Delete button</a></td>
               <td>Destruktiva aktiviteter</td>
             </tr>
             <tr>
