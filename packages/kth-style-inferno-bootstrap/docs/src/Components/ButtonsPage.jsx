@@ -10,12 +10,12 @@ export default function BasicPage (props) {
       <h1>Knappar</h1>
       <p>Läs först <a href="/style/guidelines/buttonorlink">riktlinjer knappar, länkar</a> där du får hjälp att välja rätt typ av komponent.</p>    
 
-          <Section title="Primary button">  
+          <Section title="Call to action button">  
             <Stage> 
               <Scene>
-                <Button color="primary">primary</Button>{' '}
+                <Button color="primary">Call to action</Button>{' '}
                 <Code>
-                  {`<Button color="primary">primary</Button>`}
+                  {`<Button color="primary">Call to action</Button>`}
                 </Code>
               </Scene>
               <UXComment>
@@ -43,9 +43,9 @@ export default function BasicPage (props) {
           <Section title="Secondary button">  
             <Stage>
               <Scene>
-                <Button color="secondary">secondary</Button>{' '}
+                <Button color="secondary">Secondary</Button>{' '}
                 <Code>
-                  {`<Button color="secondary">secondary</Button>`}
+                  {`<Button color="secondary">Secondary</Button>`}
                 </Code>
               </Scene>
              <UXComment>
@@ -75,12 +75,12 @@ export default function BasicPage (props) {
             </UXComment> 
           </Stage>
        </Section> 
-       <Section title="Success button">  
+       <Section title="Save button">  
          <Stage>   
               <Scene>
-                <Button color="success">success</Button>{' '}
+                <Button color="success">Save</Button>{' '}
                 <Code>
-                  {`<Button color="success">success</Button>`}
+                  {`<Button color="success">Save</Button>`}
                 </Code>
               </Scene>
               <UXComment>
@@ -111,12 +111,12 @@ export default function BasicPage (props) {
               </UXComment>
             </Stage>
           </Section>
-          <Section title="Danger button">  
+          <Section title="Delete button">  
             <Stage>
               <Scene>
-                <Button color="danger">danger</Button>{' '}
+                <Button color="danger">Delete</Button>{' '}
                 <Code>
-                  {`<Button color="danger">danger</Button>`}
+                  {`<Button color="danger">Delete</Button>`}
                 </Code>
               </Scene>
               <UXComment>
