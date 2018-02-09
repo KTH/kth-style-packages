@@ -14,8 +14,8 @@ export default function DropdownsPage (props) {
       <p>Flera enheter inom KTH har miljö och hållbar utveckling som huvudperspektiv. Där bedrivs bland annat ledande forskning om metoder och verktyg för att bedöma och utvärdera effekter av produkter och beslutsprocesser. Andra grupper arbetar med att bättre förstå samverkan mellan tekniska system och naturen. Ytterligare grupper studerar globala samband och klimateffekter i våra energiförsörjningssytem.</p>
       <h2>Grupperingar inom KTH</h2>
       <h3>En viktig aspekt inom forskning</h3>
-      <h4>Förbättra miljöprestanda i industriella processer</h4>
       <p>Ytterligare många grupper har hållbar utveckling som en viktig aspekt i sin forskning. Det kan handla om att förbättra miljöprestanda i industriella processer, fordon, byggnader eller försörjningssystem. Men det finns även de på KTH som forskar om miljö och hållbar utveckling från ett historiskt och filosofiskt perspektiv. KTH har exempelvis Sveriges ende.</p>
+      <h4>Stora, globala utmaningar</h4>
       <p>Stora, globala utmaningar kräver multidisciplinära angreppssätt, inte bara för själva forskningen, utan även för att resultaten skall vara anpassade till de slutliga användarna.</p>
     </Page>
   )
