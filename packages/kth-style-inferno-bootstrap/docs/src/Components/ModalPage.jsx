@@ -20,17 +20,11 @@ export default function BasicPage (props) {
         <br></br>
         <p> TO DO: Lägg till komponet för informera när klickat på i-ikon </p>
       <Scene>
-
-        <ButtonGroup>  
-          <ModalExample buttonLabel="Show modal" />
-          <ModalExample buttonLabel="Show modal without fade" fade={false} />
-        </ButtonGroup>
-        <Code>
-{`<ButtonGroup>  
-  <ModalExample buttonLabel="Show modal" />
-  <ModalExample buttonLabel="Show modal (no fade)" fade={false} />
-</ButtonGroup>`}
-        </Code>  
+          <ModalExample />
+          <Code>
+{`<ModalExample/>
+`}
+          </Code>  
       </Scene>
 
       <h3>Implementation of &lt;ModalExample&gt; component:</h3>
@@ -165,16 +159,10 @@ export default function BasicPage (props) {
         <br></br>
         <p> TO DO: Design av dialog </p>
       <Scene>
-
-        <ButtonGroup>  
-          <ModalExample buttonLabel="Show modal" />
-          <ModalExample buttonLabel="Show modal without fade" fade={false} />
-        </ButtonGroup>
+          <ModalExample/>
         <Code>
-{`<ButtonGroup>  
-  <ModalExample buttonLabel="Show modal" />
-  <ModalExample buttonLabel="Show modal (no fade)" fade={false} />
-</ButtonGroup>`}
+{`<ModalExample />
+`}
         </Code>  
       </Scene>
 
@@ -294,15 +282,9 @@ export default function BasicPage (props) {
         <p> TO DO: Design av dialog </p>
       <Scene>
 
-        <ButtonGroup>  
-          <ModalExample buttonLabel="Show modal" />
-          <ModalExample buttonLabel="Show modal without fade" fade={false} />
-        </ButtonGroup>
+          <ModalExample/>
         <Code>
-{`<ButtonGroup>  
-  <ModalExample buttonLabel="Show modal" />
-  <ModalExample buttonLabel="Show modal (no fade)" fade={false} />
-</ButtonGroup>`}
+{`<ModalExample />`}
         </Code>  
       </Scene>
 
@@ -448,7 +430,7 @@ class ModalExample extends Component {
   render() {
     const fadeModal = (this.props.hasOwnProperty('fade') ? this.props.fade : true)
     return (
-      <Button onClick={this.toggle}>{this.props.buttonLabel}
+      <Button onClick={this.toggle} className="btn-info-modal">{this.props.buttonLabel}
         <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className} fade={fadeModal}>
           <ModalHeader toggle={this.toggle}>Modal title</ModalHeader>
           <ModalBody>
