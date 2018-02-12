@@ -20,9 +20,9 @@ export default function BasicPage (props) {
         <br></br>
         <p> TO DO: Lägg till komponet för informera när klickat på i-ikon </p>
       <Scene>
-          <ModalExample />
+          <p> Show some extra info in modal <ModalExample /></p>
           <Code>
-{`<ModalExample/>
+{`<p> Show some extra info in modal <ModalExample /></p>
 `}
           </Code>  
       </Scene>
@@ -159,9 +159,9 @@ export default function BasicPage (props) {
         <br></br>
         <p> TO DO: Design av dialog </p>
       <Scene>
-          <ModalExample/>
+      <p> Show some extra info in modal <ModalExample /></p>
         <Code>
-{`<ModalExample />
+{`<p> Show some extra info in modal <ModalExample /></p>
 `}
         </Code>  
       </Scene>
@@ -282,9 +282,9 @@ export default function BasicPage (props) {
         <p> TO DO: Design av dialog </p>
       <Scene>
 
-          <ModalExample/>
+      <p> Show some extra info in modal <ModalExample /></p>
         <Code>
-{`<ModalExample />`}
+{`<p> Show some extra info in modal <ModalExample /></p>`}
         </Code>  
       </Scene>
 
@@ -430,7 +430,7 @@ class ModalExample extends Component {
   render() {
     const fadeModal = (this.props.hasOwnProperty('fade') ? this.props.fade : true)
     return (
-      <Button onClick={this.toggle} className="btn-info-modal">{this.props.buttonLabel}
+      <Button onClick={this.toggle} className="btn-info-modal">
         <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className} fade={fadeModal}>
           <ModalHeader toggle={this.toggle}>Modal title</ModalHeader>
           <ModalBody>
