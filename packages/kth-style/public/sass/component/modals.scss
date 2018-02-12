@@ -23,12 +23,14 @@
 }
 
 .btn-info-modal {
+  background: url('../img/kth-style/icons/info_modal.svg') no-repeat;
   background-color: transparent;
-  border:transparent;
+  background-size: contain;
+  border: transparent;
+  border-radius: 1em;
   width:1.7em;
   height: 1.7em;
-  background: url('../img/kth-style/icons/info_modal.svg') no-repeat;
-  background-size: contain;
+
   padding:0;
 }
 ///* * * * Personal toolbar override for modal behaviour * * * */
