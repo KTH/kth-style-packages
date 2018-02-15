@@ -173,6 +173,10 @@ body {
   max-width: 320px;
 }
 
+.ExampleScene .card.collapsible {
+  max-width: inherit;
+}
+
 .ExampleScene .nav-tabs {
   margin-bottom: 1rem;
 }
@@ -278,39 +282,6 @@ pre[class*="language-"]:before {
 }
 
 /* Collapse */
-
-.ExampleCollapseContainer {
-  background-color: aliceblue;
-  padding: 1rem;
-}
-
-.CollapseAnimation-leave {
-}
-
-.CollapseAnimation-leave-active {
-  overflow: hidden;
-  transition: all 0.3s ease-in;
-}
-
-.CollapseAnimation-leave-end {
-  height: 0!important;
-  padding-top: 0;
-  padding-bottom: 0;
-}
-
-.CollapseAnimation-enter {
-  height: 0!important;
-  padding-top: 0;
-  padding-bottom: 0;
-}
-
-.CollapseAnimation-enter-active {
-  transition: all 0.3s ease-in;
-  overflow: hidden;
-}
-
-.CollapseAnimation-enter-end {
-}
 
 .ExampleLayout .row {
   margin-bottom: 0.5rem;
