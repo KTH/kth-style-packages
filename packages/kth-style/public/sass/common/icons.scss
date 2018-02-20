@@ -90,6 +90,24 @@
   vertical-align: bottom;
   content: url('../img/kth-style/icons/canvas.svg');
 }
+// .back-link-round {
+//   height:2em;
+// }
+.back-link-round  {
+  background: url('../img/kth-style/icons/back-link-pill.svg') no-repeat;
+  background-size: contain;
+  background-position: left center;
+  padding-left: 2.5rem;
+}
+.back-link{
+  background: url('../img/kth-style/icons/back-link.svg') no-repeat;
+  background-size: contain;
+  background-position: left center;
+  background-origin: border-box;
+  padding-left: 3rem;
+  height: 2rem;
+  width: 1.3rem;
+}
 
 .icon-info-circled-1 {
   font-size: 1.5rem;

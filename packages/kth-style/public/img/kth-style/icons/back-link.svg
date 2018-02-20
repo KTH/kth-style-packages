@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="51px" height="42px" viewBox="0 0 51 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.4.2 (15855) - http://www.bohemiancoding.com/sketch -->
+    <title>back-pill</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Mobile-Portrait" sketch:type="MSArtboardGroup" transform="translate(-217.000000, -462.000000)" stroke="#1954A6" fill="#1954A6">
+            <g id="back-pill" sketch:type="MSLayerGroup" transform="translate(217.000000, 463.000000)">
+                <path d="M0.548828125,20.0907173 C0.548828125,17.2365506 25,10 25,10 L51,10 L51,30 L25,30 C25,30 0.548828125,23.9032173 0.548828125,20.0907173 Z" id="Rectangle-1" sketch:type="MSShapeGroup"></path>
+                <polygon id="Triangle-1" sketch:type="MSShapeGroup" transform="translate(13.000000, 20.000000) scale(-1, -1) rotate(-270.000000) translate(-13.000000, -20.000000) " points="13 7 33 33 -7 33 "></polygon>
+            </g>
+        </g>
+    </g>
+</svg>
