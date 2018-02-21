@@ -78,20 +78,21 @@ export default function BasicPage (props) {
           </Section>                  
           <Section title="Back link">
             <Stage>
-            <Scene>
-                <p><Button color="link" className="back-link-round">Back to results</Button></p>
+              <Scene>
+                <p><Button color="link" className="back-link-thin">Anmäla link</Button></p>
+
+                <Code>
+                  {`<Button color="link" className="back-link-thin">Anmäla link</Button>`}
+                </Code>
+              </Scene>
+              <Scene>
+                <p><Button color="link" className="back-link-round">Results</Button></p>
 
                 <Code>
                   {`<Button color="link" className="back-link-round">link</Button>`}
                 </Code>
               </Scene>
-              <Scene>
-                <p><Button color="link" className="back-link">Back to previous page</Button></p>
 
-                <Code>
-                  {`<Button color="link" className="back-link">link</Button>`}
-                </Code>
-              </Scene>
               <UXComment>
                 <h4>Användning</h4>
                 <ul>
