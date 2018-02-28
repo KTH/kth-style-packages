@@ -1,0 +1,36 @@
+@mixin alert-variant($background, $border, $iconUrl) {
+  color: $black;
+  font-size: 1.2rem;
+  min-height: 4.4rem;
+  border-radius: .15rem;
+  position: relative;
+  padding: 1.2rem 2.2rem 1rem 5.4rem;
+
+  p:last-of-type, span:last-child, div:last-child {
+    margin-bottom: 0;
+  }
+
+  h4,h1,h2,h3, {
+    margin-top:0;
+  }
+
+  .close {
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: .2rem .2rem 0;
+    font-weight: normal;
+  }
+
+  background-color: $background;
+  border: solid 1px $border;
+  &::before {
+    font-size: 1.8rem;
+    position: absolute;
+    top: .2em;
+    left: .2em;
+    width: 2em;
+    content: url($iconUrl);
+  }
+}

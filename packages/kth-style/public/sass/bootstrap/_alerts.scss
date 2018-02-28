@@ -1,74 +1,31 @@
 /*
   Bootstrap overrides for alert
-
-  TODO: Go through this and see what can be overriden with variables
-
 */
-.message-base {
-  color: $black;
-  font-size: 1.2rem;
-  min-height: 4.4rem;
-  border-radius: .15rem;
-  position: relative;
-  padding: 1.2rem 2.2rem 1rem 5.4rem;
-
-  p:last-of-type, span:last-child, div:last-child {
-    margin-bottom: 0;
-  }
-
-  h4,h1,h2,h3, {
-    margin-top:0;
-  }
-
-  .close {
-    opacity: 1;
-    position: absolute;
-    top: 0;
-    right: 0;
-    margin: .2rem .2rem 0;
-    font-weight: normal;
-  }
-}
-
-@mixin message-icons-base() {
-  font-size: 1.8rem;
-  color: #fff;
-  position: absolute;
-  top: .2em;
-  left: .2em;
-  width: 2em;
-}
 
 .alert > :last-child {
   margin-bottom: 0;
 } 
 
-.alert-info, .alert-warning {
-  @extend .message-base;
-  background-color: $infoYellow;
-  border: solid 1px $infoYellowBorder;
-  &::before {
-    @include message-icons-base();
-    content: url('../img/kth-style/icons/info-alert-circle.svg');
-  }
-}
+$alert-styles: (
+  "info": (
+    "bgColor": $infoYellow, 
+    "borderColor": $infoYellowBorder, 
+    "iconUrl": "../img/kth-style/icons/info-alert-circle.svg"
+  ),
+  "danger": (
+    "bgColor": $infoRed, 
+    "borderColor": $infoRedBorder, 
+    "iconUrl": "../img/kth-style/icons/attention-alert-circle.svg"
+  ),
+  "success": (
+    "bgColor": $infoGreen, 
+    "borderColor": $infoGreenBorder, 
+    "iconUrl": "../img/kth-style/icons/info-success-circle.svg"
+  )
+);
 
-.alert-danger {
-  @extend .message-base;
-  background-color: $infoRed;
-  border: solid 1px $infoRedBorder;
-  &::before {
-    @include message-icons-base();
-    content: url('../img/kth-style/icons/attention-alert-circle.svg');
-  }
-}
-
-.alert-success {
-  @extend .message-base;
-  background-color: $infoGreen;
-  border: solid 1px $infoGreenBorder;
-  &::before {
-    @include message-icons-base();
-    content: url('../img/kth-style/icons/info-success-circle.svg');
+@each $color, $value in $alert-styles {
+  .alert-#{$color} {
+    @include alert-variant(map-get($value, "bgColor"), map-get($value, "borderColor"), map-get($value, "iconUrl"));
   }
 }
