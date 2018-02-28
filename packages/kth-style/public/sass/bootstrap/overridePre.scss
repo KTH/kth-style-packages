@@ -13,13 +13,19 @@
 @import 'node_modules/bootstrap/scss/mixins/breakpoints';
 
 // Colors
-$body-bg: $bodyBg;
 
-$brand-primary: $blue;
-$brand-success: $green;
-$brand-info:    #5bc0de;
-$brand-warning: #f0ad4e;
-$brand-danger:  $red;
+// TODO Remove $colors-map
+
+$body-bg:       $bodyBg;
+
+$primary:       $lightBlue;
+$secondary:     $white;
+$success:       $green;
+$info:          $infoYellow;
+$warning:       $infoYellow;
+$danger:        $infoRed;
+$light:         $gray-100 !default;
+$dark:          $gray-800 !default;
 
 // Typography
 $body-color: $textColor;
