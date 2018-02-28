@@ -8,7 +8,8 @@ if [ "$1" == "init" ]; then
     echo "...found lerna"
   fi
   echo "...bootstraping project"
-  lerna bootstrap
+  lerna bootstrap --hoist '**/@(isomorphic-schema|component-registry)'
+  npm install
 elif [ "$1" == "run-all" ]; then
   echo "**************************"
   echo "*** Run all processes: ***"
