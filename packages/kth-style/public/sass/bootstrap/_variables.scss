@@ -21,11 +21,10 @@ $body-bg:       $bodyBg;
 $primary:       $lightBlue;
 $secondary:     $white;
 $success:       $green;
-$info:          $infoYellow;
-$warning:       $infoYellow;
-$danger:        $infoRed;
-$light:         $gray-100 !default;
-$dark:          $gray-800 !default;
+// Following currently not specified by us
+//$info:          $yellow;
+//$warning:       $infoYellow;
+$danger:        $lightRed;
 
 // Typography
 $body-color: $textColor;
