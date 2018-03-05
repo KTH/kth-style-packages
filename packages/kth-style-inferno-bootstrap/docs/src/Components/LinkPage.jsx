@@ -85,13 +85,6 @@ export default function BasicPage (props) {
                   {`<Button color="link" className="back-link-thin">Anmäla link</Button>`}
                 </Code>
               </Scene>
-              <Scene>
-                <p><Button color="link" className="back-link-round">Results</Button></p>
-
-                <Code>
-                  {`<Button color="link" className="back-link-round">link</Button>`}
-                </Code>
-              </Scene>
 
               <UXComment>
                 <h4>Användning</h4>

@@ -49,3 +49,10 @@
 .btn-link {
   border: none;
 }
+
+.back-link-thin::before {
+  content: url('../img/kth-style/icons/pill-back.svg');
+  margin-right: .5em;
+  vertical-align: bottom;
+  height:1.2em;
+}

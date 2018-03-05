@@ -91,20 +91,6 @@
   content: url('../img/kth-style/icons/canvas.svg');
 }
 
-.back-link-round  {
-  background: url('../img/kth-style/icons/back-link-pill.svg') no-repeat;
-  background-size: contain;
-  background-position: left center;
-  padding-left: 2.5rem;
-}
-
-.back-link-thin::before {
-  content: url('../../img/kth-style/icons/pill-back.svg');
-  margin-right: .5em;
-  vertical-align: bottom;
-  height:1.2em;
-}
-
 .icon-info-circled-1 {
   font-size: 1.5rem;
   padding: .5rem;
