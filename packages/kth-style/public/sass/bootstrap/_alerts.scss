@@ -15,12 +15,12 @@ $alert-styles: (
   "danger": (
     "bgColor": $infoRed, 
     "borderColor": $infoRedBorder, 
-    "iconUrl": "../img/kth-style/icons/attention-alert-circle.svg"
+    "iconUrl": "../img/kth-style/icons/alert-attention.svg"
   ),
   "success": (
     "bgColor": $infoGreen, 
     "borderColor": $infoGreenBorder, 
-    "iconUrl": "../img/kth-style/icons/info-success-circle.svg"
+    "iconUrl": "../img/kth-style/icons/alert-success.svg"
   )
 );
 
