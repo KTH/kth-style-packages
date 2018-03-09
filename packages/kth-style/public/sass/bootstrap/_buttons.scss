@@ -56,3 +56,14 @@
   vertical-align: bottom;
   height:1.2em;
 }
+
+.btn-info-modal { //change secondary to primary
+  background: url('../img/kth-style/icons/modal-info.svg') no-repeat;
+  background-color: transparent;
+  background-size: contain;
+  border: transparent;
+  border-radius: 0.8em;
+  width:1.7em;
+  height: 1.7em;
+  padding:0;
+}
