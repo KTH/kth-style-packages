@@ -18,7 +18,7 @@
     "classnames": "^2.2.5",
     "inferno": "^3.10.1",
     "inferno-animation": "^0.4.11",
-    "kth-style-inferno-bootstrap": "^0.1.17",
+    "kth-style-inferno-bootstrap": "^0.1.22",
     "inferno-component": "^3.10.1",
     "inferno-router": "^3.10.1",
     "kth-style": "^2.0.0-beta.4"
