@@ -16,7 +16,7 @@
   "license": "MIT",
   "dependencies": {
     "classnames": "^2.2.5",
-    "inferno-animation": "^0.4.11",
+    "inferno-animation": "^3.0.0",
     "inferno-bootstrap": "^3.0.0",
     "inferno-component": "^3.10.1",
     "inferno-router": "^3.10.1",

@@ -27,7 +27,7 @@
     "express": "^4.16.2",
     "express-handlebars": "^3.0.0",
     "gulp-header": "^1.8.9",
-    "inferno-bootstrap": "^0.4.0",
+    "inferno-bootstrap": "^3.0.0",
     "kth-node-access-log": "git+https://github.com/KTH/kth-node-access-log.git#v1.0.0",
     "kth-node-configuration": "^1.6.3",
     "kth-node-express-routing": "^0.3.2",
