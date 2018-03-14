@@ -28,7 +28,7 @@ export class StandardPage extends Component<StandardPageProps, void> {
         <link rel='stylesheet' href={proxyPrefixPathUri + '/static/kth-style/css/kth-bootstrap.min.css'}/>
 
         <script src={proxyPrefixPathUri + '/static/vendor.bundle.min.js'}/>
-        <script src='https://www.kth.se/social/toolbar/widget.js'/>
+       
         {extraHeadContent}
       </head>
       <body>
