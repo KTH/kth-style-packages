@@ -3,6 +3,7 @@
 		"lerna": "^2.9.0"
 	},
 	"dependencies": {
+		"inferno-bootstrap": "^3.0.0",
 		"module-resolver": "^1.0.0"
 	}
 }
