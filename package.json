@@ -1,9 +1,8 @@
 {
 	"devDependencies": {
-		"lerna": "^2.6.0"
+		"lerna": "^2.9.0"
 	},
 	"dependencies": {
-		"inferno-bootstrap": "^0.3.2",
 		"module-resolver": "^1.0.0"
 	}
 }
