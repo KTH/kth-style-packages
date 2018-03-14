@@ -21,7 +21,7 @@
     "inferno-component": "^3.10.1",
     "inferno-router": "^3.10.1",
     "inferno-popper": "^0.1.10",
-    "kth-style": "^2.0.0-beta.3"
+    "kth-style": "^2.0.0-beta.4"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
@@ -36,7 +36,7 @@
     "babel-plugin-transform-object-rest-spread": "^6.23.0",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
-    "bootstrap": "^4.0.0-beta.3",
+    "bootstrap": "^4.0.0",
     "css-loader": "^0.28.9",
     "express": "^4.16.2",
     "extract-text-webpack-plugin": "^2.1.2",

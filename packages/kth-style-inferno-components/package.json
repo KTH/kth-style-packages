@@ -21,7 +21,7 @@
     "kth-style-inferno-bootstrap": "^0.1.17",
     "inferno-component": "^3.10.1",
     "inferno-router": "^3.10.1",
-    "kth-style": "^2.0.0-beta.2"
+    "kth-style": "^2.0.0-beta.4"
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",
