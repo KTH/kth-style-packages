@@ -51,7 +51,8 @@
     "passport": "^0.3.2",
     "prismjs": "^1.10.0",
     "safe-utils": "^0.1.2",
-    "sass-extract": "^0.3.4"
+    "sass-extract": "^0.3.4",
+    "axios":"0.18.0"
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",

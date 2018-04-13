@@ -2,6 +2,7 @@
 const path = require('path')
 const express = require('express')
 const app = express()
+const Style = require('./controllers/styleCtrl')
 
 function _getModulePath (moduleName) {
   let outpDir
@@ -20,12 +21,12 @@ function _getModulePath (moduleName) {
 const kthStyleDir = _getModulePath('kth-style')
 const prismjsDir = _getModulePath('prismjs')
 const staticDir = path.resolve(__dirname, '../dist')
-console.log(staticDir)
 
 // System routes
 app.use('/style/_monitor', (req, res) => res.send('APPLICATION_STATUS: OK'))
 
 app.use('/style/kth-style', express.static(kthStyleDir + '/dist'))
+app.use('/style/kth-style/api/colors', Style.colors.getColors)
 app.use('/style/prism', express.static(prismjsDir + '/themes'))
 app.use('/style/static', express.static(staticDir))
 app.use((req, res) => {

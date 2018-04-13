@@ -1,4 +1,5 @@
 import { Page, Section, Narrative } from 'kth-style-inferno-bootstrap/docs/src/components.jsx'
+import Colors from './Colors.jsx'
 
 export default function DropdownsPage (props) {
   return (
@@ -48,6 +49,8 @@ export default function DropdownsPage (props) {
             Du kan testa hur en sida ser ut för olika färgblindheter genom att installera en plugin för färgblindhet i Chrome webläsare (se <a href="https://chrome.google.com/webstore/detail/colorblinding/dgbgleaofjainknadoffbjkclicbbgaa">Colorblinding</a>).
            </p>
         </Section>
+
+        <Colors />
     </Page>
   )
 }

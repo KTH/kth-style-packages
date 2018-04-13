@@ -145,12 +145,17 @@ const getSassColors = sassExtract.render({
   }
 })
 
+// function * getColors (req, res, next) {
+//   const colors = yield getSassColors
+
+//   res.render('colors', {
+//     breadcrumbsPath: [{ label: 'Färger' }],
+//     title: 'Färger',
+//     colors: colors
+//   })
+// }
+
 function * getColors (req, res, next) {
   const colors = yield getSassColors
-
-  res.render('colors', {
-    breadcrumbsPath: [{ label: 'Färger' }],
-    title: 'Färger',
-    colors: colors
-  })
+  res.json(colors)
 }
