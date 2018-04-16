@@ -3,6 +3,7 @@ import Component from 'inferno-component'
 
 import Button from '../../../lib/Button.jsx'
 import ButtonGroup from '../../../lib/ButtonGroup.jsx'
+import { Link } from 'inferno-router'
 
 export default function BasicPage (props) {
   return (
@@ -16,6 +17,10 @@ export default function BasicPage (props) {
                 <Button color="link">link</Button>
                 <Code>
                   {`<Button color="link">link</Button>`}
+                </Code>
+                <Link to="#">link</Link>
+                <Code>
+                  {`<Link to="#">link</Link>`}
                 </Code>
               </Scene>
               
@@ -83,6 +88,11 @@ export default function BasicPage (props) {
 
                 <Code>
                   {`<Button color="link" className="btn-link-back">Anmäla link</Button>`}
+                </Code>
+
+                <Link to="#" className="btn-link-back">Anmäla link</Link>
+                <Code>
+                  {`<Link to="#" className="btn-link-back">Anmäla link</Link>`}
                 </Code>
               </Scene>
 
