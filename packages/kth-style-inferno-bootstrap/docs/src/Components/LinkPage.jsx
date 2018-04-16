@@ -84,15 +84,15 @@ export default function BasicPage (props) {
           <Section title="Back link">
             <Stage>
               <Scene>
-                <p><Button color="link" className="btn-link-back">Anmäla link</Button></p>
+                <p><Button color="link" className="link-back">Anmäla link</Button></p>
 
                 <Code>
-                  {`<Button color="link" className="btn-link-back">Anmäla link</Button>`}
+                  {`<Button color="link" className="link-back">Anmäla link</Button>`}
                 </Code>
 
-                <Link to="#" className="btn-link-back">Anmäla link</Link>
+                <Link to="#" className="link-back">Anmäla link</Link>
                 <Code>
-                  {`<Link to="#" className="btn-link-back">Anmäla link</Link>`}
+                  {`<Link to="#" className="link-back">Anmäla link</Link>`}
                 </Code>
               </Scene>
 
