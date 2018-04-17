@@ -75,5 +75,10 @@ Then link to the KTH-bootstrap stylesheet in /dist directory, f.e.:
 <link rel="stylesheet" href="/api/lms-export-results/kth-style/css/kth-bootstrap.css">
 
 ```
+Remember to place the import above your own project stylesheet imports.
 
+### Avoiding icon conflicts
+If you are using Fontello icons in your own project you might get conflicting UNICODE codes.
+
+Before generating your icon set from Fontello you should set the CSS-prefix from the default 'icon-' to f.e. 'projectname-icon-'
 
