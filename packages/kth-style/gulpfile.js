@@ -72,12 +72,14 @@ gulp.src('./foo/*.js')
   .pipe(header(banner, { pkg : pkg } ))
   .pipe(gulp.dest('./dist/'))
 
+var sassInlineSVG = require('sass-inline-svg-utf8');
+
 gulp.task('createDist', function () {
   return mergeStream(
     gulp.src('./public/sass/kth-bootstrap.scss')
       .pipe($.plumber())
       .pipe($.sourcemaps.init())
-      .pipe($.sass({includePaths: ['node_modules/bootstrap/scss'], importer: [cssImporter]}).on('error', $.sass.logError))
+      .pipe($.sass({includePaths: ['node_modules/bootstrap/scss'], functions: sassInlineSVG(), importer: [cssImporter]}).on('error', $.sass.logError))
       .pipe($.autoprefixer({browsers: ['last 4 versions']}))
       .pipe(header(banner, { pkg : pkg } ))
       .pipe(gulp.dest(`./${distRootFolderName}/css`))
