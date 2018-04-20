@@ -1,8 +1,6 @@
 import { Page, Code, Section, Stage, Scene, Narrative, UXComment } from '../components.jsx'
 import Component from 'inferno-component'
 
-import Button from '../../../lib/Button.jsx'
-import ButtonGroup from '../../../lib/ButtonGroup.jsx'
 import { Link } from 'inferno-router'
 
 export default function BasicPage (props) {
@@ -14,10 +12,6 @@ export default function BasicPage (props) {
           <Section title="Blue link">  
             <Stage>
               <Scene>
-                <Button color="link">link</Button>
-                <Code>
-                  {`<Button color="link">link</Button>`}
-                </Code>
                 <Link to="#">link</Link>
                 <Code>
                   {`<Link to="#">link</Link>`}
@@ -84,12 +78,6 @@ export default function BasicPage (props) {
           <Section title="Back link">
             <Stage>
               <Scene>
-                <p><Button color="link" className="link-back">Anmäla link</Button></p>
-
-                <Code>
-                  {`<Button color="link" className="link-back">Anmäla link</Button>`}
-                </Code>
-
                 <Link to="#" className="link-back">Anmäla link</Link>
                 <Code>
                   {`<Link to="#" className="link-back">Anmäla link</Link>`}
