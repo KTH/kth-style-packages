@@ -1,52 +1,42 @@
-// *** kth colors ***********************************
+// * * * * KTH Color Palette * * * * 
+
+// Grey
+$grey: #65656c;
+$lightGrey: #f6f6f6;
+$darkGrey: #848489;
+$borderGrey: #d4d4d4;
 
 // Blue
-$blue: #1954a6;
-$lightBlue: #2191c4;
-$blueLink: #006cb7;
-$lightBlueHover: #1e81ae;
+$blue: #2191c4;
+$darkBlue: #1954a6;
+$matteBlue: #5e87c0;
+
+// Pink
+$lightPink: #d95999;
+$mediumPink: #d95999;
+$pink: #d02f80;
 
 // Green
 $green: #62922e;
 $greenHover: #4e7425;
 $infoGreen: #dff0d8;
-$infoGreenIcon: $green;
+$infoGreenIcon: #62922e;
 $infoGreenBorder: #d6e9c6;
-
-// Black
-$black: #111;
-$darkBlack: #000;
-$lightBlack: #333;
-$brighterBlack: #262626;
-
-// Gray
-$midGrey: #bdbcbc;
-$grey: $midGrey;
-$lightGrey: #e3e5e3;
-$brightestGrey: #f2f3f2;
-$darkGrey: #65656c;
-$darkGreyHover: #57575c;
-
 
 // Red
 $red: #e01f28;
-$lightRed: $red;
 $infoRed: #f2dede ;
-$infoRedIcon: $lightRed;
+$infoRedIcon: #e01f28;
 $infoRedBorder: #ebccd1;
-$failModalRed: $infoRed; // Deprecated, use infoRed
 $lightRedHover: #ca1c24;
-// $darkRed: #9d102d;
+
+// Yellow
+$infoYellow: #fcf8e3;
+$infoYellowIcon: #fab919;
+$infoYellowBorder: #faebcc;
+
+// Black
+$black: #000000;
 
 // White
-$white: #fff;
-$inputWhite: #fafafa;
-
-//pink
-$pink: #d02f80;
-
-//yellow
-$yellow: #fab919;
-$infoYellow: #FCF8E3;
-$infoYellowIcon: $yellow;
-$infoYellowBorder: #faebcc;
+$white: #ffffff;

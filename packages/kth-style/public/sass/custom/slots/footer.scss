@@ -1,122 +1,92 @@
-@import '../variables/colors';
-@import '../variables/sizes';
-@import '../variables/spacings';
+@import '../../variables/colors';
+@import '../../variables/sizes';
+@import '../../variables/spacings';
+@import '../../variables/fonts';
 
-#footer {
-  background: $darkGrey;
-  border-top: 0;
-  clear: both;
+footer {
+  &.container {
+    background-color: $grey;
+    max-width: calc(100% - 2 * #{$gutter});
+    padding: $gutter 0;
+    margin: 0 $gutter;
 
-  // Compensate padding in container
-  margin-left: -$pageInset;
-  margin-right: -$pageInset;
+    .block {
+      &.columnSplitter {
+        padding: 0 $gutter;
 
-  margin-top: 2 * $spacing;
+        &.row {
+          .col {
+            flex-basis: 100%;
 
-  overflow: hidden;
-  padding: $spacing $pageInset $pageInset;
+            .block {
+              &.list {
+                &.links {
+                  h2 {
+                    color: $white;
+                    font-family: $open-sans;
+                    font-size: 18px;
+                    font-weight: 400;
+                  }
+                  ul {
+                    list-style: none;
+                    padding-left: 0;
+                    margin: $doubleSpacing 0 0 0;
 
-  // TODO use breakpoints from BS
-  @media only screen and (max-width: 480px) {
-    margin-left: -15px;
-    margin-right: -15px;
-  }
-
-  .blockItemSeparator {
-    @include topBottomSpacing;
-
-    .blockItemSeparatorInner {
-      display: block;
-      height: 1px;
-    }
-  }
-
-  .block {
-    &.teaser {
-      .teaserTextInner {
-        .paragraphs {
-          color: #fff;
-          //font-size: 13.5px;
-          font-size: .95rem;
-          font-weight: normal;
-          margin: 0;
-          padding: 0;
-          width: 100%;
-        }
-
-        h2 {
-          color: #fff;
-          //font-size: 16px;
-          font-size: 1.2rem;
-          font-weight: bold;
-          margin: 0;
-          padding: 0 0 10px;
-        }
-      }
-    }
-
-    &.list {
-      ul {
-        margin: 0;
-        padding: 0;
-
-        li {
-          border-bottom: 1px dotted #b9bbbd;
-          display: inline-block;
-          line-height: 21px;
-          margin: 0;
-          padding: 0;
-          width: 100%;
-
-          &:first-child {
-            border-top: 1px dotted #b9bbbd;
-          }
-
-          a {
-            background: transparent url('../img/kth-style/icons/white-arrow.svg') 5px 10.5px no-repeat;
-            color: #fff;
-            display: block;
-            padding: 3px 0 3px 15px;
+                    li {
+                      a {
+                        color: $white;
+                        font-family: $open-sans;
+                        line-height: 2.25;
+                        font-weight: 100;
+                        font-size: 14px;
+                      }
+                    }
+                  }
+                }
+              }
+            }
           }
         }
       }
+    }
+  }
 
-      h3 {
-        color: #fff;
-        font-size: 1.2rem;
-        font-weight: bold;
-        margin: 0;
-        padding: 0 5px 10px;
+  @media (min-width: 576px) {
+    &.container {
+      max-width: calc(100% - 2 * #{$gutter});
+      padding: $gutter 0;
+      margin: 0 $gutter;
+
+      .block {
+        &.columnSplitter {
+          &.row {
+            .col {
+              flex-basis: 50%;
+            }
+          }
+        }
       }
     }
   }
-}
 
-//* * * * Override for Footer behaviour * * * */
-
-@media only screen and (max-width: 850px) {
-  #footer {
-    padding: 20px 38px 38px;
-
-    .column {
-      width: 50%;
-
-      &.column3 {
-        clear: left;
-        padding-top: 20px;
-
-        .columnInner {
-          padding: 0 15px 0 0;
+  @media (min-width: 1200px) {
+    &.container {
+      .block {
+        &.columnSplitter {
+          &.row {
+            .col {
+              flex-basis: 25%;
+            }
+          }
         }
       }
+    }
+  }
 
-      &.column4 {
-        padding-top: 20px;
-
-        .columnInner {
-          padding: 0 10px 0 5px;
-        }
-      }
+  @media (min-width: 1258px) {
+    &.container {
+        max-width: 1228px;
+        margin: auto;
     }
   }
 }

@@ -1,6 +1,6 @@
 // KTH specific styling
 
-@import './blocks/columnSplitter';
+/* @import './blocks/columnSplitter';
 @import './blocks/search';
 @import './blocks/siteName';
 @import './blocks/lang';
@@ -18,4 +18,64 @@
 @import './common/lists';
 
 @import './component/well';
-@import './component/collapse';
+@import './component/collapse'; */
+
+@import './common/reset';
+
+.container, .container-fluid {
+  padding: 0 $gutter; // Gutter should be the same in all break points.
+
+  &.standard {
+    padding: $gutter 0;
+    margin: 0 $gutter;
+    max-width: calc(100% - 30px);
+
+    article {
+      padding: 0 $gutter;
+    }
+  }
+
+  &.start {
+    padding: $gutter 0;
+    margin: 0 $gutter;
+    max-width: calc(100% - 30px);
+  }
+}
+
+// This should maybe be placed in Cortina.
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  .container {
+    &.standard {
+      max-width: calc(100% - 2 * #{$gutter});
+    }
+  
+    &.start {
+      max-width: calc(100% - 2 * #{$gutter});
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .container, .container-fluid {
+    &.standard {
+      article {
+        padding: 0 2 * $gutter;
+      }
+    }
+  }
+}
+
+@media (min-width: 1258px) {
+  .container {
+    &.standard {
+      max-width: 1228px;
+      margin: 0 auto;
+    }
+  
+    &.start {
+      max-width: 1228px;
+      margin: 0 auto;
+    }
+  }
+}

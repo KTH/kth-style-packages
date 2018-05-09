@@ -1,70 +1,94 @@
 // Variables and mixins for fonts.
 //
-// Variables should be created and used for everything that can be overridden in
-// Bootstraps preStep.
+// Variables should be created and used for everything that can be overridden in Bootstraps preStep.
 
 @import './colors';
 @import './sizes';
 
-// Headers
-$headers-line-height: 1.2;
-
-$moreSpaceLetterSpacing: .06rem;
-
-// H1
-$h1-fontSize: 2.5rem;
-$h1-border-bottom: 1px dotted $grey;
-
-@mixin h1 {
-  border-bottom: $h1-border-bottom;
-  font-family: $serif;
-  font-weight: normal;
-  margin: 0 0 1.5rem;
-  padding: 0 0 .8rem;
-
-  &+ h2 {
-    margin-top: 0;
-  }
-}
-
-// H2
-$h2-fontSize: 1.55rem;
-
-@mixin h2 {
-  margin: 2rem 0 .35rem;
-
-  &+ h3 {
-    margin-top: .5rem;
-  }
-}
-
-// H3
-$h3-fontSize: 1.3rem;
-
-@mixin h3 {
-  margin: 2rem 0 .35rem;
-
-  &+ h4 {
-    margin-top: .5rem;
-  }
-}
-
-// H4
-$h4-fontSize: inherit;
-
-@mixin h4 {
-  font-weight: bold;
-  margin: 2rem 0 .35rem;
-}
-
-// H5 (are not supported by kth-style)
-$h5-fontSize: 1.1rem;
-
-// H6 (are not supported by kth-style)
-$h6-fontSize: 1rem;
+// Import of font Open Sans
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:200,300,400,500,600);
+$open-sans: 'Open Sans';
 
 $serif: 'Georgia Regular', 'Georgia', 'garamond pro', garamond, 'times new roman', times, serif;
-$sansSerif: Arial, 'Helvetica Neue', helvetica, sans-serif;
+$sansSerif: $open-sans, Arial, 'Helvetica Neue', helvetica, sans-serif;
 
-$normalFontSize: 14px;
-$fontMagnificationFactor: 1;
+// Default font size is set to 14px.
+$font-size-base: 0.875rem; 
+
+// Defauklt headline font sizes.
+$h1-fontSize: $font-size-base * 2 !default; // 28px
+$h1-desktop-fontSize: $font-size-base * 3.286 !default; // 46px
+
+$h2-fontSize: $font-size-base * 1.857 !default; // 26px
+$h2-desktop-fontSize: $font-size-base * 2.143 !default; // 30px
+
+$h3-fontSize: $font-size-base * 1.571 !default; // 22px
+$h3-desktop-fontSize: $font-size-base * 1.857 !default; // 26px
+
+$h4-fontSize: $font-size-base * 1.286 !default; // 18px
+
+// Default headline styles.
+@mixin h1 {
+  font-family: $sansSerif;
+  font-weight: 600;
+  margin: 0 0 28px 0;
+  padding: 0;
+
+  @media (min-width: 768px) {
+    font-size: $h1-desktop-fontSize;
+  }
+}
+
+@mixin h2 {
+  font-family: $sansSerif;
+  font-weight: 600;
+  margin: 0 0 30px 0;
+
+  @media (min-width: 768px) {
+    font-size: $h2-desktop-fontSize;
+  }
+}
+
+@mixin h3 {
+  font-family: $sansSerif;
+  font-weight: normal;
+
+  @media (min-width: 768px) {
+    font-size: $h3-desktop-fontSize;
+  }
+}
+
+@mixin h4 {
+  font-family: $sansSerif;
+  font-weight: normal;
+}
+
+// Default lead text style.
+$lead-fontSize: $font-size-base * 1.286 !default; // 22px
+$lead-desktop-fontSize: $font-size-base * 1.571 !default; // 18px
+
+.lead {
+  font-family: $sansSerif;
+  font-weight: normal;
+  font-size: $lead-fontSize;
+  line-height: 1.5;
+  margin: 0 0 34px 0;
+
+  @media (min-width: 768px) {
+    font-size: $lead-desktop-fontSize;
+  }
+}
+
+// Default copy text style.
+$copyText-fontSize: $font-size-base !default; // 14px
+$copyText-desktop-fontSize: $font-size-base * 1.143 !default; // 16px
+.paragraphs {
+  font-family: $serif;
+  font-weight: normal;
+  font-size: $copyText-fontSize;
+  line-height: 1.88;
+
+  @media (min-width: 768px) {
+    font-size: $copyText-desktop-fontSize;
+  }
+}

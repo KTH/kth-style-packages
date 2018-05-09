@@ -65,4 +65,7 @@
 @import 'bootstrap/custom';
 
 // our own styling
-// @import './commonStyle';
+@import './custom/commonStyle';
+
+// This is a temporary import (should be done in each appliction) for dev reasons.
+@import "kth-base-template";

@@ -1,6 +1,5 @@
 @import "../variables/fonts";
 @import "../variables/colors";
-
 @import "../common/icons.scss";
 
 //Course filter 
@@ -166,7 +165,7 @@
                 border-bottom: solid 1px #bdbcbc;
             }
             h3, h4 {
-                color: $brighterBlack;
+                color: $black;
             }
             .nav-item a {
                 &:focus {

@@ -1,3 +1,5 @@
+// Button style
+
 @mixin btn-coloring-base($color, $colorHover) {
   background-color: $color;
   border-color: $color;
@@ -13,7 +15,7 @@
 
 
 .btn {
-  letter-spacing: $moreSpaceLetterSpacing;
+  //letter-spacing: $moreSpaceLetterSpacing;
   padding: 0.5rem 1.5rem;
   border: 1px solid;
   line-height: normal;
@@ -24,17 +26,17 @@
 }
 
 .btn-primary {
-  // @include btn-coloring-base($lightBlue, $lightBlueHover);
+
 }
 
 .btn-secondary {
   @include btn-coloring-base($white, $lightGrey);
-  color: $textColor;
-  border-color: $midGrey;
+  color: $black;
+  border-color: $grey;
 
   &:hover, &:visited, &:disabled {
-    border-color: $midGrey;
-    color: $textColor;
+    border-color: $grey;
+    color: $black;
   }
 }
 
@@ -43,7 +45,7 @@
 }
 
 .btn-danger {
-  @include btn-coloring-base($lightRed, $lightRedHover);
+  @include btn-coloring-base($red, $lightRedHover);
 }
 
 .btn-link {

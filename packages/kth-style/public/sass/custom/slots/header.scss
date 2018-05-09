@@ -1,150 +1,173 @@
-@import '../variables/colors';
-@import '../variables/sizes';
-@import '../variables/spacings';
+@import '../../variables/colors';
+@import '../../variables/sizes';
+@import '../../variables/spacings';
+@import '../../variables/fonts';
 
-#headerHr {
-  margin-top: 0;
-}
-
-.header {
-  clear: both;
+body {
   margin: 0;
-  padding: 20px 0;
-  position: relative;
 
-  &:after {
-    /* Clear fix for header block */
-    clear: both;
-    content: "";
-    display: block;
-  }
+  header {
+    .container-fluid {
+      .container {
+        margin: 0 auto;
+        max-width: 1228px;
+        padding: 0;
 
-  .primaryHeader {
-    margin: 0;
-    padding: 0;
-    position: relative;
-    vertical-align: middle;
-
-    .block {
-      float: left;
-
-      &.search {
-        float: right;
-        max-width: 45%;
-        position: absolute;
-        right: 0;
-        text-align: right;
-        top: 41px;
-        width: 100%;
-      }
-    }
-  }
-
-  .secondaryHeader {
-    float: right;
-    position: absolute;
-    right: 0;
-    text-align: right;
-    top: 16px;
-
-    .blockItemSeparator {
-      display: inline;
-      float: left;
-      padding: 0 5px;
-    }
-
-    .block {
-      display: inline-block;
-
-      &.link {
-        a {
-          color: $standardLinkColor;
+        @media (min-width: 992px) {
+          padding: 0 2 * $gutter;
         }
-      }
-    }
-  }
 
-  .block {
-    margin: 0;
-    padding: 0;
-    position: relative;
+        .block {
+          &.figure  {
+            &.mainLogo {
+              margin: 15px 15px 0 0;
+              width: 50px;
 
-    &.figure {
-      &.mainLogo {
-        .imageWrapper {
-          img {
-            height: auto;
-            max-height: 70px;
-            width: auto;
+              @media (min-width: 576px) and (max-width: 991.98px) {
+                width: 64px;
+              }
+
+              @media (min-width: 992px) {
+                width: 75px;
+              }
+              
+              img {
+                &.figure-img {
+                  margin-bottom: 0;
+                }
+              }
+            }
           }
         }
-      }
-    }
-  }
-}
 
-@media only screen and (max-width: 976px) {
-  .header {
-    .primaryHeader {
-      .block {
-        &.search {
-          max-width: 80%;
+        .block {
+          &.search {
+            padding: 15px 0 15px 0;
+            height: 78px;
+
+            @media (min-width: 992px) {
+              padding: 15px 0 15px 0;
+              height: 0;
+              width: 290px;
+              position: relative;
+              left: 881px;
+              top: -6px;
+              z-index: 3;
+            }
+
+            @media (min-width: 992px) and (max-width: 1257.98px) { // 1199.98px
+              position: absolute;
+              right: 3 * $gutter;
+              top: 64px;
+              left: unset;
+            }
+            
+            @media (min-width: 1258px) { // 1200px
+              padding: 0;
+              left: 873px;
+            }
+
+            // The search block should get it's style from the search application. This is just temporary design.
+
+            .SearchWidget .SearchInputBar form.SearchInputForm .InfernoFormlib-AutoCompleteField .input-group .input-group-append button.btn.btn-primary.search-widget-button {
+              padding: 0 2rem;
+              background-color: $blue;
+              background-image: none;
+              color: $white;
+              font-family: $sansSerif;
+              font-size: $copyText-fontSize;
+              font-weight: 100;
+              margin-left: -5px;
+              border-top-right-radius: 4px;
+              border-bottom-right-radius: 4px;
+            }
+
+            .search-widget-container .SearchWidget .SearchInputBar form.SearchInputForm .InfernoFormlib-AutoCompleteField .input-group.input-group-sm .form-shadow2.form-control#search__Field {
+              background-color: $lightGrey;
+              margin-right: 0;
+              border-radius: 4px;
+              box-shadow: none;
+              height: 41px;
+              font-family:  $sansSerif;
+              font-size: $copyText-fontSize;
+
+              @media (min-width: 768px) {
+                font-size: $copyText-desktop-fontSize;
+              }
+            }
+          }
         }
-      }
-    }
-  }
-}
 
-@media only screen and (max-width: 480px) {
-  .header {
-    .block {
-      &.figure {
-        &.mainLogo {
-          .imageWrapper {
-            img {
-              margin-left: 5px;
-              max-height: 40px;
+        .block {
+          &.list {
+            &.links {
+              display: none;
+              
+              @media (min-width: 992px) and (max-width: 1257.98px) { // 1199.98px
+                display: block;
+                position: absolute;
+                top: $gutter;
+                right: 3 * $gutter;
+              }
+
+              @media (min-width: 1258px) { // 1200px
+                display: block;
+                position: relative;
+                top: -142px;
+                right: 0;
+                float: right;
+              }
+
+              ul {
+                list-style-type: none;
+
+                li {
+                  float: left;
+                  
+                  &:not(:last-child) {
+                    padding-right: $spacing;
+                  }
+
+                  &:last-child {
+                    border-left: 1px solid $borderGrey;
+                    padding-left: $spacing;
+                  }
+
+                  a {
+                    color: $black;
+
+                    &:hover {
+
+                    }
+
+                    &:active {
+
+                    }
+                  }
+                }
+              }
             }
           }
         }
       }
     }
+  }
 
-    .secondaryHeader {
-      .block {
-        &.siteName {
-          border-right: 0 solid #b9bbbd;
-          margin-right: 0;
-          padding-right: 0;
-        }
-      }
+  #gradientBorder {
+    height: 3px;
+    background-image: linear-gradient(to left, #005ea4, #5c98c4);
+
+    @media (min-width: 992px) {
+      height: 6px;
     }
+  }
 
-    .primaryHeader {
-      .block {
-        &.search {
-          clear: both;
-          float: none;
-          max-width: 100%;
-          padding-top: 10px;
-          position: relative;
-          right: auto;
-          top: auto;
-          width: 100%;
-        }
+  .start {
+    @media (min-width: 1280px) {
+      &.container {
+          max-width: 1228px;
       }
     }
   }
 }
 
-.header-hr {
-  margin-bottom: 20px;
-  margin-top: 70px;
-  position: relative;
-}
-
-@media only screen and (max-width: 480px) {
-  .header-hr {
-    margin-top: 20px;
-  }
-}

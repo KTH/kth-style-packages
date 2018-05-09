@@ -1,0 +1,14 @@
+@import 'variables/colors';
+@import 'variables/sizes';
+@import 'variables/fonts';
+
+// Bootstrap source
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
+@import "node_modules/bootstrap/scss/root";
+
+// KTH Base template
+@import "custom/slots/header";
+@import "custom/slots/breadcrumbs";
+@import "custom/slots/footer";

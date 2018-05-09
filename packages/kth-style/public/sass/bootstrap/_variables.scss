@@ -6,58 +6,38 @@
 
 
 @import '../variables/colors';
-@import '../variables/componentColors';
 @import '../variables/sizes';
 @import '../variables/fonts';
-// @import '../../node_modules/bootstrap/scss/_variables';
 @import 'node_modules/bootstrap/scss/mixins/breakpoints';
 
 // Colors
 
 // TODO Remove $colors-map
 
-$body-bg:       $bodyBg;
-
-$primary:       $lightBlue;
-$secondary:     $white;
-$success:       $green;
-// Following currently not specified by us
-//$info:          $yellow;
-//$warning:       $infoYellow;
-$danger:        $lightRed;
+$body-bg: $lightGrey;
+$primary: $blue;
+$secondary: $white;
+$success: $green;
+$danger: $red;
 
 // Typography
-$body-color: $textColor;
+$body-color: $black;
 
 $font-family-sans-serif: $sansSerif;
 $font-family-base: $sansSerif;
 
-// * Headings
+// Headings
 $h1-font-size: $h1-fontSize;
 $h2-font-size: $h2-fontSize;
 $h3-font-size: $h3-fontSize;
 $h4-font-size: $h4-fontSize;
-$h5-font-size: $h5-fontSize;
-$h6-font-size: $h6-fontSize;
-
-$headings-line-height: $headers-line-height;
 
 $headings-font-family: $sansSerif;
-
 $headings-font-weight: 400;
-
-$headings-color: $textColor;
+$headings-color: $black;
 
 // Spacing
 $spacer: 1.3rem;
-
-// Containers
-$container-max-widths: (
-  sm: 540px,
-  md: 720px,
-  lg: 976px,
-  xl: 977px
-);
 
 // Buttons
 $btn-font-weight: bold;
@@ -65,9 +45,12 @@ $btn-padding-x: 1.5rem;
 $btn-padding-y: 0.5rem;
 
 // Links
-$link-color:            $standardLinkColor;
-$link-hover-color:      $standardLinkColor;
+$link-color: $blue;
+$link-hover-color: $blue;
 
 // Tables
-$table-head-bg:          $white;
-$table-head-color:       $textColor;
+$table-head-bg: $white;
+$table-head-color: $black;
+
+// Gutter
+$gutter: 15px;

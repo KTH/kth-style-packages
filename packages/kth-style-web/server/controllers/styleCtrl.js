@@ -118,7 +118,7 @@ function getColorsByNames (names, allColors) {
 
 const file = path.join(__dirname, '/../../node_modules/kth-style/public/sass/variables/_colors.scss')
 
-const backgroundsForWhite = ['$green', '$greenHover', '$lightBlue', '$lightBlueHover', '$pink', '$lightRed', '$lightRedHover', '$darkGrey', '$darkGreyHover']
+const backgroundsForWhite = ['$green', '$greenHover', '$lightBlue', '$lightBlueHover', '$pink', '$red', '$lightRedHover', '$darkGrey', '$darkGreyHover']
 const backgroundsForBlack = ['$white', '$infoGreen', '$infoYellow', '$infoRed', '$midGrey', '$lightGrey', '$brightestGrey']
 const coloredText = ['$brighterBlack', '$blueLink', '$white']
 
