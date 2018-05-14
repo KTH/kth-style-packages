@@ -40,6 +40,18 @@
     margin: 0 $gutter;
     max-width: calc(100% - 30px);
   }
+
+  &.articleNavigation {
+    padding: $gutter;
+    margin: 0 $gutter;
+    max-width: calc(100% - 30px);
+    width: 100%;
+    line-height: 0;
+
+    .row {
+      width: 100%;
+    }
+  }
 }
 
 // This should maybe be placed in Cortina.
@@ -53,6 +65,10 @@
     &.start {
       max-width: calc(100% - 2 * #{$gutter});
     }
+
+    &.articleNavigation {
+      max-width: calc(100% - 2 * #{$gutter});
+    }
   }
 }
 
@@ -62,6 +78,10 @@
       article {
         padding: 0 2 * $gutter;
       }
+    }
+
+    &.articleNavigation {
+      padding: $gutter 2 * $gutter;
     }
   }
 }
@@ -74,6 +94,11 @@
     }
   
     &.start {
+      max-width: 1228px;
+      margin: 0 auto;
+    }
+
+    &.articleNavigation {
       max-width: 1228px;
       margin: 0 auto;
     }

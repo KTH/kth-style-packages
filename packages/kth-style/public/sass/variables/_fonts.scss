@@ -31,7 +31,7 @@ $h4-fontSize: $font-size-base * 1.286 !default; // 18px
 @mixin h1 {
   font-family: $sansSerif;
   font-weight: 600;
-  margin: 0 0 28px 0;
+  margin: 0 0 35px 0;
   padding: 0;
 
   @media (min-width: 768px) {
@@ -42,7 +42,7 @@ $h4-fontSize: $font-size-base * 1.286 !default; // 18px
 @mixin h2 {
   font-family: $sansSerif;
   font-weight: 600;
-  margin: 0 0 30px 0;
+  margin: 0 0 20px 0;
 
   @media (min-width: 768px) {
     font-size: $h2-desktop-fontSize;
@@ -52,6 +52,7 @@ $h4-fontSize: $font-size-base * 1.286 !default; // 18px
 @mixin h3 {
   font-family: $sansSerif;
   font-weight: normal;
+  margin: 0 0 20px 0;
 
   @media (min-width: 768px) {
     font-size: $h3-desktop-fontSize;
@@ -61,6 +62,7 @@ $h4-fontSize: $font-size-base * 1.286 !default; // 18px
 @mixin h4 {
   font-family: $sansSerif;
   font-weight: normal;
+  margin: 0 0 20px 0;
 }
 
 // Default lead text style.
@@ -72,7 +74,7 @@ $lead-desktop-fontSize: $font-size-base * 1.571 !default; // 18px
   font-weight: normal;
   font-size: $lead-fontSize;
   line-height: 1.5;
-  margin: 0 0 34px 0;
+  margin: 0 0 35px 0;
 
   @media (min-width: 768px) {
     font-size: $lead-desktop-fontSize;
@@ -83,12 +85,16 @@ $lead-desktop-fontSize: $font-size-base * 1.571 !default; // 18px
 $copyText-fontSize: $font-size-base !default; // 14px
 $copyText-desktop-fontSize: $font-size-base * 1.143 !default; // 16px
 .paragraphs {
-  font-family: $serif;
-  font-weight: normal;
-  font-size: $copyText-fontSize;
-  line-height: 1.88;
+  p {
+    font-family: $serif;
+    font-weight: normal;
+    font-size: $copyText-fontSize;
+    line-height: 1.88;
+    margin: 0 0 45px 0;
+    max-width: 730px;
 
-  @media (min-width: 768px) {
-    font-size: $copyText-desktop-fontSize;
+    @media (min-width: 768px) {
+      font-size: $copyText-desktop-fontSize;
+    }
   }
 }

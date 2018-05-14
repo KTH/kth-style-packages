@@ -131,6 +131,9 @@ body {
                   &:last-child {
                     border-left: 1px solid $borderGrey;
                     padding-left: $spacing;
+                    padding-right: 2 * $spacing;
+                    background: url("/img/icon/globe.svg") no-repeat right;
+                    background-size: 16px;
                   }
 
                   a {
@@ -170,4 +173,3 @@ body {
     }
   }
 }
-

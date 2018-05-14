@@ -12,7 +12,7 @@ footer {
 
     .block {
       &.columnSplitter {
-        padding: 0 $gutter;
+        padding: 0 2 * $gutter;
 
         &.row {
           .col {
@@ -54,7 +54,7 @@ footer {
   @media (min-width: 576px) {
     &.container {
       max-width: calc(100% - 2 * #{$gutter});
-      padding: $gutter 0;
+      padding: 2 * $gutter 0;
       margin: 0 $gutter;
 
       .block {
