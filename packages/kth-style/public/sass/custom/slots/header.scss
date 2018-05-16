@@ -101,50 +101,53 @@ body {
         .block {
           &.list {
             &.links {
-              display: none;
-              
-              @media (min-width: 992px) and (max-width: 1257.98px) { // 1199.98px
-                display: block;
-                position: absolute;
-                top: $gutter;
-                right: 3 * $gutter;
-              }
+              &.secondaryMenu {
+                display: none;
+                
+                @media (min-width: 992px) and (max-width: 1257.98px) { // 1199.98px
+                  display: block;
+                  position: absolute;
+                  top: $gutter;
+                  right: 3 * $gutter;
+                }
 
-              @media (min-width: 1258px) { // 1200px
-                display: block;
-                position: relative;
-                top: -142px;
-                right: 0;
-                float: right;
-              }
+                @media (min-width: 1258px) { // 1200px
+                  display: block;
+                  position: relative;
+                  top: -142px;
+                  right: 0;
+                  float: right;
+                }
 
-              ul {
-                list-style-type: none;
 
-                li {
-                  float: left;
-                  
-                  &:not(:last-child) {
-                    padding-right: $spacing;
-                  }
+                ul {
+                  list-style-type: none;
 
-                  &:last-child {
-                    border-left: 1px solid $borderGrey;
-                    padding-left: $spacing;
-                    padding-right: 2 * $spacing;
-                    background: url("/img/icon/globe.svg") no-repeat right;
-                    background-size: 16px;
-                  }
-
-                  a {
-                    color: $black;
-
-                    &:hover {
-
+                  li {
+                    float: left;
+                    
+                    &:not(:last-child) {
+                      padding-right: $spacing;
                     }
 
-                    &:active {
+                    &:last-child {
+                      border-left: 1px solid $borderGrey;
+                      padding-left: $spacing;
+                      padding-right: 2 * $spacing;
+                      background: url("/img/kth-style/icons/globe.svg") no-repeat right;
+                      background-size: 16px;
+                    }
 
+                    a {
+                      color: $black;
+
+                      &:hover {
+
+                      }
+
+                      &:active {
+
+                      }
                     }
                   }
                 }
