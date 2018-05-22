@@ -33,6 +33,7 @@ $h4-fontSize: $font-size-base * 1.286 !default; // 18px
   font-weight: 600;
   margin: 0 0 35px 0;
   padding: 0;
+  color: $black;
 
   @media (min-width: 768px) {
     font-size: $h1-desktop-fontSize;
@@ -43,6 +44,7 @@ $h4-fontSize: $font-size-base * 1.286 !default; // 18px
   font-family: $sansSerif;
   font-weight: 600;
   margin: 0 0 20px 0;
+  color: $black;
 
   @media (min-width: 768px) {
     font-size: $h2-desktop-fontSize;
@@ -53,6 +55,7 @@ $h4-fontSize: $font-size-base * 1.286 !default; // 18px
   font-family: $sansSerif;
   font-weight: normal;
   margin: 0 0 20px 0;
+  color: $black;
 
   @media (min-width: 768px) {
     font-size: $h3-desktop-fontSize;
@@ -63,6 +66,7 @@ $h4-fontSize: $font-size-base * 1.286 !default; // 18px
   font-family: $sansSerif;
   font-weight: normal;
   margin: 0 0 20px 0;
+  color: $black;
 }
 
 // Default lead text style.
@@ -83,7 +87,7 @@ $lead-desktop-fontSize: $font-size-base * 1.571 !default; // 18px
 
 // Default copy text style.
 $copyText-fontSize: $font-size-base !default; // 14px
-$copyText-desktop-fontSize: $font-size-base * 1.143 !default; // 16px
+$copyText-desktop-fontSize: $font-size-base * 1.214 !default; // 17px
 .paragraphs {
   p {
     font-family: $serif;
