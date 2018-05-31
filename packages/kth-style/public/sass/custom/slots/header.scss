@@ -48,9 +48,9 @@ body {
             @media (min-width: 992px) {
               padding: 15px 0 15px 0;
               height: 0;
-              width: 290px;
+              width: 310px; // 290px;
               position: relative;
-              left: 881px;
+              left: 860px; // 881px;
               top: -6px;
               z-index: 3;
             }
@@ -165,14 +165,6 @@ body {
 
     @media (min-width: 992px) {
       height: 6px;
-    }
-  }
-
-  .start {
-    @media (min-width: 1280px) {
-      &.container {
-          max-width: 1228px;
-      }
     }
   }
 }

@@ -1,8 +1,7 @@
 'use strict'
 const gulp = require('gulp')
 const mergeStream = require('merge-stream')
-var header = require('gulp-header');
-const del = require('del')
+const header = require('gulp-header')
 const cleanCSS = require('gulp-clean-css')
 const gulpLoadPlugins = require('gulp-load-plugins')
 const $ = gulpLoadPlugins()
@@ -34,7 +33,6 @@ const { webpack, moveResources, sass, vendor, clean } = require('kth-node-build-
  *
  */
 
-
 // *** JavaScript helper tasks ***
 gulp.task('webpack', webpack)
 gulp.task('vendor', vendor)
@@ -57,11 +55,11 @@ const distRootFolderName = 'dist'
 
 // Module for importing CSS files into a Sass file
 const cssImporter = require('node-sass-css-importer')({
-    import_paths: ['public/fonts/fontello/css']
- });
+  import_paths: ['public/fonts/fontello/css']
+})
 
 // Information about KTH Style in the head of CSS file
-const pkg = require('./package.json');
+const pkg = require('./package.json')
 const banner = `/*!
   * ${pkg.name}  - ${pkg.description}
   * @version v${pkg.version}
@@ -69,10 +67,10 @@ const banner = `/*!
   */`
 
 gulp.src('./foo/*.js')
-  .pipe(header(banner, { pkg : pkg } ))
+  .pipe(header(banner, { pkg: pkg }))
   .pipe(gulp.dest('./dist/'))
 
-var sassInlineSVG = require('sass-inline-svg-utf8');
+var sassInlineSVG = require('sass-inline-svg-utf8')
 
 gulp.task('createDist', function () {
   return mergeStream(
@@ -81,7 +79,7 @@ gulp.task('createDist', function () {
       .pipe($.sourcemaps.init())
       .pipe($.sass({includePaths: ['node_modules/bootstrap/scss'], functions: sassInlineSVG(), importer: [cssImporter]}).on('error', $.sass.logError))
       .pipe($.autoprefixer({browsers: ['last 4 versions']}))
-      .pipe(header(banner, { pkg : pkg } ))
+      .pipe(header(banner, { pkg: pkg }))
       .pipe(gulp.dest(`./${distRootFolderName}/css`))
       .pipe($.rename({ suffix: '.min' }))
       .pipe(cleanCSS({ level: 2 }))

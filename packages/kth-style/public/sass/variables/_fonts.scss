@@ -13,9 +13,17 @@ $serif: 'Georgia Regular', 'Georgia', 'garamond pro', garamond, 'times new roman
 $sansSerif: $open-sans, Arial, 'Helvetica Neue', helvetica, sans-serif;
 
 // Default font size is set to 14px.
-$font-size-base: 0.875rem; 
+$font-size-base: 0.875rem;
 
-// Defauklt headline font sizes.
+// Default copy text style.
+$copyText-fontSize: $font-size-base !default; // 14px
+$copyText-desktop-fontSize: $font-size-base * 1.214 !default; // 17px
+
+// Default lead text style.
+$lead-fontSize: $font-size-base * 1.286 !default; // 22px
+$lead-desktop-fontSize: $font-size-base * 1.571 !default; // 18px
+
+// Default headline font sizes.
 $h1-fontSize: $font-size-base * 2 !default; // 28px
 $h1-desktop-fontSize: $font-size-base * 3.286 !default; // 46px
 
@@ -31,7 +39,7 @@ $h4-fontSize: $font-size-base * 1.286 !default; // 18px
 @mixin h1 {
   font-family: $sansSerif;
   font-weight: 600;
-  margin: 0 0 35px 0;
+  margin: 0 0 22px 0;
   padding: 0;
   color: $black;
 
@@ -43,7 +51,7 @@ $h4-fontSize: $font-size-base * 1.286 !default; // 18px
 @mixin h2 {
   font-family: $sansSerif;
   font-weight: 600;
-  margin: 0 0 20px 0;
+  margin: 0 0 8px 0;
   color: $black;
 
   @media (min-width: 768px) {
@@ -54,7 +62,7 @@ $h4-fontSize: $font-size-base * 1.286 !default; // 18px
 @mixin h3 {
   font-family: $sansSerif;
   font-weight: normal;
-  margin: 0 0 20px 0;
+  margin: 0 0 8px 0;
   color: $black;
 
   @media (min-width: 768px) {
@@ -65,40 +73,38 @@ $h4-fontSize: $font-size-base * 1.286 !default; // 18px
 @mixin h4 {
   font-family: $sansSerif;
   font-weight: normal;
-  margin: 0 0 20px 0;
+  margin: 0 0 8px 0;
   color: $black;
 }
 
-// Default lead text style.
-$lead-fontSize: $font-size-base * 1.286 !default; // 22px
-$lead-desktop-fontSize: $font-size-base * 1.571 !default; // 18px
+// Default font size.
+body {
+  font-size: $font-size-base;
+
+  @media (min-width: 768px) {
+    font-size: $copyText-desktop-fontSize;
+  }
+}
 
 .lead {
   font-family: $sansSerif;
   font-weight: normal;
   font-size: $lead-fontSize;
   line-height: 1.5;
-  margin: 0 0 35px 0;
+  margin: 0 0 22px 0;
 
   @media (min-width: 768px) {
     font-size: $lead-desktop-fontSize;
   }
 }
 
-// Default copy text style.
-$copyText-fontSize: $font-size-base !default; // 14px
-$copyText-desktop-fontSize: $font-size-base * 1.214 !default; // 17px
+
 .paragraphs {
   p {
     font-family: $serif;
     font-weight: normal;
-    font-size: $copyText-fontSize;
     line-height: 1.88;
     margin: 0 0 45px 0;
     max-width: 730px;
-
-    @media (min-width: 768px) {
-      font-size: $copyText-desktop-fontSize;
-    }
   }
 }
