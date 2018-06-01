@@ -64,7 +64,7 @@ body {
             
             @media (min-width: 1258px) { // 1200px
               padding: 0;
-              left: 873px;
+              left: 860px;
             }
 
             // The search block should get it's style from the search application. This is just temporary design.
@@ -140,14 +140,7 @@ body {
 
                     a {
                       color: $black;
-
-                      &:hover {
-
-                      }
-
-                      &:active {
-
-                      }
+                      font-size: $font-size-base;
                     }
                   }
                 }
