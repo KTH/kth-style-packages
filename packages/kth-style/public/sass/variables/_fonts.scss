@@ -34,3 +34,45 @@ $h3-fontSize: $font-size-base * 1.571 !default; // 22px
 $h3-desktop-fontSize: $font-size-base * 1.857 !default; // 26px
 
 $h4-fontSize: $font-size-base * 1.286 !default; // 18px
+
+// Default headline styles.
+@mixin h1 {
+  font-family: $sansSerif;
+  font-weight: 600;
+  margin: 0 0 22px 0;
+  padding: 0;
+  color: $black;
+
+  @media (min-width: 768px) {
+    font-size: $h1-desktop-fontSize;
+  }
+}
+
+@mixin h2 {
+  font-family: $sansSerif;
+  font-weight: 600;
+  margin: 0 0 8px 0;
+  color: $black;
+
+  @media (min-width: 768px) {
+    font-size: $h2-desktop-fontSize;
+  }
+}
+
+@mixin h3 {
+  font-family: $sansSerif;
+  font-weight: normal;
+  margin: 0 0 8px 0;
+  color: $black;
+
+  @media (min-width: 768px) {
+    font-size: $h3-desktop-fontSize;
+  }
+}
+
+@mixin h4 {
+  font-family: $sansSerif;
+  font-weight: normal;
+  margin: 0 0 8px 0;
+  color: $black;
+}
