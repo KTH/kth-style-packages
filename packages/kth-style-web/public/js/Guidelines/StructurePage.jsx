@@ -41,6 +41,9 @@ export default function DropdownsPage (props) {
       <Section title= "Strukturera med rubriker">
         <p>Skriv här om hur man strukturerar med rubriker, text, listor </p>
       </Section>
+      <Section title= "Strukturera med tabell">
+        <p>Skriv här om hur man strukturerar med tabeller. </p>
+      </Section>
       <Section title="Strukturera med utfällbara rubriklister">
         <p>
             Utfällbara rubriklister används när man vill dölja information på en sida för att ge användaren överblick, samtidigt som
