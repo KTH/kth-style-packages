@@ -10,6 +10,10 @@ footer {
     padding: $gutter 0;
     margin: 0 $gutter;
 
+    .container {
+      background-color: $grey;
+    }
+
     .block {
       &.columnSplitter {
         padding: 0 2 * $gutter;

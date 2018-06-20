@@ -61,7 +61,7 @@ $h4-fontSize: $font-size-base * 1.286 !default; // 18px
 
 @mixin h3 {
   font-family: $sansSerif;
-  font-weight: normal;
+  font-weight: 600;
   margin: 0 0 8px 0;
   color: $black;
 
