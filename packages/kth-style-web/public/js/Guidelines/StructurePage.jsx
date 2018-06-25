@@ -42,7 +42,7 @@ export default function DropdownsPage (props) {
         <p>Skriv här om hur man strukturerar med rubriker, text, listor </p>
       </Section>
       <Section title= "Strukturera med tabell">
-        <p>Skriv här om hur man strukturerar med tabeller. </p>
+        <p>Tabeller används för att få ett innehåll överskådligt strukturetrat som kan delas upp under kolumner och rader.</p>
       </Section>
       <Section title="Strukturera med utfällbara rubriklister">
         <p>
