@@ -20,6 +20,8 @@ import PopoversPage from 'kth-style-inferno-bootstrap/docs/src/Components/Popove
 import ProgressPage from 'kth-style-inferno-bootstrap/docs/src/Components/ProgressPage.jsx'
 import TooltipsPage from 'kth-style-inferno-bootstrap/docs/src/Components/TooltipsPage.jsx'
 import TablePage from 'kth-style-inferno-bootstrap/docs/src/Components/TablePage.jsx'
+import TabsPage from 'kth-style-inferno-bootstrap/docs/src/Components/TabsPage.jsx'
+
 
 /* Layout */
 import GridPage from 'kth-style-inferno-bootstrap/docs/src/Layout/GridPage.jsx'
@@ -54,6 +56,7 @@ const pages = [
   { path: "/components/modal", title: "Modal", component: ModalPage},
   { path: "/components/navbar", title: "Navbar", component: NavbarPage},
   { path: "/components/table", title: "Table", component: TablePage},
+  { path: "/components/table", title: "Table", component: TabsPage},
   
 
   // Components in Progress
