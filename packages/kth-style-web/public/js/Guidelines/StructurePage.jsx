@@ -89,9 +89,49 @@ export default function DropdownsPage (props) {
       <Section title= "Strukturera med bakgrunder ">
         <p>Skriv här om hur man strukturerar med bakgrunder </p>
       </Section>
-      <Section title= "Strukturera med flikar">
-        <p>Skriv här om hur man strukturerar med flikar </p>
-      </Section>
+      <Section title= "Strukturera med tabbar (flikar)">
+        <p>Tabbar används när användaren ska kunna alternera mellan olika grupper av innehåll i samma kontext (innehållet ska visas på samma sida, man ska inte navigera i väg). Innehållet under tabbarna ska:</p>
+        <ul>
+           <li>
+             Relatera till varandra (hänger logiskt ihop). 
+           </li>
+           <li>
+              Kunna grupperas så att det logiskt bara kan höra hemma under en av tabbarna. Hittar man inte distinkta grupperingar så passar inte tabbar för det innehållet.
+           </li>
+           <li>
+             Inte behöva visas samtidigt, som när man vill jämföra innehåll (användaren ska inte behöva klicka fram och tillbaka mellan tabbar och hålla saker i minnet).
+           </li>
+           <li>
+             Vara komprimerad information, t ex 1-2 korta stycken av text. 
+           </li>
+        </ul>
+        <p>
+            Läs gärna <a href="https://www.kth.se/social/group/kth-style-guide/page/bakgrund-21/">bakgrund till val av tabbar</a>.
+        </p>
+        </section>
+      <section>
+        <h3 id="generella_riktlinjer_rubriklist">Generella riktlinjer tabbar</h3>
+        <ul>
+           <li>
+             Bestäm ordningen på tabbarna utifrån vad användarna upplever som naturligt
+           </li>
+           <li>
+             Tabbarna ska inte ta upp mer än en rad eftersom det är svårt att förstå flikarnas inbördes förhållande när de hamnar under varandra. Hamnar flikarna på mer än en rad så indikerar det på för många flikar eller för långa namn.
+           </li>
+           <li>
+             Namngivninga av tabbar: 
+             <ul>
+              <li>
+                Korta meningsfulla titlar på flikarna gör att de bli lättare att scanna och flikarna tar inte för stor plats. 1-2 ord rekommenderas.
+              </li>
+              <li>
+                Använd mouse over om behöver förklara innehållet ytterligare.
+              </li>
+             </ul>
+            </li>
+        </ul>
+      </section>
+     </Section>
     </Page>
   )
 }
