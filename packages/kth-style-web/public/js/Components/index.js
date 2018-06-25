@@ -56,7 +56,7 @@ const pages = [
   { path: "/components/modal", title: "Modal", component: ModalPage},
   { path: "/components/navbar", title: "Navbar", component: NavbarPage},
   { path: "/components/table", title: "Table", component: TablePage},
-  { path: "/components/table", title: "Table", component: TabsPage},
+  { path: "/components/tabs", title: "Tabs", component: TabsPage},
   
 
   // Components in Progress
