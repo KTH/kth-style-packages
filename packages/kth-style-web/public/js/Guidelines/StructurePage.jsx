@@ -55,9 +55,7 @@ export default function DropdownsPage (props) {
         <p>
             Läs gärna <a href="https://www.kth.se/social/group/kth-style-guide/page/bakgrund-12/">bakgrund till val av rubriklister</a>.
         </p>
-      </Section>
       <h3>Välj typ av rubriklist</h3>
-      <section>
         <table class="table">
           <thead class="thead-default">
             <tr>
@@ -76,15 +74,13 @@ export default function DropdownsPage (props) {
             </tr>
           </tbody>
         </table>
-      </section>
-      <section>
         <h3 id="generella_riktlinjer_rubriklist">Generella riktlinjer rubriklist</h3>
         <ul>
            <li>
              Rubriken ska beskriva innehållet som kan fällas ut.
            </li>
         </ul>
-      </section>
+      </Section>
       
       <Section title= "Strukturera med bakgrunder ">
         <p>Skriv här om hur man strukturerar med bakgrunder </p>
@@ -108,8 +104,6 @@ export default function DropdownsPage (props) {
         <p>
             Läs gärna <a href="https://www.kth.se/social/group/kth-style-guide/page/bakgrund-21/">bakgrund till val av tabbar</a>.
         </p>
-        </section>
-      <section>
         <h3 id="generella_riktlinjer_rubriklist">Generella riktlinjer tabbar</h3>
         <ul>
            <li>
@@ -130,7 +124,6 @@ export default function DropdownsPage (props) {
              </ul>
             </li>
         </ul>
-      </section>
      </Section>
     </Page>
   )
