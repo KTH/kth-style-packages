@@ -38,6 +38,12 @@ export default function DropdownsPage (props) {
           </ul>
         </p>
       </Section>
+      
+      <Section title= "Strukturera med bakgrunder ">
+        <p>Bakgrundsplattor används för att binda ihop olika innehåll. Bakgrundsplattor är viktigare när det är mycket olika slags innehåll på en sida och där det inte räcker medatt separera innehåll med luft. </p>
+        <p>Tänk på att testa designen så att användaren uppfattar informationen som det är tänkt, då inboxad information i vissa lägen kan missas.</p>
+      </Section>
+      
       <Section title= "Strukturera med rubriker">
         <p>Skriv här om hur man strukturerar med rubriker, text, listor </p>
       </Section>
@@ -82,9 +88,6 @@ export default function DropdownsPage (props) {
         </ul>
       </Section>
       
-      <Section title= "Strukturera med bakgrunder ">
-        <p>Skriv här om hur man strukturerar med bakgrunder </p>
-      </Section>
       <Section title= "Strukturera med tabbar (flikar)">
         <p>Tabbar används när användaren ska kunna alternera mellan olika grupper av innehåll i samma kontext (innehållet ska visas på samma sida, man ska inte navigera i väg).</p>
         <p>Innehållet under tabbarna ska:</p>
