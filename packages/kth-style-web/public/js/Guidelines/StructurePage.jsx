@@ -41,17 +41,17 @@ export default function DropdownsPage (props) {
      
       <Section title= "Olika sätt att strukturera innehåll på">
       
-        <h3 id="strukturera_med_bakgrunder">Strukturera med bakgrunder</h3>
+        <h3 id="strukturera_med_bakgrunder">Bakgrunder</h3>
         <p>Bakgrundsplattor används för att binda ihop olika innehåll. Bakgrundsplattor är viktigare när det är mycket olika slags innehåll på en sida och där det inte räcker medatt separera innehåll med luft. </p>
         <p>Tänk på att testa designen så att användaren uppfattar informationen som det är tänkt, då inboxad information i vissa lägen kan missas.</p>
       
-        <h3 id="strukturera_med_rubriker">Strukturera med rubriker</h3>
+        <h3 id="strukturera_med_rubriker">Rubriker</h3>
         <p>Skriv här om hur man strukturerar med rubriker, text, listor </p>
       
-        <h3 id="strukturera_med_tabeller">Strukturera med tabeller</h3>
+        <h3 id="strukturera_med_tabeller">Tabeller</h3>
         <p>Tabeller används för att få ett innehåll överskådligt strukturetrat som kan delas upp under kolumner och rader.</p>
 
-        <h3 id="strukturera_med_utfallbara_rubriklister">Strukturera med utfällbara rubriklister</h3>
+        <h3 id="strukturera_med_utfallbara_rubriklister">Utfällbara rubriklister</h3>
         <p>
           Utfällbara rubriklister används när man vill dölja information på en sida för att ge användaren överblick, samtidigt som man ger användaren en möjlighet att kunna se mer information utan att behöva lämna sidan.
          </p>
@@ -87,15 +87,15 @@ export default function DropdownsPage (props) {
            </li>
         </ul>
       
-      <h3 id="strukturera_med_tabbar">Strukturera med tabbar</h3>
+      <h3 id="strukturera_med_tabbar">Tabbar</h3>
         <p>Tabbar används när användaren ska kunna alternera mellan olika grupper av innehåll i samma kontext (innehållet ska visas på samma sida, man ska inte navigera i väg).</p>
         <p>Innehållet under tabbarna ska:</p>
         <ul>
            <li>
-             Relatera till varandra (hänger logiskt ihop). 
+             Relatera till varandra (logiskt hänga ihop). 
            </li>
            <li>
-              Kunna grupperas så att det logiskt bara kan höra hemma under en av tabbarna. Hittar man inte distinkta grupperingar så passar inte tabbar för det innehållet.
+              Kunna grupperas så att innehållet logiskt bara kan höra hemma under en av tabbarna. Hittar man inte distinkta grupperingar så passar inte tabbar för det innehållet.
            </li>
            <li>
              Inte behöva visas samtidigt, som när man vill jämföra innehåll (användaren ska inte behöva klicka fram och tillbaka mellan tabbar och hålla saker i minnet).
@@ -119,7 +119,7 @@ export default function DropdownsPage (props) {
              Namngivninga av tabbar: 
              <ul>
               <li>
-                Korta meningsfulla titlar på flikarna gör att de bli lättare att scanna och flikarna tar inte för stor plats. 1-2 ord rekommenderas.
+                Korta meningsfulla titlar på flikarna gör att de bli lättare att scanna och att flikarna inte tar för stor plats. 1-2 ord rekommenderas.
               </li>
               <li>
                 Använd mouse over om behöver förklara innehållet ytterligare.
