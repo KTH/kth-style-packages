@@ -38,30 +38,30 @@ export default function DropdownsPage (props) {
           </ul>
         </p>
       </Section>
+     
+      <Section title= "Olika sätt att strukturera innehåll på">
       
-      <Section title= "Strukturera med bakgrunder ">
+        <h3 id="strukturera_med_bakgrunder">Strukturera med bakgrunder</h3>
         <p>Bakgrundsplattor används för att binda ihop olika innehåll. Bakgrundsplattor är viktigare när det är mycket olika slags innehåll på en sida och där det inte räcker medatt separera innehåll med luft. </p>
         <p>Tänk på att testa designen så att användaren uppfattar informationen som det är tänkt, då inboxad information i vissa lägen kan missas.</p>
-      </Section>
       
-      <Section title= "Strukturera med rubriker">
+        <h3 id="strukturera_med_rubriker">Strukturera med rubriker</h3>
         <p>Skriv här om hur man strukturerar med rubriker, text, listor </p>
-      </Section>
-      <Section title= "Strukturera med tabell">
+      
+        <h3 id="strukturera_med_tabeller">Strukturera med tabeller</h3>
         <p>Tabeller används för att få ett innehåll överskådligt strukturetrat som kan delas upp under kolumner och rader.</p>
-      </Section>
-      <Section title="Strukturera med utfällbara rubriklister">
+
+        <h3 id="strukturera_med_utfallbara_rubriklister">Strukturera med utfällbara rubriklister</h3>
         <p>
-            Utfällbara rubriklister används när man vill dölja information på en sida för att ge användaren överblick, samtidigt som
-            man ger användaren en möjlighet att kunna se mer information utan att behöva lämna sidan.
-        </p>
+          Utfällbara rubriklister används när man vill dölja information på en sida för att ge användaren överblick, samtidigt som man ger användaren en möjlighet att kunna se mer information utan att behöva lämna sidan.
+         </p>
+         <p>
+           Det finns finns två olika typer av rubriklister. Välj komponenttyp utifrån användning (se tabellen nedan).
+         </p>
         <p>
-            Det finns finns två olika typer av rubriklister. Välj komponenttyp utifrån användning (se tabellen nedan).
+          Läs gärna <a href="https://www.kth.se/social/group/kth-style-guide/page/bakgrund-12/">bakgrund till val av rubriklister</a>.
         </p>
-        <p>
-            Läs gärna <a href="https://www.kth.se/social/group/kth-style-guide/page/bakgrund-12/">bakgrund till val av rubriklister</a>.
-        </p>
-      <h3>Välj typ av rubriklist</h3>
+        <h4>Välj typ av rubriklist</h4>
         <table class="table">
           <thead class="thead-default">
             <tr>
@@ -80,15 +80,14 @@ export default function DropdownsPage (props) {
             </tr>
           </tbody>
         </table>
-        <h3 id="generella_riktlinjer_rubriklist">Generella riktlinjer rubriklist</h3>
+        <h4 id="generella_riktlinjer_rubriklist">Generella riktlinjer rubriklist</h4>
         <ul>
            <li>
              Rubriken ska beskriva innehållet som kan fällas ut.
            </li>
         </ul>
-      </Section>
       
-      <Section title= "Strukturera med tabbar (flikar)">
+      <h3 id="strukturera_med_tabbar">Strukturera med tabbar</h3>
         <p>Tabbar används när användaren ska kunna alternera mellan olika grupper av innehåll i samma kontext (innehållet ska visas på samma sida, man ska inte navigera i väg).</p>
         <p>Innehållet under tabbarna ska:</p>
         <ul>
@@ -128,7 +127,7 @@ export default function DropdownsPage (props) {
              </ul>
             </li>
         </ul>
-     </Section>
+      </Section>
     </Page>
   )
 }
