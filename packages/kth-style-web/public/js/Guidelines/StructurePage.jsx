@@ -46,8 +46,10 @@ export default function DropdownsPage (props) {
         <p>Tänk på att testa designen så att användaren uppfattar informationen som det är tänkt, då inboxad information i vissa lägen kan missas.</p>
       
         <h3 id="strukturera_med_rubriker">Rubriker</h3>
-        <p>Skriv här om hur man strukturerar med rubriker, text, listor </p>
-      
+        <p>
+          Se <a hhref="/style/api/guidelines/heading">Riktlinjer rubriker, brödtext</a>.
+        </p>
+        
         <h3 id="strukturera_med_tabeller">Tabeller</h3>
         <p>Tabeller används för att få ett innehåll överskådligt strukturetrat som kan delas upp under kolumner och rader.</p>
 
