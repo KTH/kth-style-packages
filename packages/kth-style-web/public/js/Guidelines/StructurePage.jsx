@@ -45,7 +45,7 @@ export default function DropdownsPage (props) {
         <p>Se <a href="/style/guidelines/heading">Riktlinjer rubriker, brödtext</a>.</p>
         
         <h3 id="strukturera_med_bakgrunder">Bakgrunder</h3>
-        <p>Bakgrundsplattor används för att binda ihop olika innehåll. Bakgrundsplattor är viktigare när det är mycket olika slags innehåll på en sida och där det inte räcker medatt separera innehåll med luft. </p>
+        <p>Bakgrundsplattor används för att binda ihop olika innehåll. Bakgrundsplattor är viktigare när det är mycket olika slags innehåll på en sida och där det inte räcker med att separera innehåll med luft. </p>
         <p>Tänk på att testa designen så att användaren uppfattar informationen som det är tänkt, då inboxad information i vissa lägen kan missas.</p>
         <h4>Välj bakgrund</h4>
         <a href="/style/api/components/card">Cards</a>
