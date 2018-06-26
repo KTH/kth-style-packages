@@ -47,7 +47,7 @@ export default function DropdownsPage (props) {
       
         <h3 id="strukturera_med_rubriker">Rubriker</h3>
         <p>
-          Se <a hhref="/style/api/guidelines/heading">Riktlinjer rubriker, brödtext</a>.
+          Se <a href="/style/api/guidelines/heading">Riktlinjer rubriker, brödtext</a>.
         </p>
         
         <h3 id="strukturera_med_tabeller">Tabeller</h3>
