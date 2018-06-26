@@ -74,6 +74,16 @@ export default function DropdownsPage (props) {
         <p>
         <a href="https://www.nngroup.com/articles/right-justified-navigation-menus/">Right-Justified Navigation Menus Impede Scannability</a>
        </p>
+       <h3>Tabbar</h3>
+       <p>
+          <a href="https://www.nngroup.com/articles/tabs-used-right/">Tabs, Used Right</a>
+       </p>
+       <p>
+          <a href="https://uxplanet.org/tabs-for-mobile-ux-design-d4cc4d9410d1">Tabs for Mobile UX Design</a>
+       </p>
+       <p>
+          <a href="https://www.smashingmagazine.com/2009/06/module-tabs-in-web-design-best-practices-and-solutions/">Module Tabs in Web Design: Best Practices and Solutions</a>
+       </p>
        <h3>Struktur, läsbarhet, Typsnitt, ...</h3>
        <p>
           <a href="https://www.smashingmagazine.com/2012/12/css-baseline-the-good-the-bad-and-the-ugly/">CSS Baseline: The Good, The Bad And The Ugly</a>
