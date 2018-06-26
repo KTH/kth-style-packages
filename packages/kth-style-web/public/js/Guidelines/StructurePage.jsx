@@ -109,7 +109,7 @@ export default function DropdownsPage (props) {
         <p>
             Läs gärna <a href="https://www.kth.se/social/group/kth-style-guide/page/bakgrund-21/">bakgrund till val av tabbar</a>.
         </p>
-        <h3 id="generella_riktlinjer_rubriklist">Generella riktlinjer tabbar</h3>
+        <h4 id="generella_riktlinjer_rubriklist">Generella riktlinjer tabbar</h4>
         <ul>
            <li>
              Bestäm ordningen på tabbarna utifrån vad användarna upplever som naturligt
