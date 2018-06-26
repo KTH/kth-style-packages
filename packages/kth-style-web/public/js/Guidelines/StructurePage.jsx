@@ -111,6 +111,8 @@ export default function DropdownsPage (props) {
         <p>
             Läs gärna <a href="https://www.kth.se/social/group/kth-style-guide/page/bakgrund-21/">bakgrund till val av tabbar</a>.
         </p>
+        <h4>Välj tabbar</h4>
+        <a href="/style/api/components/tabs">Tabs</a>
         <h4 id="generella_riktlinjer_rubriklist">Generella riktlinjer tabbar</h4>
         <ul>
            <li>
@@ -131,9 +133,6 @@ export default function DropdownsPage (props) {
              </ul>
             </li>
         </ul>
-        <h4>Välj tabbar</h4>
-        <a href="/style/api/components/tabs">Tabs</a>
-      
       </Section>
     </Page>
   )
