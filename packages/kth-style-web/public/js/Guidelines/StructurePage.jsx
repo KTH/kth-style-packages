@@ -40,16 +40,14 @@ export default function DropdownsPage (props) {
       </Section>
      
       <Section title= "Olika sätt att strukturera innehåll på en sida">
-      
+        
+        <h3 id="strukturera_med_rubriker">Rubriker</h3>
+        <p>Se <a href="/style/guidelines/heading">Riktlinjer rubriker, brödtext</a>.</p>
+        
         <h3 id="strukturera_med_bakgrunder">Bakgrunder</h3>
         <p>Bakgrundsplattor används för att binda ihop olika innehåll. Bakgrundsplattor är viktigare när det är mycket olika slags innehåll på en sida och där det inte räcker medatt separera innehåll med luft. </p>
         <p>Tänk på att testa designen så att användaren uppfattar informationen som det är tänkt, då inboxad information i vissa lägen kan missas.</p>
       
-        <h3 id="strukturera_med_rubriker">Rubriker</h3>
-        <p>
-          Se <a href="/style/guidelines/heading">Riktlinjer rubriker, brödtext</a>.
-        </p>
-        
         <h3 id="strukturera_med_tabeller">Tabeller</h3>
         <p>Tabeller används för att få ett innehåll överskådligt strukturetrat som kan delas upp under kolumner och rader.</p>
 
