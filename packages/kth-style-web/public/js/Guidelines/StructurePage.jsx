@@ -47,10 +47,14 @@ export default function DropdownsPage (props) {
         <h3 id="strukturera_med_bakgrunder">Bakgrunder</h3>
         <p>Bakgrundsplattor används för att binda ihop olika innehåll. Bakgrundsplattor är viktigare när det är mycket olika slags innehåll på en sida och där det inte räcker medatt separera innehåll med luft. </p>
         <p>Tänk på att testa designen så att användaren uppfattar informationen som det är tänkt, då inboxad information i vissa lägen kan missas.</p>
-      
+        <h4>Välj bakgrund</h4>
+        <a href="/style/api/components/card">Cards</a></td>
+        
         <h3 id="strukturera_med_tabeller">Tabeller</h3>
         <p>Tabeller används för att få ett innehåll överskådligt strukturetrat som kan delas upp under kolumner och rader.</p>
-
+        <h4>Välj tabell</h4>
+        <a href="/style/api/components/table">Table</a></td>
+        
         <h3 id="strukturera_med_utfallbara_rubriklister">Utfällbara rubriklister</h3>
         <p>
           Utfällbara rubriklister används när man vill dölja information på en sida för att ge användaren överblick, samtidigt som man ger användaren en möjlighet att kunna se mer information utan att behöva lämna sidan.
@@ -127,6 +131,9 @@ export default function DropdownsPage (props) {
              </ul>
             </li>
         </ul>
+        <h4>Välj tabs</h4>
+        <a href="/style/api/components/tabs">Tabs</a></td>
+      
       </Section>
     </Page>
   )
