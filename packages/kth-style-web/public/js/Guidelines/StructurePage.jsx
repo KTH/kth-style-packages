@@ -92,7 +92,7 @@ export default function DropdownsPage (props) {
         </ul>
       
       <h3 id="strukturera_med_tabbar">Tabbar</h3>
-        <p>Tabbar används när användaren ska kunna alternera mellan olika grupper av innehåll i samma kontext (innehållet ska visas på samma sida, man ska inte navigera i väg).</p>
+        <p>Tabbar används när användaren ska kunna alternera mellan olika grupper av innehåll i samma kontext (innehållet ska visas på samma sida, man ska inte navigera i väg). Tabbar ska inte användas då användaren behöver få informationen sekvanetiellt.</p>
         <p>Innehållet under tabbarna ska:</p>
         <ul>
            <li>
