@@ -12,6 +12,7 @@ body {
         margin: 0 auto;
         max-width: 1228px;
         padding: 0;
+        position: relative;
 
         @media (min-width: 992px) {
           padding: 0 2 * $gutter;
@@ -42,29 +43,15 @@ body {
 
         .block {
           &.search {
-            padding: 15px 0 15px 0;
+            padding: $gutter 0 $gutter 0;
             height: 78px;
 
             @media (min-width: 992px) {
-              padding: 15px 0 15px 0;
-              height: 0;
-              width: 310px; // 290px;
-              position: relative;
-              left: 860px; // 881px;
-              top: -6px;
-              z-index: 3;
-            }
-
-            @media (min-width: 992px) and (max-width: 1257.98px) { // 1199.98px
-              position: absolute;
-              right: 3 * $gutter;
-              top: 64px;
-              left: unset;
-            }
-            
-            @media (min-width: 1258px) { // 1200px
               padding: 0;
-              left: 860px;
+              width: 310px;
+              position: absolute;
+              z-index: 3;
+              right: 2 * $gutter;
             }
 
             // The search block should get it's style from the search application. This is just temporary design.
@@ -103,22 +90,15 @@ body {
             &.links {
               &.secondaryMenu {
                 display: none;
-                
-                @media (min-width: 992px) and (max-width: 1257.98px) { // 1199.98px
+                height: 0px;
+                margin: 0;
+
+                @media (min-width: 992px) {
                   display: block;
                   position: absolute;
                   top: $gutter;
-                  right: 3 * $gutter;
+                  right: 2 * $gutter;
                 }
-
-                @media (min-width: 1258px) { // 1200px
-                  display: block;
-                  position: relative;
-                  top: -142px;
-                  right: 0;
-                  float: right;
-                }
-
 
                 ul {
                   list-style-type: none;

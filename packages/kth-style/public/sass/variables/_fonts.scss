@@ -17,23 +17,23 @@ $font-size-base: 0.875rem;
 
 // Default copy text style.
 $copyText-fontSize: $font-size-base !default; // 14px
-$copyText-desktop-fontSize: $font-size-base * 1.214 !default; // 17px
+$copyText-desktop-fontSize: 1.125rem !default; // 18px
 
 // Default lead text style.
-$lead-fontSize: $font-size-base * 1.286 !default; // 22px
-$lead-desktop-fontSize: $font-size-base * 1.571 !default; // 18px
+$lead-fontSize: 1.125rem !default; // 18px
+$lead-desktop-fontSize: 1.375rem !default; // 22px
 
 // Default headline font sizes.
-$h1-fontSize: $font-size-base * 2 !default; // 28px
-$h1-desktop-fontSize: $font-size-base * 3.286 !default; // 46px
+$h1-fontSize: 1.75rem !default; // 28px
+$h1-desktop-fontSize: 2.875rem !default; // 46px
 
-$h2-fontSize: $font-size-base * 1.857 !default; // 26px
-$h2-desktop-fontSize: $font-size-base * 2.143 !default; // 30px
+$h2-fontSize: 1.625rem !default; // 26px
+$h2-desktop-fontSize: 1.875rem !default; // 30px
 
-$h3-fontSize: $font-size-base * 1.571 !default; // 22px
-$h3-desktop-fontSize: $font-size-base * 1.857 !default; // 26px
+$h3-fontSize: 1.375rem !default; // 22px
+$h3-desktop-fontSize: 1.625rem !default; // 26px
 
-$h4-fontSize: $font-size-base * 1.286 !default; // 18px
+$h4-fontSize: 1.25rem !default; // 20px
 
 // Default headline styles.
 @mixin h1 {
@@ -72,7 +72,7 @@ $h4-fontSize: $font-size-base * 1.286 !default; // 18px
 
 @mixin h4 {
   font-family: $sansSerif;
-  font-weight: normal;
+  font-weight: 600;
   margin: 0 0 8px 0;
   color: $black;
 }
