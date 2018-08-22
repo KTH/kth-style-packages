@@ -15,6 +15,22 @@ body {
   }
 }
 
+ul {
+  li {
+    font-family: $serif;
+    font-weight: normal;
+    line-height: 1.6875;
+  }
+}
+
+ol {
+  li {
+    font-family: $serif;
+    font-weight: normal;
+    line-height: 1.6875;
+  }
+}
+
 .lead {
   font-family: $sansSerif;
   font-weight: normal;
