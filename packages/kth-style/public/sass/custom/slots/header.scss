@@ -74,13 +74,8 @@ body {
               margin-right: 0;
               border-radius: 4px;
               box-shadow: none;
-              height: 41px;
               font-family:  $sansSerif;
               font-size: $copyText-fontSize;
-
-              @media (min-width: 768px) {
-                font-size: $copyText-desktop-fontSize;
-              }
             }
           }
         }
