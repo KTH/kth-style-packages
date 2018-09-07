@@ -6,9 +6,9 @@
 footer {
   &.container {
     background-color: $grey;
-    max-width: calc(100% - 2 * #{$gutter});
-    padding: $gutter 0;
-    margin: 0 $gutter;
+    max-width: 100%;
+    margin: 0;
+    padding: $gutter;
 
     .container {
       background-color: $grey;
@@ -16,7 +16,7 @@ footer {
 
     .block {
       &.columnSplitter {
-        padding: 0 2 * $gutter;
+        padding: 0;
 
         &.row {
           .col {
@@ -71,7 +71,7 @@ footer {
     }
   }
 
-  @media (min-width: 576px) {
+  @media (min-width: 768px) {
     &.container {
       max-width: calc(100% - 2 * #{$gutter});
       padding: 2 * $gutter 0;
@@ -79,11 +79,24 @@ footer {
 
       .block {
         &.columnSplitter {
+          padding: 0 $gutter;
           &.row {
-            .col {
-              flex-basis: 50%;
+            &.using4Columns{
+              .col {
+                flex-basis: 50%;
+              }
             }
           }
+        }
+      }
+    }
+  }
+
+  @media (min-width: 992px) {
+    &.container {
+      .block {
+        &.columnSplitter {
+          padding: 0 2 * $gutter;
         }
       }
     }
@@ -94,8 +107,10 @@ footer {
       .block {
         &.columnSplitter {
           &.row {
-            .col {
-              flex-basis: 25%;
+            &.using4Columns{
+              .col {
+                flex-basis: 25%;
+              }
             }
           }
         }
