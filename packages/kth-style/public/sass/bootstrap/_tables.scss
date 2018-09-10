@@ -1,5 +1,74 @@
-.table {
+table {
+  width: 100%;
+
+  thead {
+    tr {
+      th {
+        color: $white;
+        background-color: $grey;
+        font-weight: 500;
+        border-right: 1px solid $darkBorderGrey;
+        border-bottom: 2px solid $darkBorderGrey;
+      }
+    }
+  }
+
+  tbody {
+    tr {
+
+      th {
+        color: $white;
+        background-color: $grey;
+        font-weight: 500;
+        border-right: 1px solid $darkBorderGrey;
+
+        &[scope="row"] {
+          vertical-align: middle;
+          border-top: 2px solid $darkBorderGrey;
+          border-right: none;
+        }
+      }
+      
+      &:first-child {
+        th {
+          border-top: 2px solid $white;
+        }
+      }
+
+      td {
+        background-color: $lightGrey;
+        border-top: 2px solid $white;
+
+        p {
+          font-family: $sansSerif;
+        }
+      }
+    }
+  }
   th {
     border-top: 0;
+  }
+}
+
+/* * * * * Overriding Bootstrap table design * * * * */
+
+.table {
+  thead {
+    th {
+      border-bottom: 2px solid $white;
+      border-top: none;
+
+      &:first-of-type {
+        border-bottom: 2px solid $darkBorderGrey;
+        border-top: none;
+      }
+    }
+  }
+
+  tr {
+    td {
+      background-color: $lightGrey;
+      border-top: 2px solid $white;
+    }
   }
 }
