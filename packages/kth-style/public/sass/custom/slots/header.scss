@@ -97,7 +97,7 @@ body {
                 @media (min-width: 992px) {
                   display: block;
                   position: absolute;
-                  top: 21px;
+                  top: 12px;
                   right: 2 * $gutter;
                 }
 
@@ -112,13 +112,16 @@ body {
                     }
 
                     &:last-child {
-                      border-left: 1px solid $borderGrey;
-                      padding-left: $gutter;
                       padding-right: 2 * $spacing;
                       background: url("/img/kth-style/icons/globe.svg") no-repeat right;
                       background-size: 16px;
                       line-height: 0;
                       margin: 3px 0;
+
+                        a {
+                          border-left: 1px solid $borderGrey;
+                          padding-left: $gutter;
+                        }
                     }
 
                     a {
