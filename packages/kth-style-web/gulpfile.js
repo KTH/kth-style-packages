@@ -1,16 +1,12 @@
 'use strict'
 const gulp = require('gulp')
-const mergeStream = require('merge-stream')
-var header = require('gulp-header');
-const del = require('del')
 const gulpLoadPlugins = require('gulp-load-plugins')
-const $ = gulpLoadPlugins()
 
 const globals = {
   dirname: __dirname
 }
 
-const { webpack, moveResources, sass, vendor, clean } = require('kth-node-build-commons').tasks(globals)
+const { sass, clean } = require('kth-node-build-commons').tasks(globals)
 
 /**
  * Usage:
