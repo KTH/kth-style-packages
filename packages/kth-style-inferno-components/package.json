@@ -17,6 +17,7 @@
   "dependencies": {
     "classnames": "^2.2.5",
     "inferno": "^3.10.1",
+    "inferno-bootstrap": "^3.0.0",
     "inferno-animation": "^0.4.11",
     "kth-style-inferno-bootstrap": "^0.1.17",
     "inferno-component": "^3.10.1",
