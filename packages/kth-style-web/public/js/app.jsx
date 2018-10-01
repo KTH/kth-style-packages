@@ -97,15 +97,15 @@ class AppLayout extends Component {
             <NavItem>
               <Form className="form-inline MainMenu-Form">
                 <FormGroup check className="form-check-inline">
-                  <Label check>
-                    <Input type="checkbox" name="code" checked={this.state.code} onChange={this.didUpdate} />
+                  <Input type="checkbox" id="code_check" name="code" checked={this.state.code} onChange={this.didUpdate} />
+                  <Label for="code_check" check>
                     {' '}Code
                   </Label>
                 </FormGroup>
 
                 <FormGroup check className="form-check-inline">
-                  <Label check>
-                    <Input type="checkbox" name="ux_comments" checked={this.state.ux_comments} onChange={this.didUpdate} />
+                  <Input type="checkbox" id="ux_check" name="ux_comments" checked={this.state.ux_comments} onChange={this.didUpdate} />
+                  <Label for="ux_check" check>
                     {' '}UX Comments
                   </Label>
                 </FormGroup>
