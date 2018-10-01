@@ -1,6 +1,17 @@
 table {
   width: 100%;
 
+  caption {
+    caption-side: top;
+    font-size: $h3-fontSize;
+    font-weight: 600;
+    color: $black;
+
+    @media (min-width: 768px) {
+      font-size: $h3-desktop-fontSize;
+    }
+  }
+
   thead {
     tr {
       th {
