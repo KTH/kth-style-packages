@@ -192,36 +192,52 @@ export default function BasicPage (props) {
       </Section>
     
       <Section title="Drop down">  
-        <Stage> 
-            <UXComment>
-              <h4>Användning</h4>
-              <ul>
-                  <li>
-                      För flervalssvar när bara ett val är möjligt (och alternativen är många).
-                  </li>
-                  <li>
-                      Exempel: se <a href="/style/page-layout/formexamplepage">formulär</a>.
-                  </li>
-              </ul>
-              <h4>Tänk på att</h4>
-              <ul>
-                  <li>
-                      Undvik rullgardinsmeny när det finns färre än tre alternativ. Visa dem istället som radio-knappar (se ovan).
-                  </li>
-                  <li>
-                      Undvik rullgardinsmeny när indata är något som är välbekant för användaren och snabbare kan matas in än att välja från en lång lista
-                  </li>
-                  <li>
-                       Överväg användningsfrekvens, lista de vanligaste valen först när det är möjligt.
-                  </li>
-                  <li>
-                      Användaren ska kunna söka fram rätt alternativ i rullgardinsmenyn genom att använda bokstavstangenterna.
-                  </li>
-                  <li>
-                      Se <a href="/style/guidelines/form#generella_riktlinjer_for_formularkomponenter">Generella riktlinjer för formulärkomponenter</a>.
-                  </li>    
-              </ul>          
-            </UXComment>
+        <Stage>
+          <Scene>
+            <Form>
+              <FormGroup className="form-select">
+                <label for="exampleFormControlSelect1">Example select</label>
+                <div className="select-wrapper">
+                  <select className="custom-select" id="exampleFormControlSelect1">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+                </div>
+              </FormGroup>
+            </Form>
+          </Scene> 
+          <UXComment>
+            <h4>Användning</h4>
+            <ul>
+                <li>
+                    För flervalssvar när bara ett val är möjligt (och alternativen är många).
+                </li>
+                <li>
+                    Exempel: se <a href="/style/page-layout/formexamplepage">formulär</a>.
+                </li>
+            </ul>
+            <h4>Tänk på att</h4>
+            <ul>
+                <li>
+                    Undvik rullgardinsmeny när det finns färre än tre alternativ. Visa dem istället som radio-knappar (se ovan).
+                </li>
+                <li>
+                    Undvik rullgardinsmeny när indata är något som är välbekant för användaren och snabbare kan matas in än att välja från en lång lista
+                </li>
+                <li>
+                      Överväg användningsfrekvens, lista de vanligaste valen först när det är möjligt.
+                </li>
+                <li>
+                    Användaren ska kunna söka fram rätt alternativ i rullgardinsmenyn genom att använda bokstavstangenterna.
+                </li>
+                <li>
+                    Se <a href="/style/guidelines/form#generella_riktlinjer_for_formularkomponenter">Generella riktlinjer för formulärkomponenter</a>.
+                </li>    
+            </ul>          
+          </UXComment>
         </Stage>
       </Section>
       

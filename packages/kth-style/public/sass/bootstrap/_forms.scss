@@ -1,5 +1,5 @@
 /*
-  Bootstrap overrides for inputs
+  Bootstrap overrides for forms
 */
 
 .form-check {
@@ -110,3 +110,39 @@
     padding-left: 1.8rem;
   }
 }
+
+.form-select {
+  .select-wrapper {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    border-radius: .25em;
+
+    &::after {
+      content:'';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      padding: 0 1em;
+      pointer-events: none;
+      background: $blue url('../img/kth-style/icons/arrow-white-down.svg') no-repeat center;
+      background-size: 14px 7px;
+      display: inline-block;
+    }
+
+    select {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      -ms-appearance: none;
+      appearance: none;
+      outline: 0;
+      box-shadow: none;
+      cursor: pointer;
+    }
+  }
+}
+
+
+
+
