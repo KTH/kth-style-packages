@@ -35,6 +35,7 @@ $h3-desktop-fontSize: 1.25rem !default; // 26px
 
 $h4-fontSize: 1.25rem !default; // 20px
 
+
 // Default headline styles.
 @mixin h1 {
   font-family: $sansSerif;
@@ -75,4 +76,117 @@ $h4-fontSize: 1.25rem !default; // 20px
   font-weight: 600;
   margin: 0 0 8px 0;
   color: $black;
+}
+
+// Element independent typography definitions
+// Heading level 1
+@mixin t1 {
+  font-family: $sansSerif;
+  font-size: $h1-fontSize;
+  font-weight: 600;
+  color: $black;
+  line-height: 1.3475;
+
+  @media (min-width: 768px) {
+    font-size: $h1-desktop-fontSize;
+  }
+}
+
+// Heading level 2
+@mixin t2 {
+  font-family: $sansSerif;
+  font-size: $h2-fontSize;
+  font-weight: 600;
+  color: $black;
+  line-height: 1.3475;
+
+  @media (min-width: 768px) {
+    font-size: $h2-desktop-fontSize;
+  }
+}
+
+// Heading level 3 or Block heading
+@mixin t3 {
+  font-family: $sansSerif;
+  font-size: $h3-fontSize;
+  font-weight: 600;
+  color: $black;
+  line-height: 1.3475;
+}
+
+// Block heading full width
+@mixin t4 {
+  font-family: $sansSerif;
+  font-size: $h3-fontSize;
+  font-weight: 600;
+  color: $black;
+  line-height: 1.3475;
+
+  @media (min-width: 768px) {
+    font-size: $h2-desktop-fontSize;
+    font-weight: 400;
+  }
+}
+
+// Text to pop out, like lead, block quote or mega menu
+@mixin t5 {
+  font-family: $sansSerif;
+  font-size: $lead-fontSize;
+  font-weight: 400;
+  color: $black;
+  line-height: 1.4375;
+
+  @media (min-width: 768px) {
+    font-size: $lead-desktop-fontSize;
+  }
+}
+
+// Normal text in block
+@mixin t6 {
+  font-family: $sansSerif;
+  font-size: $font-size-base;
+  font-weight: 400;
+  color: $black;
+  line-height: 1.5;
+}
+
+// Normal text in article
+@mixin t7 {
+  font-family: $serif;
+  font-size: $font-size-base;
+  font-weight: 400;
+  color: $black;
+  line-height: 1.5625;
+
+  @media (min-width: 768px) {
+    font-size: 1.125rem;
+  }
+}
+
+.t1 {
+  @include t1;
+}
+
+.t2 {
+  @include t2;
+}
+
+.t3 {
+  @include t3;
+}
+
+.t4 {
+  @include t4;
+}
+
+.t5 {
+  @include t5;
+}
+
+.t6 {
+  @include t6;
+}
+
+.t7 {
+  @include t7;
 }
