@@ -80,11 +80,11 @@ $h4-fontSize: 1.25rem !default; // 20px
 
 // Element independent typography definitions
 // Heading level 1
-@mixin t1 {
+@mixin t1 ($color : true) {
   font-family: $sansSerif;
   font-size: $h1-fontSize;
   font-weight: 600;
-  color: $black;
+  @if ($color) { color: $black;}
   line-height: 1.3475;
 
   @media (min-width: 768px) {
@@ -93,11 +93,11 @@ $h4-fontSize: 1.25rem !default; // 20px
 }
 
 // Heading level 2
-@mixin t2 {
+@mixin t2 ($color : true) {
   font-family: $sansSerif;
   font-size: $h2-fontSize;
   font-weight: 600;
-  color: $black;
+  @if ($color) { color: $black;}
   line-height: 1.3475;
 
   @media (min-width: 768px) {
@@ -106,20 +106,20 @@ $h4-fontSize: 1.25rem !default; // 20px
 }
 
 // Heading level 3 or Block heading
-@mixin t3 {
+@mixin t3 ($color : true) {
   font-family: $sansSerif;
   font-size: $h3-fontSize;
   font-weight: 600;
-  color: $black;
+  @if ($color) { color: $black;}
   line-height: 1.3475;
 }
 
 // Block heading full width
-@mixin t4 {
+@mixin t4 ($color : true)  {
   font-family: $sansSerif;
   font-size: $h3-fontSize;
   font-weight: 600;
-  color: $black;
+  @if ($color) { color: $black;}
   line-height: 1.3475;
 
   @media (min-width: 768px) {
@@ -129,11 +129,11 @@ $h4-fontSize: 1.25rem !default; // 20px
 }
 
 // Text to pop out, like lead, block quote or mega menu
-@mixin t5 {
+@mixin t5 ($color : true) {
   font-family: $sansSerif;
   font-size: $lead-fontSize;
   font-weight: 400;
-  color: $black;
+  @if ($color) { color: $black;}
   line-height: 1.4375;
 
   @media (min-width: 768px) {
@@ -142,20 +142,20 @@ $h4-fontSize: 1.25rem !default; // 20px
 }
 
 // Normal text in block
-@mixin t6 {
+@mixin t6 ($color : true) {
   font-family: $sansSerif;
   font-size: $font-size-base;
   font-weight: 400;
-  color: $black;
+  @if ($color) { color: $black;}
   line-height: 1.4375;
 }
 
 // Normal text in article
-@mixin t7 {
+@mixin t7 ($color : true) {
   font-family: $serif;
   font-size: $font-size-base;
   font-weight: 400;
-  color: $black;
+  @if ($color) { color: $black;}
   line-height: 1.5625;
 
   @media (min-width: 768px) {
