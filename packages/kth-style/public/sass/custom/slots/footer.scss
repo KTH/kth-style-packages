@@ -61,6 +61,11 @@ footer {
                   .lead {
                     color: $white;
                     font-weight: 100;
+
+                    p {
+                      color: $white;
+                      font-weight: 100;
+                    }
                   }
                 }
               }
