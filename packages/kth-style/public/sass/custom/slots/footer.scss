@@ -35,15 +35,18 @@ footer {
                     list-style: none;
                     padding-left: 0;
                     margin: 0;
+                    line-height: 1.4375;
 
                     li {
                       margin-bottom: 2px;
+                      line-height: 1.4375;
 
                       a {
                         color: $white;
-                        line-height: 2.25;
+                        line-height: 1.4375;
                         font-weight: 100;
                         font-size: $copyText-fontSize;
+                        margin-bottom: 14px;
                       }
                     }
                   }
