@@ -130,8 +130,8 @@ export default function DropdownsPage (props) {
                </tr>
                <tr>
                  <td>line-height</td>
-                 <td>1.3475 (26.95px)</td>
-                 <td>1.3475 (26.95px)</td>
+                 <td>1.375</td>
+                 <td>1.375</td>
                </tr>
                <tr>
                  <td>color</td>
@@ -175,8 +175,8 @@ export default function DropdownsPage (props) {
                </tr>
                <tr>
                  <td>line-height</td>
-                 <td>1.3475 (24px)</td>
-                 <td>1.3475 (31.2px)</td>
+                 <td>1.3125</td>
+                 <td>1.3125</td>
                </tr>
                <tr>
                  <td>color</td>

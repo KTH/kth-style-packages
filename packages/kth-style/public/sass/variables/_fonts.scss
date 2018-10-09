@@ -111,7 +111,7 @@ $h4-fontSize: 1.25rem !default; // 20px
   font-size: $h3-fontSize;
   font-weight: 600;
   @if ($color) { color: $black;}
-  line-height: 1.3475;
+  line-height: 1.375;
 }
 
 // Block heading full width
@@ -120,7 +120,7 @@ $h4-fontSize: 1.25rem !default; // 20px
   font-size: $h3-fontSize;
   font-weight: 600;
   @if ($color) { color: $black;}
-  line-height: 1.3475;
+  line-height: 1.3125;
 
   @media (min-width: 768px) {
     font-size: $h2-desktop-fontSize;
