@@ -87,6 +87,27 @@ body {
         }
 
         .block {
+          &.siteName {
+            font-family: Open Sans,Arial,Helvetica Neue,helvetica,sans-serif;
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #000;
+            line-height: 1.375;
+            margin-bottom: 0;
+            position: relative;
+            top: -134px;
+            left: 65px;
+            height: 0;
+            max-width: calc(100% - 136px);
+
+            @media (min-width: 992px) {
+              left: 100px;
+              top: -140px;
+            }
+          }
+        }
+
+        .block {
           &.list {
             &.links {
               &.secondaryMenu {
