@@ -88,18 +88,19 @@ body {
 
         .block {
           &.siteName {
-            font-family: Open Sans,Arial,Helvetica Neue,helvetica,sans-serif;
-            font-size: 1.25rem;
-            font-weight: 600;
-            color: #000;
-            line-height: 1.375;
+            @include t3;
             margin-bottom: 0;
             position: relative;
             top: -134px;
             left: 65px;
-            height: 0;
+            height: 0; // Needed to not fill up space in original place.
             max-width: calc(100% - 136px);
-
+        
+            @media (min-width: 576px) and (max-width: 991.98px) {
+              left: 79px;
+              top: -147px;
+            }
+        
             @media (min-width: 992px) {
               left: 100px;
               top: -140px;
