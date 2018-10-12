@@ -11,31 +11,48 @@ body {
       .container {
         margin: 0 auto;
         max-width: 1228px;
-        padding: 0;
-        position: relative;
+        padding: $gutter 0 20px;
 
         @media (min-width: 992px) {
-          padding: 0 2 * $gutter;
+          padding: 20px 2* $gutter 20px;
+        }
+
+        .header-container {
+          &__top {
+            display: flex;
+          }
+
+          &__bottom {
+            display: flex;
+          }
         }
 
         .block {
           &.figure  {
             &.mainLogo {
-              margin: $gutter $gutter 0 0;
-              width: 50px;
-
-              @media (min-width: 576px) and (max-width: 991.98px) {
-                width: 64px;
-              }
-
+              margin: 0;
+              width: auto;
+              margin: 0 $gutter 0 0;
+              
               @media (min-width: 992px) {
-                width: 75px;
-                margin: 20px $gutter 0 0;
+                margin: 0 2 * $gutter 0 0;
               }
               
               img {
                 &.figure-img {
                   margin-bottom: 0;
+                  height: 50px;
+                  max-width: 275px;
+                  width: auto;
+                  
+
+                  @media (min-width: 576px) and (max-width: 991.98px) {
+                    height: 64px;
+                  }
+
+                  @media (min-width: 992px) {
+                    height: 75px;
+                  }
                 }
               }
             }
@@ -44,21 +61,30 @@ body {
 
         .block {
           &.search {
-            padding: $gutter 0 $gutter 0;
-            height: 78px;
+            width: 100%;
+            margin-top: $gutter;
 
             @media (min-width: 992px) {
               padding: 0;
-              width: 310px;
-              position: absolute;
+              width: auto;
               z-index: 3;
-              right: 2 * $gutter;
+              flex-grow: 1;
+              margin: 0;
             }
 
             // The search block should get it's style from the search application. This is just temporary design.
 
+            .search-widget-container {
+              width: 100%;
+
+              @media (min-width: 992px) {
+                width: 310px;
+                float: right;
+              }
+            }
+
             .search-widget-container .SearchWidget .SearchInputBar form.SearchInputForm .InfernoFormlib-AutoCompleteField .input-group.input-group-sm {
-              height: 3em;
+              height: 3em;       
             }
 
             .SearchWidget .SearchInputBar form.SearchInputForm .InfernoFormlib-AutoCompleteField .input-group .input-group-append button.btn.btn-primary.search-widget-button {
@@ -90,21 +116,10 @@ body {
           &.siteName {
             @include t3;
             margin-bottom: 0;
-            position: relative;
-            top: -134px;
-            left: 65px;
-            height: 0; // Needed to not fill up space in original place.
+            position: initial;
+            height: auto;
             max-width: calc(100% - 136px);
-        
-            @media (min-width: 576px) and (max-width: 991.98px) {
-              left: 79px;
-              top: -147px;
-            }
-        
-            @media (min-width: 992px) {
-              left: 100px;
-              top: -140px;
-            }
+            line-height: 1;
           }
         }
 
@@ -113,21 +128,22 @@ body {
             &.links {
               &.secondaryMenu {
                 display: none;
-                height: 0px;
                 margin: 0;
 
                 @media (min-width: 992px) {
-                  display: block;
-                  position: absolute;
-                  top: 12px;
-                  right: 2 * $gutter;
+                  flex-grow: 1;
+                  display: flex;
+                  justify-content: flex-end;
                 }
 
                 ul {
                   list-style-type: none;
+                  position: relative;
+                  top: -7px; // To align secondary menu with top of the mainLogo 
 
                   li {
                     float: left;
+                    margin-bottom: 0;
                     
                     &:not(:last-child) {
                       padding-right: $gutter;
@@ -138,7 +154,7 @@ body {
                       background: url("/img/kth-style/icons/globe.svg") no-repeat right;
                       background-size: 16px;
                       line-height: 0;
-                      margin: 3px 0;
+                      margin: 4px 0;
 
                         a {
                           border-left: 1px solid $borderGrey;
