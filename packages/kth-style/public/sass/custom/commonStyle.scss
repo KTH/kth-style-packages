@@ -66,3 +66,21 @@ table {
     margin-bottom: 0;
   }
 }
+
+p {
+  &.AlignLeft {
+    text-align: left;
+  }
+
+  &.AlignCenter {
+    text-align: center;
+  }
+
+  &.AlignRight {
+    text-align: right;
+  }
+
+  &.AlignJustify {
+    text-align: justify;
+  }
+}
