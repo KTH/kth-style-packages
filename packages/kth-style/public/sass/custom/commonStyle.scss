@@ -61,4 +61,8 @@ ol {
 
 table {
   font-size: $font-size-base;
+
+  p {
+    margin-bottom: 0;
+  }
 }
