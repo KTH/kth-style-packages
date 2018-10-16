@@ -4,6 +4,7 @@ const express = require('express')
 const app = express()
 const Style = require('./controllers/styleCtrl')
 
+
 function _getModulePath (moduleName) {
   let outpDir
   try {
@@ -30,8 +31,38 @@ app.use('/style/kth-style/api/colors', Style.colors.getColors)
 app.use('/style/prism', express.static(prismjsDir + '/themes'))
 app.use('/style/static', express.static(staticDir))
 app.use((req, res) => {
-  res.sendFile(path.resolve(__dirname, '../public/index.html'))
+  res.send(createIndexPage())
 })
+
+const stylePkg = require('../node_modules/kth-style/package.json')
+const bootstrapPkg = require('../node_modules/kth-style/node_modules/bootstrap/package.json')
+
+function createIndexPage () {
+  return `<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>KTH Style</title>
+  <meta name="description" content="KTH Style">
+  <meta name="author" content="Sebastian Ware">
+  <!--link rel="stylesheet" href="/bootstrap/css/bootstrap.css"-->
+  <link rel="stylesheet" href="/style/kth-style/css/kth-bootstrap.css">
+  <link rel="stylesheet" href="/style/prism/prism-coy.css?v=3">
+  <link rel="stylesheet" href="/style/static/css/kth-style-web.css?v=1.0">
+</head>
+<script>
+  window.versions = { "style": "${stylePkg.version}", "bootstrap": "${bootstrapPkg.version}"}
+</script>
+
+<body>
+  <div id="app"></div>
+  <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
+  <script defer src="/style/static/app.js"></script>
+</body>
+</html>`
+}
 
 // *** SERVER ERROR HANDLER ***
 app.use(function (err, req, res, next) {
