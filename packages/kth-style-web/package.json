@@ -27,7 +27,7 @@
     "dotenv": "^4.0.0",
     "express": "^4.16.2",
     "express-handlebars": "^3.0.0",
-    "gulp-header": "^1.8.9",
+    "gulp-header": "^2.0.5",
     "inferno-bootstrap": "^3.0.0",
     "kth-node-access-log": "git+https://github.com/KTH/kth-node-access-log.git#v1.0.0",
     "kth-node-configuration": "^1.6.3",
