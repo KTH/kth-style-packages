@@ -113,17 +113,6 @@ body {
         }
 
         .block {
-          &.siteName {
-            @include t3;
-            margin-bottom: 0;
-            position: initial;
-            height: auto;
-            max-width: calc(100% - 136px);
-            line-height: 1;
-          }
-        }
-
-        .block {
           &.list {
             &.links {
               &.secondaryMenu {
