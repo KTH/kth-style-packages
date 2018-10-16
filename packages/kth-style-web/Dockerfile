@@ -1,4 +1,4 @@
-FROM kthse/kth-nodejs-web:2.3
+FROM kthse/kth-nodejs:8.11.0
 
 MAINTAINER KTH Webb "webmaster@kth.se"
 

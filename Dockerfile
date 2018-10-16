@@ -1,4 +1,4 @@
-FROM kthse/kth-nodejs:2.3
+FROM kthse/kth-nodejs:8.11.0
 
 COPY ["packages", "packages"]
 COPY ["scripts", "scripts"]
