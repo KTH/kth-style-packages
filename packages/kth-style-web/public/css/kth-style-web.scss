@@ -12,8 +12,15 @@ body {
   margin: 0;
 }
 
-.card.version {
-  margin: 1rem 0 1rem 0;
+.header {
+  margin-bottom: 1rem;
+  .version {
+    margin-left: 0.3rem;
+    margin-top: -1.5rem;
+    h4, h6 {
+      display: inline;
+    }
+  }
 }
 
 .MainMenu {

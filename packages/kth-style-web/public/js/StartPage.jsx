@@ -1,33 +1,28 @@
 import { Page, Section, Narrative } from 'kth-style-inferno-bootstrap/docs/src/components.jsx'
 import Alert from 'kth-style-inferno-bootstrap/lib/Alert.jsx'
-import Jumbotron from 'kth-style-inferno-bootstrap/lib/Jumbotron.jsx'
 
-function VersionInfo() {
+function HeaderWithVersionInfo() {
   return (
-    <div class="card version">
-    <div class="card-header">
-      Nuvarande version
+    <div class="header">
+      <h1>KTH Style</h1>
+      <div class="version">
+        <h4>v{window.versions.style}</h4><h6> Bootstrap: v{window.versions.bootstrap}</h6>
+      </div>
     </div>
-    <div class="card-body">
-      <h5 class="card-title">{window.versions.style}</h5>
-      <p class="card-text">Bootstrap: v4.1.3</p>
-    </div>
-  </div>
-
   )
 }
 
 export default function DropdownsPage (props) {
   return (
     <Page>
-        <h1>KTH Style</h1>
+        <HeaderWithVersionInfo />
         <Alert color="info" aria-live="polite">
           <span>
             <h4>KTH Style är under utveckling!</h4>
             <p>Riktlinjer och utseende kan komma att ändras fram till lansering.</p>
            </span>
         </Alert>
-        <VersionInfo />
+        <br />
        <Section title="Vad är KTH Style?">
             <p>
                 KTH Style är en guide för standardiserad form med tillhörande riktlinjer för användbarhet och tillgänglighet. 
