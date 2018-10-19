@@ -105,8 +105,26 @@ $h4-fontSize: 1.25rem !default; // 20px
   }
 }
 
-// Heading level 3 or Block heading
+// Heading level 3
 @mixin t3 ($color : true) {
+  font-family: $sansSerif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  @if ($color) { color: $black;}
+  line-height: 1.375;
+}
+
+// Heading level 4 or Block heading
+@mixin t4 ($color : true) {
+  font-family: $sansSerif;
+  font-size: $h3-fontSize;
+  font-weight: 600;
+  @if ($color) { color: $black;}
+  line-height: 1.375;
+}
+
+// Block heading
+@mixin t4 ($color : true) {
   font-family: $sansSerif;
   font-size: $h3-fontSize;
   font-weight: 600;
@@ -115,7 +133,7 @@ $h4-fontSize: 1.25rem !default; // 20px
 }
 
 // Block heading full width
-@mixin t4 ($color : true)  {
+@mixin t24 ($color : true)  {
   font-family: $sansSerif;
   font-size: $h3-fontSize;
   font-weight: 600;
@@ -129,7 +147,7 @@ $h4-fontSize: 1.25rem !default; // 20px
 }
 
 // Text to pop out, like lead, block quote or mega menu
-@mixin t5 ($color : true) {
+@mixin t10 ($color : true) {
   font-family: $sansSerif;
   font-size: $lead-fontSize;
   font-weight: 400;
@@ -142,7 +160,7 @@ $h4-fontSize: 1.25rem !default; // 20px
 }
 
 // Normal text in block
-@mixin t6 ($color : true) {
+@mixin t11 ($color : true) {
   font-family: $sansSerif;
   font-size: $font-size-base;
   font-weight: 400;
@@ -151,7 +169,7 @@ $h4-fontSize: 1.25rem !default; // 20px
 }
 
 // Normal text in article
-@mixin t7 ($color : true) {
+@mixin t12 ($color : true) {
   font-family: $serif;
   font-size: $font-size-base;
   font-weight: 400;
@@ -179,14 +197,18 @@ $h4-fontSize: 1.25rem !default; // 20px
   @include t4;
 }
 
-.t5 {
-  @include t5;
+.t24 {
+  @include t24;
 }
 
-.t6 {
-  @include t6;
+.t10 {
+  @include t10;
 }
 
-.t7 {
-  @include t7;
+.t11 {
+  @include t11;
+}
+
+.t12 {
+  @include t12;
 }
