@@ -139,14 +139,10 @@ body {
                     }
 
                     &:last-child {
-                      padding-right: 2 * $spacing;
-                      background: url("/img/kth-style/icons/globe.svg") no-repeat right;
-                      background-size: 16px;
-
-                        a {
-                          border-left: 1px solid $borderGrey;
-                          padding-left: $gutter;
-                        }
+                      a {
+                        border-left: 1px solid $borderGrey;
+                        padding-left: $gutter;
+                      }
                     }
 
                     a {
@@ -154,6 +150,15 @@ body {
                       font-size: $copyText-fontSize;
                       font-family: $sansSerif;
                     }
+
+                    a[hreflang]{
+                      &:after { 
+                        content: ""; 
+                        padding-right: 2 * $spacing;
+                        background: url("/img/kth-style/icons/globe.svg") no-repeat right;
+                        background-size: 16px;
+                      }
+                    } 
                   }
                 }
               }
