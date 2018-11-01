@@ -22,6 +22,19 @@ footer {
           .col {
             flex-basis: 100%;
 
+            & a {
+              &.block {
+                &.link {
+                  font-family: $open-sans;
+                  color: $white;
+                  line-height: 1.4375;
+                  font-weight: 100;
+                  font-size: $copyText-fontSize;
+                  margin-bottom: 14px;
+                }
+              }
+            }
+
             .block {
               &.list {
                 &.links {
