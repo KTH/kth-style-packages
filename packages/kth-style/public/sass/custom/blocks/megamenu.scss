@@ -1,0 +1,175 @@
+@import '../../variables/colors';
+@import '../../variables/spacings';
+@import '../../variables/sizes';
+@import '../../variables/fonts';
+     
+.block {
+  &.megaMenu {
+    &.navbar {
+      &.navbar-light {
+        display: none;
+        
+        @media (min-width: 992px) {
+          display: block;
+          position: initial;
+          padding: 0;
+          flex-grow: 10;
+        }
+        
+        #megaMenuContent {
+          @media (min-width: 992px) {
+            height: auto !important;
+          }
+          
+          &.navbar-collapse {
+            
+            &.collapse, &.collapsing {
+              background-color: $lightGrey;
+              z-index: 3;
+              position: relative;
+              top: -7px;
+
+              @media (min-width: 992px) {
+                top: 13px
+              }
+            }
+          }
+        }
+        
+        ul {
+          &.menu {
+            &.navbar-nav {
+              &#megaMenu {
+                 
+                @media (min-width: 992px) {
+                  background-color: $white;
+                  padding: 0;
+                  margin: 0;
+                  float: left;
+                  width: 100%;
+                  list-style: none;
+                  clear: both;
+                }
+
+                li {
+                  &.item {
+                    &.nav-item {
+                    
+                      &.homeItem {
+                        .headerItem {
+                          margin-right: 1.25rem;
+                          
+                          &.active {
+                            a {
+                              &.nav-link {
+                                border-bottom: none;
+                                padding: 0 4px;
+                                
+                                @media (min-width: 992px) {
+                                  padding: 0 1.25rem 0 0;
+                                }
+                              }
+                            }
+                          }
+                        
+                          a {
+                            &.nav-link {
+                              margin-top: 8px;
+                              margin-bottom: 8px;
+                              padding: 0 28px 0 5px;
+                              
+                              @media (min-width: 992px) {
+                                border-right: 1px solid $borderGrey;
+                                padding: 0 1.25rem 0 0;
+                              }
+                            }
+                          }
+                        }
+                      }
+                    
+                      @media (min-width: 992px) {
+                        padding: 0;
+                        margin: 0;
+                        float: left;
+                        position: relative;
+                      }
+                      
+                      .headerItem {
+                        padding: 0;
+                        margin: 0 1.5rem 0 0;
+                        color: $black;
+                        line-height: 2.0;
+                        font-weight: normal;
+                        
+                        &.active {
+                          a {
+                          	&.nav-link {
+                          	  @media (min-width: 992px) {
+                            	  border-bottom: $halfSpacing solid $blue;
+                                padding: 8px 3px 3px 3px;
+                              }
+                          	}
+                          }
+                        }
+                        
+                        @media (min-width: 992px) {
+                          text-align: center;
+                        }
+                        
+                        a {
+                          &.nav-link {
+                            color: $black;
+                            font-family: $sansSerif;
+                            font-size: 1.25rem;
+                            line-height: 1.375;
+                            padding: 8px 3px;
+                            
+                            @media (min-width: 992px) {
+                              font-size: 1.25rem;
+                            }
+                          }
+                        }
+                      }
+                      
+                      .menuItemContent {
+                        display: none !important;
+                        
+                        @media (min-width: 992px) {
+                          padding: 0;
+                          margin: 0;
+                          z-index: 79;
+                          position: absolute;
+                          padding-top: 0px;
+                          margin: 0px;
+                          display: block !important;
+                        }
+                        
+                        &.active {
+                          .megaMenuBody {
+                            z-index: 79;
+                            display: block;
+                          }
+                        }
+                        
+                        .megaMenuBody {
+                          padding: 45px 2 * $gutter 75px 2 * $gutter;
+                          margin: 0;
+                          box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.26);
+                          overflow: hidden;
+                          background-color: $lightGrey;
+                          border: 0px;
+                          border-bottom: $halfSpacing solid $blue;
+                          display: none;                                   /* Should be none, use block to show when styling */
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

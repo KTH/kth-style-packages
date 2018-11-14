@@ -9,7 +9,12 @@
 @import "node_modules/bootstrap/scss/root";
 
 // KTH Base template
+
+// Slots
 @import "custom/slots/header";
 @import "custom/slots/breadcrumbs";
 @import "custom/slots/footer";
+
+// Blocks
 @import "custom/blocks/siteName";
+@import "custom/blocks/megaMenu";
