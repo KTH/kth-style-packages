@@ -4,6 +4,7 @@ const mergeStream = require('merge-stream')
 const header = require('gulp-header')
 const cleanCSS = require('gulp-clean-css')
 const gulpLoadPlugins = require('gulp-load-plugins')
+const zip = require('gulp-zip');
 const $ = gulpLoadPlugins()
 
 const globals = {
@@ -103,11 +104,24 @@ gulp.task('distImagesAndIcons', function () {
     .pipe(gulp.dest(`./${distRootFolderName}/img`))
 })
 
+gulp.task('distScssZip', ['distImagesAndIcons'], function() {
+  // Note: The "unneccessary" globbing for node_modules and img is to
+  // make those directory names part of the paths as used in the zip.
+  // Anything before the first segment cotaining a star is considered
+  // the glob base and not used as a file name in the zip.
+  return gulp.src(['./node_module*/**/*.scss',
+		   './public/sass/**/*.scss',
+		   `./${distRootFolderName}/im*/**`
+		  ])
+      .pipe(zip('kth-style-scss.zip'))
+      .pipe(gulp.dest(`./${distRootFolderName}/`))
+})
+
 /* Main entry points */
 
 gulp.task('clean', clean)
 
-gulp.task('build', ['clean', 'createDist', 'distFonts', 'distImagesAndIcons'], () => {
+gulp.task('build', ['clean', 'createDist', 'distFonts', 'distImagesAndIcons', 'distScssZip'], () => {
   console.log('*** Done creating distribution ***')
 })
 
