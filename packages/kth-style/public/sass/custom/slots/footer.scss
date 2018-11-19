@@ -146,4 +146,8 @@ footer {
         margin: auto;
     }
   }
+
+  @media print {
+    display: none;
+  }
 }

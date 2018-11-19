@@ -55,6 +55,9 @@ body {
                   }
                 }
               }
+              @media print {
+                margin-left: 50px;
+              }
             }
           }
         }
@@ -108,6 +111,9 @@ body {
               box-shadow: none;
               font-family:  $sansSerif;
               font-size: $copyText-fontSize;
+            }
+            @media print {
+              display: none;
             }
           }
         }

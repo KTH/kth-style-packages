@@ -27,5 +27,8 @@
         color: $black;
       }
     }
+    @media print {
+      display: none;
+    }
   }
 }
