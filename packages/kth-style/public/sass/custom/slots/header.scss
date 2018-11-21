@@ -144,10 +144,10 @@ body {
                       padding-right: $gutter;
                     }
 
-                    &:last-child {
+                    &:nth-last-child(2) {
                       a {
-                        border-left: 1px solid $borderGrey;
-                        padding-left: $gutter;
+                        border-right: 1px solid $borderGrey;
+                        padding-right: $gutter;
                       }
                     }
 
