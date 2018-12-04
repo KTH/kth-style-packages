@@ -29,12 +29,12 @@ export default function DropdownsPage (props) {
                <tr>
                  <td>font-size</td>
                  <td>1.75rem (28px)</td>
-                 <td>2.875rem (46px)</td>
+                 <td>2.75rem (44px)</td>
                </tr>
                <tr>
                  <td>line-height</td>
-                 <td>1.3475 (37.73px)</td>
-                 <td>1.3475 (61.985px)</td>
+                 <td>1.3125</td>
+                 <td>1.3125</td>
                </tr>
                <tr>
                  <td>color</td>
