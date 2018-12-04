@@ -84,3 +84,28 @@ p {
     text-align: justify;
   }
 }
+
+a {
+  &.skipToMainContent {
+    left: -999px;
+    position: absolute;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    z-index: -999;
+
+    &:focus, &:active {
+      background-color: $white;
+      color: $linkBlue;
+      left: 0;
+      top: 0;
+      width: auto;
+      height: auto;
+      overflow: auto;
+      padding: 5px;
+      font-size: 1rem;
+      z-index: 99999;
+    }
+  }
+}
