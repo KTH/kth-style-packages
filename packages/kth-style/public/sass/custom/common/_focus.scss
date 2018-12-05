@@ -1,0 +1,12 @@
+/* Set browser native outline when a focusable element gets focus */
+iframe:focus, iframe:active,
+ [href]:focus, [href]:active,
+ [tabindex]:focus, [tabindex]:active,
+ button:not([disabled]):focus, button:not([disabled]):active,
+ input:not([disabled]):focus, input:not([disabled]):active,
+ select:not([disabled]):focus, select:not([disabled]):active,
+ textarea:not([disabled]):focus, textarea:not([disabled]):active {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
