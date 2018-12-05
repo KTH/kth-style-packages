@@ -159,6 +159,28 @@
                           border: 0px;
                           border-bottom: $halfSpacing solid $blue;
                           display: none;                                   /* Should be none, use block to show when styling */
+
+                          button {
+                            &.closeButton {
+                              position: absolute;
+                              right: $gutter;
+                              top: $gutter;
+                              background: url("../img/kth-style/input-clear-gray.svg") no-repeat transparent;
+                              border: 0;
+                              background-size: contain;
+                              height: 15px;
+                              width: 15px;
+                              background-position: center;
+
+                              &:hover {
+                                cursor: pointer;
+                              }
+
+                              &:focus {
+                                outline: none;
+                              }
+                            }
+                          }
                         }
                       }
                     }
