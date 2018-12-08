@@ -14,7 +14,7 @@ body {
         padding: $gutter 0 20px;
 
         @media (min-width: 992px) {
-          padding: 20px 2* $gutter 20px;
+          padding: 20px 2 * $gutter 10px;
         }
 
         .header-container {
@@ -73,7 +73,7 @@ body {
               z-index: 2;
               flex-grow: 1;
               margin: 0;
-              top: -8px;
+              top: -24px;
               position: relative;
               height: 53px;
             }
