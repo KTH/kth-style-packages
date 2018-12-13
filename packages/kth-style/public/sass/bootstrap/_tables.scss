@@ -13,8 +13,8 @@ table {
         color: $white;
         background-color: $grey;
         font-weight: 500;
-        border-right: 1px solid $darkBorderGrey;
-        border-bottom: 2px solid $darkBorderGrey;
+        border-right: 1px solid $white;
+        border-bottom: 1px solid $white;
       }
     }
   }
@@ -26,24 +26,24 @@ table {
         color: $white;
         background-color: $grey;
         font-weight: 500;
-        border-right: 1px solid $darkBorderGrey;
+        border-right: 1px solid $white;
 
         &[scope="row"] {
           vertical-align: middle;
-          border-top: 2px solid $darkBorderGrey;
+          border-top: 1px solid $white;
           border-right: none;
         }
       }
       
       &:first-child {
         th {
-          border-top: 2px solid $white;
+          border-top: 1px solid $white;
         }
       }
 
       td {
         background-color: $lightGrey;
-        border-top: 2px solid $white;
+        border-top: 1px solid $white;
 
         p {
           font-family: $sansSerif;
@@ -61,7 +61,7 @@ table {
 .table {
   thead {
     th {
-      border-bottom: 2px solid $white;
+      border-bottom: 1px solid $white;
       border-top: none;
 
       &:first-of-type {
@@ -73,7 +73,7 @@ table {
   tr {
     td {
       background-color: $lightGrey;
-      border-top: 2px solid $white;
+      border-top: 1px solid $white;
     }
   }
 }
