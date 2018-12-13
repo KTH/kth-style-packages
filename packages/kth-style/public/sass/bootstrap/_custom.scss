@@ -16,15 +16,16 @@
   background: url('../img/kth-style/back-to-top.svg') 100% 100% no-repeat transparent;
   background-size: 50px 50px;
   text-indent: -10000px;
-  opacity: 0.8;
   cursor: pointer;
   outline: none;
+  visibility: hidden;
   opacity: 0;
-  transition: opacity 1.5s;
+  transition: visibility 0s, opacity 1.5s linear;
 
   &.show {
+    visibility: visible;
     opacity: 1;
-    transition: opacity 1.5s;
+    transition: visibility 0s, opacity 1.5s linear;
   }
 }
 
