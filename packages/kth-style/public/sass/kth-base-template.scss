@@ -1,8 +1,9 @@
+// KTH variables (added here so you can use kth-base-template.scss separately in your application)
 @import 'variables/colors';
 @import 'variables/sizes';
 @import 'variables/fonts';
 
-// Bootstrap source
+// Bootstrap source (added here so you can use kth-base-template.scss separately in your application)
 @import "node_modules/bootstrap/scss/functions";
 @import "node_modules/bootstrap/scss/variables";
 @import "node_modules/bootstrap/scss/mixins";

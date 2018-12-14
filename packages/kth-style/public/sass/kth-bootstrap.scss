@@ -8,11 +8,8 @@
 @import 'variables/sizes';
 @import 'variables/fonts';
 
-// overrides style values in bootstraps sass files
+// oOerrides style values in bootstraps sass files
 @import './bootstrap/variables';
-
-
-//@import './bootstrap/mixins';
 
 // Bootstrap source
 @import "node_modules/bootstrap/scss/functions";
@@ -62,6 +59,7 @@
 @import 'bootstrap/buttons';
 @import 'bootstrap/tables';
 @import 'bootstrap/forms';
+
 // Random things, should not be needed in the future when they have found their place
 @import 'bootstrap/custom';
 

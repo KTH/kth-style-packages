@@ -2,13 +2,64 @@
   Bootstrap overrides for forms
 */
 
+.form-group {
+  margin-bottom: 1rem;
+}
+
+label {
+  margin: 0 0 0 0;
+  font-size: 0.875rem;
+  font-family: $open-sans;
+  font-weight: 600;
+}
+
+textarea {
+  border: 1px solid $inputBorderGrey;
+  background-color: $lightGrey;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  font-family: $open-sans;
+  width: 100%;
+  padding: 6px 10px;
+}
+
+input {
+  &[type='submit'] {
+    @include btn-coloring-base($blue, $blueHover);
+    color: $white;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    padding: 0.5rem 1.5rem;
+    border: 1px solid;
+    line-height: normal;
+  }
+
+  &[type='text'],
+  &[type='password'],
+  &[type='email'] {
+    border: 1px solid $inputBorderGrey;
+    background-color: $lightGrey;
+    border-radius: 4px;
+    font-size: 0.875rem;
+    font-family: $open-sans;
+    height: 38px;
+    width: 100%;
+    padding: 6px 10px;
+  }
+}
+
 .form-check {
   padding-left: 1.8rem;
 
   input {
     &[type='radio'] {
       opacity: 0;
-      
+      width: 0;
+
       &:checked~label{
         &:after {
           content:'';
@@ -92,8 +143,7 @@
           width: 22px;
           height: 22px;
         } 
-  
-  
+
         &:after {
           content:'';
           display: block;
@@ -117,6 +167,8 @@
     display: block;
     overflow: hidden;
     border-radius: .25em;
+    font-size: 0.875rem;
+    font-family: $open-sans;
 
     &::after {
       content:'';
@@ -142,7 +194,3 @@
     }
   }
 }
-
-
-
-
