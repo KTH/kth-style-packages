@@ -19,7 +19,7 @@
   cursor: pointer;
   outline: none;
   visibility: hidden;
-  opacity: 0;
+  opacity: .7;
   transition: visibility 0s, opacity 1.5s linear;
 
   &.show {
