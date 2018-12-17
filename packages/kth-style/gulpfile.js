@@ -5,6 +5,7 @@ const header = require('gulp-header')
 const cleanCSS = require('gulp-clean-css')
 const gulpLoadPlugins = require('gulp-load-plugins')
 const zip = require('gulp-zip');
+const uglify = require('gulp-uglify');
 const $ = gulpLoadPlugins()
 
 const globals = {
@@ -89,7 +90,13 @@ gulp.task('createDist', function () {
     ,
     gulp.src('./node_modules/bootstrap/dist/js/bootstrap.min.js')
       .pipe(gulp.dest(`./${distRootFolderName}/js`))
+    ,
+    gulp.src(['./public/js/*.js', '!./public/js/vendor.js', '!./public/js/*.min.js'])
+      .pipe(uglify())
+      .pipe($.rename({ suffix: '.min' }))
+      .pipe(gulp.dest(`./${distRootFolderName}/js`))
     )
+
 })
 
 gulp.task('distFonts', function () {
@@ -127,5 +134,5 @@ gulp.task('build', ['clean', 'createDist', 'distFonts', 'distImagesAndIcons', 'd
 
 // Listen for changes and re-dist
 gulp.task('watch', function (done) {
-  return gulp.watch(['public/sass/**/*.scss', 'public/css/**/*.scss', 'public/fonts/**/*.*'], ['build'], done())
+  return gulp.watch(['public/sass/**/*.scss', 'public/css/**/*.scss', 'public/fonts/**/*.*', 'public/js/*.js'], ['build'], done())
 })
