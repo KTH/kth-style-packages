@@ -19,19 +19,10 @@ body {
   }
 }
 
-ul {
+ul, ol {
   li {
-    font-family: $serif;
-    font-weight: normal;
-    line-height: 1.6875;
-  }
-}
-
-ol {
-  li {
-    font-family: $serif;
-    font-weight: normal;
-    line-height: 1.6875;
+    font: inherit;
+    line-height: inherit;
   }
 }
 
