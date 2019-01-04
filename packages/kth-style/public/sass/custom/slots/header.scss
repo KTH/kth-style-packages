@@ -10,7 +10,7 @@ body {
     .container-fluid {
       .container {
         margin: 0 auto;
-        max-width: 1228px;
+        max-width: $widePageWidth;
         padding: $gutter 0 20px;
 
         @media (min-width: 992px) {
