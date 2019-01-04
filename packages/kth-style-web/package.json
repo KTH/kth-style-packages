@@ -20,7 +20,6 @@
     "start-dev": "concurrently --kill-others \"nodemon --ignore dist/ app.js\" \"npm run build-dev\""
   },
   "dependencies": {
-    "bootstrap": "^4.0.0",
     "co": "^4.6.0",
     "cookie-parser": "^1.4.2",
     "css": "^2.2.4",
@@ -28,7 +27,6 @@
     "express": "^4.16.2",
     "express-handlebars": "^3.0.0",
     "gulp-header": "^2.0.5",
-    "inferno-bootstrap": "^3.0.0",
     "kth-node-access-log": "git+https://github.com/KTH/kth-node-access-log.git#v1.0.0",
     "kth-node-configuration": "^1.6.3",
     "kth-node-express-routing": "^0.3.2",
