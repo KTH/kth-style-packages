@@ -124,15 +124,6 @@ $h4-fontSize: 1.25rem !default; // 20px
   line-height: 1.375;
 }
 
-// Block heading
-@mixin t4 ($color : true) {
-  font-family: $sansSerif;
-  font-size: $h3-fontSize;
-  font-weight: 600;
-  @if ($color) { color: $black;}
-  line-height: 1.375;
-}
-
 // Block heading full width
 @mixin t24 ($color : true)  {
   font-family: $sansSerif;
