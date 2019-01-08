@@ -25,6 +25,7 @@ textarea {
 
 input {
   &[type='submit'] {
+    border: 1px solid;
     @include btn-coloring-base($blue, $blueHover);
     color: $white;
     border-radius: 0.25rem;
@@ -34,7 +35,6 @@ input {
     white-space: nowrap;
     vertical-align: middle;
     padding: 0.5rem 1.5rem;
-    border: 1px solid;
     line-height: normal;
   }
 
