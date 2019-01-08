@@ -1,0 +1,307 @@
+@import '../../variables/colors';
+@import '../../variables/spacings';
+@import '../../variables/sizes';
+@import '../../variables/fonts';
+
+#nav-icon {
+  z-index: 25;
+  position: absolute;
+  top: $gutter;
+  right: $gutter;
+  padding: 10px 15px 15px;
+
+  @media (min-width: 992px) {
+    display: none;
+  }
+
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .3s ease-in-out;
+  -moz-transition: .3s ease-in-out;
+  -o-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+  
+  span {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: $blue;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .2s ease-in-out;
+    -moz-transition: .2s ease-in-out;
+    -o-transition: .2s ease-in-out;
+    transition: .2s ease-in-out;
+    
+    &:nth-child(1) {
+      top: 0px;
+    }
+    
+    &:nth-child(2) {
+      top: 8px;
+    }
+    
+    &:nth-child(3) {
+      top: 8px;
+    }
+    
+    &:nth-child(4) {
+      top: 16px;
+    }
+  }  
+}
+
+#nav-icon.open span:nth-child(1) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+
+#nav-icon.open span:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+#nav-icon.open span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+#nav-icon.open span:nth-child(4) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+
+
+
+
+#mobileMenu {
+  &.navbar {
+    &.navbar-light {
+      position: initial;
+      display: block;
+      
+      @media (min-width: 992px) {
+        display: none;
+      }
+
+      #mobileMenuContent {
+        height: 100vh !important;
+        overflow-y: scroll;
+        
+        &.navbar-collapse {
+          &.collapse, &.collapsing {
+            background-color: $lightGrey;
+            display: block !important; // Bootstrap override
+            position: absolute;
+            z-index: 20;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            padding: 0;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity .5s ease-out, visibility .5s;
+          }
+
+          &.show {
+            opacity: 1;
+            visibility: visible;
+
+            /* * * We have to compensate for the margins and breakpoints that are set for body in Social - personal menu * * */
+            .use-personal-menu & { 
+              top: -4.4em;
+              padding-top: 4.4em;
+
+              @media (min-width: 39em) {
+                top: -2.2em;
+                padding-top: 2.2em;
+              }
+            }
+          }
+        }
+      }
+
+      ul {
+        &.menu {
+          &.navbar-nav {
+            &#mobileMenuList {
+              padding: $gutter 0 0;
+              height: 100%;
+
+              li {
+                &.parentLink {
+                  padding: 0 3px;
+                  margin-left: 10px;
+                  background: url('/img/kth-style/icons/arrow-black-left.svg') no-repeat left;
+                  background-size: auto 12px;
+
+                  a {
+                    padding-left: $gutter;
+                    font-family: $sansSerif;
+                    font-size: $font-size-base;
+                  }
+                }
+              }
+
+              li {
+                &.nav-item {
+                  padding: 0 10px;
+                  
+                  &.mainMenuItem {
+                    &.selected {
+                      a {
+                        font-weight: 600;
+                      }
+                    }
+                  }
+
+                  &.homeItem {
+                    .headerItem {
+                      margin-right: 1.25rem;
+
+                      &.active {
+                        a {
+                          &.nav-link {
+                            border-bottom: none;
+                            padding: 0 4px;
+                          }
+                        }
+                      }
+                    
+                      a {
+                        &.nav-link {
+                          margin-top: 8px;
+                          margin-bottom: 8px;
+                          padding: 0 28px 0 5px;
+                        }
+                      }
+                    }
+                  }
+
+                  &.node {
+                    .headerItem {
+                      background: url('/img/kth-style/icons/arrow-black-right.svg') no-repeat right;
+                      background-size: auto 12px;
+                    }
+                  }
+
+                  .headerItem {
+                    padding: 0;
+                    margin: 0 2.5rem 0 0;
+                    color: $black;
+                    line-height: 2.0;
+                    font-weight: normal;
+
+                    &.mainMenuLink {
+                      color: $black;
+                      font-family: $sansSerif;
+                      font-size: 1.125rem;
+                      line-height: 1.375;
+                      padding: 8px 3px;
+                    }
+                    
+                    a {
+                      &.nav-link {
+                        color: $black;
+                        font-family: $sansSerif;
+                        font-size: $font-size-base;
+                        line-height: 1.5;
+                        padding: 8px 3px;
+                      }
+                    }
+                  }
+                }
+              }
+
+              li {    
+                .ancestor {
+                  display: block;
+                  padding: 15px 3px 7px 3px;
+                  font-size: $h3-fontSize;
+                  font-weight: 600;
+                  line-height: 1.5;
+                  font-family: $sansSerif;
+                } 
+              }
+
+              .secondaryMenuContainer {
+                background-color: $grey;
+                height: 100%;
+                margin-top: $gutter;
+                padding-bottom: 20px;
+
+                li {
+                  &.nav-item {
+                    &.secondaryItem {
+                      margin-top: 10px;
+                      padding-top: 6px;
+                      
+                      & ~ .secondaryItem {               // And remove style on all except first.
+                        margin-top: 0;
+                        padding-top: 6px;
+                      }
+
+                      a {
+                        font-size: $font-size-base;
+
+                        &.headerItem {
+                          padding: 0;
+                          margin: 0 2.5rem 0 0;
+                          color: $white;
+                          line-height: 2.0;
+                          font-weight: normal;
+                          
+                          &.secondaryMenu {
+                            padding: 8px 4px;
+                            margin: 0;
+                            font-family: $sansSerif;
+                          }
+                        } 
+                      }
+  
+                      a[hreflang="en-UK"], a[hreflang="sv-SE"] {
+                        &.headerItem {
+                          &.secondaryMenu {
+                            background: url("/img/kth-style/icons/globe-white.svg") no-repeat right;
+                            
+                            background-size: 18px;
+                            padding-right: 22px;
+                            padding-top: 6px;
+                            
+                            &:first-child {
+                              border-top: 0; // 1px solid #65656c; 
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
