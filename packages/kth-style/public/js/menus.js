@@ -38,7 +38,6 @@ window.addEventListener('load', function() {
        if(menuItems[i].getElementsByTagName("a")[0] != null) {
          link.href = menuItems[i].getElementsByTagName("a")[0].href;
          link.text = menuItems[i].getElementsByTagName("a")[0].text;
-         link.target = menuItems[i].getElementsByTagName("a")[0].target;
          if(menuItems[i].getElementsByTagName("a")[0].hreflang) {
           link.hreflang = menuItems[i].getElementsByTagName("a")[0].hreflang;
          }
