@@ -24,7 +24,6 @@
           &.navbar-collapse {
             
             &.collapse, &.collapsing {
-              background-color: $lightGrey;
               z-index: 3;
               position: relative;
               top: -7px;
@@ -42,7 +41,6 @@
               &#megaMenu {
                  
                 @media (min-width: 992px) {
-                  background-color: $white;
                   padding: 0;
                   margin: 0;
                   float: left;
