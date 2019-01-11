@@ -10,7 +10,7 @@ body {
 
   .container {
     &.main {
-      max-width: 1228px;
+      max-width: $widePageWidth;
       margin: 0 auto; 
     }
   }
