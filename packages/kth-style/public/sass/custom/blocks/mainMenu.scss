@@ -67,6 +67,9 @@
                             a {
                               &.nav-link {
                                 padding: 10px $gutter 10px 0;
+                                &:hover {
+                                  text-decoration: underline;
+                                }
                               }
                             }
                           }
@@ -84,6 +87,9 @@
                               &.nav-link {
                                 color: $black;
                                 padding: 10px $gutter 10px 0;
+                                &:hover {
+                                  text-decoration: underline;
+                                }
                               }
                             }
                           }
