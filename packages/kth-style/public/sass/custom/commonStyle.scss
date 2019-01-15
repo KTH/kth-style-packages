@@ -2,15 +2,11 @@
 
 // Default font size.
 body {
-  font-size: $font-size-base;
-
-  @media (min-width: 768px) {
-    font-size: $copyText-desktop-fontSize;
-  }
+ @include t11(false);
 
   .container {
     &.main {
-      max-width: 1228px;
+      max-width: $widePageWidth;
       margin: 0 auto; 
     }
   }
@@ -19,46 +15,22 @@ body {
   }
 }
 
-ul {
-  li {
-    font-family: $serif;
-    font-weight: normal;
-    line-height: 1.6875;
-  }
-}
-
-ol {
-  li {
-    font-family: $serif;
-    font-weight: normal;
-    line-height: 1.6875;
-  }
-}
-
 .lead {
-  font-family: $sansSerif;
-  font-weight: normal;
-  font-size: $lead-fontSize;
-  line-height: 1.5;
+  @include t10(false);
   margin: 0 0 22px 0;
-
-  @media (min-width: 768px) {
-    font-size: $lead-desktop-fontSize;
-  }
 }
+
 
 .paragraphs {
   p {
-    font-family: $serif;
-    font-weight: normal;
-    line-height: 1.6875;
+    @include t12(false);
     margin: 0 0 27px 0;
     max-width: 730px;
   }
 }
 
 table {
-  font-size: $font-size-base;
+  @include t11(false);
 
   p {
     margin-bottom: 0;
