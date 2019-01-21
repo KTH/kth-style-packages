@@ -1,0 +1,57 @@
+@import '../../variables/colors';
+@import '../../variables/sizes';
+@import '../../variables/spacings';
+@import '../../variables/fonts';
+
+
+body {
+  .container, .container-fluid {
+
+    &.articleNavigation {
+      padding: $gutter;
+      width: 100%;
+      max-width: 100%;
+      margin: 0;
+      padding: $gutter $gutter 0;
+
+      &.empty {
+        display: none;
+      }
+      
+      &.noTranslation {
+        display: none;
+      }
+    }
+  }
+
+  @media (min-width: 768px) {
+    .container {
+      &.articleNavigation {
+        max-width: calc(100% - 2 * #{$gutter});
+        margin: 0 $gutter;
+      }
+    }
+  }
+
+  @media (min-width: 992px) {
+    .container, .container-fluid {
+      &.articleNavigation {
+        padding: $gutter 2 * $gutter 0;
+        
+        &.noTranslation {
+          display: block;
+          //padding: $gutter 2 * $gutter;
+        }
+      }
+    }
+  }
+
+  @media (min-width: 1258px) {
+    .container, .container-fluid {
+      &.articleNavigation {
+        max-width: 1228px;
+        margin: 0 auto;
+      }
+    }
+  }
+}

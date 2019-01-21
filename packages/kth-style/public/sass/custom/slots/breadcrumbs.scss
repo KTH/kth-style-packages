@@ -1,33 +1,64 @@
 @import '../../variables/sizes';
 @import '../../variables/spacings';
 @import '../../variables/fonts';
+@import '../../variables/colors';
 
-.breadcrumbs {
-  color: $darkGrey;
-  line-height: 21px;
-  padding: 0 0 $spacing;
-  width: 85%;
-
-  a {
-    &:hover {
-      color: $blue;
-      text-decoration: none;
+#breadcrumbs {
+  ol {
+    padding: 0;
+    margin: 0;
+    
+    &.breadcrumb {
+      display: none;
     }
-
-    &:active {
-      color: $lightGrey;
-    }
-  }
-
-  .separator {
-    color: $grey;
-  }
-
-  .current {
-    color: $lightGrey;
-
-    &:hover {
-      color: $lightGrey;
+    
+    @media (min-width: 992px) {
+      &.breadcrumb {
+        display: flex;
+        background-color: $white;
+        border-radius: 0;
+        
+        li {
+          font-size: $copyText-fontSize;
+          font-family: $sansSerif;
+          
+          &.breadcrumb-item {
+            a {
+              font-size: $copyText-fontSize;
+            }
+          }
+        }
+      }
     }
   }
 }
+
+// .breadcrumbs {
+//   color: $darkGrey;
+//   line-height: 21px;
+//   padding: 0 0 $spacing;
+//   width: 85%;
+
+//   a {
+//     &:hover {
+//       color: $blue;
+//       text-decoration: none;
+//     }
+
+//     &:active {
+//       color: $lightGrey;
+//     }
+//   }
+
+//   .separator {
+//     color: $grey;
+//   }
+
+//   .current {
+//     color: $lightGrey;
+
+//     &:hover {
+//       color: $lightGrey;
+//     }
+//   }
+// }
