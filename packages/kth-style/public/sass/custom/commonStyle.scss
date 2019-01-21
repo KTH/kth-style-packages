@@ -25,6 +25,16 @@ body {
   }
   .container, .container-fluid {
     padding: 0 $gutter; // Gutter should be the same in all break points.
+
+    @media (min-width: 768px) {
+      margin: 0 $gutter;
+      max-width: calc(100% - 2 * #{$gutter});
+    }
+
+    @media (min-width: 1258px) {
+      max-width: 1228px;
+      margin: 0 auto;
+    }
   }
 }
 
