@@ -166,6 +166,16 @@
               li {
                 &.nav-item {
                   padding: 0 10px;
+
+                  &.selected {
+                    .headerItem {
+                      a {
+                        &.nav-link {
+                          font-weight: 600;
+                        }
+                      }
+                    }
+                  }
                   
                   &.mainMenuItem {
                     &.selected {
