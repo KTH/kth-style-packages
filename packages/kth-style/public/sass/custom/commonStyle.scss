@@ -1,8 +1,16 @@
 // KTH specific styling
 
-// Default font size.
+// To override personal menu top margin in print.
+html {
+  body {
+    @media print {
+      margin-top: 0 !important;
+    }
+  }
+}
+
 body {
- @include t11(false);
+  @include t11(false);
 
   .container {
     &.withMainMenu {

@@ -8,6 +8,10 @@ body {
 
   header {
     .container-fluid {
+      @media print {
+        padding: 0;
+      }
+      
       .container {
         margin: 0 auto;
         max-width: $widePageWidth;
@@ -17,13 +21,27 @@ body {
           padding: 20px 2 * $gutter 10px;
         }
 
+        @media print {
+          margin: 0;
+        }
+
         .header-container {
           &__top {
             display: flex;
+
+            #mobileMenuWrapper {
+              @media print {
+                display: none;
+              }
+            }
           }
 
           &__bottom {
             display: flex;
+
+            @media print {
+              display: none;
+            }
           }
         }
 
@@ -56,7 +74,7 @@ body {
                 }
               }
               @media print {
-                margin-left: 50px;
+                margin: 0 0 0 $gutter;
               }
             }
           }
@@ -133,6 +151,10 @@ body {
                     } 
                   }
                 }
+
+                @media print {
+                  display: none;
+                }
               }
             }
           }
@@ -147,6 +169,10 @@ body {
 
     @media (min-width: 992px) {
       height: 6px;
+    }
+
+    @media print {
+      display: none;
     }
   }
 }
