@@ -55,11 +55,6 @@ gulp.task('moveResources', function () {
 
 const distRootFolderName = 'dist'
 
-// Module for importing CSS files into a Sass file
-const cssImporter = require('node-sass-css-importer')({
-  import_paths: ['public/fonts/fontello/css']
-})
-
 // Information about KTH Style in the head of CSS file
 const pkg = require('./package.json')
 const banner = `/*!
@@ -72,14 +67,15 @@ gulp.src('./foo/*.js')
   .pipe(header(banner, { pkg: pkg }))
   .pipe(gulp.dest('./dist/'))
 
-var sassInlineSVG = require('sass-inline-svg-utf8')
+//var inliner = require('sass-inline-svg')
 
 gulp.task('createDist', function () {
   return mergeStream(
     gulp.src('./public/sass/kth-bootstrap.scss')
       .pipe($.plumber())
       .pipe($.sourcemaps.init())
-      .pipe($.sass({includePaths: ['node_modules/bootstrap/scss'], functions: sassInlineSVG(), importer: [cssImporter]}).on('error', $.sass.logError))
+      .pipe($.sass({includePaths: ['node_modules/bootstrap/scss']}).on('error', $.sass.logError))
+      // .pipe($.sass({includePaths: ['node_modules/bootstrap/scss'], functions: { svg: inliner('./', []) }}).on('error', $.sass.logError))
       .pipe($.autoprefixer({browsers: ['last 4 versions']}))
       .pipe(header(banner, { pkg: pkg }))
       .pipe(gulp.dest(`./${distRootFolderName}/css`))

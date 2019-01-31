@@ -31,7 +31,6 @@
     top: .2em;
     left: .2em;
     width: 2em;
-    // content: url(#{'..' + $iconUrl});
-    content: inline-svg(#{'./public/' + $iconUrl});
+    content: url(#{'../' + $iconUrl});
   }
 }

@@ -116,7 +116,7 @@ input {
           position: absolute;
           left: 0;
           top: 2px;
-          background: inline-svg(#{'./public/img/kth-style/icons/check-mark.svg'});
+          background: url(../img/kth-style/icons/check-mark.svg);
           background-repeat: no-repeat;
           background-position: center;
           background-size: 17px 17px;

@@ -50,6 +50,9 @@ This is a brief description of the catalogs:
 - variables - variables used through out the project
 
 #### Icons
+TODO:
+Now using SVG icons and inline with: https://www.npmjs.com/package/sass-inline-svg
+
 We use icons from fontello.com. The icons are downloaded and placed in **public/fonts/fontello**. 
 If you would like to add an icon follow these steps:
 1. Upload the icon-config file (**public/fonts/fontello/config.json**) to http://fontello.com by clicking the button with the spanner in the head.
