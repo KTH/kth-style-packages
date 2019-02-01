@@ -1,9 +1,3 @@
-@mixin fileLinkIcon($suffix, $icon) {
-  a[href$= ".#{$suffix}"]::before {
-    @include fileIcon($icon)
-  }
-}
-
 @mixin fileIcon($icon) {
   content: '';
   height: 24px;
@@ -14,4 +8,17 @@
   background-image: url(#{'../kth-style/img/kth-style/icons/#{$icon}.svg'});
   background-size: contain;
   background-repeat: no-repeat;
+}
+
+@mixin fileLinkIcon($suffix, $icon) {
+  a[href$= ".#{$suffix}"]::before {
+    @include fileIcon($icon)
+  }
+}
+
+@mixin allFileLinkIcons {
+  @include fileLinkIcon('xls', 'excel-file-black');
+  @include fileLinkIcon('ppt', 'powerpoint-file-black');
+  @include fileLinkIcon('doc', 'word-file-black');
+  @include fileLinkIcon('pdf', 'pdf-file-white');
 }
