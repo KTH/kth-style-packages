@@ -1,0 +1,17 @@
+@mixin fileLinkIcon($suffix, $icon) {
+  a[href$= ".#{$suffix}"]::before {
+    @include fileIcon($icon)
+  }
+}
+
+@mixin fileIcon($icon) {
+  content: '';
+  height: 24px;
+  width: 24px;
+  display: inline-block;
+  margin-right: 3px;
+  margin-bottom: -6px;
+  background-image: url(#{'../kth-style/img/kth-style/icons/#{$icon}.svg'});
+  background-size: contain;
+  background-repeat: no-repeat;
+}
