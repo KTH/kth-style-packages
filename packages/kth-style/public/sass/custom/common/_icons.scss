@@ -1,9 +1,9 @@
 @mixin fileIcon($icon) {
   content: '';
-  height: 22px;
-  width: 22px;
+  height: 19px;
+  width: 19px;
   display: inline-block;
-  margin-right: 2px;
+  margin-right: 1px;
   margin-bottom: -4px;
   background-image: url(#{'../kth-style/img/kth-style/icons/#{$icon}.svg'});
   background-size: contain;
