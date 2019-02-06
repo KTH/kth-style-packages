@@ -13,6 +13,9 @@
   }
 }
 
+.btn {
+  border: 1px solid;
+}
 
 .btn-secondary {
   @include btn-coloring-base($white, $lightGrey);
