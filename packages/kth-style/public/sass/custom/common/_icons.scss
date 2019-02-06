@@ -1,10 +1,10 @@
 @mixin fileIcon($icon) {
   content: '';
-  height: 24px;
-  width: 24px;
+  height: 22px;
+  width: 22px;
   display: inline-block;
-  margin-right: 3px;
-  margin-bottom: -6px;
+  margin-right: 2px;
+  margin-bottom: -4px;
   background-image: url(#{'../kth-style/img/kth-style/icons/#{$icon}.svg'});
   background-size: contain;
   background-repeat: no-repeat;
@@ -17,12 +17,13 @@
 }
 
 @mixin allFileLinkIcons {
-  @include fileLinkIcon('xls', 'excel-file-black');
-  @include fileLinkIcon('xlsx', 'excel-file-black');
-  @include fileLinkIcon('ppt', 'powerpoint-file-black');
-  @include fileLinkIcon('pptx', 'powerpoint-file-black');
-  @include fileLinkIcon('doc', 'word-file-black');
-  @include fileLinkIcon('docx', 'word-file-black');
-  @include fileLinkIcon('pdf', 'pdf-file-white');
-  @include fileLinkIcon('zip', 'zip-file-black');
+  @include fileLinkIcon('xls', 'file-excel-fa-solid');
+  @include fileLinkIcon('xlsx', 'file-excel-fa-solid');
+  @include fileLinkIcon('ppt', 'file-powerpoint-fa-solid');
+  @include fileLinkIcon('pptx', 'file-powerpoint-fa-solid');
+  @include fileLinkIcon('doc', 'file-word-fa-solid');
+  @include fileLinkIcon('docx', 'file-word-fa-solid');
+  @include fileLinkIcon('pdf', 'file-pdf-fa-solid');
+  @include fileLinkIcon('zip', 'file-archive-fa-solid');
+  // Todo: fallback
 }
