@@ -28,6 +28,7 @@ body {
         .header-container {
           &__top {
             display: flex;
+            margin-top: 8px;
 
             #mobileMenuWrapper {
               @media print {
@@ -108,6 +109,8 @@ body {
               &.secondaryMenu {
                 display: none;
                 margin: 0;
+                position: relative;
+                top: 2px;
 
                 @media (min-width: 992px) {
                   flex-grow: 1;

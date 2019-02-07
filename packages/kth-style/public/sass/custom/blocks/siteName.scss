@@ -10,6 +10,8 @@
     position: initial;
     height: auto;
     max-width: calc(100% - 136px);
+    position: relative;
+    top: -5px;
 
     a {
       color: $black;
