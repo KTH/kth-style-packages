@@ -280,3 +280,72 @@
   }
 }
 
+/* * * * * * * * * * * Mega menu teaser style * * * * * * * * * * */
+
+.block {
+  &.megaMenu {
+    .block {
+      &.columnSplitter {
+        &.using4Columns {
+          .col {
+            .block {
+              &.teaser {
+                &.top {
+                  .block {
+                    &.figure {
+                      margin: 0;
+                
+                      a {
+                        img {
+                          margin: 0;
+                        }
+                      }
+                    }
+                  }
+                }
+                .teaserBody {
+                  padding: 20px;
+                  
+                  .teaserHeading {
+                    @include t4;
+                    margin-bottom: 14px;
+                    margin-top: 0;
+                  }
+                  
+                  .lead {
+                    margin: 0;
+                  }
+                  
+                  ul {
+                    &.teaserLinks {
+                      &.hasLead {
+                        margin-top: 14px;
+                      }
+                    }
+                  }
+                }
+              
+                &.white {
+                  .teaserBody {
+                    padding: 0;
+                  }
+                }
+              
+                &.top {
+                  &.white {
+                    .teaserBody {
+                      &.hasFigure {
+                        padding: 20px 0 0 0;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
