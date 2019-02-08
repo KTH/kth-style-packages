@@ -193,3 +193,90 @@
     }
   }
 }
+/* * * * * * * * * * * Mega menu column splitter style * * * * * * * * * * */
+
+.block {
+  &.megaMenu {
+    &.navbar {
+      &.navbar-light {
+        ul {
+          &.menu {
+            &.navbar-nav {
+              &#megaMenu {
+                .menuItemContent {
+                  .megaMenuBody {
+                    .megaMenuBodyInner {
+                      .block {
+                        &.columnSplitter {
+                          &.row {
+                            .col {
+                              border-right: 1px solid $borderGrey;
+                              
+                              &:last-child {
+                                border-right: none;
+                              }
+                            }
+                          }                             
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+/* * * * * * * * * * * Mega menu list style * * * * * * * * * * */
+
+.block {
+  &.megaMenu {
+    &.navbar {
+      &.navbar-light {
+        ul {
+          &.menu {
+            &.navbar-nav {
+              &#megaMenu {
+                .menuItemContent {
+                  .megaMenuBody {
+                    .megaMenuBodyInner {
+                      .block {
+                        &.list {
+                          &.links {
+                            h2 {
+                              @include t4;
+                            }
+
+                            ul {
+                              list-style: none;
+                              padding: 0;
+                              @include t11;
+
+                              li {
+                                margin-bottom: 14px;
+                                @include t11;
+
+                                a {
+                                  @include t11;
+                                  margin-bottom: 14px;
+                                }
+                              }
+                            }
+                          }
+                        } 
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
