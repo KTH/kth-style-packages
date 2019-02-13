@@ -35,7 +35,7 @@ app.use((req, res) => {
 })
 
 const stylePkg = require('../node_modules/kth-style/package.json')
-const bootstrapPkg = require('../node_modules/kth-style/node_modules/bootstrap/package.json')
+const bootstrapPkg = require('../node_modules/bootstrap/package.json')
 
 function createIndexPage () {
   return `<!doctype html>
