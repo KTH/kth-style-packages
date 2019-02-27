@@ -14,59 +14,49 @@
 
 .card {
   &.collapsible {
+    border: none;
     .card-header {
-      h4 {
-        font-weight: 700;
-        // letter-spacing: $moreSpaceLetterSpacing;
 
-        a {
-          &[aria-expanded~='false'] {
-            &:before {
-              content: '';
-              height: 20px;
-              width: 20px;
-              display: inline-block;
-              margin: auto;
-              margin-bottom: -2px;
-              background-size: contain;
-              background-repeat: no-repeat;
-              margin-right: 1rem;
+      border-radius: 0.25rem;
+      border-bottom: 0;
 
-              &:hover {
-                text-decoration: none;
-              }
-            }
+      padding-top: 7px;
+      padding-bottom: 7px;
+
+      a {
+
+        font-size: 16px;
+        font-weight: 600;
+        text-overflow: ellipsis;
+        text-align: left;
+        overflow: hidden;
+
+        &:before {
+          content: '';
+          height: 14px;
+          width: 14px;
+          display: inline-block;
+          margin: auto;
+          margin-bottom: -1px;
+          background-size: contain;
+          background-repeat: no-repeat;
+          margin-right: 0.6rem;
+
+          &:hover {
+            text-decoration: none;
           }
+        }
 
-          &[aria-expanded~='false'][load~='false'] {
-            &:before {
-              animation: rotateUp .3s ease-in-out forwards;
-            }
+        &[aria-expanded~='false'][load~='false'] {
+          &:before {
+            animation: rotateUp .3s ease-in-out forwards;
           }
+        }
 
 
-          &[aria-expanded~='true'] {
-            &:before {
-              content: '';
-              height: 20px;
-              width: 20px;
-              display: inline-block;
-              margin: auto;
-              margin-bottom: -2px;
-              background-size: contain;
-              background-repeat: no-repeat;
-              margin-right: 1rem;
-
-              &:hover {
-                text-decoration: none;
-              }
-            }
-          }
-
-          &[aria-expanded~='true'][load~='false'] {
-            &:before {
-              animation: rotateDown .3s ease-in-out forwards;
-            }
+        &[aria-expanded~='true'][load~='false'] {
+          &:before {
+            animation: rotateDown .3s ease-in-out forwards;
           }
         }
       }

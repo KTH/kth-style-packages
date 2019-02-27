@@ -131,9 +131,7 @@ class CollapsibleHeaderBar extends Component {
     return (
       <div class={classes}>
         <div class="card-header" role="tab" >
-            <h4 class="mb-0 mt-0">
-              <a onClick={this.doToggle} aria-expanded={this.state.isOpen} load={this.state.firstLoad} >{this.props.buttonText}</a>
-            </h4>
+          <a onClick={this.doToggle} aria-expanded={this.state.isOpen} load={this.state.firstLoad} >{this.props.buttonText}</a>
         </div>
         <Collapse isOpen={this.state.isOpen}>
           <div class="card-body">
