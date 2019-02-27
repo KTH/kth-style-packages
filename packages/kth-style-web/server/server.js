@@ -3,6 +3,7 @@ const path = require('path')
 const express = require('express')
 const app = express()
 const Style = require('./controllers/styleCtrl')
+const { safeGet } = require('safe-utils')
 
 
 function _getModulePath (moduleName) {
@@ -15,7 +16,6 @@ function _getModulePath (moduleName) {
     tmp = tmp.concat(['node_modules', moduleName])
     outpDir = tmp.join('/')
   }
-  console.log(moduleName + ': ' + outpDir)
   return outpDir
 }
 
@@ -35,7 +35,7 @@ app.use((req, res) => {
 })
 
 const stylePkg = require('../node_modules/kth-style/package.json')
-const bootstrapPkg = require('../node_modules/bootstrap/package.json')
+const bootstrapPkg = safeGet(() => require('../node_modules/bootstrap/package.json'), 'N/A')
 
 function createIndexPage () {
   return `<!doctype html>

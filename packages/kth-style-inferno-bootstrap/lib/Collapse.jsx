@@ -32,12 +32,10 @@ const excludeProps = {'el': true, 'tag': true, 'prefix': true, children: true}
 class Animated extends Component {
 
   componentDidMount () {
-    console.log('Animated mounted')
     animateOnAdd(this, enterCls, this.props.onDidEnter)
   }
 
   componentWillUnmount () {
-    console.log('Animated unmounted')
     animateOnRemove(this, leaveCls, this.props.onDidLeave)
   }
 
@@ -108,13 +106,15 @@ class CollapsibleHeaderBar extends Component {
     super(props)
 
     this.state = {
-      isOpen: false
+      isOpen: false,
+      firstLoad: true
     }
 
     this.doToggle = this.doToggle.bind(this)
   }
 
   doToggle() {
+    this.state.firstLoad = false;
     this.setState({
       isOpen: !this.state.isOpen
     })
@@ -132,12 +132,12 @@ class CollapsibleHeaderBar extends Component {
       <div class={classes}>
         <div class="card-header" role="tab" >
             <h4 class="mb-0 mt-0">
-              <a onClick={this.doToggle} aria-expanded={this.state.isOpen}>Visa mer information</a>
+              <a onClick={this.doToggle} aria-expanded={this.state.isOpen} load={this.state.firstLoad} >{this.props.buttonText}</a>
             </h4>
         </div>
         <Collapse isOpen={this.state.isOpen}>
           <div class="card-body">
-            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+            { this.props.children }
           </div>        
         </Collapse>
       </div>

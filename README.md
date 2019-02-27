@@ -32,7 +32,7 @@ $ scripts/start-doc-dev.sh init
 $ scripts/start-doc-dev.sh run-all
 ```
 
-You can now visit the docs at http://localhost:8080
+You can now visit the docs at http://localhost:3002
 
 The docs will automatically rebuild, all you need to do is reload the browser.
 

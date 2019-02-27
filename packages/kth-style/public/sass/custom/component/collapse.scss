@@ -2,7 +2,7 @@
 // Boostrap Collapse / Panel headings / Rubriklister 
 
 @import '../common/icons';
-@import '../variables/colors';
+@import '../../variables/colors';
 
 @mixin iconCommon {
   font-size: 1.5rem;
@@ -17,34 +17,55 @@
     .card-header {
       h4 {
         font-weight: 700;
-        letter-spacing: $moreSpaceLetterSpacing;
+        // letter-spacing: $moreSpaceLetterSpacing;
 
         a {
           &[aria-expanded~='false'] {
             &:before {
-              @extend .icon-up-open;
-              @include kthStyleIconsFontSetup;
-              @include iconCommon;
-              animation: rotateUp .3s ease-in-out forwards;
+              content: '';
+              height: 20px;
+              width: 20px;
+              display: inline-block;
+              margin: auto;
+              margin-bottom: -2px;
+              background-size: contain;
+              background-repeat: no-repeat;
               margin-right: 1rem;
-              
+
               &:hover {
                 text-decoration: none;
               }
             }
           }
 
+          &[aria-expanded~='false'][load~='false'] {
+            &:before {
+              animation: rotateUp .3s ease-in-out forwards;
+            }
+          }
+
+
           &[aria-expanded~='true'] {
             &:before {
-              @extend .icon-down-open;
-              @include kthStyleIconsFontSetup;
-              @include iconCommon;
-              animation: rotateDown .3s ease-in-out forwards;
+              content: '';
+              height: 20px;
+              width: 20px;
+              display: inline-block;
+              margin: auto;
+              margin-bottom: -2px;
+              background-size: contain;
+              background-repeat: no-repeat;
               margin-right: 1rem;
 
               &:hover {
                 text-decoration: none;
               }
+            }
+          }
+
+          &[aria-expanded~='true'][load~='false'] {
+            &:before {
+              animation: rotateDown .3s ease-in-out forwards;
             }
           }
         }
@@ -57,10 +78,10 @@
       }
 
       a {
-        color: $lightBlack;
+        color: $black;
 
         &::before {
-          color: $lightBlack;
+          background-image: url(../img/kth-style/icons/arrow-black-right.svg);
         }
       }
     }
@@ -74,22 +95,23 @@
         color: $white;
 
         &::before {
-          color: $white;
+          background-image: url(../img/kth-style/icons/arrow-white-right.svg);
+
         }
       }
     }
-
+    
     @keyframes rotateDown {
       100% {
-        transform: rotate(180deg);
-        transform-origin: 50% 50%;
+        transform: rotate(90deg);
+        transform-origin: 22% 40%;
       }
     }
 
     @keyframes rotateUp {
-      100% {
-        transform: rotate(-180deg);
-        transform-origin: 50% 50%;
+      0% {
+        transform: rotate(90deg);
+        transform-origin: 22% 40%;
       }
     }
   }

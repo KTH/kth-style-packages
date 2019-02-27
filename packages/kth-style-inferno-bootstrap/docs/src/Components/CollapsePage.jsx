@@ -14,7 +14,7 @@ export default function BasicPage (props) {
       <Section title="White collapse">
         <Stage>
           <Scene>
-            <Collapse className="ExampleCollapseContainer" isOpen={false} color="white">
+            <Collapse className="ExampleCollapseContainer" isOpen={false} color="white" buttonText="Visa mer">
               <p>My phone number is only two digits off from a local pizzeria’s. I’ve spent my entire life getting occasional wrong-dials from people who accidentally fumbled and hit the wrong number, looking for pizza. One night, it is two am, and our phone rings. I let it go to machine, and am greeted by a rather amusing voicemail from a very drunk man called “Gordon”, who is practically begging for pizza to be delivered to his dorm room at the local college. I try to go back to sleep, but “Gordon” calls back again… and again. On the third call, I answer the phone.</p>
             </Collapse>  
           </Scene>
@@ -42,7 +42,7 @@ export default function BasicPage (props) {
           <h3>Example code:</h3>
           <Scene>
             <Code>
-              {`<Collapse className="ExampleCollapseContainer" isOpen={false} color="white">
+              {`<Collapse className="ExampleCollapseContainer" isOpen={false} color="white" buttonText="Visa mer"> 
   <p>My phone number is only two digits off from a local pizzeria’s. I’ve spent my entire life getting occasional wrong-dials from people who accidentally fumbled and hit the wrong number, looking for pizza. One night, it is two am, and our phone rings. I let it go to machine, and am greeted by a rather amusing voicemail from a very drunk man called “Gordon”, who is practically begging for pizza to be delivered to his dorm room at the local college. I try to go back to sleep, but “Gordon” calls back again… and again. On the third call, I answer the phone.</p>
 </Collapse>  
               `}
@@ -54,7 +54,7 @@ export default function BasicPage (props) {
          <Section title="Blue collapse">
            <Stage>
             <Scene>
-              <Collapse className="ExampleCollapseContainer" isOpen={false} color="blue">
+              <Collapse className="ExampleCollapseContainer" isOpen={false} color="blue" buttonText="Visa mer">
                 <p>My phone number is only two digits off from a local pizzeria’s. I’ve spent my entire life getting occasional wrong-dials from people who accidentally fumbled and hit the wrong number, looking for pizza. One night, it is two am, and our phone rings. I let it go to machine, and am greeted by a rather amusing voicemail from a very drunk man called “Gordon”, who is practically begging for pizza to be delivered to his dorm room at the local college. I try to go back to sleep, but “Gordon” calls back again… and again. On the third call, I answer the phone.</p>
               </Collapse>  
             </Scene>
@@ -78,7 +78,7 @@ export default function BasicPage (props) {
             <h3>Example code:</h3>
             <Scene>
               <Code>
-              {`<Collapse className="ExampleCollapseContainer" isOpen={false} color="blue">
+              {`<Collapse className="ExampleCollapseContainer" isOpen={false} color="blue" buttonText="Visa mer">
   <p>My phone number is only two digits off from a local pizzeria’s. I’ve spent my entire life getting occasional wrong-dials from people who accidentally fumbled and hit the wrong number, looking for pizza. One night, it is two am, and our phone rings. I let it go to machine, and am greeted by a rather amusing voicemail from a very drunk man called “Gordon”, who is practically begging for pizza to be delivered to his dorm room at the local college. I try to go back to sleep, but “Gordon” calls back again… and again. On the third call, I answer the phone.</p>
 </Collapse>  
               `}
