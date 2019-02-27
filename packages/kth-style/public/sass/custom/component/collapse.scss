@@ -75,13 +75,13 @@
     &.white {
       .card-header {
         background-color: $white;
-      }
 
-      a {
-        color: $black;
-
-        &::before {
-          background-image: url(../img/kth-style/icons/arrow-black-right.svg);
+        a {
+          color: $black;
+  
+          &:before {
+            background-image: url(../img/kth-style/icons/arrow-black-right.svg);
+          }
         }
       }
     }
@@ -89,14 +89,12 @@
     &.blue {
       .card-header {
         background-color: $blue;
-      }
-
-      a {
-        color: $white;
-
-        &::before {
-          background-image: url(../img/kth-style/icons/arrow-white-right.svg);
-
+        a {
+          color: $white;
+  
+          &:before {
+            background-image: url(../img/kth-style/icons/arrow-white-right.svg);
+          }
         }
       }
     }
