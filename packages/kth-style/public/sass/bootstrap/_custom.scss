@@ -19,13 +19,12 @@
   cursor: pointer;
   outline: none;
   visibility: hidden;
-  opacity: .7;
-  transition: visibility 0s, opacity 1.5s linear;
+  opacity: .1;
+  transition: visibility 0.4s, opacity 0.4s linear;
 
   &.show {
     visibility: visible;
     opacity: 1;
-    transition: visibility 0s, opacity 1.5s linear;
   }
 }
 
