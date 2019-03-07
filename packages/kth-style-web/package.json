@@ -15,9 +15,9 @@
     "test": "echo \"ok\"",
     "docker": "npm install --development && npm run build && npm prune --production",
     "build": "gulp build && node_modules/.bin/webpack --config ./webpack.config.js",
-    "build-dev": "gulp build && node_modules/.bin/webpack --watch --config ./webpack.config.js",
+    "build-dev": "node_modules/.bin/webpack --watch --config ./webpack.config.js",
     "start": "NODE_ENV=production node app.js",
-    "start-dev": "concurrently --kill-others \"nodemon --ignore dist/ app.js\" \"npm run build-dev\""
+    "start-dev": "cross-env NODE_ENV=development gulp build && cross-env NODE_ENV=development concurrently --kill-others \"nodemon --ignore dist/ app.js\" \"gulp watch\""
   },
   "dependencies": {
     "axios": "0.18.0",
@@ -81,7 +81,8 @@
     "nodemon": "^1.14.11",
     "sass-loader": "^6.0.6",
     "style-loader": "^0.18.2",
-    "webpack": "^2.7.0"
+    "webpack": "^2.7.0",
+    "cross-env": "^2.0.0"
   },
   "engines": {
     "node": "6.9.1"
