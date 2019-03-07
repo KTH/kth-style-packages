@@ -17,7 +17,7 @@
     "build": "gulp build && node_modules/.bin/webpack --config ./webpack.config.js",
     "build-dev": "node_modules/.bin/webpack --watch --config ./webpack.config.js",
     "start": "NODE_ENV=production node app.js",
-    "start-dev": "cross-env NODE_ENV=development gulp build && cross-env NODE_ENV=development concurrently --kill-others \"nodemon --ignore dist/ app.js\" \"gulp watch\""
+    "start-dev": "cross-env NODE_ENV=development gulp build && cross-env NODE_ENV=development concurrently --kill-others \"nodemon --ignore dist/ app.js\" \"gulp watch\" \"npm run build-dev\""
   },
   "dependencies": {
     "axios": "0.18.0",

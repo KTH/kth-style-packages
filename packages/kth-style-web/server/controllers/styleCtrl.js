@@ -56,34 +56,12 @@ module.exports = {
 
   Filters and transforms the resulting object to an array with objects with css class and class name for printing on the page.
 */
-function getIcons(req, res, next) {
-  fs.readFile('node_modules/kth-style/public/fonts/fontello/css/kth-style-icons.css', 'utf8', function (err,data) {
-    if(err) return next(err)
 
-    try {
-      var cssJson = css.parse(data, {});
-    
-      const iconsCss = cssJson.stylesheet.rules
-        .filter(rule => rule.type === 'rule' && rule.selectors.find( s => s.match(/^\.icon*/)))
-        .map(rule => {
-          const className = rule.selectors[0].slice(0, rule.selectors[0].indexOf(':'))
-          return {
-            use: className.slice(1),
-            print: className 
-          }
-        })  
-      res.render('icons', { 
-          breadcrumbsPath: [{ label: 'Ikoner' }],
-          title: 'Ikoner',
-          icons: iconsCss
-        }
-      )
-    } catch (err) {
-      next(err)
-    }
-  })
+const icons = fs.readdirSync('node_modules/kth-style/public/img/kth-style/icons')
+
+function getIcons (req, res, next) {
+  res.json(icons)
 }
-
 
 /*
   Helper method for transforming a Sass variable ($lightRedHover)
