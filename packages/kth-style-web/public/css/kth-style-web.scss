@@ -404,24 +404,31 @@ pre[class*="language-"]:before {
   margin-bottom: 2rem;
   
   .iconBox {
+    box-shadow: 0px 5px 31px -4px rgba(0,0,0,0.15);
     width: 150px;
     height: 200px;
-    box-shadow: 0px 10px 42px -9px rgba(0,0,0,0.25);
-    margin-bottom: 0.5rem;
-    display: flex;
-
-    &.black {
-      background-color: black;
-    }
 
     .icon {
-      display: inline-block;
-      position: relative;
-      width: 50%;
-      height: 50%;
-      background-size: contain;
-      background-repeat: no-repeat;
-      margin: auto;
+      display: flex;
+  
+      &.dark {
+        background-color: #848489;
+      }
+  
+      .svg {
+        display: inline-block;
+        position: relative;
+        width: 30px;
+        height: 30px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin: auto;
+      }
+    }
+
+    .icon-name {
+      min-height: 40%;
+      
     }
   }
 }

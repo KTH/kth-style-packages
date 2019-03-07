@@ -11,21 +11,17 @@ class Colors extends Component {
   }
 
   renderIcons (iconList) {
-
-    
     return (
       <div className="iconContainer">
         { 
           iconList.map(iconName => {
-            console.log(iconName)
-            console.log(iconName.toUpperCase().includes('WHITE'))
-            const useBlackBackground = iconName.toUpperCase().includes('WHITE') ? 'black' : ''
+            const useBlackBackground = iconName.toUpperCase().includes('WHITE') ? 'dark' : ''
             return (
-              <div class="icon">
-                <div class={"iconBox " + useBlackBackground}>
-                  <div class="icon" style={'background-image: url(../kth-style/img/kth-style/icons/' + iconName + ')'}></div>
+              <div class="iconBox card">
+                <div class={"icon card-body " + useBlackBackground}>
+                  <div class="svg" style={'background-image: url(../kth-style/img/kth-style/icons/' + iconName + ')'}></div>
                 </div>  
-                <div style="text-transform:capitalize">{iconName}</div>
+                <div class="icon-name card-footer" style="text-transform:capitalize">{iconName}</div>
               </div>
             )
           })
