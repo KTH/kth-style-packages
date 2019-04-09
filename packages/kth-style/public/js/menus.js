@@ -3,9 +3,9 @@ window.addEventListener('load', function () {
   var mainMenu = document.getElementById('mainMenu') // Get main menu
   var megaMenu = document.getElementById('megaMenu') // Get mega menu
   var secondaryMenu = document.querySelector('.secondaryMenu') // Get secondary menu
-  var mobileMenuWrapper = document.getElementById('mobileMenuWrapper') // Get mobile menu wrapper
+  // var mobileMenuWrapper = document.getElementById('mobileMenuWrapper') // Get mobile menu wrapper
 
-  var secondaryMenuContainer = document.createElement('div')
+  var secondaryMenuContainer = document.createElement('ul')
   secondaryMenuContainer.className = 'secondaryMenuContainer'
 
   if (!mainMenu && !megaMenu && !secondaryMenu) {
@@ -45,8 +45,8 @@ window.addEventListener('load', function () {
 
       if (menuType === 'secondaryMenu') {
         var secondaryMenuListItem = document.createElement('li')
-        secondaryMenuListItem.className = 'item nav-item secondaryItem';
-        link.className = 'headerItem secondaryMenu';
+        secondaryMenuListItem.className = 'item nav-item secondaryItem'
+        link.className = 'headerItem secondaryMenu'
         secondaryMenuListItem.appendChild(link)
         secondaryMenuContainer.appendChild(secondaryMenuListItem)
       } else {
