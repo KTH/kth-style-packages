@@ -82,3 +82,7 @@ If you are using Fontello icons in your own project you might get conflicting UN
 
 Before generating your icon set from Fontello you should set the CSS-prefix from the default 'icon-' to f.e. 'projectname-icon-'
 
+
+
+
+-
