@@ -85,4 +85,3 @@ Before generating your icon set from Fontello you should set the CSS-prefix from
 
 
 
--
