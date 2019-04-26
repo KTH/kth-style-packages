@@ -1,12 +1,11 @@
-@import '../../variables/colors';
-@import '../../variables/sizes';
-@import '../../variables/spacings';
-@import '../../variables/fonts';
+@import "../../variables/colors";
+@import "../../variables/sizes";
+@import "../../variables/spacings";
+@import "../../variables/fonts";
 
 .block {
   &.siteName {
-    @include t4;
-    margin-bottom: 0;
+    @include t4($marginBottom: 0, $marginTop: 0);
     position: initial;
     height: auto;
     max-width: calc(100% - 136px);

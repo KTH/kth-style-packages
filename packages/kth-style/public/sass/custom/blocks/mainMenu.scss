@@ -1,20 +1,20 @@
-@import '../../variables/colors';
-@import '../../variables/spacings';
-@import '../../variables/sizes';
-@import '../../variables/fonts';
-     
+@import "../../variables/colors";
+@import "../../variables/spacings";
+@import "../../variables/sizes";
+@import "../../variables/fonts";
+
 #mainMenu {
   display: none;
-  
+
   @media (min-width: 992px) {
     display: block;
     width: 296px;
     max-width: 296px;
-    
+
     &.col {
       &.navbar {
         padding: 0 5px $gutter 3 * $gutter;
-        
+
         &.navbar-expand-lg {
           &.navbar-light {
             #navbarNav {
@@ -24,7 +24,7 @@
                   position: relative;
                   top: 0;
                   z-index: 0;
-                    
+
                   ul {
                     &.nav {
                       background-color: $white;
@@ -35,24 +35,23 @@
                       width: auto;
 
                       .nav-item {
-
                         &.ancestor {
                           display: block;
                           padding: 8px $gutter 8px 0;
-                          @include t4(false);
+                          @include t4(false, 0, 0);
                         }
-                        
+
                         &.leaf {
                           width: 250px;
                         }
-                        
+
                         &.selected {
                           width: 250px;
                         }
                       }
 
                       li {
-                        @include t11;
+                        @include t11(false, 0, 0);
 
                         &.nav-item {
                           &.ancestor {
@@ -62,7 +61,7 @@
                               }
                             }
                           }
-                          
+
                           &.leaf {
                             a {
                               &.nav-link {
@@ -73,7 +72,7 @@
                               }
                             }
                           }
-                          
+
                           &.selected {
                             a {
                               &.nav-link {
@@ -112,26 +111,26 @@
         }
       }
     }
-    
+
     ul {
       &.nav {
         li {
           &.nav-item {
             width: 250px;
-            
+
             &.ancestor {
               a {
                 &.nav-link {
-                  @include t4(false);
+                  @include t4(false, 0, 0);
                   padding: 0 0 11px 4px;
                   border-bottom: 2px solid $grey;
                 }
               }
             }
-            
+
             &.selected {
               font-weight: 600 !important;
-              
+
               a {
                 &.nav-link {
                   padding: 6px 0;
@@ -139,7 +138,7 @@
                 }
               }
             }
-            
+
             &.leaf {
               a {
                 &.nav-link {
@@ -149,11 +148,12 @@
                 }
               }
             }
-            
+
             &.node {
-              background: url(../img/kth-style/icons/arrow-black-right.svg) no-repeat right;
+              background: url(../img/kth-style/icons/arrow-black-right.svg)
+                no-repeat right;
               background-size: auto 14px;
-              
+
               a {
                 &.nav-link {
                   border-bottom: 1px solid $borderGrey;
@@ -164,18 +164,18 @@
         }
       }
     }
-    
+
     &.col {
       flex: 0 0 300px;
       max-width: 300px;
       padding-left: 3 * $gutter;
-      
     }
   }
 }
 
 .container {
-  &.start, &.department.standard {
+  &.start,
+  &.department.standard {
     &.withMainMenu {
       #mainMenu {
         &.col {

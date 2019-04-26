@@ -1,14 +1,14 @@
-@import '../../variables/colors';
-@import '../../variables/spacings';
-@import '../../variables/sizes';
-@import '../../variables/fonts';
-     
+@import "../../variables/colors";
+@import "../../variables/spacings";
+@import "../../variables/sizes";
+@import "../../variables/fonts";
+
 .block {
   &.megaMenu {
     &.navbar {
       &.navbar-light {
         display: none;
-        
+
         @media (min-width: 992px) {
           display: block;
           position: initial;
@@ -20,26 +20,25 @@
           @media (min-width: 992px) {
             height: auto !important;
           }
-          
+
           &.navbar-collapse {
-            
-            &.collapse, &.collapsing {
+            &.collapse,
+            &.collapsing {
               z-index: 3;
               position: relative;
               top: -7px;
 
               @media (min-width: 992px) {
-                top: 15px
+                top: 15px;
               }
             }
           }
         }
-        
+
         ul {
           &.menu {
             &.navbar-nav {
               &#megaMenu {
-                 
                 @media (min-width: 992px) {
                   padding: 0;
                   margin: 0;
@@ -52,30 +51,29 @@
                 li {
                   &.item {
                     &.nav-item {
-                    
                       &.homeItem {
                         .headerItem {
                           margin-right: 1.25rem;
-                          
+
                           &.active {
                             a {
                               &.nav-link {
                                 border-bottom: none;
                                 padding: 0 4px;
-                                
+
                                 @media (min-width: 992px) {
                                   padding: 0 1.25rem 0 0;
                                 }
                               }
                             }
                           }
-                        
+
                           a {
                             &.nav-link {
                               margin-top: 8px;
                               margin-bottom: 8px;
                               padding: 0 28px 0 5px;
-                              
+
                               @media (min-width: 992px) {
                                 border-right: 1px solid $borderGrey;
                                 padding: 0 1.25rem 0 0;
@@ -84,36 +82,36 @@
                           }
                         }
                       }
-                    
+
                       @media (min-width: 992px) {
                         padding: 0;
                         margin: 0;
                         float: left;
                         position: relative;
                       }
-                      
+
                       .headerItem {
                         padding: 0;
                         margin: 0 1.5rem 0 0;
                         color: $black;
-                        line-height: 2.0;
+                        line-height: 2;
                         font-weight: normal;
-                        
+
                         &.active {
                           a {
-                          	&.nav-link {
-                          	  @media (min-width: 992px) {
-                            	  border-bottom: $halfSpacing solid $blue;
+                            &.nav-link {
+                              @media (min-width: 992px) {
+                                border-bottom: $halfSpacing solid $blue;
                                 padding: 8px 3px 3px 3px;
                               }
-                          	}
+                            }
                           }
                         }
-                        
+
                         @media (min-width: 992px) {
                           text-align: center;
                         }
-                        
+
                         a {
                           &.nav-link {
                             color: $black;
@@ -121,17 +119,17 @@
                             font-size: 1.25rem;
                             line-height: 1.375;
                             padding: 8px 3px;
-                            
+
                             @media (min-width: 992px) {
                               font-size: 1.25rem;
                             }
                           }
                         }
                       }
-                      
+
                       .menuItemContent {
                         display: none !important;
-                        
+
                         @media (min-width: 992px) {
                           padding: 0;
                           margin: 0;
@@ -141,14 +139,14 @@
                           margin: 0px;
                           display: block !important;
                         }
-                        
+
                         &.active {
                           .megaMenuBody {
                             z-index: 79;
                             display: block;
                           }
                         }
-                        
+
                         .megaMenuBody {
                           padding: 3 * $gutter 2 * $gutter;
                           margin: 0;
@@ -157,14 +155,15 @@
                           background-color: $lightGrey;
                           border: 0px;
                           border-bottom: $halfSpacing solid $blue;
-                          display: none;                                   /* Should be none, use block to show when styling */
+                          display: none; /* Should be none, use block to show when styling */
 
                           button {
                             &.closeButton {
                               position: absolute;
                               right: $gutter;
                               top: $gutter;
-                              background: url("../img/kth-style/input-clear-gray.svg") no-repeat transparent;
+                              background: url("../img/kth-style/input-clear-gray.svg")
+                                no-repeat transparent;
                               border: 0;
                               background-size: contain;
                               height: 15px;
@@ -211,12 +210,12 @@
                           &.row {
                             .col {
                               border-right: 1px solid $borderGrey;
-                              
+
                               &:last-child {
                                 border-right: none;
                               }
                             }
-                          }                             
+                          }
                         }
                       }
                     }
@@ -256,17 +255,15 @@
                               @include t11;
 
                               li {
-                                margin-bottom: 14px;
                                 @include t11;
 
                                 a {
                                   @include t11;
-                                  margin-bottom: 14px;
                                 }
                               }
                             }
                           }
-                        } 
+                        }
                       }
                     }
                   }
@@ -294,7 +291,7 @@
                   .block {
                     &.figure {
                       margin: 0;
-                
+
                       a {
                         img {
                           margin: 0;
@@ -305,50 +302,48 @@
                 }
                 .teaserBody {
                   padding: 20px;
-                  
+
                   .teaserHeading {
-                    @include t4;
-                    margin-bottom: 14px;
-                    margin-top: 0;
+                    @include t4($marginTop: 0);
                   }
-                  
+
                   .lead {
                     margin: 0;
-                    h2, h3 {
-                      @include t4;
-                      margin-bottom: 10px;
-                      margin-top: 0px;
+                    h2,
+                    h3 {
+                      @include t4($marginBottom: 10px, $marginTop: 0);
                     }
-             
+
                     p {
                       @include t11;
                       max-width: 100%;
                       margin: 0 0 14px 0;
-            
+
                       &:last-child {
                         margin: 0;
                       }
                     }
-            
-                    ul, ol {
+
+                    ul,
+                    ol {
                       max-width: none;
                       li {
                         @include t11;
                       }
                     }
-            
+
                     .block:last-child {
                       margin-bottom: 0;
                     }
                   }
-                     
+
                   ul {
                     &.teaserLinks {
                       list-style: none;
                       margin: 0;
                       padding: 0;
                       @include t11(false);
-            
+
                       li {
                         @include t11(false);
                       }
@@ -362,13 +357,13 @@
                     }
                   }
                 }
-              
+
                 &.white {
                   .teaserBody {
                     padding: 0;
                   }
                 }
-              
+
                 &.top {
                   &.white {
                     .teaserBody {
@@ -386,4 +381,3 @@
     }
   }
 }
-
