@@ -61,7 +61,7 @@ export default function DropdownsPage(props) {
                 </tr>
               </table>
             </UXComment>
-            <Code>{`<h1 class="t1"><h1> eller h1 { @include t1;}`}</Code>
+            <Code>{`h1 { @include t1;}`}</Code>
           </Scene>
         </Stage>
       </Section>
@@ -117,7 +117,7 @@ export default function DropdownsPage(props) {
                 </tr>
               </table>
             </UXComment>
-            <Code>{`<h2 class="t2"></h2> eller h2 { @include t2;}`}</Code>
+            <Code>{`h2 { @include t2;}`}</Code>
           </Scene>
         </Stage>
       </Section>
@@ -173,7 +173,7 @@ export default function DropdownsPage(props) {
                 </tr>
               </table>
             </UXComment>
-            <Code>{`<h2 class="t24"></h2>eller h2 { @include t24;}`}</Code>
+            <Code>{`h2 { @include t24;}`}</Code>
           </Scene>
         </Stage>
       </Section>
@@ -229,7 +229,7 @@ export default function DropdownsPage(props) {
                 </tr>
               </table>
             </UXComment>
-            <Code>{`<h3 class="t3"></h3> eller h3 { @include t3;}`}</Code>
+            <Code>{`h3 { @include t3;}`}</Code>
           </Scene>
         </Stage>
       </Section>
@@ -293,7 +293,7 @@ export default function DropdownsPage(props) {
                 </tr>
               </table>
             </UXComment>
-            <Code>{`<h4 class="t4"></h4> eller h4 { @include t4;}`}</Code>
+            <Code>{`h4 { @include t4;}`}</Code>
           </Scene>
         </Stage>
       </Section>
@@ -358,7 +358,7 @@ export default function DropdownsPage(props) {
                 </tr>
               </table>
             </UXComment>
-            <Code>{`<p class="t10"></p> eller  p { @include t10;}`}</Code>
+            <Code>{`p { @include t10;}`}</Code>
           </Scene>
         </Stage>
       </Section>
@@ -419,7 +419,7 @@ export default function DropdownsPage(props) {
                 </tr>
               </table>
             </UXComment>
-            <Code>{`<p class="t11"></p>eller  p { @include t11;}`}</Code>
+            <Code>{`p { @include t11;}`}</Code>
           </Scene>
         </Stage>
       </Section>
@@ -481,7 +481,7 @@ export default function DropdownsPage(props) {
                 </tr>
               </table>
             </UXComment>
-            <Code>{`<p class="t12"></p>eller  p { @include t12;}`}</Code>
+            <Code>{`p { @include t12;}`}</Code>
           </Scene>
         </Stage>
       </Section>
