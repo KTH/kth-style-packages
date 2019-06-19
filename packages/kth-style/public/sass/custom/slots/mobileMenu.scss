@@ -148,6 +148,53 @@
               padding: $gutter 0 0;
               height: 100%;
 
+              &.expandable {
+                li {
+                  &.nav-item {
+                    a {
+                      &.nav-link {
+                        padding-left: 3px;
+                        padding-right: 3px;
+                      }
+                    }
+
+                    &.node {
+                      background: url('../img/kth-style/icons/arrow-black-right.svg') no-repeat right;
+                      background-size: auto 12px;
+                      background-position: 100% 14px;
+
+                      &.expanded {
+                        background: url(../img/kth-style/icons/arrow-black-down.svg) no-repeat right;
+                        background-size: 12px 12px;
+                        background-position: 100% 14px;
+                        padding-right: 0;
+
+                        > a {
+                          &.nav-link {
+                            border-bottom: 1px solid $borderGrey;
+                          }
+                        }
+                      }
+
+                      ul {
+                        &.nav-list {
+                          margin-left: 20px;
+                          padding: 0;
+                          list-style: none;    
+
+                          li {
+                            &.nav-item {
+                              padding: 0;
+                              margin: 0;
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+
               li {
                 &.parentLink {
                   padding: 0 3px;
@@ -166,13 +213,33 @@
               li {
                 &.nav-item {
                   padding: 0 10px;
+                  margin: 0 2.5rem 0 0;
+                  color: $black;
+                  line-height: 2.0;
+                  font-weight: normal;
+
+                  &.mainMenuLink {
+                    color: $black;
+                    font-family: $sansSerif;
+                    font-size: 1.125rem;
+                    line-height: 1.375;
+                    padding: 8px 3px;
+                  }
+                  
+                  a {
+                    &.nav-link {
+                      color: $black;
+                      font-family: $sansSerif;
+                      font-size: $font-size-base;
+                      line-height: 1.5;
+                      padding: 8px 3px;
+                    }
+                  }
 
                   &.selected {
-                    .headerItem {
-                      a {
-                        &.nav-link {
-                          font-weight: 600;
-                        }
+                    > a {
+                      &.nav-link {
+                        font-weight: 600;
                       }
                     }
                   }
@@ -186,59 +253,29 @@
                   }
 
                   &.homeItem {
-                    .headerItem {
-                      margin-right: 1.25rem;
+                    margin-right: 1.25rem;
 
-                      &.active {
-                        a {
-                          &.nav-link {
-                            border-bottom: none;
-                            padding: 0 4px;
-                          }
-                        }
-                      }
-                    
+                    &.active {
                       a {
                         &.nav-link {
-                          margin-top: 8px;
-                          margin-bottom: 8px;
-                          padding: 0 28px 0 5px;
+                          border-bottom: none;
+                          padding: 0 4px;
                         }
+                      }
+                    }
+                  
+                    a {
+                      &.nav-link {
+                        margin-top: 8px;
+                        margin-bottom: 8px;
+                        padding: 0 28px 0 5px;
                       }
                     }
                   }
 
                   &.node {
-                    .headerItem {
-                      background: url('../img/kth-style/icons/arrow-black-right.svg') no-repeat right;
-                      background-size: auto 12px;
-                    }
-                  }
-
-                  .headerItem {
-                    padding: 0;
-                    margin: 0 2.5rem 0 0;
-                    color: $black;
-                    line-height: 2.0;
-                    font-weight: normal;
-
-                    &.mainMenuLink {
-                      color: $black;
-                      font-family: $sansSerif;
-                      font-size: 1.125rem;
-                      line-height: 1.375;
-                      padding: 8px 3px;
-                    }
-                    
-                    a {
-                      &.nav-link {
-                        color: $black;
-                        font-family: $sansSerif;
-                        font-size: $font-size-base;
-                        line-height: 1.5;
-                        padding: 8px 3px;
-                      }
-                    }
+                    background: url('../img/kth-style/icons/arrow-black-right.svg') no-repeat right;
+                    background-size: auto 12px;
                   }
                 }
               }
@@ -275,34 +312,29 @@
 
                       a {
                         font-size: $font-size-base;
-
-                        &.headerItem {
-                          padding: 0;
-                          margin: 0 2.5rem 0 0;
-                          color: $white;
-                          line-height: 2.0;
-                          font-weight: normal;
-                          
-                          &.secondaryMenu {
-                            padding: 8px 4px;
-                            margin: 0;
-                            font-family: $sansSerif;
-                          }
-                        } 
+                        padding: 0;
+                        margin: 0 2.5rem 0 0;
+                        color: $white;
+                        line-height: 2.0;
+                        font-weight: normal;
+                        
+                        &.secondaryMenu {
+                          padding: 8px 4px;
+                          margin: 0;
+                          font-family: $sansSerif;
+                        }
                       }
   
                       a[hreflang="en-UK"], a[hreflang="sv-SE"] {
-                        &.headerItem {
-                          &.secondaryMenu {
-                            background: url("/img/kth-style/icons/globe-white.svg") no-repeat right;
-                            
-                            background-size: 18px;
-                            padding-right: 22px;
-                            padding-top: 6px;
-                            
-                            &:first-child {
-                              border-top: 0; // 1px solid #65656c; 
-                            }
+                        &.secondaryMenu {
+                          background: url("/img/kth-style/icons/globe-white.svg") no-repeat right;
+                          
+                          background-size: 18px;
+                          padding-right: 22px;
+                          padding-top: 6px;
+                          
+                          &:first-child {
+                            border-top: 0; // 1px solid #65656c; 
                           }
                         }
                       }

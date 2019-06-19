@@ -46,7 +46,7 @@ window.addEventListener('load', function () {
       if (menuType === 'secondaryMenu') {
         var secondaryMenuListItem = document.createElement('li')
         secondaryMenuListItem.className = 'item nav-item secondaryItem'
-        link.className = 'headerItem secondaryMenu'
+        link.className = 'secondaryMenu'
         secondaryMenuListItem.appendChild(link)
         secondaryMenuContainer.appendChild(secondaryMenuListItem)
       } else {
@@ -57,15 +57,7 @@ window.addEventListener('load', function () {
           ancestor.innerHTML = menuItems[i].getElementsByTagName('span')[0].innerHTML
           listItem.appendChild(ancestor)
         } else {
-          var linkContainer = document.createElement('div')
-
-          if (menuItems[i].getElementsByTagName('div')[0]) {
-            linkContainer.className = menuItems[i].getElementsByTagName('div')[0].className
-          } else {
-            linkContainer.className = 'headerItem'
-          }
-          linkContainer.appendChild(link)
-          listItem.appendChild(linkContainer)
+          listItem.appendChild(link)
         }
       }
       document.getElementById('mobileMenuList').appendChild(listItem) // Add menu item to the mobile menu list
