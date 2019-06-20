@@ -8,7 +8,11 @@
   position: absolute;
   top: $gutter;
   right: $gutter;
-  padding: 10px 15px 15px;
+  padding: 5px 15px 15px;
+  background-color: white;
+  border: 5px solid white;
+  border-left: none;
+  border-right: none;
 
   @media (min-width: 992px) {
     display: none;
@@ -90,9 +94,6 @@
   left: 50%;
 }
 
-
-
-
 #mobileMenu {
   &.navbar {
     &.navbar-light {
@@ -109,7 +110,7 @@
         
         &.navbar-collapse {
           &.collapse, &.collapsing {
-            background-color: $lightGrey;
+            background-color: white;
             display: block !important; // Bootstrap override
             position: absolute;
             z-index: 20;
@@ -145,6 +146,7 @@
         &.menu {
           &.navbar-nav {
             &#mobileMenuList {
+              display: block;
               padding: $gutter 0 0;
               height: 100%;
 
@@ -153,8 +155,9 @@
                   &.nav-item {
                     a {
                       &.nav-link {
-                        padding-left: 3px;
-                        padding-right: 3px;
+                        padding-left: 0;
+                        padding-right: 20px;
+                        margin-left: 3px;
                       }
                     }
 
@@ -168,18 +171,16 @@
                         background-size: 12px 12px;
                         background-position: 100% 14px;
                         padding-right: 0;
-
-                        > a {
-                          &.nav-link {
-                            border-bottom: 1px solid $borderGrey;
-                          }
-                        }
                       }
 
                       ul {
                         &.nav-list {
-                          margin-left: 20px;
+                          border-top: 1px solid $borderGrey;
                           padding: 0;
+                          padding-left: 20px;
+                          margin-top: 7px;
+                          padding-top: 7px;
+                          margin-left: 3px;
                           list-style: none;    
 
                           li {
@@ -213,7 +214,7 @@
               li {
                 &.nav-item {
                   padding: 0 10px;
-                  margin: 0 2.5rem 0 0;
+                  margin: 0 20px 0 0;
                   color: $black;
                   line-height: 2.0;
                   font-weight: normal;
@@ -232,7 +233,7 @@
                       font-family: $sansSerif;
                       font-size: $font-size-base;
                       line-height: 1.5;
-                      padding: 8px 3px;
+                      padding: 7px 3px;
                     }
                   }
 
@@ -295,6 +296,7 @@
                 background-color: $grey;
                 height: 100%;
                 margin-top: $gutter;
+                padding-top: 10px;
                 padding-bottom: 20px;
                 list-style: none;
                 padding-left: 0;
@@ -302,14 +304,8 @@
                 li {
                   &.nav-item {
                     &.secondaryItem {
-                      margin-top: 10px;
                       padding-top: 6px;
                       
-                      & ~ .secondaryItem {               // And remove style on all except first.
-                        margin-top: 0;
-                        padding-top: 6px;
-                      }
-
                       a {
                         font-size: $font-size-base;
                         padding: 0;
