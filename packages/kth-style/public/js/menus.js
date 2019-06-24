@@ -5,6 +5,8 @@ window.addEventListener('load', function () {
   var secondaryMenu = document.querySelector('.secondaryMenu') // Get secondary menu
   // var mobileMenuWrapper = document.getElementById('mobileMenuWrapper') // Get mobile menu wrapper
 
+  var secondaryMenuWrapper = document.createElement('li')
+  secondaryMenuWrapper.className = 'secondaryMenuWrap'
   var secondaryMenuContainer = document.createElement('ul')
   secondaryMenuContainer.className = 'secondaryMenuContainer'
 
@@ -48,7 +50,7 @@ window.addEventListener('load', function () {
         secondaryMenuListItem.className = 'item nav-item secondaryItem'
         link.className = 'secondaryMenu'
         secondaryMenuListItem.appendChild(link)
-        secondaryMenuContainer.appendChild(secondaryMenuListItem)
+        secondaryMenuContainer.appendChild(secondaryMenuListItem)        
       } else {
         // Menu type is main menu or mega menu
         var ancestor = document.createElement('span')
@@ -60,9 +62,10 @@ window.addEventListener('load', function () {
           listItem.appendChild(link)
         }
       }
-      document.getElementById('mobileMenuList').appendChild(listItem) // Add menu item to the mobile menu list
-      document.getElementById('mobileMenuList').appendChild(secondaryMenuContainer) // Add menu item to the mobile menu list
     }
+      secondaryMenuWrapper.appendChild(secondaryMenuContainer)
+      document.getElementById('mobileMenuList').appendChild(listItem) // Add menu item to the mobile menu list
+      document.getElementById('mobileMenuList').appendChild(secondaryMenuWrapper) // Add menu item to the mobile menu list
   }
 
   // Mega menu icon toggler.

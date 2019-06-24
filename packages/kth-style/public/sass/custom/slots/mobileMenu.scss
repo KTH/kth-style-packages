@@ -28,9 +28,9 @@
   transition: .3s ease-in-out;
   cursor: pointer;
 
-  &:focus {
-    outline: none;
-  }
+  // &:focus {
+  //   outline: none;
+  // }
   
   span {
     display: block;
@@ -292,45 +292,49 @@
                 } 
               }
 
-              .secondaryMenuContainer {
-                background-color: $grey;
+              .secondaryMenuWrap {
                 height: 100%;
-                margin-top: $gutter;
-                padding-top: 10px;
-                padding-bottom: 20px;
-                list-style: none;
-                padding-left: 0;
 
-                li {
-                  &.nav-item {
-                    &.secondaryItem {
-                      padding-top: 6px;
-                      
-                      a {
-                        font-size: $font-size-base;
-                        padding: 0;
-                        margin: 0 2.5rem 0 0;
-                        color: $white;
-                        line-height: 2.0;
-                        font-weight: normal;
-                        
-                        &.secondaryMenu {
-                          padding: 8px 4px;
-                          margin: 0;
-                          font-family: $sansSerif;
-                        }
-                      }
+                .secondaryMenuContainer {
+                  background-color: $grey;
+                  height: 100%;
+                  margin-top: $gutter;
+                  padding-top: 10px;
+                  padding-bottom: 20px;
+                  list-style: none;
+                  padding-left: 0;
   
-                      a[hreflang="en-UK"], a[hreflang="sv-SE"] {
-                        &.secondaryMenu {
-                          background: url("/img/kth-style/icons/globe-white.svg") no-repeat right;
+                  li {
+                    &.nav-item {
+                      &.secondaryItem {
+                        padding-top: 6px;
+                        
+                        a {
+                          font-size: $font-size-base;
+                          padding: 0;
+                          margin: 0 2.5rem 0 0;
+                          color: $white;
+                          line-height: 2.0;
+                          font-weight: normal;
                           
-                          background-size: 18px;
-                          padding-right: 22px;
-                          padding-top: 6px;
-                          
-                          &:first-child {
-                            border-top: 0; // 1px solid #65656c; 
+                          &.secondaryMenu {
+                            padding: 8px 4px;
+                            margin: 0;
+                            font-family: $sansSerif;
+                          }
+                        }
+    
+                        a[hreflang="en-UK"], a[hreflang="sv-SE"] {
+                          &.secondaryMenu {
+                            background: url("/img/kth-style/icons/globe-white.svg") no-repeat right;
+                            
+                            background-size: 18px;
+                            padding-right: 22px;
+                            padding-top: 6px;
+                            
+                            &:first-child {
+                              border-top: 0; // 1px solid #65656c; 
+                            }
                           }
                         }
                       }
