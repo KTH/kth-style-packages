@@ -92,7 +92,7 @@ export default function DropdownsPage(props) {
                 </tr>
                 <tr>
                   <td>font-size</td>
-                  <td>1.625rem (26px)</td>
+                  <td>1.5rem (24px)</td>
                   <td>1.875rem (30px)</td>
                 </tr>
                 <tr>
@@ -204,7 +204,7 @@ export default function DropdownsPage(props) {
                 </tr>
                 <tr>
                   <td>font-size</td>
-                  <td>1.5rem (24px)</td>
+                  <td>1.25rem (20px)</td>
                   <td>1.5rem (24px)</td>
                 </tr>
                 <tr>
