@@ -8,7 +8,11 @@
   position: absolute;
   top: $gutter;
   right: $gutter;
-  padding: 10px 15px 15px;
+  padding: 5px 15px 15px;
+  background-color: white;
+  border: 5px solid white;
+  border-left: none;
+  border-right: none;
 
   @media (min-width: 992px) {
     display: none;
@@ -24,9 +28,9 @@
   transition: .3s ease-in-out;
   cursor: pointer;
 
-  &:focus {
-    outline: none;
-  }
+  // &:focus {
+  //   outline: none;
+  // }
   
   span {
     display: block;
@@ -90,9 +94,6 @@
   left: 50%;
 }
 
-
-
-
 #mobileMenu {
   &.navbar {
     &.navbar-light {
@@ -109,7 +110,7 @@
         
         &.navbar-collapse {
           &.collapse, &.collapsing {
-            background-color: $lightGrey;
+            background-color: white;
             display: block !important; // Bootstrap override
             position: absolute;
             z-index: 20;
@@ -145,8 +146,55 @@
         &.menu {
           &.navbar-nav {
             &#mobileMenuList {
+              display: block;
               padding: $gutter 0 0;
               height: 100%;
+
+              &.expandable {
+                li {
+                  &.nav-item {
+                    a {
+                      &.nav-link {
+                        padding-left: 0;
+                        padding-right: 20px;
+                        margin-left: 3px;
+                      }
+                    }
+
+                    &.node {
+                      background: url('../img/kth-style/icons/arrow-black-right.svg') no-repeat right;
+                      background-size: auto 12px;
+                      background-position: 100% 14px;
+
+                      &.expanded {
+                        background: url(../img/kth-style/icons/arrow-black-down.svg) no-repeat right;
+                        background-size: 12px 12px;
+                        background-position: 100% 14px;
+                        padding-right: 0;
+                      }
+
+                      ul {
+                        &.nav-list {
+                          border-top: 1px solid $borderGrey;
+                          padding: 0;
+                          padding-left: 20px;
+                          margin-top: 7px;
+                          padding-top: 7px;
+                          margin-left: 3px;
+                          list-style: none;    
+
+                          li {
+                            &.nav-item {
+                              padding: 0;
+                              margin: 0;
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
 
               li {
                 &.parentLink {
@@ -166,13 +214,33 @@
               li {
                 &.nav-item {
                   padding: 0 10px;
+                  margin: 0 20px 0 0;
+                  color: $black;
+                  line-height: 2.0;
+                  font-weight: normal;
+
+                  &.mainMenuLink {
+                    color: $black;
+                    font-family: $sansSerif;
+                    font-size: 1.125rem;
+                    line-height: 1.375;
+                    padding: 8px 3px;
+                  }
+                  
+                  a {
+                    &.nav-link {
+                      color: $black;
+                      font-family: $sansSerif;
+                      font-size: $font-size-base;
+                      line-height: 1.5;
+                      padding: 7px 3px;
+                    }
+                  }
 
                   &.selected {
-                    .headerItem {
-                      a {
-                        &.nav-link {
-                          font-weight: 600;
-                        }
+                    > a {
+                      &.nav-link {
+                        font-weight: 600;
                       }
                     }
                   }
@@ -186,59 +254,29 @@
                   }
 
                   &.homeItem {
-                    .headerItem {
-                      margin-right: 1.25rem;
+                    margin-right: 1.25rem;
 
-                      &.active {
-                        a {
-                          &.nav-link {
-                            border-bottom: none;
-                            padding: 0 4px;
-                          }
-                        }
-                      }
-                    
+                    &.active {
                       a {
                         &.nav-link {
-                          margin-top: 8px;
-                          margin-bottom: 8px;
-                          padding: 0 28px 0 5px;
+                          border-bottom: none;
+                          padding: 0 4px;
                         }
+                      }
+                    }
+                  
+                    a {
+                      &.nav-link {
+                        margin-top: 8px;
+                        margin-bottom: 8px;
+                        padding: 0 28px 0 5px;
                       }
                     }
                   }
 
                   &.node {
-                    .headerItem {
-                      background: url('../img/kth-style/icons/arrow-black-right.svg') no-repeat right;
-                      background-size: auto 12px;
-                    }
-                  }
-
-                  .headerItem {
-                    padding: 0;
-                    margin: 0 2.5rem 0 0;
-                    color: $black;
-                    line-height: 2.0;
-                    font-weight: normal;
-
-                    &.mainMenuLink {
-                      color: $black;
-                      font-family: $sansSerif;
-                      font-size: 1.125rem;
-                      line-height: 1.375;
-                      padding: 8px 3px;
-                    }
-                    
-                    a {
-                      &.nav-link {
-                        color: $black;
-                        font-family: $sansSerif;
-                        font-size: $font-size-base;
-                        line-height: 1.5;
-                        padding: 8px 3px;
-                      }
-                    }
+                    background: url('../img/kth-style/icons/arrow-black-right.svg') no-repeat right;
+                    background-size: auto 12px;
                   }
                 }
               }
@@ -254,29 +292,25 @@
                 } 
               }
 
-              .secondaryMenuContainer {
-                background-color: $grey;
+              .secondaryMenuWrap {
                 height: 100%;
-                margin-top: $gutter;
-                padding-bottom: 20px;
-                list-style: none;
-                padding-left: 0;
 
-                li {
-                  &.nav-item {
-                    &.secondaryItem {
-                      margin-top: 10px;
-                      padding-top: 6px;
-                      
-                      & ~ .secondaryItem {               // And remove style on all except first.
-                        margin-top: 0;
+                .secondaryMenuContainer {
+                  background-color: $grey;
+                  height: 100%;
+                  margin-top: $gutter;
+                  padding-top: 10px;
+                  padding-bottom: 20px;
+                  list-style: none;
+                  padding-left: 0;
+  
+                  li {
+                    &.nav-item {
+                      &.secondaryItem {
                         padding-top: 6px;
-                      }
-
-                      a {
-                        font-size: $font-size-base;
-
-                        &.headerItem {
+                        
+                        a {
+                          font-size: $font-size-base;
                           padding: 0;
                           margin: 0 2.5rem 0 0;
                           color: $white;
@@ -288,11 +322,9 @@
                             margin: 0;
                             font-family: $sansSerif;
                           }
-                        } 
-                      }
-  
-                      a[hreflang="en-UK"], a[hreflang="sv-SE"] {
-                        &.headerItem {
+                        }
+    
+                        a[hreflang="en-UK"], a[hreflang="sv-SE"] {
                           &.secondaryMenu {
                             background: url("/img/kth-style/icons/globe-white.svg") no-repeat right;
                             

@@ -34,7 +34,7 @@
                       z-index: 1;
                       width: auto;
 
-                      .nav-item {
+                      .nav-item {              
                         &.ancestor {
                           display: block;
                           padding: 8px $gutter 8px 0;
@@ -57,7 +57,7 @@
                           &.ancestor {
                             a {
                               &.nav-link {
-                                padding: 10px $gutter 10px 0;
+                                padding: 7px $gutter 7px 0;
                               }
                             }
                           }
@@ -65,8 +65,8 @@
                           &.leaf {
                             a {
                               &.nav-link {
-                                padding: 10px $gutter 10px 0;
-                                &:hover {
+                                padding: 7px $gutter 7px 0;
+                                &[href]:hover {
                                   text-decoration: underline;
                                 }
                               }
@@ -76,7 +76,7 @@
                           &.selected {
                             a {
                               &.nav-link {
-                                padding: 10px $gutter 10px 0;
+                                padding: 7px $gutter 7px 0;
                               }
                             }
                           }
@@ -85,8 +85,8 @@
                             a {
                               &.nav-link {
                                 color: $black;
-                                padding: 10px $gutter 10px 0;
-                                &:hover {
+                                padding: 7px $gutter 7px 0;
+                                &[href]:hover {
                                   text-decoration: underline;
                                 }
                               }
@@ -98,6 +98,73 @@
                           &.nav-item {
                             &.ancestor {
                               display: block;
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+
+                  // Styling for expandable left menu
+                  ul {
+                    &.nav {
+                      &.nav-list {
+                        &.expandable {
+                          li {
+                            &.nav-item {
+                              width: 100%;
+
+                              &.node {
+                                background-position-y: 14px;
+                  
+                                &.expanded {
+                                  background: url(../img/kth-style/icons/arrow-black-down.svg) no-repeat right;
+                                  background-size: 14px 14px;
+                                  background-position: 100% 14px;
+                                }
+
+                                a {
+                                  &.nav-link {
+                                    border-bottom: none;
+                                  }
+                                }
+
+                                ul.nav-list {
+                                  border-top: 1px solid $borderGrey;
+                                  padding: 7px 0 0px 20px;
+                                  margin-top: 7px;
+                                }
+                              }
+
+                              &.leaf {
+                                a {
+                                  &.nav-link {
+                                    padding: 7px 0;
+                                    color: $black;
+                                    border-bottom: none;
+                                  }
+                                }
+                                
+                                &.selected {
+                                  a {
+                                    &.nav-link {
+                                      border-bottom: none;
+                                    }
+                                  }
+
+                                  li {
+                                    &.nav-item {
+                                      &.node {
+                                        a {
+                                          &.nav-link {
+                                            border-bottom: none;
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
                             }
                           }
                         }
@@ -153,7 +220,7 @@
               background: url(../img/kth-style/icons/arrow-black-right.svg)
                 no-repeat right;
               background-size: auto 14px;
-
+       
               a {
                 &.nav-link {
                   border-bottom: 1px solid $borderGrey;
