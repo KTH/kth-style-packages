@@ -62,10 +62,10 @@ window.addEventListener('load', function () {
           listItem.appendChild(link)
         }
       }
-    }
-      secondaryMenuWrapper.appendChild(secondaryMenuContainer)
       document.getElementById('mobileMenuList').appendChild(listItem) // Add menu item to the mobile menu list
-      document.getElementById('mobileMenuList').appendChild(secondaryMenuWrapper) // Add menu item to the mobile menu list
+    }
+    secondaryMenuWrapper.appendChild(secondaryMenuContainer)
+    document.getElementById('mobileMenuList').appendChild(secondaryMenuWrapper) // Add menu item to the mobile menu list
   }
 
   // Mega menu icon toggler.
@@ -80,21 +80,3 @@ window.addEventListener('load', function () {
     this.classList.toggle('open')
   }
 })
-
-var setMainMenuWith = function () {
-  var mediaMobile = window.matchMedia('(max-width: 767.98px)')
-  var mediaTablet = window.matchMedia('(min-width: 768px) and (max-width: 991.98px)')
-  var viewPortWidth = Math.max(document.documentElement.clientWidth, window.innerWidth || 0)
-  var mainMenuDropdown = $('#mainMenu.col.navbar.navbar-expand-lg.navbar-light #navbarNav.navbar-collapse ul.nav')
-
-  if (mediaMobile.matches) {
-    mainMenuDropdown.css('width', viewPortWidth - 30)
-  } else if (mediaTablet.matches) {
-    mainMenuDropdown.css('width', viewPortWidth - 60)
-  } else {
-    mainMenuDropdown.css('width', 'auto')
-  }
-}
-
-window.addEventListener('load', setMainMenuWith)
-window.addEventListener('resize', setMainMenuWith)
