@@ -1,5 +1,7 @@
 # KTH STYLE
 
+## [UNMAINTAINED: This package is no longer maintained, i.e. per 2019-09-10. We plan to remove it from GitHub and NPM registry, soon...]
+
 To work with this repos you need Node.js 6+ and lerna https://lernajs.io/
 
 1. Install lerna: `npm i -g lerna`
